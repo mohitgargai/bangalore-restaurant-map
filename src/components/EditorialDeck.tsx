@@ -11,8 +11,6 @@ import {
 import {
   Search,
   Bookmark,
-  MapPin,
-  CheckCircle2,
   Plus,
   X,
   RotateCcw,
@@ -71,7 +69,7 @@ export default function EditorialDeck({
   return (
     <aside className="flex h-full w-full flex-col bg-white border-r border-zinc-200 select-none">
       {/* Clean Modern Header */}
-      <div className="shrink-0 border-b border-zinc-100 p-5 bg-white">
+      <div className="shrink-0 border-b border-zinc-100 p-5 bg-white space-y-3">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-lg font-bold tracking-tight text-zinc-900">
@@ -108,7 +106,7 @@ export default function EditorialDeck({
         </div>
 
         {/* Clean Search Input */}
-        <div className="relative mt-3.5">
+        <div className="relative">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400" />
           <input
             type="text"
@@ -127,8 +125,8 @@ export default function EditorialDeck({
           )}
         </div>
 
-        {/* Clean Category Chips */}
-        <div className="mt-3 flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+        {/* Category Chips */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
           <button
             onClick={() => onSelectCategory('All')}
             className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
@@ -137,7 +135,7 @@ export default function EditorialDeck({
                 : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
             }`}
           >
-            All
+            All Cuisines
           </button>
           {ALL_CATEGORIES.map((cat) => {
             const active = selectedCategory === cat;
@@ -157,20 +155,23 @@ export default function EditorialDeck({
           })}
         </div>
 
-        {/* Neighborhood Dropdown & Pure Veg Switch */}
-        <div className="mt-2.5 flex items-center justify-between pt-2 border-t border-zinc-100">
-          <select
-            value={selectedNeighborhood}
-            onChange={(e) => onSelectNeighborhood(e.target.value as any)}
-            className="rounded-lg border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs text-zinc-700 focus:outline-none focus:border-zinc-400"
-          >
-            <option value="All">All Neighborhoods</option>
-            {ALL_NEIGHBORHOODS.map((area) => (
-              <option key={area} value={area}>
-                {area}
-              </option>
-            ))}
-          </select>
+        {/* Neighborhood Selector & Veg Switch */}
+        <div className="flex items-center justify-between pt-1 border-t border-zinc-100">
+          <div className="flex items-center gap-1.5">
+            <span className="text-[11px] text-zinc-400 font-medium">Area:</span>
+            <select
+              value={selectedNeighborhood}
+              onChange={(e) => onSelectNeighborhood(e.target.value as any)}
+              className="rounded-lg border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer"
+            >
+              <option value="All">All Bangalore</option>
+              {ALL_NEIGHBORHOODS.map((area) => (
+                <option key={area} value={area}>
+                  {area}
+                </option>
+              ))}
+            </select>
+          </div>
 
           <button
             onClick={() => onToggleVegOnly(!vegOnly)}
@@ -189,6 +190,7 @@ export default function EditorialDeck({
       <div className="flex items-center justify-between px-5 py-2 bg-zinc-50 border-b border-zinc-100 text-xs text-zinc-500">
         <span>
           Showing <b className="text-zinc-900">{restaurants.length}</b> spots
+          {selectedNeighborhood !== 'All' ? ` in ${selectedNeighborhood}` : ''}
         </span>
         {activeFilterCount > 0 && (
           <button
@@ -212,7 +214,7 @@ export default function EditorialDeck({
             <p className="mt-1 text-xs text-zinc-500 max-w-xs">
               {showSavedOnly
                 ? 'You have not saved any places yet. Click the bookmark icon on any card to save it!'
-                : 'Try adjusting your search or clearing active filters.'}
+                : 'Try picking another neighborhood or clearing your filters.'}
             </p>
             {activeFilterCount > 0 && (
               <button

@@ -1,13 +1,11 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import {
   Restaurant,
   Category,
   Neighborhood,
-  PriceLevel,
-  VibeTag,
 } from '@/types';
 import { INITIAL_RESTAURANTS } from '@/data/restaurants';
 import EditorialDeck from '@/components/EditorialDeck';
@@ -16,7 +14,6 @@ import SubmitModal from '@/components/SubmitModal';
 import {
   LayoutList,
   Map as MapIcon,
-  Compass,
 } from 'lucide-react';
 
 // Dynamic import for Leaflet Map
@@ -32,16 +29,25 @@ const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ),
 });
 
-const DISTRICT_COORDINATES = [
-  { name: 'All Bangalore', lat: 12.9716, lng: 77.5946, zoom: 12 },
-  { name: 'Indiranagar', lat: 12.9734, lng: 77.6409, zoom: 15 },
-  { name: 'Church St / CBD', lat: 12.9737, lng: 77.6074, zoom: 15 },
-  { name: 'Malleshwaram', lat: 12.9985, lng: 77.5708, zoom: 15 },
-  { name: 'Basavanagudi', lat: 12.9455, lng: 77.5739, zoom: 15 },
-  { name: 'Koramangala', lat: 12.9341, lng: 77.6256, zoom: 15 },
-  { name: 'HSR Layout', lat: 12.9118, lng: 77.6385, zoom: 15 },
-  { name: 'Whitefield', lat: 12.9818, lng: 77.7291, zoom: 15 },
-  { name: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
+// Single unified configuration for Bangalore neighborhoods & districts
+export const DISTRICT_MAP_CONFIG: {
+  id: Neighborhood | 'All';
+  label: string;
+  lat: number;
+  lng: number;
+  zoom: number;
+}[] = [
+  { id: 'All', label: 'All Bangalore', lat: 12.9716, lng: 77.5946, zoom: 12 },
+  { id: 'Indiranagar', label: 'Indiranagar', lat: 12.9734, lng: 77.6409, zoom: 15 },
+  { id: 'Church Street & MG Road', label: 'Church St / CBD', lat: 12.9737, lng: 77.6074, zoom: 15 },
+  { id: 'Malleshwaram', label: 'Malleshwaram', lat: 12.9985, lng: 77.5708, zoom: 15 },
+  { id: 'Basavanagudi', label: 'Basavanagudi', lat: 12.9455, lng: 77.5739, zoom: 15 },
+  { id: 'Koramangala', label: 'Koramangala', lat: 12.9341, lng: 77.6256, zoom: 15 },
+  { id: 'Lavelle Road', label: 'Lavelle Road', lat: 12.9698, lng: 77.5997, zoom: 15 },
+  { id: 'HSR Layout', label: 'HSR Layout', lat: 12.9118, lng: 77.6385, zoom: 15 },
+  { id: 'Jayanagar', label: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
+  { id: 'Whitefield', label: 'Whitefield', lat: 12.9818, lng: 77.7291, zoom: 14 },
+  { id: 'Bel Road & North BLR', label: 'North BLR', lat: 13.0450, lng: 77.5850, zoom: 13 },
 ];
 
 export default function Home() {
@@ -60,7 +66,7 @@ export default function Home() {
   // Mobile View Switcher (Feed vs Map)
   const [mobileTab, setMobileTab] = useState<'feed' | 'map'>('feed');
 
-  // Filters state
+  // Unified Filter states
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All');
   const [selectedNeighborhood, setSelectedNeighborhood] = useState<Neighborhood | 'All'>('All');
@@ -70,7 +76,7 @@ export default function Home() {
   // Bookmarks state
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
 
-  // Modal
+  // Submit Modal
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
 
   // Load bookmarks from localStorage
@@ -90,6 +96,20 @@ export default function Home() {
         }
       })
       .catch(() => {});
+  }, []);
+
+  // Unified neighborhood selection handler (syncs left sidebar, top ribbon, and map camera)
+  const handleSelectNeighborhood = useCallback((area: Neighborhood | 'All') => {
+    setSelectedNeighborhood(area);
+    const match = DISTRICT_MAP_CONFIG.find((d) => d.id === area);
+    if (match) {
+      setTargetDistrict({
+        name: match.label,
+        lat: match.lat,
+        lng: match.lng,
+        zoom: match.zoom,
+      });
+    }
   }, []);
 
   const handleToggleBookmark = (id: string, e?: React.MouseEvent) => {
@@ -165,7 +185,7 @@ export default function Home() {
 
   const resetAllFilters = () => {
     setSelectedCategory('All');
-    setSelectedNeighborhood('All');
+    handleSelectNeighborhood('All');
     setVegOnly(false);
     setShowSavedOnly(false);
     setSearchQuery('');
@@ -196,15 +216,7 @@ export default function Home() {
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
           selectedNeighborhood={selectedNeighborhood}
-          onSelectNeighborhood={(n) => {
-            setSelectedNeighborhood(n);
-            if (n !== 'All') {
-              const match = DISTRICT_COORDINATES.find((d) =>
-                d.name.toLowerCase().includes(n.toLowerCase())
-              );
-              if (match) setTargetDistrict(match);
-            }
-          }}
+          onSelectNeighborhood={handleSelectNeighborhood}
           vegOnly={vegOnly}
           onToggleVegOnly={setVegOnly}
           showSavedOnly={showSavedOnly}
@@ -224,22 +236,25 @@ export default function Home() {
           mobileTab === 'map' ? 'block' : 'hidden lg:block'
         }`}
       >
-        {/* Clean District Jumper Top Bar */}
+        {/* Unified Synchronized Top District Ribbon */}
         <div className="pointer-events-none absolute inset-x-0 top-3 z-[1000] px-4 flex justify-end">
-          <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-full border border-zinc-200/90 bg-white/95 px-2.5 py-1.5 shadow-sm backdrop-blur-md">
-            {DISTRICT_COORDINATES.map((dist) => (
-              <button
-                key={dist.name}
-                onClick={() => setTargetDistrict(dist)}
-                className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium transition-all ${
-                  targetDistrict?.name === dist.name
-                    ? 'bg-zinc-900 text-white shadow-xs'
-                    : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
-                }`}
-              >
-                {dist.name}
-              </button>
-            ))}
+          <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-full border border-zinc-200/90 bg-white/95 px-2 py-1.5 shadow-sm backdrop-blur-md">
+            {DISTRICT_MAP_CONFIG.map((dist) => {
+              const isSelected = selectedNeighborhood === dist.id;
+              return (
+                <button
+                  key={dist.id}
+                  onClick={() => handleSelectNeighborhood(dist.id)}
+                  className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium transition-all ${
+                    isSelected
+                      ? 'bg-zinc-900 text-white shadow-xs'
+                      : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
+                  }`}
+                >
+                  {dist.label}
+                </button>
+              );
+            })}
           </div>
         </div>
 
