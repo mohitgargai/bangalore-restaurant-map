@@ -3,7 +3,7 @@
 import React from 'react';
 import { Restaurant } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
-import { Bookmark, MapPin, Sparkles, Navigation, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Bookmark, MapPin, Sparkles, Navigation, ArrowRight } from 'lucide-react';
 
 interface GridViewProps {
   restaurants: Restaurant[];
@@ -22,7 +22,7 @@ export default function GridView({
 }: GridViewProps) {
   if (restaurants.length === 0) {
     return (
-      <div className="flex min-h-[60vh] flex-col items-center justify-center p-8 text-center">
+      <div className="flex min-h-[70vh] flex-col items-center justify-center p-8 text-center pt-48">
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-zinc-100 text-2xl">
           🔍
         </div>
@@ -35,25 +35,19 @@ export default function GridView({
   }
 
   return (
-    <div className="mx-auto max-w-[1440px] px-6 py-8">
+    <div className="mx-auto max-w-[1440px] px-4 sm:px-6 pt-48 pb-24">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {restaurants.map((restaurant) => {
-          const meta = CATEGORY_META[restaurant.category] || {
-            color: '#f97316',
-            icon: '📍',
-            badge: 'bg-orange-50 text-orange-800 border-orange-200',
-          };
-
           const isBookmarked = bookmarkedIds.has(restaurant.id);
 
           return (
             <div
               key={restaurant.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xs transition-all duration-200 hover:shadow-md hover:border-zinc-300"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-2xs transition-all duration-200 hover:shadow-md hover:border-zinc-300"
             >
               {/* Image Container */}
               <div
-                className="relative h-44 w-full cursor-pointer overflow-hidden bg-zinc-100"
+                className="relative h-44 w-full cursor-pointer overflow-hidden bg-zinc-950"
                 onClick={() => onSelectRestaurant(restaurant)}
               >
                 <img
@@ -96,7 +90,7 @@ export default function GridView({
               <div className="flex flex-1 flex-col p-4">
                 <h3
                   onClick={() => onSelectRestaurant(restaurant)}
-                  className="cursor-pointer font-bold text-zinc-900 text-base leading-tight hover:text-orange-600 transition-colors"
+                  className="cursor-pointer font-bold text-zinc-900 text-base leading-tight hover:text-orange-600 transition-colors truncate"
                 >
                   {restaurant.name}
                 </h3>

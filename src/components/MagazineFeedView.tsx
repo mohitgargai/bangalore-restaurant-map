@@ -8,9 +8,7 @@ import {
   MapPin,
   Sparkles,
   Navigation,
-  ExternalLink,
   Clock,
-  ArrowRight,
 } from 'lucide-react';
 
 interface MagazineFeedViewProps {
@@ -30,7 +28,7 @@ export default function MagazineFeedView({
 }: MagazineFeedViewProps) {
   if (restaurants.length === 0) {
     return (
-      <div className="flex min-h-[60vh] flex-col items-center justify-center p-8 text-center">
+      <div className="flex min-h-[70vh] flex-col items-center justify-center p-8 text-center pt-48">
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-zinc-100 text-2xl">
           🔍
         </div>
@@ -43,7 +41,7 @@ export default function MagazineFeedView({
   }
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-32 pb-20">
+    <div className="mx-auto max-w-5xl px-4 pt-48 pb-24">
       {/* Sub-Header */}
       <div className="mb-8 border-b border-zinc-200 pb-4">
         <h2 className="text-2xl font-serif font-black tracking-tight text-zinc-950 sm:text-3xl">
@@ -59,17 +57,16 @@ export default function MagazineFeedView({
         {restaurants.map((restaurant, idx) => {
           const isBookmarked = bookmarkedIds.has(restaurant.id);
           const directionsUrl = getGoogleMapsDirectionsUrl(restaurant);
-          const placeSearchUrl = restaurant.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant);
 
           return (
             <article
               key={restaurant.id}
-              className="group overflow-hidden rounded-3xl border border-zinc-200/90 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-zinc-300 sm:p-7"
+              className="group overflow-hidden rounded-3xl border border-zinc-200/90 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-zinc-300 sm:p-7"
             >
-              <div className="flex flex-col gap-6 md:flex-row md:items-stretch">
+              <div className="flex flex-col gap-5 md:flex-row md:items-stretch">
                 {/* Photo Gallery Thumbnail */}
                 <div
-                  className="relative h-60 md:h-auto md:w-80 shrink-0 cursor-pointer overflow-hidden rounded-2xl bg-zinc-950"
+                  className="relative h-56 md:h-auto md:w-80 shrink-0 cursor-pointer overflow-hidden rounded-2xl bg-zinc-950"
                   onClick={() => onSelectRestaurant(restaurant)}
                 >
                   <img
@@ -106,12 +103,12 @@ export default function MagazineFeedView({
                           </span>
                           <h3
                             onClick={() => onSelectRestaurant(restaurant)}
-                            className="cursor-pointer text-xl font-bold tracking-tight text-zinc-950 hover:text-orange-600 transition-colors"
+                            className="cursor-pointer text-lg sm:text-xl font-bold tracking-tight text-zinc-950 hover:text-orange-600 transition-colors"
                           >
                             {restaurant.name}
                           </h3>
                         </div>
-                        <p className="mt-1 text-sm font-medium text-zinc-600 leading-snug">
+                        <p className="mt-1 text-xs sm:text-sm font-medium text-zinc-600 leading-snug">
                           {restaurant.tagline}
                         </p>
                       </div>
@@ -134,8 +131,8 @@ export default function MagazineFeedView({
 
                     {/* Curator Note */}
                     {restaurant.curatorNote && (
-                      <div className="mt-4 rounded-2xl bg-amber-50/70 border border-amber-200/80 p-3.5 text-xs text-amber-950 leading-relaxed italic">
-                        <span className="font-semibold uppercase tracking-wider not-italic text-[10px] text-amber-900 block mb-1">
+                      <div className="mt-3.5 rounded-2xl bg-amber-50/70 border border-amber-200/80 p-3 text-xs text-amber-950 leading-relaxed italic">
+                        <span className="font-semibold uppercase tracking-wider not-italic text-[10px] text-amber-900 block mb-0.5">
                           Curator Insider Tip
                         </span>
                         &ldquo;{restaurant.curatorNote}&rdquo;
@@ -143,7 +140,7 @@ export default function MagazineFeedView({
                     )}
 
                     {/* Must-Try Highlights */}
-                    <div className="mt-4">
+                    <div className="mt-3.5">
                       <div className="text-[11px] font-bold uppercase tracking-wider text-zinc-400 mb-1.5 flex items-center gap-1">
                         <Sparkles className="h-3 w-3 text-orange-500" />
                         <span>Must-Order Dishes</span>
@@ -162,7 +159,7 @@ export default function MagazineFeedView({
                   </div>
 
                   {/* Actions & Links */}
-                  <div className="mt-6 pt-4 border-t border-zinc-100 flex flex-wrap items-center justify-between gap-3 text-xs">
+                  <div className="mt-5 pt-3.5 border-t border-zinc-100 flex flex-wrap items-center justify-between gap-3 text-xs">
                     <div className="flex items-center gap-2 text-zinc-500">
                       <Clock className="h-3.5 w-3.5 text-zinc-400" />
                       <span>{restaurant.timings}</span>

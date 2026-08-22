@@ -104,12 +104,12 @@ export default function SpatialMapFlow({
         targetDistrict={targetDistrict}
       />
 
-      {/* Floating Top District Jumper Compass */}
-      <div className="pointer-events-none absolute inset-x-0 top-24 z-[1000] px-4 flex justify-center">
+      {/* Floating District Jumper - Positioned safely below the top capsule without collision */}
+      <div className="pointer-events-none absolute inset-x-0 top-36 sm:top-32 z-[1000] px-4 flex justify-center">
         <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-full border border-zinc-200/90 bg-white/95 p-1.5 shadow-lg shadow-zinc-950/5 backdrop-blur-xl max-w-full">
           <div className="flex items-center gap-1 px-2 text-[10.5px] font-mono font-bold text-zinc-400 uppercase shrink-0">
             <Compass className="h-3 w-3 text-orange-600" />
-            <span className="hidden md:inline">Jump to District:</span>
+            <span className="hidden md:inline">Districts:</span>
           </div>
 
           {DISTRICT_MAP_CONFIG.map((dist) => {
@@ -118,7 +118,7 @@ export default function SpatialMapFlow({
               <button
                 key={dist.id}
                 onClick={() => onSelectNeighborhood(dist.id)}
-                className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all ${
+                className={`shrink-0 rounded-full px-2.5 sm:px-3 py-0.5 sm:py-1 text-[11px] sm:text-xs font-semibold transition-all ${
                   isSelected
                     ? 'bg-zinc-900 text-white shadow-xs'
                     : 'bg-zinc-100/90 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
