@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Restaurant, Neighborhood, Category } from '@/types';
-import { X, Sparkles, Plus, CheckCircle2, MapPin, Link2, Heart, User, Loader2 } from 'lucide-react';
+import { Restaurant, Neighborhood } from '@/types';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { X, Sparkles, Plus, CheckCircle2, Link2, User, Loader2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface SubmitModalProps {
@@ -66,7 +68,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
     setLoading(true);
     setError('');
 
-    // Guess / detect neighborhood from maps text or query
+    // Detect neighborhood from input text
     const lowerInput = (googleMapsUrl + ' ' + name).toLowerCase();
     let detectedHood: Neighborhood = 'Indiranagar';
     let baseCoord = { lat: 12.9716, lng: 77.5946 };
@@ -121,25 +123,47 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
       verified: false,
     };
 
-    // Save locally
     try {
-      const stored = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
-      localStorage.setItem('blr_user_submissions', JSON.stringify([newSpot, ...stored]));
-    } catch (e) {}
+      // 1. Save directly to Firebase Firestore
+      try {
+        await addDoc(collection(db, 'submissions'), {
+          name: name.trim(),
+          googleMapsUrl: formattedMapsUrl,
+          whyRecommend: whyRecommend.trim(),
+          submittedBy: submittedBy.trim() || 'Community Foodie',
+          neighborhood: detectedHood,
+          lat: jitterLat,
+          lng: jitterLng,
+          createdAt: serverTimestamp(),
+          status: 'pending',
+        });
+      } catch (firestoreErr) {
+        console.warn('Firestore write warning:', firestoreErr);
+      }
 
-    setSubmittedSuccess(true);
-    triggerConfetti();
-    onSuccess(newSpot);
+      // 2. Save locally in browser for instant persistence
+      try {
+        const stored = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
+        localStorage.setItem('blr_user_submissions', JSON.stringify([newSpot, ...stored]));
+      } catch (e) {}
 
-    setTimeout(() => {
-      setSubmittedSuccess(false);
-      onClose();
-      setName('');
-      setGoogleMapsUrl('');
-      setWhyRecommend('');
-      setSubmittedBy('');
+      setSubmittedSuccess(true);
+      triggerConfetti();
+      onSuccess(newSpot);
+
+      setTimeout(() => {
+        setSubmittedSuccess(false);
+        onClose();
+        setName('');
+        setGoogleMapsUrl('');
+        setWhyRecommend('');
+        setSubmittedBy('');
+        setLoading(false);
+      }, 1600);
+    } catch (err) {
+      setError('An error occurred. Please try again.');
       setLoading(false);
-    }, 1600);
+    }
   };
 
   return (
@@ -182,7 +206,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
             </div>
             <h3 className="text-lg font-bold text-zinc-900">Thank you! Added to Map 🎉</h3>
             <p className="mt-1 text-xs text-zinc-500 max-w-xs">
-              <b className="text-zinc-800">{name}</b> has been recorded and pinned for everyone to discover!
+              <b className="text-zinc-800">{name}</b> has been saved to Firebase and pinned for everyone to discover!
             </p>
           </div>
         ) : (
@@ -275,7 +299,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
                 {loading ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    <span>Adding…</span>
+                    <span>Saving to Firebase…</span>
                   </>
                 ) : (
                   <>
