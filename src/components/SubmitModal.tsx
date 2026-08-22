@@ -16,7 +16,6 @@ import { CATEGORY_META } from '@/lib/colors';
 import { X, Sparkles, Plus, Check, Loader2, MapPin, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-// Approximate coordinate anchors for Bangalore neighborhoods
 const NEIGHBORHOOD_COORDS: Record<Neighborhood, { lat: number; lng: number }> = {
   'Indiranagar': { lat: 12.9719, lng: 77.6412 },
   'Koramangala': { lat: 12.9352, lng: 77.6245 },
@@ -91,7 +90,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
     setLoading(true);
     setError('');
 
-    // Jitter coordinates around neighborhood center so markers don't stack exactly
+    // Coordinate jitter for map placement
     const baseCoord = NEIGHBORHOOD_COORDS[neighborhood] || { lat: 12.9716, lng: 77.5946 };
     const jitterLat = baseCoord.lat + (Math.random() - 0.5) * 0.015;
     const jitterLng = baseCoord.lng + (Math.random() - 0.5) * 0.015;
@@ -117,30 +116,66 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
       imageUrl: imageUrl.trim() || undefined,
     };
 
-    try {
-      const res = await fetch('/api/submissions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
+    const newId = name.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now().toString(36);
+    const clientRestaurant: Restaurant = {
+      id: newId,
+      name: payload.name,
+      slug: newId,
+      tagline: payload.curatorNote || `Curated spot in ${payload.neighborhood}`,
+      description: payload.curatorNote || `Community recommended spot in ${payload.neighborhood}`,
+      category: payload.category,
+      neighborhood: payload.neighborhood,
+      address: payload.address,
+      lat: jitterLat,
+      lng: jitterLng,
+      priceLevel: payload.priceLevel,
+      priceForTwo: payload.priceForTwo,
+      mustTry: payload.mustTry.split(',').map((s) => s.trim()).filter(Boolean),
+      vibeTags: payload.vibeTags,
+      imageUrl: payload.imageUrl || 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
+      googleMapsUrl: payload.googleMapsUrl,
+      timings: '11:00 AM – 11:00 PM',
+      verified: false,
+      curatorNote: payload.curatorNote,
+      submittedBy: payload.submittedBy,
+      submittedAt: new Date().toISOString(),
+    };
 
-      if (data.success) {
-        setSubmittedSuccess(true);
-        triggerConfetti();
-        onSuccess(data.data);
-        setTimeout(() => {
-          setSubmittedSuccess(false);
-          onClose();
-          // Reset form
-          setName('');
-          setMustTry('');
-          setCuratorNote('');
-          setSelectedVibes([]);
-        }, 1800);
-      } else {
-        setError(data.error || 'Failed to submit restaurant');
-      }
+    try {
+      // Try API if available, fallback gracefully on static hosting
+      let serverRestaurant: Restaurant | null = null;
+      try {
+        const res = await fetch('/api/submissions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.success) serverRestaurant = data.data;
+        }
+      } catch (apiErr) {}
+
+      const finalRest = serverRestaurant || clientRestaurant;
+
+      // Persist user submission locally
+      try {
+        const stored = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
+        localStorage.setItem('blr_user_submissions', JSON.stringify([finalRest, ...stored]));
+      } catch (e) {}
+
+      setSubmittedSuccess(true);
+      triggerConfetti();
+      onSuccess(finalRest);
+
+      setTimeout(() => {
+        setSubmittedSuccess(false);
+        onClose();
+        setName('');
+        setMustTry('');
+        setCuratorNote('');
+        setSelectedVibes([]);
+      }, 1800);
     } catch (err) {
       setError('An error occurred. Please try again.');
     } finally {
@@ -149,7 +184,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
   };
 
   return (
-    <div className="fixed inset-0 z-[3000] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[3000] flex items-center justify-center p-2 sm:p-4">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
@@ -157,7 +192,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
       />
 
       {/* Modal Card */}
-      <div className="relative z-10 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl border border-zinc-200 bg-white p-6 shadow-2xl transition-all sm:p-8">
+      <div className="relative z-10 w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl border border-zinc-200 bg-white p-5 sm:p-8 shadow-2xl transition-all">
         {/* Header */}
         <div className="flex items-start justify-between">
           <div>
@@ -165,7 +200,7 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
               <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-orange-100 text-base">
                 🍜
               </span>
-              <h2 className="text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
+              <h2 className="text-lg font-bold tracking-tight text-zinc-900 sm:text-2xl">
                 Recommend a Food Spot
               </h2>
             </div>
@@ -182,200 +217,219 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
         </div>
 
         {submittedSuccess ? (
-          <div className="my-12 flex flex-col items-center justify-center text-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 mb-4 animate-bounce">
-              <CheckCircle2 className="h-8 w-8" />
+          <div className="my-10 flex flex-col items-center justify-center text-center">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 mb-3 animate-bounce">
+              <CheckCircle2 className="h-7 w-7" />
             </div>
-            <h3 className="text-xl font-bold text-zinc-900">Thank you for recommending!</h3>
-            <p className="mt-1.5 text-sm text-zinc-500 max-w-sm">
+            <h3 className="text-lg sm:text-xl font-bold text-zinc-900">Thank you for recommending!</h3>
+            <p className="mt-1 text-xs sm:text-sm text-zinc-500 max-w-sm">
               <b className="text-zinc-800">{name}</b> has been added to the Bengaluru Food Map for everyone to discover!
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+          <form onSubmit={handleSubmit} className="mt-5 space-y-4 sm:space-y-5">
             {error && (
               <div className="rounded-xl bg-rose-50 border border-rose-200 p-3 text-xs font-medium text-rose-700">
                 {error}
               </div>
             )}
 
-            {/* Name + Category */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Spot Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. Rameshwaram Cafe, Toast & Tonic"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Category *
-                </label>
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value as Category)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                >
-                  {ALL_CATEGORIES.map((cat) => (
-                    <option key={cat} value={cat}>
-                      {CATEGORY_META[cat]?.icon} {cat}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {/* Neighborhood + Price */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className="sm:col-span-1">
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Neighborhood *
-                </label>
-                <select
-                  value={neighborhood}
-                  onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                >
-                  {ALL_NEIGHBORHOODS.map((area) => (
-                    <option key={area} value={area}>
-                      {area}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="sm:col-span-1">
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Price Tier
-                </label>
-                <select
-                  value={priceLevel}
-                  onChange={(e) => setPriceLevel(e.target.value as PriceLevel)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                >
-                  <option value="₹">₹ (Budget / Under ₹400)</option>
-                  <option value="₹₹">₹₹ (Casual / ₹400 – ₹1000)</option>
-                  <option value="₹₹₹">₹₹₹ (Premium / ₹1000 – ₹2200)</option>
-                  <option value="₹₹₹₹">₹₹₹₹ (Fine Dine / ₹2200+)</option>
-                </select>
-              </div>
-
-              <div className="sm:col-span-1">
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Cost for Two
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g. ₹600"
-                  value={priceForTwo}
-                  onChange={(e) => setPriceForTwo(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                />
-              </div>
-            </div>
-
-            {/* Must-Try Dishes */}
+            {/* Restaurant Name */}
             <div>
-              <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                Must-Order Dishes * (comma separated)
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                Place Name <span className="text-rose-500">*</span>
               </label>
               <input
                 type="text"
                 required
-                placeholder="e.g. Ghee Podi Dosa, Filter Coffee, Dark Chocolate Babka"
-                value={mustTry}
-                onChange={(e) => setMustTry(e.target.value)}
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="e.g. Sarakki Tiffin Room, BLR Brewing Co"
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
               />
             </div>
 
-            {/* Vibe Tags */}
+            {/* Category & Neighborhood */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                  Category <span className="text-rose-500">*</span>
+                </label>
+                <select
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value as Category)}
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
+                >
+                  {ALL_CATEGORIES.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                  Neighborhood <span className="text-rose-500">*</span>
+                </label>
+                <select
+                  value={neighborhood}
+                  onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
+                >
+                  {ALL_NEIGHBORHOODS.map((n) => (
+                    <option key={n} value={n}>
+                      {n}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            {/* Address */}
             <div>
-              <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-2">
-                Vibe & Highlights (select all that apply)
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                Exact Street Address
+              </label>
+              <input
+                type="text"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder="e.g. 100 Feet Rd, Indiranagar, Bengaluru"
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+              />
+            </div>
+
+            {/* Price Level & Price for two */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                  Price Tier
+                </label>
+                <div className="grid grid-cols-4 gap-2">
+                  {(['₹', '₹₹', '₹₹₹', '₹₹₹₹'] as PriceLevel[]).map((level) => (
+                    <button
+                      key={level}
+                      type="button"
+                      onClick={() => setPriceLevel(level)}
+                      className={`rounded-xl py-2 text-xs font-bold transition-all ${
+                        priceLevel === level
+                          ? 'bg-zinc-900 text-white shadow-xs'
+                          : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
+                      }`}
+                    >
+                      {level}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                  Approx Price for Two
+                </label>
+                <input
+                  type="text"
+                  value={priceForTwo}
+                  onChange={(e) => setPriceForTwo(e.target.value)}
+                  placeholder="e.g. ₹600"
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                />
+              </div>
+            </div>
+
+            {/* Must Try Dishes */}
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                Must-Order Dishes <span className="text-rose-500">*</span>
+              </label>
+              <input
+                type="text"
+                required
+                value={mustTry}
+                onChange={(e) => setMustTry(e.target.value)}
+                placeholder="Comma separated: Podi Dosa, Filter Coffee, Dark Stout"
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+              />
+            </div>
+
+            {/* Curator Insider Note */}
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                Insider Tip / Curator Note
+              </label>
+              <textarea
+                rows={2}
+                value={curatorNote}
+                onChange={(e) => setCuratorNote(e.target.value)}
+                placeholder="e.g. Best visited on Sunday morning for fresh hot batches."
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none resize-none"
+              />
+            </div>
+
+            {/* Vibes */}
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
+                Atmosphere & Features
               </label>
               <div className="flex flex-wrap gap-1.5">
                 {ALL_VIBE_TAGS.map((tag) => {
                   const active = selectedVibes.includes(tag);
                   return (
                     <button
-                      type="button"
                       key={tag}
+                      type="button"
                       onClick={() => toggleVibe(tag)}
-                      className={`flex items-center gap-1 rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
+                      className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
                         active
                           ? 'bg-orange-600 text-white shadow-xs'
-                          : 'border border-zinc-200 bg-zinc-50 text-zinc-600 hover:bg-zinc-100'
+                          : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
                       }`}
                     >
-                      {active && <Check className="h-3 w-3" />}
-                      <span>{tag}</span>
+                      {tag}
                     </button>
                   );
                 })}
               </div>
             </div>
 
-            {/* Curator Note & Google Maps Link */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Insider Tip / Note (optional)
-                </label>
-                <textarea
-                  rows={2}
-                  placeholder="e.g. Visit before 8 AM for fresh steaming batches..."
-                  value={curatorNote}
-                  onChange={(e) => setCuratorNote(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-zinc-700 uppercase tracking-wider mb-1.5">
-                  Your Name or Twitter/IG Handle (optional)
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g. @mohit / Foodie"
-                  value={submittedBy}
-                  onChange={(e) => setSubmittedBy(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-orange-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-                />
-              </div>
+            {/* Submitter Name */}
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
+                Your Name / Handle (Optional)
+              </label>
+              <input
+                type="text"
+                value={submittedBy}
+                onChange={(e) => setSubmittedBy(e.target.value)}
+                placeholder="e.g. @mohit / FoodieBLR"
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+              />
             </div>
 
             {/* Actions */}
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-end gap-3">
+            <div className="pt-3 border-t border-zinc-100 flex items-center justify-end gap-2.5">
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-xl px-4 py-2.5 text-xs font-semibold text-zinc-600 hover:bg-zinc-100 transition-colors"
+                className="rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold text-zinc-600 hover:bg-zinc-100 transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={loading}
-                className="flex items-center gap-2 rounded-xl bg-orange-600 px-6 py-2.5 text-xs font-semibold text-white shadow-md shadow-orange-500/20 hover:bg-orange-700 transition-all disabled:opacity-50"
+                className="flex items-center gap-2 rounded-xl bg-orange-600 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-md shadow-orange-500/20 hover:bg-orange-700 transition-all disabled:opacity-50"
               >
                 {loading ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    <span>Submitting...</span>
+                    <span>Submitting…</span>
                   </>
                 ) : (
                   <>
-                    <Sparkles className="h-4 w-4" />
-                    <span>Publish Spot</span>
+                    <Plus className="h-4 w-4 stroke-[2.5]" />
+                    <span>Recommend Spot</span>
                   </>
                 )}
               </button>

@@ -42,23 +42,18 @@ export default function Home() {
   // Submit Modal
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
 
-  // Load initial data
+  // Load initial data and bookmarks
   useEffect(() => {
     try {
       const saved = localStorage.getItem('blr_food_bookmarks');
       if (saved) {
         setBookmarkedIds(new Set(JSON.parse(saved)));
       }
+      const userSubmissions = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
+      if (Array.isArray(userSubmissions) && userSubmissions.length > 0) {
+        setRestaurants([...userSubmissions, ...INITIAL_RESTAURANTS]);
+      }
     } catch (e) {}
-
-    fetch('/api/restaurants')
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success && Array.isArray(data.data)) {
-          setRestaurants(data.data);
-        }
-      })
-      .catch(() => {});
   }, []);
 
   // Keyboard shortcut listener for ⌘K
