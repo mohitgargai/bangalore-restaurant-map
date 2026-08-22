@@ -80,13 +80,13 @@ export default function SpatialMapFlow({
 
   const handleScrollLeft = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -340, behavior: 'smooth' });
+      scrollContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     }
   };
 
   const handleScrollRight = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 340, behavior: 'smooth' });
+      scrollContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     }
   };
 
@@ -103,10 +103,10 @@ export default function SpatialMapFlow({
         targetDistrict={targetDistrict}
       />
 
-      {/* Floating Bottom Card Carousel Flow */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-5 z-[1100] px-4 flex flex-col items-center">
+      {/* Floating Bottom Card Carousel Flow with Mobile Snap Scroll */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-3 sm:bottom-5 z-[1100] px-2 sm:px-4 flex flex-col items-center">
         <div className="pointer-events-auto relative w-full max-w-5xl">
-          {/* Scroll Nav Buttons (Desktop) */}
+          {/* Scroll Nav Buttons (Desktop only) */}
           {restaurants.length > 3 && (
             <>
               <button
@@ -126,10 +126,10 @@ export default function SpatialMapFlow({
             </>
           )}
 
-          {/* Carousel Track */}
+          {/* Carousel Track with Smooth Touch Snap */}
           <div
             ref={scrollContainerRef}
-            className="flex items-center gap-3.5 overflow-x-auto no-scrollbar py-2 px-1 scroll-smooth"
+            className="flex items-center gap-2.5 sm:gap-3.5 overflow-x-auto no-scrollbar py-2 px-1 scroll-smooth snap-x snap-mandatory touch-pan-x"
           >
             {restaurants.map((restaurant) => {
               const isSelected = selectedRestaurant?.id === restaurant.id;
@@ -146,7 +146,7 @@ export default function SpatialMapFlow({
                   onMouseEnter={() => onHoverRestaurant(restaurant.id)}
                   onMouseLeave={() => onHoverRestaurant(null)}
                   onClick={() => onSelectRestaurant(restaurant)}
-                  className={`shrink-0 w-[290px] sm:w-[320px] cursor-pointer rounded-2xl border bg-white/95 p-3 shadow-xl backdrop-blur-xl transition-all duration-200 ${
+                  className={`shrink-0 snap-center w-[82vw] sm:w-[320px] max-w-[340px] cursor-pointer rounded-2xl border bg-white/95 p-3 shadow-xl backdrop-blur-xl transition-all duration-200 ${
                     isSelected
                       ? 'border-zinc-950 ring-2 ring-zinc-950 scale-102 shadow-2xl'
                       : isHovered
@@ -154,9 +154,9 @@ export default function SpatialMapFlow({
                       : 'border-zinc-200/90 hover:border-zinc-300'
                   }`}
                 >
-                  <div className="flex gap-3">
+                  <div className="flex gap-2.5 sm:gap-3">
                     {/* Thumbnail */}
-                    <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-zinc-900">
+                    <div className="relative h-18 w-18 sm:h-20 sm:w-20 shrink-0 overflow-hidden rounded-xl bg-zinc-900">
                       <img
                         src={restaurant.imageUrl}
                         alt={restaurant.name}
@@ -190,13 +190,13 @@ export default function SpatialMapFlow({
                           {restaurant.name}
                         </h3>
 
-                        <p className="text-[11px] text-zinc-500 truncate">
+                        <p className="text-[10.5px] sm:text-[11px] text-zinc-500 truncate">
                           📍 {restaurant.neighborhood} • {restaurant.priceForTwo} for two
                         </p>
                       </div>
 
                       {/* Must-Try Signature */}
-                      <div className="mt-1 flex items-center gap-1 text-[10.5px] font-medium text-zinc-700 truncate">
+                      <div className="mt-1 flex items-center gap-1 text-[10px] sm:text-[10.5px] font-medium text-zinc-700 truncate">
                         <Sparkles className="h-3 w-3 text-orange-600 shrink-0" />
                         <span className="truncate"><b>Must try:</b> {restaurant.mustTry[0]}</span>
                       </div>
@@ -206,7 +206,7 @@ export default function SpatialMapFlow({
                   {/* Actions */}
                   <div className="mt-2.5 pt-2 border-t border-zinc-100 flex items-center justify-between text-xs">
                     <span className="font-semibold text-zinc-900 text-[11px] hover:text-orange-600">
-                      Open Dossier &rarr;
+                      View Spot &rarr;
                     </span>
                     <a
                       href={directionsUrl}
