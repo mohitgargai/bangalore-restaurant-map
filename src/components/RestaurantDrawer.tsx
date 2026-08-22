@@ -59,7 +59,7 @@ export default function RestaurantDrawer({
   };
 
   const directionsUrl = getGoogleMapsDirectionsUrl(restaurant);
-  const placeSearchUrl = getGoogleMapsPlaceUrl(restaurant);
+  const placeSearchUrl = restaurant.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant);
 
   return (
     <div className="fixed inset-y-0 right-0 z-[2000] flex w-full max-w-lg flex-col bg-white shadow-2xl transition-transform duration-300 border-l border-zinc-200/80 overflow-hidden">
