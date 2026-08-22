@@ -35,7 +35,7 @@ export default function GridView({
   }
 
   return (
-    <div className="mx-auto max-w-[1440px] px-4 sm:px-6 pt-48 pb-24">
+    <div className="mx-auto max-w-[1440px] px-4 sm:px-6 pt-28 pb-20">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {restaurants.map((restaurant) => {
           const isBookmarked = bookmarkedIds.has(restaurant.id);

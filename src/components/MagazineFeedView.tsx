@@ -41,7 +41,7 @@ export default function MagazineFeedView({
   }
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-48 pb-24">
+    <div className="mx-auto max-w-5xl px-4 pt-28 pb-20">
       {/* Sub-Header */}
       <div className="mb-8 border-b border-zinc-200 pb-4">
         <h2 className="text-2xl font-serif font-black tracking-tight text-zinc-950 sm:text-3xl">

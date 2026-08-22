@@ -20,8 +20,8 @@ body {
 
 /* Custom scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -38,16 +38,17 @@ body {
 .leaflet-container {
   font-family: inherit !important;
   background: #f4f4f5 !important;
+  outline: none !important;
 }
 
 .leaflet-popup-content-wrapper {
   padding: 0 !important;
-  border-radius: 1rem !important;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
-  border: 1px solid rgba(228, 228, 231, 0.8) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid rgba(228, 228, 231, 0.9) !important;
   overflow: hidden !important;
-  background: rgba(255, 255, 255, 0.96) !important;
-  backdrop-filter: blur(12px) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(16px) !important;
 }
 
 .leaflet-popup-content {
@@ -56,24 +57,25 @@ body {
 }
 
 .leaflet-popup-tip {
-  background: rgba(255, 255, 255, 0.96) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
 }
 
-.custom-map-pin {
-  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.custom-map-pin:hover {
-  transform: scale(1.18) translateY(-4px);
-  z-index: 1000 !important;
-}
-
-/* Hide default attribution icon for cleaner look while keeping credit link */
+/* Position attribution discreetly in the bottom-right corner */
 .leaflet-control-attribution {
-  font-size: 10px !important;
-  background: rgba(255, 255, 255, 0.7) !important;
+  font-size: 9px !important;
+  background: rgba(255, 255, 255, 0.6) !important;
   backdrop-filter: blur(4px) !important;
-  border-radius: 6px !important;
-  margin: 0 8px 8px 0 !important;
-  padding: 2px 6px !important;
-  border: 1px solid rgba(228, 228, 231, 0.6) !important;
+  border-radius: 4px !important;
+  margin: 0 6px 6px 0 !important;
+  padding: 1px 4px !important;
+  border: none !important;
+  opacity: 0.6;
+}
+.leaflet-control-attribution:hover {
+  opacity: 1;
+}
+
+/* Hide default zoom buttons for ultra-clean spatial canvas */
+.leaflet-control-zoom {
+  display: none !important;
 }
