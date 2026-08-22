@@ -13,15 +13,6 @@ export function getRestaurantById(id: string): Restaurant | undefined {
   return restaurantsCache.find((r) => r.id === id);
 }
 
-export function upvoteRestaurant(id: string): { success: boolean; upvotes: number } {
-  const restaurant = restaurantsCache.find((r) => r.id === id);
-  if (!restaurant) {
-    return { success: false, upvotes: 0 };
-  }
-  restaurant.upvotes += 1;
-  return { success: true, upvotes: restaurant.upvotes };
-}
-
 export function addSubmission(data: SubmissionForm): Restaurant {
   const newId = data.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') + '-' + Date.now().toString(36);
   
@@ -51,14 +42,13 @@ export function addSubmission(data: SubmissionForm): Restaurant {
     imageUrl: defaultImage,
     googleMapsUrl: data.googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(data.name + ' ' + data.neighborhood + ' Bangalore')}`,
     timings: '11:00 AM – 11:00 PM',
-    upvotes: 1,
     verified: false,
     curatorNote: data.curatorNote,
-    submittedBy: data.submittedBy || 'Foodie Community',
+    submittedBy: data.submittedBy || 'Community Member',
     submittedAt: new Date().toISOString(),
   };
 
-  // Add to active restaurants so submitter sees it immediately
+  // Add to active restaurants
   restaurantsCache = [newRestaurant, ...restaurantsCache];
   
   submissionsQueue.push({

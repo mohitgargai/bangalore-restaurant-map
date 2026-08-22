@@ -13,38 +13,27 @@ import { INITIAL_RESTAURANTS } from '@/data/restaurants';
 import EditorialDeck from '@/components/EditorialDeck';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
-import FilterDrawer, { SortOption } from '@/components/FilterDrawer';
-import FoodStoriesDrawer from '@/components/FoodStoriesDrawer';
-import SubmissionsDrawer from '@/components/SubmissionsDrawer';
 import {
-  Sparkles,
-  MapPin,
-  X,
-  Compass,
-  Layers,
-  Locate,
   LayoutList,
   Map as MapIcon,
-  Maximize2,
+  Compass,
 } from 'lucide-react';
 
-// Dynamic import for Leaflet Map to avoid SSR errors
+// Dynamic import for Leaflet Map
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
   loading: () => (
-    <div className="flex h-full w-full items-center justify-center bg-zinc-900 text-white">
-      <div className="flex flex-col items-center gap-3">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-orange-500 border-t-transparent"></div>
-        <p className="text-xs font-mono font-semibold tracking-widest text-zinc-400 uppercase">
-          Initializing Spatial Canvas…
-        </p>
+    <div className="flex h-full w-full items-center justify-center bg-zinc-100 text-zinc-500">
+      <div className="flex flex-col items-center gap-2">
+        <div className="h-6 w-6 animate-spin rounded-full border-2 border-orange-600 border-t-transparent"></div>
+        <p className="text-xs font-medium text-zinc-500">Loading Map…</p>
       </div>
     </div>
   ),
 });
 
 const DISTRICT_COORDINATES = [
-  { name: 'All BLR', lat: 12.9716, lng: 77.5946, zoom: 12 },
+  { name: 'All Bangalore', lat: 12.9716, lng: 77.5946, zoom: 12 },
   { name: 'Indiranagar', lat: 12.9734, lng: 77.6409, zoom: 15 },
   { name: 'Church St / CBD', lat: 12.9737, lng: 77.6074, zoom: 15 },
   { name: 'Malleshwaram', lat: 12.9985, lng: 77.5708, zoom: 15 },
@@ -56,7 +45,6 @@ const DISTRICT_COORDINATES = [
 ];
 
 export default function Home() {
-  // Master restaurant dataset
   const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
   const [hoveredRestaurantId, setHoveredRestaurantId] = useState<string | null>(null);
@@ -75,32 +63,25 @@ export default function Home() {
   // Filters state
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All');
-  const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<Neighborhood[]>([]);
-  const [selectedPriceLevels, setSelectedPriceLevels] = useState<PriceLevel[]>([]);
-  const [selectedVibes, setSelectedVibes] = useState<VibeTag[]>([]);
+  const [selectedNeighborhood, setSelectedNeighborhood] = useState<Neighborhood | 'All'>('All');
   const [vegOnly, setVegOnly] = useState(false);
-  const [sortBy, setSortBy] = useState<SortOption>('upvotes');
-  const [trailFilterIds, setTrailFilterIds] = useState<string[] | null>(null);
+  const [showSavedOnly, setShowSavedOnly] = useState(false);
 
-  // Upvotes persistence
-  const [userUpvotes, setUserUpvotes] = useState<Record<string, boolean>>({});
+  // Bookmarks state
+  const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
 
-  // Modals & Drawers state
+  // Modal
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [isStoriesOpen, setIsStoriesOpen] = useState(false);
-  const [isSubmissionsOpen, setIsSubmissionsOpen] = useState(false);
 
-  // Load upvotes from localStorage on client
+  // Load bookmarks from localStorage
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('blr_eats_upvotes');
+      const saved = localStorage.getItem('blr_food_bookmarks');
       if (saved) {
-        setUserUpvotes(JSON.parse(saved));
+        setBookmarkedIds(new Set(JSON.parse(saved)));
       }
     } catch (e) {}
 
-    // Fetch latest restaurants from API
     fetch('/api/restaurants')
       .then((res) => res.json())
       .then((data) => {
@@ -111,169 +92,90 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  // Handle upvoting with optimistic update and API call
-  const handleUpvote = async (id: string, e?: React.MouseEvent) => {
+  const handleToggleBookmark = (id: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-
-    const isAlreadyUpvoted = !!userUpvotes[id];
-    const newUpvotesState = { ...userUpvotes, [id]: !isAlreadyUpvoted };
-    setUserUpvotes(newUpvotesState);
-    try {
-      localStorage.setItem('blr_eats_upvotes', JSON.stringify(newUpvotesState));
-    } catch (e) {}
-
-    // Update in-memory count
-    setRestaurants((prev) =>
-      prev.map((r) => {
-        if (r.id === id) {
-          return {
-            ...r,
-            upvotes: isAlreadyUpvoted ? Math.max(0, r.upvotes - 1) : r.upvotes + 1,
-          };
-        }
-        return r;
-      })
-    );
-
-    // Call API
-    try {
-      await fetch('/api/upvote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id }),
-      });
-    } catch (err) {}
+    setBookmarkedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      try {
+        localStorage.setItem('blr_food_bookmarks', JSON.stringify(Array.from(next)));
+      } catch (err) {}
+      return next;
+    });
   };
 
-  // When a new spot is submitted
   const handleNewSubmission = (newRest: Restaurant) => {
     setRestaurants((prev) => [newRest, ...prev]);
     setSelectedRestaurant(newRest);
   };
 
-  // Filter and Sort Logic
+  // Filter Logic
   const filteredRestaurants = useMemo(() => {
-    return restaurants
-      .filter((r) => {
-        // Trail filter
-        if (trailFilterIds && !trailFilterIds.includes(r.id)) {
+    return restaurants.filter((r) => {
+      if (showSavedOnly && !bookmarkedIds.has(r.id)) {
+        return false;
+      }
+
+      if (selectedCategory !== 'All' && r.category !== selectedCategory) {
+        return false;
+      }
+
+      if (selectedNeighborhood !== 'All' && r.neighborhood !== selectedNeighborhood) {
+        return false;
+      }
+
+      if (vegOnly && !r.isVegetarian && !r.vibeTags.includes('Pure Veg')) {
+        return false;
+      }
+
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase();
+        const matchName = r.name.toLowerCase().includes(q);
+        const matchNeighborhood = r.neighborhood.toLowerCase().includes(q);
+        const matchCategory = r.category.toLowerCase().includes(q);
+        const matchMustTry = r.mustTry.some((dish) => dish.toLowerCase().includes(q));
+
+        if (!matchName && !matchNeighborhood && !matchCategory && !matchMustTry) {
           return false;
         }
+      }
 
-        // Category filter
-        if (selectedCategory !== 'All' && r.category !== selectedCategory) {
-          return false;
-        }
-
-        // Neighborhoods filter
-        if (
-          selectedNeighborhoods.length > 0 &&
-          !selectedNeighborhoods.includes(r.neighborhood)
-        ) {
-          return false;
-        }
-
-        // Price Level filter
-        if (
-          selectedPriceLevels.length > 0 &&
-          !selectedPriceLevels.includes(r.priceLevel)
-        ) {
-          return false;
-        }
-
-        // Vibe Tags filter
-        if (
-          selectedVibes.length > 0 &&
-          !selectedVibes.some((v) => r.vibeTags.includes(v))
-        ) {
-          return false;
-        }
-
-        // Pure Veg filter
-        if (vegOnly && !r.isVegetarian && !r.vibeTags.includes('Pure Veg')) {
-          return false;
-        }
-
-        // Search query
-        if (searchQuery.trim()) {
-          const q = searchQuery.toLowerCase();
-          const matchName = r.name.toLowerCase().includes(q);
-          const matchNeighborhood = r.neighborhood.toLowerCase().includes(q);
-          const matchCategory = r.category.toLowerCase().includes(q);
-          const matchMustTry = r.mustTry.some((dish) => dish.toLowerCase().includes(q));
-          const matchVibes = r.vibeTags.some((v) => v.toLowerCase().includes(q));
-          const matchDesc = r.description.toLowerCase().includes(q);
-
-          if (
-            !matchName &&
-            !matchNeighborhood &&
-            !matchCategory &&
-            !matchMustTry &&
-            !matchVibes &&
-            !matchDesc
-          ) {
-            return false;
-          }
-        }
-
-        return true;
-      })
-      .sort((a, b) => {
-        if (sortBy === 'upvotes') {
-          return b.upvotes - a.upvotes;
-        }
-        if (sortBy === 'name') {
-          return a.name.localeCompare(b.name);
-        }
-        if (sortBy === 'price-asc') {
-          return a.priceLevel.length - b.priceLevel.length;
-        }
-        if (sortBy === 'price-desc') {
-          return b.priceLevel.length - a.priceLevel.length;
-        }
-        return 0;
-      });
+      return true;
+    });
   }, [
     restaurants,
     selectedCategory,
-    selectedNeighborhoods,
-    selectedPriceLevels,
-    selectedVibes,
+    selectedNeighborhood,
     vegOnly,
+    showSavedOnly,
+    bookmarkedIds,
     searchQuery,
-    sortBy,
-    trailFilterIds,
   ]);
 
-  // Count active filters
   const activeFilterCount =
     (selectedCategory !== 'All' ? 1 : 0) +
-    selectedNeighborhoods.length +
-    selectedPriceLevels.length +
-    selectedVibes.length +
+    (selectedNeighborhood !== 'All' ? 1 : 0) +
     (vegOnly ? 1 : 0) +
-    (trailFilterIds ? 1 : 0);
+    (showSavedOnly ? 1 : 0) +
+    (searchQuery ? 1 : 0);
 
   const resetAllFilters = () => {
     setSelectedCategory('All');
-    setSelectedNeighborhoods([]);
-    setSelectedPriceLevels([]);
-    setSelectedVibes([]);
+    setSelectedNeighborhood('All');
     setVegOnly(false);
+    setShowSavedOnly(false);
     setSearchQuery('');
-    setTrailFilterIds(null);
   };
 
-  const crowdSubmissions = useMemo(
-    () => restaurants.filter((r) => !r.verified || r.submittedBy),
-    [restaurants]
-  );
-
   return (
-    <main className="relative h-[100dvh] w-full overflow-hidden bg-zinc-950 flex flex-col lg:flex-row font-sans">
-      {/* LEFT PANE: Editorial Discovery Feed (460px width on desktop) */}
+    <main className="relative h-[100dvh] w-full overflow-hidden bg-zinc-100 flex flex-col lg:flex-row font-sans">
+      {/* LEFT PANE: Clean Editorial Discovery Feed */}
       <div
-        className={`h-full w-full lg:w-[480px] lg:shrink-0 z-10 transition-all ${
+        className={`h-full w-full lg:w-[440px] lg:shrink-0 z-10 ${
           mobileTab === 'feed' ? 'block' : 'hidden lg:block'
         }`}
       >
@@ -293,28 +195,26 @@ export default function Home() {
           onSearchChange={setSearchQuery}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
-          selectedNeighborhoods={selectedNeighborhoods}
+          selectedNeighborhood={selectedNeighborhood}
           onSelectNeighborhood={(n) => {
-            if (n === 'All') {
-              setSelectedNeighborhoods([]);
-            } else {
-              setSelectedNeighborhoods([n]);
-              // Pan map to that district
-              const match = DISTRICT_COORDINATES.find((d) => d.name.toLowerCase().includes(n.toLowerCase()));
+            setSelectedNeighborhood(n);
+            if (n !== 'All') {
+              const match = DISTRICT_COORDINATES.find((d) =>
+                d.name.toLowerCase().includes(n.toLowerCase())
+              );
               if (match) setTargetDistrict(match);
             }
           }}
           vegOnly={vegOnly}
           onToggleVegOnly={setVegOnly}
-          sortBy={sortBy}
-          onSelectSortBy={setSortBy}
+          showSavedOnly={showSavedOnly}
+          onToggleSavedOnly={setShowSavedOnly}
+          savedCount={bookmarkedIds.size}
           onOpenSubmitModal={() => setIsSubmitOpen(true)}
-          onOpenStoriesDrawer={() => setIsStoriesOpen(true)}
-          onOpenFilterDrawer={() => setIsFilterOpen(true)}
           onResetFilters={resetAllFilters}
           activeFilterCount={activeFilterCount}
-          onUpvote={handleUpvote}
-          userUpvotes={userUpvotes}
+          onToggleBookmark={handleToggleBookmark}
+          bookmarkedIds={bookmarkedIds}
         />
       </div>
 
@@ -324,20 +224,17 @@ export default function Home() {
           mobileTab === 'map' ? 'block' : 'hidden lg:block'
         }`}
       >
-        {/* Floating Top District Jumper Ribbon */}
-        <div className="pointer-events-none absolute inset-x-0 top-4 z-[1000] px-4 flex justify-end">
-          <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-2xl border border-zinc-200/80 bg-white/90 p-1.5 shadow-lg backdrop-blur-md max-w-full">
-            <span className="px-2 text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 shrink-0 hidden sm:inline">
-              Fly To District
-            </span>
+        {/* Clean District Jumper Top Bar */}
+        <div className="pointer-events-none absolute inset-x-0 top-3 z-[1000] px-4 flex justify-end">
+          <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-full border border-zinc-200/90 bg-white/95 px-2.5 py-1.5 shadow-sm backdrop-blur-md">
             {DISTRICT_COORDINATES.map((dist) => (
               <button
                 key={dist.name}
                 onClick={() => setTargetDistrict(dist)}
-                className={`shrink-0 rounded-xl px-2.5 py-1 text-xs font-semibold transition-all ${
+                className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium transition-all ${
                   targetDistrict?.name === dist.name
-                    ? 'bg-zinc-950 text-white shadow-xs'
-                    : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
+                    ? 'bg-zinc-900 text-white shadow-xs'
+                    : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
                 }`}
               >
                 {dist.name}
@@ -346,131 +243,59 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Trail Active Pill (if active) */}
-        {trailFilterIds && (
-          <div className="absolute top-20 left-1/2 -translate-x-1/2 z-[1000] flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50/95 px-4 py-1.5 text-xs font-semibold text-orange-950 shadow-lg backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-orange-600" />
-            <span>Active Food Trail Filter</span>
-            <button
-              onClick={() => setTrailFilterIds(null)}
-              className="ml-1 rounded-full p-0.5 hover:bg-orange-200 text-orange-800"
-            >
-              <X className="h-3.5 w-3.5" />
-            </button>
-          </div>
-        )}
-
-        {/* The Map */}
+        {/* Map Component */}
         <MapComponent
           restaurants={filteredRestaurants}
           selectedRestaurant={selectedRestaurant}
           hoveredRestaurantId={hoveredRestaurantId}
           onSelectRestaurant={(r) => setSelectedRestaurant(r)}
-          onUpvote={handleUpvote}
-          userUpvotes={userUpvotes}
+          onToggleBookmark={handleToggleBookmark}
+          bookmarkedIds={bookmarkedIds}
           targetDistrict={targetDistrict}
         />
-
-        {/* Floating Bottom Info Pill */}
-        <div className="pointer-events-none absolute bottom-4 right-4 z-[1000] hidden sm:flex items-center gap-2">
-          <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-zinc-200 bg-white/95 px-3.5 py-1.5 text-xs font-medium text-zinc-800 shadow-md backdrop-blur-md">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>
-              <b>{filteredRestaurants.length}</b> verified spots
-            </span>
-          </div>
-        </div>
       </div>
 
       {/* MOBILE BOTTOM NAVIGATION */}
-      <div className="lg:hidden shrink-0 border-t border-zinc-200 bg-white/95 p-2 backdrop-blur-md flex items-center justify-around z-[1100]">
+      <div className="lg:hidden shrink-0 border-t border-zinc-200 bg-white p-2 backdrop-blur-md flex items-center justify-around z-[1100]">
         <button
           onClick={() => setMobileTab('feed')}
-          className={`flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition-all ${
+          className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold transition-all ${
             mobileTab === 'feed'
-              ? 'bg-zinc-950 text-white shadow-xs'
+              ? 'bg-zinc-900 text-white'
               : 'text-zinc-500 hover:text-zinc-900'
           }`}
         >
           <LayoutList className="h-4 w-4" />
-          <span>Curated Feed ({filteredRestaurants.length})</span>
+          <span>Places ({filteredRestaurants.length})</span>
         </button>
         <button
           onClick={() => setMobileTab('map')}
-          className={`flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition-all ${
+          className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold transition-all ${
             mobileTab === 'map'
-              ? 'bg-zinc-950 text-white shadow-xs'
+              ? 'bg-zinc-900 text-white'
               : 'text-zinc-500 hover:text-zinc-900'
           }`}
         >
           <MapIcon className="h-4 w-4" />
-          <span>Spatial Map</span>
+          <span>Map View</span>
         </button>
       </div>
 
-      {/* Detail Dossier Sheet */}
+      {/* Detail Drawer */}
       {selectedRestaurant && (
         <RestaurantDrawer
           restaurant={selectedRestaurant}
           onClose={() => setSelectedRestaurant(null)}
-          onUpvote={handleUpvote}
-          isUpvoted={!!userUpvotes[selectedRestaurant.id]}
+          onToggleBookmark={handleToggleBookmark}
+          isBookmarked={bookmarkedIds.has(selectedRestaurant.id)}
         />
       )}
 
-      {/* Crowd-Sourcing Submit Modal */}
+      {/* Submit Modal */}
       <SubmitModal
         isOpen={isSubmitOpen}
         onClose={() => setIsSubmitOpen(false)}
         onSuccess={handleNewSubmission}
-      />
-
-      {/* Granular Filter Drawer */}
-      <FilterDrawer
-        isOpen={isFilterOpen}
-        onClose={() => setIsFilterOpen(false)}
-        selectedNeighborhoods={selectedNeighborhoods}
-        onToggleNeighborhood={(n) =>
-          setSelectedNeighborhoods((prev) =>
-            prev.includes(n) ? prev.filter((item) => item !== n) : [...prev, n]
-          )
-        }
-        selectedPriceLevels={selectedPriceLevels}
-        onTogglePriceLevel={(p) =>
-          setSelectedPriceLevels((prev) =>
-            prev.includes(p) ? prev.filter((item) => item !== p) : [...prev, p]
-          )
-        }
-        selectedVibes={selectedVibes}
-        onToggleVibe={(v) =>
-          setSelectedVibes((prev) =>
-            prev.includes(v) ? prev.filter((item) => item !== v) : [...prev, v]
-          )
-        }
-        vegOnly={vegOnly}
-        onToggleVegOnly={setVegOnly}
-        sortBy={sortBy}
-        onSelectSortBy={setSortBy}
-        onResetFilters={resetAllFilters}
-        totalFilteredCount={filteredRestaurants.length}
-      />
-
-      {/* Food Stories / Trails Drawer */}
-      <FoodStoriesDrawer
-        isOpen={isStoriesOpen}
-        onClose={() => setIsStoriesOpen(false)}
-        onApplyTrailFilter={(ids) => setTrailFilterIds(ids)}
-        restaurants={restaurants}
-      />
-
-      {/* Community Submissions Queue Drawer */}
-      <SubmissionsDrawer
-        isOpen={isSubmissionsOpen}
-        onClose={() => setIsSubmissionsOpen(false)}
-        submissions={crowdSubmissions}
-        onSelectRestaurant={(r) => setSelectedRestaurant(r)}
-        onUpvote={handleUpvote}
-        userUpvotes={userUpvotes}
       />
     </main>
   );

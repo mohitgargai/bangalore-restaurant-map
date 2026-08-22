@@ -11,8 +11,8 @@ export type Category =
 
 export const ALL_CATEGORIES: Category[] = [
   'Iconic Heritage',
-  'Microbrewery',
   'Specialty Coffee & Cafe',
+  'Microbrewery',
   'Pan-Asian & Japanese',
   'Bakeries & Desserts',
   'Cocktails & Rooftops',
@@ -111,8 +111,6 @@ export interface Restaurant {
   instagramUrl?: string;
   websiteUrl?: string;
   timings: string;
-  upvotes: number;
-  featured?: boolean;
   curatorNote?: string;
   isVegetarian?: boolean;
   verified: boolean;
@@ -129,7 +127,7 @@ export interface SubmissionForm {
   lng?: number;
   priceLevel: PriceLevel;
   priceForTwo: string;
-  mustTry: string; // comma-separated
+  mustTry: string;
   vibeTags: VibeTag[];
   imageUrl?: string;
   googleMapsUrl: string;
