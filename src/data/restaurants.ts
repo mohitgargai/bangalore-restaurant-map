@@ -1,7 +1,7 @@
 import { Restaurant } from '@/types';
 
 export const INITIAL_RESTAURANTS: Restaurant[] = [
-  // 1. Vidyarthi Bhavan
+  // 1. Vidyarthi Bhavan (Exact Basavanagudi Coords)
   {
     id: 'vidyarthi-bhavan',
     name: 'Vidyarthi Bhavan',
@@ -11,8 +11,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Basavanagudi',
     address: '32, Gandhi Bazaar Main Rd, Basavanagudi, Bengaluru, Karnataka 560004',
-    lat: 12.9452,
-    lng: 77.5739,
+    lat: 12.938165,
+    lng: 77.573212,
     priceLevel: '₹',
     priceForTwo: '₹250',
     mustTry: ['Crispy Masala Dosa', 'Filter Coffee', 'Kesari Bath', 'Poori Saagu'],
@@ -26,7 +26,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 2. Central Tiffin Room (CTR / Shri Sagar)
+  // 2. Central Tiffin Room (CTR / Shri Sagar - Exact Margosa Road Coords)
   {
     id: 'ctr-shri-sagar',
     name: 'CTR (Shri Sagar)',
@@ -36,8 +36,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Malleshwaram',
     address: '7th Cross Rd, Margosa Rd, Malleshwaram, Bengaluru, Karnataka 560003',
-    lat: 12.9984,
-    lng: 77.5707,
+    lat: 12.998492,
+    lng: 77.570776,
     priceLevel: '₹',
     priceForTwo: '₹200',
     mustTry: ['Benne Masala Dosa', 'Mangalore Bajji', 'Filter Coffee', 'Khara Bath'],
@@ -51,7 +51,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 3. Toit Brewpub
+  // 3. Toit Brewpub (Exact 100ft Indiranagar Coords)
   {
     id: 'toit-brewpub',
     name: 'Toit Brewpub',
@@ -61,8 +61,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Microbrewery',
     neighborhood: 'Indiranagar',
     address: '298, 100 Feet Rd, Near KFC Signal, Indiranagar, Bengaluru, Karnataka 560038',
-    lat: 12.9791,
-    lng: 77.6406,
+    lat: 12.979145,
+    lng: 77.640621,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,800',
     mustTry: ['Tint-in-Wit (Belgian Wit)', 'Colonial Toit (IPA)', 'Woodfired Pepperoni Pizza', 'Baked Nachos'],
@@ -74,11 +74,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     timings: '12:00 PM – 1:00 AM',
     upvotes: 412,
     featured: true,
-    curatorNote: 'Bangalore craft brewing royalty. Book in advance on weekends or grab an afternoon pint for pleasant brewery sunlight.',
+    curatorNote: 'Bangalore craft brewing royalty. Colonial Toit IPA paired with the garlic sourdough loaf is unmatched.',
     isVegetarian: false,
     verified: true,
   },
-  // 4. Mavalli Tiffin Room (MTR)
+  // 4. Mavalli Tiffin Room (MTR Lalbagh - Exact Coords)
   {
     id: 'mtr-lalbagh',
     name: 'Mavalli Tiffin Room (MTR)',
@@ -88,8 +88,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Basavanagudi',
     address: '14, Lal Bagh Main Rd, Doddamavalli, Sudhama Nagar, Bengaluru, Karnataka 560027',
-    lat: 12.9554,
-    lng: 77.5861,
+    lat: 12.955434,
+    lng: 77.586111,
     priceLevel: '₹₹',
     priceForTwo: '₹400',
     mustTry: ['Rava Idli with Ghee', 'Chandrahara Dessert', 'Masala Dosa', 'Silver Cup Filter Coffee'],
@@ -103,7 +103,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 5. Araku Coffee
+  // 5. Araku Coffee (Exact Indiranagar 12th Main Coords)
   {
     id: 'araku-coffee',
     name: 'Araku Coffee',
@@ -113,8 +113,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Specialty Coffee & Cafe',
     neighborhood: 'Indiranagar',
     address: '968, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008',
-    lat: 12.9719,
-    lng: 77.6412,
+    lat: 12.971932,
+    lng: 77.641215,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,200',
     mustTry: ['Signature Modbar Pour-over', 'Nitro Cold Brew', 'Tiramisu Brioche', 'Mushroom Croissant'],
@@ -130,7 +130,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 6. Windmills Craftworks
+  // 6. Windmills Craftworks (Exact Whitefield EPIP Coords)
   {
     id: 'windmills-craftworks',
     name: 'Windmills Craftworks',
@@ -140,8 +140,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Microbrewery',
     neighborhood: 'Whitefield',
     address: '331, Road 5B, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066',
-    lat: 12.9818,
-    lng: 77.7291,
+    lat: 12.981822,
+    lng: 77.729134,
     priceLevel: '₹₹₹₹',
     priceForTwo: '₹2,500',
     mustTry: ['Coconut Brown Ale', 'Hefeweizen', 'Galouti Kebab', 'Bacon-wrapped Prawns'],
@@ -156,7 +156,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 7. Burma Burma Restaurant & Tea Room
+  // 7. Burma Burma (Exact Indiranagar 12th Main Coords)
   {
     id: 'burma-burma',
     name: 'Burma Burma',
@@ -166,8 +166,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Pan-Asian & Japanese',
     neighborhood: 'Indiranagar',
     address: '607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038',
-    lat: 12.9734,
-    lng: 77.6409,
+    lat: 12.973412,
+    lng: 77.640945,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,500',
     mustTry: ['Oh No Khow Suey', 'Tea Leaf Salad (Laphet Thoke)', 'Tofu Tots', 'Lotus Biscoff Ice Cream'],
@@ -182,7 +182,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 8. Nagarjuna Chimney
+  // 8. Nagarjuna Chimney (Exact Residency Road Coords)
   {
     id: 'nagarjuna-residency-road',
     name: 'Nagarjuna',
@@ -192,8 +192,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Regional & Coastal',
     neighborhood: 'Church Street & MG Road',
     address: '44/1, Residency Rd, Near Galaxy Theatre, Shanthala Nagar, Bengaluru, Karnataka 560025',
-    lat: 12.9716,
-    lng: 77.6087,
+    lat: 12.971630,
+    lng: 77.608720,
     priceLevel: '₹₹',
     priceForTwo: '₹800',
     mustTry: ['Andhra Banana Leaf Meals', 'Nagarjuna Chilli Chicken', 'Mutton Biryani', 'Gongura Mutton'],
@@ -207,7 +207,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 9. Brahmins\' Coffee Bar
+  // 9. Brahmins\' Coffee Bar (Exact Shankarapuram Coords)
   {
     id: 'brahmins-coffee-bar',
     name: "Brahmins' Coffee Bar",
@@ -217,8 +217,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Basavanagudi',
     address: 'Near Shankar Math, Ranga Rao Rd, Shankarapura, Bengaluru, Karnataka 560004',
-    lat: 12.9542,
-    lng: 77.5689,
+    lat: 12.954201,
+    lng: 77.568912,
     priceLevel: '₹',
     priceForTwo: '₹150',
     mustTry: ['Steamed Idli-Vada combo', 'Khara Bath', 'Kesari Bath', 'Filter Coffee'],
@@ -232,7 +232,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 10. Pecos Classic
+  // 10. Pecos Classic (Exact Rest House Road Coords)
   {
     id: 'pecos-rest-house-road',
     name: 'Pecos Classic',
@@ -242,8 +242,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Cocktails & Rooftops',
     neighborhood: 'Church Street & MG Road',
     address: '34, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001',
-    lat: 12.9737,
-    lng: 77.6074,
+    lat: 12.973715,
+    lng: 77.607420,
     priceLevel: '₹₹',
     priceForTwo: '₹900',
     mustTry: ['Chilled Draught Beer Pitcher', 'Pecos Chilli Pork', 'Dosa with Mutton Curry', 'Bacon Sausages'],
@@ -257,7 +257,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 11. The Fatty Bao
+  // 11. The Fatty Bao (Exact Indiranagar 12th Main Coords)
   {
     id: 'fatty-bao-indiranagar',
     name: 'The Fatty Bao',
@@ -267,8 +267,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Pan-Asian & Japanese',
     neighborhood: 'Indiranagar',
     address: '610, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008',
-    lat: 12.9727,
-    lng: 77.6409,
+    lat: 12.972715,
+    lng: 77.640920,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,900',
     mustTry: ['Char Siu Pork Bao', 'Brie & Truffle Bao', 'Chasu Ramen', 'Wasabi Prawns'],
@@ -283,7 +283,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 12. Lupa
+  // 12. Lupa by Manu Chandra (Exact MG Road Coords)
   {
     id: 'lupa-mg-road',
     name: 'Lupa by Manu Chandra',
@@ -293,8 +293,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Modern Indian & Dining',
     neighborhood: 'Church Street & MG Road',
     address: '86, Spencer’s Building, Mahatma Gandhi Rd, Haridevpur, Bengaluru, Karnataka 560001',
-    lat: 12.9749,
-    lng: 77.6094,
+    lat: 12.974912,
+    lng: 77.609430,
     priceLevel: '₹₹₹₹',
     priceForTwo: '₹3,500',
     mustTry: ['Handmade Cacio e Pepe', 'Porchetta Sandwich', 'Tenderloin Carpaccio', '24-Layer Chocolate Cake'],
@@ -309,7 +309,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 13. Sourdough & Co / Paper & Pie
+  // 13. Paper & Pie (Exact 100ft Road Coords)
   {
     id: 'paper-and-pie-indiranagar',
     name: 'Paper & Pie',
@@ -319,8 +319,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Specialty Coffee & Cafe',
     neighborhood: 'Indiranagar',
     address: 'Metro Pillar 55, 100 Feet Rd, Indiranagar, Bengaluru, Karnataka 560038',
-    lat: 12.9785,
-    lng: 77.6415,
+    lat: 12.978512,
+    lng: 77.641520,
     priceLevel: '₹₹',
     priceForTwo: '₹900',
     mustTry: ['Signature Cold Brew', 'Avocado Sourdough Tartine', 'Apple Crumble Pie', 'Matcha Latte'],
@@ -335,7 +335,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 14. Glen\'s Bakehouse
+  // 14. Glen\'s Bakehouse (Exact Lavelle Road Coords)
   {
     id: 'glens-bakehouse-lavelle',
     name: "Glen's Bakehouse",
@@ -345,8 +345,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Bakeries & Desserts',
     neighborhood: 'Lavelle Road',
     address: 'Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001',
-    lat: 12.9698,
-    lng: 77.5997,
+    lat: 12.969820,
+    lng: 77.599710,
     priceLevel: '₹₹',
     priceForTwo: '₹750',
     mustTry: ['Red Velvet Cupcakes', 'Roast Chicken Pot Pie', 'Blueberry Cheesecake', 'Hot Chocolate'],
@@ -360,7 +360,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 15. Byg Brewski Brewing Company
+  // 15. Byg Brewski Brewing Company (Exact Hennur Coords)
   {
     id: 'byg-brewski-hennur',
     name: 'Byg Brewski Brewing Company',
@@ -370,8 +370,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Microbrewery',
     neighborhood: 'Bel Road & North BLR',
     address: 'Hennur Bagalur Main Rd, Byrathi Village, Bengaluru, Karnataka 560077',
-    lat: 13.0612,
-    lng: 77.6521,
+    lat: 13.061224,
+    lng: 77.652132,
     priceLevel: '₹₹₹',
     priceForTwo: '₹2,000',
     mustTry: ['Byg Wit', 'Smoked Dunkelweizen', 'Pork Ribs', 'Woodfired Truffle Pizza'],
@@ -386,7 +386,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 16. Veena Stores
+  // 16. Veena Stores (Exact Malleshwaram Margosa Rd Coords)
   {
     id: 'veena-stores-malleshwaram',
     name: 'Veena Stores',
@@ -396,8 +396,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Malleshwaram',
     address: '183, Margosa Rd, Malleshwaram, Bengaluru, Karnataka 560003',
-    lat: 13.0039,
-    lng: 77.5701,
+    lat: 13.003920,
+    lng: 77.570135,
     priceLevel: '₹',
     priceForTwo: '₹120',
     mustTry: ['Steamed Idli with Pudina Chutney', 'Uddina Vada', 'Khara Bath', 'Shavige Bath'],
@@ -411,7 +411,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 17. Chinita Real Mexican Food
+  // 17. Chinita Real Mexican Food (Exact Indiranagar Coords)
   {
     id: 'chinita-indiranagar',
     name: 'Chinita Real Mexican Food',
@@ -421,8 +421,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Modern Indian & Dining',
     neighborhood: 'Indiranagar',
     address: '2186, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038',
-    lat: 12.9664,
-    lng: 77.6401,
+    lat: 12.966420,
+    lng: 77.640130,
     priceLevel: '₹₹',
     priceForTwo: '₹1,100',
     mustTry: ['Pork Carnitas Tacos', 'Grilled Quesadillas', 'Churros with Dulce de Leche', 'House Margaritas'],
@@ -437,7 +437,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 18. Toast & Tonic
+  // 18. Toast & Tonic (Exact Wood Street Richmond Town Coords)
   {
     id: 'toast-and-tonic-richmond',
     name: 'Toast & Tonic',
@@ -447,8 +447,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Cocktails & Rooftops',
     neighborhood: 'CBD & Central',
     address: '14/1, Wood St, Richmond Town, Ashok Nagar, Bengaluru, Karnataka 560025',
-    lat: 12.9659,
-    lng: 77.6083,
+    lat: 12.965930,
+    lng: 77.608310,
     priceLevel: '₹₹₹',
     priceForTwo: '₹2,200',
     mustTry: ['Botanist Gin & Tonic', 'Mustard Glazed Pork Ribs', 'Soft Shell Crab', 'Ravioli of Sweet Potato'],
@@ -463,7 +463,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 19. VV Puram Food Street (Thindi Beedi)
+  // 19. VV Puram Food Street (Exact Sajjan Rao Circle Coords)
   {
     id: 'vv-puram-food-street',
     name: 'VV Puram Food Street',
@@ -472,9 +472,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     description: 'A bustling pedestrian lane packed with live griddles serving Paddus, Akki Roti, Floating Golgappas, Butter Dosa, and seasonal Avarekai delicacies.',
     category: 'Street Food & Chaat',
     neighborhood: 'Basavanagudi',
-    address: 'Old Tharagupet, Mamulpet, Chickpet, Bengaluru, Karnataka 560053',
-    lat: 12.9511,
-    lng: 77.5779,
+    address: 'Old Tharagupet, Sajjan Rao Circle, VV Puram, Bengaluru, Karnataka 560004',
+    lat: 12.951120,
+    lng: 77.577930,
     priceLevel: '₹',
     priceForTwo: '₹300',
     mustTry: ['Hot Paddus with Coconut Chutney', 'Akki Roti with Ennegayi', 'Dosa Camp Ghee Roast', 'Gulkand with Ice Cream'],
@@ -488,7 +488,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 20. Blue Tokai Coffee Roasters (Koramangala 4th Block)
+  // 20. Blue Tokai Coffee Roasters (Exact Koramangala 80ft Rd Coords)
   {
     id: 'blue-tokai-koramangala',
     name: 'Blue Tokai Coffee Roasters',
@@ -498,8 +498,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Specialty Coffee & Cafe',
     neighborhood: 'Koramangala',
     address: '583, 80 Feet Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034',
-    lat: 12.9341,
-    lng: 77.6256,
+    lat: 12.934145,
+    lng: 77.625612,
     priceLevel: '₹₹',
     priceForTwo: '₹700',
     mustTry: ['Iced Pour Over (Attikan Estate)', 'Vietnamese Cold Brew', 'Almond Croissant', 'Avocado Toast'],
@@ -513,7 +513,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 21. Arbor Brewing Company (ABC)
+  // 21. Arbor Brewing Company (Exact Magrath Rd Coords)
   {
     id: 'arbor-brewing-company',
     name: 'Arbor Brewing Company',
@@ -523,8 +523,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Microbrewery',
     neighborhood: 'Church Street & MG Road',
     address: '8, 3rd Floor, Allied Grande Plaza, Magrath Rd, Ashok Nagar, Bengaluru, Karnataka 560025',
-    lat: 12.9721,
-    lng: 77.6099,
+    lat: 12.972103,
+    lng: 77.609915,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,800',
     mustTry: ['Bangalore Bliss (Hefeweizen)', 'Raging Elephant (IPA)', 'BBQ Pork Ribs', 'Spicy Artichoke Dip'],
@@ -538,7 +538,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 22. Bengaluru Oota Company
+  // 22. Bengaluru Oota Company (Exact Cambridge Layout Coords)
   {
     id: 'bengaluru-oota-company',
     name: 'Bengaluru Oota Company',
@@ -548,8 +548,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Regional & Coastal',
     neighborhood: 'CBD & Central',
     address: '5, Cambridge Rd, Cambridge Layout, Jogupalya, Bengaluru, Karnataka 560008',
-    lat: 12.9702,
-    lng: 77.6291,
+    lat: 12.970230,
+    lng: 77.629120,
     priceLevel: '₹₹₹₹',
     priceForTwo: '₹3,000',
     mustTry: ['Mangalorean Crab Curry', 'Gowda Mutton Fry', 'Neer Dosa with Kori Gassi', 'Elaneer Payasam'],
@@ -563,7 +563,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 23. Third Wave Coffee Roasters (HSR Layout)
+  // 23. Third Wave Coffee (Exact HSR Sector 4 Coords)
   {
     id: 'third-wave-coffee-hsr',
     name: 'Third Wave Coffee',
@@ -573,8 +573,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Specialty Coffee & Cafe',
     neighborhood: 'HSR Layout',
     address: '17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102',
-    lat: 12.9118,
-    lng: 77.6385,
+    lat: 12.911845,
+    lng: 77.638520,
     priceLevel: '₹₹',
     priceForTwo: '₹650',
     mustTry: ['Sea Salt Mocha', 'Cold Fashioned', 'Everything Bagel with Cream Cheese', 'Hummus Sourdough Platter'],
@@ -588,7 +588,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 24. Geist Brewing Taproom (Rajajinagar / Orion)
+  // 24. Geist Brewing Taproom (Exact Brigade Gateway Orion Coords)
   {
     id: 'geist-brewing-taproom',
     name: 'Geist Brewing Taproom',
@@ -598,8 +598,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Microbrewery',
     neighborhood: 'Malleshwaram',
     address: 'Brigade Gateway, 26/1, Dr Rajkumar Rd, Malleshwaram, Bengaluru, Karnataka 560055',
-    lat: 13.0116,
-    lng: 77.5552,
+    lat: 13.011645,
+    lng: 77.555230,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,700',
     mustTry: ['Kamacitra (NEIPA)', 'Uncle Dunkel (Dark Wheat)', 'Geist Witty Gourmet Pizza', 'Smoked Sausages'],
@@ -613,7 +613,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 25. Taaza Thindi
+  // 25. Taaza Thindi (Exact Jayanagar 4th Block Coords)
   {
     id: 'taaza-thindi-jayanagar',
     name: 'Taaza Thindi',
@@ -623,8 +623,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Iconic Heritage',
     neighborhood: 'Jayanagar',
     address: '1004, 26th Main Rd, 4th T Block East, Jayanagar, Bengaluru, Karnataka 560041',
-    lat: 12.9238,
-    lng: 77.5934,
+    lat: 12.923831,
+    lng: 77.593444,
     priceLevel: '₹',
     priceForTwo: '₹120',
     mustTry: ['Masala Dosa', 'Vada with Coconut Chutney', 'Khara Bath & Kesari Bath (Chow Chow Bath)', 'Filter Coffee'],
@@ -638,7 +638,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 26. Daily Sushi
+  // 26. Daily Sushi (Exact 12th Main Indiranagar Coords)
   {
     id: 'daily-sushi-indiranagar',
     name: 'Daily Sushi',
@@ -648,8 +648,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Pan-Asian & Japanese',
     neighborhood: 'Indiranagar',
     address: '12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038',
-    lat: 12.9705,
-    lng: 77.6402,
+    lat: 12.970512,
+    lng: 77.640230,
     priceLevel: '₹₹₹',
     priceForTwo: '₹1,600',
     mustTry: ['Spicy Salmon Maki Roll', 'Prawn Tempura Roll', 'Truffle Edamame Gyoza', 'Chicken Katsu Curry'],
@@ -663,7 +663,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 27. Sriracha & Sanchez
+  // 27. Sriracha & Sanchez (Exact UB City Coords)
   {
     id: 'sriracha-ub-city',
     name: 'Sriracha & Sanchez',
@@ -673,8 +673,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Modern Indian & Dining',
     neighborhood: 'Lavelle Road',
     address: '2nd Floor, UB City, 24, Vittal Mallya Rd, Bengaluru, Karnataka 560001',
-    lat: 12.9719,
-    lng: 77.5959,
+    lat: 12.971910,
+    lng: 77.595920,
     priceLevel: '₹₹₹₹',
     priceForTwo: '₹2,600',
     mustTry: ['Tableside Fresh Guacamole', 'Som Tum Papaya Salad', 'Wild Mushroom Dim Sum', 'Tres Leches'],
@@ -688,7 +688,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 28. Hari Super Sandwich
+  // 28. Hari Super Sandwich (Exact Jayanagar 3rd Block Coords)
   {
     id: 'hari-super-sandwich-jayanagar',
     name: 'Hari Super Sandwich',
@@ -698,8 +698,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     category: 'Street Food & Chaat',
     neighborhood: 'Jayanagar',
     address: '177/A-44, 22nd Cross, 3rd Block, Jayanagar, Bengaluru, Karnataka 560011',
-    lat: 12.9287,
-    lng: 77.5819,
+    lat: 12.928730,
+    lng: 77.581940,
     priceLevel: '₹',
     priceForTwo: '₹200',
     mustTry: ['Chocolate Grilled Sandwich', 'Dahi Puri Toast', 'Cheese Chilli Toast', 'American Sweet Corn Sandwich'],
@@ -712,52 +712,105 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     curatorNote: 'The Chocolate Cheese sandwich with chocolate sauce drizzle sounds quirky but tastes incredible.',
     isVegetarian: true,
     verified: true,
+  },
+  // 29. The Rameshwaram Cafe (Exact 12th Main Indiranagar Coords)
+  {
+    id: 'rameshwaram-cafe-indiranagar',
+    name: 'The Rameshwaram Cafe',
+    slug: 'rameshwaram-cafe-indiranagar',
+    tagline: 'Ghee-drenched podi tiffins & filter coffee with relentless energy',
+    description: 'High-octane South Indian quick service counter famous for swimming pools of desi ghee on crisp Podi Masala Dosa, Ghee Idli, and piping hot Ven Pongal.',
+    category: 'Iconic Heritage',
+    neighborhood: 'Indiranagar',
+    address: '2984, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008',
+    lat: 12.970624,
+    lng: 77.641830,
+    priceLevel: '₹₹',
+    priceForTwo: '₹350',
+    mustTry: ['Ghee Podi Masala Dosa', 'Ghee Podi Idli', 'Ven Pongal', 'Strong Filter Coffee'],
+    vibeTags: ['Pure Veg', 'Breakfast Spot', 'Late Night', 'Filter Coffee Spot'],
+    imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
+    googleMapsUrl: 'https://maps.app.goo.gl/3rX9Y2mQ',
+    timings: '6:30 AM – 1:00 AM',
+    upvotes: 430,
+    featured: true,
+    curatorNote: 'Open until 1 AM for post-midnight ghee podi cravings. The aroma of roasted ghee is unmistakable.',
+    isVegetarian: true,
+    verified: true,
+  },
+  // 30. Brik Oven (Exact Church Street Coords)
+  {
+    id: 'brik-oven-church-street',
+    name: 'Brik Oven',
+    slug: 'brik-oven-church-street',
+    tagline: 'Artisanal Neapolitan woodfired sourdough pizzas & big shakes',
+    description: 'The Church Street classic that started Bangalore’s authentic Neapolitan pizza wave, baked in a 400°C wood-fired oven with bubbly leopard crusts.',
+    category: 'Modern Indian & Dining',
+    neighborhood: 'Church Street & MG Road',
+    address: 'Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001',
+    lat: 12.974420,
+    lng: 77.605210,
+    priceLevel: '₹₹₹',
+    priceForTwo: '₹1,400',
+    mustTry: ['The Bird (Smoked Chicken Pizza)', 'Quattro Formaggi', 'Truffle Fries', 'Nutella S’mores Shake'],
+    vibeTags: ['Artisanal Sourdough', 'Romantic', 'Outdoor Seating'],
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80',
+    googleMapsUrl: 'https://maps.app.goo.gl/9rT8V1',
+    timings: '11:30 AM – 11:00 PM',
+    upvotes: 275,
+    featured: false,
+    curatorNote: 'Fermented for 48 hours for an airy, digestible crust. Pair with their house dip.',
+    isVegetarian: false,
+    verified: true,
+  },
+  // 31. Koshy\'s Parade Cafe (Exact St. Mark\'s Road Coords)
+  {
+    id: 'koshys-st-marks-road',
+    name: "Koshy's Parade Cafe",
+    slug: 'koshys-st-marks-road',
+    tagline: 'The intellectual, literary & political salon since 1952',
+    description: 'An irreplaceable Bengaluru institution where artists, journalists, historians, and prime ministers have sat under spinning ceiling fans over mutton cutlets and cold beer.',
+    category: 'Iconic Heritage',
+    neighborhood: 'Church Street & MG Road',
+    address: '39, St Marks Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001',
+    lat: 12.974850,
+    lng: 77.603120,
+    priceLevel: '₹₹',
+    priceForTwo: '₹900',
+    mustTry: ['Mutton Cutlets', 'Bacon & Sausage Omelette', 'Fish & Chips', 'Coffee with Cream'],
+    vibeTags: ['Heritage (Pre-1980)', 'Breakfast Spot', 'Live Music / Vinyl'],
+    imageUrl: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80',
+    googleMapsUrl: 'https://maps.app.goo.gl/8v3mL9',
+    timings: '9:00 AM – 11:00 PM',
+    upvotes: 310,
+    featured: true,
+    curatorNote: 'Sit in the non-AC Parade Cafe section on Sunday morning for roast chicken, appam, and lively chatter.',
+    isVegetarian: false,
+    verified: true,
+  },
+  // 32. Corner House Ice Cream (Exact Residency Road Coords)
+  {
+    id: 'corner-house-residency-road',
+    name: 'Corner House Ice Cream',
+    slug: 'corner-house-residency-road',
+    tagline: 'The birthplace of Death by Chocolate (DBC) since 1982',
+    description: 'The ultimate dessert institution in Bangalore. Generations of Bangaloreans celebrate victories and heartbreaks with the legendary hot fudge Death by Chocolate.',
+    category: 'Bakeries & Desserts',
+    neighborhood: 'Church Street & MG Road',
+    address: 'Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025',
+    lat: 12.972320,
+    lng: 77.607810,
+    priceLevel: '₹',
+    priceForTwo: '₹350',
+    mustTry: ['Death by Chocolate (DBC)', 'Hot Chocolate Fudge (HCF)', 'Trilogy', 'Almond Fudge'],
+    vibeTags: ['Pocket Friendly', 'Late Night', 'Heritage (Pre-1980)'],
+    imageUrl: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80',
+    googleMapsUrl: 'https://maps.app.goo.gl/9rT8V1',
+    timings: '11:00 AM – 11:30 PM',
+    upvotes: 420,
+    featured: true,
+    curatorNote: 'The hot fudge sauce is rich, dark, and poured boiling hot over vanilla ice cream and cake.',
+    isVegetarian: true,
+    verified: true,
   }
 ];
-
-export const ALL_CATEGORIES = [
-  'Iconic Heritage',
-  'Microbrewery',
-  'Specialty Coffee & Cafe',
-  'Pan-Asian & Japanese',
-  'Bakeries & Desserts',
-  'Cocktails & Rooftops',
-  'Regional & Coastal',
-  'Modern Indian & Dining',
-  'Street Food & Chaat',
-] as const;
-
-export const ALL_NEIGHBORHOODS = [
-  'Indiranagar',
-  'Koramangala',
-  'Church Street & MG Road',
-  'Lavelle Road',
-  'Malleshwaram',
-  'Basavanagudi',
-  'HSR Layout',
-  'Whitefield',
-  'JP Nagar',
-  'Jayanagar',
-  'CBD & Central',
-  'Sadashivanagar & Palace Grounds',
-  'Sarjapur Road',
-  'Bel Road & North BLR',
-] as const;
-
-export const ALL_VIBE_TAGS = [
-  'Work Friendly',
-  'Pet Friendly',
-  'Outdoor Seating',
-  'Rooftop',
-  'Romantic',
-  'Late Night',
-  'Pure Veg',
-  'Craft Beer',
-  'Filter Coffee Spot',
-  'Artisanal Sourdough',
-  'Pocket Friendly',
-  'Cocktail Program',
-  'Heritage (Pre-1980)',
-  'Breakfast Spot',
-  'Live Music / Vinyl',
-] as const;

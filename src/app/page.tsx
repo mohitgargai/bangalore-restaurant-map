@@ -10,37 +10,67 @@ import {
   VibeTag,
 } from '@/types';
 import { INITIAL_RESTAURANTS } from '@/data/restaurants';
-import Navbar from '@/components/Navbar';
-import GridView from '@/components/GridView';
+import EditorialDeck from '@/components/EditorialDeck';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
 import FilterDrawer, { SortOption } from '@/components/FilterDrawer';
 import FoodStoriesDrawer from '@/components/FoodStoriesDrawer';
 import SubmissionsDrawer from '@/components/SubmissionsDrawer';
-import { Sparkles, MapPin, X, Flame, ChevronRight } from 'lucide-react';
+import {
+  Sparkles,
+  MapPin,
+  X,
+  Compass,
+  Layers,
+  Locate,
+  LayoutList,
+  Map as MapIcon,
+  Maximize2,
+} from 'lucide-react';
 
 // Dynamic import for Leaflet Map to avoid SSR errors
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
   loading: () => (
-    <div className="flex h-full w-full items-center justify-center bg-zinc-50">
+    <div className="flex h-full w-full items-center justify-center bg-zinc-900 text-white">
       <div className="flex flex-col items-center gap-3">
-        <div className="h-10 w-10 animate-spin rounded-full border-4 border-orange-500 border-t-transparent"></div>
-        <p className="text-xs font-semibold text-zinc-500 tracking-wide uppercase">
-          Loading Bengaluru Food Map…
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-orange-500 border-t-transparent"></div>
+        <p className="text-xs font-mono font-semibold tracking-widest text-zinc-400 uppercase">
+          Initializing Spatial Canvas…
         </p>
       </div>
     </div>
   ),
 });
 
+const DISTRICT_COORDINATES = [
+  { name: 'All BLR', lat: 12.9716, lng: 77.5946, zoom: 12 },
+  { name: 'Indiranagar', lat: 12.9734, lng: 77.6409, zoom: 15 },
+  { name: 'Church St / CBD', lat: 12.9737, lng: 77.6074, zoom: 15 },
+  { name: 'Malleshwaram', lat: 12.9985, lng: 77.5708, zoom: 15 },
+  { name: 'Basavanagudi', lat: 12.9455, lng: 77.5739, zoom: 15 },
+  { name: 'Koramangala', lat: 12.9341, lng: 77.6256, zoom: 15 },
+  { name: 'HSR Layout', lat: 12.9118, lng: 77.6385, zoom: 15 },
+  { name: 'Whitefield', lat: 12.9818, lng: 77.7291, zoom: 15 },
+  { name: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
+];
+
 export default function Home() {
   // Master restaurant dataset
   const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
+  const [hoveredRestaurantId, setHoveredRestaurantId] = useState<string | null>(null);
 
-  // View state
-  const [viewMode, setViewMode] = useState<'map' | 'grid'>('map');
+  // Active district fly-to
+  const [targetDistrict, setTargetDistrict] = useState<{
+    name: string;
+    lat: number;
+    lng: number;
+    zoom: number;
+  } | null>(null);
+
+  // Mobile View Switcher (Feed vs Map)
+  const [mobileTab, setMobileTab] = useState<'feed' | 'map'>('feed');
 
   // Filters state
   const [searchQuery, setSearchQuery] = useState('');
@@ -60,7 +90,6 @@ export default function Home() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isStoriesOpen, setIsStoriesOpen] = useState(false);
   const [isSubmissionsOpen, setIsSubmissionsOpen] = useState(false);
-  const [showNewsTicker, setShowNewsTicker] = useState(true);
 
   // Load upvotes from localStorage on client
   useEffect(() => {
@@ -71,7 +100,7 @@ export default function Home() {
       }
     } catch (e) {}
 
-    // Fetch latest restaurants from API (including any server-side submissions)
+    // Fetch latest restaurants from API
     fetch('/api/restaurants')
       .then((res) => res.json())
       .then((data) => {
@@ -241,132 +270,145 @@ export default function Home() {
   );
 
   return (
-    <main className="relative h-[100dvh] w-full overflow-hidden bg-zinc-100 font-sans">
-      {/* Floating Modern Header / Filter Bar */}
-      <Navbar
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-        viewMode={viewMode}
-        onToggleView={setViewMode}
-        onOpenSubmitModal={() => setIsSubmitOpen(true)}
-        onOpenFilterDrawer={() => setIsFilterOpen(true)}
-        onOpenStoriesDrawer={() => setIsStoriesOpen(true)}
-        onOpenSubmissionsDrawer={() => setIsSubmissionsOpen(true)}
-        activeFilterCount={activeFilterCount}
-        totalResults={filteredRestaurants.length}
-        pendingSubmissionsCount={crowdSubmissions.length}
-      />
-
-      {/* Trail active banner */}
-      {trailFilterIds && (
-        <div className="absolute top-28 left-1/2 -translate-x-1/2 z-[1000] flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50/95 px-4 py-1.5 text-xs font-semibold text-orange-900 shadow-md backdrop-blur-md">
-          <Sparkles className="h-3.5 w-3.5 text-orange-600" />
-          <span>Active Food Trail Filter</span>
-          <button
-            onClick={() => setTrailFilterIds(null)}
-            className="ml-1 rounded-full p-0.5 hover:bg-orange-200 text-orange-800"
-          >
-            <X className="h-3.5 w-3.5" />
-          </button>
-        </div>
-      )}
-
-      {/* Main View: Map or Grid */}
-      <div className="h-full w-full">
-        {viewMode === 'map' ? (
-          <MapComponent
-            restaurants={filteredRestaurants}
-            selectedRestaurant={selectedRestaurant}
-            onSelectRestaurant={(r) => setSelectedRestaurant(r)}
-            onUpvote={handleUpvote}
-            userUpvotes={userUpvotes}
-          />
-        ) : (
-          <div className="h-full w-full overflow-y-auto">
-            <GridView
-              restaurants={filteredRestaurants}
-              onSelectRestaurant={(r) => setSelectedRestaurant(r)}
-              onUpvote={handleUpvote}
-              userUpvotes={userUpvotes}
-              onViewOnMap={(r) => {
-                setSelectedRestaurant(r);
-                setViewMode('map');
-              }}
-            />
-          </div>
-        )}
+    <main className="relative h-[100dvh] w-full overflow-hidden bg-zinc-950 flex flex-col lg:flex-row font-sans">
+      {/* LEFT PANE: Editorial Discovery Feed (460px width on desktop) */}
+      <div
+        className={`h-full w-full lg:w-[480px] lg:shrink-0 z-10 transition-all ${
+          mobileTab === 'feed' ? 'block' : 'hidden lg:block'
+        }`}
+      >
+        <EditorialDeck
+          restaurants={filteredRestaurants}
+          totalUnfilteredCount={restaurants.length}
+          selectedRestaurant={selectedRestaurant}
+          onSelectRestaurant={(r) => {
+            setSelectedRestaurant(r);
+            if (window.innerWidth < 1024) {
+              setMobileTab('map');
+            }
+          }}
+          hoveredRestaurantId={hoveredRestaurantId}
+          onHoverRestaurant={setHoveredRestaurantId}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          selectedCategory={selectedCategory}
+          onSelectCategory={setSelectedCategory}
+          selectedNeighborhoods={selectedNeighborhoods}
+          onSelectNeighborhood={(n) => {
+            if (n === 'All') {
+              setSelectedNeighborhoods([]);
+            } else {
+              setSelectedNeighborhoods([n]);
+              // Pan map to that district
+              const match = DISTRICT_COORDINATES.find((d) => d.name.toLowerCase().includes(n.toLowerCase()));
+              if (match) setTargetDistrict(match);
+            }
+          }}
+          vegOnly={vegOnly}
+          onToggleVegOnly={setVegOnly}
+          sortBy={sortBy}
+          onSelectSortBy={setSortBy}
+          onOpenSubmitModal={() => setIsSubmitOpen(true)}
+          onOpenStoriesDrawer={() => setIsStoriesOpen(true)}
+          onOpenFilterDrawer={() => setIsFilterOpen(true)}
+          onResetFilters={resetAllFilters}
+          activeFilterCount={activeFilterCount}
+          onUpvote={handleUpvote}
+          userUpvotes={userUpvotes}
+        />
       </div>
 
-      {/* Floating Bottom Left Results Badge */}
-      <div className="pointer-events-none absolute bottom-4 left-4 z-[1000] hidden sm:flex items-center gap-2">
-        <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-zinc-200/80 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-zinc-700 shadow-lg backdrop-blur-md">
-          <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>
-            <b>{filteredRestaurants.length}</b> spots in Bangalore
-          </span>
-        </div>
-        {activeFilterCount > 0 && (
-          <button
-            onClick={resetAllFilters}
-            className="pointer-events-auto rounded-full border border-zinc-200 bg-white/90 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:text-zinc-900 shadow-lg backdrop-blur-md transition-colors"
-          >
-            Clear filters
-          </button>
-        )}
-      </div>
-
-      {/* Floating Clean News / Bangalore Bites Mini-Card (Top Right) */}
-      {showNewsTicker && (
-        <div className="pointer-events-none absolute right-4 top-28 z-[1000] hidden lg:block w-72">
-          <div className="pointer-events-auto rounded-2xl border border-zinc-200/90 bg-white/95 p-3.5 shadow-xl backdrop-blur-md transition-all">
-            <div className="flex items-center justify-between border-b border-zinc-100 pb-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-orange-600">
-                <Flame className="h-3.5 w-3.5" />
-                <span>Bangalore Food Bites</span>
-              </div>
+      {/* RIGHT PANE: Spatial Map Viewport */}
+      <div
+        className={`relative flex-1 h-full w-full ${
+          mobileTab === 'map' ? 'block' : 'hidden lg:block'
+        }`}
+      >
+        {/* Floating Top District Jumper Ribbon */}
+        <div className="pointer-events-none absolute inset-x-0 top-4 z-[1000] px-4 flex justify-end">
+          <div className="pointer-events-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-2xl border border-zinc-200/80 bg-white/90 p-1.5 shadow-lg backdrop-blur-md max-w-full">
+            <span className="px-2 text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 shrink-0 hidden sm:inline">
+              Fly To District
+            </span>
+            {DISTRICT_COORDINATES.map((dist) => (
               <button
-                onClick={() => setShowNewsTicker(false)}
-                className="rounded-full p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700"
+                key={dist.name}
+                onClick={() => setTargetDistrict(dist)}
+                className={`shrink-0 rounded-xl px-2.5 py-1 text-xs font-semibold transition-all ${
+                  targetDistrict?.name === dist.name
+                    ? 'bg-zinc-950 text-white shadow-xs'
+                    : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
+                }`}
               >
-                <X className="h-3.5 w-3.5" />
+                {dist.name}
               </button>
-            </div>
-            <div className="mt-2.5 space-y-2">
-              <div
-                onClick={() => setIsStoriesOpen(true)}
-                className="cursor-pointer group rounded-xl p-2 hover:bg-zinc-50 transition-colors"
-              >
-                <p className="text-xs font-semibold text-zinc-900 leading-snug group-hover:text-orange-600">
-                  Top 5 Weekend Microbreweries & Taprooms
-                </p>
-                <p className="mt-0.5 text-[11px] text-zinc-500 flex items-center justify-between">
-                  <span>Curator Guide</span>
-                  <ChevronRight className="h-3 w-3 text-zinc-400" />
-                </p>
-              </div>
-              <div
-                onClick={() => {
-                  setSearchQuery('Dosa');
-                  setShowNewsTicker(false);
-                }}
-                className="cursor-pointer group rounded-xl p-2 hover:bg-zinc-50 transition-colors"
-              >
-                <p className="text-xs font-semibold text-zinc-900 leading-snug group-hover:text-orange-600">
-                  The Golden Ghee Dosa Tour of South Bangalore
-                </p>
-                <p className="mt-0.5 text-[11px] text-zinc-500 flex items-center justify-between">
-                  <span>Malleshwaram & Basavanagudi</span>
-                  <ChevronRight className="h-3 w-3 text-zinc-400" />
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      )}
 
-      {/* Restaurant Detail Drawer */}
+        {/* Trail Active Pill (if active) */}
+        {trailFilterIds && (
+          <div className="absolute top-20 left-1/2 -translate-x-1/2 z-[1000] flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50/95 px-4 py-1.5 text-xs font-semibold text-orange-950 shadow-lg backdrop-blur-md">
+            <Sparkles className="h-3.5 w-3.5 text-orange-600" />
+            <span>Active Food Trail Filter</span>
+            <button
+              onClick={() => setTrailFilterIds(null)}
+              className="ml-1 rounded-full p-0.5 hover:bg-orange-200 text-orange-800"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          </div>
+        )}
+
+        {/* The Map */}
+        <MapComponent
+          restaurants={filteredRestaurants}
+          selectedRestaurant={selectedRestaurant}
+          hoveredRestaurantId={hoveredRestaurantId}
+          onSelectRestaurant={(r) => setSelectedRestaurant(r)}
+          onUpvote={handleUpvote}
+          userUpvotes={userUpvotes}
+          targetDistrict={targetDistrict}
+        />
+
+        {/* Floating Bottom Info Pill */}
+        <div className="pointer-events-none absolute bottom-4 right-4 z-[1000] hidden sm:flex items-center gap-2">
+          <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-zinc-200 bg-white/95 px-3.5 py-1.5 text-xs font-medium text-zinc-800 shadow-md backdrop-blur-md">
+            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>
+              <b>{filteredRestaurants.length}</b> verified spots
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* MOBILE BOTTOM NAVIGATION */}
+      <div className="lg:hidden shrink-0 border-t border-zinc-200 bg-white/95 p-2 backdrop-blur-md flex items-center justify-around z-[1100]">
+        <button
+          onClick={() => setMobileTab('feed')}
+          className={`flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition-all ${
+            mobileTab === 'feed'
+              ? 'bg-zinc-950 text-white shadow-xs'
+              : 'text-zinc-500 hover:text-zinc-900'
+          }`}
+        >
+          <LayoutList className="h-4 w-4" />
+          <span>Curated Feed ({filteredRestaurants.length})</span>
+        </button>
+        <button
+          onClick={() => setMobileTab('map')}
+          className={`flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-bold transition-all ${
+            mobileTab === 'map'
+              ? 'bg-zinc-950 text-white shadow-xs'
+              : 'text-zinc-500 hover:text-zinc-900'
+          }`}
+        >
+          <MapIcon className="h-4 w-4" />
+          <span>Spatial Map</span>
+        </button>
+      </div>
+
+      {/* Detail Dossier Sheet */}
       {selectedRestaurant && (
         <RestaurantDrawer
           restaurant={selectedRestaurant}
@@ -383,7 +425,7 @@ export default function Home() {
         onSuccess={handleNewSubmission}
       />
 
-      {/* Multi-Faceted Filter Drawer */}
+      {/* Granular Filter Drawer */}
       <FilterDrawer
         isOpen={isFilterOpen}
         onClose={() => setIsFilterOpen(false)}
