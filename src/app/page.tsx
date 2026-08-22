@@ -9,7 +9,6 @@ import {
 import { INITIAL_RESTAURANTS } from '@/data/restaurants';
 import TopNavCapsule, { ViewMode } from '@/components/TopNavCapsule';
 import SpatialMapFlow, { DISTRICT_MAP_CONFIG } from '@/components/SpatialMapFlow';
-import MagazineFeedView from '@/components/MagazineFeedView';
 import GridView from '@/components/GridView';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
@@ -19,7 +18,7 @@ export default function Home() {
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
   const [hoveredRestaurantId, setHoveredRestaurantId] = useState<string | null>(null);
 
-  // Active View Mode ('spatial' | 'feed' | 'grid')
+  // Active View Mode ('spatial' | 'grid')
   const [viewMode, setViewMode] = useState<ViewMode>('spatial');
 
   // Active district fly-to
@@ -35,15 +34,14 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All');
   const [selectedNeighborhood, setSelectedNeighborhood] = useState<Neighborhood | 'All'>('All');
   const [vegOnly, setVegOnly] = useState(false);
-  const [showSavedOnly, setShowSavedOnly] = useState(false);
 
-  // Bookmarks state (persisted locally)
+  // Bookmarks state (persisted locally for drawer and card interaction)
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
 
   // Submit Modal
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
 
-  // Load bookmarks on mount
+  // Load initial data
   useEffect(() => {
     try {
       const saved = localStorage.getItem('blr_food_bookmarks');
@@ -62,7 +60,7 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  // Keyboard shortcut listener for ⌘K or / to focus search
+  // Keyboard shortcut listener for ⌘K
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
@@ -75,7 +73,7 @@ export default function Home() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Synchronized Neighborhood handler
+  // Synchronized Neighborhood selection
   const handleSelectNeighborhood = useCallback((area: Neighborhood | 'All') => {
     setSelectedNeighborhood(area);
     const match = DISTRICT_MAP_CONFIG.find((d) => d.id === area);
@@ -113,10 +111,6 @@ export default function Home() {
   // Filter Logic
   const filteredRestaurants = useMemo(() => {
     return restaurants.filter((r) => {
-      if (showSavedOnly && !bookmarkedIds.has(r.id)) {
-        return false;
-      }
-
       if (selectedCategory !== 'All' && r.category !== selectedCategory) {
         return false;
       }
@@ -148,8 +142,6 @@ export default function Home() {
     selectedCategory,
     selectedNeighborhood,
     vegOnly,
-    showSavedOnly,
-    bookmarkedIds,
     searchQuery,
   ]);
 
@@ -165,18 +157,15 @@ export default function Home() {
         onSelectNeighborhood={handleSelectNeighborhood}
         vegOnly={vegOnly}
         onToggleVegOnly={setVegOnly}
-        showSavedOnly={showSavedOnly}
-        onToggleSavedOnly={setShowSavedOnly}
-        savedCount={bookmarkedIds.size}
         viewMode={viewMode}
         onSelectViewMode={setViewMode}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}
         totalFilteredCount={filteredRestaurants.length}
       />
 
-      {/* Main View Area */}
+      {/* Main Viewport */}
       <div className="h-full w-full">
-        {viewMode === 'spatial' && (
+        {viewMode === 'spatial' ? (
           <SpatialMapFlow
             restaurants={filteredRestaurants}
             selectedRestaurant={selectedRestaurant}
@@ -189,25 +178,8 @@ export default function Home() {
             bookmarkedIds={bookmarkedIds}
             targetDistrict={targetDistrict}
           />
-        )}
-
-        {viewMode === 'feed' && (
-          <div className="h-full w-full overflow-y-auto bg-zinc-50">
-            <MagazineFeedView
-              restaurants={filteredRestaurants}
-              onSelectRestaurant={(r) => setSelectedRestaurant(r)}
-              onToggleBookmark={handleToggleBookmark}
-              bookmarkedIds={bookmarkedIds}
-              onViewOnMap={(r) => {
-                setSelectedRestaurant(r);
-                setViewMode('spatial');
-              }}
-            />
-          </div>
-        )}
-
-        {viewMode === 'grid' && (
-          <div className="h-full w-full overflow-y-auto bg-zinc-50 pt-24">
+        ) : (
+          <div className="h-full w-full overflow-y-auto bg-zinc-50 pt-36">
             <GridView
               restaurants={filteredRestaurants}
               onSelectRestaurant={(r) => setSelectedRestaurant(r)}
