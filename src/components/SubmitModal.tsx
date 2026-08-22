@@ -1,37 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import {
-  Category,
-  Neighborhood,
-  PriceLevel,
-  VibeTag,
-  ALL_CATEGORIES,
-  ALL_NEIGHBORHOODS,
-  ALL_VIBE_TAGS,
-  SubmissionForm,
-  Restaurant,
-} from '@/types';
-import { CATEGORY_META } from '@/lib/colors';
-import { X, Sparkles, Plus, Check, Loader2, MapPin, CheckCircle2 } from 'lucide-react';
+import { Restaurant, Neighborhood, Category } from '@/types';
+import { X, Sparkles, Plus, CheckCircle2, MapPin, Link2, Heart, User, Loader2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-
-const NEIGHBORHOOD_COORDS: Record<Neighborhood, { lat: number; lng: number }> = {
-  'Indiranagar': { lat: 12.9719, lng: 77.6412 },
-  'Koramangala': { lat: 12.9352, lng: 77.6245 },
-  'Church Street & MG Road': { lat: 12.9749, lng: 77.6094 },
-  'Lavelle Road': { lat: 12.9702, lng: 77.5985 },
-  'Malleshwaram': { lat: 13.0039, lng: 77.5701 },
-  'Basavanagudi': { lat: 12.9452, lng: 77.5739 },
-  'HSR Layout': { lat: 12.9121, lng: 77.6446 },
-  'Whitefield': { lat: 12.9698, lng: 77.7499 },
-  'JP Nagar': { lat: 12.9063, lng: 77.5857 },
-  'Jayanagar': { lat: 12.9308, lng: 77.5838 },
-  'CBD & Central': { lat: 12.9716, lng: 77.5946 },
-  'Sadashivanagar & Palace Grounds': { lat: 13.0068, lng: 77.5813 },
-  'Sarjapur Road': { lat: 12.9226, lng: 77.6775 },
-  'Bel Road & North BLR': { lat: 13.0315, lng: 77.5645 },
-};
 
 interface SubmitModalProps {
   isOpen: boolean;
@@ -39,19 +11,25 @@ interface SubmitModalProps {
   onSuccess: (newRestaurant: Restaurant) => void;
 }
 
+const NEIGHBORHOOD_COORDS: Record<string, { lat: number; lng: number }> = {
+  'indiranagar': { lat: 12.9719, lng: 77.6412 },
+  'koramangala': { lat: 12.9352, lng: 77.6245 },
+  'church street': { lat: 12.9749, lng: 77.6094 },
+  'mg road': { lat: 12.9749, lng: 77.6094 },
+  'lavelle road': { lat: 12.9702, lng: 77.5985 },
+  'malleshwaram': { lat: 13.0039, lng: 77.5701 },
+  'basavanagudi': { lat: 12.9452, lng: 77.5739 },
+  'hsr': { lat: 12.9121, lng: 77.6446 },
+  'whitefield': { lat: 12.9698, lng: 77.7499 },
+  'jayanagar': { lat: 12.9308, lng: 77.5838 },
+  'jp nagar': { lat: 12.9063, lng: 77.5857 },
+};
+
 export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalProps) {
   const [name, setName] = useState('');
-  const [category, setCategory] = useState<Category>('Iconic Heritage');
-  const [neighborhood, setNeighborhood] = useState<Neighborhood>('Indiranagar');
-  const [address, setAddress] = useState('');
-  const [priceLevel, setPriceLevel] = useState<PriceLevel>('₹₹');
-  const [priceForTwo, setPriceForTwo] = useState('₹800');
-  const [mustTry, setMustTry] = useState('');
-  const [selectedVibes, setSelectedVibes] = useState<VibeTag[]>([]);
   const [googleMapsUrl, setGoogleMapsUrl] = useState('');
-  const [curatorNote, setCuratorNote] = useState('');
+  const [whyRecommend, setWhyRecommend] = useState('');
   const [submittedBy, setSubmittedBy] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -59,17 +37,11 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
 
   if (!isOpen) return null;
 
-  const toggleVibe = (tag: VibeTag) => {
-    setSelectedVibes((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    );
-  };
-
   const triggerConfetti = () => {
     try {
       confetti({
-        particleCount: 80,
-        spread: 70,
+        particleCount: 75,
+        spread: 60,
         origin: { y: 0.6 },
         colors: ['#f97316', '#ea580c', '#fb923c', '#10b981', '#6366f1'],
       });
@@ -82,354 +54,233 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
       setError('Please provide the restaurant name');
       return;
     }
-    if (!mustTry.trim()) {
-      setError('Please list at least 1 must-order dish');
+    if (!googleMapsUrl.trim()) {
+      setError('Please paste the Google Maps link or neighborhood');
+      return;
+    }
+    if (!whyRecommend.trim()) {
+      setError('Please share why you recommend this spot or what to order');
       return;
     }
 
     setLoading(true);
     setError('');
 
-    // Coordinate jitter for map placement
-    const baseCoord = NEIGHBORHOOD_COORDS[neighborhood] || { lat: 12.9716, lng: 77.5946 };
-    const jitterLat = baseCoord.lat + (Math.random() - 0.5) * 0.015;
-    const jitterLng = baseCoord.lng + (Math.random() - 0.5) * 0.015;
+    // Guess / detect neighborhood from maps text or query
+    const lowerInput = (googleMapsUrl + ' ' + name).toLowerCase();
+    let detectedHood: Neighborhood = 'Indiranagar';
+    let baseCoord = { lat: 12.9716, lng: 77.5946 };
 
-    const payload: SubmissionForm = {
-      name: name.trim(),
-      category,
-      neighborhood,
-      address: address.trim() || `${neighborhood}, Bengaluru`,
-      lat: jitterLat,
-      lng: jitterLng,
-      priceLevel,
-      priceForTwo: priceForTwo.trim() || '₹800',
-      mustTry: mustTry.trim(),
-      vibeTags: selectedVibes,
-      googleMapsUrl:
-        googleMapsUrl.trim() ||
-        `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-          name.trim() + ' ' + neighborhood + ' Bengaluru'
-        )}`,
-      curatorNote: curatorNote.trim(),
-      submittedBy: submittedBy.trim() || 'Food Explorer',
-      imageUrl: imageUrl.trim() || undefined,
-    };
+    for (const [key, coord] of Object.entries(NEIGHBORHOOD_COORDS)) {
+      if (lowerInput.includes(key)) {
+        baseCoord = coord;
+        if (key === 'koramangala') detectedHood = 'Koramangala';
+        else if (key === 'church street' || key === 'mg road') detectedHood = 'Church Street & MG Road';
+        else if (key === 'malleshwaram') detectedHood = 'Malleshwaram';
+        else if (key === 'basavanagudi') detectedHood = 'Basavanagudi';
+        else if (key === 'hsr') detectedHood = 'HSR Layout';
+        else if (key === 'whitefield') detectedHood = 'Whitefield';
+        else if (key === 'jayanagar') detectedHood = 'Jayanagar';
+        else if (key === 'lavelle road') detectedHood = 'Lavelle Road';
+        break;
+      }
+    }
+
+    const jitterLat = baseCoord.lat + (Math.random() - 0.5) * 0.012;
+    const jitterLng = baseCoord.lng + (Math.random() - 0.5) * 0.012;
+
+    const formattedMapsUrl = googleMapsUrl.startsWith('http')
+      ? googleMapsUrl.trim()
+      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+          name.trim() + ' ' + googleMapsUrl.trim() + ' Bengaluru'
+        )}`;
 
     const newId = name.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now().toString(36);
-    const clientRestaurant: Restaurant = {
+
+    const newSpot: Restaurant = {
       id: newId,
-      name: payload.name,
+      name: name.trim(),
       slug: newId,
-      tagline: payload.curatorNote || `Curated spot in ${payload.neighborhood}`,
-      description: payload.curatorNote || `Community recommended spot in ${payload.neighborhood}`,
-      category: payload.category,
-      neighborhood: payload.neighborhood,
-      address: payload.address,
+      tagline: whyRecommend.trim().slice(0, 80),
+      description: whyRecommend.trim(),
+      category: 'Iconic Heritage',
+      neighborhood: detectedHood,
+      address: `${detectedHood}, Bengaluru`,
       lat: jitterLat,
       lng: jitterLng,
-      priceLevel: payload.priceLevel,
-      priceForTwo: payload.priceForTwo,
-      mustTry: payload.mustTry.split(',').map((s) => s.trim()).filter(Boolean),
-      vibeTags: payload.vibeTags,
-      imageUrl: payload.imageUrl || 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
-      googleMapsUrl: payload.googleMapsUrl,
-      timings: '11:00 AM – 11:00 PM',
-      verified: false,
-      curatorNote: payload.curatorNote,
-      submittedBy: payload.submittedBy,
+      priceLevel: '₹₹',
+      priceForTwo: '₹600',
+      mustTry: [whyRecommend.split('.')[0].slice(0, 45) || 'Signature Special'],
+      vibeTags: ['Pocket Friendly'],
+      imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
+      googleMapsUrl: formattedMapsUrl,
+      timings: 'Open Daily',
+      curatorNote: whyRecommend.trim(),
+      submittedBy: submittedBy.trim() || 'Community Foodie',
       submittedAt: new Date().toISOString(),
+      verified: false,
     };
 
+    // Save locally
     try {
-      // Try API if available, fallback gracefully on static hosting
-      let serverRestaurant: Restaurant | null = null;
-      try {
-        const res = await fetch('/api/submissions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-        if (res.ok) {
-          const data = await res.json();
-          if (data.success) serverRestaurant = data.data;
-        }
-      } catch (apiErr) {}
+      const stored = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
+      localStorage.setItem('blr_user_submissions', JSON.stringify([newSpot, ...stored]));
+    } catch (e) {}
 
-      const finalRest = serverRestaurant || clientRestaurant;
+    setSubmittedSuccess(true);
+    triggerConfetti();
+    onSuccess(newSpot);
 
-      // Persist user submission locally
-      try {
-        const stored = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
-        localStorage.setItem('blr_user_submissions', JSON.stringify([finalRest, ...stored]));
-      } catch (e) {}
-
-      setSubmittedSuccess(true);
-      triggerConfetti();
-      onSuccess(finalRest);
-
-      setTimeout(() => {
-        setSubmittedSuccess(false);
-        onClose();
-        setName('');
-        setMustTry('');
-        setCuratorNote('');
-        setSelectedVibes([]);
-      }, 1800);
-    } catch (err) {
-      setError('An error occurred. Please try again.');
-    } finally {
+    setTimeout(() => {
+      setSubmittedSuccess(false);
+      onClose();
+      setName('');
+      setGoogleMapsUrl('');
+      setWhyRecommend('');
+      setSubmittedBy('');
       setLoading(false);
-    }
+    }, 1600);
   };
 
   return (
-    <div className="fixed inset-0 z-[3000] flex items-center justify-center p-2 sm:p-4">
+    <div className="fixed inset-0 z-[3000] flex items-center justify-center p-3 sm:p-4">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
         onClick={onClose}
       />
 
-      {/* Modal Card */}
-      <div className="relative z-10 w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl border border-zinc-200 bg-white p-5 sm:p-8 shadow-2xl transition-all">
-        {/* Header */}
+      {/* Modal Dialog Card */}
+      <div className="relative z-10 w-full max-w-lg overflow-hidden rounded-3xl border border-zinc-200 bg-white p-5 sm:p-7 shadow-2xl transition-all">
+        {/* Top Header */}
         <div className="flex items-start justify-between">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-orange-100 text-base">
-                🍜
-              </span>
-              <h2 className="text-lg font-bold tracking-tight text-zinc-900 sm:text-2xl">
-                Recommend a Food Spot
-              </h2>
+          <div className="flex items-center gap-2.5">
+            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-orange-100 text-orange-600 font-bold">
+              <Sparkles className="h-4 w-4" />
             </div>
-            <p className="mt-1 text-xs sm:text-sm text-zinc-500">
-              Crowd-source your favorite Bengaluru hidden gems, cafes, dosas, and brewpubs.
-            </p>
+            <div>
+              <h2 className="text-lg font-bold tracking-tight text-zinc-900 sm:text-xl">
+                Recommend a Spot
+              </h2>
+              <p className="text-xs text-zinc-500">
+                Share a must-visit eatery, cafe, or hidden gem in Bangalore.
+              </p>
+            </div>
           </div>
           <button
             onClick={onClose}
-            className="rounded-full p-2 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 transition-colors"
+            className="rounded-full p-1.5 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
         {submittedSuccess ? (
-          <div className="my-10 flex flex-col items-center justify-center text-center">
+          <div className="my-8 flex flex-col items-center justify-center text-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 mb-3 animate-bounce">
               <CheckCircle2 className="h-7 w-7" />
             </div>
-            <h3 className="text-lg sm:text-xl font-bold text-zinc-900">Thank you for recommending!</h3>
-            <p className="mt-1 text-xs sm:text-sm text-zinc-500 max-w-sm">
-              <b className="text-zinc-800">{name}</b> has been added to the Bengaluru Food Map for everyone to discover!
+            <h3 className="text-lg font-bold text-zinc-900">Thank you! Added to Map 🎉</h3>
+            <p className="mt-1 text-xs text-zinc-500 max-w-xs">
+              <b className="text-zinc-800">{name}</b> has been recorded and pinned for everyone to discover!
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="mt-5 space-y-4 sm:space-y-5">
+          <form onSubmit={handleSubmit} className="mt-5 space-y-4">
             {error && (
-              <div className="rounded-xl bg-rose-50 border border-rose-200 p-3 text-xs font-medium text-rose-700">
+              <div className="rounded-xl bg-rose-50 border border-rose-200 p-2.5 text-xs font-medium text-rose-700">
                 {error}
               </div>
             )}
 
-            {/* Restaurant Name */}
+            {/* 1. Restaurant / Cafe Name */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                Place Name <span className="text-rose-500">*</span>
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
+                Restaurant / Spot Name <span className="text-orange-600">*</span>
               </label>
               <input
                 type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="e.g. Sarakki Tiffin Room, BLR Brewing Co"
+                placeholder="e.g. Rameshwaram Cafe, CTR, Toit, Araku"
                 className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
               />
             </div>
 
-            {/* Category & Neighborhood */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                  Category <span className="text-rose-500">*</span>
-                </label>
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value as Category)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
-                >
-                  {ALL_CATEGORIES.map((c) => (
-                    <option key={c} value={c}>
-                      {c}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                  Neighborhood <span className="text-rose-500">*</span>
-                </label>
-                <select
-                  value={neighborhood}
-                  onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
-                >
-                  {ALL_NEIGHBORHOODS.map((n) => (
-                    <option key={n} value={n}>
-                      {n}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {/* Address */}
+            {/* 2. Google Maps Link */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                Exact Street Address
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
+                Google Maps Link or Area <span className="text-orange-600">*</span>
               </label>
-              <input
-                type="text"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-                placeholder="e.g. 100 Feet Rd, Indiranagar, Bengaluru"
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
-              />
-            </div>
-
-            {/* Price Level & Price for two */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                  Price Tier
-                </label>
-                <div className="grid grid-cols-4 gap-2">
-                  {(['₹', '₹₹', '₹₹₹', '₹₹₹₹'] as PriceLevel[]).map((level) => (
-                    <button
-                      key={level}
-                      type="button"
-                      onClick={() => setPriceLevel(level)}
-                      className={`rounded-xl py-2 text-xs font-bold transition-all ${
-                        priceLevel === level
-                          ? 'bg-zinc-900 text-white shadow-xs'
-                          : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
-                      }`}
-                    >
-                      {level}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                  Approx Price for Two
-                </label>
+              <div className="relative">
+                <Link2 className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400" />
                 <input
                   type="text"
-                  value={priceForTwo}
-                  onChange={(e) => setPriceForTwo(e.target.value)}
-                  placeholder="e.g. ₹600"
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                  required
+                  value={googleMapsUrl}
+                  onChange={(e) => setGoogleMapsUrl(e.target.value)}
+                  placeholder="https://maps.app.goo.gl/... or Indiranagar 100ft Rd"
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 py-2.5 pl-8 pr-3.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
                 />
               </div>
             </div>
 
-            {/* Must Try Dishes */}
+            {/* 3. Why recommend & Must Order */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                Must-Order Dishes <span className="text-rose-500">*</span>
-              </label>
-              <input
-                type="text"
-                required
-                value={mustTry}
-                onChange={(e) => setMustTry(e.target.value)}
-                placeholder="Comma separated: Podi Dosa, Filter Coffee, Dark Stout"
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
-              />
-            </div>
-
-            {/* Curator Insider Note */}
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                Insider Tip / Curator Note
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
+                Why do you recommend it & what to order? <span className="text-orange-600">*</span>
               </label>
               <textarea
-                rows={2}
-                value={curatorNote}
-                onChange={(e) => setCuratorNote(e.target.value)}
-                placeholder="e.g. Best visited on Sunday morning for fresh hot batches."
+                rows={3}
+                required
+                value={whyRecommend}
+                onChange={(e) => setWhyRecommend(e.target.value)}
+                placeholder="e.g. Best crispy Benne Dosa in town, paired with their coconut mint chutney. Must try: Ghee Podi Dosa & Filter Coffee."
                 className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none resize-none"
               />
             </div>
 
-            {/* Vibes */}
+            {/* 4. Submitter Handle (Optional) */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
-                Atmosphere & Features
+              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
+                Your Name / Handle (Optional)
               </label>
-              <div className="flex flex-wrap gap-1.5">
-                {ALL_VIBE_TAGS.map((tag) => {
-                  const active = selectedVibes.includes(tag);
-                  return (
-                    <button
-                      key={tag}
-                      type="button"
-                      onClick={() => toggleVibe(tag)}
-                      className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
-                        active
-                          ? 'bg-orange-600 text-white shadow-xs'
-                          : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
-                      }`}
-                    >
-                      {tag}
-                    </button>
-                  );
-                })}
+              <div className="relative">
+                <User className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400" />
+                <input
+                  type="text"
+                  value={submittedBy}
+                  onChange={(e) => setSubmittedBy(e.target.value)}
+                  placeholder="e.g. @mohit / FoodieBLR"
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 py-2.5 pl-8 pr-3.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                />
               </div>
             </div>
 
-            {/* Submitter Name */}
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1.5">
-                Your Name / Handle (Optional)
-              </label>
-              <input
-                type="text"
-                value={submittedBy}
-                onChange={(e) => setSubmittedBy(e.target.value)}
-                placeholder="e.g. @mohit / FoodieBLR"
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
-              />
-            </div>
-
-            {/* Actions */}
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-end gap-2.5">
+            {/* Submit Action */}
+            <div className="pt-2 flex items-center justify-end gap-2.5">
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold text-zinc-600 hover:bg-zinc-100 transition-colors"
+                className="rounded-xl px-4 py-2 text-xs font-semibold text-zinc-600 hover:bg-zinc-100 transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={loading}
-                className="flex items-center gap-2 rounded-xl bg-orange-600 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-md shadow-orange-500/20 hover:bg-orange-700 transition-all disabled:opacity-50"
+                className="flex items-center gap-1.5 rounded-xl bg-orange-600 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-md shadow-orange-500/20 hover:bg-orange-700 transition-all disabled:opacity-50 active:scale-95"
               >
                 {loading ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    <span>Submitting…</span>
+                    <span>Adding…</span>
                   </>
                 ) : (
                   <>
                     <Plus className="h-4 w-4 stroke-[2.5]" />
-                    <span>Recommend Spot</span>
+                    <span>Submit Spot</span>
                   </>
                 )}
               </button>
