@@ -67,8 +67,9 @@ export default function TopNavCapsule({
     <header className="pointer-events-none fixed inset-x-0 top-0 z-[1200] p-2 sm:p-4">
       <div className="pointer-events-auto mx-auto max-w-6xl">
         {/* Floating Command Island */}
-        <div className="rounded-2xl sm:rounded-3xl border border-zinc-200/90 bg-white/95 p-2.5 sm:p-3 shadow-xl shadow-zinc-950/5 backdrop-blur-xl transition-all">
-          {/* DESKTOP LAYOUT (md+) */}
+        <div className="rounded-2xl sm:rounded-3xl border border-zinc-200/90 bg-white/95 p-3 shadow-xl shadow-zinc-950/5 backdrop-blur-xl transition-all">
+          
+          {/* ================= DESKTOP LAYOUT (md+) ================= */}
           <div className="hidden md:flex flex-col gap-3">
             {/* Top Row */}
             <div className="flex items-center justify-between gap-3">
@@ -223,11 +224,11 @@ export default function TopNavCapsule({
             </div>
           </div>
 
-          {/* MOBILE RESPONSIVE LAYOUT (< md) */}
-          <div className="md:hidden flex flex-col gap-2">
-            {/* Mobile Top Bar */}
+          {/* ================= MOBILE OPTIMIZED LAYOUT (< md) ================= */}
+          <div className="md:hidden flex flex-col gap-2.5">
+            {/* Mobile Row 1: Brand & Top Action Bar */}
             <div className="flex items-center justify-between gap-2">
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 shrink-0">
                 <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-zinc-950 text-white font-serif font-black text-xs shadow-xs">
                   B
                 </div>
@@ -236,33 +237,59 @@ export default function TopNavCapsule({
                 </span>
               </div>
 
-              <div className="flex items-center gap-1.5">
-                {/* Mobile View Toggle */}
-                <div className="flex rounded-full border border-zinc-200 bg-zinc-100/90 p-0.5 text-[11px]">
+              {/* Top Quick Actions (Veg, Saved, Map/Grid, Add) */}
+              <div className="flex items-center gap-1 shrink-0">
+                {/* Pure Veg Pill */}
+                <button
+                  onClick={() => onToggleVegOnly(!vegOnly)}
+                  className={`flex items-center rounded-full px-2 py-1 text-[11px] font-semibold transition-all ${
+                    vegOnly
+                      ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
+                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
+                  }`}
+                  title="Pure Veg"
+                >
+                  <span>🌱</span>
+                </button>
+
+                {/* Saved Wishlist Pill */}
+                <button
+                  onClick={() => onToggleSavedOnly(!showSavedOnly)}
+                  className={`flex items-center gap-0.5 rounded-full px-2 py-1 text-[11px] font-semibold transition-all ${
+                    showSavedOnly
+                      ? 'bg-zinc-900 text-white shadow-xs'
+                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
+                  }`}
+                  title="Saved Spots"
+                >
+                  <Bookmark className={`h-3 w-3 ${showSavedOnly ? 'fill-white' : ''}`} />
+                  {savedCount > 0 && <span className="text-[10px] font-bold">{savedCount}</span>}
+                </button>
+
+                {/* View Switcher */}
+                <div className="flex rounded-full border border-zinc-200 bg-zinc-100 p-0.5 text-[11px]">
                   <button
                     onClick={() => onSelectViewMode('spatial')}
-                    className={`flex items-center gap-1 rounded-full px-2.5 py-1 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all ${
                       viewMode === 'spatial' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
                     }`}
                   >
                     <MapIcon className="h-3 w-3" />
-                    <span>Map</span>
                   </button>
                   <button
                     onClick={() => onSelectViewMode('grid')}
-                    className={`flex items-center gap-1 rounded-full px-2.5 py-1 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all ${
                       viewMode === 'grid' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
                     }`}
                   >
                     <LayoutGrid className="h-3 w-3" />
-                    <span>Grid</span>
                   </button>
                 </div>
 
-                {/* Mobile Add Spot */}
+                {/* Add Spot */}
                 <button
                   onClick={onOpenSubmitModal}
-                  className="flex items-center gap-1 rounded-full bg-orange-600 px-2.5 py-1 text-xs font-semibold text-white shadow-xs hover:bg-orange-700 active:scale-95"
+                  className="flex items-center gap-0.5 rounded-full bg-orange-600 px-2.5 py-1 text-[11px] font-semibold text-white shadow-xs hover:bg-orange-700 active:scale-95"
                 >
                   <Plus className="h-3 w-3 stroke-[2.5]" />
                   <span>Add</span>
@@ -270,59 +297,34 @@ export default function TopNavCapsule({
               </div>
             </div>
 
-            {/* Mobile Search Bar */}
-            <div className="relative w-full">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => onSearchChange(e.target.value)}
-                placeholder="Search dish (Dosa, IPA, Coffee) or spot…"
-                className="w-full rounded-xl border border-zinc-200 bg-zinc-50/90 py-1.5 pl-8 pr-7 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => onSearchChange('')}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-zinc-400"
-                >
-                  <X className="h-3 w-3" />
-                </button>
-              )}
-            </div>
+            {/* Mobile Row 2: Search Bar & Cravings Selector */}
+            <div className="flex items-center gap-1.5">
+              {/* Search input */}
+              <div className="relative flex-1 min-w-0">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => onSearchChange(e.target.value)}
+                  placeholder="Search dish or spot…"
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50/90 py-1.5 pl-8 pr-7 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => onSearchChange('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-zinc-400"
+                  >
+                    <X className="h-3 w-3" />
+                  </button>
+                )}
+              </div>
 
-            {/* Mobile Horizontal Filter & Hoods Strip */}
-            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-              {/* Veg Pill */}
-              <button
-                onClick={() => onToggleVegOnly(!vegOnly)}
-                className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all shrink-0 ${
-                  vegOnly
-                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
-                    : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
-                }`}
-              >
-                <span>🌱 Veg</span>
-              </button>
-
-              {/* Saved Pill */}
-              <button
-                onClick={() => onToggleSavedOnly(!showSavedOnly)}
-                className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all shrink-0 ${
-                  showSavedOnly
-                    ? 'bg-zinc-900 text-white shadow-xs'
-                    : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
-                }`}
-              >
-                <Bookmark className={`h-3 w-3 ${showSavedOnly ? 'fill-white' : ''}`} />
-                <span>Saved{savedCount > 0 ? ` (${savedCount})` : ''}</span>
-              </button>
-
-              {/* Cravings Dropdown */}
+              {/* Craving Filter Chip */}
               <div className="relative shrink-0">
                 <select
                   value={selectedCategory}
                   onChange={(e) => onSelectCategory(e.target.value as any)}
-                  className="appearance-none rounded-full border border-zinc-200 bg-zinc-50/90 pl-2.5 pr-6 py-1 text-[11px] font-semibold text-zinc-800 focus:outline-none cursor-pointer"
+                  className="appearance-none rounded-xl border border-zinc-200 bg-zinc-50/90 pl-2.5 pr-6 py-1.5 text-xs font-semibold text-zinc-800 focus:outline-none cursor-pointer"
                 >
                   <option value="All">✨ Cravings</option>
                   {ALL_CATEGORIES.map((c) => (
@@ -331,20 +333,25 @@ export default function TopNavCapsule({
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-2.5 w-2.5 text-zinc-400" />
+                <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-3 w-3 text-zinc-400" />
               </div>
+            </div>
 
-              {/* Hoods Pills */}
+            {/* Mobile Row 3: DEDICATED NEIGHBORHOODS TILE ROW */}
+            <div className="pt-2 border-t border-zinc-100 flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 shrink-0 mr-0.5">
+                Hoods:
+              </span>
               {NEIGHBORHOOD_TILES.map((hood) => {
                 const isSelected = selectedNeighborhood === hood.id;
                 return (
                   <button
                     key={hood.id}
                     onClick={() => onSelectNeighborhood(hood.id)}
-                    className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
+                    className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold transition-all ${
                       isSelected
-                        ? 'bg-zinc-900 text-white shadow-xs'
-                        : 'bg-zinc-100 text-zinc-600'
+                        ? 'bg-zinc-900 text-white shadow-xs scale-102 font-bold'
+                        : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200'
                     }`}
                   >
                     {hood.label}
@@ -353,6 +360,7 @@ export default function TopNavCapsule({
               })}
             </div>
           </div>
+
         </div>
       </div>
     </header>
