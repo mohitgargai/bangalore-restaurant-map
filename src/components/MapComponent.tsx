@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import { Restaurant, Neighborhood } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
+import { getGoogleMapsDirectionsUrl } from '@/lib/maps';
 import { Heart, Navigation, Sparkles, Compass } from 'lucide-react';
 
 interface MapComponentProps {
@@ -131,6 +132,7 @@ export default function MapComponent({
           const isSelected = selectedRestaurant?.id === restaurant.id;
           const isHovered = hoveredRestaurantId === restaurant.id;
           const icon = createModernPin(restaurant, isSelected, isHovered);
+          const directionsUrl = getGoogleMapsDirectionsUrl(restaurant);
 
           return (
             <Marker
@@ -206,7 +208,7 @@ export default function MapComponent({
                         Open Dossier
                       </button>
                       <a
-                        href={restaurant.googleMapsUrl}
+                        href={directionsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-xl border border-zinc-200 p-2 text-zinc-600 hover:bg-zinc-50 transition-colors"

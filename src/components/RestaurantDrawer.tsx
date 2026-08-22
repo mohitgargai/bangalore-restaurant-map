@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Restaurant } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
+import { getGoogleMapsDirectionsUrl, getGoogleMapsPlaceUrl } from '@/lib/maps';
 import {
   X,
   MapPin,
@@ -13,7 +14,6 @@ import {
   Sparkles,
   ExternalLink,
   CheckCircle2,
-  DollarSign,
   Tag,
   Check,
   User,
@@ -44,11 +44,13 @@ export default function RestaurantDrawer({
 
   const handleShare = () => {
     if (navigator.share) {
-      navigator.share({
-        title: `${restaurant.name} on BLR Food Map`,
-        text: `Check out ${restaurant.name} in ${restaurant.neighborhood} — Must try: ${restaurant.mustTry.join(', ')}`,
-        url: window.location.href,
-      }).catch(() => {});
+      navigator
+        .share({
+          title: `${restaurant.name} on BLR Food Map`,
+          text: `Check out ${restaurant.name} in ${restaurant.neighborhood} — Must try: ${restaurant.mustTry.join(', ')}`,
+          url: window.location.href,
+        })
+        .catch(() => {});
     } else {
       navigator.clipboard.writeText(window.location.href);
       setCopied(true);
@@ -56,16 +58,19 @@ export default function RestaurantDrawer({
     }
   };
 
+  const directionsUrl = getGoogleMapsDirectionsUrl(restaurant);
+  const placeSearchUrl = getGoogleMapsPlaceUrl(restaurant);
+
   return (
     <div className="fixed inset-y-0 right-0 z-[2000] flex w-full max-w-lg flex-col bg-white shadow-2xl transition-transform duration-300 border-l border-zinc-200/80 overflow-hidden">
       {/* Cover Image Header */}
-      <div className="relative h-64 w-full shrink-0 bg-zinc-100">
+      <div className="relative h-64 w-full shrink-0 bg-zinc-950">
         <img
           src={restaurant.imageUrl}
           alt={restaurant.name}
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 
         {/* Top Floating Controls */}
         <div className="absolute inset-x-4 top-4 flex items-center justify-between">
@@ -119,7 +124,7 @@ export default function RestaurantDrawer({
       <div className="flex-1 overflow-y-auto p-5 space-y-6">
         {/* Tagline / Overview */}
         <div>
-          <p className="text-base text-zinc-700 font-medium leading-relaxed">
+          <p className="text-base text-zinc-800 font-medium leading-relaxed">
             {restaurant.tagline}
           </p>
           <p className="mt-2 text-sm text-zinc-500 leading-relaxed">
@@ -182,17 +187,28 @@ export default function RestaurantDrawer({
         </div>
 
         {/* Key Info Details */}
-        <div className="rounded-2xl border border-zinc-200 bg-zinc-50/50 p-4 space-y-3">
-          <div className="flex items-start gap-3 text-xs text-zinc-600">
-            <MapPin className="h-4 w-4 text-zinc-400 shrink-0 mt-0.5" />
-            <span>{restaurant.address}</span>
+        <div className="rounded-2xl border border-zinc-200 bg-zinc-50/60 p-4 space-y-3">
+          <div className="flex items-start justify-between gap-3 text-xs text-zinc-700">
+            <div className="flex items-start gap-2.5">
+              <MapPin className="h-4 w-4 text-zinc-400 shrink-0 mt-0.5" />
+              <span>{restaurant.address}</span>
+            </div>
+            <a
+              href={placeSearchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] font-semibold text-orange-600 hover:text-orange-700 shrink-0 flex items-center gap-1"
+            >
+              <span>View Map</span>
+              <ExternalLink className="h-3 w-3" />
+            </a>
           </div>
-          <div className="flex items-center gap-3 text-xs text-zinc-600">
+          <div className="flex items-center gap-2.5 text-xs text-zinc-600">
             <Clock className="h-4 w-4 text-zinc-400 shrink-0" />
             <span>{restaurant.timings}</span>
           </div>
           {restaurant.submittedBy && (
-            <div className="flex items-center gap-3 text-xs text-zinc-500 pt-2 border-t border-zinc-200/60">
+            <div className="flex items-center gap-2.5 text-xs text-zinc-500 pt-2 border-t border-zinc-200/60">
               <User className="h-3.5 w-3.5 text-zinc-400 shrink-0" />
               <span>Recommended by <b className="text-zinc-700">{restaurant.submittedBy}</b></span>
             </div>
@@ -219,7 +235,7 @@ export default function RestaurantDrawer({
 
         {/* Google Maps Directions */}
         <a
-          href={restaurant.googleMapsUrl}
+          href={directionsUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-orange-600 py-3 text-sm font-semibold text-white shadow-md shadow-orange-500/20 hover:bg-orange-700 transition-all active:scale-[0.98]"

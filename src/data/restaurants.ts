@@ -1,7 +1,7 @@
 import { Restaurant } from '@/types';
 
 export const INITIAL_RESTAURANTS: Restaurant[] = [
-  // 1. Vidyarthi Bhavan (Exact Basavanagudi Coords)
+  // 1. Vidyarthi Bhavan (Basavanagudi)
   {
     id: 'vidyarthi-bhavan',
     name: 'Vidyarthi Bhavan',
@@ -18,7 +18,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Crispy Masala Dosa', 'Filter Coffee', 'Kesari Bath', 'Poori Saagu'],
     vibeTags: ['Heritage (Pre-1980)', 'Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/d8mBwL2bQkQzJ6kPA',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Vidyarthi+Bhavan%2C+32+Gandhi+Bazaar+Main+Rd+Basavanagudi+Bengaluru+560004',
     timings: '6:30 AM – 11:30 AM, 2:00 PM – 8:00 PM (Closed Fridays)',
     upvotes: 342,
     featured: true,
@@ -26,7 +26,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 2. Central Tiffin Room (CTR / Shri Sagar - Exact Margosa Road Coords)
+  // 2. Central Tiffin Room (CTR / Shri Sagar - Malleshwaram)
   {
     id: 'ctr-shri-sagar',
     name: 'CTR (Shri Sagar)',
@@ -43,7 +43,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Benne Masala Dosa', 'Mangalore Bajji', 'Filter Coffee', 'Khara Bath'],
     vibeTags: ['Heritage (Pre-1980)', 'Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/yYvS6W3bU8nKzK5s9',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Central+Tiffin+Room+Shri+Sagar+7th+Cross+Margosa+Rd+Malleshwaram+Bengaluru',
     timings: '7:30 AM – 12:30 PM, 4:00 PM – 9:00 PM',
     upvotes: 389,
     featured: true,
@@ -51,7 +51,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 3. Toit Brewpub (Exact 100ft Indiranagar Coords)
+  // 3. Toit Brewpub (Indiranagar)
   {
     id: 'toit-brewpub',
     name: 'Toit Brewpub',
@@ -68,7 +68,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Tint-in-Wit (Belgian Wit)', 'Colonial Toit (IPA)', 'Woodfired Pepperoni Pizza', 'Baked Nachos'],
     vibeTags: ['Craft Beer', 'Pet Friendly', 'Live Music / Vinyl', 'Outdoor Seating'],
     imageUrl: 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/1V2k9B8fX2tG7',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Toit+Brewpub+298+100+Feet+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/toitbrewpub',
     websiteUrl: 'https://toit.in',
     timings: '12:00 PM – 1:00 AM',
@@ -78,7 +78,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 4. Mavalli Tiffin Room (MTR Lalbagh - Exact Coords)
+  // 4. Mavalli Tiffin Room (MTR Lalbagh)
   {
     id: 'mtr-lalbagh',
     name: 'Mavalli Tiffin Room (MTR)',
@@ -95,7 +95,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Rava Idli with Ghee', 'Chandrahara Dessert', 'Masala Dosa', 'Silver Cup Filter Coffee'],
     vibeTags: ['Heritage (Pre-1980)', 'Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/WvQ9M7tq6aB2',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Mavalli+Tiffin+Room+14+Lal+Bagh+Main+Rd+Doddamavalli+Bengaluru',
     timings: '6:30 AM – 11:00 AM, 12:30 PM – 8:30 PM (Closed Mondays)',
     upvotes: 298,
     featured: true,
@@ -103,7 +103,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 5. Araku Coffee (Exact Indiranagar 12th Main Coords)
+  // 5. Araku Coffee (Indiranagar)
   {
     id: 'araku-coffee',
     name: 'Araku Coffee',
@@ -120,7 +120,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Signature Modbar Pour-over', 'Nitro Cold Brew', 'Tiramisu Brioche', 'Mushroom Croissant'],
     vibeTags: ['Work Friendly', 'Outdoor Seating', 'Romantic', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/hGZ9v68GkL2',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Araku+Coffee+968+12th+Main+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/arakucoffeein',
     websiteUrl: 'https://arakucoffee.in',
     timings: '8:30 AM – 11:00 PM',
@@ -130,7 +130,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 6. Windmills Craftworks (Exact Whitefield EPIP Coords)
+  // 6. Windmills Craftworks (Whitefield)
   {
     id: 'windmills-craftworks',
     name: 'Windmills Craftworks',
@@ -147,7 +147,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Coconut Brown Ale', 'Hefeweizen', 'Galouti Kebab', 'Bacon-wrapped Prawns'],
     vibeTags: ['Craft Beer', 'Live Music / Vinyl', 'Romantic', 'Rooftop'],
     imageUrl: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9Kz2rL2bM8P2',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Windmills+Craftworks+331+Road+5B+EPIP+Zone+Whitefield+Bengaluru',
     instagramUrl: 'https://instagram.com/windmillscraftworks',
     timings: '12:00 PM – 12:00 AM',
     upvotes: 245,
@@ -156,7 +156,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 7. Burma Burma (Exact Indiranagar 12th Main Coords)
+  // 7. Burma Burma (Indiranagar)
   {
     id: 'burma-burma',
     name: 'Burma Burma',
@@ -173,7 +173,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Oh No Khow Suey', 'Tea Leaf Salad (Laphet Thoke)', 'Tofu Tots', 'Lotus Biscoff Ice Cream'],
     vibeTags: ['Pure Veg', 'Romantic'],
     imageUrl: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/4Lm1j38Tz8X',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Burma+Burma+Restaurant+12th+Main+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/burmaburmaindia',
     timings: '12:00 PM – 3:30 PM, 6:30 PM – 10:30 PM',
     upvotes: 260,
@@ -182,7 +182,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 8. Nagarjuna Chimney (Exact Residency Road Coords)
+  // 8. Nagarjuna (Residency Road)
   {
     id: 'nagarjuna-residency-road',
     name: 'Nagarjuna',
@@ -199,7 +199,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Andhra Banana Leaf Meals', 'Nagarjuna Chilli Chicken', 'Mutton Biryani', 'Gongura Mutton'],
     vibeTags: ['Late Night', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9qJ8Xf2mZkL',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Nagarjuna+Restaurant+44%2F1+Residency+Rd+Bengaluru',
     timings: '12:00 PM – 3:45 PM, 7:00 PM – 10:45 PM',
     upvotes: 310,
     featured: true,
@@ -207,7 +207,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 9. Brahmins\' Coffee Bar (Exact Shankarapuram Coords)
+  // 9. Brahmins\' Coffee Bar (Shankarapuram)
   {
     id: 'brahmins-coffee-bar',
     name: "Brahmins' Coffee Bar",
@@ -224,7 +224,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Steamed Idli-Vada combo', 'Khara Bath', 'Kesari Bath', 'Filter Coffee'],
     vibeTags: ['Heritage (Pre-1980)', 'Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/1v7kR4M3gL',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Brahmins+Coffee+Bar+Ranga+Rao+Rd+Shankarapura+Bengaluru',
     timings: '6:00 AM – 12:00 PM, 3:00 PM – 7:00 PM (Closed Sundays evening)',
     upvotes: 355,
     featured: true,
@@ -232,7 +232,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 10. Pecos Classic (Exact Rest House Road Coords)
+  // 10. Pecos Classic (Rest House Road)
   {
     id: 'pecos-rest-house-road',
     name: 'Pecos Classic',
@@ -249,7 +249,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Chilled Draught Beer Pitcher', 'Pecos Chilli Pork', 'Dosa with Mutton Curry', 'Bacon Sausages'],
     vibeTags: ['Live Music / Vinyl', 'Late Night', 'Craft Beer'],
     imageUrl: 'https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/3q2tZ5yK9M',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Pecos+Classic+34+Rest+House+Rd+Ashok+Nagar+Bengaluru',
     timings: '11:00 AM – 11:30 PM',
     upvotes: 278,
     featured: false,
@@ -257,7 +257,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 11. The Fatty Bao (Exact Indiranagar 12th Main Coords)
+  // 11. The Fatty Bao (Indiranagar)
   {
     id: 'fatty-bao-indiranagar',
     name: 'The Fatty Bao',
@@ -274,7 +274,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Char Siu Pork Bao', 'Brie & Truffle Bao', 'Chasu Ramen', 'Wasabi Prawns'],
     vibeTags: ['Rooftop', 'Romantic', 'Cocktail Program'],
     imageUrl: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/7g8fK12v',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=The+Fatty+Bao+610+12th+Main+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/thefattybaoindia',
     timings: '12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM',
     upvotes: 215,
@@ -283,7 +283,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 12. Lupa by Manu Chandra (Exact MG Road Coords)
+  // 12. Lupa by Manu Chandra (MG Road)
   {
     id: 'lupa-mg-road',
     name: 'Lupa by Manu Chandra',
@@ -300,7 +300,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Handmade Cacio e Pepe', 'Porchetta Sandwich', 'Tenderloin Carpaccio', '24-Layer Chocolate Cake'],
     vibeTags: ['Romantic', 'Outdoor Seating', 'Cocktail Program'],
     imageUrl: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/J38mKv1f',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Lupa+86+Spencers+Building+Mahatma+Gandhi+Rd+Bengaluru',
     instagramUrl: 'https://instagram.com/lupa_blr',
     timings: '12:00 PM – 12:30 AM',
     upvotes: 288,
@@ -309,7 +309,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 13. Paper & Pie (Exact 100ft Road Coords)
+  // 13. Paper & Pie (Indiranagar)
   {
     id: 'paper-and-pie-indiranagar',
     name: 'Paper & Pie',
@@ -326,7 +326,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Signature Cold Brew', 'Avocado Sourdough Tartine', 'Apple Crumble Pie', 'Matcha Latte'],
     vibeTags: ['Work Friendly', 'Pet Friendly', 'Artisanal Sourdough', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9h4jK12x',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Paper+%26+Pie+100+Feet+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/paperandpie.india',
     timings: '8:00 AM – 11:00 PM',
     upvotes: 198,
@@ -335,7 +335,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 14. Glen\'s Bakehouse (Exact Lavelle Road Coords)
+  // 14. Glen\'s Bakehouse (Lavelle Road)
   {
     id: 'glens-bakehouse-lavelle',
     name: "Glen's Bakehouse",
@@ -352,7 +352,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Red Velvet Cupcakes', 'Roast Chicken Pot Pie', 'Blueberry Cheesecake', 'Hot Chocolate'],
     vibeTags: ['Outdoor Seating', 'Romantic', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/8v3mL9',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Glens+Bakehouse+Lavelle+Road+Shanthala+Nagar+Bengaluru',
     timings: '9:00 AM – 11:30 PM',
     upvotes: 230,
     featured: false,
@@ -360,7 +360,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 15. Byg Brewski Brewing Company (Exact Hennur Coords)
+  // 15. Byg Brewski Brewing Company (Hennur)
   {
     id: 'byg-brewski-hennur',
     name: 'Byg Brewski Brewing Company',
@@ -377,7 +377,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Byg Wit', 'Smoked Dunkelweizen', 'Pork Ribs', 'Woodfired Truffle Pizza'],
     vibeTags: ['Craft Beer', 'Outdoor Seating', 'Pet Friendly', 'Live Music / Vinyl'],
     imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/5r8zX1',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Byg+Brewski+Brewing+Company+Hennur+Bagalur+Main+Rd+Bengaluru',
     instagramUrl: 'https://instagram.com/bygbrewski',
     timings: '12:00 PM – 1:00 AM',
     upvotes: 264,
@@ -386,7 +386,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 16. Veena Stores (Exact Malleshwaram Margosa Rd Coords)
+  // 16. Veena Stores (Malleshwaram)
   {
     id: 'veena-stores-malleshwaram',
     name: 'Veena Stores',
@@ -403,7 +403,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Steamed Idli with Pudina Chutney', 'Uddina Vada', 'Khara Bath', 'Shavige Bath'],
     vibeTags: ['Heritage (Pre-1980)', 'Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9Y4dK',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Veena+Stores+183+Margosa+Rd+Malleshwaram+Bengaluru',
     timings: '6:30 AM – 12:00 PM, 3:30 PM – 9:00 PM',
     upvotes: 320,
     featured: false,
@@ -411,7 +411,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 17. Chinita Real Mexican Food (Exact Indiranagar Coords)
+  // 17. Chinita Real Mexican Food (Indiranagar)
   {
     id: 'chinita-indiranagar',
     name: 'Chinita Real Mexican Food',
@@ -428,7 +428,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Pork Carnitas Tacos', 'Grilled Quesadillas', 'Churros with Dulce de Leche', 'House Margaritas'],
     vibeTags: ['Outdoor Seating', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/8UjL1',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Chinita+Real+Mexican+Food+100+Feet+Rd+Indiranagar+Bengaluru',
     instagramUrl: 'https://instagram.com/chinitaindia',
     timings: '12:30 PM – 3:30 PM, 7:00 PM – 11:00 PM',
     upvotes: 184,
@@ -437,7 +437,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 18. Toast & Tonic (Exact Wood Street Richmond Town Coords)
+  // 18. Toast & Tonic (Richmond Town)
   {
     id: 'toast-and-tonic-richmond',
     name: 'Toast & Tonic',
@@ -454,7 +454,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Botanist Gin & Tonic', 'Mustard Glazed Pork Ribs', 'Soft Shell Crab', 'Ravioli of Sweet Potato'],
     vibeTags: ['Romantic', 'Cocktail Program'],
     imageUrl: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/5r8zX1',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Toast+%26+Tonic+14%2F1+Wood+St+Richmond+Town+Bengaluru',
     instagramUrl: 'https://instagram.com/toastandtonic',
     timings: '12:00 PM – 3:30 PM, 7:00 PM – 12:30 AM',
     upvotes: 219,
@@ -463,7 +463,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 19. VV Puram Food Street (Exact Sajjan Rao Circle Coords)
+  // 19. VV Puram Food Street (Basavanagudi)
   {
     id: 'vv-puram-food-street',
     name: 'VV Puram Food Street',
@@ -480,7 +480,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Hot Paddus with Coconut Chutney', 'Akki Roti with Ennegayi', 'Dosa Camp Ghee Roast', 'Gulkand with Ice Cream'],
     vibeTags: ['Late Night', 'Pure Veg', 'Pocket Friendly', 'Heritage (Pre-1980)'],
     imageUrl: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/1v7kR4M3gL',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=VV+Puram+Food+Street+Sajjan+Rao+Circle+Bengaluru',
     timings: '6:30 PM – 12:30 AM',
     upvotes: 367,
     featured: true,
@@ -488,7 +488,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 20. Blue Tokai Coffee Roasters (Exact Koramangala 80ft Rd Coords)
+  // 20. Blue Tokai Coffee Roasters (Koramangala)
   {
     id: 'blue-tokai-koramangala',
     name: 'Blue Tokai Coffee Roasters',
@@ -505,7 +505,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Iced Pour Over (Attikan Estate)', 'Vietnamese Cold Brew', 'Almond Croissant', 'Avocado Toast'],
     vibeTags: ['Work Friendly', 'Pet Friendly', 'Outdoor Seating', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/hGZ9v68GkL2',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Blue+Tokai+Coffee+Roasters+80+Feet+Rd+Koramangala+Bengaluru',
     timings: '7:30 AM – 11:00 PM',
     upvotes: 210,
     featured: false,
@@ -513,7 +513,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 21. Arbor Brewing Company (Exact Magrath Rd Coords)
+  // 21. Arbor Brewing Company (Magrath Road)
   {
     id: 'arbor-brewing-company',
     name: 'Arbor Brewing Company',
@@ -530,7 +530,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Bangalore Bliss (Hefeweizen)', 'Raging Elephant (IPA)', 'BBQ Pork Ribs', 'Spicy Artichoke Dip'],
     vibeTags: ['Craft Beer', 'Live Music / Vinyl', 'Late Night'],
     imageUrl: 'https://images.unsplash.com/photo-1538488881522-4306c3c9843c?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/3q2tZ5yK9M',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Arbor+Brewing+Company+Allied+Grande+Plaza+Magrath+Rd+Bengaluru',
     timings: '12:00 PM – 1:00 AM',
     upvotes: 290,
     featured: false,
@@ -538,7 +538,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 22. Bengaluru Oota Company (Exact Cambridge Layout Coords)
+  // 22. Bengaluru Oota Company (Cambridge Layout)
   {
     id: 'bengaluru-oota-company',
     name: 'Bengaluru Oota Company',
@@ -555,7 +555,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Mangalorean Crab Curry', 'Gowda Mutton Fry', 'Neer Dosa with Kori Gassi', 'Elaneer Payasam'],
     vibeTags: ['Romantic', 'Heritage (Pre-1980)'],
     imageUrl: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/8v3mL9',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Bengaluru+Oota+Company+Cambridge+Rd+Jogupalya+Bengaluru',
     timings: '12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Prior Booking Only)',
     upvotes: 180,
     featured: true,
@@ -563,7 +563,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 23. Third Wave Coffee (Exact HSR Sector 4 Coords)
+  // 23. Third Wave Coffee (HSR Layout)
   {
     id: 'third-wave-coffee-hsr',
     name: 'Third Wave Coffee',
@@ -580,7 +580,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Sea Salt Mocha', 'Cold Fashioned', 'Everything Bagel with Cream Cheese', 'Hummus Sourdough Platter'],
     vibeTags: ['Work Friendly', 'Pet Friendly', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9h4jK12x',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Third+Wave+Coffee+17th+Cross+Sector+4+HSR+Layout+Bengaluru',
     timings: '7:30 AM – 1:00 AM',
     upvotes: 215,
     featured: false,
@@ -588,7 +588,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 24. Geist Brewing Taproom (Exact Brigade Gateway Orion Coords)
+  // 24. Geist Brewing Taproom (Rajajinagar)
   {
     id: 'geist-brewing-taproom',
     name: 'Geist Brewing Taproom',
@@ -605,7 +605,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Kamacitra (NEIPA)', 'Uncle Dunkel (Dark Wheat)', 'Geist Witty Gourmet Pizza', 'Smoked Sausages'],
     vibeTags: ['Craft Beer', 'Outdoor Seating', 'Pet Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9qJ8Xf2mZkL',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Geist+Brewing+Taproom+Brigade+Gateway+Dr+Rajkumar+Rd+Bengaluru',
     timings: '12:00 PM – 11:30 PM',
     upvotes: 195,
     featured: false,
@@ -613,7 +613,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 25. Taaza Thindi (Exact Jayanagar 4th Block Coords)
+  // 25. Taaza Thindi (Jayanagar)
   {
     id: 'taaza-thindi-jayanagar',
     name: 'Taaza Thindi',
@@ -630,7 +630,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Masala Dosa', 'Vada with Coconut Chutney', 'Khara Bath & Kesari Bath (Chow Chow Bath)', 'Filter Coffee'],
     vibeTags: ['Pure Veg', 'Breakfast Spot', 'Filter Coffee Spot', 'Pocket Friendly'],
     imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/d8mBwL2bQkQzJ6kPA',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Taaza+Thindi+1004+26th+Main+Rd+4th+T+Block+Jayanagar+Bengaluru',
     timings: '6:30 AM – 12:00 PM, 4:30 PM – 9:30 PM',
     upvotes: 310,
     featured: false,
@@ -638,7 +638,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 26. Daily Sushi (Exact 12th Main Indiranagar Coords)
+  // 26. Daily Sushi (Indiranagar)
   {
     id: 'daily-sushi-indiranagar',
     name: 'Daily Sushi',
@@ -655,7 +655,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Spicy Salmon Maki Roll', 'Prawn Tempura Roll', 'Truffle Edamame Gyoza', 'Chicken Katsu Curry'],
     vibeTags: ['Romantic'],
     imageUrl: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/7g8fK12v',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Daily+Sushi+12th+Main+Rd+Indiranagar+Bengaluru',
     timings: '12:00 PM – 11:00 PM',
     upvotes: 165,
     featured: false,
@@ -663,7 +663,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 27. Sriracha & Sanchez (Exact UB City Coords)
+  // 27. Sriracha & Sanchez (UB City)
   {
     id: 'sriracha-ub-city',
     name: 'Sriracha & Sanchez',
@@ -680,7 +680,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Tableside Fresh Guacamole', 'Som Tum Papaya Salad', 'Wild Mushroom Dim Sum', 'Tres Leches'],
     vibeTags: ['Rooftop', 'Romantic', 'Outdoor Seating', 'Cocktail Program'],
     imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/8v3mL9',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Sanchez+and+Sriracha+UB+City+Vittal+Mallya+Rd+Bengaluru',
     timings: '12:00 PM – 11:30 PM',
     upvotes: 210,
     featured: false,
@@ -688,7 +688,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 28. Hari Super Sandwich (Exact Jayanagar 3rd Block Coords)
+  // 28. Hari Super Sandwich (Jayanagar)
   {
     id: 'hari-super-sandwich-jayanagar',
     name: 'Hari Super Sandwich',
@@ -705,7 +705,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Chocolate Grilled Sandwich', 'Dahi Puri Toast', 'Cheese Chilli Toast', 'American Sweet Corn Sandwich'],
     vibeTags: ['Pocket Friendly', 'Pure Veg', 'Late Night'],
     imageUrl: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/1v7kR4M3gL',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Hari+Super+Sandwich+22nd+Cross+3rd+Block+Jayanagar+Bengaluru',
     timings: '11:00 AM – 10:00 PM',
     upvotes: 240,
     featured: false,
@@ -713,7 +713,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 29. The Rameshwaram Cafe (Exact 12th Main Indiranagar Coords)
+  // 29. The Rameshwaram Cafe (Indiranagar)
   {
     id: 'rameshwaram-cafe-indiranagar',
     name: 'The Rameshwaram Cafe',
@@ -730,7 +730,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Ghee Podi Masala Dosa', 'Ghee Podi Idli', 'Ven Pongal', 'Strong Filter Coffee'],
     vibeTags: ['Pure Veg', 'Breakfast Spot', 'Late Night', 'Filter Coffee Spot'],
     imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/3rX9Y2mQ',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=The+Rameshwaram+Cafe+12th+Main+Rd+Indiranagar+Bengaluru',
     timings: '6:30 AM – 1:00 AM',
     upvotes: 430,
     featured: true,
@@ -738,7 +738,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: true,
     verified: true,
   },
-  // 30. Brik Oven (Exact Church Street Coords)
+  // 30. Brik Oven (Church Street)
   {
     id: 'brik-oven-church-street',
     name: 'Brik Oven',
@@ -755,7 +755,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['The Bird (Smoked Chicken Pizza)', 'Quattro Formaggi', 'Truffle Fries', 'Nutella S’mores Shake'],
     vibeTags: ['Artisanal Sourdough', 'Romantic', 'Outdoor Seating'],
     imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9rT8V1',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Brik+Oven+Church+St+Shanthala+Nagar+Ashok+Nagar+Bengaluru',
     timings: '11:30 AM – 11:00 PM',
     upvotes: 275,
     featured: false,
@@ -763,7 +763,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 31. Koshy\'s Parade Cafe (Exact St. Mark\'s Road Coords)
+  // 31. Koshy\'s Parade Cafe (St. Mark\'s Road)
   {
     id: 'koshys-st-marks-road',
     name: "Koshy's Parade Cafe",
@@ -780,7 +780,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Mutton Cutlets', 'Bacon & Sausage Omelette', 'Fish & Chips', 'Coffee with Cream'],
     vibeTags: ['Heritage (Pre-1980)', 'Breakfast Spot', 'Live Music / Vinyl'],
     imageUrl: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/8v3mL9',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Koshys+Restaurant+39+St+Marks+Rd+Bengaluru',
     timings: '9:00 AM – 11:00 PM',
     upvotes: 310,
     featured: true,
@@ -788,7 +788,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     isVegetarian: false,
     verified: true,
   },
-  // 32. Corner House Ice Cream (Exact Residency Road Coords)
+  // 32. Corner House Ice Cream (Residency Road)
   {
     id: 'corner-house-residency-road',
     name: 'Corner House Ice Cream',
@@ -805,7 +805,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     mustTry: ['Death by Chocolate (DBC)', 'Hot Chocolate Fudge (HCF)', 'Trilogy', 'Almond Fudge'],
     vibeTags: ['Pocket Friendly', 'Late Night', 'Heritage (Pre-1980)'],
     imageUrl: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80',
-    googleMapsUrl: 'https://maps.app.goo.gl/9rT8V1',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Corner+House+Ice+Cream+Residency+Rd+Bengaluru',
     timings: '11:00 AM – 11:30 PM',
     upvotes: 420,
     featured: true,
