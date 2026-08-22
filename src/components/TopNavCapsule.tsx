@@ -99,17 +99,13 @@ export default function TopNavCapsule({
                   placeholder="Search dish (Crispy Dosa, Pour-over, Craft IPA, Tacos) or spot…"
                   className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 py-2.5 pl-10 pr-9 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-900 shadow-2xs"
                 />
-                {searchQuery ? (
+                {searchQuery && (
                   <button
                     onClick={() => onSearchChange('')}
                     className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-zinc-400 hover:bg-zinc-200 hover:text-zinc-700"
                   >
                     <X className="h-3.5 w-3.5" />
                   </button>
-                ) : (
-                  <kbd className="hidden lg:inline-block absolute right-3 top-1/2 -translate-y-1/2 rounded border border-zinc-200 bg-white px-1.5 py-0.5 text-[10px] font-semibold text-zinc-400">
-                    ⌘K
-                  </kbd>
                 )}
               </div>
 
