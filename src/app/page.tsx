@@ -34,8 +34,9 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All');
   const [selectedNeighborhood, setSelectedNeighborhood] = useState<Neighborhood | 'All'>('All');
   const [vegOnly, setVegOnly] = useState(false);
+  const [showSavedOnly, setShowSavedOnly] = useState(false);
 
-  // Bookmarks state (persisted locally for drawer and card interaction)
+  // Bookmarks state (persisted locally)
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
 
   // Submit Modal
@@ -111,6 +112,10 @@ export default function Home() {
   // Filter Logic
   const filteredRestaurants = useMemo(() => {
     return restaurants.filter((r) => {
+      if (showSavedOnly && !bookmarkedIds.has(r.id)) {
+        return false;
+      }
+
       if (selectedCategory !== 'All' && r.category !== selectedCategory) {
         return false;
       }
@@ -142,6 +147,8 @@ export default function Home() {
     selectedCategory,
     selectedNeighborhood,
     vegOnly,
+    showSavedOnly,
+    bookmarkedIds,
     searchQuery,
   ]);
 
@@ -157,6 +164,9 @@ export default function Home() {
         onSelectNeighborhood={handleSelectNeighborhood}
         vegOnly={vegOnly}
         onToggleVegOnly={setVegOnly}
+        showSavedOnly={showSavedOnly}
+        onToggleSavedOnly={setShowSavedOnly}
+        savedCount={bookmarkedIds.size}
         viewMode={viewMode}
         onSelectViewMode={setViewMode}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}

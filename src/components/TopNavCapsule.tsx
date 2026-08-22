@@ -1,9 +1,10 @@
 'use client';
 
 import React from 'react';
-import { Category, Neighborhood, ALL_CATEGORIES, ALL_NEIGHBORHOODS } from '@/types';
+import { Category, Neighborhood, ALL_CATEGORIES } from '@/types';
 import {
   Search,
+  Bookmark,
   Plus,
   X,
   Map as MapIcon,
@@ -36,6 +37,9 @@ interface TopNavCapsuleProps {
   onSelectNeighborhood: (n: Neighborhood | 'All') => void;
   vegOnly: boolean;
   onToggleVegOnly: (v: boolean) => void;
+  showSavedOnly: boolean;
+  onToggleSavedOnly: (s: boolean) => void;
+  savedCount: number;
   viewMode: ViewMode;
   onSelectViewMode: (mode: ViewMode) => void;
   onOpenSubmitModal: () => void;
@@ -51,6 +55,9 @@ export default function TopNavCapsule({
   onSelectNeighborhood,
   vegOnly,
   onToggleVegOnly,
+  showSavedOnly,
+  onToggleSavedOnly,
+  savedCount,
   viewMode,
   onSelectViewMode,
   onOpenSubmitModal,
@@ -103,7 +110,7 @@ export default function TopNavCapsule({
               )}
             </div>
 
-            {/* Controls: Cravings Dropdown, Veg toggle, View Switcher & Add Spot */}
+            {/* Controls: Cravings, Veg, Saved, View Switcher & Add Spot */}
             <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar shrink-0">
               {/* Craving / Cuisine Selector */}
               <div className="relative shrink-0">
@@ -134,6 +141,21 @@ export default function TopNavCapsule({
               >
                 <span>🌱</span>
                 <span className="hidden sm:inline">Veg</span>
+              </button>
+
+              {/* Saved Wishlist Toggle */}
+              <button
+                onClick={() => onToggleSavedOnly(!showSavedOnly)}
+                className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 ${
+                  showSavedOnly
+                    ? 'bg-zinc-900 text-white shadow-xs'
+                    : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600 hover:bg-zinc-100'
+                }`}
+                title="View Saved Spots"
+              >
+                <Bookmark className={`h-3.5 w-3.5 ${showSavedOnly ? 'fill-white' : ''}`} />
+                <span className="hidden sm:inline">Saved</span>
+                {savedCount > 0 && <span className="text-[10.5px] font-bold">({savedCount})</span>}
               </button>
 
               {/* View Mode Switcher (Map vs Grid) */}
