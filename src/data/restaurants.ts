@@ -504,23 +504,24 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     ]
   },
   {
-    "id": "subko-coffee-indiranagar",
-    "name": "Subko Coffee & Roastery",
-    "slug": "subko-coffee-indiranagar",
-    "tagline": "Craft roastery, craft chocolate & artisanal viennoiserie",
-    "description": "Subko\u2019s massive flagship in Indiranagar combining experimental subcontinental coffee bean roasts with pod-to-bar craft chocolate and 72-hour lamination bakes.",
+    "id": "the-craftery-by-subko",
+    "name": "The Craftery by Subko",
+    "slug": "the-craftery-by-subko",
+    "tagline": "Pod-to-bar craft chocolate roastery, bakehouse & micro-lot coffee bar",
+    "description": "Subko\u2019s sprawling experimental craft roastery in Koramangala 3rd Block combining subcontinental micro-lot coffees with bean-to-bar chocolate manufacturing and 72-hour laminated sourdough viennoiserie.",
     "category": "Specialty Coffee & Cafe",
-    "neighborhood": "Indiranagar",
-    "address": "968, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.97284,
-    "lng": 77.64082,
+    "neighborhood": "Koramangala",
+    "address": "68, Koramangala-Sarjapur Rd, 3rd Block, Koramangala, Bengaluru, Karnataka 560034",
+    "lat": 12.926081,
+    "lng": 77.625409,
     "priceLevel": "\u20b9\u20b9\u20b9",
     "priceForTwo": "\u20b91,200",
     "mustTry": [
       "Subko Cold Brew on Tap",
       "Twice-Baked Almond Croissant",
-      "Pod-to-Bar Craft Chocolate",
-      "Sourdough Tartines"
+      "Pod-to-Bar Craft Chocolate Tiles",
+      "Sourdough Tartines",
+      "Flat White with Estate Beans"
     ],
     "vibeTags": [
       "Work Friendly",
@@ -528,9 +529,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Subko+Coffee+12th+Main+Rd+Indiranagar+Bengaluru",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Craftery+by+Subko+Koramangala+Bengaluru",
     "timings": "7:30 AM \u2013 10:30 PM",
-    "curatorNote": "The sourdough bakery items and small-batch chocolate bars sourced from South Indian estates are extraordinary.",
+    "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
     "verified": true
   },
