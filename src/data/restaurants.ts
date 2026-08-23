@@ -511,7 +511,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Subko\u2019s sprawling experimental craft roastery in Koramangala 3rd Block combining subcontinental micro-lot coffees with bean-to-bar chocolate manufacturing and 72-hour laminated sourdough viennoiserie.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "68, Koramangala-Sarjapur Rd, 3rd Block, Koramangala, Bengaluru, Karnataka 560034",
+    "address": "68, 3rd Block, Koramangala, Bengaluru, Karnataka 560034",
     "lat": 12.9298,
     "lng": 77.6256,
     "priceLevel": "\u20b9\u20b9\u20b9",
@@ -529,11 +529,31 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Craftery+by+Subko%2C+68%2C+Koramangala-Sarjapur+Rd%2C+3rd+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560034",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Craftery+by+Subko%2C+68%2C+3rd+Block%2C+Koramangala%2C+Bengaluru",
     "timings": "7:30 AM \u2013 10:30 PM",
     "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "branches": [
+      {
+        "id": "subko-indiranagar",
+        "name": "Indiranagar (12th Main)",
+        "neighborhood": "Indiranagar",
+        "address": "789/A, Ground Floor, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9725,
+        "lng": 77.6405,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Subko+Coffee+Roasters%2C+789%2FA%2C+12th+Main+Rd%2C+Indiranagar%2C+Bengaluru"
+      },
+      {
+        "id": "ajji-house-by-subko-shanthi-nagar",
+        "name": "Shanthi Nagar (Ajji House at The Courtyard)",
+        "neighborhood": "CBD & Central",
+        "address": "The Courtyard, 105, K.H. Road, Shanthinagar, Bengaluru, Karnataka 560027",
+        "lat": 12.9566,
+        "lng": 77.5925,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ajji+House+by+Subko%2C+The+Courtyard%2C+105+KH+Road%2C+Shanthinagar%2C+Bengaluru"
+      }
+    ]
   },
   {
     "id": "araku-coffee",
@@ -2084,11 +2104,22 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavonne+Cafe%2C+263%2C+3rd+Cross+Rd%2C+2nd+Stage%2C+Defence+Colony%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560071",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavonne+Cafe%2C+263%2C+3rd+Cross+Rd%2C+Defence+Colony%2C+Indiranagar%2C+Bengaluru",
     "timings": "8:30 AM \u2013 11:00 PM",
     "curatorNote": "The gold standard of French pastry in South India. The layered almond croissants shatter with every buttery bite.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "branches": [
+      {
+        "id": "lavonne-cafe-st-marks-road",
+        "name": "St. Marks Road (Samrah Plaza)",
+        "neighborhood": "Church Street & MG Road",
+        "address": "Samrah Plaza, 4/2, Ground Floor, St. Marks Rd, Bengaluru, Karnataka 560001",
+        "lat": 12.973,
+        "lng": 77.6012,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavonne+Cafe%2C+Samrah+Plaza%2C+4%2F2%2C+St.+Marks+Rd%2C+Bengaluru"
+      }
+    ]
   },
   {
     "id": "amadora-ice-cream-indiranagar",
