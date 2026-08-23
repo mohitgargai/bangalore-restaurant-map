@@ -55,6 +55,7 @@ export const ALL_NEIGHBORHOODS: Neighborhood[] = [
 ];
 
 export type PriceLevel = '₹' | '₹₹' | '₹₹₹' | '₹₹₹₹';
+export const ALL_PRICE_LEVELS: PriceLevel[] = ['₹', '₹₹', '₹₹₹', '₹₹₹₹'];
 
 export type VibeTag =
   | 'Work Friendly'

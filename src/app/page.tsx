@@ -13,6 +13,7 @@ import SpatialMapFlow, { DISTRICT_MAP_CONFIG } from '@/components/SpatialMapFlow
 import GridView from '@/components/GridView';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
+import AdminDashboard from '@/components/AdminDashboard';
 
 export default function Home() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
@@ -40,34 +41,34 @@ export default function Home() {
   // Bookmarks state (persisted locally)
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
 
-  // Submit Modal
+  // Modals state
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
 
-  // Load initial data and bookmarks
+  // Load initial data, bookmarks & admin overrides
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('blr_food_bookmarks');
-      if (saved) {
-        setBookmarkedIds(new Set(JSON.parse(saved)));
+      const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
+      if (savedBookmarks) {
+        setBookmarkedIds(new Set(JSON.parse(savedBookmarks)));
       }
+
+      // Check for Admin Custom Overrides
+      const savedOverrides = localStorage.getItem('blr_custom_overrides');
+      if (savedOverrides) {
+        const parsedOverrides = JSON.parse(savedOverrides);
+        if (Array.isArray(parsedOverrides) && parsedOverrides.length > 0) {
+          setRestaurants(parsedOverrides);
+          return;
+        }
+      }
+
+      // Or load user submissions + initial
       const userSubmissions = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
       if (Array.isArray(userSubmissions) && userSubmissions.length > 0) {
         setRestaurants([...userSubmissions, ...INITIAL_RESTAURANTS]);
       }
     } catch (e) {}
-  }, []);
-
-  // Keyboard shortcut listener for ⌘K
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        const searchInput = document.querySelector('input[type="text"]') as HTMLInputElement;
-        searchInput?.focus();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   // Synchronized Neighborhood selection
@@ -135,18 +136,19 @@ export default function Home() {
         return false;
       }
 
-      if (vegOnly && !r.isVegetarian && !r.vibeTags.includes('Pure Veg')) {
+      if (vegOnly && !r.isVegetarian) {
         return false;
       }
 
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
-        const matchName = r.name.toLowerCase().includes(q);
-        const matchNeighborhood = r.neighborhood.toLowerCase().includes(q);
-        const matchCategory = r.category.toLowerCase().includes(q);
-        const matchMustTry = r.mustTry.some((dish) => dish.toLowerCase().includes(q));
+        const matchesName = r.name.toLowerCase().includes(q);
+        const matchesDish = r.mustTry.some((dish) => dish.toLowerCase().includes(q));
+        const matchesVibe = r.vibeTags.some((tag) => tag.toLowerCase().includes(q));
+        const matchesTagline = r.tagline.toLowerCase().includes(q);
+        const matchesDescription = r.description.toLowerCase().includes(q);
 
-        if (!matchName && !matchNeighborhood && !matchCategory && !matchMustTry) {
+        if (!matchesName && !matchesDish && !matchesVibe && !matchesTagline && !matchesDescription) {
           return false;
         }
       }
@@ -181,6 +183,7 @@ export default function Home() {
         viewMode={viewMode}
         onSelectViewMode={setViewMode}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}
+        onOpenAdmin={() => setIsAdminOpen(true)}
         totalFilteredCount={filteredRestaurants.length}
       />
 
@@ -230,6 +233,14 @@ export default function Home() {
         isOpen={isSubmitOpen}
         onClose={() => setIsSubmitOpen(false)}
         onSuccess={handleNewSubmission}
+      />
+
+      {/* Admin & Data Studio Dashboard */}
+      <AdminDashboard
+        isOpen={isAdminOpen}
+        onClose={() => setIsAdminOpen(false)}
+        restaurants={restaurants}
+        onUpdateRestaurants={setRestaurants}
       />
     </main>
   );
