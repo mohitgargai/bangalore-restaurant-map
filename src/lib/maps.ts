@@ -5,8 +5,9 @@ import { Restaurant } from '@/types';
  * that reliably opens the place page on desktop and mobile.
  */
 export function getGoogleMapsPlaceUrl(restaurant: Restaurant): string {
+  const cleanName = restaurant.name.replace(/\s*\([^)]*\)/g, '').trim();
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    `${restaurant.name}, ${restaurant.address}`
+    `${cleanName}, ${restaurant.address}`
   )}`;
 }
 
