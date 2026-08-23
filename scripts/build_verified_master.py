@@ -2725,6 +2725,556 @@ ALL_MASTER_SPOTS = [
         "curatorNote": "A monumental craft beer landmark. Grab a table by the illuminated lake for fresh Rauchbier and wood-fired sourdough pizza.",
         "isVegetarian": False,
         "verified": True
+    },
+    {
+        "id": "nerlu-cafe-crescent-road",
+        "name": "Nerlu Cafe",
+        "slug": "nerlu-cafe-crescent-road",
+        "tagline": "Bangalore's premier multi-roaster coffee bar & tasting flights",
+        "description": "Founded by Shibani Murlidhar and Rajiv Majumdar, Nerlu is Bangalore\u2019s flagship multi-roaster coffee sanctuary featuring an evolving menu of small-batch beans from independent Indian roasters and a dedicated manual brew bar.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "CBD & Central",
+        "address": "30, Ground Floor, Crescent Rd, High Grounds, Madhava Nagar, Bengaluru, Karnataka 560001",
+        "lat": 12.9863,
+        "lng": 77.5838,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9700",
+        "mustTry": [
+            "Single-Origin Pour-Over Tasting Flight",
+            "Hario Switch Manual Brew",
+            "Spiced Orange Cold Brew",
+            "Filter Coffee Panna Cotta",
+            "Sourdough Toasties"
+        ],
+        "vibeTags": [
+            "Work Friendly",
+            "Outdoor Seating",
+            "Filter Coffee Spot",
+            "Artisanal Sourdough"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe/@12.9863,77.5838,17z",
+        "timings": "8:30 AM \u2013 8:00 PM (Closed Mondays)",
+        "curatorNote": "The definitive coffee lover's destination. Order a comparative tasting flight to experience terroir variations from different Indian roasters.",
+        "isVegetarian": False,
+        "verified": True,
+        "branches": [
+            {
+                "id": "nerlu-cafe-indiranagar",
+                "name": "Indiranagar (Inside Beruru, Double Rd)",
+                "neighborhood": "Indiranagar",
+                "address": "Inside Beruru, 218, Double Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+                "lat": 12.9775,
+                "lng": 77.643,
+                "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe+-+Indiranagar/@12.9775,77.6430,17z"
+            }
+        ]
+    },
+    {
+        "id": "bologna-italian-indiranagar",
+        "name": "Bologna Italian Ristorante",
+        "slug": "bologna-italian-indiranagar",
+        "tagline": "Authentic cream-free traditional Italian dining & hand-rolled pasta",
+        "description": "A traditional Italian trattoria on 100 Feet Road celebrated for genuine Italian culinary techniques, handmade emulsified pasta sauces, wood-fired pizzas, and classic desserts.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "759, 1st Floor, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
+        "lat": 12.97204,
+        "lng": 77.6409,
+        "priceLevel": "\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b91,800",
+        "mustTry": [
+            "Fettuccine All'Amatriciana",
+            "Aglio e Olio Gamberi",
+            "Pizza Affettati Misti Con Funghi",
+            "Classic Tiramisu",
+            "Risotto ai Funghi Porcini"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Outdoor Seating",
+            "Cocktail Program"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Bologna+Italian+Ristorante/@12.97204,77.64090,17z",
+        "timings": "12:00 PM \u2013 11:00 PM",
+        "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "spettacolare-indiranagar",
+        "name": "Spettacolare",
+        "slug": "spettacolare-indiranagar",
+        "tagline": "48-hour slow-fermented Neapolitan pizzas & handmade Sicilian pasta",
+        "description": "An intimate trattoria in Hoysala Nagar specializing in slow-fermented wood-fired Neapolitan pizzas, artisanal handmade orecchiette, panzerotti, and Sicilian cannoli.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "208, D'Souza Complex, Paramahansa Yogananda Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9778,
+        "lng": 77.6432,
+        "priceLevel": "\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b91,500",
+        "mustTry": [
+            "Wood-fired Neapolitan Margherita",
+            "Handmade Truffle Fettuccine",
+            "Panzerotti",
+            "Pistachio Cannoli",
+            "Lemon Granita"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Outdoor Seating",
+            "Artisanal Sourdough"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://maps.app.goo.gl/7xz8zj81TGEdgw4A6",
+        "timings": "12:30 PM \u2013 10:30 PM",
+        "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "concu-patisserie-indiranagar",
+        "name": "Con\u00e7u Patisserie & Cafe",
+        "slug": "concu-patisserie-indiranagar",
+        "tagline": "Luxury French-European patisserie & Scandinavian coral aesthetic",
+        "description": "A luxury European patisserie and brunch cafe on 12th Main known for its distinctive warm coral minimalist architecture, choux au craquelin, signature tiramisu, and viennoiserie.",
+        "category": "Bakeries & Desserts",
+        "neighborhood": "Indiranagar",
+        "address": "1089/A, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
+        "lat": 12.9698,
+        "lng": 77.6405,
+        "priceLevel": "\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b91,200",
+        "mustTry": [
+            "Signature Tiramisu",
+            "Ispahan Choux Bun",
+            "Chocolate Hazelnut Mousse",
+            "Berry Cheesecake",
+            "Avocado Brioche Tartine"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Work Friendly",
+            "Outdoor Seating"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Concu+Indiranagar/@12.9698,77.6405,17z",
+        "timings": "9:00 AM \u2013 11:30 PM",
+        "curatorNote": "Impeccable French pastry technique in a stunning sunlit setting. The signature Tiramisu and Choux buns are city benchmarks.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "kink-speciality-coffee-indiranagar",
+        "name": "Kink Speciality Coffee",
+        "slug": "kink-speciality-coffee-indiranagar",
+        "tagline": "Third-wave roastery, precision manual extractions & ceremonial matcha",
+        "description": "A minimalist specialty coffee roaster and slow brew bar in Indiranagar serving single-origin micro-lots, precision manual pour-overs, and ceremonial-grade matcha.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "14, 5th Main Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9765,
+        "lng": 77.6425,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9650",
+        "mustTry": [
+            "Single-Origin Manual Pour-Over",
+            "Ceremonial Matcha Latte",
+            "Tonic Cold Brew",
+            "Vietnamese Iced Coffee"
+        ],
+        "vibeTags": [
+            "Work Friendly",
+            "Outdoor Seating"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Kink+Speciality+Coffee/@12.9765,77.6425,17z",
+        "timings": "8:00 AM \u2013 10:00 PM",
+        "curatorNote": "A sanctuary for coffee purists and matcha enthusiasts seeking uncompromising manual brewing craft.",
+        "isVegetarian": True,
+        "verified": True,
+        "branches": [
+            {
+                "id": "kink-slo-bar-ashok-nagar",
+                "name": "Ashok Nagar (Castle St Slo Bar)",
+                "neighborhood": "Church Street & MG Road",
+                "address": "Castle St, Ashok Nagar, Bengaluru, Karnataka 560025",
+                "lat": 12.9682,
+                "lng": 77.6072,
+                "googleMapsUrl": "https://www.google.com/maps/place/Kink+Slo+Bar/@12.9682,77.6072,17z"
+            }
+        ]
+    },
+    {
+        "id": "smash-guys-indiranagar",
+        "name": "Smash Guys",
+        "slug": "smash-guys-indiranagar",
+        "tagline": "Oklahoma-style crispy laced-edge smash burgers & potato buns",
+        "description": "Bangalore's cult smash burger joint specializing in hard-smashed beef, lamb, and chicken patties with ultra-crispy edges, melted American cheese, and Martin\u2019s potato buns.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "948, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9712,
+        "lng": 77.6402,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9700",
+        "mustTry": [
+            "Oklahoma Smashed Cheeseburger",
+            "Chili Cheese Lamb Smash",
+            "Truffle Parmesan Fries",
+            "Lotus Biscoff Shake"
+        ],
+        "vibeTags": [
+            "Late Night",
+            "Pocket Friendly"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Smash+Guys+Indiranagar/@12.9712,77.6402,17z",
+        "timings": "12:00 PM \u2013 12:00 AM",
+        "curatorNote": "The real deal for smash burgers. Crisp caramelized lace edges paired with squishy potato buns and secret house sauce.",
+        "isVegetarian": False,
+        "verified": True,
+        "branches": [
+            {
+                "id": "smash-guys-ecoworld",
+                "name": "Bellandur (RMZ EcoWorld)",
+                "neighborhood": "Whitefield",
+                "address": "RMZ EcoWorld, Outer Ring Rd, Bellandur, Bengaluru, Karnataka 560103",
+                "lat": 12.9258,
+                "lng": 77.6868,
+                "googleMapsUrl": "https://www.google.com/maps/place/Smash+Guys+Bellandur/@12.9258,77.6868,17z"
+            }
+        ]
+    },
+    {
+        "id": "beanlore-coffee-indiranagar",
+        "name": "Beanlore Coffee Roasters",
+        "slug": "beanlore-coffee-indiranagar",
+        "tagline": "High-ceiling artisanal roastery, Aeropress bar & work cafe",
+        "description": "A spacious specialty coffee roastery on CMH Road with high ceilings, single-estate roasts, cold brew tap lines, ergonomic workstations, and sourdough bakes.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "503, Chinmaya Mission Hospital Rd, Indira Nagar 1st Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9782,
+        "lng": 77.6439,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9750",
+        "mustTry": [
+            "Liquid Tiramisu Frappe",
+            "Single-Estate Aeropress",
+            "Flat White",
+            "Truffle Mushroom Toast",
+            "Basque Cheesecake"
+        ],
+        "vibeTags": [
+            "Work Friendly",
+            "Outdoor Seating"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Beanlore+Coffee+Roasters/@12.9782,77.6439,17z",
+        "timings": "8:00 AM \u2013 11:00 PM",
+        "curatorNote": "Excellent specialty coffee and one of the most comfortable laptop-friendly workspaces on CMH Road.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "paper-and-pie-indiranagar",
+        "name": "Paper & Pie",
+        "slug": "paper-and-pie-indiranagar",
+        "tagline": "Japandi-minimalist creator hub, podcast studio & specialty roastery",
+        "description": "A stunning Japandi-designed lifestyle cafe on 100ft Road equipped with soundproof podcast booths, in-house coffee roasting, sourdough tartines, and signature fruit pies.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "842/A, Metro Pillar 55, 100 Feet Rd, 1st Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.979,
+        "lng": 77.6406,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9900",
+        "mustTry": [
+            "Specialty Pour-over",
+            "Sourdough Avocado Tartine",
+            "Creamy Pesto Gnocchi",
+            "Signature Fruit Pies & Tarts",
+            "Japanese Katsu Sandwich"
+        ],
+        "vibeTags": [
+            "Work Friendly",
+            "Outdoor Seating",
+            "Breakfast Spot"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Paper+%26+Pie+Indiranagar/@12.9790,77.6406,17z",
+        "timings": "8:00 AM \u2013 11:00 PM",
+        "curatorNote": "A gorgeous convergence of specialty coffee, creative co-working, and elevated cafe comfort.",
+        "isVegetarian": False,
+        "verified": True,
+        "branches": [
+            {
+                "id": "paper-and-pie-whitefield",
+                "name": "Whitefield (ITPL Main Rd)",
+                "neighborhood": "Whitefield",
+                "address": "ITPL Main Rd, Whitefield, Bengaluru, Karnataka 560066",
+                "lat": 12.9845,
+                "lng": 77.728,
+                "googleMapsUrl": "https://www.google.com/maps/place/Paper+%26+Pie+Whitefield/@12.9845,77.7280,17z"
+            }
+        ]
+    },
+    {
+        "id": "the-kind-roastery-jp-nagar",
+        "name": "The Kind Roastery & Brew Room",
+        "slug": "the-kind-roastery-jp-nagar",
+        "tagline": "100% vegetarian specialty roastery, Zen garden & eggless bakery",
+        "description": "A 100% vegetarian specialty coffee roastery and eggless bakery in JP Nagar featuring Japanese Zen architecture, tranquil bamboo courtyards, and gourmet plant-forward dining.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "JP Nagar",
+        "address": "1316/F, 18th B Main Rd, Marenahalli, 2nd Phase, JP Nagar, Bengaluru, Karnataka 560078",
+        "lat": 12.9118,
+        "lng": 77.5872,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9850",
+        "mustTry": [
+            "Kind Brew Single-Origin Pour-over",
+            "Korean Cream Cheese Garlic Brioche",
+            "Avocado Tartine",
+            "Roasted Pepper Dumplings",
+            "Lotus Biscoff Cheesecake"
+        ],
+        "vibeTags": [
+            "Pure Veg",
+            "Work Friendly",
+            "Outdoor Seating",
+            "Romantic"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/The+Kind+Roastery+%26+Brew+Room/@12.9118,77.5872,17z",
+        "timings": "8:00 AM \u2013 11:00 PM",
+        "curatorNote": "South Bangalore\u2019s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
+        "isVegetarian": True,
+        "verified": True
+    },
+    {
+        "id": "circa-11-indiranagar",
+        "name": "Circa 11",
+        "slug": "circa-11-indiranagar",
+        "tagline": "Michelin-trained day-to-night progressive dining & craft cocktail room",
+        "description": "Created by Michelin-trained Chef Pradyumna Harithsa, Circa 11 serves specialty coffee and bakes by day, transforming into a progressive global dining room and cocktail lounge by night.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "957, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9715,
+        "lng": 77.6403,
+        "priceLevel": "\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b92,000",
+        "mustTry": [
+            "Duck Confit Sliders",
+            "Cured Hamachi Small Plates",
+            "Artisanal Handmade Pasta",
+            "Daytime Specialty Bakes",
+            "Botanical Craft Cocktails"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Cocktail Program",
+            "Work Friendly"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Circa+11/@12.9715,77.6403,17z",
+        "timings": "9:00 AM \u2013 4:00 PM (Cafe), 6:00 PM \u2013 12:00 AM (Dining & Cocktails)",
+        "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "idylll-indiranagar",
+        "name": "Idylll",
+        "slug": "idylll-indiranagar",
+        "tagline": "Ancestral fermentation, progressive regional Indian cuisine & cocktails",
+        "description": "A high-concept dining room inspired by Jaipur havelis on 12th Main, celebrating ancestral fermentation techniques and rich regional recipes of Rajasthan, Kashmir, and Uttar Pradesh.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "Plot 608, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9738,
+        "lng": 77.6402,
+        "priceLevel": "\u20b9\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b92,800",
+        "mustTry": [
+            "Fermented Rice Crisps with Regional Dips",
+            "Smoked Rajasthani Lamb",
+            "Kashmiri Morel Yakhni",
+            "Heritage Fermented Breads",
+            "Fermentation Craft Cocktails"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Cocktail Program"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Idylll/@12.9738,77.6402,17z",
+        "timings": "12:00 PM \u2013 12:00 AM",
+        "curatorNote": "A masterclass in modern Indian heritage dining. The Kashmiri morel yakhni and house-fermented cocktails are extraordinary.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "vanamo-indiranagar",
+        "name": "Vanamo Global Eats and Caffeinary",
+        "slug": "vanamo-indiranagar",
+        "tagline": "Nordic-aesthetic cafe, specialty caffeinary & unique global dishes",
+        "description": "A chic Nordic-inspired cafe on 100 Feet Road curating underrepresented international cuisines (Ukrainian, Greek, Romanian, Filipino) alongside single-origin coffees and breakfast bowls.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9735,
+        "lng": 77.641,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9900",
+        "mustTry": [
+            "Ukrainian Syrniki (Cottage Cheese Pancakes)",
+            "Patatas Bravas",
+            "Greek Salad Bowl",
+            "Specialty Cortado",
+            "Signature Cold Brew"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Work Friendly",
+            "Outdoor Seating"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Vanamo+Global+Eats+and+Caffeinary/@12.9735,77.6410,17z",
+        "timings": "8:30 AM \u2013 11:00 PM",
+        "curatorNote": "The Ukrainian Syrniki (fluffy golden quark cheese pancakes with berry compote) paired with a flat white is a revelation.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "yogisthaan-cafe-indiranagar",
+        "name": "Yogisthaan Cafe",
+        "slug": "yogisthaan-cafe-indiranagar",
+        "tagline": "Bangalore's barefoot Ayurvedic wellness sanctuary & organic garden cafe",
+        "description": "A tranquil open-air garden retreat in Indiranagar 1st Stage serving 100% organic, sattvic, macrobiotic vegetarian and vegan food prepared according to Ayurvedic principles.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "89, 11th Cross Rd, 60 Feet Rd, Indira Nagar 1st Stage, Bengaluru, Karnataka 560038",
+        "lat": 12.9818,
+        "lng": 77.6397,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9800",
+        "mustTry": [
+            "Signature Ayurvedic Kitchari",
+            "Hashi (Brown Rice & Veggie Bowl)",
+            "Moong Dal Chilla",
+            "Jaggery Filter Coffee",
+            "Cold-Pressed Detox Juices"
+        ],
+        "vibeTags": [
+            "Pure Veg",
+            "Outdoor Seating",
+            "Pet Friendly"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Yogisthaan/@12.9818,77.6397,17z",
+        "timings": "8:00 AM \u2013 9:30 PM",
+        "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
+        "isVegetarian": True,
+        "verified": True
+    },
+    {
+        "id": "izanagi-japanese-indiranagar",
+        "name": "Izanagi Japanese Dining",
+        "slug": "izanagi-japanese-indiranagar",
+        "tagline": "Authentic Japanese Washoku, private tatami rooms & sushi bar",
+        "description": "An authentic Japanese restaurant on 100 Feet Road featuring private tatami dining chambers, sushi bar, robata skewers, slow-simmered tonkotsu ramen, and premium sakes.",
+        "category": "Pan-Asian & Japanese",
+        "neighborhood": "Indiranagar",
+        "address": "311, 2nd Floor, 100 Feet Rd, Indira Nagar 1st Stage, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9791,
+        "lng": 77.6405,
+        "priceLevel": "\u20b9\u20b9\u20b9",
+        "priceForTwo": "\u20b92,200",
+        "mustTry": [
+            "Tonkotsu Pork / Chicken Ramen",
+            "Salmon & Tuna Sashimi Moriawase",
+            "Ebi Tempura Roll",
+            "Chashu Don",
+            "Japanese Sake"
+        ],
+        "vibeTags": [
+            "Romantic"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Izanagi+Japanese+Dining/@12.9791,77.6405,17z",
+        "timings": "12:00 PM \u2013 3:30 PM, 6:30 PM \u2013 11:00 PM",
+        "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
+        "isVegetarian": False,
+        "verified": True
+    },
+    {
+        "id": "muru-muru-indiranagar",
+        "name": "Muru Muru",
+        "slug": "muru-muru-indiranagar",
+        "tagline": "Converted vintage bungalow cafe & nostalgic comfort bites",
+        "description": "A cozy cafe housed in a vintage residential bungalow with lush greenery and cane furniture, serving nostalgic Indian comfort snacks reimagined with modern touches.",
+        "category": "Specialty Coffee & Cafe",
+        "neighborhood": "Indiranagar",
+        "address": "33, 12th Cross Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+        "lat": 12.9772,
+        "lng": 77.6438,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9650",
+        "mustTry": [
+            "Dosa Batter Onion Rings",
+            "Three Cheese Sabudana Vada",
+            "Sharma Ji\u2019s Aloo Chaat",
+            "Cream Cheese Bagel Naan",
+            "Filter Coffee Frappe"
+        ],
+        "vibeTags": [
+            "Pure Veg",
+            "Outdoor Seating",
+            "Work Friendly",
+            "Pocket Friendly"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/Muru+Muru/@12.9772,77.6438,17z",
+        "timings": "11:00 AM \u2013 10:30 PM",
+        "curatorNote": "The quintessential Indiranagar adda. Sit under the trees and snack on crispy cheese sabudana vadas and iced filter coffee.",
+        "isVegetarian": True,
+        "verified": True
+    },
+    {
+        "id": "the-estate-deli-indiranagar",
+        "name": "The Estate Deli",
+        "slug": "the-estate-deli-indiranagar",
+        "tagline": "Boutique deli, Chicago deep-dish pizza & gourmet lamb burgers",
+        "description": "A boutique artisan deli near Indiranagar Club specializing in Chicago-style deep dish pizza, signature lamb smash burgers, slow-cooked pastas, and house bakes.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Indiranagar",
+        "address": "3162, 1st Floor, 60 Feet Rd, 12th Cross, HAL 2nd Stage, Defence Colony, Indiranagar, Bengaluru, Karnataka 560008",
+        "lat": 12.9685,
+        "lng": 77.639,
+        "priceLevel": "\u20b9\u20b9",
+        "priceForTwo": "\u20b9900",
+        "mustTry": [
+            "House Lamb Smash Burger",
+            "Chicago Deep-Dish Pie Pizza",
+            "Slow-Cooked Lamb Spaghetti",
+            "Rose & Pistachio Tea Cake",
+            "Sea Salt Brownie"
+        ],
+        "vibeTags": [
+            "Romantic",
+            "Work Friendly"
+        ],
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/place/The+Estate+Deli/@12.9685,77.6390,17z",
+        "timings": "12:00 PM \u2013 11:00 PM",
+        "curatorNote": "Bangalore's premier spot for genuine Chicago deep-dish pizza and hearty house-ground lamb smash burgers.",
+        "isVegetarian": False,
+        "verified": True
     }
 ]
 
