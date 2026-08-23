@@ -92,6 +92,18 @@ export const ALL_VIBE_TAGS: VibeTag[] = [
   'Live Music / Vinyl',
 ];
 
+export interface Branch {
+  id: string;
+  name?: string;
+  neighborhood: Neighborhood;
+  address: string;
+  lat: number;
+  lng: number;
+  googleMapsUrl: string;
+  timings?: string;
+  isFlagship?: boolean;
+}
+
 export interface Restaurant {
   id: string;
   name: string;
@@ -115,6 +127,7 @@ export interface Restaurant {
   curatorNote?: string;
   isVegetarian?: boolean;
   verified: boolean;
+  branches?: Branch[];
   submittedBy?: string;
   submittedAt?: string;
 }
