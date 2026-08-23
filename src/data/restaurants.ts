@@ -3087,37 +3087,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "idylll-indiranagar",
-    "name": "Idylll",
-    "slug": "idylll-indiranagar",
-    "tagline": "Ancestral fermentation, progressive regional Indian cuisine & cocktails",
-    "description": "A high-concept dining room inspired by Jaipur havelis on 12th Main, celebrating ancestral fermentation techniques and rich regional recipes of Rajasthan, Kashmir, and Uttar Pradesh.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "Indiranagar",
-    "address": "Plot 608, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9738,
-    "lng": 77.6402,
-    "priceLevel": "\u20b9\u20b9\u20b9\u20b9",
-    "priceForTwo": "\u20b92,800",
-    "mustTry": [
-      "Fermented Rice Crisps with Regional Dips",
-      "Smoked Rajasthani Lamb",
-      "Kashmiri Morel Yakhni",
-      "Heritage Fermented Breads",
-      "Fermentation Craft Cocktails"
-    ],
-    "vibeTags": [
-      "Romantic",
-      "Cocktail Program"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Idylll/@12.9738,77.6402,17z",
-    "timings": "12:00 PM \u2013 12:00 AM",
-    "curatorNote": "A masterclass in modern Indian heritage dining. The Kashmiri morel yakhni and house-fermented cocktails are extraordinary.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "vanamo-indiranagar",
     "name": "Vanamo Global Eats and Caffeinary",
     "slug": "vanamo-indiranagar",
