@@ -28,7 +28,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/raSwapAJGqNuZFBQ7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vidyarthi+Bhavan+32%2C+Gandhi+Bazaar+Main+Rd%2C+Basavanagudi%2C+Bengaluru%2C+Karnataka+560004",
     "timings": "6:30 AM \u2013 11:30 AM, 2:00 PM \u2013 8:00 PM (Closed Fridays)",
     "curatorNote": "Watch the waiters perform their legendary stack balancing act carrying 20 plates of butter dosa at once.",
     "isVegetarian": true,
@@ -61,7 +61,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/BarNJ8jbK1MsDpqPA",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CTR+%28Central+Tiffin+Room+%2F+Shri+Sagar%29+7th+Cross+Rd%2C+Margosa+Rd%2C+Malleshwaram%2C+Bengaluru%2C+Karnataka+560003",
     "timings": "7:00 AM \u2013 12:30 PM, 4:00 PM \u2013 9:00 PM",
     "curatorNote": "Arrive before 8 AM on weekends to get a seat without waiting in the Margosa Road queue.",
     "isVegetarian": true,
@@ -95,7 +95,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/j2J7Fq5Psg4MBuRM6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veena+Stores+187%2C+Margosa+Rd%2C+Malleshwaram%2C+Bengaluru%2C+Karnataka+560003",
     "timings": "6:30 AM \u2013 12:00 PM, 3:30 PM \u2013 9:00 PM",
     "curatorNote": "No sambar needed \u2014 the refreshing mint coconut chutney paired with pillow-soft idlis and hot crisp vadas is Malleshwaram breakfast at its peak.",
     "isVegetarian": true,
@@ -127,7 +127,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/zChEBFpBpzjCpSiQ7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Umesh+Refreshments+10%2C+7th+Main+Rd%2C+Kumara+Park+West%2C+Seshadripuram%2C+Bengaluru%2C+Karnataka+560020",
     "timings": "7:00 AM \u2013 10:30 PM",
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
     "isVegetarian": true,
@@ -142,8 +142,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Iconic Heritage",
     "neighborhood": "Jayanagar",
     "address": "1004, 26th Main, 4th T Block, Jayanagar, Bengaluru, Karnataka 560041",
-    "lat": 12.9304,
-    "lng": 77.5838,
+    "lat": 12.9238,
+    "lng": 77.5882,
     "priceLevel": "\u20b9",
     "priceForTwo": "\u20b9120",
     "mustTry": [
@@ -160,7 +160,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/PnbfyyaU2FrjDtjM8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taaza+Thindi+1004%2C+26th+Main%2C+4th+T+Block%2C+Jayanagar%2C+Bengaluru%2C+Karnataka+560041",
     "timings": "7:00 AM \u2013 12:00 PM, 4:30 PM \u2013 9:30 PM",
     "curatorNote": "World-class hygiene with automated dishwashers and incredible consistency. Their golden ghee masala dosa is top-tier in Bangalore.",
     "isVegetarian": true,
@@ -193,7 +193,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/aHppjCYm1s5xLa4S7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brahmins%27+Coffee+Bar+Near+Shankar+Math%2C+Ranga+Rao+Rd%2C+Shankarapura%2C+Bengaluru%2C+Karnataka+560004",
     "timings": "6:00 AM \u2013 12:00 PM, 3:00 PM \u2013 7:00 PM (Closed Sundays evening)",
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
     "isVegetarian": true,
@@ -225,7 +225,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/6ffmRt9CK8Hi9p3x9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mavalli+Tiffin+Room+%28MTR+1924%29+14%2C+Lal+Bagh+Main+Rd%2C+Doddamavalli%2C+Sudhama+Nagar%2C+Bengaluru%2C+Karnataka+560027",
     "timings": "6:30 AM \u2013 11:00 AM, 12:30 PM \u2013 8:30 PM (Closed Mondays)",
     "curatorNote": "Order the silver thali lunch or pair Rava Idli with their signature cup of melted spiced ghee.",
     "isVegetarian": true,
@@ -258,7 +258,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/UtaYVZXcHRt873Ky9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dwaraka+Hotel+7th+Cross%2C+NR+Colony%2C+Basavanagudi%2C+Bengaluru%2C+Karnataka+560019",
     "timings": "7:00 AM \u2013 12:30 PM, 3:30 PM \u2013 8:30 PM",
     "curatorNote": "Reddit insider tip: Ask for the double butter Khali Dosa. It is pillow-soft and absorbs the soothing white coconut chutney.",
     "isVegetarian": true,
@@ -291,7 +291,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/Gbz1MVJXVAbYrttk6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Puliyogare+Point+East+Anjaneya+Temple+Street%2C+Basavanagudi%2C+Bengaluru%2C+Karnataka+560004",
     "timings": "7:00 AM \u2013 10:00 PM",
     "curatorNote": "The authentic blend of Melkote spices in the tamarind paste is unmatched in the city. Pair with sweet golden pongal.",
     "isVegetarian": true,
@@ -324,7 +324,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/6NBu42Fw4oppReNbA",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SN+Refreshments+2nd+Main+Rd%2C+9th+Block%2C+Jayanagar%2C+Bengaluru%2C+Karnataka+560069",
     "timings": "6:30 AM \u2013 12:30 PM, 4:00 PM \u2013 9:00 PM",
     "curatorNote": "Super fast counter service. Order two piping hot thatte idlis with extra red chutney and a crispy vada.",
     "isVegetarian": true,
@@ -357,7 +357,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/rDvMB3SVkLJvrGs17",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Airlines+Hotel+4%2C+Madras+Bank+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "7:00 AM \u2013 10:00 PM",
     "curatorNote": "The quintessential Bangalore weekend morning ritual. Park in the shaded driveway and order coffee brought straight to your car.",
     "isVegetarian": true,
@@ -388,7 +388,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/N8rjbD3qRNwwdu8x8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Koshy%27s+Parade+Cafe+39%2C+St.+Marks+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "9:00 AM \u2013 11:00 PM",
     "curatorNote": "Ask for a table in the non-AC heritage front room to soak in the vintage fans and literary Bangalore banter.",
     "isVegetarian": false,
@@ -403,8 +403,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Iconic Heritage",
     "neighborhood": "Church Street & MG Road",
     "address": "13, Museum Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9723,
-    "lng": 77.6055,
+    "lat": 12.9732,
+    "lng": 77.6034,
     "priceLevel": "\u20b9\u20b9\u20b9",
     "priceForTwo": "\u20b91,400",
     "mustTry": [
@@ -421,7 +421,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/5XGyVFruErTnQeVp7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Only+Place+13%2C+Museum+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "An irreplaceable part of old Bangalore. Sit in the leafy garden courtyard and order the Chateaubriand steak followed by their legendary cinnamon-spiced apple pie.",
     "isVegetarian": false,
@@ -436,7 +436,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Iconic Heritage",
     "neighborhood": "Indiranagar",
     "address": "2984, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9818,
+    "lat": 12.9715,
     "lng": 77.641,
     "priceLevel": "\u20b9\u20b9",
     "priceForTwo": "\u20b9300",
@@ -453,7 +453,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/7LtasYhEheDxutoE8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Rameshwaram+Cafe+2984%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "6:30 AM \u2013 1:00 AM (Open Daily)",
     "curatorNote": "The ghee podi thatte idlis are drenched in piping hot spiced ghee and served with fresh coconut and tomato chutneys.",
     "isVegetarian": true,
@@ -486,7 +486,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Hole+in+the+Wall+Cafe/@12.93418,77.62575,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Hole+in+the+Wall+Cafe+4%2C+8th+Main+Rd%2C+4th+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560034",
     "timings": "8:00 AM \u2013 9:00 PM (Closed Mondays)",
     "curatorNote": "The quintessential Bangalore breakfast institution. Grab a table on the upstairs patio and order the classic Farmer's Breakfast.",
     "isVegetarian": false,
@@ -499,7 +499,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "612, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
         "lat": 12.9723,
         "lng": 77.6433,
-        "googleMapsUrl": "https://www.google.com/maps/place/The+Hole+in+the+Wall+Cafe/@12.9723,77.6433,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Hole+in+the+Wall+Cafe+612%2C+12th+Main+Rd%2C+7th+Cross%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038"
       }
     ]
   },
@@ -529,7 +529,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Craftery+BLR+by+Subko/@12.9298,77.6256,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Craftery+by+Subko+68%2C+Koramangala-Sarjapur+Rd%2C+3rd+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560034",
     "timings": "7:30 AM \u2013 10:30 PM",
     "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
@@ -560,7 +560,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/ARAKU+Coffee/@12.9715,77.6416,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Araku+Coffee+Flagship+968%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:00 AM \u2013 11:00 PM",
     "curatorNote": "Order the Modbar pour-over flight to taste how terroir drastically transforms Indian coffee flavor notes.",
     "isVegetarian": false,
@@ -592,7 +592,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/154+Breakfast+Club/@12.9328,77.6258,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=154+Breakfast+Club+154%2C+8th+Main+Rd%2C+3rd+Block%2C+Koramangala+4th+Block%2C+Bengaluru%2C+Karnataka+560034",
     "timings": "9:00 AM \u2013 9:00 PM (Closed Tuesdays)",
     "curatorNote": "A green Koramangala oasis for leisurely Sunday breakfasts and fluffy Belgian waffles.",
     "isVegetarian": false,
@@ -623,7 +623,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Truffles/@12.9735,77.6012,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Truffles+22%2C+St.+Marks+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "11:00 AM \u2013 11:00 PM",
     "curatorNote": "Generations of Bangaloreans grew up eating the All American Cheese Burger with seasoned wedges.",
     "isVegetarian": false,
@@ -655,7 +655,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Sunny's/@12.9712,77.5962,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sunny%27s+50%2C+Lavelle+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "One of Bangalore\u2019s earliest pet-friendly luxury dining bistros. The leafy veranda and classic Gorgonzola steak are exceptional.",
     "isVegetarian": false,
@@ -687,7 +687,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Anju's+Cafe/@12.9093,77.5891,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anju%E2%80%99s+Cafe+at+Ranga+Shankara+36%2F2%2C+8th+Cross+Rd%2C+2nd+Phase%2C+JP+Nagar%2C+Bengaluru%2C+Karnataka+560078",
     "timings": "11:00 AM \u2013 10:00 PM (Closed Mondays)",
     "curatorNote": "A soulful South Bangalore cultural sanctuary. Enjoy hot akki rotti under the open foyer while discussing theatre and arts.",
     "isVegetarian": true,
@@ -718,7 +718,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Paris+Panini+-+Gourmet+Sandwiches+%26+Street+Food/@12.9712,77.6415,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paris+Panini+948%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "11:30 AM \u2013 11:30 PM",
     "curatorNote": "Warm, crispy French baguettes loaded with melted artisanal cheeses and signature dips. The Jean panini with brie and fig jam is iconic.",
     "isVegetarian": false,
@@ -748,7 +748,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://goo.gl/maps/fvQ1PtZH67uLepdZ6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Naru+Noodle+Bar+The+Courtyard%2C+105%2C+K.H.+Road%2C+Shanthinagar%2C+Bengaluru%2C+Karnataka+560027",
     "timings": "12:30 PM \u2013 3:30 PM, 7:00 PM \u2013 10:30 PM (Reservation Only)",
     "curatorNote": "Slots open on Sunday and book out in under 30 seconds. The Tori Paitan chicken broth is silky and unctuous.",
     "isVegetarian": false,
@@ -780,7 +780,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/5UngxsWjksJsEwv28",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kopitiam+Lah+1088%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:30 AM \u2013 10:30 PM",
     "curatorNote": "Reddit cult favorite for authentic Nanyang breakfast. The freshly toasted bread with thick slabs of cold butter and pandan kaya jam paired with dark soy runny eggs is unbeatable.",
     "isVegetarian": false,
@@ -811,7 +811,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://goo.gl/maps/J7voxkAiuUunVFDB6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Phobidden+Fruit+965%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "A tranquil veranda setting with fragrant star anise and cinnamon infused Pho broths that warm the soul.",
     "isVegetarian": false,
@@ -844,7 +844,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/DXrqNyB9m1QCyg8M9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Fatty+Bao+610%2C+3rd+Floor%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 11:30 PM (Closed Mondays)",
     "curatorNote": "The open-air rooftop is one of Indiranagar\u2019s best evening spots. The Char Siu pork belly bao with green apple kimchi is legendary.",
     "isVegetarian": false,
@@ -874,7 +874,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+Indiranagar/@12.97160,77.64160,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Burma+Burma+%28Indiranagar%29+607%2C+12th+Main+Rd%2C+7th+Cross%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 3:30 PM, 6:30 PM \u2013 10:30 PM",
     "curatorNote": "Incredible depth of umami and herbal broths in a 100% vegetarian setting.",
     "isVegetarian": true,
@@ -887,7 +887,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
         "lat": 12.9715,
         "lng": 77.6057,
-        "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+Brigade+Road/@12.97150,77.60570,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Burma+Burma+%28Indiranagar%29+Forum+Rex+Walk%2C+Brigade+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001"
       }
     ]
   },
@@ -915,7 +915,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+Brigade+Road/@12.97150,77.60570,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Burma+Burma+%28Brigade+Road%29+Unit+109%2C+Ground+Floor%2C+Forum+Rex+Walk%2C+Brigade+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 4:00 PM, 6:30 PM \u2013 11:00 PM",
     "curatorNote": "Spacious, elegant ambiance in Rex Walk with dedicated specialty tea bar.",
     "isVegetarian": true,
@@ -928,7 +928,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
         "lat": 12.973412,
         "lng": 77.640945,
-        "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+Indiranagar/@12.97160,77.64160,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Burma+Burma+%28Brigade+Road%29+607%2C+12th+Main+Rd%2C+7th+Cross%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038"
       }
     ]
   },
@@ -958,7 +958,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/zrDZou4oZ39uqHXJ9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+%28Indiranagar%29+594%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "Grab a counter seat by the revolving conveyor belt. Their translucent truffle edamame dumplings are exceptional.",
     "isVegetarian": false,
@@ -971,7 +971,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "The Bay, RMZ EcoWorld, Outer Ring Rd, Bellandur, Bengaluru, Karnataka 560103",
         "lat": 12.92579,
         "lng": 77.6867,
-        "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+DimSum+%26+Sushi+Parlour/@12.925787,77.686695,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+%28Indiranagar%29+The+Bay%2C+RMZ+EcoWorld%2C+Outer+Ring+Rd%2C+Bellandur%2C+Bengaluru%2C+Karnataka+560103"
       },
       {
         "id": "lucky-chan-forum-south",
@@ -980,7 +980,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "3rd Floor, Forum South Bengaluru, Konanakunte Cross, Kanakapura Rd, Bengaluru, Karnataka 560062",
         "lat": 12.8945,
         "lng": 77.5645,
-        "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+DimSum+%26+Sushi+Parlour/@12.89450,77.56450,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+%28Indiranagar%29+3rd+Floor%2C+Forum+South+Bengaluru%2C+Konanakunte+Cross%2C+Kanakapura+Rd%2C+Bengaluru%2C+Karnataka+560062"
       }
     ]
   },
@@ -1009,7 +1009,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+DimSum+%26+Sushi+Parlour/@12.925787,77.686695,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+%28Bellandur%29+The+Bay%2C+RMZ+EcoWorld%2C+Outer+Ring+Road%2C+Bellandur%2C+Bengaluru%2C+Karnataka+560103",
     "timings": "12:00 PM \u2013 11:00 PM",
     "curatorNote": "Great lunch and dinner spot right in RMZ EcoWorld with full conveyor belt setup.",
     "isVegetarian": false,
@@ -1022,7 +1022,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "594, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
         "lat": 12.970406,
         "lng": 77.642764,
-        "googleMapsUrl": "https://maps.app.goo.gl/zrDZou4oZ39uqHXJ9"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+%28Bellandur%29+594%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038"
       }
     ]
   },
@@ -1051,7 +1051,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/jwpeX1hETATH7nJXA",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mai+Mai+621A%2C+12th+Main+Rd%2C+7th+Cross%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "A casual, flavor-packed Southeast Asian joint. The hand-pulled noodles with fiery Sichuan chilli crisp are comforting perfection.",
     "isVegetarian": false,
@@ -1083,7 +1083,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Baan+Phadthai+Indiranagar/@12.97020,77.63820,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Baan+Phadthai+Sai+Suraksha%2C+1090%2C+12th+Main+Rd%2C+Doopanahalli%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 1:00 AM",
     "curatorNote": "The 18-ingredient secret tamarind sauce brings authentic Bangkok Michelin street flavor to 12th Main Indiranagar.",
     "isVegetarian": false,
@@ -1116,7 +1116,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Miso+Sexy/@12.97150,77.64350,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Miso+Sexy+963%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 1:00 AM",
     "curatorNote": "Stunning rooftop vibe overlooking Indiranagar canopy trees with standout sushi and inventive cocktail concoctions.",
     "isVegetarian": false,
@@ -1147,7 +1147,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Misu+-+Pan+Asian+Restaurant/@12.97230,77.60120,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Misu+4%2F1%2C+Halcyon+Complex%2C+St.+Marks+Road%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "One of Bangalore\u2019s most consistent and aesthetically pleasing Asian dining rooms.",
     "isVegetarian": false,
@@ -1179,7 +1179,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Pizza+4P's+Indiranagar/@12.9701,77.6418,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pizza+4P%27s+3275%2FA%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "Book in advance. The house-made fresh burrata cut open table-side over Neapolitan crust with wildflower honey is unbeatable.",
     "isVegetarian": false,
@@ -1211,7 +1211,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/ZPKGKREvrZH9Hz1t7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Pizza+Bakery+%28Indiranagar%29+2985%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "11:30 AM \u2013 11:30 PM",
     "curatorNote": "The 48-hour fermented sourdough crust has the perfect leopard-spotting and blistered air pockets. Do not skip the stuffed garlic bread.",
     "isVegetarian": false,
@@ -1224,7 +1224,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "86, Coconut Grove, Church St, Ashok Nagar, Bengaluru, Karnataka 560001",
         "lat": 12.9748,
         "lng": 77.6074,
-        "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery/@12.9748,77.6074,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Pizza+Bakery+%28Indiranagar%29+86%2C+Coconut+Grove%2C+Church+St%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001"
       }
     ]
   },
@@ -1253,7 +1253,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery/@12.9748,77.6074,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Pizza+Bakery+%28Church+Street%29+86%2C+Coconut+Grove%2C+Church+Street%2C+Shanthala+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "11:30 AM \u2013 11:30 PM",
     "curatorNote": "Prime spot after browsing Church Street bookstores. Pair a sourdough pizza with local craft IPA.",
     "isVegetarian": false,
@@ -1266,7 +1266,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "2985, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
         "lat": 12.970202,
         "lng": 77.644708,
-        "googleMapsUrl": "https://maps.app.goo.gl/ZPKGKREvrZH9Hz1t7"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Pizza+Bakery+%28Church+Street%29+2985%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038"
       }
     ]
   },
@@ -1296,7 +1296,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/kpCrGrspRHvrboP47",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brik+Oven+Church+Street%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "11:30 AM \u2013 11:00 PM",
     "curatorNote": "Ask for the off-menu hot honey drizzle on their pepperoni and burrata pies.",
     "isVegetarian": false,
@@ -1328,7 +1328,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/LUPA/@12.9738,77.6119,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=LUPA+Spencer%E2%80%99s+Building%2C+7%2C+Ground+Floor%2C+MG+Road%2C+Haridevpur%2C+Shanthala+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 1:00 AM",
     "curatorNote": "Manu Chandra\u2019s magnum opus on MG Road. Features an interactive salumeria, dedicated gelato lab, and subterranean wine cellar.",
     "isVegetarian": false,
@@ -1359,7 +1359,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Toast+%26+Tonic/@12.9686,77.6087,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toast+%26+Tonic+14%2F1%2C+Wood+St%2C+Richmond+Town%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 12:30 AM",
     "curatorNote": "Every dish creatively honors indigenous Indian produce. Their house-infused botanical Gin cocktails are legendary.",
     "isVegetarian": false,
@@ -1389,7 +1389,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Farmlore/@13.1235,77.6534,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farmlore+Sathanur+Village%2C+Bagalur%2C+Bengaluru+Rural%2C+Karnataka+562149",
     "timings": "12:30 PM \u2013 4:00 PM, 7:00 PM \u2013 11:00 PM (Advance Reservation Required)",
     "curatorNote": "Powered 100% by solar and fire. Book months ahead for India\u2019s most visionary farm-to-table tasting experience.",
     "isVegetarian": false,
@@ -1421,7 +1421,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/BKhLqHroqTceyjNe9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chinita+Real+Mexican+Food+2186%2C+100+Feet+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:30 PM \u2013 3:30 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "Uncompromisingly authentic Mexican street food with gluten-free house-pressed corn tortillas and tangy tomatillo salsas.",
     "isVegetarian": false,
@@ -1453,7 +1453,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Olive+Beach/@12.969612,77.606234,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Olive+Beach+16%2C+Wood+St%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:00 PM \u2013 3:30 PM, 7:00 PM \u2013 11:30 PM",
     "curatorNote": "The cobbled sunlit courtyard and bougainvillea-framed villa provide Bangalore\u2019s most romantic dining ambiance.",
     "isVegetarian": false,
@@ -1468,8 +1468,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Modern Indian & Dining",
     "neighborhood": "Jayanagar",
     "address": "40, 22nd Cross Rd, Jayanagar 3rd Block, Jayanagar, Bengaluru, Karnataka 560011",
-    "lat": 12.930418,
-    "lng": 77.583812,
+    "lat": 12.9304,
+    "lng": 77.5838,
     "priceLevel": "\u20b9\u20b9\u20b9",
     "priceForTwo": "\u20b91,500",
     "mustTry": [
@@ -1484,7 +1484,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/JitVpDxCeZoekXPV8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Phurr+40%2C+22nd+Cross+Rd%2C+Jayanagar+3rd+Block%2C+Jayanagar%2C+Bengaluru%2C+Karnataka+560011",
     "timings": "12:00 PM \u2013 4:00 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
     "isVegetarian": true,
@@ -1516,7 +1516,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Karavalli/@12.969641,77.606323,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karavalli+%28The+Gateway+Hotel%29+Vivanta%2C+66%2C+Residency+Rd%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:30 PM \u2013 3:00 PM, 7:00 PM \u2013 11:30 PM",
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
     "isVegetarian": false,
@@ -1547,7 +1547,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Shivaji+Military+Hotel/@12.923412,77.584635,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shivaji+Military+Hotel+718%2C+1st+C+Main%2C+8th+Block%2C+Jayanagar%2C+Bengaluru%2C+Karnataka+560082",
     "timings": "8:00 AM \u2013 3:30 PM (Closed Mondays)",
     "curatorNote": "Arrive by 12:30 PM for lunch. The green herbal masala Donne Biryani served in dried areca leaf bowls is peerless.",
     "isVegetarian": false,
@@ -1579,7 +1579,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://goo.gl/maps/DLEdQ8Y4fKB6zYzq7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ranganna+Military+Hotel+61%2C+1st+Floor%2C+7th+Block%2C+Jayanagar%2C+Bengaluru%2C+Karnataka+560070",
     "timings": "7:30 AM \u2013 4:00 PM, 7:00 PM \u2013 10:30 PM (Closed Mondays)",
     "curatorNote": "Bangalore military hotel royalty. Dip soft thatte idlis into rich, peppery mutton Kaal soup for the ultimate Sunday breakfast.",
     "isVegetarian": false,
@@ -1609,7 +1609,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Anupam's+Coast+II+Coast/@12.973024,77.608018,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anupam%27s+Coast+II+Coast+4%2C+1%2C+Brunton+Rd%2C+Craig+Park+Layout%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "11:30 AM \u2013 3:30 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "The rich, fiery red ghee roast masala coating juicy prawns is Bangalore coastal perfection. Soak every drop with soft Neer Dosas.",
     "isVegetarian": false,
@@ -1640,7 +1640,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/TGaPET9dzsoPHNxs6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maravanthe+Coastal+Diner+100+Feet+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 3:45 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "The traditional Kundapura coconut fish curry and crispy rava-crusted Ladyfish bring coastal beach-highway flavors to Indiranagar.",
     "isVegetarian": false,
@@ -1671,7 +1671,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/gvDh2CsGiLpzRQXa9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Super+Naati+45%2F1%2C+LEO+Complex%2C+MG+Road%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 4:00 PM, 7:00 PM \u2013 11:00 PM",
     "curatorNote": "Bold, fiery green-chilli infused masala cooked the traditional Karnataka Naati way. The mutton chops are fork-tender.",
     "isVegetarian": false,
@@ -1702,7 +1702,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/hEELRpRd79nxk9Ym8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bengaluru+Oota+Company+24-4%2C+Cambridge+Cross+Rd%2C+Halasuru%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "12:30 PM \u2013 3:30 PM, 7:30 PM \u2013 10:30 PM (Advance Booking Required)",
     "curatorNote": "By reservation only. Intimate chef\u2019s table dining preserving the authentic culinary heritage of Karnataka\u2019s Bunt and Gowda families.",
     "isVegetarian": false,
@@ -1732,7 +1732,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://goo.gl/maps/cCxWRFu3X1k1H9vS6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meghana+Foods+124%2C+1st+Cross%2C+KHB+Colony%2C+5th+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560095",
     "timings": "11:30 AM \u2013 11:30 PM",
     "curatorNote": "The boneless special chicken biryani with its distinct red spiced chicken pieces and rice is an obsession across the city.",
     "isVegetarian": false,
@@ -1765,7 +1765,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/MihMH7jUDSL25aE18",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toit+Brewpub+298%2C+100+Feet+Rd%2C+Near+KFC+Junction%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 1:00 AM (Open Daily)",
     "curatorNote": "Order the beer sampler flight first. Tintin Toit with orange peel & coriander alongside a wood-fired pizza on the 2nd floor balcony is classic BLR.",
     "isVegetarian": false,
@@ -1797,7 +1797,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/pWeFTXu6YEf9VQUe8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Windmills+Craftworks+331%2C+Road+5B%2C+EPIP+Zone%2C+Whitefield%2C+Bengaluru%2C+Karnataka+560066",
     "timings": "12:00 PM \u2013 12:00 AM",
     "curatorNote": "Arguably the finest microbrewery in India. Acoustic jazz performances paired with house-brewed stout are peerless.",
     "isVegetarian": false,
@@ -1829,7 +1829,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/wK53bsJRH4Vai2Hs9",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arbor+Brewing+Company+%28ABC%29+8%2C+3rd+Floor%2C+Allied+Grande+Plaza%2C+Magrath+Rd%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:00 PM \u2013 12:30 AM",
     "curatorNote": "The Raging Elephant IPA remains the benchmark for piney, citrusy American India Pale Ales in the country.",
     "isVegetarian": false,
@@ -1860,7 +1860,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Biere+Club/@12.967817,77.5986153,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Biere+Club+20%2F2%2C+Vittal+Mallya+Rd%2C+D%27+Souza+Layout%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "11:30 AM \u2013 11:30 PM",
     "curatorNote": "Historic significance as the city's 1st microbrewery. Great afternoon terrace overlooking UB City.",
     "isVegetarian": false,
@@ -1891,7 +1891,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Geist+Brewing+Co.+-+Bhartiya+Mall/@13.083979,77.641766,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Geist+Brewing+Factory+Bhartiya+Mall+of+Bengaluru%2C+Thanisandra+Main+Rd%2C+Bengaluru%2C+Karnataka+560064",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "The Kamacitra NEIPA with tropical notes is one of the highest-rated craft beers in India.",
     "isVegetarian": false,
@@ -1924,7 +1924,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Bob's+Bar/@12.9723,77.6436,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bob%27s+Bar+777%2C+100+Feet+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "11:30 AM \u2013 1:00 AM",
     "curatorNote": "Pair their signature iced filter coffee cocktail with crispy fried tindli and Malnad pork fry on the open terrace.",
     "isVegetarian": false,
@@ -1955,7 +1955,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Craft Beer"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/jWm21ns64GQQb3ST8",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pecos+Classic+34%2C+Rest+House+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "11:00 AM \u2013 11:30 PM",
     "curatorNote": "A pilgrimage for Bangalore rock fans since 1989. Draught beer by the pitcher and fiery chilli pork.",
     "isVegetarian": false,
@@ -1987,7 +1987,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Soka/@12.95550,77.63600,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=S%C5%8Dka+210%2C+A+Cross%2C+1st+Main+Rd%2C+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560071",
     "timings": "5:00 PM \u2013 1:00 AM (Reservations Essential)",
     "curatorNote": "Ranked among the premier cocktail bars in Asia. Features moving kinetic art sculptures, moody lighting, and genius cocktail precision.",
     "isVegetarian": false,
@@ -2020,7 +2020,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/ZLB23/@12.96060,77.64190,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ZLB+23+The+Leela+Palace%2C+23+Old+Airport+Road%2C+HAL+2nd+Stage%2C+Kodihalli%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "6:30 PM \u2013 1:00 AM (Closed Sundays)",
     "curatorNote": "Enter through the secret garden corridor. Velvet drapes, live vinyl jazz, and world-class mixology in complete discretion.",
     "isVegetarian": false,
@@ -2052,7 +2052,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Copitas/@13.01250,77.58780,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Copitas+Four+Seasons+Hotel+at+Embassy+ONE%2C+Bellary+Road%2C+Ganganagar%2C+Bengaluru%2C+Karnataka+560032",
     "timings": "5:00 PM \u2013 1:00 AM",
     "curatorNote": "Consistently featured in Asia\u2019s 50 Best Bars. Catch golden hour on the open-air deck overlooking North Bangalore.",
     "isVegetarian": false,
@@ -2067,7 +2067,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
     "address": "263, 3rd Cross Rd, 2nd Stage, Defence Colony, Indiranagar, Bengaluru, Karnataka 560071",
-    "lat": 12.9731,
+    "lat": 12.9782,
     "lng": 77.6433,
     "priceLevel": "\u20b9\u20b9\u20b9",
     "priceForTwo": "\u20b91,200",
@@ -2084,7 +2084,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/ChEYZELtwwZmz8H88",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavonne+Cafe+263%2C+3rd+Cross+Rd%2C+2nd+Stage%2C+Defence+Colony%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560071",
     "timings": "8:30 AM \u2013 11:00 PM",
     "curatorNote": "The gold standard of French pastry in South India. The layered almond croissants shatter with every buttery bite.",
     "isVegetarian": false,
@@ -2114,7 +2114,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/1182,+12th+Main+Rd,+HAL+2nd+Stage,+Indiranagar,+Bengaluru,+Karnataka+560038/@12.9705,77.6445,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Amadora+Gourmet+Ice+Cream+1182%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 1:00 AM",
     "curatorNote": "Reddit foodies unanimous pick for the best dessert in town: Order the gooey warm Underbaked Cake topped with Salted Butter Caramel ice cream.",
     "isVegetarian": true,
@@ -2146,7 +2146,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Glen's+Bakehouse/@12.9730,77.5970,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Glen%27s+Bakehouse+24%2F1%2C+Lavelle+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "9:00 AM \u2013 11:30 PM",
     "curatorNote": "The bite-sized red velvet cupcakes are legendary across Bangalore. Sit in the sun-dappled courtyard under the tree.",
     "isVegetarian": false,
@@ -2176,7 +2176,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/e4cfp6SCjotuhANU7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=O.G.+Variar+%26+Sons+Bakery+68%2C+12th+Main%2C+2nd+Block%2C+Rajajinagar%2C+Bengaluru%2C+Karnataka+560010",
     "timings": "9:00 AM \u2013 1:30 PM, 3:30 PM \u2013 9:00 PM",
     "curatorNote": "Bags of piping hot butter biscuits sell out within minutes of the 4 PM batch coming out of the ovens.",
     "isVegetarian": true,
@@ -2208,7 +2208,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/xRgiDBJioDAh8nvm6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Albert+Bakery+93%2C+Mosque+Rd%2C+Cleveland+Town%2C+Pulikeshi+Nagar%2C+Bengaluru%2C+Karnataka+560005",
     "timings": "3:00 PM \u2013 9:00 PM",
     "curatorNote": "Over 120 years of baking legacy on Mosque Road. The crispy mutton kheema samosas sell out within 45 minutes of the evening batch opening.",
     "isVegetarian": false,
@@ -2239,7 +2239,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/nXbc6k2vqUWpr2xu7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Thom%E2%80%99s+Bakery+1%2F2%2C+Wheeler+Rd%2C+Cox+Town%2C+Pulikeshi+Nagar%2C+Bengaluru%2C+Karnataka+560005",
     "timings": "8:00 AM \u2013 9:30 PM",
     "curatorNote": "The scent of freshly baked plum cake and buttery puff pastry on Wheeler Road defines Anglo-Indian old Bangalore.",
     "isVegetarian": false,
@@ -2254,8 +2254,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Bakeries & Desserts",
     "neighborhood": "Basavanagudi",
     "address": "Sajjan Rao Circle, Vishweshwarapura, Basavanagudi, Bengaluru, Karnataka 560004",
-    "lat": 12.9531,
-    "lng": 77.5768,
+    "lat": 12.9516,
+    "lng": 77.5749,
     "priceLevel": "\u20b9",
     "priceForTwo": "\u20b9150",
     "mustTry": [
@@ -2271,7 +2271,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://goo.gl/maps/XFaUnXNLLqgnq2hb7",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=VB+Bakery+Sajjan+Rao+Circle%2C+Vishweshwarapura%2C+Basavanagudi%2C+Bengaluru%2C+Karnataka+560004",
     "timings": "6:00 AM \u2013 10:30 PM",
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
     "isVegetarian": true,
@@ -2305,7 +2305,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/New+Krishna+Bhavan/@12.9931,77.5717,17z/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Krishna+Bhavan+33%2C+Sampige+Rd%2C+Opposite+Malleshwaram+Railway+Station%2C+Bengaluru%2C+Karnataka+560003",
     "timings": "7:30 AM \u2013 9:00 PM",
     "curatorNote": "The signature Green Masala Button Idli (mini idlis swimming in fragrant coriander-coconut curry) is uniquely New Krishna Bhavan.",
     "isVegetarian": true,
@@ -2335,7 +2335,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Mangalore+Pearl/@12.998419,77.614526,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mangalore+Pearl+3%2C+Coles+Rd%2C+Pulikeshi+Nagar%2C+Frazer+Town%2C+Bengaluru%2C+Karnataka+560005",
     "timings": "12:30 PM \u2013 3:30 PM, 7:30 PM \u2013 10:30 PM (Closed Tuesdays)",
     "curatorNote": "Pure coastal comfort food. The dark, aromatic spice-rubbed Pork Bafat paired with warm, fermented steamed Sannas is unmatched.",
     "isVegetarian": false,
@@ -2365,7 +2365,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Hae+Kum+Gang/@12.97150,77.60650,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hae+Kum+Gang+20%2C+Pauls+Castle%2C+Castle+St%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "11:30 AM \u2013 3:00 PM, 6:00 PM \u2013 10:30 PM",
     "curatorNote": "Run by a native Korean family. Sizzle tender pork belly at your table and wrap with fresh lettuce, garlic, and ssamjang.",
     "isVegetarian": false,
@@ -2397,7 +2397,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/7dwvKNkEXHzarDRv6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lakeview+Milkbar+89%2C+Kannabiran%2C+MG+Road%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "9:30 AM \u2013 12:30 AM",
     "curatorNote": "A 95-year-old Bangalore late-night tradition. Park on MG Road and have sundaes served directly through your car window.",
     "isVegetarian": false,
@@ -2429,7 +2429,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Corner+House+Ice+Cream/@12.9719,77.6012,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Corner+House+Ice+Cream+4%2C+Residency+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "11:00 AM \u2013 11:30 PM",
     "curatorNote": "Bangalore\u2019s sweetest nostalgia. The Death By Chocolate (DBC) eaten on the sidewalk curbs is a non-negotiable rite of passage.",
     "isVegetarian": true,
@@ -2463,7 +2463,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Janatha+Hotel/@13.0036,77.5732,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Janatha+Hotel+162%2C+8th+Cross+Rd%2C+Sangeetha+Apartments%2C+Malleshwaram%2C+Bengaluru%2C+Karnataka+560003",
     "timings": "7:00 AM \u2013 1:00 PM, 3:30 PM \u2013 8:30 PM (Closed Wednesdays)",
     "curatorNote": "A nostalgic step back into 1970s Malleshwaram. The Sagu Masala Dosa (filled with spiced vegetable sagu instead of aloo) is unmatched.",
     "isVegetarian": true,
@@ -2496,7 +2496,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Siddappa+Hotel/@12.9644,77.5878,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Siddappa+Hotel+38%2C+7th+Main+Rd%2C+5th+Cross%2C+Ashwath+Nagar%2C+Sampangi+Rama+Nagar%2C+Bengaluru%2C+Karnataka+560027",
     "timings": "8:30 AM \u2013 11:30 AM (Morning Only)",
     "curatorNote": "Strictly open from 8:30 AM to 11:30 AM. Arrive by 8:00 AM to get a token for Siddappa\u2019s famous crispy ghee dosas.",
     "isVegetarian": true,
@@ -2529,7 +2529,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Dyu+Art+Cafe/@12.9348,77.6186,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dyu+Art+Cafe+23%2C+KHB+MIG+Colony%2C+1st+Cross+Rd%2C+5th+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560095",
     "timings": "10:00 AM \u2013 10:30 PM (Mondays: 12:30 PM \u2013 10:30 PM)",
     "curatorNote": "The bougainvillea-framed Kerala courtyard and decadent Banoffee pie make this one of the most soothing cafes in South India.",
     "isVegetarian": false,
@@ -2562,7 +2562,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Maverick+%26+Farmer+Coffee/@12.9818,77.6187,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maverick+%26+Farmer+Coffee+Gate+%233%2C+Gangadhara+Chetty+Rd%2C+Sivanchetti+Gardens%2C+Halasuru%2C+Bengaluru%2C+Karnataka+560042",
     "timings": "8:30 AM \u2013 11:00 PM",
     "curatorNote": "Direct from their Pollibetta estate in Coorg. The Cold Smoked Pour-Over on the wooden deck overlooking the grounds is a revelation.",
     "isVegetarian": false,
@@ -2593,7 +2593,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Fanoos+Restaurant/@12.9602,77.6087,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fanoos+136%2C+Hosur+Rd%2C+Opposite+Johnson+Market%2C+Richmond+Town%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:00 PM \u2013 11:30 PM",
     "curatorNote": "An undisputed Bangalore rite of passage. Ask for the legendary Jumbo Seekh Kabab Roll with extra spiced mint chutney.",
     "isVegetarian": false,
@@ -2623,7 +2623,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Fishland/@12.9755,77.5786,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Fishland+1st+Floor%2C+Sujatha+Complex%2C+1st+Main+Rd%2C+1st+Cross+Rd%2C+Gandhinagar%2C+Bengaluru%2C+Karnataka+560009",
     "timings": "11:30 AM \u2013 4:00 PM, 7:00 PM \u2013 10:30 PM",
     "curatorNote": "Old Bangalore\u2019s finest coastal lunch. Pour the fiery Kundapur fish curry generously over boiled red rice alongside a crispy Anjal tawa fry.",
     "isVegetarian": false,
@@ -2654,7 +2654,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Harima+Japanese+Restaurant/@12.9739,77.6015,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Harima+4th+Floor%2C+Devatha+Plaza%2C+131+Residency+Rd%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025",
     "timings": "12:00 PM \u2013 3:00 PM, 6:00 PM \u2013 11:00 PM",
     "curatorNote": "Bangalore\u2019s original authentic Japanese room. Reserve a traditional tatami room for pristine sashimi and authentic hot pot.",
     "isVegetarian": false,
@@ -2684,7 +2684,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Matsuri+Japanese+Restaurant/@12.9723,77.5969,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Matsuri+The+Chancery+Hotel%2C+10%2F6%2C+Lavelle+Rd%2C+Shanthala+Nagar%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "12:00 PM \u2013 2:30 PM, 6:30 PM \u2013 10:30 PM",
     "curatorNote": "The Katsudon (crispy pork cutlet simmered in sweet dashi with soft eggs over rice) is textbook authentic Japanese comfort food.",
     "isVegetarian": false,
@@ -2719,7 +2719,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company+-+Hennur/@13.0650,77.6530,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Byg+Brewski+Brewing+Company+22+%26+125%2C+Byrathi+Village%2C+Hennur+Bagalur+Main+Rd%2C+Visthar%2C+Bengaluru%2C+Karnataka+560077",
     "timings": "12:00 PM \u2013 1:00 AM",
     "curatorNote": "A monumental craft beer landmark. Grab a table by the illuminated lake for fresh Rauchbier and wood-fired sourdough pizza.",
     "isVegetarian": false,
@@ -2752,7 +2752,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe/@12.9863,77.5838,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nerlu+Cafe+30%2C+Ground+Floor%2C+Crescent+Rd%2C+High+Grounds%2C+Madhava+Nagar%2C+Bengaluru%2C+Karnataka+560001",
     "timings": "8:30 AM \u2013 8:00 PM (Closed Mondays)",
     "curatorNote": "The definitive coffee lover's destination. Order a comparative tasting flight to experience terroir variations from different Indian roasters.",
     "isVegetarian": false,
@@ -2765,7 +2765,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Inside Beruru, 218, Double Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
         "lat": 12.9775,
         "lng": 77.643,
-        "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe+-+Indiranagar/@12.9775,77.6430,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nerlu+Cafe+Inside+Beruru%2C+218%2C+Double+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038"
       }
     ]
   },
@@ -2795,7 +2795,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Bologna+Italian+Ristorante/@12.97204,77.64090,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bologna+Italian+Ristorante+759%2C+1st+Floor%2C+100+Feet+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "12:00 PM \u2013 11:00 PM",
     "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
     "isVegetarian": false,
@@ -2827,7 +2827,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://maps.app.goo.gl/7xz8zj81TGEdgw4A6",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spettacolare+208%2C+D%27Souza+Complex%2C+Paramahansa+Yogananda+Rd%2C+Stage+2%2C+Hoysala+Nagar%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:30 PM \u2013 10:30 PM",
     "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
     "isVegetarian": false,
@@ -2859,7 +2859,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Concu+Indiranagar/@12.9698,77.6405,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Con%C3%A7u+Patisserie+%26+Cafe+1089%2FA%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Doopanahalli%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "9:00 AM \u2013 11:30 PM",
     "curatorNote": "Impeccable French pastry technique in a stunning sunlit setting. The signature Tiramisu and Choux buns are city benchmarks.",
     "isVegetarian": false,
@@ -2889,7 +2889,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Kink+Speciality+Coffee/@12.9765,77.6425,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kink+Speciality+Coffee+14%2C+5th+Main+Rd%2C+Indira+Nagar+II+Stage%2C+Hoysala+Nagar%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:00 AM \u2013 10:00 PM",
     "curatorNote": "A sanctuary for coffee purists and matcha enthusiasts seeking uncompromising manual brewing craft.",
     "isVegetarian": true,
@@ -2902,7 +2902,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Castle St, Ashok Nagar, Bengaluru, Karnataka 560025",
         "lat": 12.9682,
         "lng": 77.6072,
-        "googleMapsUrl": "https://www.google.com/maps/place/Kink+Slo+Bar/@12.9682,77.6072,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kink+Speciality+Coffee+Castle+St%2C+Ashok+Nagar%2C+Bengaluru%2C+Karnataka+560025"
       }
     ]
   },
@@ -2930,7 +2930,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Smash+Guys+Indiranagar/@12.9712,77.6402,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Smash+Guys+948%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 12:00 AM",
     "curatorNote": "The real deal for smash burgers. Crisp caramelized lace edges paired with squishy potato buns and secret house sauce.",
     "isVegetarian": false,
@@ -2943,7 +2943,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "RMZ EcoWorld, Outer Ring Rd, Bellandur, Bengaluru, Karnataka 560103",
         "lat": 12.9258,
         "lng": 77.6868,
-        "googleMapsUrl": "https://www.google.com/maps/place/Smash+Guys+Bellandur/@12.9258,77.6868,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Smash+Guys+RMZ+EcoWorld%2C+Outer+Ring+Rd%2C+Bellandur%2C+Bengaluru%2C+Karnataka+560103"
       }
     ]
   },
@@ -2972,7 +2972,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Beanlore+Coffee+Roasters/@12.9782,77.6439,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Beanlore+Coffee+Roasters+503%2C+Chinmaya+Mission+Hospital+Rd%2C+Indira+Nagar+1st+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:00 AM \u2013 11:00 PM",
     "curatorNote": "Excellent specialty coffee and one of the most comfortable laptop-friendly workspaces on CMH Road.",
     "isVegetarian": false,
@@ -3004,7 +3004,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Paper+%26+Pie+Indiranagar/@12.9790,77.6406,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paper+%26+Pie+842%2FA%2C+Metro+Pillar+55%2C+100+Feet+Rd%2C+1st+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:00 AM \u2013 11:00 PM",
     "curatorNote": "A gorgeous convergence of specialty coffee, creative co-working, and elevated cafe comfort.",
     "isVegetarian": false,
@@ -3017,7 +3017,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "ITPL Main Rd, Whitefield, Bengaluru, Karnataka 560066",
         "lat": 12.9845,
         "lng": 77.728,
-        "googleMapsUrl": "https://www.google.com/maps/place/Paper+%26+Pie+Whitefield/@12.9845,77.7280,17z"
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paper+%26+Pie+ITPL+Main+Rd%2C+Whitefield%2C+Bengaluru%2C+Karnataka+560066"
       }
     ]
   },
@@ -3048,7 +3048,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Kind+Roastery+%26+Brew+Room/@12.9118,77.5872,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Kind+Roastery+%26+Brew+Room+1316%2FF%2C+18th+B+Main+Rd%2C+Marenahalli%2C+2nd+Phase%2C+JP+Nagar%2C+Bengaluru%2C+Karnataka+560078",
     "timings": "8:00 AM \u2013 11:00 PM",
     "curatorNote": "South Bangalore\u2019s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
     "isVegetarian": true,
@@ -3080,7 +3080,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Circa+11/@12.9715,77.6403,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Circa+11+957%2C+12th+Main+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "9:00 AM \u2013 4:00 PM (Cafe), 6:00 PM \u2013 12:00 AM (Dining & Cocktails)",
     "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
     "isVegetarian": false,
@@ -3112,7 +3112,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Vanamo+Global+Eats+and+Caffeinary/@12.9735,77.6410,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vanamo+Global+Eats+and+Caffeinary+100+Feet+Rd%2C+HAL+2nd+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:30 AM \u2013 11:00 PM",
     "curatorNote": "The Ukrainian Syrniki (fluffy golden quark cheese pancakes with berry compote) paired with a flat white is a revelation.",
     "isVegetarian": false,
@@ -3144,7 +3144,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Yogisthaan/@12.9818,77.6397,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yogisthaan+Cafe+89%2C+11th+Cross+Rd%2C+60+Feet+Rd%2C+Indira+Nagar+1st+Stage%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "8:00 AM \u2013 9:30 PM",
     "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
     "isVegetarian": true,
@@ -3174,7 +3174,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Izanagi+Japanese+Dining/@12.9791,77.6405,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Izanagi+Japanese+Dining+311%2C+2nd+Floor%2C+100+Feet+Rd%2C+Indira+Nagar+1st+Stage%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "12:00 PM \u2013 3:30 PM, 6:30 PM \u2013 11:00 PM",
     "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
     "isVegetarian": false,
@@ -3207,7 +3207,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Muru+Muru/@12.9772,77.6438,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Muru+Muru+33%2C+12th+Cross+Rd%2C+Indira+Nagar+II+Stage%2C+Hoysala+Nagar%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560038",
     "timings": "11:00 AM \u2013 10:30 PM",
     "curatorNote": "The quintessential Indiranagar adda. Sit under the trees and snack on crispy cheese sabudana vadas and iced filter coffee.",
     "isVegetarian": true,
@@ -3238,7 +3238,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Estate+Deli/@12.9685,77.6390,17z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Estate+Deli+3162%2C+1st+Floor%2C+60+Feet+Rd%2C+12th+Cross%2C+HAL+2nd+Stage%2C+Defence+Colony%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560008",
     "timings": "12:00 PM \u2013 11:00 PM",
     "curatorNote": "Bangalore's premier spot for genuine Chicago deep-dish pizza and hearty house-ground lamb smash burgers.",
     "isVegetarian": false,
