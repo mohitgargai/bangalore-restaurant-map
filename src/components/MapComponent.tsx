@@ -3,22 +3,13 @@
 import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { Restaurant, Neighborhood } from '@/types';
+import 'leaflet/dist/leaflet.css';
+import { Restaurant } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
 import { getGoogleMapsDirectionsUrl } from '@/lib/maps';
 import { Bookmark, Navigation, Sparkles } from 'lucide-react';
 
-interface MapComponentProps {
-  restaurants: Restaurant[];
-  selectedRestaurant: Restaurant | null;
-  hoveredRestaurantId: string | null;
-  onSelectRestaurant: (restaurant: Restaurant) => void;
-  onToggleBookmark: (id: string, e: React.MouseEvent) => void;
-  bookmarkedIds: Set<string>;
-  targetDistrict: { name: string; lat: number; lng: number; zoom: number } | null;
-}
-
-// Controller for smooth camera pan and zoom
+// Controller to fly the map camera smoothly
 function MapController({
   selectedRestaurant,
   targetDistrict,
@@ -40,7 +31,7 @@ function MapController({
   useEffect(() => {
     if (targetDistrict) {
       map.flyTo([targetDistrict.lat, targetDistrict.lng], targetDistrict.zoom, {
-        duration: 1.5,
+        duration: 1.4,
         easeLinearity: 0.25,
       });
     }
@@ -49,11 +40,23 @@ function MapController({
   return null;
 }
 
+interface MapComponentProps {
+  restaurants: Restaurant[];
+  selectedRestaurant: Restaurant | null;
+  hoveredRestaurantId: string | null;
+  onSelectRestaurant: (restaurant: Restaurant) => void;
+  onOpenDrawer?: (restaurant: Restaurant) => void;
+  onToggleBookmark: (id: string, e: React.MouseEvent) => void;
+  bookmarkedIds: Set<string>;
+  targetDistrict: { name: string; lat: number; lng: number; zoom: number } | null;
+}
+
 export default function MapComponent({
   restaurants,
   selectedRestaurant,
   hoveredRestaurantId,
   onSelectRestaurant,
+  onOpenDrawer,
   onToggleBookmark,
   bookmarkedIds,
   targetDistrict,
@@ -198,10 +201,16 @@ export default function MapComponent({
                     {/* Actions */}
                     <div className="mt-3 flex items-center gap-2 pt-2 border-t border-zinc-100">
                       <button
-                        onClick={() => onSelectRestaurant(restaurant)}
+                        onClick={() => {
+                          if (onOpenDrawer) {
+                            onOpenDrawer(restaurant);
+                          } else {
+                            onSelectRestaurant(restaurant);
+                          }
+                        }}
                         className="flex-1 rounded-lg bg-zinc-900 py-1.5 text-center text-xs font-semibold text-white hover:bg-zinc-800 transition-colors"
                       >
-                        View Details
+                        View Spot &rarr;
                       </button>
                       <a
                         href={directionsUrl}

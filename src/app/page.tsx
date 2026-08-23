@@ -17,7 +17,13 @@ import AdminDashboard from '@/components/AdminDashboard';
 
 export default function Home() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
+  
+  // Focused pin / active card on the map
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
+  
+  // Explicitly opened detail drawer (only opens on clear ask: clicking 'View Spot')
+  const [activeDrawerRestaurant, setActiveDrawerRestaurant] = useState<Restaurant | null>(null);
+  
   const [hoveredRestaurantId, setHoveredRestaurantId] = useState<string | null>(null);
 
   // Active View Mode ('spatial' | 'grid')
@@ -104,6 +110,7 @@ export default function Home() {
     });
   };
 
+  // Map pin / carousel card focus (DOES NOT open full drawer)
   const handleSelectRestaurant = (r: Restaurant | null) => {
     setSelectedRestaurant(r);
     if (r) {
@@ -114,6 +121,23 @@ export default function Home() {
         neighborhood: r.neighborhood,
       });
     }
+  };
+
+  // Explicit user action to open full dossier drawer ("View Spot" click)
+  const handleOpenDrawer = (r: Restaurant) => {
+    setSelectedRestaurant(r);
+    setActiveDrawerRestaurant(r);
+    trackEvent('open_drawer_spot', {
+      restaurant_id: r.id,
+      name: r.name,
+      category: r.category,
+    });
+  };
+
+  // Synchronized branch change in drawer
+  const handleSelectBranch = (branchRestaurant: Restaurant) => {
+    setSelectedRestaurant(branchRestaurant);
+    setActiveDrawerRestaurant(branchRestaurant);
   };
 
   const handleNewSubmission = (newRest: Restaurant) => {
@@ -194,6 +218,7 @@ export default function Home() {
             restaurants={filteredRestaurants}
             selectedRestaurant={selectedRestaurant}
             onSelectRestaurant={handleSelectRestaurant}
+            onOpenDrawer={handleOpenDrawer}
             hoveredRestaurantId={hoveredRestaurantId}
             onHoverRestaurant={setHoveredRestaurantId}
             selectedNeighborhood={selectedNeighborhood}
@@ -206,7 +231,7 @@ export default function Home() {
           <div className="h-full w-full overflow-y-auto bg-zinc-50 pt-36">
             <GridView
               restaurants={filteredRestaurants}
-              onSelectRestaurant={handleSelectRestaurant}
+              onSelectRestaurant={handleOpenDrawer}
               onToggleBookmark={handleToggleBookmark}
               bookmarkedIds={bookmarkedIds}
               onViewOnMap={(r) => {
@@ -218,13 +243,15 @@ export default function Home() {
         )}
       </div>
 
-      {/* Restaurant Dossier Detail Sheet */}
-      {selectedRestaurant && (
+      {/* Restaurant Dossier Detail Sheet (Opens ONLY when explicit 'View Spot' is clicked) */}
+      {activeDrawerRestaurant && (
         <RestaurantDrawer
-          restaurant={selectedRestaurant}
-          onClose={() => setSelectedRestaurant(null)}
+          restaurant={activeDrawerRestaurant}
+          allRestaurants={restaurants}
+          onClose={() => setActiveDrawerRestaurant(null)}
+          onSelectBranch={handleSelectBranch}
           onToggleBookmark={handleToggleBookmark}
-          isBookmarked={bookmarkedIds.has(selectedRestaurant.id)}
+          isBookmarked={bookmarkedIds.has(activeDrawerRestaurant.id)}
         />
       )}
 

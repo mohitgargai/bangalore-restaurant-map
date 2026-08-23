@@ -43,6 +43,7 @@ interface SpatialMapFlowProps {
   restaurants: Restaurant[];
   selectedRestaurant: Restaurant | null;
   onSelectRestaurant: (restaurant: Restaurant) => void;
+  onOpenDrawer: (restaurant: Restaurant) => void;
   hoveredRestaurantId: string | null;
   onHoverRestaurant: (id: string | null) => void;
   selectedNeighborhood: Neighborhood | 'All';
@@ -56,6 +57,7 @@ export default function SpatialMapFlow({
   restaurants,
   selectedRestaurant,
   onSelectRestaurant,
+  onOpenDrawer,
   hoveredRestaurantId,
   onHoverRestaurant,
   selectedNeighborhood,
@@ -98,6 +100,7 @@ export default function SpatialMapFlow({
         selectedRestaurant={selectedRestaurant}
         hoveredRestaurantId={hoveredRestaurantId}
         onSelectRestaurant={onSelectRestaurant}
+        onOpenDrawer={onOpenDrawer}
         onToggleBookmark={onToggleBookmark}
         bookmarkedIds={bookmarkedIds}
         targetDistrict={targetDistrict}
@@ -205,9 +208,16 @@ export default function SpatialMapFlow({
 
                   {/* Actions */}
                   <div className="mt-2.5 pt-2 border-t border-zinc-100 flex items-center justify-between text-xs">
-                    <span className="font-semibold text-zinc-900 text-[11px] hover:text-orange-600">
-                      View Spot &rarr;
-                    </span>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onOpenDrawer(restaurant);
+                      }}
+                      className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5"
+                    >
+                      <span>View Spot</span>
+                      <span>&rarr;</span>
+                    </button>
                     <a
                       href={directionsUrl}
                       target="_blank"

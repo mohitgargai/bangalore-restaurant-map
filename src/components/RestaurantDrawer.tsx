@@ -18,15 +18,19 @@ import {
 
 interface RestaurantDrawerProps {
   restaurant: Restaurant | null;
+  allRestaurants?: Restaurant[];
   onClose: () => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
+  onSelectBranch?: (branchRestaurant: Restaurant) => void;
   isBookmarked: boolean;
 }
 
 export default function RestaurantDrawer({
   restaurant,
+  allRestaurants = [],
   onClose,
   onToggleBookmark,
+  onSelectBranch,
   isBookmarked,
 }: RestaurantDrawerProps) {
   const [copied, setCopied] = useState(false);
@@ -55,6 +59,31 @@ export default function RestaurantDrawer({
     }
   };
 
+  const handleBranchClick = (b: Branch | null) => {
+    if (!b) {
+      setSelectedBranch(null);
+      return;
+    }
+    setSelectedBranch(b);
+    if (onSelectBranch) {
+      const match = allRestaurants.find((r) => r.id === b.id);
+      if (match) {
+        onSelectBranch(match);
+      } else {
+        onSelectBranch({
+          ...restaurant,
+          id: b.id,
+          name: b.name || `${restaurant.name.split(' (')[0]} (${b.neighborhood})`,
+          neighborhood: b.neighborhood,
+          address: b.address,
+          lat: b.lat,
+          lng: b.lng,
+          googleMapsUrl: b.googleMapsUrl,
+        });
+      }
+    }
+  };
+
   const currentAddress = selectedBranch ? selectedBranch.address : restaurant.address;
   const currentNeighborhood = selectedBranch ? selectedBranch.neighborhood : restaurant.neighborhood;
   const currentMapsUrl = selectedBranch ? selectedBranch.googleMapsUrl : restaurant.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant);
@@ -64,21 +93,21 @@ export default function RestaurantDrawer({
 
   return (
     <>
-      {/* Dimmed Backdrop for Mobile & Desktop */}
+      {/* Non-blur subtle backdrop to catch outside clicks without blurring the map */}
       <div
-        className="fixed inset-0 z-[1999] bg-black/40 backdrop-blur-xs transition-opacity"
+        className="fixed inset-0 z-[1999] bg-black/20 transition-opacity"
         onClick={onClose}
       />
 
       {/* Adaptive Sheet: Bottom Sheet on Mobile (<sm), Slide-Over Drawer on Desktop (sm+) */}
-      <div className="fixed inset-x-0 bottom-0 z-[2000] flex max-h-[90vh] sm:max-h-full sm:inset-y-0 sm:left-auto sm:right-0 w-full sm:max-w-md flex-col rounded-t-3xl sm:rounded-none bg-white shadow-2xl transition-transform duration-300 border-t sm:border-t-0 sm:border-l border-zinc-200 overflow-hidden">
+      <div className="fixed inset-x-0 bottom-0 z-[2000] flex max-h-[88vh] sm:max-h-full sm:inset-y-0 sm:left-auto sm:right-0 w-full sm:max-w-md flex-col rounded-t-3xl sm:rounded-none bg-white shadow-2xl transition-transform duration-300 border-t sm:border-t-0 sm:border-l border-zinc-200 overflow-hidden">
         {/* Mobile Drag Indicator */}
         <div className="sm:hidden flex justify-center pt-2.5 pb-1 bg-zinc-950">
           <div className="h-1 w-10 rounded-full bg-white/40" />
         </div>
 
         {/* Cover Image Header */}
-        <div className="relative h-48 sm:h-60 w-full shrink-0 bg-zinc-950">
+        <div className="relative h-44 sm:h-56 w-full shrink-0 bg-zinc-950">
           <img
             src={restaurant.imageUrl}
             alt={restaurant.name}
@@ -125,17 +154,17 @@ export default function RestaurantDrawer({
 
         {/* Content Body */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 sm:space-y-5">
-          {/* Multi-Branch Outlets Selector */}
+          {/* Multi-Branch Outlets Selector (Synchronized with Map) */}
           {restaurant.branches && restaurant.branches.length > 0 && (
-            <div className="rounded-2xl border border-zinc-200 bg-zinc-50/80 p-3">
+            <div className="rounded-2xl border border-zinc-200 bg-zinc-50/90 p-3">
               <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-zinc-600 mb-2">
                 <Building2 className="h-3.5 w-3.5 text-zinc-500" />
                 <span>Outlets in Bangalore ({restaurant.branches.length + 1})</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {/* Main Branch */}
+                {/* Active Main Branch */}
                 <button
-                  onClick={() => setSelectedBranch(null)}
+                  onClick={() => handleBranchClick(null)}
                   className={`rounded-xl px-2.5 py-1 text-xs font-semibold transition-all ${
                     !selectedBranch
                       ? 'bg-zinc-900 text-white shadow-xs'
@@ -148,7 +177,7 @@ export default function RestaurantDrawer({
                 {restaurant.branches.map((b) => (
                   <button
                     key={b.id}
-                    onClick={() => setSelectedBranch(b)}
+                    onClick={() => handleBranchClick(b)}
                     className={`rounded-xl px-2.5 py-1 text-xs font-semibold transition-all ${
                       selectedBranch?.id === b.id
                         ? 'bg-zinc-900 text-white shadow-xs'
