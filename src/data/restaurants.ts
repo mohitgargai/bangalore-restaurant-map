@@ -2340,38 +2340,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "blue-tokai-koramangala",
-    "name": "Blue Tokai Coffee Roasters",
-    "slug": "blue-tokai-koramangala",
-    "tagline": "India\u2019s specialty single-estate coffee pioneer & pour-over bar",
-    "description": "The pioneering roastery that spearheaded India\u2019s specialty coffee movement, roasting traceable single-estate beans from Chikmagalur and Coorg, served alongside sourdough tartines and bakes.",
-    "category": "Specialty Coffee & Cafe",
-    "neighborhood": "Koramangala",
-    "address": "583, 80 Feet Rd, 8th Block, Koramangala, Bengaluru, Karnataka 560095",
-    "lat": 12.940706,
-    "lng": 77.620168,
-    "priceLevel": "\u20b9\u20b9",
-    "priceForTwo": "\u20b9800",
-    "mustTry": [
-      "Attikan Estate Pour Over",
-      "Iced Flat White",
-      "Almond Croissant",
-      "Truffle Scrambled Eggs Sourdough",
-      "Nitro Cold Brew"
-    ],
-    "vibeTags": [
-      "Work Friendly",
-      "Outdoor Seating",
-      "Breakfast Spot"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue+Tokai+Coffee+Roasters+80+Feet+Rd+Koramangala+Bengaluru",
-    "timings": "7:00 AM \u2013 11:00 PM",
-    "curatorNote": "The Attikan Estate medium-dark roast pour-over is a benchmark for Indian single-estate specialty coffee.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "lakeview-milkbar-mg-road",
     "name": "Lakeview Milkbar",
     "slug": "lakeview-milkbar-mg-road",
