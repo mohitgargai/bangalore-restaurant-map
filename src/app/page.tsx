@@ -7,6 +7,7 @@ import {
   Neighborhood,
 } from '@/types';
 import { INITIAL_RESTAURANTS } from '@/data/restaurants';
+import { trackEvent } from '@/lib/analytics';
 import TopNavCapsule, { ViewMode } from '@/components/TopNavCapsule';
 import SpatialMapFlow, { DISTRICT_MAP_CONFIG } from '@/components/SpatialMapFlow';
 import GridView from '@/components/GridView';
@@ -72,6 +73,7 @@ export default function Home() {
   // Synchronized Neighborhood selection
   const handleSelectNeighborhood = useCallback((area: Neighborhood | 'All') => {
     setSelectedNeighborhood(area);
+    trackEvent('filter_neighborhood', { neighborhood: area });
     const match = DISTRICT_MAP_CONFIG.find((d) => d.id === area);
     if (match) {
       setTargetDistrict({
@@ -87,6 +89,7 @@ export default function Home() {
     if (e) e.stopPropagation();
     setBookmarkedIds((prev) => {
       const next = new Set(prev);
+      const isAdding = !next.has(id);
       if (next.has(id)) {
         next.delete(id);
       } else {
@@ -94,9 +97,22 @@ export default function Home() {
       }
       try {
         localStorage.setItem('blr_food_bookmarks', JSON.stringify(Array.from(next)));
+        trackEvent(isAdding ? 'bookmark_add' : 'bookmark_remove', { restaurant_id: id });
       } catch (err) {}
       return next;
     });
+  };
+
+  const handleSelectRestaurant = (r: Restaurant | null) => {
+    setSelectedRestaurant(r);
+    if (r) {
+      trackEvent('view_restaurant', {
+        restaurant_id: r.id,
+        name: r.name,
+        category: r.category,
+        neighborhood: r.neighborhood,
+      });
+    }
   };
 
   const handleNewSubmission = (newRest: Restaurant) => {
@@ -174,7 +190,7 @@ export default function Home() {
           <SpatialMapFlow
             restaurants={filteredRestaurants}
             selectedRestaurant={selectedRestaurant}
-            onSelectRestaurant={(r) => setSelectedRestaurant(r)}
+            onSelectRestaurant={handleSelectRestaurant}
             hoveredRestaurantId={hoveredRestaurantId}
             onHoverRestaurant={setHoveredRestaurantId}
             selectedNeighborhood={selectedNeighborhood}
@@ -187,11 +203,11 @@ export default function Home() {
           <div className="h-full w-full overflow-y-auto bg-zinc-50 pt-36">
             <GridView
               restaurants={filteredRestaurants}
-              onSelectRestaurant={(r) => setSelectedRestaurant(r)}
+              onSelectRestaurant={handleSelectRestaurant}
               onToggleBookmark={handleToggleBookmark}
               bookmarkedIds={bookmarkedIds}
               onViewOnMap={(r) => {
-                setSelectedRestaurant(r);
+                handleSelectRestaurant(r);
                 setViewMode('spatial');
               }}
             />

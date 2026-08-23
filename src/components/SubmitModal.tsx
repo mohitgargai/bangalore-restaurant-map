@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Restaurant, Neighborhood } from '@/types';
 import { db } from '@/lib/firebase';
+import { trackEvent } from '@/lib/analytics';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { X, Sparkles, Plus, CheckCircle2, Link2, User, Loader2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -136,6 +137,10 @@ export default function SubmitModal({ isOpen, onClose, onSuccess }: SubmitModalP
           lng: jitterLng,
           createdAt: serverTimestamp(),
           status: 'pending',
+        });
+        trackEvent('submit_spot', {
+          spot_name: name.trim(),
+          neighborhood: detectedHood,
         });
       } catch (firestoreErr) {
         console.warn('Firestore write warning:', firestoreErr);
