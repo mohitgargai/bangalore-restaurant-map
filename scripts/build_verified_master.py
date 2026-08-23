@@ -1041,6 +1041,28 @@ ALL_MASTER_SPOTS = [
         "isVegetarian": False,
         "verified": True,
     },
+    {
+        "id": "phurr-jayanagar",
+        "name": "Phurr",
+        "slug": "phurr-jayanagar",
+        "tagline": "Elevated pure-vegetarian modern gastronomy & botanical mocktail lounge",
+        "description": "South Bangalore’s crown jewel for progressive pure-vegetarian dining. Celebrated for whimsical multi-sensory plating, birdcage chandeliers, smoked cottage cheese steaks, and botanical mocktail alchemy.",
+        "category": "Modern Indian & Dining",
+        "neighborhood": "Jayanagar",
+        "address": "40, 22nd Cross Rd, Jayanagar 3rd Block, Jayanagar, Bengaluru, Karnataka 560011",
+        "lat": 12.934918,
+        "lng": 77.582902,
+        "priceLevel": "₹₹₹",
+        "priceForTwo": "₹1,500",
+        "mustTry": ["Truffle Mushroom Galouti", "Smoked Paneer Lababdar Cannelloni", "Deconstructed Dahi Bhalla", "Birdcage Botanical Mocktails", "Gulkand Charcoal Kulfi"],
+        "vibeTags": ["Pure Veg", "Romantic"],
+        "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Phurr+22nd+Cross+Rd+Jayanagar+3rd+Block+Bengaluru",
+        "timings": "12:00 PM – 4:00 PM, 7:00 PM – 11:00 PM",
+        "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
+        "isVegetarian": True,
+        "verified": True,
+    },
 
     # --- 5. REGIONAL & COASTAL & MILITARY ---
     {
