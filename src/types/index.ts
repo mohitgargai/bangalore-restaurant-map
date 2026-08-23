@@ -101,7 +101,6 @@ export interface Branch {
   lng: number;
   googleMapsUrl: string;
   timings?: string;
-  isFlagship?: boolean;
 }
 
 export interface Restaurant {

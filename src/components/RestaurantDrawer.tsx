@@ -133,7 +133,7 @@ export default function RestaurantDrawer({
                 <span>Outlets in Bangalore ({restaurant.branches.length + 1})</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {/* Main/Flagship */}
+                {/* Main Branch */}
                 <button
                   onClick={() => setSelectedBranch(null)}
                   className={`rounded-xl px-2.5 py-1 text-xs font-semibold transition-all ${
@@ -142,7 +142,7 @@ export default function RestaurantDrawer({
                       : 'bg-white border border-zinc-200 text-zinc-700 hover:bg-zinc-100'
                   }`}
                 >
-                  📍 {restaurant.neighborhood} (Flagship)
+                  📍 {restaurant.neighborhood}
                 </button>
                 {/* Other Outlets */}
                 {restaurant.branches.map((b) => (
