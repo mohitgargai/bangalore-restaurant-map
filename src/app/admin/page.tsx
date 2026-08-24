@@ -46,7 +46,6 @@ interface FirestoreSubmission {
 
 const ALLOWED_ADMIN_EMAILS = [
   'mohitgarg.ai@gmail.com',
-  'mohit@merakal.in',
   'admin@getoden.com',
 ];
 

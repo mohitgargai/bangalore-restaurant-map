@@ -15,7 +15,6 @@ service cloud.firestore {
       // Only authenticated admin can read, review, or delete submissions
       allow read, update, delete: if request.auth != null 
                                   && (request.auth.token.email == 'mohitgarg.ai@gmail.com' 
-                                      || request.auth.token.email == 'mohit@merakal.in'
                                       || request.auth.token.email == 'admin@getoden.com');
     }
     match /{document=**} {
