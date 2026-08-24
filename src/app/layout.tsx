@@ -45,6 +45,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://blreats.com',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'icon', url: '/icon.png', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
     description:
@@ -53,12 +66,21 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     siteName: 'BLR // EATS',
     url: 'https://blreats.com',
+    images: [
+      {
+        url: 'https://blreats.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'BLR EATS — The Definitive Bengaluru Food & Brewery Compass',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
     description:
       'Curated spatial guide to Bengaluru’s legendary breakfast institutions, artisanal roasters, craft breweries, and cult dining spots.',
+    images: ['https://blreats.com/og-image.png'],
   },
 };
 

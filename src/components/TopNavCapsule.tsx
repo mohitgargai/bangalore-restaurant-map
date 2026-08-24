@@ -78,8 +78,11 @@ export default function TopNavCapsule({
             <div className="flex items-center justify-between gap-3">
               {/* Brand Logo */}
               <div className="flex items-center gap-2.5 shrink-0">
-                <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-zinc-950 text-white font-serif font-black text-base shadow-xs">
-                  B
+                <div className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
+                    <circle cx="12" cy="9" r="3.5" fill="#f59e0b" />
+                  </svg>
                 </div>
                 <div className="leading-tight">
                   <div className="flex items-center gap-1.5">
@@ -228,8 +231,11 @@ export default function TopNavCapsule({
             {/* Mobile Row 1: Brand & Top Action Bar */}
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-1.5 shrink-0">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-zinc-950 text-white font-serif font-black text-xs shadow-xs">
-                  B
+                <div className="relative flex h-7 w-7 items-center justify-center rounded-xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
+                    <circle cx="12" cy="9" r="3.5" fill="#f59e0b" />
+                  </svg>
                 </div>
                 <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900">
                   BLR // EATS
