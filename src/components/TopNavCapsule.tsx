@@ -79,9 +79,19 @@ export default function TopNavCapsule({
           <div className="hidden md:flex flex-col gap-3">
             {/* Top Row */}
             <div className="flex items-center justify-between gap-3">
-              {/* Brand Logo */}
-              <div className="flex items-center gap-2.5 shrink-0">
-                <div className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0">
+              {/* Brand Logo (Click to Reset All Filters) */}
+              <button
+                onClick={() => {
+                  onSearchChange('');
+                  onSelectCategory('All');
+                  onSelectNeighborhood('All');
+                  if (vegOnly) onToggleVegOnly(false);
+                  if (showSavedOnly) onToggleSavedOnly(false);
+                }}
+                className="flex items-center gap-2.5 shrink-0 text-left cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 rounded-2xl p-0.5"
+                title="Reset all filters"
+              >
+                <div className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0 group-hover:scale-105 transition-transform">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
                     <circle cx="12" cy="9" r="3.5" fill="#f59e0b" />
@@ -89,18 +99,18 @@ export default function TopNavCapsule({
                 </div>
                 <div className="leading-tight">
                   <div className="flex items-center gap-1.5">
-                    <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900">
+                    <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900 group-hover:text-orange-600 transition-colors">
                       BLR // EATS
                     </span>
                     <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   </div>
                   <p className="text-[10px] text-zinc-400 font-medium">{totalFilteredCount} curated spots</p>
                 </div>
-              </div>
+              </button>
 
               {/* Big Search */}
               <div className="relative flex-1 min-w-0 max-w-2xl">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400" />
+                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400 pointer-events-none" />
                 <input
                   type="text"
                   value={searchQuery}
@@ -111,7 +121,8 @@ export default function TopNavCapsule({
                 {searchQuery && (
                   <button
                     onClick={() => onSearchChange('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-zinc-400 hover:bg-zinc-200 hover:text-zinc-700"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-zinc-400 hover:bg-zinc-200 hover:text-zinc-700 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900"
+                    title="Clear search"
                   >
                     <X className="h-3.5 w-3.5" />
                   </button>
@@ -125,7 +136,7 @@ export default function TopNavCapsule({
                   <select
                     value={selectedCategory}
                     onChange={(e) => onSelectCategory(e.target.value as Category | 'All')}
-                    className="appearance-none rounded-full border border-zinc-200 bg-zinc-50/90 pl-3 pr-7 py-2 text-xs font-semibold text-zinc-800 hover:bg-zinc-100 transition-colors focus:outline-none cursor-pointer shadow-2xs"
+                    className="appearance-none rounded-full border border-zinc-200 bg-zinc-50/90 pl-3 pr-7 py-2 text-xs font-semibold text-zinc-800 hover:bg-zinc-100 transition-colors focus:outline-none cursor-pointer shadow-2xs focus-visible:ring-2 focus-visible:ring-zinc-900"
                   >
                     <option value="All">✨ All Cravings</option>
                     {ALL_CATEGORIES.map((c) => (
@@ -140,7 +151,7 @@ export default function TopNavCapsule({
                 {/* Pure Veg Switch */}
                 <button
                   onClick={() => onToggleVegOnly(!vegOnly)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 ${
+                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
                     vegOnly
                       ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
                       : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600 hover:bg-zinc-100'
@@ -154,7 +165,7 @@ export default function TopNavCapsule({
                 {/* Saved Wishlist Toggle */}
                 <button
                   onClick={() => onToggleSavedOnly(!showSavedOnly)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 ${
+                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
                     showSavedOnly
                       ? 'bg-zinc-900 text-white shadow-xs'
                       : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600 hover:bg-zinc-100'
@@ -170,7 +181,7 @@ export default function TopNavCapsule({
                 <div className="flex rounded-full border border-zinc-200 bg-zinc-100/90 p-0.5 text-xs shrink-0">
                   <button
                     onClick={() => onSelectViewMode('spatial')}
-                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900 ${
                       viewMode === 'spatial'
                         ? 'bg-white text-zinc-900 shadow-xs'
                         : 'text-zinc-500 hover:text-zinc-900'
@@ -182,7 +193,7 @@ export default function TopNavCapsule({
                   </button>
                   <button
                     onClick={() => onSelectViewMode('grid')}
-                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900 ${
                       viewMode === 'grid'
                         ? 'bg-white text-zinc-900 shadow-xs'
                         : 'text-zinc-500 hover:text-zinc-900'
@@ -197,7 +208,7 @@ export default function TopNavCapsule({
                 {/* Add Spot Button */}
                 <button
                   onClick={onOpenSubmitModal}
-                  className="flex items-center gap-1 rounded-full bg-orange-600 px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-orange-700 transition-all active:scale-95 shrink-0"
+                  className="flex items-center gap-1 rounded-full bg-orange-600 px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-orange-700 transition-all active:scale-95 shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                 >
                   <Plus className="h-3.5 w-3.5 stroke-[2.5]" />
                   <span>Add Spot</span>
@@ -216,7 +227,7 @@ export default function TopNavCapsule({
                   <button
                     key={hood.id}
                     onClick={() => onSelectNeighborhood(hood.id)}
-                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all ${
+                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
                       isSelected
                         ? 'bg-zinc-900 text-white shadow-xs scale-102'
                         : 'bg-zinc-100/90 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
@@ -233,7 +244,16 @@ export default function TopNavCapsule({
           <div className="md:hidden flex flex-col gap-2.5">
             {/* Mobile Row 1: Brand & Top Action Bar */}
             <div className="flex items-center justify-between gap-2">
-              <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                onClick={() => {
+                  onSearchChange('');
+                  onSelectCategory('All');
+                  onSelectNeighborhood('All');
+                  if (vegOnly) onToggleVegOnly(false);
+                  if (showSavedOnly) onToggleSavedOnly(false);
+                }}
+                className="flex items-center gap-1.5 shrink-0 cursor-pointer text-left focus-visible:outline-none"
+              >
                 <div className="relative flex h-7 w-7 items-center justify-center rounded-xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
@@ -243,14 +263,14 @@ export default function TopNavCapsule({
                 <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900">
                   BLR // EATS
                 </span>
-              </div>
+              </button>
 
-              {/* Top Quick Actions (Veg, Saved, Map/Grid, Add, Admin) */}
+              {/* Top Quick Actions (Veg, Saved, Map/Grid, Add) */}
               <div className="flex items-center gap-1 shrink-0">
                 {/* Pure Veg Pill */}
                 <button
                   onClick={() => onToggleVegOnly(!vegOnly)}
-                  className={`flex items-center rounded-full px-2 py-1 text-[11px] font-semibold transition-all ${
+                  className={`flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all cursor-pointer ${
                     vegOnly
                       ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
                       : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
@@ -263,7 +283,7 @@ export default function TopNavCapsule({
                 {/* Saved Wishlist Pill */}
                 <button
                   onClick={() => onToggleSavedOnly(!showSavedOnly)}
-                  className={`flex items-center gap-0.5 rounded-full px-2 py-1 text-[11px] font-semibold transition-all ${
+                  className={`flex items-center gap-0.5 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all cursor-pointer ${
                     showSavedOnly
                       ? 'bg-zinc-900 text-white shadow-xs'
                       : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
@@ -278,7 +298,7 @@ export default function TopNavCapsule({
                 <div className="flex rounded-full border border-zinc-200 bg-zinc-100 p-0.5 text-[11px]">
                   <button
                     onClick={() => onSelectViewMode('spatial')}
-                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all cursor-pointer ${
                       viewMode === 'spatial' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
                     }`}
                   >
@@ -286,7 +306,7 @@ export default function TopNavCapsule({
                   </button>
                   <button
                     onClick={() => onSelectViewMode('grid')}
-                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all ${
+                    className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all cursor-pointer ${
                       viewMode === 'grid' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
                     }`}
                   >
@@ -297,7 +317,7 @@ export default function TopNavCapsule({
                 {/* Add Spot */}
                 <button
                   onClick={onOpenSubmitModal}
-                  className="flex items-center gap-0.5 rounded-full bg-orange-600 px-2 py-1 text-[11px] font-semibold text-white shadow-xs hover:bg-orange-700 active:scale-95"
+                  className="flex items-center gap-0.5 rounded-full bg-orange-600 px-2.5 py-1 text-[11px] font-semibold text-white shadow-xs hover:bg-orange-700 active:scale-95 cursor-pointer"
                 >
                   <Plus className="h-3 w-3 stroke-[2.5]" />
                   <span>Add</span>
@@ -309,7 +329,7 @@ export default function TopNavCapsule({
             <div className="flex items-center gap-1.5">
               {/* Search input */}
               <div className="relative flex-1 min-w-0">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400 pointer-events-none" />
                 <input
                   type="text"
                   value={searchQuery}
@@ -320,7 +340,7 @@ export default function TopNavCapsule({
                 {searchQuery && (
                   <button
                     onClick={() => onSearchChange('')}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-zinc-400"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-zinc-400 cursor-pointer"
                   >
                     <X className="h-3 w-3" />
                   </button>
@@ -356,7 +376,7 @@ export default function TopNavCapsule({
                   <button
                     key={hood.id}
                     onClick={() => onSelectNeighborhood(hood.id)}
-                    className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold transition-all ${
+                    className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold transition-all cursor-pointer ${
                       isSelected
                         ? 'bg-zinc-900 text-white shadow-xs scale-102 font-bold'
                         : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200'

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Category, Neighborhood, ALL_CATEGORIES, ALL_NEIGHBORHOODS } from '@/types';
 import { db } from '@/lib/firebase';
 import { trackEvent } from '@/lib/analytics';
@@ -24,6 +24,28 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [submittedSuccess, setSubmittedSuccess] = useState(false);
+
+  const handleResetAndClose = React.useCallback(() => {
+    setName('');
+    setGoogleMapsUrl('');
+    setWhyRecommend('');
+    setSubmittedBy('');
+    setSubmittedSuccess(false);
+    setError('');
+    onClose();
+  }, [onClose]);
+
+  // Keyboard shortcut: Escape key closes the modal
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleResetAndClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, handleResetAndClose]);
 
   if (!isOpen) return null;
 
@@ -85,21 +107,11 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
     }
   };
 
-  const handleResetAndClose = () => {
-    setName('');
-    setGoogleMapsUrl('');
-    setWhyRecommend('');
-    setSubmittedBy('');
-    setSubmittedSuccess(false);
-    setError('');
-    onClose();
-  };
-
   return (
     <div className="fixed inset-0 z-[1500] flex items-center justify-center p-4">
       {/* Backdrop */}
       <div 
-        className="absolute inset-0 bg-zinc-950/70 backdrop-blur-sm transition-opacity" 
+        className="absolute inset-0 bg-zinc-950/70 backdrop-blur-sm transition-opacity cursor-pointer" 
         onClick={handleResetAndClose} 
       />
 
@@ -108,7 +120,8 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
         {/* Close Button */}
         <button
           onClick={handleResetAndClose}
-          className="absolute right-5 top-5 rounded-full p-2 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 transition-colors"
+          className="absolute right-5 top-5 rounded-full p-2 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
+          title="Close"
         >
           <X className="h-5 w-5" />
         </button>
@@ -127,7 +140,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
 
             <button
               onClick={handleResetAndClose}
-              className="w-full rounded-2xl bg-zinc-900 py-3 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 transition-all active:scale-98"
+              className="w-full rounded-2xl bg-zinc-900 py-3 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
             >
               Back to Map
             </button>
@@ -183,7 +196,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   <select
                     value={neighborhood}
                     onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
-                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {ALL_NEIGHBORHOODS.map((n) => (
                       <option key={n} value={n}>
@@ -200,7 +213,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value as Category)}
-                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {ALL_CATEGORIES.map((c) => (
                       <option key={c} value={c}>
@@ -211,32 +224,32 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                 </div>
               </div>
 
+              {/* Google Maps URL */}
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
+                  Google Maps URL <span className="text-zinc-400 font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="url"
+                  placeholder="https://maps.app.goo.gl/…"
+                  value={googleMapsUrl}
+                  onChange={(e) => setGoogleMapsUrl(e.target.value)}
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                />
+              </div>
+
               {/* Why Recommend / Must-Try */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Why It Belongs &amp; Must-Try Dishes <span className="text-orange-500">*</span>
+                  Why is it special & Must-Try Dishes? <span className="text-orange-500">*</span>
                 </label>
                 <textarea
                   required
                   rows={3}
-                  placeholder="What makes this place special? What dishes or brews should everyone order?"
+                  placeholder="Tell us what dish to order and why this place belongs in the curated guide…"
                   value={whyRecommend}
                   onChange={(e) => setWhyRecommend(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 p-3 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-900"
-                />
-              </div>
-
-              {/* Google Maps / Website Link */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Google Maps or Instagram Link <span className="text-zinc-400 font-normal">(Optional)</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="https://maps.app.goo.gl/..."
-                  value={googleMapsUrl}
-                  onChange={(e) => setGoogleMapsUrl(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 p-3 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none resize-none"
                 />
               </div>
 
@@ -259,7 +272,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-orange-600 py-3 text-sm font-semibold text-white shadow-sm hover:bg-orange-700 disabled:opacity-50 transition-all active:scale-98"
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-orange-600 py-3 text-sm font-semibold text-white shadow-sm hover:bg-orange-700 disabled:opacity-50 transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                 >
                   {loading ? (
                     <>

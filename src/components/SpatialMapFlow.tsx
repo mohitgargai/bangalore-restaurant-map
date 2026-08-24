@@ -118,14 +118,14 @@ export default function SpatialMapFlow({
             <>
               <button
                 onClick={handleScrollLeft}
-                className="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 h-9 w-9 items-center justify-center rounded-full bg-white/95 text-zinc-800 shadow-xl border border-zinc-200 backdrop-blur-md hover:bg-white hover:scale-105 transition-all"
+                className="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 h-9 w-9 items-center justify-center rounded-full bg-white/95 text-zinc-800 shadow-xl border border-zinc-200 backdrop-blur-md hover:bg-white hover:scale-105 transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
                 title="Previous"
               >
                 <ChevronLeft className="h-4 w-4" />
               </button>
               <button
                 onClick={handleScrollRight}
-                className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 h-9 w-9 items-center justify-center rounded-full bg-white/95 text-zinc-800 shadow-xl border border-zinc-200 backdrop-blur-md hover:bg-white hover:scale-105 transition-all"
+                className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 h-9 w-9 items-center justify-center rounded-full bg-white/95 text-zinc-800 shadow-xl border border-zinc-200 backdrop-blur-md hover:bg-white hover:scale-105 transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
                 title="Next"
               >
                 <ChevronRight className="h-4 w-4" />
@@ -192,7 +192,7 @@ export default function SpatialMapFlow({
                           </span>
                           <button
                             onClick={(e) => onToggleBookmark(restaurant.id, e)}
-                            className={`p-1 rounded-lg transition-colors ${
+                            className={`p-1 rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 ${
                               isBookmarked
                                 ? 'text-orange-600 bg-orange-50'
                                 : 'text-zinc-400 hover:text-zinc-700'
@@ -226,7 +226,7 @@ export default function SpatialMapFlow({
                         e.stopPropagation();
                         onOpenDrawer(loc.parentRestaurant, loc.branchId);
                       }}
-                      className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5"
+                      className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 rounded-md px-1 py-0.5"
                     >
                       <span>View Spot</span>
                       <span>&rarr;</span>
@@ -236,7 +236,7 @@ export default function SpatialMapFlow({
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="flex items-center gap-1 text-[11px] font-semibold text-orange-600 hover:text-orange-700"
+                      className="flex items-center gap-1 text-[11px] font-semibold text-orange-600 hover:text-orange-700 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 rounded-md px-1 py-0.5"
                     >
                       <Navigation className="h-3 w-3" />
                       <span>Directions</span>
@@ -248,6 +248,17 @@ export default function SpatialMapFlow({
           </div>
         </div>
       </div>
+
+      {/* Floating Empty State Banner when 0 spots match */}
+      {restaurants.length === 0 && (
+        <div className="pointer-events-auto absolute bottom-8 inset-x-4 z-[1100] mx-auto max-w-sm rounded-2xl border border-zinc-200 bg-white/95 p-4 text-center shadow-2xl backdrop-blur-xl">
+          <div className="text-2xl mb-1">🔍</div>
+          <h4 className="text-sm font-bold text-zinc-900">No spots found in this view</h4>
+          <p className="text-xs text-zinc-500 mt-0.5">
+            Try adjusting your search terms or picking another neighborhood above.
+          </p>
+        </div>
+      )}
     </div>
   );
 }

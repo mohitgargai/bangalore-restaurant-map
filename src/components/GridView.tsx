@@ -71,7 +71,7 @@ export default function GridView({
                 {/* Bookmark Button Overlay */}
                 <button
                   onClick={(e) => onToggleBookmark(restaurant.id, e)}
-                  className={`absolute top-3 right-3 flex items-center justify-center rounded-full p-2 text-xs font-semibold backdrop-blur-md shadow-xs transition-transform active:scale-90 ${
+                  className={`absolute top-3 right-3 flex items-center justify-center rounded-full p-2 text-xs font-semibold backdrop-blur-md shadow-xs transition-transform active:scale-90 cursor-pointer ${
                     isBookmarked
                       ? 'bg-orange-600 text-white'
                       : 'bg-white/90 text-zinc-700 hover:bg-white'
@@ -117,14 +117,14 @@ export default function GridView({
                 <div className="mt-4 pt-3 border-t border-zinc-100 flex items-center gap-2">
                   <button
                     onClick={() => onViewOnMap(loc.resolvedRestaurant)}
-                    className="flex-1 flex items-center justify-center gap-1.5 rounded-xl border border-zinc-200 bg-zinc-50 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-1.5 rounded-xl border border-zinc-200 bg-zinc-50 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900"
                   >
                     <MapPin className="h-3.5 w-3.5 text-zinc-500" />
                     <span>View on Map</span>
                   </button>
                   <button
                     onClick={() => onSelectRestaurant(loc.parentRestaurant, loc.branchId)}
-                    className="flex items-center justify-center rounded-xl bg-zinc-900 px-3 py-2 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors shadow-2xs"
+                    className="flex items-center justify-center rounded-xl bg-zinc-900 px-3 py-2 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors shadow-2xs cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900"
                   >
                     <ArrowRight className="h-3.5 w-3.5" />
                   </button>

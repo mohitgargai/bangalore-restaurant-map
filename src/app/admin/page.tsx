@@ -352,7 +352,7 @@ export default function AdminPage() {
 
                 <button
                   onClick={handleLogout}
-                  className="flex items-center gap-1.5 rounded-xl border border-red-500/30 bg-red-500/10 px-3.5 py-2 text-xs font-semibold text-red-400 hover:bg-red-500/20 transition-colors"
+                  className="flex items-center gap-1.5 rounded-xl border border-red-500/30 bg-red-500/10 px-3.5 py-2 text-xs font-semibold text-red-400 hover:bg-red-500/20 transition-colors cursor-pointer"
                 >
                   <LogOut className="h-3.5 w-3.5" />
                   <span>Sign Out</span>
@@ -367,7 +367,7 @@ export default function AdminPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setActiveTab('restaurants')}
-                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all ${
+                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
                     activeTab === 'restaurants'
                       ? 'bg-orange-500/20 border border-orange-500/40 text-orange-400'
                       : 'text-zinc-400 hover:bg-zinc-800/60 hover:text-zinc-200'
@@ -379,7 +379,7 @@ export default function AdminPage() {
 
                 <button
                   onClick={() => setActiveTab('submissions')}
-                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all ${
+                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
                     activeTab === 'submissions'
                       ? 'bg-orange-500/20 border border-orange-500/40 text-orange-400'
                       : 'text-zinc-400 hover:bg-zinc-800/60 hover:text-zinc-200'
@@ -391,7 +391,7 @@ export default function AdminPage() {
 
                 <button
                   onClick={() => setActiveTab('export')}
-                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all ${
+                  className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
                     activeTab === 'export'
                       ? 'bg-orange-500/20 border border-orange-500/40 text-orange-400'
                       : 'text-zinc-400 hover:bg-zinc-800/60 hover:text-zinc-200'

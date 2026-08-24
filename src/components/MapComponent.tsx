@@ -6,6 +6,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Restaurant, Neighborhood } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
+import { LocateFixed } from 'lucide-react';
 
 // Controller to fly the map camera smoothly
 function MapController({
@@ -37,6 +38,47 @@ function MapController({
   }, [targetDistrict, map]);
 
   return null;
+}
+
+// Minimalist floating controls for zoom & recenter
+function MapFloatingControls() {
+  const map = useMap();
+
+  const handleRecenter = () => {
+    map.flyTo([12.9716, 77.5946], 13, { duration: 1.1 });
+  };
+
+  return (
+    <div className="absolute right-3 top-36 sm:top-28 z-[1000] flex flex-col gap-1.5 pointer-events-auto">
+      <div className="flex flex-col rounded-2xl border border-zinc-200/90 bg-white/95 shadow-md backdrop-blur-md overflow-hidden">
+        <button
+          onClick={() => map.zoomIn()}
+          className="flex h-8 w-8 items-center justify-center text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950 transition-colors font-bold text-sm border-b border-zinc-100 cursor-pointer focus-visible:outline-none"
+          title="Zoom In"
+          aria-label="Zoom In"
+        >
+          +
+        </button>
+        <button
+          onClick={() => map.zoomOut()}
+          className="flex h-8 w-8 items-center justify-center text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950 transition-colors font-bold text-sm cursor-pointer focus-visible:outline-none"
+          title="Zoom Out"
+          aria-label="Zoom Out"
+        >
+          &minus;
+        </button>
+      </div>
+
+      <button
+        onClick={handleRecenter}
+        className="flex h-8 w-8 items-center justify-center rounded-2xl border border-zinc-200/90 bg-white/95 text-zinc-700 shadow-md backdrop-blur-md hover:bg-zinc-100 hover:text-zinc-950 transition-colors cursor-pointer focus-visible:outline-none"
+        title="Reset Bangalore View"
+        aria-label="Reset Bangalore View"
+      >
+        <LocateFixed className="h-4 w-4 text-zinc-600" />
+      </button>
+    </div>
+  );
 }
 
 interface MapComponentProps {
@@ -129,6 +171,8 @@ export default function MapComponent({
           selectedRestaurant={selectedRestaurant}
           targetDistrict={targetDistrict}
         />
+
+        <MapFloatingControls />
 
         {restaurants.map((restaurant) => {
           const isSelected =
