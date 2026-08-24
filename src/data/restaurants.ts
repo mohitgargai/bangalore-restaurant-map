@@ -1184,37 +1184,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "toast-and-tonic-richmond",
-    "name": "Toast & Tonic",
-    "slug": "toast-and-tonic-richmond",
-    "tagline": "Farm-to-cocktail East Village bistro with indigenous grains & botanicals",
-    "description": "Pioneered Bangalore’s artisanal Gin & Tonic revolution with a New York loft vibe, showcasing forgotten native grains, house-cured charcuterie, and bespoke botanical tonics.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "Church Street & MG Road",
-    "address": "14/1, Wood St, Richmond Town, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.9669028,
-    "lng": 77.6087806,
-    "priceLevel": "₹₹₹₹",
-    "priceForTwo": "₹2,500",
-    "mustTry": [
-      "Soft Shell Crab Flatbread",
-      "Millet Salad with Mustard Greens",
-      "Artisanal Gin & Tonics",
-      "Slow Braised Pork Belly",
-      "Spiced Guava Sorbet"
-    ],
-    "vibeTags": [
-      "Romantic",
-      "Cocktail Program"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
-    "googleMapsUrl": "https://www.google.com/maps/place/Toast+%26+Tonic+Restaurant/@12.9669028,77.6087806,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae142abb919d95:0x787de55e8c379154!8m2!3d12.9669028!4d77.6087806!16s%2Fg%2F11cjvy5vrg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 3:30 PM, 7:00 PM – 12:30 AM",
-    "curatorNote": "Every dish creatively honors indigenous Indian produce. Their house-infused botanical Gin cocktails are legendary.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "farmlore-bangalore",
     "name": "Farmlore",
     "slug": "farmlore-bangalore",
@@ -2103,40 +2072,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/place/VB+Bakery/@12.9515275,77.5771382,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15eee52b973d:0xe0da00f262995fc8!8m2!3d12.9515275!4d77.5771382!16s%2Fg%2F1tlwd2bw?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:00 AM – 10:30 PM",
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
-    "isVegetarian": true,
-    "verified": true
-  },
-  {
-    "id": "new-krishna-bhavan-malleshwaram",
-    "name": "New Krishna Bhavan",
-    "slug": "new-krishna-bhavan-malleshwaram",
-    "tagline": "Green Masala Button Idlis & Mangalore Buns since 1954",
-    "description": "Operating opposite Malleshwaram railway station since 1954, New Krishna Bhavan is a beloved vegetarian institution known for regional Karavali coastal delicacies, Mangalore buns, and button idlis submerged in herbed coriander gravy.",
-    "category": "Iconic Heritage",
-    "neighborhood": "Malleshwaram",
-    "address": "33/39, Mill Corner, Sampige Rd, Malleshwaram, Bengaluru, Karnataka 560020",
-    "lat": 12.9929953,
-    "lng": 77.5716992,
-    "priceLevel": "₹",
-    "priceForTwo": "₹200",
-    "mustTry": [
-      "Green Masala Button Idli",
-      "Fluffy Mangalore Buns",
-      "Crispy Goli Baje",
-      "Neer Dosa with Chutney",
-      "Filter Coffee"
-    ],
-    "vibeTags": [
-      "Heritage (Pre-1980)",
-      "Pure Veg",
-      "Breakfast Spot",
-      "Filter Coffee Spot",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
-    "googleMapsUrl": "https://www.google.com/maps/place/Sri+Krishna+Bhavan/@12.9929953,77.5716992,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae162f8ff26221:0x199b57768552b29b!8m2!3d12.9929953!4d77.5716992!16s%2Fg%2F11hcjy302x?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "7:30 AM – 9:00 PM",
-    "curatorNote": "The signature Green Masala Button Idli (mini idlis swimming in fragrant coriander-coconut curry) is uniquely New Krishna Bhavan.",
     "isVegetarian": true,
     "verified": true
   },
@@ -3230,38 +3165,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ironhill%20Bengaluru%20Outer%20Ring%20Road%20Marathahalli%20Kadubeesanahalli"
   },
   {
-    "id": "aurum-brew-works-sarjapur",
-    "name": "Aurum Brew Works",
-    "slug": "aurum-brew-works-sarjapur",
-    "tagline": "Artisanal craft brewery pairing world-class pours with fiery Mangalorean & coastal soul",
-    "description": "Perched on the 3rd floor rooftop of Gold Sand in Doddakannelli, Aurum Brew Works elevates the brewery concept by pairing sophisticated Belgian and German craft brews with authentic Coastal Karnataka and Mangalorean heritage cooking.",
-    "category": "Microbrewery",
-    "neighborhood": "Sarjapur Road",
-    "address": "3rd Floor, Gold Sand Building, Sarjapur Main Rd, Doddakannelli, Bengaluru, Karnataka 560035",
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹2,200",
-    "mustTry": [
-      "Kundapura Chicken Ghee Roast",
-      "Anjal (Kingfish) Tawa Masala Fry",
-      "Neer Dosa with Mutton Pepper Fry",
-      "Maya Hefeweizen & Belgian Witbier"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Rooftop",
-      "Outdoor Seating",
-      "Cocktail Program"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "Aurum avoids generic pub grub in favor of masterclass coastal Karnataka cooking—their Ghee Roasts, Anjal Fry, and soft Neer Dosas rival the best specialty Mangalorean restaurants in Bangalore.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 12.9082,
-    "lng": 77.6877,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aurum%20Brew%20Works%20Gold%20Sand%20Sarjapur%20Road%20Doddakannelli%20Bengaluru"
-  },
-  {
     "id": "the-fishermans-wharf-sarjapur",
     "name": "The Fisherman's Wharf",
     "slug": "the-fishermans-wharf-sarjapur",
@@ -3630,38 +3533,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Al%20Amanah%20Cafe%20Kullappa%20Circle%20Kammanahalli%20Bengaluru"
   },
   {
-    "id": "brewklyn-microbrewery-cmr",
-    "name": "Brewklyn Microbrewery",
-    "slug": "brewklyn-microbrewery-cmr",
-    "tagline": "Brooklyn-inspired industrial craft brews & rooftop breezes on CMR Road",
-    "description": "Set atop B.R. Plaza overlooking CMR Road, Brewklyn brings NYC industrial brewery aesthetics to Kalyan Nagar. Features exposed brick walls, a custom brew-kit, pool tables, and breezy rooftop seating pouring fresh grain-to-glass artisanal beers.",
-    "category": "Microbrewery",
-    "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "30, 4th & 5th Floor, B.R. Plaza, CMR Main Rd, HRBR Layout 2nd Block, Kalyan Nagar, Bengaluru, Karnataka 560043",
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,900",
-    "mustTry": [
-      "Brewklyn Belgian Witbier",
-      "Biggie New England IPA",
-      "Smoked Pork Belly Bites",
-      "Wood-Fired Butter Chicken Pizza"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Rooftop",
-      "Outdoor Seating",
-      "Cocktail Program"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "The uncontested craft brewery champion of Kalyan Nagar. Brewmaster precision ensures their Belgian Wits and seasonal IPAs stay true-to-style without off-flavors.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 13.0189,
-    "lng": 77.6478,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brewklyn%20Microbrewery%20CMR%20Main%20Road%20Kalyan%20Nagar%20Bengaluru"
-  },
-  {
     "id": "shivanna-gulkand-center-vv-puram",
     "name": "Shivanna Gulkand Center",
     "slug": "shivanna-gulkand-center-vv-puram",
@@ -3669,7 +3540,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded in the late 1960s on Thindi Beedi (VV Puram Food Street), this modest dessert counter pioneered Bangalore’s post-dinner street ritual. Sun-cured rose petal gulkand layered with seasonal avocado/fruits, rich malai ice cream, and fresh white butter.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Basavanagudi",
-    "address": "128/1, Diagonal Rd, Food Street (Thindi Beedi), VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
+    "address": "128/1, Food Street (Thindi Beedi), VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -3689,9 +3560,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The mandatory closing chapter of any VV Puram food trail. The textural contrast between floral chewy gulkand, dense malai cream, and fresh butter is magical.",
     "isVegetarian": true,
     "verified": true,
-    "lat": 12.945,
-    "lng": 77.5755,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shivanna%20Gulkand%20Center%20Food%20Street%20VV%20Puram%20Basavanagudi%20Bengaluru"
+    "lat": 12.9524,
+    "lng": 77.5781,
+    "googleMapsUrl": "https://www.google.com/maps/place/Shivanna+Gulkand+Center/@12.9524,77.5781,17z"
   },
   {
     "id": "shri-vasavi-condiments-vv-puram",
@@ -3701,7 +3572,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The iconic confectionery on VV Puram Food Street that revolutionized Bangalore street culture by creating the annual Avarebele Mela. Celebrated year-round for its spicy Congress Kadlekai and double-peeled hyacinth bean savories.",
     "category": "Street Food & Chaat",
     "neighborhood": "Basavanagudi",
-    "address": "Food Street (Thindi Beedi), Near Sajjan Rao Circle, VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
+    "address": "Sajjan Rao Circle, Food Street (Thindi Beedi), VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -3720,9 +3591,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Transformed a local seasonal bean into an immortal Bangalore cultural identity. Exceptional freshness and crunchy legume textures without artificial preservatives.",
     "isVegetarian": true,
     "verified": true,
-    "lat": 12.947,
-    "lng": 77.5756,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shri%20Vasavi%20Condiments%20Food%20Street%20VV%20Puram%20Bengaluru"
+    "lat": 12.9518,
+    "lng": 77.5775,
+    "googleMapsUrl": "https://www.google.com/maps/place/Shri+Vasavi+Condiments/@12.9518,77.5775,17z"
   },
   {
     "id": "hotel-navayuga-gandhinagar",
@@ -3753,40 +3624,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.977,
     "lng": 77.575,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Navayuga%20Aparna%20Complex%20SC%20Road%20Gandhi%20Nagar%20Bengaluru"
-  },
-  {
-    "id": "the-druid-garden-sahakar-nagar",
-    "name": "The Druid Garden",
-    "slug": "the-druid-garden-sahakar-nagar",
-    "tagline": "India’s premier 360-degree retractable glass-roof microbrewery & botanical culinary haven",
-    "description": "Perched on the 3rd floor of Century Corbel in Sahakar Nagar, The Druid Garden is an architectural marvel featuring a motorized 360-degree retractable glass roof that opens up to Bangalore’s night breeze. Pairs Czech/German craft beers with refined European and Pan-Asian dishes.",
-    "category": "Microbrewery",
-    "neighborhood": "Bel Road & North BLR",
-    "address": "3rd Floor, Century Corbel Commercial, 40/1 Sahakara Nagar Main Rd, Sahakara Nagar, Bengaluru, Karnataka 560092",
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹2,500",
-    "mustTry": [
-      "Chorizo & Fior di Latte Sourdough Pizza",
-      "Czech Pilsner & Galaxy IPA",
-      "Hometown Chicken in Black Bean",
-      "Grilled Kam Heyong Lamb",
-      "Aztec Coffee Cocktail"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Rooftop",
-      "Outdoor Seating",
-      "Romantic",
-      "Cocktail Program"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "Pairs its breathtaking retractable glass-roof architecture with genuine brewing integrity and a kitchen that treats European and Pan-Asian recipes with equal precision.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 13.0617,
-    "lng": 77.5878,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Druid%20Garden%20Century%20Corbel%20Sahakara%20Nagar%20Bengaluru"
   },
   {
     "id": "far-and-east-four-seasons",
@@ -3887,33 +3724,97 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "brik-oven-sarjapur",
-    "name": "Brik Oven",
-    "slug": "brik-oven-sarjapur",
-    "tagline": "Wood-fired 48-hour fermented sourdough Neapolitan pizza on the cobblestone promenade",
-    "description": "Located in the open-air European street promenade of Street 1522 in Carmelaram off Sarjapur Road. Hand-stretched sourdough crusts blistered at 900°F with imported San Marzano tomatoes and artisanal burrata.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "Sarjapur Road",
-    "address": "Street 1522, Carmelaram Rd, Near Sarjapur Main Rd, Chikkakannalli, Bengaluru, Karnataka 562130",
-    "lat": 12.9025,
-    "lng": 77.7015,
+    "id": "the-local-kalyan-nagar",
+    "name": "The Local",
+    "slug": "the-local-kalyan-nagar",
+    "tagline": "Kalyan Nagar’s legendary neighborhood pub where classic rock meets fiery coastal ghee roasts",
+    "description": "The quintessential Bangalore neighborhood watering hole in HRBR Layout. Unapologetically casual, wood-accented, and soundtracked by 80s/90s classic rock, famous for cold draft beer on tap and exceptionally spicy Mangalorean ghee roasts.",
+    "category": "Microbrewery",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "address": "2075, 4th Cross, 6th Main Rd, HRBR Layout 2nd Block, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "lat": 13.0198,
+    "lng": 77.6472,
     "priceLevel": "₹₹",
-    "priceForTwo": "₹1,500",
+    "priceForTwo": "₹1,400",
     "mustTry": [
-      "The Bird (Smoked Chicken & Bird's Eye Chili)",
-      "Truffle Quattro Formaggi Sourdough Pizza",
-      "Artisanal Burrata Caprese",
-      "Handcrafted Gelato & Waffles"
+      "Mangalore Chicken / Paneer Ghee Roast with Hot Appams",
+      "Coorg Style Pork Fry",
+      "Spicy Buffalo Wings & Bacon Sausages",
+      "Chilled Draft Beer Pints"
     ],
     "vibeTags": [
-      "Artisanal Sourdough",
+      "Craft Beer",
       "Outdoor Seating",
-      "Romantic"
+      "Pocket Friendly",
+      "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85",
-    "googleMapsUrl": "https://www.google.com/maps/place/Street+1522+Carmelaram/@12.9025,77.7015,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae139265f24259:0x89c4d96a7989eb20!8m2!3d12.9025!4d77.7015!16s%2Fg%2F11t7l6z7m9",
-    "timings": "12:00 PM – 11:30 PM",
-    "curatorNote": "Brings genuine Neapolitan high-hydration sourdough fermentation and fresh fior di latte to the Sarjapur/Carmelaram residential corridor.",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Local/@13.0198,77.6472,17z",
+    "timings": "11:00 AM – 11:30 PM",
+    "curatorNote": "Preserves the authentic, soulful identity of old Bangalore pub culture: great music, unpretentious hospitality, and phenomenal, fiery coastal bar bites.",
+    "isVegetarian": false,
+    "verified": true
+  },
+  {
+    "id": "vapour-sarjapur-road",
+    "name": "Vapour Brewpub & Diner",
+    "slug": "vapour-sarjapur-road",
+    "tagline": "Panoramic 7th-floor rooftop microbrewery with sunset views & fresh house craft ales",
+    "description": "Perched on the 7th floor of Bren Mercury overlooking Sarjapur Road, Vapour provides unobstructed skyline views, a breezy sunset alfresco deck, and fresh house craft brews paired with global pub favorites.",
+    "category": "Microbrewery",
+    "neighborhood": "Sarjapur Road",
+    "address": "7th Floor, Bren Mercury, Kaikondrahalli Junction, Sarjapur Main Rd, Bengaluru, Karnataka 560035",
+    "lat": 12.9172,
+    "lng": 77.6763,
+    "priceLevel": "₹₹₹",
+    "priceForTwo": "₹1,900",
+    "mustTry": [
+      "Vapour Premium Basmati Blonde & Belgian Wheat",
+      "Peri Peri Chicken Skewers",
+      "Crispy Water Chestnut Pepper Salt",
+      "Wood-Fired Thin Crust Pizza"
+    ],
+    "vibeTags": [
+      "Craft Beer",
+      "Rooftop",
+      "Outdoor Seating",
+      "Cocktail Program"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
+    "googleMapsUrl": "https://www.google.com/maps/place/Vapour+Brewpub+and+Diner/@12.9172,77.6763,17z",
+    "timings": "12:00 PM – 1:00 AM",
+    "curatorNote": "The premier high-altitude rooftop brewpub on Sarjapur Road. Ideal for golden hour beers when the Bangalore breeze kicks in.",
+    "isVegetarian": false,
+    "verified": true
+  },
+  {
+    "id": "pecos-stones-indiranagar",
+    "name": "Pecos Stones",
+    "slug": "pecos-stones-indiranagar",
+    "tagline": "The 1989 classic rock retro pub legend with cold draft mugs & fiery chilli pork",
+    "description": "Bangalore’s timeless retro rock sanctuary on 100 Feet Road. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
+    "category": "Microbrewery",
+    "neighborhood": "Indiranagar",
+    "address": "765, 1st Floor, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+    "lat": 12.9782,
+    "lng": 77.6408,
+    "priceLevel": "₹₹",
+    "priceForTwo": "₹1,200",
+    "mustTry": [
+      "Chilled Draft Beer Mugs",
+      "Signature Coorg Chilli Pork",
+      "Beef Dosa / Chilli Beef",
+      "Crispy Bacon Wrapped Sausages"
+    ],
+    "vibeTags": [
+      "Craft Beer",
+      "Pocket Friendly",
+      "Heritage (Pre-1980)"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
+    "googleMapsUrl": "https://www.google.com/maps/place/Pecos+Stones+2.0/@12.9782,77.6408,17z",
+    "timings": "11:00 AM – 11:30 PM",
+    "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
     "verified": true
   }
