@@ -15,11 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://blreats.com'),
   title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
   description:
     'An interactive spatial guide to Bengaluru’s most iconic heritage eateries, craft microbreweries, specialty coffee bars, and cult dining gems.',
   keywords: [
     'BLR EATS',
+    'blreats.com',
     'BLR food map',
     'Bangalore food map',
     'Bangalore restaurants',
@@ -40,6 +42,9 @@ export const metadata: Metadata = {
     statusBarStyle: 'default',
     capable: true,
   },
+  alternates: {
+    canonical: 'https://blreats.com',
+  },
   openGraph: {
     title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
     description:
@@ -47,7 +52,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     siteName: 'BLR // EATS',
-    url: 'https://blr-food-map-2026.web.app',
+    url: 'https://blreats.com',
   },
   twitter: {
     card: 'summary_large_image',
