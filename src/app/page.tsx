@@ -50,10 +50,19 @@ export default function Home() {
   // Modals state
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const [showAdminControls, setShowAdminControls] = useState(false);
 
-  // Load initial data, bookmarks & admin overrides
+  // Load initial data, bookmarks, admin check & overrides
   useEffect(() => {
     try {
+      // Check for secret admin param in URL
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('admin') === 'true' || params.get('admin') === '1') {
+          setShowAdminControls(true);
+        }
+      }
+
       const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
       if (savedBookmarks) {
         setBookmarkedIds(new Set(JSON.parse(savedBookmarks)));
@@ -207,7 +216,7 @@ export default function Home() {
         viewMode={viewMode}
         onSelectViewMode={setViewMode}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}
-        onOpenAdmin={() => setIsAdminOpen(true)}
+        onOpenAdmin={showAdminControls ? () => setIsAdminOpen(true) : undefined}
         totalFilteredCount={filteredRestaurants.length}
       />
 
