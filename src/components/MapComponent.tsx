@@ -93,24 +93,24 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
 
 // Proportional, elegant cluster disc icon
 function createClusterIcon(count: number) {
-  let size = 34;
-  let ringClass = 'border-2 border-white ring-2 ring-[#BC5434]/20';
+  let size = 32;
+  let ringClass = 'border-2 border-white ring-1.5 ring-stone-900/15';
   let bgClass = 'bg-[#211C1A] text-white';
 
   if (count >= 16) {
-    size = 44;
-    ringClass = 'border-2 border-white ring-4 ring-[#BC5434]/30 cluster-glow';
-    bgClass = 'bg-gradient-to-br from-[#BC5434] to-[#8C341A] text-white';
+    size = 40;
+    ringClass = 'border-2 border-white ring-2 ring-[#BC5434]/40';
+    bgClass = 'bg-[#BC5434] text-white';
   } else if (count >= 6) {
-    size = 38;
-    ringClass = 'border-2 border-white ring-2 ring-[#3E6B56]/30';
+    size = 36;
+    ringClass = 'border-2 border-white ring-1.5 ring-[#283629]/40';
     bgClass = 'bg-[#283629] text-white';
   }
 
   const html = `
-    <div class="animate-cluster-unfurl flex items-center justify-center cursor-pointer select-none"
+    <div class="flex items-center justify-center cursor-pointer select-none"
          style="width: ${size}px; height: ${size}px;">
-      <div class="w-full h-full rounded-full ${bgClass} ${ringClass} font-black text-xs sm:text-sm flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-115 active:scale-95">
+      <div class="w-full h-full rounded-full ${bgClass} ${ringClass} font-black text-xs sm:text-sm flex items-center justify-center shadow-md transition-transform duration-150 ease-out hover:scale-110 active:scale-95">
         ${count}
       </div>
     </div>
@@ -124,7 +124,7 @@ function createClusterIcon(count: number) {
   });
 }
 
-// Category Pin with smooth spring unfurling
+// Category Pin with clean, smooth rendering
 function createModernPin(
   restaurant: Restaurant,
   isSelected: boolean,
@@ -141,7 +141,7 @@ function createModernPin(
   const size = active ? 44 : 32;
 
   const html = `
-    <div class="animate-marker-unfurl relative flex items-center justify-center cursor-pointer transition-transform duration-200 ${
+    <div class="relative flex items-center justify-center cursor-pointer transition-transform duration-150 ease-out ${
       active ? 'scale-125 z-[1000]' : 'hover:scale-115'
     }" style="width: ${size}px; height: ${size}px;">
       ${
@@ -149,7 +149,7 @@ function createModernPin(
           ? `<div class="absolute -inset-2 rounded-full animate-ping opacity-35" style="background-color: ${meta.color};"></div>`
           : ''
       }
-      <div class="w-full h-full rounded-full flex items-center justify-center shadow-md transition-all duration-200"
+      <div class="w-full h-full rounded-full flex items-center justify-center shadow-md transition-all duration-150"
            style="
              background: ${active ? '#211C1A' : 'white'};
              border: 2.5px solid ${active ? '#211C1A' : meta.color};

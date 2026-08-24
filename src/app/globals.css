@@ -99,55 +99,10 @@ body {
   display: none !important;
 }
 
-/* Custom Marker Container Resets & Animation Classes */
+/* Custom Marker Container Resets */
 .custom-hub-icon,
 .modern-leaflet-pin {
   background: transparent !important;
   border: none !important;
-}
-
-/* Fluid Marker Unfurling & Clustering Animations */
-@keyframes markerUnfurl {
-  0% {
-    opacity: 0;
-    transform: scale(0.3) translateY(6px);
-  }
-  65% {
-    opacity: 1;
-    transform: scale(1.12) translateY(-2px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-@keyframes clusterPulseRing {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(188, 84, 52, 0.45);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(188, 84, 52, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(188, 84, 52, 0);
-  }
-}
-
-.animate-marker-unfurl {
-  animation: markerUnfurl 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  will-change: transform, opacity;
-}
-
-.animate-cluster-unfurl {
-  animation: markerUnfurl 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  will-change: transform, opacity;
-}
-
-.cluster-glow {
-  animation: clusterPulseRing 2.5s infinite;
 }
 
