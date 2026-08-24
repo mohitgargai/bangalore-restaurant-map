@@ -222,16 +222,18 @@ export default function MapComponent({
     });
   };
 
-  // Neighborhood Food Hub Capsule Badge Icon
+  // Minimalist Numeric Food Hub Cluster Disc (Airbnb / Apple Maps style)
   const createHubIcon = (hub: (typeof NEIGHBORHOOD_HUBS)[0], count: number) => {
     const html = `
-      <div class="group relative flex items-center gap-1.5 cursor-pointer rounded-full bg-[#FFFDFB] px-3 py-1.5 shadow-lg border border-[#E6E0D5] backdrop-blur-md transition-all duration-200 hover:scale-110 hover:border-[#BC5434] hover:shadow-xl active:scale-95"
-           style="transform: translate(-50%, -50%); white-space: nowrap;">
-        <span style="font-size: 14px; line-height: 1;">${hub.icon}</span>
-        <span class="text-xs font-bold text-[#211C1A] tracking-tight">${hub.shortLabel}</span>
-        <span class="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-[#283629] px-1.5 text-[10.5px] font-black text-white shadow-2xs">
+      <div class="group relative flex items-center justify-center cursor-pointer"
+           style="transform: translate(-50%, -50%);">
+        <div class="h-8.5 w-8.5 rounded-full bg-[#211C1A] text-white font-black text-xs flex items-center justify-center shadow-md border-2 border-white ring-1.5 ring-stone-900/10 transition-all duration-200 group-hover:scale-110 group-hover:bg-[#BC5434] group-hover:shadow-xl active:scale-95">
           ${count}
-        </span>
+        </div>
+        <!-- Delicate Tooltip on Hover Only -->
+        <div class="opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-200 absolute -top-7 left-1/2 -translate-x-1/2 rounded-lg bg-[#211C1A] px-2.5 py-1 text-[11px] font-bold text-white whitespace-nowrap shadow-xl border border-white/10">
+          ${hub.name}
+        </div>
       </div>
     `;
 
