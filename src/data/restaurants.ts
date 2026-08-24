@@ -3817,5 +3817,37 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
     "verified": true
+  },
+  {
+    "id": "yauatcha-bengaluru-mg-road",
+    "name": "Yauatcha",
+    "slug": "yauatcha-bengaluru-mg-road",
+    "tagline": "London-originated Michelin-starred Cantonese dim sum tea house & patisserie",
+    "description": "Perched on Level 5 of 1 MG Lido Mall with sweeping skyline views, Yauatcha represents the pinnacle of contemporary Cantonese dim sum gastronomy in South India, celebrated for translucent crystal dumplings, crispy aromatic duck, and European patisserie.",
+    "category": "Pan-Asian & Japanese",
+    "neighborhood": "Church Street & MG Road",
+    "address": "Level 5, 1 MG - Lido Mall, MG Road, Someshwarpura, Halasuru, Bengaluru, Karnataka 560008",
+    "lat": 12.9732218,
+    "lng": 77.620367,
+    "priceLevel": "₹₹₹₹",
+    "priceForTwo": "₹3,200",
+    "mustTry": [
+      "Crispy Prawn Cheung Fun",
+      "Truffle Edamame Dumplings",
+      "Signature Crispy Aromatic Duck with Mandarin Pancakes",
+      "Pork Char Siu Bun",
+      "Raspberry Delice & Artisan Macarons"
+    ],
+    "vibeTags": [
+      "Rooftop",
+      "Romantic",
+      "Cocktail Program"
+    ],
+    "imageUrl": "/images/restaurants/yauatcha-bengaluru-mg-road.jpg",
+    "googleMapsUrl": "https://www.google.com/maps/place/Yauatcha+Bengaluru/@12.9732218,77.620367,17z",
+    "timings": "12:00 PM – 11:00 PM",
+    "curatorNote": "Bangalore’s undisputed benchmark for Cantonese dim sum artistry. The Crispy Prawn Cheung Fun (crispy fried prawn roll wrapped inside silky steamed rice noodle skin) is absolute perfection.",
+    "isVegetarian": false,
+    "verified": true
   }
 ];
