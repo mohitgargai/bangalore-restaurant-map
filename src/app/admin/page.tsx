@@ -291,7 +291,7 @@ export default function AdminPage() {
                   type="button"
                   onClick={handleGoogleSignIn}
                   disabled={authLoading}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-orange-600 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-600/20 hover:bg-orange-500 transition-all disabled:opacity-50 active:scale-98"
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#BC5434] py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-950/20 hover:bg-[#A34326] transition-all disabled:opacity-50 active:scale-98"
                 >
                   {authLoading ? (
                     <>
@@ -616,7 +616,7 @@ export default function AdminPage() {
 
                     <button
                       onClick={handleCopyTypeScript}
-                      className="flex items-center gap-2 rounded-xl bg-orange-600 px-4 py-2.5 text-xs font-semibold text-white hover:bg-orange-500 transition-all active:scale-98 shadow-md"
+                      className="flex items-center gap-2 rounded-xl bg-[#BC5434] px-4 py-2.5 text-xs font-semibold text-white hover:bg-[#A34326] transition-all active:scale-98 shadow-md"
                     >
                       {copiedCode ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                       <span>{copiedCode ? 'Copied Code!' : 'Copy TypeScript Code'}</span>
@@ -742,7 +742,7 @@ export default function AdminPage() {
                     </button>
                     <button
                       type="submit"
-                      className="rounded-xl bg-orange-600 px-5 py-2 text-white font-semibold hover:bg-orange-500"
+                      className="rounded-xl bg-[#BC5434] px-5 py-2 text-white font-semibold hover:bg-[#A34326]"
                     >
                       Save Changes
                     </button>

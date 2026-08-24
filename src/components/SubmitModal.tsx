@@ -111,16 +111,16 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
     <div className="fixed inset-0 z-[1500] flex items-center justify-center p-4">
       {/* Backdrop */}
       <div 
-        className="absolute inset-0 bg-zinc-950/70 backdrop-blur-sm transition-opacity cursor-pointer" 
+        className="absolute inset-0 bg-[#211C1A]/60 backdrop-blur-xs transition-opacity cursor-pointer" 
         onClick={handleResetAndClose} 
       />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-lg rounded-3xl border border-zinc-200 bg-white p-6 shadow-2xl transition-all">
+      <div className="relative w-full max-w-lg rounded-3xl border border-[#E6E0D5] bg-[#FFFDFB] p-6 shadow-2xl transition-all">
         {/* Close Button */}
         <button
           onClick={handleResetAndClose}
-          className="absolute right-5 top-5 rounded-full p-2 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
+          className="absolute right-5 top-5 rounded-full p-2 text-stone-400 hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#211C1A]"
           title="Close"
         >
           <X className="h-5 w-5" />
@@ -129,18 +129,18 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
         {submittedSuccess ? (
           /* ================= SUCCESS SCREEN ================= */
           <div className="py-8 text-center flex flex-col items-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 ring-8 ring-emerald-50/50">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#E8F4F0] text-[#17473C] ring-8 ring-[#E8F4F0]/60">
               <CheckCircle2 className="h-9 w-9" />
             </div>
 
-            <h3 className="text-xl font-bold text-zinc-900 mb-2">Suggestion Received!</h3>
-            <p className="text-sm text-zinc-600 max-w-sm mx-auto mb-6">
-              Thank you for suggesting <strong className="text-zinc-900">{name}</strong> in <span className="font-semibold text-zinc-800">{neighborhood}</span>. Our editorial team will review and verify its rooftop coordinates for the next catalog release.
+            <h3 className="text-xl font-bold text-[#211C1A] mb-2">Suggestion Received!</h3>
+            <p className="text-sm text-stone-600 max-w-sm mx-auto mb-6">
+              Thank you for suggesting <strong className="text-[#211C1A]">{name}</strong> in <span className="font-semibold text-stone-800">{neighborhood}</span>. Our editorial team will review and verify its rooftop coordinates for the next catalog release.
             </p>
 
             <button
               onClick={handleResetAndClose}
-              className="w-full rounded-2xl bg-zinc-900 py-3 text-sm font-semibold text-white shadow-sm hover:bg-zinc-800 transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900"
+              className="w-full rounded-2xl bg-[#211C1A] py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#38312E] transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900"
             >
               Back to Map
             </button>
@@ -150,17 +150,17 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
           <div>
             <div className="mb-5">
               <div className="flex items-center gap-2 mb-1">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-100 text-orange-600 text-xs font-bold">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#FDF3EE] text-[#BC5434] text-xs font-bold border border-[#F7D6C6]">
                   <Sparkles className="h-3.5 w-3.5" />
                 </span>
-                <span className="font-mono text-xs font-bold uppercase tracking-wider text-orange-600">
+                <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#BC5434]">
                   Community Editorial
                 </span>
               </div>
-              <h2 className="text-xl font-bold tracking-tight text-zinc-900">
+              <h2 className="text-xl font-bold tracking-tight text-[#211C1A]">
                 Suggest a Cult Spot
               </h2>
-              <p className="text-xs text-zinc-500 mt-1">
+              <p className="text-xs text-stone-500 mt-1">
                 Know an undisputed culinary gem, specialty roaster, or heritage canteen we missed? Share it for verification.
               </p>
             </div>
@@ -174,8 +174,8 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* Restaurant Name */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Place Name <span className="text-orange-500">*</span>
+                <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                  Place Name <span className="text-[#BC5434]">*</span>
                 </label>
                 <input
                   type="text"
@@ -183,20 +183,20 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   placeholder="e.g. Zen, Naru Noodle Bar, Veena Stores…"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-900"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-sm text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#BC5434]"
                 />
               </div>
 
               {/* Neighborhood & Category Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                    Neighborhood <span className="text-orange-500">*</span>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                    Neighborhood <span className="text-[#BC5434]">*</span>
                   </label>
                   <select
                     value={neighborhood}
                     onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
-                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
+                    className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-xs font-medium text-[#211C1A] focus:border-[#BC5434] focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {ALL_NEIGHBORHOODS.map((n) => (
                       <option key={n} value={n}>
@@ -207,13 +207,13 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                    Category <span className="text-orange-500">*</span>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                    Category <span className="text-[#BC5434]">*</span>
                   </label>
                   <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value as Category)}
-                    className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2.5 text-xs font-medium text-zinc-900 focus:border-zinc-900 focus:bg-white focus:outline-none cursor-pointer"
+                    className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-xs font-medium text-[#211C1A] focus:border-[#BC5434] focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {ALL_CATEGORIES.map((c) => (
                       <option key={c} value={c}>
@@ -226,22 +226,22 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
 
               {/* Google Maps URL */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Google Maps URL <span className="text-zinc-400 font-normal">(Optional)</span>
+                <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                  Google Maps URL <span className="text-stone-400 font-normal">(Optional)</span>
                 </label>
                 <input
                   type="url"
                   placeholder="https://maps.app.goo.gl/…"
                   value={googleMapsUrl}
                   onChange={(e) => setGoogleMapsUrl(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none"
                 />
               </div>
 
               {/* Why Recommend / Must-Try */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Why is it special & Must-Try Dishes? <span className="text-orange-500">*</span>
+                <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                  Why is it special & Must-Try Dishes? <span className="text-[#BC5434]">*</span>
                 </label>
                 <textarea
                   required
@@ -249,21 +249,21 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   placeholder="Tell us what dish to order and why this place belongs in the curated guide…"
                   value={whyRecommend}
                   onChange={(e) => setWhyRecommend(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 p-3 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none resize-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 p-3 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none resize-none"
                 />
               </div>
 
               {/* Submitter Name */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">
-                  Your Name / Handle <span className="text-zinc-400 font-normal">(Optional)</span>
+                <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
+                  Your Name / Handle <span className="text-stone-400 font-normal">(Optional)</span>
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. @mohit / Food Connoisseur"
                   value={submittedBy}
                   onChange={(e) => setSubmittedBy(e.target.value)}
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-3.5 py-2 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none"
                 />
               </div>
 
@@ -272,7 +272,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-orange-600 py-3 text-sm font-semibold text-white shadow-sm hover:bg-orange-700 disabled:opacity-50 transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#BC5434] py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#A34326] disabled:opacity-50 transition-all active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BC5434]"
                 >
                   {loading ? (
                     <>

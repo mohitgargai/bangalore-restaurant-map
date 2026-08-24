@@ -4,15 +4,16 @@ import React, { useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Restaurant, Neighborhood } from '@/types';
 import { getGoogleMapsDirectionsUrl, resolveLocationForDisplay } from '@/lib/maps';
+import { CATEGORY_META } from '@/lib/colors';
 import { Bookmark, Navigation, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Dynamic Leaflet Map Component
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
   loading: () => (
-    <div className="flex h-full w-full items-center justify-center bg-zinc-950 text-zinc-400">
+    <div className="flex h-full w-full items-center justify-center bg-[#211C1A] text-stone-400">
       <div className="flex flex-col items-center gap-2">
-        <div className="h-6 w-6 animate-spin rounded-full border-2 border-orange-600 border-t-transparent"></div>
+        <div className="h-6 w-6 animate-spin rounded-full border-2 border-[#BC5434] border-t-transparent"></div>
         <p className="text-xs font-mono font-medium tracking-wider uppercase">Loading Map Canvas…</p>
       </div>
     </div>
@@ -159,17 +160,17 @@ export default function SpatialMapFlow({
                   onMouseEnter={() => onHoverRestaurant(restaurant.id)}
                   onMouseLeave={() => onHoverRestaurant(null)}
                   onClick={() => onSelectRestaurant(loc.resolvedRestaurant)}
-                  className={`shrink-0 snap-center w-[82vw] sm:w-[320px] max-w-[340px] cursor-pointer rounded-2xl border bg-white/95 p-3 shadow-xl backdrop-blur-xl transition-all duration-200 ${
+                  className={`shrink-0 snap-center w-[82vw] sm:w-[320px] max-w-[340px] cursor-pointer rounded-2xl border bg-[#FFFDFB]/98 p-3 shadow-xl backdrop-blur-xl transition-all duration-200 ${
                     isSelected
-                      ? 'border-zinc-950 ring-2 ring-zinc-950 scale-102 shadow-2xl'
+                      ? 'border-[#211C1A] ring-2 ring-[#211C1A] scale-102 shadow-2xl'
                       : isHovered
-                      ? 'border-zinc-400 -translate-y-1'
-                      : 'border-zinc-200/90 hover:border-zinc-300'
+                      ? 'border-[#BC5434]/50 -translate-y-1 shadow-md'
+                      : 'border-[#E6E0D5]/90 hover:border-[#D6CEC0]'
                   }`}
                 >
                   <div className="flex gap-2.5 sm:gap-3">
                     {/* Thumbnail */}
-                    <div className="relative h-18 w-18 sm:h-20 sm:w-20 shrink-0 overflow-hidden rounded-xl bg-zinc-900">
+                    <div className="relative h-18 w-18 sm:h-20 sm:w-20 shrink-0 overflow-hidden rounded-xl bg-[#211C1A]">
                       <img
                         src={restaurant.imageUrl}
                         alt={restaurant.name}
@@ -186,47 +187,54 @@ export default function SpatialMapFlow({
                     {/* Info */}
                     <div className="flex flex-1 flex-col justify-between min-w-0">
                       <div>
-                        <div className="flex items-start justify-between gap-1">
-                          <span className="text-[9.5px] font-bold uppercase tracking-wider text-orange-600 truncate">
-                            {restaurant.category}
-                          </span>
+                        <div className="flex items-start justify-between gap-1 mb-0.5">
+                          {(() => {
+                            const meta = CATEGORY_META[restaurant.category] || {
+                              badge: 'bg-[#FEF8E7] text-[#7A4807] border-[#F5E5BE]',
+                            };
+                            return (
+                              <span className={`text-[9.5px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border truncate ${meta.badge}`}>
+                                {restaurant.category}
+                              </span>
+                            );
+                          })()}
                           <button
                             onClick={(e) => onToggleBookmark(restaurant.id, e)}
-                            className={`p-1 rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 ${
+                            className={`p-1 rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-stone-900 ${
                               isBookmarked
-                                ? 'text-orange-600 bg-orange-50'
-                                : 'text-zinc-400 hover:text-zinc-700'
+                                ? 'text-[#BC5434] bg-[#FDF3EE]'
+                                : 'text-stone-400 hover:text-stone-700'
                             }`}
                           >
-                            <Bookmark className={`h-3.5 w-3.5 ${isBookmarked ? 'fill-orange-600' : ''}`} />
+                            <Bookmark className={`h-3.5 w-3.5 ${isBookmarked ? 'fill-[#BC5434]' : ''}`} />
                           </button>
                         </div>
 
-                        <h3 className="font-bold text-zinc-900 text-sm leading-snug truncate">
+                        <h3 className="font-bold text-[#211C1A] text-sm leading-snug truncate">
                           {restaurant.name}
                         </h3>
 
-                        <p className="text-[10.5px] sm:text-[11px] text-zinc-500 truncate">
+                        <p className="text-[10.5px] sm:text-[11px] text-stone-500 truncate">
                           📍 {loc.branchLabel ? `${loc.branchLabel} (${loc.neighborhood})` : loc.neighborhood} • {restaurant.priceForTwo} for two
                         </p>
                       </div>
 
                       {/* Must-Try Signature */}
-                      <div className="mt-1 flex items-center gap-1 text-[10px] sm:text-[10.5px] font-medium text-zinc-700 truncate">
-                        <Sparkles className="h-3 w-3 text-orange-600 shrink-0" />
+                      <div className="mt-1 flex items-center gap-1 text-[10px] sm:text-[10.5px] font-medium text-[#4A443F] truncate">
+                        <Sparkles className="h-3 w-3 text-[#BC5434] shrink-0" />
                         <span className="truncate"><b>Must try:</b> {restaurant.mustTry[0]}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Actions */}
-                  <div className="mt-2.5 pt-2 border-t border-zinc-100 flex items-center justify-between text-xs">
+                  <div className="mt-2.5 pt-2 border-t border-[#ECE6DA] flex items-center justify-between text-xs">
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
                         onOpenDrawer(loc.parentRestaurant, loc.branchId);
                       }}
-                      className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 rounded-md px-1 py-0.5"
+                      className="font-bold text-[#211C1A] text-[11px] hover:text-[#BC5434] flex items-center gap-0.5 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#211C1A] rounded-md px-1 py-0.5"
                     >
                       <span>View Spot</span>
                       <span>&rarr;</span>
@@ -236,7 +244,7 @@ export default function SpatialMapFlow({
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="flex items-center gap-1 text-[11px] font-semibold text-orange-600 hover:text-orange-700 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange-500 rounded-md px-1 py-0.5"
+                      className="flex items-center gap-1 text-[11px] font-semibold text-[#BC5434] hover:text-[#A34326] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#BC5434] rounded-md px-1 py-0.5"
                     >
                       <Navigation className="h-3 w-3" />
                       <span>Directions</span>
@@ -251,10 +259,10 @@ export default function SpatialMapFlow({
 
       {/* Floating Empty State Banner when 0 spots match */}
       {restaurants.length === 0 && (
-        <div className="pointer-events-auto absolute bottom-8 inset-x-4 z-[1100] mx-auto max-w-sm rounded-2xl border border-zinc-200 bg-white/95 p-4 text-center shadow-2xl backdrop-blur-xl">
+        <div className="pointer-events-auto absolute bottom-8 inset-x-4 z-[1100] mx-auto max-w-sm rounded-2xl border border-[#E6E0D5] bg-[#FFFDFB]/95 p-4 text-center shadow-2xl backdrop-blur-xl">
           <div className="text-2xl mb-1">🔍</div>
-          <h4 className="text-sm font-bold text-zinc-900">No spots found in this view</h4>
-          <p className="text-xs text-zinc-500 mt-0.5">
+          <h4 className="text-sm font-bold text-[#211C1A]">No spots found in this view</h4>
+          <p className="text-xs text-stone-500 mt-0.5">
             Try adjusting your search terms or picking another neighborhood above.
           </p>
         </div>

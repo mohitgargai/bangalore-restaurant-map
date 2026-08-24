@@ -50,10 +50,10 @@ function MapFloatingControls() {
 
   return (
     <div className="absolute right-3 top-36 sm:top-28 z-[1000] flex flex-col gap-1.5 pointer-events-auto">
-      <div className="flex flex-col rounded-2xl border border-zinc-200/90 bg-white/95 shadow-md backdrop-blur-md overflow-hidden">
+      <div className="flex flex-col rounded-2xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 shadow-md backdrop-blur-md overflow-hidden">
         <button
           onClick={() => map.zoomIn()}
-          className="flex h-8 w-8 items-center justify-center text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950 transition-colors font-bold text-sm border-b border-zinc-100 cursor-pointer focus-visible:outline-none"
+          className="flex h-8 w-8 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm border-b border-[#ECE6DA] cursor-pointer focus-visible:outline-none"
           title="Zoom In"
           aria-label="Zoom In"
         >
@@ -61,7 +61,7 @@ function MapFloatingControls() {
         </button>
         <button
           onClick={() => map.zoomOut()}
-          className="flex h-8 w-8 items-center justify-center text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950 transition-colors font-bold text-sm cursor-pointer focus-visible:outline-none"
+          className="flex h-8 w-8 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm cursor-pointer focus-visible:outline-none"
           title="Zoom Out"
           aria-label="Zoom Out"
         >
@@ -71,11 +71,11 @@ function MapFloatingControls() {
 
       <button
         onClick={handleRecenter}
-        className="flex h-8 w-8 items-center justify-center rounded-2xl border border-zinc-200/90 bg-white/95 text-zinc-700 shadow-md backdrop-blur-md hover:bg-zinc-100 hover:text-zinc-950 transition-colors cursor-pointer focus-visible:outline-none"
+        className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 text-[#332D28] shadow-md backdrop-blur-md hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors cursor-pointer focus-visible:outline-none"
         title="Reset Bangalore View"
         aria-label="Reset Bangalore View"
       >
-        <LocateFixed className="h-4 w-4 text-zinc-600" />
+        <LocateFixed className="h-4 w-4 text-[#544E4B]" />
       </button>
     </div>
   );
@@ -109,9 +109,9 @@ export default function MapComponent({
   // Modern Minimalist Category Pin
   const createModernPin = (restaurant: Restaurant, isSelected: boolean, isHovered: boolean) => {
     const meta = CATEGORY_META[restaurant.category] || {
-      color: '#f97316',
+      color: '#BC5434',
       icon: '📍',
-      bg: '#ffedd5',
+      bg: '#FDF3EE',
     };
 
     const active = isSelected || isHovered;
@@ -129,15 +129,15 @@ export default function MapComponent({
         }
         <div class="w-full h-full rounded-full flex items-center justify-center shadow-md transition-all duration-300"
              style="
-               background: ${active ? '#18181b' : 'white'};
-               border: 2.5px solid ${active ? '#18181b' : meta.color};
-               box-shadow: 0 4px 14px 0 rgba(0, 0, 0, ${active ? '0.35' : '0.15'});
+               background: ${active ? '#211C1A' : 'white'};
+               border: 2.5px solid ${active ? '#211C1A' : meta.color};
+               box-shadow: 0 4px 14px 0 rgba(33, 28, 26, ${active ? '0.35' : '0.12'});
              ">
           <span style="font-size: ${active ? '17px' : '13px'}; line-height: 1;">${meta.icon}</span>
         </div>
         ${
           isBookmarked
-            ? `<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-orange-600 text-white flex items-center justify-center shadow-xs text-[8px] font-bold ring-1.5 ring-white">✓</div>`
+            ? `<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#BC5434] text-white flex items-center justify-center shadow-xs text-[8px] font-bold ring-1.5 ring-white">✓</div>`
             : ''
         }
       </div>
@@ -152,7 +152,7 @@ export default function MapComponent({
   };
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-zinc-900">
+    <div className="relative h-full w-full overflow-hidden bg-[#F4EFE6]">
       <MapContainer
         center={defaultCenter}
         zoom={defaultZoom}

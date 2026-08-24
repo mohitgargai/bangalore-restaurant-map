@@ -2,12 +2,13 @@
 @import "leaflet/dist/leaflet.css";
 
 :root {
-  --background: #fbfbfb;
-  --foreground: #18181b;
-  --card-bg: rgba(255, 255, 255, 0.92);
-  --border-color: rgba(228, 228, 231, 0.8);
-  --accent: #f97316;
-  --accent-hover: #ea580c;
+  --background: #F9F6F0;
+  --foreground: #211C1A;
+  --card-bg: rgba(255, 253, 251, 0.96);
+  --border-color: rgba(226, 220, 209, 0.85);
+  --accent: #BC5434;
+  --accent-hover: #A34326;
+  --botanical: #3E6B56;
 }
 
 body {
@@ -55,7 +56,7 @@ body {
 /* Custom Leaflet Map Styling */
 .leaflet-container {
   font-family: inherit !important;
-  background: #f4f4f5 !important;
+  background: #f5f2eb !important;
   outline: none !important;
 }
 

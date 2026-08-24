@@ -73,7 +73,7 @@ export default function TopNavCapsule({
     <header className="pointer-events-none fixed inset-x-0 top-0 z-[1200] p-2 sm:p-4">
       <div className="pointer-events-auto mx-auto max-w-6xl">
         {/* Floating Command Island */}
-        <div className="rounded-2xl sm:rounded-3xl border border-zinc-200/90 bg-white/95 p-3 shadow-xl shadow-zinc-950/5 backdrop-blur-xl transition-all">
+        <div className="rounded-2xl sm:rounded-3xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 p-3 shadow-xl shadow-stone-900/5 backdrop-blur-xl transition-all">
           
           {/* ================= DESKTOP LAYOUT (md+) ================= */}
           <div className="hidden md:flex flex-col gap-3">
@@ -88,40 +88,40 @@ export default function TopNavCapsule({
                   if (vegOnly) onToggleVegOnly(false);
                   if (showSavedOnly) onToggleSavedOnly(false);
                 }}
-                className="flex items-center gap-2.5 shrink-0 text-left cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 rounded-2xl p-0.5"
+                className="flex items-center gap-2.5 shrink-0 text-left cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BC5434] rounded-2xl p-0.5"
                 title="Reset all filters"
               >
-                <div className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0 group-hover:scale-105 transition-transform">
+                <div className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-[#211C1A] text-white shadow-sm overflow-hidden border border-[#38312E] shrink-0 group-hover:scale-105 transition-transform">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
-                    <circle cx="12" cy="9" r="3.5" fill="#f59e0b" />
+                    <circle cx="12" cy="9" r="3.5" fill="#BC5434" />
                   </svg>
                 </div>
                 <div className="leading-tight">
                   <div className="flex items-center gap-1.5">
-                    <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900 group-hover:text-orange-600 transition-colors">
+                    <span className="font-mono text-xs font-black uppercase tracking-wider text-[#211C1A] group-hover:text-[#BC5434] transition-colors">
                       BLR // EATS
                     </span>
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#3E6B56] animate-pulse" />
                   </div>
-                  <p className="text-[10px] text-zinc-400 font-medium">{totalFilteredCount} curated spots</p>
+                  <p className="text-[10px] text-stone-400 font-medium">{totalFilteredCount} curated spots</p>
                 </div>
               </button>
 
               {/* Big Search */}
               <div className="relative flex-1 min-w-0 max-w-2xl">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400 pointer-events-none" />
+                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-stone-400 pointer-events-none" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => onSearchChange(e.target.value)}
                   placeholder="Search dish (Crispy Dosa, Pour-over, Craft IPA, Tacos) or spot…"
-                  className="w-full rounded-2xl border border-zinc-200 bg-zinc-50/80 py-2.5 pl-10 pr-9 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-900 shadow-2xs"
+                  className="w-full rounded-2xl border border-[#E2DDD2] bg-[#F4EFE6]/75 py-2.5 pl-10 pr-9 text-xs sm:text-sm text-[#211C1A] placeholder-stone-400 transition-colors focus:border-[#BC5434] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#BC5434] shadow-2xs"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => onSearchChange('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-zinc-400 hover:bg-zinc-200 hover:text-zinc-700 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-stone-400 hover:bg-stone-200 hover:text-stone-700 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-stone-900"
                     title="Clear search"
                   >
                     <X className="h-3.5 w-3.5" />
@@ -136,7 +136,7 @@ export default function TopNavCapsule({
                   <select
                     value={selectedCategory}
                     onChange={(e) => onSelectCategory(e.target.value as Category | 'All')}
-                    className="appearance-none rounded-full border border-zinc-200 bg-zinc-50/90 pl-3 pr-7 py-2 text-xs font-semibold text-zinc-800 hover:bg-zinc-100 transition-colors focus:outline-none cursor-pointer shadow-2xs focus-visible:ring-2 focus-visible:ring-zinc-900"
+                    className="appearance-none rounded-full border border-[#E2DDD2] bg-[#F4EFE6]/90 pl-3 pr-7 py-2 text-xs font-semibold text-[#211C1A] hover:bg-[#EAE4D9] transition-colors focus:outline-none cursor-pointer shadow-2xs focus-visible:ring-2 focus-visible:ring-[#BC5434]"
                   >
                     <option value="All">✨ All Cravings</option>
                     {ALL_CATEGORIES.map((c) => (
@@ -145,16 +145,16 @@ export default function TopNavCapsule({
                       </option>
                     ))}
                   </select>
-                  <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-3 w-3 text-zinc-400" />
+                  <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-3 w-3 text-stone-400" />
                 </div>
 
                 {/* Pure Veg Switch */}
                 <button
                   onClick={() => onToggleVegOnly(!vegOnly)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
+                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3E6B56] ${
                     vegOnly
-                      ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
-                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600 hover:bg-zinc-100'
+                      ? 'bg-[#E8F4F0] text-[#17473C] border border-[#C2E2D7] shadow-xs'
+                      : 'border border-[#E2DDD2] bg-[#F4EFE6]/90 text-stone-600 hover:bg-[#EAE4D9]'
                   }`}
                   title="Pure Vegetarian only"
                 >
@@ -165,10 +165,10 @@ export default function TopNavCapsule({
                 {/* Saved Wishlist Toggle */}
                 <button
                   onClick={() => onToggleSavedOnly(!showSavedOnly)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
+                  className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-semibold transition-all shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#211C1A] ${
                     showSavedOnly
-                      ? 'bg-zinc-900 text-white shadow-xs'
-                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600 hover:bg-zinc-100'
+                      ? 'bg-[#211C1A] text-white shadow-xs'
+                      : 'border border-[#E2DDD2] bg-[#F4EFE6]/90 text-stone-600 hover:bg-[#EAE4D9]'
                   }`}
                   title="View Saved Spots"
                 >
@@ -178,13 +178,13 @@ export default function TopNavCapsule({
                 </button>
 
                 {/* View Switcher */}
-                <div className="flex rounded-full border border-zinc-200 bg-zinc-100/90 p-0.5 text-xs shrink-0">
+                <div className="flex rounded-full border border-[#E2DDD2] bg-[#EBE5DA]/90 p-0.5 text-xs shrink-0">
                   <button
                     onClick={() => onSelectViewMode('spatial')}
-                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900 ${
+                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#211C1A] ${
                       viewMode === 'spatial'
-                        ? 'bg-white text-zinc-900 shadow-xs'
-                        : 'text-zinc-500 hover:text-zinc-900'
+                        ? 'bg-white text-[#211C1A] shadow-xs'
+                        : 'text-stone-500 hover:text-stone-900'
                     }`}
                     title="Spatial Map"
                   >
@@ -193,10 +193,10 @@ export default function TopNavCapsule({
                   </button>
                   <button
                     onClick={() => onSelectViewMode('grid')}
-                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-900 ${
+                    className={`flex items-center gap-1 rounded-full px-3 py-1.5 font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#211C1A] ${
                       viewMode === 'grid'
-                        ? 'bg-white text-zinc-900 shadow-xs'
-                        : 'text-zinc-500 hover:text-zinc-900'
+                        ? 'bg-white text-[#211C1A] shadow-xs'
+                        : 'text-stone-500 hover:text-stone-900'
                     }`}
                     title="Grid View"
                   >
@@ -208,7 +208,7 @@ export default function TopNavCapsule({
                 {/* Add Spot Button */}
                 <button
                   onClick={onOpenSubmitModal}
-                  className="flex items-center gap-1 rounded-full bg-orange-600 px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-orange-700 transition-all active:scale-95 shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                  className="flex items-center gap-1 rounded-full bg-[#BC5434] px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-[#A34326] transition-all active:scale-95 shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#BC5434]"
                 >
                   <Plus className="h-3.5 w-3.5 stroke-[2.5]" />
                   <span>Add Spot</span>
@@ -217,8 +217,8 @@ export default function TopNavCapsule({
             </div>
 
             {/* Bottom Row: Neighborhood Tiles */}
-            <div className="pt-2 border-t border-zinc-100 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-              <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-zinc-400 shrink-0 mr-1">
+            <div className="pt-2 border-t border-[#ECE6DA] flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+              <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-stone-400 shrink-0 mr-1">
                 Hoods:
               </span>
               {NEIGHBORHOOD_TILES.map((hood) => {
@@ -227,10 +227,10 @@ export default function TopNavCapsule({
                   <button
                     key={hood.id}
                     onClick={() => onSelectNeighborhood(hood.id)}
-                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 ${
+                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#283629] ${
                       isSelected
-                        ? 'bg-zinc-900 text-white shadow-xs scale-102'
-                        : 'bg-zinc-100/90 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900'
+                        ? 'bg-[#283629] text-white shadow-xs scale-102 font-bold'
+                        : 'bg-[#F0EBE1]/90 text-[#4A443F] hover:bg-[#E5DFD4] hover:text-[#211C1A]'
                     }`}
                   >
                     {hood.label}
@@ -254,13 +254,13 @@ export default function TopNavCapsule({
                 }}
                 className="flex items-center gap-1.5 shrink-0 cursor-pointer text-left focus-visible:outline-none"
               >
-                <div className="relative flex h-7 w-7 items-center justify-center rounded-xl bg-zinc-950 text-white shadow-sm overflow-hidden border border-zinc-800 shrink-0">
+                <div className="relative flex h-7 w-7 items-center justify-center rounded-xl bg-[#211C1A] text-white shadow-sm overflow-hidden border border-[#38312E] shrink-0">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="white" />
-                    <circle cx="12" cy="9" r="3.5" fill="#f59e0b" />
+                    <circle cx="12" cy="9" r="3.5" fill="#BC5434" />
                   </svg>
                 </div>
-                <span className="font-mono text-xs font-black uppercase tracking-wider text-zinc-900">
+                <span className="font-mono text-xs font-black uppercase tracking-wider text-[#211C1A]">
                   BLR // EATS
                 </span>
               </button>
@@ -272,8 +272,8 @@ export default function TopNavCapsule({
                   onClick={() => onToggleVegOnly(!vegOnly)}
                   className={`flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all cursor-pointer ${
                     vegOnly
-                      ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-xs'
-                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
+                      ? 'bg-[#E8F4F0] text-[#17473C] border border-[#C2E2D7] shadow-xs'
+                      : 'border border-[#E2DDD2] bg-[#F4EFE6]/90 text-stone-600'
                   }`}
                   title="Pure Veg"
                 >
@@ -285,8 +285,8 @@ export default function TopNavCapsule({
                   onClick={() => onToggleSavedOnly(!showSavedOnly)}
                   className={`flex items-center gap-0.5 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all cursor-pointer ${
                     showSavedOnly
-                      ? 'bg-zinc-900 text-white shadow-xs'
-                      : 'border border-zinc-200 bg-zinc-50/90 text-zinc-600'
+                      ? 'bg-[#211C1A] text-white shadow-xs'
+                      : 'border border-[#E2DDD2] bg-[#F4EFE6]/90 text-stone-600'
                   }`}
                   title="Saved Spots"
                 >
@@ -295,11 +295,11 @@ export default function TopNavCapsule({
                 </button>
 
                 {/* View Switcher */}
-                <div className="flex rounded-full border border-zinc-200 bg-zinc-100 p-0.5 text-[11px]">
+                <div className="flex rounded-full border border-[#E2DDD2] bg-[#EBE5DA] p-0.5 text-[11px]">
                   <button
                     onClick={() => onSelectViewMode('spatial')}
                     className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all cursor-pointer ${
-                      viewMode === 'spatial' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
+                      viewMode === 'spatial' ? 'bg-white text-[#211C1A] shadow-xs' : 'text-stone-500'
                     }`}
                   >
                     <MapIcon className="h-3 w-3" />
@@ -307,7 +307,7 @@ export default function TopNavCapsule({
                   <button
                     onClick={() => onSelectViewMode('grid')}
                     className={`flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold transition-all cursor-pointer ${
-                      viewMode === 'grid' ? 'bg-white text-zinc-900 shadow-xs' : 'text-zinc-500'
+                      viewMode === 'grid' ? 'bg-white text-[#211C1A] shadow-xs' : 'text-stone-500'
                     }`}
                   >
                     <LayoutGrid className="h-3 w-3" />
@@ -317,7 +317,7 @@ export default function TopNavCapsule({
                 {/* Add Spot */}
                 <button
                   onClick={onOpenSubmitModal}
-                  className="flex items-center gap-0.5 rounded-full bg-orange-600 px-2.5 py-1 text-[11px] font-semibold text-white shadow-xs hover:bg-orange-700 active:scale-95 cursor-pointer"
+                  className="flex items-center gap-0.5 rounded-full bg-[#BC5434] px-2.5 py-1 text-[11px] font-semibold text-white shadow-xs hover:bg-[#A34326] active:scale-95 cursor-pointer"
                 >
                   <Plus className="h-3 w-3 stroke-[2.5]" />
                   <span>Add</span>
@@ -325,34 +325,32 @@ export default function TopNavCapsule({
               </div>
             </div>
 
-            {/* Mobile Row 2: Search Bar & Cravings Selector */}
+            {/* Mobile Row 2: Search Input + Category Select */}
             <div className="flex items-center gap-1.5">
-              {/* Search input */}
               <div className="relative flex-1 min-w-0">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-400 pointer-events-none" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-stone-400 pointer-events-none" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => onSearchChange(e.target.value)}
                   placeholder="Search dish or spot…"
-                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50/90 py-1.5 pl-8 pr-7 text-xs text-zinc-900 placeholder-zinc-400 focus:border-zinc-900 focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/90 py-1.5 pl-8 pr-7 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => onSearchChange('')}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-zinc-400 cursor-pointer"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-stone-400 cursor-pointer"
                   >
                     <X className="h-3 w-3" />
                   </button>
                 )}
               </div>
 
-              {/* Craving Filter Chip */}
               <div className="relative shrink-0">
                 <select
                   value={selectedCategory}
                   onChange={(e) => onSelectCategory(e.target.value as Category | 'All')}
-                  className="appearance-none rounded-xl border border-zinc-200 bg-zinc-50/90 pl-2.5 pr-6 py-1.5 text-xs font-semibold text-zinc-800 focus:outline-none cursor-pointer"
+                  className="appearance-none rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/90 pl-2.5 pr-6 py-1.5 text-xs font-semibold text-[#211C1A] focus:outline-none cursor-pointer"
                 >
                   <option value="All">✨ Cravings</option>
                   {ALL_CATEGORIES.map((c) => (
@@ -361,13 +359,13 @@ export default function TopNavCapsule({
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-3 w-3 text-zinc-400" />
+                <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-3 w-3 text-stone-400" />
               </div>
             </div>
 
-            {/* Mobile Row 3: DEDICATED NEIGHBORHOODS TILE ROW */}
-            <div className="pt-2 border-t border-zinc-100 flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 shrink-0 mr-0.5">
+            {/* Mobile Row 3: Horizontal Neighborhood Scrolling Pills */}
+            <div className="pt-2 border-t border-[#ECE6DA] flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-stone-400 shrink-0 mr-0.5">
                 Hoods:
               </span>
               {NEIGHBORHOOD_TILES.map((hood) => {
@@ -378,8 +376,8 @@ export default function TopNavCapsule({
                     onClick={() => onSelectNeighborhood(hood.id)}
                     className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold transition-all cursor-pointer ${
                       isSelected
-                        ? 'bg-zinc-900 text-white shadow-xs scale-102 font-bold'
-                        : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200'
+                        ? 'bg-[#283629] text-white shadow-xs scale-102 font-bold'
+                        : 'bg-[#F0EBE1] text-[#4A443F] hover:bg-[#E5DFD4]'
                     }`}
                   >
                     {hood.label}
