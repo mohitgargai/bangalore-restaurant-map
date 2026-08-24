@@ -109,18 +109,13 @@ export default function AdminPage() {
       const hashArray = Array.from(new Uint8Array(hashBuffer));
       const hashHex = hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
 
-      // Valid SHA-256 hashes: 'Blr@Culinary#2026!' and 'blr2026'
-      const validHashes = [
-        'a81f9d03d6ccd36bc440ac0134c37276a45cdb197fca74d0610c398c5375857c', // Blr@Culinary#2026!
-        'fc1ab8861507f2b99b43b51892adc7fd8a08947d0c92c184acd24021e4f07501', // blr2026
-      ];
-
+      // Strict master password hash for 'Blr@Culinary#2026!'
+      const MASTER_HASH = 'a81f9d03d6ccd36bc440ac0134c37276a45cdb197fca74d0610c398c5375857c';
       const customEnvPass = process.env.NEXT_PUBLIC_ADMIN_PASSWORD;
 
       if (
-        validHashes.includes(hashHex) ||
+        hashHex === MASTER_HASH ||
         passcode.trim() === 'Blr@Culinary#2026!' ||
-        passcode.trim() === 'blr2026' ||
         (customEnvPass && passcode.trim() === customEnvPass)
       ) {
         sessionStorage.setItem('blr_admin_authenticated', 'true');
