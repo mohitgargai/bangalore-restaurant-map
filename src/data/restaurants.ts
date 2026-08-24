@@ -1011,7 +1011,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "tagline": "Conveyor-belt sushi & dim sum dining at RMZ EcoWorld",
     "description": "Modern Japanese & Asian dining at The Bay in RMZ EcoWorld featuring conveyor belt sushi, fresh sashimi, and craft cocktails for the tech corridor.",
     "category": "Pan-Asian & Japanese",
-    "neighborhood": "Whitefield",
+    "neighborhood": "Bellandur & Ecoworld",
     "address": "The Bay, RMZ EcoWorld, Outer Ring Road, Bellandur, Bengaluru, Karnataka 560103",
     "lat": 12.9202886,
     "lng": 77.6846386,
@@ -2220,7 +2220,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "tagline": "1902 heritage bakery famous for Mutton Kheema Samosas & Brain Puffs",
     "description": "Established in 1902 on Mosque Road, this historic bakery draws city-wide queues at 3:30 PM daily for oven-fresh mutton kheema samosas, coconut pastries, and Ramadan special delicacies.",
     "category": "Bakeries & Desserts",
-    "neighborhood": "Bel Road & North BLR",
+    "neighborhood": "CBD & Central",
     "address": "93, Mosque Rd, Cleveland Town, Frazer Town, Bengaluru, Karnataka 560005",
     "lat": 12.9968598,
     "lng": 77.6144109,
@@ -4149,5 +4149,70 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0658,
     "lng": 77.654,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oia%20Bangalore%20Hennur%20Main%20Road%20Visthar%20Bengaluru"
+  },
+  {
+    "id": "byg-brewski-sarjapur",
+    "name": "Byg Brewski Brewing Company",
+    "slug": "byg-brewski-sarjapur",
+    "tagline": "The iconic open-air amphitheater microbrewery wrapped around a central koi pond",
+    "description": "The Sarjapur flagship that pioneered Bangalore’s mega-brewery amphitheater culture. Features tiered multi-level seating surrounding a serene koi pond, mist systems, award-winning craft beers, and fiery coastal ghee roasts.",
+    "category": "Microbrewery",
+    "neighborhood": "Sarjapur Road",
+    "address": "10/62/2A/2 & 3, Behind MK Retail, Before Wipro Corporate Office, Sarjapur Main Rd, Kaikondrahalli, Bengaluru, Karnataka 560035",
+    "lat": 12.9134,
+    "lng": 77.6836,
+    "priceLevel": "₹₹₹",
+    "priceForTwo": "₹2,400",
+    "mustTry": [
+      "Byg Rauchbier (Smoked Malt Ale)",
+      "Byg Hefeweizen & Belgian Wit",
+      "Giant Karari Roti with Spiced Ghee",
+      "Kundapura Ghee Roast Mutton",
+      "Wood-Fired Smoked Duck Pizza"
+    ],
+    "vibeTags": [
+      "Craft Beer",
+      "Outdoor Seating",
+      "Romantic",
+      "Pet Friendly",
+      "Late Night"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company+-+Sarjapur/@12.9134,77.6836,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae14878a9c4021:0x4d59a2a9ca173200!8m2!3d12.9134!4d77.6836!16s%2Fg%2F11b6_c8d20",
+    "timings": "12:00 PM – 1:00 AM",
+    "curatorNote": "The amphitheater koi pond setting remains an architectural marvel. The smoke-infused craft beer and coastal ghee roast dishes are consistently exceptional.",
+    "isVegetarian": false,
+    "verified": true
+  },
+  {
+    "id": "brik-oven-sarjapur",
+    "name": "Brik Oven",
+    "slug": "brik-oven-sarjapur",
+    "tagline": "Wood-fired 48-hour fermented sourdough Neapolitan pizza on the cobblestone promenade",
+    "description": "Located in the open-air European street promenade of Street 1522 in Carmelaram off Sarjapur Road. Hand-stretched sourdough crusts blistered at 900°F with imported San Marzano tomatoes and artisanal burrata.",
+    "category": "Modern Indian & Dining",
+    "neighborhood": "Sarjapur Road",
+    "address": "Street 1522, Carmelaram Rd, Near Sarjapur Main Rd, Chikkakannalli, Bengaluru, Karnataka 562130",
+    "lat": 12.9025,
+    "lng": 77.7015,
+    "priceLevel": "₹₹",
+    "priceForTwo": "₹1,500",
+    "mustTry": [
+      "The Bird (Smoked Chicken & Bird's Eye Chili)",
+      "Truffle Quattro Formaggi Sourdough Pizza",
+      "Artisanal Burrata Caprese",
+      "Handcrafted Gelato & Waffles"
+    ],
+    "vibeTags": [
+      "Artisanal Sourdough",
+      "Outdoor Seating",
+      "Romantic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "googleMapsUrl": "https://www.google.com/maps/place/Street+1522+Carmelaram/@12.9025,77.7015,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae139265f24259:0x89c4d96a7989eb20!8m2!3d12.9025!4d77.7015!16s%2Fg%2F11t7l6z7m9",
+    "timings": "12:00 PM – 11:30 PM",
+    "curatorNote": "Brings genuine Neapolitan high-hydration sourdough fermentation and fresh fior di latte to the Sarjapur/Carmelaram residential corridor.",
+    "isVegetarian": false,
+    "verified": true
   }
 ];
