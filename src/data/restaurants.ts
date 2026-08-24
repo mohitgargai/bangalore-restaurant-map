@@ -402,9 +402,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore's viral 24/7 tiffin landmark at its flagship 15,000 sq ft 100 Feet Road location. Massive crowds gather around the clock for sizzling pure ghee Open Butter Masala Dosas, Podi Idlis, and filter coffee.",
     "category": "Iconic Heritage",
     "neighborhood": "Indiranagar",
-    "address": "27, Dr Rajkumar Rd, Milk Colony, Subramanyanagar,2 State, Malleshwaram, Bengaluru, Karnataka 560021, India",
-    "lat": 13.008381,
-    "lng": 77.5547194,
+    "address": "847/1, 100 Feet Rd, Indira Nagar 1st Stage, H Colony, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.9816796,
+    "lng": 77.640918,
     "priceLevel": "₹₹",
     "priceForTwo": "₹300",
     "mustTry": [
@@ -420,7 +420,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/rameshwaram-cafe-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=3096438471766760972&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=15574485840685596590",
     "timings": "6:30 AM – 1:00 AM (Open Daily)",
     "curatorNote": "The ghee podi thatte idlis are drenched in piping hot spiced ghee and served with fresh coconut and tomato chutneys.",
     "isVegetarian": true,
@@ -474,11 +474,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "id": "the-craftery-by-subko",
     "name": "The Craftery by Subko",
     "slug": "the-craftery-by-subko",
-    "tagline": "Pod-to-bar craft chocolate roastery, bakehouse & micro-lot coffee bar",
-    "description": "Subko’s sprawling experimental craft roastery in Koramangala 3rd Block combining subcontinental micro-lot coffees with bean-to-bar chocolate manufacturing and 72-hour laminated sourdough viennoiserie.",
+    "tagline": "Subko’s 4,000 sq ft experiential bean-to-bar chocolate factory, roastery & bakehouse",
+    "description": "A massive sensory flagship in Koramangala 3rd Block. Features a working bean-to-bar craft chocolate factory, experimental viennoiserie lab, single-origin sourdough craft, and progressive specialty coffee brews.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "No. 374, No. 68, BBMP PID, 2-374, 3rd Block, Santhosapuram, situated at, Koramangala, Bengaluru, Karnataka 560034, India",
+    "address": "No. 374, No. 68, 3rd Block, Santhosapuram, Koramangala, Bengaluru, Karnataka 560034, India",
     "lat": 12.9258697,
     "lng": 77.6255362,
     "priceLevel": "₹₹₹",
@@ -496,31 +496,12 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/the-craftery-by-subko.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=16285725233891274162&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=7958999336181928828",
     "timings": "7:30 AM – 10:30 PM",
     "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
     "verified": true,
-    "branches": [
-      {
-        "id": "subko-indiranagar",
-        "name": "Indiranagar (12th Main)",
-        "neighborhood": "Indiranagar",
-        "address": "789/A, ground floor, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
-        "lat": 12.9703363,
-        "lng": 77.6407651,
-        "googleMapsUrl": "https://maps.google.com/?cid=13095318095514028500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-      },
-      {
-        "id": "ajji-house-by-subko-shanthi-nagar",
-        "name": "Shanthi Nagar (Ajji House at The Courtyard)",
-        "neighborhood": "CBD & Central",
-        "address": "105, Kengal Hanumanthaiah Rd, opp. Corporation Bank, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India",
-        "lat": 12.9584305,
-        "lng": 77.59289509999999,
-        "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-      }
-    ]
+    "branches": []
   },
   {
     "id": "araku-coffee",
@@ -530,9 +511,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Designed by NYC architects, Araku’s 100ft road flagship is a sensory temple for single-origin tribal coffees from the Eastern Ghats, pour-over flights, and French-inspired organic cuisine.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "Ground Floor, Sobha Alexander Plaza, Commissariat Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India",
-    "lat": 12.970795899999999,
-    "lng": 77.610337,
+    "address": "968, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.9699465,
+    "lng": 77.6391732,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
@@ -547,7 +528,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "/images/restaurants/araku-coffee.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=3096117525635176651&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=18340408279450075002",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Order the Modbar pour-over flight to taste how terroir drastically transforms Indian coffee flavor notes.",
     "isVegetarian": false,
@@ -3474,15 +3455,15 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "pecos",
-    "name": "Pecos",
+    "name": "Pecos Classic",
     "slug": "pecos",
     "tagline": "The 1989 classic rock retro pub legend with cold draft mugs & fiery chilli pork",
     "description": "Bangalore’s timeless retro rock sanctuary on 100 Feet Road. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
     "category": "Microbrewery",
-    "neighborhood": "Indiranagar",
-    "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India",
-    "lat": 12.970779499999999,
-    "lng": 77.6410255,
+    "neighborhood": "Church Street & MG Road",
+    "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
+    "lat": 12.973678,
+    "lng": 77.607354,
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
@@ -3497,20 +3478,20 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Heritage (Pre-1980)"
     ],
     "imageUrl": "/images/restaurants/pecos-stones-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=12883347053253163289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
     "verified": true,
     "branches": [
       {
-        "id": "pecos-mojo-brigade-branch",
-        "name": "Pecos Mojo, Brigade Road",
-        "neighborhood": "Church Street & MG Road",
-        "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
-        "lat": 12.973678,
-        "lng": 77.607354,
-        "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "id": "pecos-indiranagar-branch",
+        "name": "Indiranagar (100ft Rd)",
+        "neighborhood": "Indiranagar",
+        "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India",
+        "lat": 12.9707795,
+        "lng": 77.6410255,
+        "googleMapsUrl": "https://maps.google.com/?cid=15764024227743916946"
       }
     ]
   },
@@ -4078,5 +4059,47 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A 12th Main favorite with a buzzing aesthetic. The spicy hand-pulled Sichuan noodles and fluffy pork belly baos are standout comfort food.",
     "isVegetarian": false,
     "verified": true
+  },
+  {
+    "id": "subko-coffee-indiranagar",
+    "name": "Subko Coffee & Bakehouse",
+    "slug": "subko-coffee-indiranagar",
+    "tagline": "Premier specialty coffee bar & artisanal bakehouse on 12th Main",
+    "description": "The celebrated specialty coffee roastery on 12th Main Indiranagar. Renowned for its podi toast sourdoughs, single-origin pour-overs, cold brew flights, and fresh French-inspired viennoiserie.",
+    "category": "Specialty Coffee & Cafe",
+    "neighborhood": "Indiranagar",
+    "address": "789/A, Ground Floor, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.9703363,
+    "lng": 77.6407651,
+    "priceLevel": "₹₹₹",
+    "priceForTwo": "₹1,100",
+    "mustTry": [
+      "Single Origin Filter Coffee / Pour Over",
+      "Podi Toast with House Cultured Butter",
+      "Twice-Baked Almond Pain au Chocolat",
+      "Cascara Tonic Cold Brew"
+    ],
+    "vibeTags": [
+      "Artisanal Sourdough",
+      "Work Friendly",
+      "Breakfast Spot"
+    ],
+    "imageUrl": "/images/restaurants/the-craftery-by-subko.jpg",
+    "googleMapsUrl": "https://maps.google.com/?cid=13095318095514028500",
+    "timings": "7:30 AM – 10:00 PM",
+    "curatorNote": "The 12th Main specialty coffee go-to. Grab a seat by the window with a fresh pour-over and their iconic Podi Sourdough Toast.",
+    "isVegetarian": false,
+    "verified": true,
+    "branches": [
+      {
+        "id": "subko-ajji-house-courtyard",
+        "name": "Ajji House (The Courtyard, Shanthi Nagar)",
+        "neighborhood": "CBD & Central",
+        "address": "105, Kengal Hanumanthaiah Rd, opp. Corporation Bank, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India",
+        "lat": 12.9584305,
+        "lng": 77.5928951,
+        "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042"
+      }
+    ]
   }
 ];
