@@ -13,7 +13,6 @@ import SpatialMapFlow, { DISTRICT_MAP_CONFIG } from '@/components/SpatialMapFlow
 import GridView from '@/components/GridView';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
-import AdminDashboard from '@/components/AdminDashboard';
 
 export default function Home() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
@@ -49,20 +48,10 @@ export default function Home() {
 
   // Modals state
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
-  const [isAdminOpen, setIsAdminOpen] = useState(false);
-  const [showAdminControls, setShowAdminControls] = useState(false);
 
-  // Load initial data, bookmarks, admin check & overrides
+  // Load initial data, bookmarks & overrides
   useEffect(() => {
     try {
-      // Check for secret admin param in URL
-      if (typeof window !== 'undefined') {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('admin') === 'true' || params.get('admin') === '1') {
-          setShowAdminControls(true);
-        }
-      }
-
       const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
       if (savedBookmarks) {
         setBookmarkedIds(new Set(JSON.parse(savedBookmarks)));
@@ -216,7 +205,6 @@ export default function Home() {
         viewMode={viewMode}
         onSelectViewMode={setViewMode}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}
-        onOpenAdmin={showAdminControls ? () => setIsAdminOpen(true) : undefined}
         totalFilteredCount={filteredRestaurants.length}
       />
 
@@ -269,14 +257,6 @@ export default function Home() {
         isOpen={isSubmitOpen}
         onClose={() => setIsSubmitOpen(false)}
         onSuccess={handleNewSubmission}
-      />
-
-      {/* Admin & Data Studio Dashboard */}
-      <AdminDashboard
-        isOpen={isAdminOpen}
-        onClose={() => setIsAdminOpen(false)}
-        restaurants={restaurants}
-        onUpdateRestaurants={setRestaurants}
       />
     </main>
   );

@@ -10,7 +10,6 @@ import {
   Map as MapIcon,
   LayoutGrid,
   ChevronDown,
-  Settings,
 } from 'lucide-react';
 
 export type ViewMode = 'spatial' | 'grid';
@@ -44,7 +43,6 @@ interface TopNavCapsuleProps {
   viewMode: ViewMode;
   onSelectViewMode: (mode: ViewMode) => void;
   onOpenSubmitModal: () => void;
-  onOpenAdmin?: () => void;
   totalFilteredCount: number;
 }
 
@@ -63,7 +61,6 @@ export default function TopNavCapsule({
   viewMode,
   onSelectViewMode,
   onOpenSubmitModal,
-  onOpenAdmin,
   totalFilteredCount,
 }: TopNavCapsuleProps) {
   return (
@@ -196,17 +193,6 @@ export default function TopNavCapsule({
                   <Plus className="h-3.5 w-3.5 stroke-[2.5]" />
                   <span>Add Spot</span>
                 </button>
-
-                {/* Admin Button */}
-                {onOpenAdmin && (
-                  <button
-                    onClick={onOpenAdmin}
-                    className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 transition-all shrink-0"
-                    title="Admin & Data Studio"
-                  >
-                    <Settings className="h-3.5 w-3.5" />
-                  </button>
-                )}
               </div>
             </div>
 
@@ -304,17 +290,6 @@ export default function TopNavCapsule({
                   <Plus className="h-3 w-3 stroke-[2.5]" />
                   <span>Add</span>
                 </button>
-
-                {/* Admin Button Mobile */}
-                {onOpenAdmin && (
-                  <button
-                    onClick={onOpenAdmin}
-                    className="flex h-6 w-6 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
-                    title="Admin"
-                  >
-                    <Settings className="h-3 w-3" />
-                  </button>
-                )}
               </div>
             </div>
 
