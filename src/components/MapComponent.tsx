@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -27,13 +27,20 @@ function MapController({
   targetDistrict: { name: string; lat: number; lng: number; zoom: number } | null;
 }) {
   const map = useMap();
+  const lastSelectedKeyRef = useRef<string | null>(null);
 
   useEffect(() => {
     if (selectedRestaurant) {
-      map.flyTo([selectedRestaurant.lat, selectedRestaurant.lng], 16.5, {
-        duration: 0.85,
-        easeLinearity: 0.25,
-      });
+      const key = `${selectedRestaurant.id}-${selectedRestaurant.lat}-${selectedRestaurant.lng}`;
+      if (lastSelectedKeyRef.current !== key) {
+        lastSelectedKeyRef.current = key;
+        map.flyTo([selectedRestaurant.lat, selectedRestaurant.lng], 16.5, {
+          duration: 0.85,
+          easeLinearity: 0.25,
+        });
+      }
+    } else {
+      lastSelectedKeyRef.current = null;
     }
   }, [selectedRestaurant, map]);
 
@@ -227,6 +234,7 @@ function SuperclusterMapLayer({
 
   return (
     <>
+      {/* Background Clusters & Unselected Spots */}
       {clusters.map((cluster) => {
         const [lng, lat] = cluster.geometry.coordinates;
         const isCluster = cluster.properties.cluster;
@@ -250,10 +258,6 @@ function SuperclusterMapLayer({
         // Individual spot marker
         const props = cluster.properties as SpotProperties;
         const spot = props.resolvedRestaurant;
-        const isSelected =
-          selectedRestaurant?.id === spot.id &&
-          selectedRestaurant?.lat === spot.lat &&
-          selectedRestaurant?.lng === spot.lng;
         const isHovered = hoveredRestaurantId === spot.id;
         const isBookmarked = bookmarkedIds.has(spot.id);
 
@@ -261,13 +265,31 @@ function SuperclusterMapLayer({
           <Marker
             key={`spot-${spot.id}-${lat}-${lng}`}
             position={[lat, lng]}
-            icon={createModernPin(spot, isSelected, isHovered, isBookmarked)}
+            icon={createModernPin(spot, false, isHovered, isBookmarked)}
             eventHandlers={{
               click: () => onSelectRestaurant(spot),
             }}
           />
         );
       })}
+
+      {/* Explicit Always-Unfurled Focused Spot Pin (Never swallowed into cluster) */}
+      {selectedRestaurant && (
+        <Marker
+          key={`focused-${selectedRestaurant.id}-${selectedRestaurant.lat}-${selectedRestaurant.lng}`}
+          position={[selectedRestaurant.lat, selectedRestaurant.lng]}
+          zIndexOffset={10000}
+          icon={createModernPin(
+            selectedRestaurant,
+            true,
+            hoveredRestaurantId === selectedRestaurant.id,
+            bookmarkedIds.has(selectedRestaurant.id)
+          )}
+          eventHandlers={{
+            click: () => onSelectRestaurant(selectedRestaurant),
+          }}
+        />
+      )}
     </>
   );
 }
@@ -300,16 +322,22 @@ export default function MapComponent({
   const defaultZoom = 13;
 
   // Convert restaurants + branches to Supercluster Point Features
+  // (Excluding the currently focused restaurant so it always renders independently on top)
   const points: GeoJSON.Feature<GeoJSON.Point, SpotProperties>[] = useMemo(() => {
     const pts: GeoJSON.Feature<GeoJSON.Point, SpotProperties>[] = [];
 
     restaurants.forEach((restaurant) => {
+      const isPrimarySelected =
+        selectedRestaurant?.id === restaurant.id &&
+        selectedRestaurant?.lat === restaurant.lat &&
+        selectedRestaurant?.lng === restaurant.lng;
+
       const showPrimary =
         !selectedNeighborhood ||
         selectedNeighborhood === 'All' ||
         restaurant.neighborhood === selectedNeighborhood;
 
-      if (showPrimary) {
+      if (showPrimary && !isPrimarySelected) {
         pts.push({
           type: 'Feature',
           properties: {
@@ -334,33 +362,40 @@ export default function MapComponent({
             branch.neighborhood === selectedNeighborhood
         )
         .forEach((branch) => {
-          pts.push({
-            type: 'Feature',
-            properties: {
-              cluster: false,
-              restaurantId: restaurant.id,
-              resolvedRestaurant: {
-                ...restaurant,
-                neighborhood: branch.neighborhood,
-                address: branch.address,
-                lat: branch.lat,
-                lng: branch.lng,
-                googleMapsUrl: branch.googleMapsUrl,
+          const isBranchSelected =
+            selectedRestaurant?.id === restaurant.id &&
+            selectedRestaurant?.lat === branch.lat &&
+            selectedRestaurant?.lng === branch.lng;
+
+          if (!isBranchSelected) {
+            pts.push({
+              type: 'Feature',
+              properties: {
+                cluster: false,
+                restaurantId: restaurant.id,
+                resolvedRestaurant: {
+                  ...restaurant,
+                  neighborhood: branch.neighborhood,
+                  address: branch.address,
+                  lat: branch.lat,
+                  lng: branch.lng,
+                  googleMapsUrl: branch.googleMapsUrl,
+                },
+                category: restaurant.category,
+                isBranch: true,
+                branchId: branch.id,
               },
-              category: restaurant.category,
-              isBranch: true,
-              branchId: branch.id,
-            },
-            geometry: {
-              type: 'Point',
-              coordinates: [branch.lng, branch.lat],
-            },
-          });
+              geometry: {
+                type: 'Point',
+                coordinates: [branch.lng, branch.lat],
+              },
+            });
+          }
         });
     });
 
     return pts;
-  }, [restaurants, selectedNeighborhood]);
+  }, [restaurants, selectedNeighborhood, selectedRestaurant]);
 
   // Load supercluster spatial index
   const supercluster = useMemo(() => {
@@ -407,5 +442,6 @@ export default function MapComponent({
     </div>
   );
 }
+
 
 

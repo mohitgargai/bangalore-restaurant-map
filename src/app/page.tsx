@@ -91,6 +91,7 @@ export default function Home() {
   // Synchronized Neighborhood selection
   const handleSelectNeighborhood = useCallback((area: Neighborhood | 'All') => {
     setSelectedNeighborhood(area);
+    setSelectedRestaurant(null);
     trackEvent('filter_neighborhood', { neighborhood: area });
     const match = DISTRICT_MAP_CONFIG.find((d) => d.id === area);
     if (match) {
@@ -100,6 +101,8 @@ export default function Home() {
         lng: match.lng,
         zoom: match.zoom,
       });
+    } else {
+      setTargetDistrict(null);
     }
   }, []);
 
@@ -121,6 +124,7 @@ export default function Home() {
   const handleSelectRestaurant = (r: Restaurant | null) => {
     setSelectedRestaurant(r);
     if (r) {
+      setTargetDistrict(null);
       trackEvent('view_restaurant', {
         restaurant_id: r.id,
         name: r.name,
