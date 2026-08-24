@@ -4,36 +4,19 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Restaurant, Neighborhood } from '@/types';
+import Supercluster from 'supercluster';
+import { Restaurant, Neighborhood, Category } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
 import { LocateFixed } from 'lucide-react';
 
-export const NEIGHBORHOOD_HUBS: {
-  id: Neighborhood;
-  name: string;
-  shortLabel: string;
-  icon: string;
-  lat: number;
-  lng: number;
-  zoom: number;
-}[] = [
-  { id: 'Indiranagar', name: 'Indiranagar', shortLabel: 'Indiranagar', icon: '🌿', lat: 12.9734, lng: 77.6409, zoom: 15 },
-  { id: 'Church Street & MG Road', name: 'Church St / CBD', shortLabel: 'Church St', icon: '☕', lat: 12.9737, lng: 77.6074, zoom: 15.5 },
-  { id: 'Malleshwaram', name: 'Malleshwaram', shortLabel: 'Malleshwaram', icon: '🥞', lat: 12.9985, lng: 77.5708, zoom: 15 },
-  { id: 'Basavanagudi', name: 'Basavanagudi / VV Puram', shortLabel: 'Basavanagudi', icon: '🍛', lat: 12.9455, lng: 77.5739, zoom: 15 },
-  { id: 'Koramangala', name: 'Koramangala', shortLabel: 'Koramangala', icon: '🍺', lat: 12.9341, lng: 77.6256, zoom: 15 },
-  { id: 'HSR Layout', name: 'HSR Layout', shortLabel: 'HSR Layout', icon: '🍳', lat: 12.9118, lng: 77.6385, zoom: 15 },
-  { id: 'JP Nagar', name: 'JP Nagar', shortLabel: 'JP Nagar', icon: '🎭', lat: 12.9080, lng: 77.5880, zoom: 15 },
-  { id: 'Jayanagar', name: 'Jayanagar', shortLabel: 'Jayanagar', icon: '🥘', lat: 12.9238, lng: 77.5934, zoom: 15 },
-  { id: 'Lavelle Road', name: 'Lavelle Road', shortLabel: 'Lavelle Rd', icon: '🍷', lat: 12.9698, lng: 77.5997, zoom: 15.5 },
-  { id: 'CBD & Central', name: 'CBD & Central', shortLabel: 'CBD & Central', icon: '🏛️', lat: 12.9750, lng: 77.5950, zoom: 15 },
-  { id: 'Bellandur & Ecoworld', name: 'Bellandur / Ecoworld', shortLabel: 'Bellandur', icon: '🍜', lat: 12.9258, lng: 77.6867, zoom: 15 },
-  { id: 'Sarjapur Road', name: 'Sarjapur Rd', shortLabel: 'Sarjapur Rd', icon: '🍻', lat: 12.9100, lng: 77.6800, zoom: 14.5 },
-  { id: 'Kalyan Nagar & Kammanahalli', name: 'Kalyan Nagar / CMR', shortLabel: 'Kalyan Nagar', icon: '🥢', lat: 13.0185, lng: 77.6440, zoom: 15 },
-  { id: 'Whitefield', name: 'Whitefield', shortLabel: 'Whitefield', icon: '🌾', lat: 12.9750, lng: 77.7350, zoom: 14.5 },
-  { id: 'Sadashivanagar & Palace Grounds', name: 'Sadashivanagar', shortLabel: 'Sadashivanagar', icon: '🍃', lat: 13.0080, lng: 77.5800, zoom: 15 },
-  { id: 'Bel Road & North BLR', name: 'North BLR', shortLabel: 'North BLR', icon: '🌲', lat: 13.0450, lng: 77.5850, zoom: 13.5 },
-];
+interface SpotProperties {
+  cluster: false;
+  restaurantId: string;
+  resolvedRestaurant: Restaurant;
+  category: Category;
+  isBranch: boolean;
+  branchId?: string;
+}
 
 // Controller to fly the map camera smoothly
 function MapController({
@@ -47,9 +30,8 @@ function MapController({
 
   useEffect(() => {
     if (selectedRestaurant) {
-      // Center directly on the restaurant coordinates
       map.flyTo([selectedRestaurant.lat, selectedRestaurant.lng], 16.5, {
-        duration: 0.9,
+        duration: 0.85,
         easeLinearity: 0.25,
       });
     }
@@ -58,26 +40,11 @@ function MapController({
   useEffect(() => {
     if (targetDistrict) {
       map.flyTo([targetDistrict.lat, targetDistrict.lng], targetDistrict.zoom, {
-        duration: 1.3,
+        duration: 1.1,
         easeLinearity: 0.25,
       });
     }
   }, [targetDistrict, map]);
-
-  return null;
-}
-
-// Map Event Listener for Dynamic Zoom Level Tracking
-function MapZoomWatcher({ onZoom }: { onZoom: (zoom: number) => void }) {
-  const map = useMapEvents({
-    zoomend: () => {
-      onZoom(map.getZoom());
-    },
-  });
-
-  useEffect(() => {
-    onZoom(map.getZoom());
-  }, [map, onZoom]);
 
   return null;
 }
@@ -87,7 +54,7 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
   const map = useMap();
 
   const handleRecenter = () => {
-    map.flyTo([12.9716, 77.5946], 13, { duration: 1.1 });
+    map.flyTo([12.9716, 77.5946], 13, { duration: 0.9 });
     if (onRecenter) onRecenter();
   };
 
@@ -124,6 +91,187 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
   );
 }
 
+// Proportional, elegant cluster disc icon
+function createClusterIcon(count: number) {
+  let size = 34;
+  let ringClass = 'border-2 border-white ring-2 ring-[#BC5434]/20';
+  let bgClass = 'bg-[#211C1A] text-white';
+
+  if (count >= 16) {
+    size = 44;
+    ringClass = 'border-2 border-white ring-4 ring-[#BC5434]/30 cluster-glow';
+    bgClass = 'bg-gradient-to-br from-[#BC5434] to-[#8C341A] text-white';
+  } else if (count >= 6) {
+    size = 38;
+    ringClass = 'border-2 border-white ring-2 ring-[#3E6B56]/30';
+    bgClass = 'bg-[#283629] text-white';
+  }
+
+  const html = `
+    <div class="animate-cluster-unfurl flex items-center justify-center cursor-pointer select-none"
+         style="width: ${size}px; height: ${size}px;">
+      <div class="w-full h-full rounded-full ${bgClass} ${ringClass} font-black text-xs sm:text-sm flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-115 active:scale-95">
+        ${count}
+      </div>
+    </div>
+  `;
+
+  return L.divIcon({
+    className: 'custom-hub-icon',
+    html,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+}
+
+// Category Pin with smooth spring unfurling
+function createModernPin(
+  restaurant: Restaurant,
+  isSelected: boolean,
+  isHovered: boolean,
+  isBookmarked: boolean
+) {
+  const meta = CATEGORY_META[restaurant.category] || {
+    color: '#BC5434',
+    icon: '📍',
+    bg: '#FDF3EE',
+  };
+
+  const active = isSelected || isHovered;
+  const size = active ? 44 : 32;
+
+  const html = `
+    <div class="animate-marker-unfurl relative flex items-center justify-center cursor-pointer transition-transform duration-200 ${
+      active ? 'scale-125 z-[1000]' : 'hover:scale-115'
+    }" style="width: ${size}px; height: ${size}px;">
+      ${
+        active
+          ? `<div class="absolute -inset-2 rounded-full animate-ping opacity-35" style="background-color: ${meta.color};"></div>`
+          : ''
+      }
+      <div class="w-full h-full rounded-full flex items-center justify-center shadow-md transition-all duration-200"
+           style="
+             background: ${active ? '#211C1A' : 'white'};
+             border: 2.5px solid ${active ? '#211C1A' : meta.color};
+             box-shadow: 0 4px 14px 0 rgba(33, 28, 26, ${active ? '0.35' : '0.12'});
+           ">
+        <span style="font-size: ${active ? '17px' : '13px'}; line-height: 1;">${meta.icon}</span>
+      </div>
+      ${
+        isBookmarked
+          ? `<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#BC5434] text-white flex items-center justify-center shadow-xs text-[8px] font-bold ring-1.5 ring-white">✓</div>`
+          : ''
+      }
+    </div>
+  `;
+
+  return L.divIcon({
+    className: 'modern-leaflet-pin',
+    html,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+}
+
+// Interactive Supercluster Viewport Renderer
+function SuperclusterMapLayer({
+  supercluster,
+  selectedRestaurant,
+  hoveredRestaurantId,
+  bookmarkedIds,
+  onSelectRestaurant,
+}: {
+  supercluster: Supercluster<SpotProperties>;
+  selectedRestaurant: Restaurant | null;
+  hoveredRestaurantId: string | null;
+  bookmarkedIds: Set<string>;
+  onSelectRestaurant: (restaurant: Restaurant) => void;
+}) {
+  const map = useMap();
+  const [zoom, setZoom] = useState<number>(() => Math.floor(map.getZoom()));
+  const [bounds, setBounds] = useState<[number, number, number, number]>(() => {
+    const b = map.getBounds();
+    return [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
+  });
+
+  const updateView = useCallback(() => {
+    const b = map.getBounds();
+    setBounds([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()]);
+    setZoom(Math.floor(map.getZoom()));
+  }, [map]);
+
+  useMapEvents({
+    zoomend: updateView,
+    moveend: updateView,
+  });
+
+  const clusters = useMemo(() => {
+    try {
+      return supercluster.getClusters(bounds, zoom);
+    } catch {
+      return [];
+    }
+  }, [supercluster, bounds, zoom]);
+
+  // Handle clicking a cluster to smoothly expand and fly camera
+  const handleClusterClick = (clusterId: number, lat: number, lng: number) => {
+    const expansionZoom = Math.min(
+      supercluster.getClusterExpansionZoom(clusterId),
+      17
+    );
+    map.flyTo([lat, lng], expansionZoom, {
+      duration: 0.75,
+      easeLinearity: 0.25,
+    });
+  };
+
+  return (
+    <>
+      {clusters.map((cluster) => {
+        const [lng, lat] = cluster.geometry.coordinates;
+        const isCluster = cluster.properties.cluster;
+
+        if (isCluster) {
+          const count = cluster.properties.point_count;
+          const clusterId = cluster.id as number;
+
+          return (
+            <Marker
+              key={`cluster-${clusterId}-${lat}-${lng}`}
+              position={[lat, lng]}
+              icon={createClusterIcon(count)}
+              eventHandlers={{
+                click: () => handleClusterClick(clusterId, lat, lng),
+              }}
+            />
+          );
+        }
+
+        // Individual spot marker
+        const props = cluster.properties as SpotProperties;
+        const spot = props.resolvedRestaurant;
+        const isSelected =
+          selectedRestaurant?.id === spot.id &&
+          selectedRestaurant?.lat === spot.lat &&
+          selectedRestaurant?.lng === spot.lng;
+        const isHovered = hoveredRestaurantId === spot.id;
+        const isBookmarked = bookmarkedIds.has(spot.id);
+
+        return (
+          <Marker
+            key={`spot-${spot.id}-${lat}-${lng}`}
+            position={[lat, lng]}
+            icon={createModernPin(spot, isSelected, isHovered, isBookmarked)}
+            eventHandlers={{
+              click: () => onSelectRestaurant(spot),
+            }}
+          />
+        );
+      })}
+    </>
+  );
+}
+
 interface MapComponentProps {
   restaurants: Restaurant[];
   selectedRestaurant: Restaurant | null;
@@ -150,100 +298,80 @@ export default function MapComponent({
   // Bangalore Center coordinates
   const defaultCenter: [number, number] = [12.9716, 77.5946];
   const defaultZoom = 13;
-  const [currentZoom, setCurrentZoom] = useState<number>(defaultZoom);
 
-  const handleZoomUpdate = useCallback((zoom: number) => {
-    setCurrentZoom(zoom);
-  }, []);
+  // Convert restaurants + branches to Supercluster Point Features
+  const points: GeoJSON.Feature<GeoJSON.Point, SpotProperties>[] = useMemo(() => {
+    const pts: GeoJSON.Feature<GeoJSON.Point, SpotProperties>[] = [];
 
-  // Compute spot counts per neighborhood matching current filters
-  const countsByNeighborhood = useMemo(() => {
-    const counts: Record<string, number> = {};
-    restaurants.forEach((r) => {
-      counts[r.neighborhood] = (counts[r.neighborhood] || 0) + 1;
-      if (r.branches) {
-        r.branches.forEach((b) => {
-          counts[b.neighborhood] = (counts[b.neighborhood] || 0) + 1;
+    restaurants.forEach((restaurant) => {
+      const showPrimary =
+        !selectedNeighborhood ||
+        selectedNeighborhood === 'All' ||
+        restaurant.neighborhood === selectedNeighborhood;
+
+      if (showPrimary) {
+        pts.push({
+          type: 'Feature',
+          properties: {
+            cluster: false,
+            restaurantId: restaurant.id,
+            resolvedRestaurant: restaurant,
+            category: restaurant.category,
+            isBranch: false,
+          },
+          geometry: {
+            type: 'Point',
+            coordinates: [restaurant.lng, restaurant.lat],
+          },
         });
       }
+
+      restaurant.branches
+        ?.filter(
+          (branch) =>
+            !selectedNeighborhood ||
+            selectedNeighborhood === 'All' ||
+            branch.neighborhood === selectedNeighborhood
+        )
+        .forEach((branch) => {
+          pts.push({
+            type: 'Feature',
+            properties: {
+              cluster: false,
+              restaurantId: restaurant.id,
+              resolvedRestaurant: {
+                ...restaurant,
+                neighborhood: branch.neighborhood,
+                address: branch.address,
+                lat: branch.lat,
+                lng: branch.lng,
+                googleMapsUrl: branch.googleMapsUrl,
+              },
+              category: restaurant.category,
+              isBranch: true,
+              branchId: branch.id,
+            },
+            geometry: {
+              type: 'Point',
+              coordinates: [branch.lng, branch.lat],
+            },
+          });
+        });
     });
-    return counts;
-  }, [restaurants]);
 
-  // Determine whether to display Neighborhood Hubs or Individual Pins:
-  // When zoomed out (< 14) and no specific neighborhood filter or restaurant is active, show Hub Badges
-  const isClusteredView =
-    (!selectedNeighborhood || selectedNeighborhood === 'All') &&
-    currentZoom < 14 &&
-    !selectedRestaurant;
+    return pts;
+  }, [restaurants, selectedNeighborhood]);
 
-  // Modern Minimalist Category Pin
-  const createModernPin = (restaurant: Restaurant, isSelected: boolean, isHovered: boolean) => {
-    const meta = CATEGORY_META[restaurant.category] || {
-      color: '#BC5434',
-      icon: '📍',
-      bg: '#FDF3EE',
-    };
-
-    const active = isSelected || isHovered;
-    const isBookmarked = bookmarkedIds.has(restaurant.id);
-    const size = active ? 44 : 32;
-
-    const html = `
-      <div class="relative flex items-center justify-center cursor-pointer transition-all duration-300 ${
-        active ? 'scale-125 z-[1000]' : 'hover:scale-115'
-      }" style="width: ${size}px; height: ${size}px;">
-        ${
-          active
-            ? `<div class="absolute -inset-2 rounded-full animate-ping opacity-30" style="background-color: ${meta.color};"></div>`
-            : ''
-        }
-        <div class="w-full h-full rounded-full flex items-center justify-center shadow-md transition-all duration-300"
-             style="
-               background: ${active ? '#211C1A' : 'white'};
-               border: 2.5px solid ${active ? '#211C1A' : meta.color};
-               box-shadow: 0 4px 14px 0 rgba(33, 28, 26, ${active ? '0.35' : '0.12'});
-             ">
-          <span style="font-size: ${active ? '17px' : '13px'}; line-height: 1;">${meta.icon}</span>
-        </div>
-        ${
-          isBookmarked
-            ? `<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#BC5434] text-white flex items-center justify-center shadow-xs text-[8px] font-bold ring-1.5 ring-white">✓</div>`
-            : ''
-        }
-      </div>
-    `;
-
-    return L.divIcon({
-      className: 'modern-leaflet-pin',
-      html,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
+  // Load supercluster spatial index
+  const supercluster = useMemo(() => {
+    const sc = new Supercluster<SpotProperties>({
+      radius: 48,
+      maxZoom: 16,
+      minPoints: 2,
     });
-  };
-
-  // Minimalist Numeric Food Hub Cluster Disc (Airbnb / Apple Maps style)
-  const createHubIcon = (hub: (typeof NEIGHBORHOOD_HUBS)[0], count: number) => {
-    const html = `
-      <div class="group relative flex items-center justify-center cursor-pointer"
-           style="transform: translate(-50%, -50%);">
-        <div class="h-8.5 w-8.5 rounded-full bg-[#211C1A] text-white font-black text-xs flex items-center justify-center shadow-md border-2 border-white ring-1.5 ring-stone-900/10 transition-all duration-200 group-hover:scale-110 group-hover:bg-[#BC5434] group-hover:shadow-xl active:scale-95">
-          ${count}
-        </div>
-        <!-- Delicate Tooltip on Hover Only -->
-        <div class="opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-200 absolute -top-7 left-1/2 -translate-x-1/2 rounded-lg bg-[#211C1A] px-2.5 py-1 text-[11px] font-bold text-white whitespace-nowrap shadow-xl border border-white/10">
-          ${hub.name}
-        </div>
-      </div>
-    `;
-
-    return L.divIcon({
-      className: 'custom-hub-icon',
-      html,
-      iconSize: [0, 0],
-      iconAnchor: [0, 0],
-    });
-  };
+    sc.load(points);
+    return sc;
+  }, [points]);
 
   return (
     <div className="relative h-full w-full overflow-hidden bg-[#F4EFE6]">
@@ -266,97 +394,18 @@ export default function MapComponent({
           targetDistrict={targetDistrict}
         />
 
-        <MapZoomWatcher onZoom={handleZoomUpdate} />
-
         <MapFloatingControls onRecenter={() => onSelectNeighborhood?.('All')} />
 
-        {/* ================= CLUSTERED VIEW: NEIGHBORHOOD FOOD HUBS ================= */}
-        {isClusteredView &&
-          NEIGHBORHOOD_HUBS.map((hub) => {
-            const count = countsByNeighborhood[hub.id] || 0;
-            if (count === 0) return null;
-
-            return (
-              <Marker
-                key={hub.id}
-                position={[hub.lat, hub.lng]}
-                icon={createHubIcon(hub, count)}
-                eventHandlers={{
-                  click: () => {
-                    onSelectNeighborhood?.(hub.id);
-                  },
-                }}
-              />
-            );
-          })}
-
-        {/* ================= DETAILED VIEW: INDIVIDUAL CATEGORY PINS ================= */}
-        {!isClusteredView &&
-          restaurants.map((restaurant) => {
-            const isSelected =
-              selectedRestaurant?.id === restaurant.id &&
-              selectedRestaurant?.lat === restaurant.lat &&
-              selectedRestaurant?.lng === restaurant.lng;
-            const isHovered = hoveredRestaurantId === restaurant.id;
-            const icon = createModernPin(restaurant, isSelected, isHovered);
-
-            const showPrimary =
-              !selectedNeighborhood ||
-              selectedNeighborhood === 'All' ||
-              restaurant.neighborhood === selectedNeighborhood;
-
-            return (
-              <React.Fragment key={restaurant.id}>
-                {/* Primary Location Pin */}
-                {showPrimary && (
-                  <Marker
-                    position={[restaurant.lat, restaurant.lng]}
-                    icon={icon}
-                    eventHandlers={{
-                      click: () => onSelectRestaurant(restaurant),
-                    }}
-                  />
-                )}
-
-                {/* Branch Location Pins */}
-                {restaurant.branches
-                  ?.filter(
-                    (branch) =>
-                      !selectedNeighborhood ||
-                      selectedNeighborhood === 'All' ||
-                      branch.neighborhood === selectedNeighborhood
-                  )
-                  .map((branch) => {
-                    const isBranchSelected =
-                      selectedRestaurant?.id === restaurant.id &&
-                      selectedRestaurant?.lat === branch.lat &&
-                      selectedRestaurant?.lng === branch.lng;
-                    const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
-
-                    return (
-                      <Marker
-                        key={`${restaurant.id}-${branch.id}`}
-                        position={[branch.lat, branch.lng]}
-                        icon={branchIcon}
-                        eventHandlers={{
-                          click: () =>
-                            onSelectRestaurant({
-                              ...restaurant,
-                              neighborhood: branch.neighborhood,
-                              address: branch.address,
-                              lat: branch.lat,
-                              lng: branch.lng,
-                              googleMapsUrl: branch.googleMapsUrl,
-                            }),
-                        }}
-                      />
-                    );
-                  })}
-              </React.Fragment>
-            );
-          })}
+        <SuperclusterMapLayer
+          supercluster={supercluster}
+          selectedRestaurant={selectedRestaurant}
+          hoveredRestaurantId={hoveredRestaurantId}
+          bookmarkedIds={bookmarkedIds}
+          onSelectRestaurant={onSelectRestaurant}
+        />
       </MapContainer>
     </div>
   );
 }
+
 
