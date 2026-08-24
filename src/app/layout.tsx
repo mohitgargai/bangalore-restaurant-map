@@ -15,10 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Bangalore Food Map — Curated & Crowd-Sourced Restaurant Gems',
+  title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
   description:
-    'An interactive, curated guide to Bengaluru’s most iconic heritage eateries, craft microbreweries, specialty coffee bars, and crowd-sourced dining gems.',
+    'An interactive spatial guide to Bengaluru’s most iconic heritage eateries, craft microbreweries, specialty coffee bars, and cult dining gems.',
   keywords: [
+    'BLR EATS',
+    'BLR food map',
     'Bangalore food map',
     'Bangalore restaurants',
     'Indiranagar cafes',
@@ -28,15 +30,30 @@ export const metadata: Metadata = {
     'CTR dosa',
     'Toit',
     'Araku coffee',
+    'Subko Bangalore',
+    'Lavonne Cafe',
   ],
   authors: [{ name: 'Mohit Garg' }],
+  applicationName: 'BLR // EATS',
+  appleWebApp: {
+    title: 'BLR // EATS',
+    statusBarStyle: 'default',
+    capable: true,
+  },
   openGraph: {
-    title: 'Bangalore Food Map — Curated & Crowd-Sourced Restaurant Gems',
+    title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
     description:
-      'Interactive curated map of Bengaluru’s legendary food spots, cafes, craft breweries, and secret neighborhood gems.',
+      'Curated spatial guide to Bengaluru’s legendary breakfast institutions, artisanal roasters, craft breweries, and cult dining spots.',
     type: 'website',
     locale: 'en_IN',
-    siteName: 'Bangalore Food Map',
+    siteName: 'BLR // EATS',
+    url: 'https://blr-food-map-2026.web.app',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
+    description:
+      'Curated spatial guide to Bengaluru’s legendary breakfast institutions, artisanal roasters, craft breweries, and cult dining spots.',
   },
 };
 

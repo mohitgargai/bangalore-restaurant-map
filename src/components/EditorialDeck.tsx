@@ -73,7 +73,7 @@ export default function EditorialDeck({
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-lg font-bold tracking-tight text-zinc-900">
-              Bangalore Food Map
+              BLR // EATS
             </h1>
             <p className="text-xs text-zinc-500">Curated & authentic city index</p>
           </div>

@@ -47,7 +47,7 @@ export default function RestaurantDrawer({
     if (navigator.share) {
       navigator
         .share({
-          title: `${restaurant.name} on BLR Food Map`,
+          title: `${restaurant.name} on BLR // EATS`,
           text: `Check out ${restaurant.name} in ${restaurant.neighborhood} — Must try: ${restaurant.mustTry.join(', ')}`,
           url: window.location.href,
         })
