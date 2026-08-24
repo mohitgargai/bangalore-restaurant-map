@@ -1,4 +1,4 @@
-# 🥘 BLR // EATS — Curated Bangalore Food & Spatial Guide
+# 🥘 BLR // EATS | Curated Bangalore Food & Spatial Guide
 
 An interactive geospatial guide to Bengaluru's most iconic heritage breakfast institutions, craft microbreweries, specialty third-wave coffee bars, coastal seafood kitchens, and progressive cocktail lounges.
 
@@ -17,8 +17,8 @@ Live URL: **[https://blreats.com](https://blreats.com)** *(and [https://blr-food
   - **9 Core Cuisines & Categories**: Iconic Heritage, Specialty Coffee & Cafe, Microbrewery, Pan-Asian & Japanese, Bakeries & Desserts, Cocktails & Rooftops, Regional & Coastal, Modern Indian & Dining, Street Food & Chaat.
   - **Price Tiers**:
     - `₹`: Pocket-Friendly (< ₹400 for two)
-    - `₹₹`: Casual Dining (₹400 – ₹1,000 for two)
-    - `₹₹₹`: Premium Craft & Specialty (₹1,000 – ₹2,500 for two)
+    - `₹₹`: Casual Dining (₹400 - ₹1,000 for two)
+    - `₹₹₹`: Premium Craft & Specialty (₹1,000 - ₹2,500 for two)
     - `₹₹₹₹`: Fine Dining & Luxury (₹2,500+ for two)
 - 🤝 **Community Suggestion Pipeline**:
   - Community members can recommend culinary gems with signature dishes, neighborhood tags, and Google Maps links.

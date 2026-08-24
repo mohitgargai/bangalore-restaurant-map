@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://blreats.com'),
-  title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
+  title: 'BLR // EATS | Curated Bangalore Food, Coffee & Brewery Map',
   description:
     'An interactive spatial guide to Bengaluru’s most iconic heritage eateries, craft microbreweries, specialty coffee bars, and cult dining gems.',
   keywords: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
+    title: 'BLR // EATS | Curated Bangalore Food, Coffee & Brewery Map',
     description:
       'Curated spatial guide to Bengaluru’s legendary breakfast institutions, artisanal roasters, craft breweries, and cult dining spots.',
     type: 'website',
@@ -71,13 +71,13 @@ export const metadata: Metadata = {
         url: 'https://blreats.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'BLR EATS — The Definitive Bengaluru Food & Brewery Compass',
+        alt: 'BLR EATS | Curated Bengaluru Food & Brewery Map',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BLR // EATS — The Definitive Bangalore Food, Coffee & Brewery Map',
+    title: 'BLR // EATS | Curated Bangalore Food, Coffee & Brewery Map',
     description:
       'Curated spatial guide to Bengaluru’s legendary breakfast institutions, artisanal roasters, craft breweries, and cult dining spots.',
     images: ['https://blreats.com/og-image.png'],
