@@ -29,12 +29,13 @@ export type Neighborhood =
   | 'Malleshwaram'
   | 'Basavanagudi'
   | 'HSR Layout'
+  | 'Bellandur & Ecoworld'
+  | 'Sarjapur Road'
   | 'Whitefield'
   | 'JP Nagar'
   | 'Jayanagar'
   | 'CBD & Central'
   | 'Sadashivanagar & Palace Grounds'
-  | 'Sarjapur Road'
   | 'Bel Road & North BLR';
 
 export const ALL_NEIGHBORHOODS: Neighborhood[] = [
@@ -45,12 +46,13 @@ export const ALL_NEIGHBORHOODS: Neighborhood[] = [
   'Malleshwaram',
   'Basavanagudi',
   'HSR Layout',
+  'Bellandur & Ecoworld',
+  'Sarjapur Road',
   'Whitefield',
   'JP Nagar',
   'Jayanagar',
   'CBD & Central',
   'Sadashivanagar & Palace Grounds',
-  'Sarjapur Road',
   'Bel Road & North BLR',
 ];
 

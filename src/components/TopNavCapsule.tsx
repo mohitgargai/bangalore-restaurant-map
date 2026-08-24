@@ -22,9 +22,11 @@ export const NEIGHBORHOOD_TILES: { id: Neighborhood | 'All'; label: string }[] =
   { id: 'Basavanagudi', label: 'Basavanagudi' },
   { id: 'Koramangala', label: 'Koramangala' },
   { id: 'HSR Layout', label: 'HSR Layout' },
+  { id: 'Bellandur & Ecoworld', label: 'Bellandur / Ecoworld' },
+  { id: 'Sarjapur Road', label: 'Sarjapur Rd' },
+  { id: 'Whitefield', label: 'Whitefield' },
   { id: 'Jayanagar', label: 'Jayanagar' },
   { id: 'Lavelle Road', label: 'Lavelle Road' },
-  { id: 'Whitefield', label: 'Whitefield' },
   { id: 'Bel Road & North BLR', label: 'North BLR' },
 ];
 

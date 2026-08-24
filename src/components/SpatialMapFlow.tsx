@@ -32,10 +32,12 @@ export const DISTRICT_MAP_CONFIG: {
   { id: 'Malleshwaram', label: 'Malleshwaram', lat: 12.9985, lng: 77.5708, zoom: 15 },
   { id: 'Basavanagudi', label: 'Basavanagudi', lat: 12.9455, lng: 77.5739, zoom: 15 },
   { id: 'Koramangala', label: 'Koramangala', lat: 12.9341, lng: 77.6256, zoom: 15 },
-  { id: 'Lavelle Road', label: 'Lavelle Road', lat: 12.9698, lng: 77.5997, zoom: 15 },
   { id: 'HSR Layout', label: 'HSR Layout', lat: 12.9118, lng: 77.6385, zoom: 15 },
+  { id: 'Bellandur & Ecoworld', label: 'Bellandur / Ecoworld', lat: 12.9258, lng: 77.6867, zoom: 15 },
+  { id: 'Sarjapur Road', label: 'Sarjapur Rd', lat: 12.9100, lng: 77.6800, zoom: 14 },
+  { id: 'Whitefield', label: 'Whitefield', lat: 12.9750, lng: 77.7350, zoom: 14 },
   { id: 'Jayanagar', label: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
-  { id: 'Whitefield', label: 'Whitefield', lat: 12.9818, lng: 77.7291, zoom: 14 },
+  { id: 'Lavelle Road', label: 'Lavelle Road', lat: 12.9698, lng: 77.5997, zoom: 15 },
   { id: 'Bel Road & North BLR', label: 'North BLR', lat: 13.0450, lng: 77.5850, zoom: 13 },
 ];
 
