@@ -32,6 +32,7 @@ export type Neighborhood =
   | 'Bellandur & Ecoworld'
   | 'Sarjapur Road'
   | 'Whitefield'
+  | 'Kalyan Nagar & Kammanahalli'
   | 'JP Nagar'
   | 'Jayanagar'
   | 'CBD & Central'
@@ -49,6 +50,7 @@ export const ALL_NEIGHBORHOODS: Neighborhood[] = [
   'Bellandur & Ecoworld',
   'Sarjapur Road',
   'Whitefield',
+  'Kalyan Nagar & Kammanahalli',
   'JP Nagar',
   'Jayanagar',
   'CBD & Central',
