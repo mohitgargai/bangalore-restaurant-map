@@ -19,10 +19,9 @@ function MapController({
 
   useEffect(() => {
     if (selectedRestaurant) {
-      // Subtle latitude offset (~150m south) so the focused pin rests perfectly in the visible canvas above the bottom carousel
-      const latOffset = 0.0018;
-      map.flyTo([selectedRestaurant.lat - latOffset, selectedRestaurant.lng], 17.5, {
-        duration: 1.1,
+      // Center directly on the restaurant coordinates
+      map.flyTo([selectedRestaurant.lat, selectedRestaurant.lng], 16.5, {
+        duration: 0.9,
         easeLinearity: 0.25,
       });
     }
