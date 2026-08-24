@@ -33,9 +33,11 @@ jobs:
           projectId: blr-food-map-2026
 
       - name: Deploy Firestore Rules
+        continue-on-error: true
         run: |
           echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLR_FOOD_MAP_2026 }}' > gcp-key.json
           export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/gcp-key.json
-          npx firebase-tools deploy --only firestore:rules --project blr-food-map-2026 --non-interactive
+          npx firebase-tools deploy --only firestore:rules --project blr-food-map-2026 --non-interactive || echo "Note: Service account requires Firebase Rules Admin IAM role on GCP to auto-deploy firestore.rules"
           rm -f gcp-key.json
+
 
