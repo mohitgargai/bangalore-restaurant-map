@@ -166,6 +166,9 @@ export default function SpatialMapFlow({
                       <img
                         src={restaurant.imageUrl}
                         alt={restaurant.name}
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80';
+                        }}
                         className="h-full w-full object-cover"
                       />
                       <span className="absolute bottom-1 left-1 rounded bg-black/60 px-1 py-0.2 text-[9px] font-semibold text-white backdrop-blur-xs">

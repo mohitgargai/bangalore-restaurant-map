@@ -27,7 +27,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Vidyarthi_Bhavan_Masala_Dosa.jpg",
     "googleMapsUrl": "https://www.google.com/maps/place/Vidyarthi+Bhavan/@12.9450345,77.5713723,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15f2e88ad035:0xed7fede7791f8edc!8m2!3d12.9450345!4d77.5713723!16s%2Fm%2F0hhrhzm?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:30 AM – 11:30 AM, 2:00 PM – 8:00 PM (Closed Fridays)",
     "curatorNote": "Watch the waiters perform their legendary stack balancing act carrying 20 plates of butter dosa at once.",
@@ -60,7 +60,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Benne_dosa.JPG",
     "googleMapsUrl": "https://www.google.com/maps/place/Central+Tiffin+Room/@12.9982327,77.5695395,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1625bc6a63f3:0x6941d824e3c07d0b!8m2!3d12.9982327!4d77.5695395!16s%2Fm%2F0gfdq9p?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Arrive before 8 AM on weekends to get a seat without waiting in the Margosa Road queue.",
@@ -94,7 +94,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hot_idly_at_veena_stores.jpg",
     "googleMapsUrl": "https://www.google.com/maps/place/Veena+Stores/@13.0056609,77.5693243,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae162eebc239d7:0x3f4b0c24f9bb719c!8m2!3d13.0056609!4d77.5693243!16s%2Fg%2F1td1hf9_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:30 AM – 12:00 PM, 3:30 PM – 9:00 PM",
     "curatorNote": "No sambar needed — the refreshing mint coconut chutney paired with pillow-soft idlis and hot crisp vadas is Malleshwaram breakfast at its peak.",
@@ -126,7 +126,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/dir/Umesh+Refreshments+(by+Umesh+Dosa+Point),+No:47,+Railway+Parallel+Rd,+4th+Block,+Kumara+Park+West,+Seshadripuram,+Bengaluru,+Karnataka+560020/Palace+Grounds,+10%2F7,+Kumara+Krupa+Road,+near+Chamara+Vajra,+Jayamahal,+Bengaluru,+Karnataka+560006/@13.0009241,77.5824606,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bae17007e834fdd:0x47edf8f2bcf538d8!2m2!1d77.5779842!2d12.9886914!1m5!1m1!1s0x3bae1649af3015bf:0xe68b7b517536e5d5!2m2!1d77.5872428!2d13.0041586?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 10:30 PM",
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
@@ -159,7 +159,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly",
       "Filter Coffee Spot"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Taaza+Thindi/@12.9228371,77.593274,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15a776da381b:0x5948b61bc4c0140a!8m2!3d12.9228371!4d77.593274!16s%2Fg%2F11b6vgdgpj?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 12:00 PM, 4:30 PM – 9:30 PM",
     "curatorNote": "World-class hygiene with automated dishwashers and incredible consistency. Their golden ghee masala dosa is top-tier in Bangalore.",
@@ -192,7 +192,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Brahmins'+Coffee+Bar/@12.9539725,77.568847,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15f0a35b8ae3:0xc02176d1e45cb964!8m2!3d12.9539725!4d77.568847!16s%2Fg%2F1tfk2wgm?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:00 AM – 12:00 PM, 3:00 PM – 7:00 PM (Closed Sundays evening)",
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
@@ -257,7 +257,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Dwarka/@12.9376662,77.5676709,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae158c001b1d45:0x4c1f091a8dfde839!8m2!3d12.9376662!4d77.5676709!16s%2Fg%2F1tf5j24f?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 12:30 PM, 3:30 PM – 8:30 PM",
     "curatorNote": "Reddit insider tip: Ask for the double butter Khali Dosa. It is pillow-soft and absorbs the soothing white coconut chutney.",
@@ -290,7 +290,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Puliyogare+Point/@12.9405837,77.5686576,18z/data=!4m10!1m2!2m1!1sPuliyogare+Point+81,+Bull+Temple+Rd+%26+East+Anjaneya+Temple+St,+NR+Colony,+Basavanagudi,+Bengaluru,+Karnataka+560004!3m6!1s0x3bae158cff9f95e3:0x569a49dd37af78ba!8m2!3d12.9406914!4d77.5704138!15sCnNQdWxpeW9nYXJlIFBvaW50IDgxLCBCdWxsIFRlbXBsZSBSZCAmIEVhc3QgQW5qYW5leWEgVGVtcGxlIFN0LCBOUiBDb2xvbnksIEJhc2F2YW5hZ3VkaSwgQmVuZ2FsdXJ1LCBLYXJuYXRha2EgNTYwMDA0WnAibnB1bGl5b2dhcmUgcG9pbnQgODEgYnVsbCB0ZW1wbGUgcmQgJiBlYXN0IGFuamFuZXlhIHRlbXBsZSBzdCBuciBjb2xvbnkgYmFzYXZhbmFndWRpIGJlbmdhbHVydSBrYXJuYXRha2EgNTYwMDA0kgEXc291dGhfaW5kaWFuX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F124yfs4d7?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 10:00 PM",
     "curatorNote": "The authentic blend of Melkote spices in the tamarind paste is unmatched in the city. Pair with sweet golden pongal.",
@@ -323,7 +323,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Shankara+Narayana+Refreshments+(S.+N.+Refreshments)/@12.908302,77.5871088,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1512f038fa13:0xec0d1aaf01dac46a!8m2!3d12.908302!4d77.5871088!16s%2Fg%2F1tjcmx3l?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:30 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Super fast counter service. Order two piping hot thatte idlis with extra red chutney and a crispy vada.",
@@ -387,7 +387,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Pet Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Only+Place/@12.973234,77.6034017,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167ea0024c85:0x34c750828e50715c!8m2!3d12.973234!4d77.6034017!16s%2Fg%2F1v6qg1pt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "An irreplaceable part of old Bangalore. Sit in the leafy garden courtyard and order the Chateaubriand steak followed by their legendary cinnamon-spiced apple pie.",
@@ -610,7 +610,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Sunnys+Restaurant/@12.9718487,77.5985968,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1679c3d5604d:0x7da0792c99257a34!8m2!3d12.9718487!4d77.5985968!16s%2Fg%2F1tfq7p18?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s earliest pet-friendly luxury dining bistros. The leafy veranda and classic Gorgonzola steak are exceptional.",
@@ -673,7 +673,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Paris+Panini+-+Gourmet+Sandwiches+%26+Wraps,+Indiranagar/@12.9702291,77.6390555,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1401e160415b:0xffb7ea557337d50c!8m2!3d12.9702291!4d77.6390555!16s%2Fg%2F11bx1j3fxr?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "Warm, crispy French baguettes loaded with melted artisanal cheeses and signature dips. The Jean panini with brie and fig jam is iconic.",
@@ -735,7 +735,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Work Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Kopitiam+Lah/@12.969909,77.6381174,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17007bc824f1:0x30c19d5310e88561!8m2!3d12.969909!4d77.6381174!16s%2Fg%2F11w4qd9hgs?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:30 AM – 10:30 PM",
     "curatorNote": "Reddit cult favorite for authentic Nanyang breakfast. The freshly toasted bread with thick slabs of cold butter and pandan kaya jam paired with dark soy runny eggs is unbeatable.",
@@ -766,7 +766,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Phobidden+Fruit+Vietnamese+Kitchen/@12.9699106,77.6396389,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a79ac22f77:0xef3290710970162!8m2!3d12.9699106!4d77.6396389!16s%2Fg%2F11b6gjjq12?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "A tranquil veranda setting with fragrant star anise and cinnamon infused Pho broths that warm the soul.",
@@ -799,7 +799,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Fatty+Bao/@12.9705121,77.6452835,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a9d8462d9f:0x380971d8bf0df28f!8m2!3d12.9705121!4d77.6452835!16s%2Fg%2F11b61p_hvt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM (Closed Mondays)",
     "curatorNote": "The open-air rooftop is one of Indiranagar’s best evening spots. The Char Siu pork belly bao with green apple kimchi is legendary.",
@@ -872,7 +872,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan/@12.9704057,77.642764,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1778cef99507:0x385ba9837ef6c8ae!8m2!3d12.9704057!4d77.642764!16s%2Fg%2F11fqz872k6?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Grab a counter seat by the revolving conveyor belt. Their translucent truffle edamame dumplings are exceptional.",
@@ -923,7 +923,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+Dim+Sum+and+Sushi+Parlour,+Bellandur/@12.9202886,77.6846386,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13007b02db37:0x47b7be25bc65ca18!8m2!3d12.9202886!4d77.6846386!16s%2Fg%2F11w22ndkvb?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "Great lunch and dinner spot right in RMZ EcoWorld with full conveyor belt setup.",
@@ -965,7 +965,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Mai+Mai+-+East+Asian+Restaurant/@12.9705628,77.6469723,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae178c64ff09a5:0xc6d5f51f94c6d468!8m2!3d12.9705628!4d77.6469723!16s%2Fg%2F11yhb8yq2z?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "A casual, flavor-packed Southeast Asian joint. The hand-pulled noodles with fiery Sichuan chilli crisp are comforting perfection.",
@@ -997,7 +997,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Baan+Phadthai+Indiranagar/@12.9698693,77.6377675,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17000efd5d1f:0x5db2769e683ff64a!8m2!3d12.9698693!4d77.6377675!16s%2Fg%2F11xld1lntx?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The 18-ingredient secret tamarind sauce brings authentic Bangkok Michelin street flavor to 12th Main Indiranagar.",
@@ -1028,7 +1028,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Misu+-+1Sobha+Mall/@12.9753968,77.6018481,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167922704d7b:0xed2697ec1eaf5cfc!8m2!3d12.9753968!4d77.6018481!16s%2Fg%2F11g7nw4_z0?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s most consistent and aesthetically pleasing Asian dining rooms.",
@@ -1060,7 +1060,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Pizza+4P's+Indiranagar/@12.9700194,77.6361483,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17320b4595d9:0x11e174808d27ae53!8m2!3d12.9700194!4d77.6361483!16s%2Fg%2F11l2hnk492?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Book in advance. The house-made fresh burrata cut open table-side over Neapolitan crust with wildflower honey is unbeatable.",
@@ -1092,7 +1092,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery+-+Indiranagar/@12.9701444,77.6447056,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a82da08f99:0x3ce7be42251d9745!8m2!3d12.9701444!4d77.6447056!16s%2Fg%2F11f22wqsh4?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "The 48-hour fermented sourdough crust has the perfect leopard-spotting and blistered air pockets. Do not skip the stuffed garlic bread.",
@@ -1144,7 +1144,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Brik+Oven+-+Woodfired+Pizzas+(Church+Street)/@12.974691,77.6054207,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167db60c8faf:0xccbea34d8ecbdb62!8m2!3d12.974691!4d77.6054207!16s%2Fg%2F11ckkwvbbp?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "11:30 AM – 11:00 PM",
     "curatorNote": "Ask for the off-menu hot honey drizzle on their pepperoni and burrata pies.",
@@ -1176,7 +1176,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1538488881522-4321453a99e3?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/LUPA/@12.975749,77.604619,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17975bc76cc1:0x35b2eb9bea244649!8m2!3d12.975749!4d77.604619!16s%2Fg%2F11tnvsd602?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 1:00 AM",
     "curatorNote": "Manu Chandra’s magnum opus on MG Road. Features an interactive salumeria, dedicated gelato lab, and subterranean wine cellar.",
@@ -1207,7 +1207,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Toast+%26+Tonic+Restaurant/@12.9669028,77.6087806,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae142abb919d95:0x787de55e8c379154!8m2!3d12.9669028!4d77.6087806!16s%2Fg%2F11cjvy5vrg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 12:30 AM",
     "curatorNote": "Every dish creatively honors indigenous Indian produce. Their house-infused botanical Gin cocktails are legendary.",
@@ -1332,7 +1332,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pure Veg",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/PHURR+%7C+Jayanagar/@12.9327482,77.5830067,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1500173b97d3:0x4efc04f1bf48c7e8!8m2!3d12.9327482!4d77.5830067!16s%2Fg%2F11y24rp3sg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 4:00 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
@@ -1364,7 +1364,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Karavalli+-+Vivanta+Bengaluru,+Residency+Road/@12.9724473,77.6086535,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167e46fb00e5:0x777b03419880fc1f!8m2!3d12.9724473!4d77.6086535!16s%2Fg%2F11b75nr421?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
@@ -1395,7 +1395,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Shivaji+Military+Hotel/@12.9180061,77.5739663,17z/data=!3m1!4b1!4m9!3m8!1s0x3bae1577040a6da9:0xc5a79a05c0719ce9!5m2!4m1!1i2!8m2!3d12.9180061!4d77.5739663!16s%2Fg%2F1tg9lkvb?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 3:30 PM (Closed Mondays)",
     "curatorNote": "Arrive by 12:30 PM for lunch. The green herbal masala Donne Biryani served in dried areca leaf bowls is peerless.",
@@ -1519,7 +1519,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Bengaluru+Oota+Company/@12.9722815,77.6259596,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae169e91f568b7:0x396d3aeb0d625780!8m2!3d12.9722815!4d77.6259596!16s%2Fg%2F11cnm651sb?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Advance Booking Required)",
     "curatorNote": "By reservation only. Intimate chef’s table dining preserving the authentic culinary heritage of Karnataka’s Bunt and Gowda families.",
@@ -1549,7 +1549,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Meghana+Foods+-+Koramangala/@12.9346561,77.6163528,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae144e2b85ad09:0xdb6361ebf5aa1898!8m2!3d12.9346561!4d77.6163528!16s%2Fg%2F1tflkwhq?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "The boneless special chicken biryani with its distinct red spiced chicken pieces and rice is an obsession across the city.",
@@ -1614,7 +1614,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Live Music / Vinyl",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Windmills+Craftworks+%5BWhitefield%5D/@12.9825325,77.7217732,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae118d2e8c9077:0x3813cdd59bf0816e!8m2!3d12.9825325!4d77.7217732!16s%2Fg%2F11g_sf1pd?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 12:00 AM",
     "curatorNote": "Arguably the finest microbrewery in India. Acoustic jazz performances paired with house-brewed stout are peerless.",
@@ -1741,7 +1741,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Bob's+Bar/@12.9671312,77.6411671,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae141d25a5ab49:0xf51d81396da23fd9!8m2!3d12.9671312!4d77.6411671!16s%2Fg%2F11f40zdt1s?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "11:30 AM – 1:00 AM",
     "curatorNote": "Pair their signature iced filter coffee cocktail with crispy fried tindli and Malnad pork fry on the open terrace.",
@@ -1804,7 +1804,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/SOKA+Cocktail+Bar/@12.965116,77.6383883,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e7ced2880b:0x29184d1c3a8b3bfd!8m2!3d12.965116!4d77.6383883!16s%2Fg%2F11vfbgd6d1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "5:00 PM – 1:00 AM (Reservations Essential)",
     "curatorNote": "Ranked among the premier cocktail bars in Asia. Features moving kinetic art sculptures, moody lighting, and genius cocktail precision.",
@@ -1837,7 +1837,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Live Music / Vinyl",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/ZLB+23+(The+Leela+Palace+Bengaluru)/@12.960325,77.648408,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae14067174ce31:0x94bf2c301bd03ab5!8m2!3d12.960325!4d77.648408!16s%2Fg%2F11xp6_z65n?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:30 PM – 1:00 AM (Closed Sundays)",
     "curatorNote": "Enter through the secret garden corridor. Velvet drapes, live vinyl jazz, and world-class mixology in complete discretion.",
@@ -1901,7 +1901,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Lavonne+Caf%C3%A9/@12.9668495,77.6368682,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae141dd14789a1:0x7119c0ddc5321683!8m2!3d12.9668495!4d77.6368682!16s%2Fg%2F11g6j718dy?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:30 AM – 11:00 PM",
     "curatorNote": "The gold standard of French pastry in South India. The layered almond croissants shatter with every buttery bite.",
@@ -2036,7 +2036,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Albert+Bakery/@12.9968598,77.6144109,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae159384a11481:0xa81f09db40615b24!8m2!3d12.9968598!4d77.6144109!16s%2Fg%2F1tdqrzqw?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "3:00 PM – 9:00 PM",
     "curatorNote": "Over 120 years of baking legacy on Mosque Road. The crispy mutton kheema samosas sell out within 45 minutes of the evening batch opening.",
@@ -2099,7 +2099,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pure Veg",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/VB+Bakery/@12.9515275,77.5771382,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15eee52b973d:0xe0da00f262995fc8!8m2!3d12.9515275!4d77.5771382!16s%2Fg%2F1tlwd2bw?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "6:00 AM – 10:30 PM",
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
@@ -2133,7 +2133,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Sri+Krishna+Bhavan/@12.9929953,77.5716992,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae162f8ff26221:0x199b57768552b29b!8m2!3d12.9929953!4d77.5716992!16s%2Fg%2F11hcjy302x?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:30 AM – 9:00 PM",
     "curatorNote": "The signature Green Masala Button Idli (mini idlis swimming in fragrant coriander-coconut curry) is uniquely New Krishna Bhavan.",
@@ -2163,7 +2163,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Mangalore+Pearl/@12.9908171,77.6192744,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16f3bb08b3d5:0xe8c68173e0df6f5e!8m2!3d12.9908171!4d77.6192744!16s%2Fg%2F1tfxwgfz?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Closed Tuesdays)",
     "curatorNote": "Pure coastal comfort food. The dark, aromatic spice-rubbed Pork Bafat paired with warm, fermented steamed Sannas is unmatched.",
@@ -2225,7 +2225,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Kannan+Building,+89,+Mahatma+Gandhi+Rd,+Haridevpur,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560001/@12.9758912,77.6038027,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167c5efdb1cb:0xc431d33637e91063!8m2!3d12.9758912!4d77.6038027!16s%2Fg%2F1q6j7h4d5?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "9:30 AM – 12:30 AM",
     "curatorNote": "A 95-year-old Bangalore late-night tradition. Park on MG Road and have sundaes served directly through your car window.",
@@ -2291,7 +2291,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Janatha/@12.9991156,77.5711405,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1625700de12f:0x6845035fa8bb08f8!8m2!3d12.9991156!4d77.5711405!16s%2Fg%2F11cssqvxl_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "7:00 AM – 1:00 PM, 3:30 PM – 8:30 PM (Closed Wednesdays)",
     "curatorNote": "A nostalgic step back into 1970s Malleshwaram. The Sagu Masala Dosa (filled with spiced vegetable sagu instead of aloo) is unmatched.",
@@ -2357,7 +2357,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Dyu+Art+Cafe/@12.9373076,77.6176544,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae144f0a0442f3:0x5cf634310edf27a8!8m2!3d12.9373076!4d77.6176544!16s%2Fg%2F1ydpv9q4x?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "10:00 AM – 10:30 PM (Mondays: 12:30 PM – 10:30 PM)",
     "curatorNote": "The bougainvillea-framed Kerala courtyard and decadent Banoffee pie make this one of the most soothing cafes in South India.",
@@ -2390,7 +2390,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly",
       "Breakfast Spot"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Maverick+%26+Farmer+Coffee/@12.9811186,77.6141313,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17c01ffda98f:0xe7dc5960d063b9d1!8m2!3d12.9811186!4d77.6141313!16s%2Fg%2F11s0wybsnq?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:30 AM – 11:00 PM",
     "curatorNote": "Direct from their Pollibetta estate in Coorg. The Cold Smoked Pour-Over on the wooden deck overlooking the grounds is a revelation.",
@@ -2421,7 +2421,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Fanoos/@12.9645418,77.6064884,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d4ddc84eb3:0xdf2585909e406805!8m2!3d12.9645418!4d77.6064884!16s%2Fg%2F1tfhdw2q?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "An undisputed Bangalore rite of passage. Ask for the legendary Jumbo Seekh Kabab Roll with extra spiced mint chutney.",
@@ -2451,7 +2451,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Fishland/@12.9754763,77.5785733,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae160e7a543d75:0xc441981b2fdb3de0!8m2!3d12.9754763!4d77.5785733!16s%2Fg%2F1pxqdkrsz",
     "timings": "11:30 AM – 4:00 PM, 7:00 PM – 10:30 PM",
     "curatorNote": "Old Bangalore’s finest coastal lunch. Pour the fiery Kundapur fish curry generously over boiled red rice alongside a crispy Anjal tawa fry.",
@@ -2482,7 +2482,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Harima+Japanese+Restaurant/@12.9674947,77.5999755,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16789d060117:0xe5acb38834d4722d!8m2!3d12.9674947!4d77.5999755!16s%2Fg%2F1tx45gts?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:00 PM, 6:00 PM – 11:00 PM",
     "curatorNote": "Bangalore’s original authentic Japanese room. Reserve a traditional tatami room for pristine sashimi and authentic hot pot.",
@@ -2512,7 +2512,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Matsuri/@12.975672,77.599217,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1793b99775a3:0xaf5edb67064e3332!8m2!3d12.975672!4d77.599217!16s%2Fg%2F11q8w38z9q?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 2:30 PM, 6:30 PM – 10:30 PM",
     "curatorNote": "The Katsudon (crispy pork cutlet simmered in sweet dashi with soft eggs over rice) is textbook authentic Japanese comfort food.",
@@ -2547,7 +2547,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company/@13.0707751,77.652177,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae199f21f56f63:0x6bd1c2c704dce57a!8m2!3d13.0707751!4d77.652177!16s%2Fg%2F11hc_2x6sb?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A monumental craft beer landmark. Grab a table by the illuminated lake for fresh Rauchbier and wood-fired sourdough pizza.",
@@ -2580,7 +2580,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Artisanal Sourdough"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe/@12.9851292,77.580686,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17fcd22cf3ab:0x47bde4537330aa2a!8m2!3d12.9851292!4d77.580686!16s%2Fg%2F11t529xrdt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:30 AM – 8:00 PM (Closed Mondays)",
     "curatorNote": "The definitive coffee lover's destination. Order a comparative tasting flight to experience terroir variations from different Indian roasters.",
@@ -2655,7 +2655,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Artisanal Sourdough"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Spettacolare/@12.9796029,77.6368187,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17e39dcafc91:0xb7f15dea6139a9ec!8m2!3d12.9796029!4d77.6368187!16s%2Fg%2F11kpzvhg2s?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:30 PM – 10:30 PM",
     "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
@@ -2717,7 +2717,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Kink+Speciality+Coffee/@12.9799508,77.6380991,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17001d475c25:0xec457ea8a36b279f!8m2!3d12.9799508!4d77.6380991!16s%2Fg%2F11vycr3ywc?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 10:00 PM",
     "curatorNote": "A sanctuary for coffee purists and matcha enthusiasts seeking uncompromising manual brewing craft.",
@@ -2758,7 +2758,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Smash+Guys+-+Burger+Kitchen,+Indiranagar/@12.9701923,77.6390325,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17007d96d779:0x92bd31b1c4b3a7ae!8m2!3d12.9701923!4d77.6390325!16s%2Fg%2F11x8zn2p5x?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 12:00 AM",
     "curatorNote": "The real deal for smash burgers. Crisp caramelized lace edges paired with squishy potato buns and secret house sauce.",
@@ -2800,7 +2800,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Beanlore+-+Indiranagar/@12.978686,77.643753,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1703a9f93541:0x4c4d67e03b6064e!8m2!3d12.978686!4d77.643753!16s%2Fg%2F11xw3x7bpy?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Excellent specialty coffee and one of the most comfortable laptop-friendly workspaces on CMH Road.",
@@ -2832,7 +2832,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Breakfast Spot"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Paper+%26+Pie/@12.9810313,77.6409712,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17ccea329e57:0x6ad67a28503b7a84!8m2!3d12.9810313!4d77.6409712!16s%2Fg%2F11q4d56bvl?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "A gorgeous convergence of specialty coffee, creative co-working, and elevated cafe comfort.",
@@ -2876,7 +2876,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Kind+Roastery+and+Brew+Room,+J.P+Nagar/@12.9105701,77.5895897,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1554c7d36d2d:0xa719fb753a3b9431!8m2!3d12.9105701!4d77.5895897!16s%2Fg%2F11s9jvkyvt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "South Bangalore’s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
@@ -2908,7 +2908,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program",
       "Work Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Circa+11/@12.9702618,77.6401843,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17bbd84a8061:0xce12bc7e01d26b5d!8m2!3d12.9702618!4d77.6401843!16s%2Fg%2F11xdxt40gf?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "9:00 AM – 4:00 PM (Cafe), 6:00 PM – 12:00 AM (Dining & Cocktails)",
     "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
@@ -2940,7 +2940,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Pet Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Yogisthaan/@12.9809695,77.6384095,17z/data=!4m9!3m8!1s0x3bae16bb3a6d4d75:0xe8ba050e1253c86b!5m2!4m1!1i2!8m2!3d12.9809695!4d77.6384095!16s%2Fg%2F11h171s66?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "8:00 AM – 9:30 PM",
     "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
@@ -3000,7 +3000,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough",
       "Breakfast Spot"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
     "timings": "7:30 AM – 11:00 PM",
     "curatorNote": "Roasting on-site with meticulous temperature and airflow profiling, Beanlore avoids the burnt, generic profiles of commercial cafe chains.",
     "isVegetarian": false,
@@ -3032,7 +3032,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=85",
     "timings": "6:30 AM – 10:30 PM",
     "curatorNote": "The aroma of pure clarified butter and freshly ground filter coffee draws massive crowds daily without ever dropping in speed or crunch quality.",
     "isVegetarian": true,
@@ -3064,7 +3064,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "Unlike gimmick concepts, Broadway’s theatrics are backed by exceptional seafood sourcing, razor-sharp knife skills, and authentic Japanese umami balance.",
     "isVegetarian": false,
@@ -3093,7 +3093,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:30 AM – 11:00 PM",
     "curatorNote": "The benchmark for authentic Kerala seafood in South Bangalore. Its Karimeen Pollichathu and slow-cooked Beef Fry have commanded dedicated weekend queues for years.",
     "isVegetarian": false,
@@ -3125,7 +3125,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "HSR’s undisputed microbrewery benchmark with high-ceiling koi pond seating and stellar small-batch Belgian Wit and seasonal fruit ciders.",
     "isVegetarian": false,
@@ -3156,7 +3156,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Outdoor Seating"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 6:30 PM – 10:30 PM",
     "curatorNote": "100% vegetarian yet celebrated even by hardcore carnivores. The Laphet Thoke (fermented tea leaf salad) and rich Khowsuey achieve world-class balance.",
     "isVegetarian": true,
@@ -3188,7 +3188,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Biergarten sets the golden standard for ambiance and beer consistency on ORR with its tree canopy and stellar Bavarian wheat brews.",
     "isVegetarian": false,
@@ -3220,7 +3220,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A monumental hospitality marvel. The massive water body and private cabana setup makes dining feel like a tropical resort rather than an urban tech corridor.",
     "isVegetarian": false,
@@ -3252,7 +3252,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Aurum avoids generic pub grub in favor of masterclass coastal Karnataka cooking—their Ghee Roasts, Anjal Fry, and soft Neer Dosas rival the best specialty Mangalorean restaurants in Bangalore.",
     "isVegetarian": false,
@@ -3283,7 +3283,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The quintessential Goan seafood sanctuary along Sarjapur Road. Its authentic use of palm toddy vinegar, triphala, kokum, and freshly stone-ground rechado paste delivers genuine coastal soul.",
     "isVegetarian": false,
@@ -3315,7 +3315,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Heritage (Pre-1980)"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "Universally recognized as the finest regional Karnataka fine dining institution in Bangalore. The combination of hyper-authentic home-style recipes with master-level execution makes it an indispensable cult gem.",
     "isVegetarian": false,
@@ -3347,7 +3347,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Sets the benchmark for high-capacity, top-quality craft brewing in Whitefield alongside Windmills, maintaining unwavering consistency in both brew clarity and kitchen output.",
     "isVegetarian": false,
@@ -3378,7 +3378,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly",
       "Breakfast Spot"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
     "timings": "8:00 AM – 10:00 PM",
     "curatorNote": "In a tech corridor flooded with mass-market bakery chains, WBC stands out by delivering genuine five-star French viennoiserie, entremet artistry, and sourdough bread of international benchmark quality.",
     "isVegetarian": false,
@@ -3410,7 +3410,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Red Rhino brings serious craft brewing discipline and standout food that punches way above typical pub standards on the Seegehalli/Kadugodi side of Whitefield.",
     "isVegetarian": false,
@@ -3441,7 +3441,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "Orzuv delivers a transportive culinary experience in Whitefield, faithfully preserving ancient slow-cooked Wazwan traditions, authentic Kahwa, and fresh tandoor Kandur breads.",
     "isVegetarian": false,
@@ -3473,7 +3473,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Pet Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "One of the most unique physical dining spaces in Bangalore; it transports guests into a European village while maintaining solid craft beer and stone-hearth pizza standards.",
     "isVegetarian": false,
@@ -3502,7 +3502,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:30 AM – 3:30 PM, 6:00 PM – 10:30 PM",
     "curatorNote": "Refuses to dilute traditional Korean spice or fermentation for local palates. The tabletop grill ritual and pungent house-fermented kimchi banchan are peerless.",
     "isVegetarian": false,
@@ -3531,7 +3531,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 6:00 PM – 10:00 PM",
     "curatorNote": "The master of daily Korean comfort food. Gentle home-style broth preparations and crisp, made-to-order gimbap make this one of the city’s most honest dining rooms.",
     "isVegetarian": false,
@@ -3560,7 +3560,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "Unlike generic restaurants using tamarind substitutes, The Coorg Food Co. uses authentic wood-smoked Kachampuli and ancestral roasting methods.",
     "isVegetarian": false,
@@ -3590,7 +3590,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "vibeTags": [
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The original flagship maintains superior tandoor mastery and smoky charcoal profiling that modern franchised outlets rarely replicate.",
     "isVegetarian": false,
@@ -3620,7 +3620,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:00 AM – 1:00 AM",
     "curatorNote": "Decades of uncompromised garlic toum mastery and legendary late-night consistency make this an immortal Kammanahalli street legend.",
     "isVegetarian": false,
@@ -3652,7 +3652,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The uncontested craft brewery champion of Kalyan Nagar. Brewmaster precision ensures their Belgian Wits and seasonal IPAs stay true-to-style without off-flavors.",
     "isVegetarian": false,
@@ -3684,7 +3684,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "The mandatory closing chapter of any VV Puram food trail. The textural contrast between floral chewy gulkand, dense malai cream, and fresh butter is magical.",
     "isVegetarian": true,
@@ -3715,7 +3715,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly",
       "Heritage (Pre-1980)"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",
     "timings": "9:00 AM – 10:30 PM",
     "curatorNote": "Transformed a local seasonal bean into an immortal Bangalore cultural identity. Exceptional freshness and crunchy legume textures without artificial preservatives.",
     "isVegetarian": true,
@@ -3745,7 +3745,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Heritage (Pre-1980)",
       "Pocket Friendly"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=85",
     "timings": "11:30 AM – 4:00 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "While modern chains diluted traditional Andhra heat, Navayuga preserves the unapologetic, green-chilli scorched purity of 1980s Gandhinagar dining.",
     "isVegetarian": false,
@@ -3779,7 +3779,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Pairs its breathtaking retractable glass-roof architecture with genuine brewing integrity and a kitchen that treats European and Pan-Asian recipes with equal precision.",
     "isVegetarian": false,
@@ -3811,7 +3811,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:30 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The undisputed high-water mark for Japanese and modern Pan-Asian fine dining in North Bangalore. World-class robata grilling and omakase sashimi.",
     "isVegetarian": false,
@@ -3843,7 +3843,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic",
       "Cocktail Program"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Proves that monumental architectural scale does not have to sacrifice culinary craftsmanship—delivering one of the most stunning open-air dining atmospheres in South India.",
     "isVegetarian": false,
@@ -3879,7 +3879,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly",
       "Late Night"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company+-+Sarjapur/@12.9134,77.6836,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae14878a9c4021:0x4d59a2a9ca173200!8m2!3d12.9134!4d77.6836!16s%2Fg%2F11b6_c8d20",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The amphitheater koi pond setting remains an architectural marvel. The smoke-infused craft beer and coastal ghee roast dishes are consistently exceptional.",
@@ -3910,7 +3910,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating",
       "Romantic"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85",
     "googleMapsUrl": "https://www.google.com/maps/place/Street+1522+Carmelaram/@12.9025,77.7015,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae139265f24259:0x89c4d96a7989eb20!8m2!3d12.9025!4d77.7015!16s%2Fg%2F11t7l6z7m9",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Brings genuine Neapolitan high-hydration sourdough fermentation and fresh fior di latte to the Sarjapur/Carmelaram residential corridor.",
