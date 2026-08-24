@@ -175,8 +175,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
     "address": "Pushp Kiran, 19, Ranga Rao Rd, Shankarapura, Bengaluru, Karnataka 560004, India",
-    "lat": 12.9519,
-    "lng": 77.5689696,
+    "lat": 12.9539725,
+    "lng": 77.568847,
     "priceLevel": "₹",
     "priceForTwo": "₹150",
     "mustTry": [
@@ -193,7 +193,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/brahmins-coffee-bar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=12729622391243257403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=13844621949168171364",
     "timings": "6:00 AM – 12:00 PM, 3:00 PM – 7:00 PM (Closed Sundays evening)",
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
     "isVegetarian": true,
@@ -909,37 +909,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     ]
   },
   {
-    "id": "mai-mai-indiranagar",
-    "name": "Mai Mai",
-    "slug": "mai-mai-indiranagar",
-    "tagline": "Vibrant Southeast Asian street eats, hand-pulled noodles & boba",
-    "description": "A vibrant neon-lit street food diner on Indiranagar 12th Main serving hearty Dan Dan noodles, Taiwanese braised pork bowls, juicy dumplings, and bubble teas.",
-    "category": "Pan-Asian & Japanese",
-    "neighborhood": "Indiranagar",
-    "address": "IndiQube Symphony, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-    "lat": 12.9732112,
-    "lng": 77.614641,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹900",
-    "mustTry": [
-      "Hand-Pulled Dan Dan Noodles",
-      "Lu Rou Fan (Braised Pork Bowl)",
-      "Crispy Chilli Oil Wontons",
-      "Taiwanese Fried Chicken",
-      "Taro Boba Tea"
-    ],
-    "vibeTags": [
-      "Late Night",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "/images/restaurants/mai-mai-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=5555705537854708184&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "timings": "12:00 PM – 11:30 PM",
-    "curatorNote": "A casual, flavor-packed Southeast Asian joint. The hand-pulled noodles with fiery Sichuan chilli crisp are comforting perfection.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "baan-phadthai-indiranagar",
     "name": "Baan Phadthai",
     "slug": "baan-phadthai-indiranagar",
@@ -1304,37 +1273,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=8609478692915182623&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "shivaji-military-hotel-jayanagar",
-    "name": "Shivaji Military Hotel",
-    "slug": "shivaji-military-hotel-jayanagar",
-    "tagline": "Wood-fired Maratha Mutton Donne Biryani since 1924",
-    "description": "A centenarian Bangalore institution in Jayanagar famed for wood-fire cooked Seeraga Samba mutton Donne Biryani, fiery mutton chops, and mutton dry.",
-    "category": "Regional & Coastal",
-    "neighborhood": "Jayanagar",
-    "address": "718, 1st C, Main, 45th Cross Rd, 8th Block, Jayanagar, Bengaluru, Karnataka 560070, India",
-    "lat": 12.9180061,
-    "lng": 77.5739663,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹600",
-    "mustTry": [
-      "Mutton Donne Biryani",
-      "Mutton Chops Dry",
-      "Chicken Leg Fry",
-      "Mutton Liver Fry"
-    ],
-    "vibeTags": [
-      "Heritage (Pre-1980)",
-      "Late Night",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "/images/restaurants/shivaji-military-hotel-jayanagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=14242521696076668137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "timings": "8:00 AM – 3:30 PM (Closed Mondays)",
-    "curatorNote": "Arrive by 12:30 PM for lunch. The green herbal masala Donne Biryani served in dried areca leaf bowls is peerless.",
     "isVegetarian": false,
     "verified": true
   },
@@ -2300,37 +2238,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "fanoos-richmond-town",
-    "name": "Fanoos",
-    "slug": "fanoos-richmond-town",
-    "tagline": "The 1975 creator of Bangalore’s legendary Jumbo Seekh Kabab rolls",
-    "description": "A legendary Cantonment institution at Johnson Market since 1975 that pioneered Bangalore’s late-night kebab roll scene, famous for charcoal-grilled beef and mutton seekh kebabs rolled inside flaky parottas.",
-    "category": "Regional & Coastal",
-    "neighborhood": "CBD & Central",
-    "address": "17, Hosur Rd, Richmond Town, Bengaluru, Karnataka 560025, India",
-    "lat": 12.9645418,
-    "lng": 77.6064884,
-    "priceLevel": "₹",
-    "priceForTwo": "₹400",
-    "mustTry": [
-      "Jumbo Beef Seekh Roll",
-      "Mutton Seekh Parotta Roll",
-      "Mogambo Roll",
-      "Charcoal Grilled Seekh Kebabs",
-      "Beef Shawarma"
-    ],
-    "vibeTags": [
-      "Late Night",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "/images/restaurants/fanoos-richmond-town.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=16079404900773029893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "timings": "12:00 PM – 11:30 PM",
-    "curatorNote": "An undisputed Bangalore rite of passage. Ask for the legendary Jumbo Seekh Kabab Roll with extra spiced mint chutney.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "hotel-fishland-gandhinagar",
     "name": "Hotel Fishland",
     "slug": "hotel-fishland-gandhinagar",
@@ -2966,35 +2873,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
-    "id": "kumarakom-restaurant-hsr",
-    "name": "Kumarakom Restaurant",
-    "slug": "kumarakom-restaurant-hsr",
-    "tagline": "The gold standard for banana-leaf Karimeen Pollichathu & flaky Malabar parottas",
-    "description": "An uncompromising bastion of traditional God’s Own Country flavors in HSR. Kumarakom focuses strictly on heritage backwater seafood, Malabar spice blends, slow-braised meats, and lacy appams.",
-    "category": "Regional & Coastal",
-    "neighborhood": "HSR Layout",
-    "address": "560102, 47, ground floor, 18th Main Rd, near mustard food court, behind sai baba temble, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India",
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹800",
-    "mustTry": [
-      "Karimeen Pollichathu in Banana Leaf",
-      "Kerala Beef Fry (Ularthiyathu)",
-      "Flaky Malabar Parotta with Kozhi Stew",
-      "Crisp Netholi Fry"
-    ],
-    "vibeTags": [
-      "Pocket Friendly"
-    ],
-    "imageUrl": "/images/restaurants/kumarakom-restaurant-hsr.jpg",
-    "timings": "11:30 AM – 11:00 PM",
-    "curatorNote": "The benchmark for authentic Kerala seafood in South Bangalore. Its Karimeen Pollichathu and slow-cooked Beef Fry have commanded dedicated weekend queues for years.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 12.910656399999999,
-    "lng": 77.644305,
-    "googleMapsUrl": "https://maps.google.com/?cid=944951252737466597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-  },
-  {
     "id": "blr-brewing-co-hsr",
     "name": "BLR Brewing Co.",
     "slug": "blr-brewing-co-hsr",
@@ -3438,38 +3316,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
-    "id": "shivanna-gulkand-center-vv-puram",
-    "name": "Shivanna Gulkand Center",
-    "slug": "shivanna-gulkand-center-vv-puram",
-    "tagline": "The 1960s pioneer of sun-ripened Damascus Rose Jam, butter fruit & malai ice cream",
-    "description": "Founded in the late 1960s on Thindi Beedi (VV Puram Food Street), this modest dessert counter pioneered Bangalore’s post-dinner street ritual. Sun-cured rose petal gulkand layered with seasonal avocado/fruits, rich malai ice cream, and fresh white butter.",
-    "category": "Bakeries & Desserts",
-    "neighborhood": "Basavanagudi",
-    "address": "XH2H+953, Food St, Vishweshwarapura, Basavanagudi, Bengaluru, Karnataka 560004, India",
-    "priceLevel": "₹",
-    "priceForTwo": "₹200",
-    "mustTry": [
-      "Special Gulkand with Ice Cream, Butter & Fruits",
-      "Butter Fruit (Avocado) Gulkand",
-      "Dry Fruit Gulkand",
-      "Masala Soda"
-    ],
-    "vibeTags": [
-      "Heritage (Pre-1980)",
-      "Pure Veg",
-      "Pocket Friendly",
-      "Late Night"
-    ],
-    "imageUrl": "/images/restaurants/shivanna-gulkand-center-vv-puram.jpg",
-    "timings": "11:00 AM – 11:30 PM",
-    "curatorNote": "The mandatory closing chapter of any VV Puram food trail. The textural contrast between floral chewy gulkand, dense malai cream, and fresh butter is magical.",
-    "isVegetarian": true,
-    "verified": true,
-    "lat": 12.950895,
-    "lng": 77.57793,
-    "googleMapsUrl": "https://maps.google.com/?cid=6835239440921208183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-  },
-  {
     "id": "shri-vasavi-condiments-vv-puram",
     "name": "Shri Vasavi Condiments",
     "slug": "shri-vasavi-condiments-vv-puram",
@@ -3623,38 +3469,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=9498297626579843953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "Preserves the authentic, soulful identity of old Bangalore pub culture: great music, unpretentious hospitality, and phenomenal, fiery coastal bar bites.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "vapour-sarjapur-road",
-    "name": "Vapour Brewpub & Diner",
-    "slug": "vapour-sarjapur-road",
-    "tagline": "Panoramic 7th-floor rooftop microbrewery with sunset views & fresh house craft ales",
-    "description": "Perched on the 7th floor of Bren Mercury overlooking Sarjapur Road, Vapour provides unobstructed skyline views, a breezy sunset alfresco deck, and fresh house craft brews paired with global pub favorites.",
-    "category": "Microbrewery",
-    "neighborhood": "Sarjapur Road",
-    "address": "7th Bren Mercury, Sarjapur - Marathahalli Rd, Above Reliance Digital, Kaikondrahalli, Bengaluru, Karnataka 560035, India",
-    "lat": 12.9143406,
-    "lng": 77.6773528,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,900",
-    "mustTry": [
-      "Vapour Premium Basmati Blonde & Belgian Wheat",
-      "Peri Peri Chicken Skewers",
-      "Crispy Water Chestnut Pepper Salt",
-      "Wood-Fired Thin Crust Pizza"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Rooftop",
-      "Outdoor Seating",
-      "Cocktail Program"
-    ],
-    "imageUrl": "/images/restaurants/vapour-sarjapur-road.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=1081693574943481649&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "The premier high-altitude rooftop brewpub on Sarjapur Road. Ideal for golden hour beers when the Bangalore breeze kicks in.",
     "isVegetarian": false,
     "verified": true
   },
@@ -3984,36 +3798,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "samarkand-infantry-road",
-    "name": "Samarkand",
-    "slug": "samarkand-infantry-road",
-    "tagline": "Timeless Northwest Frontier & Peshawari feast with open glass tandoors & Gosht Rogan Josh",
-    "description": "A beloved 20-year-old culinary landmark on Infantry Road styled after an ancient Silk Route caravanserai. Features floor-to-ceiling glass show-kitchens where master ustads bake massive karari rotis and simmer rich Peshawari gravies.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "CBD & Central",
-    "address": "XJJ3+5V6, Infantry Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India",
-    "lat": 12.9804145,
-    "lng": 77.6046558,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹2,200",
-    "mustTry": [
-      "Giant Karari Roti Drizzled with Spiced Ghee",
-      "Gosht Rogan Josh simmered on dum",
-      "Dahi Ke Kebab & Galouti Kebab",
-      "Bukhara Style Sikandari Raan",
-      "Zafrani Phirni in Clay Pots"
-    ],
-    "vibeTags": [
-      "Romantic"
-    ],
-    "imageUrl": "/images/restaurants/samarkand-infantry-road.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=15808207267325522356&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
-    "curatorNote": "The massive dome of spiced Karari Roti shattered at the table and the fork-tender Gosht Rogan Josh are eternal Bangalore classics.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "hotel-empire-shivajinagar",
     "name": "Hotel Empire",
     "slug": "hotel-empire-shivajinagar",
@@ -4054,8 +3838,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
     "address": "J.K. Plaza, 788, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
-    "lat": 12.9700721,
-    "lng": 77.6407854,
+    "lat": 12.9789975,
+    "lng": 77.6405322,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -4068,7 +3852,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/magnolia-bakery-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=5209316405023334367&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=12140656093557945037",
     "timings": "10:00 AM – 11:30 PM",
     "curatorNote": "The Classic Banana Pudding (layers of creamy vanilla pudding, Nilla wafers, and fresh bananas) is a global icon executed to perfection on 100 Feet Road.",
     "isVegetarian": true,

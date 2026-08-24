@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "brahmins-coffee-bar",
+    "name": "Brahmins' Coffee Bar",
+    "neighborhood": "Basavanagudi",
+    "category": "Iconic Heritage",
+    "rating": 0,
+    "reviewCount": 0,
+    "status": "UNKNOWN",
+    "address": "Pushp Kiran, 19, Ranga Rao Rd, Shankarapura, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "magnolia-bakery-indiranagar",
+    "name": "Magnolia Bakery",
+    "neighborhood": "Indiranagar",
+    "category": "Bakeries & Desserts",
+    "rating": 0,
+    "reviewCount": 0,
+    "status": "UNKNOWN",
+    "address": "J.K. Plaza, 788, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "shivanna-gulkand-center-vv-puram",
+    "name": "Shivanna Gulkand Center",
+    "neighborhood": "Basavanagudi",
+    "category": "Bakeries & Desserts",
+    "rating": 3.2,
+    "reviewCount": 440,
+    "status": "OPERATIONAL",
+    "address": "XH2H+953, Food St, Vishweshwarapura, Basavanagudi, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "koshys-st-marks-road",
+    "name": "Koshy's Parade Cafe",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Iconic Heritage",
+    "rating": 3.8,
+    "reviewCount": 10520,
+    "status": "OPERATIONAL",
+    "address": "39, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "shivaji-military-hotel-jayanagar",
+    "name": "Shivaji Military Hotel",
+    "neighborhood": "Jayanagar",
+    "category": "Regional & Coastal",
+    "rating": 3.8,
+    "reviewCount": 24638,
+    "status": "OPERATIONAL",
+    "address": "718, 1st C, Main, 45th Cross Rd, 8th Block, Jayanagar, Bengaluru, Karnataka 560070, India"
+  },
+  {
+    "id": "kumarakom-restaurant-hsr",
+    "name": "Kumarakom Restaurant",
+    "neighborhood": "HSR Layout",
+    "category": "Regional & Coastal",
+    "rating": 3.8,
+    "reviewCount": 3820,
+    "status": "OPERATIONAL",
+    "address": "560102, 47, ground floor, 18th Main Rd, near mustard food court, behind sai baba temble, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India"
+  },
+  {
+    "id": "ranganna-military-jayanagar",
+    "name": "Ranganna Military Hotel",
+    "neighborhood": "Jayanagar",
+    "category": "Regional & Coastal",
+    "rating": 3.9,
+    "reviewCount": 11177,
+    "status": "OPERATIONAL",
+    "address": "1st floor, 61, Krishna Rajendra Rd, opposite Indian oil petroleum, 7th Block, Jayanagar, Bengaluru, Karnataka 560070, India"
+  },
+  {
+    "id": "fanoos-richmond-town",
+    "name": "Fanoos",
+    "neighborhood": "CBD & Central",
+    "category": "Regional & Coastal",
+    "rating": 3.9,
+    "reviewCount": 6330,
+    "status": "OPERATIONAL",
+    "address": "17, Hosur Rd, Richmond Town, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "arirang-korean-kammanahalli",
+    "name": "Arirang Korean Restaurant",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Pan-Asian & Japanese",
+    "rating": 3.9,
+    "reviewCount": 1398,
+    "status": "OPERATIONAL",
+    "address": "13 N.K Enclave Building, 4th Cross, Kammanahalli Main Rd, Chinnappa Layout, Sena Vihar, Kammanahalli, Bengaluru, Karnataka 560043, India"
+  },
+  {
+    "id": "janatha-hotel-malleshwaram",
+    "name": "Janatha Hotel",
+    "neighborhood": "Malleshwaram",
+    "category": "Iconic Heritage",
+    "rating": 4,
+    "reviewCount": 3858,
+    "status": "OPERATIONAL",
+    "address": "162, 8th Cross Rd, Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka 560003, India"
+  },
+  {
+    "id": "hotel-fishland-gandhinagar",
+    "name": "Hotel Fishland",
+    "neighborhood": "CBD & Central",
+    "category": "Regional & Coastal",
+    "rating": 4,
+    "reviewCount": 2450,
+    "status": "OPERATIONAL",
+    "address": "1st Cross Rd, Gandhi Nagar, Bengaluru, Karnataka 560009, India"
+  },
+  {
+    "id": "mtr-lalbagh",
+    "name": "Mavalli Tiffin Room (MTR 1924)",
+    "neighborhood": "Basavanagudi",
+    "category": "Iconic Heritage",
+    "rating": 4.1,
+    "reviewCount": 9457,
+    "status": "OPERATIONAL",
+    "address": "29, Ground Floor, White House, St Mark's Rd, opposite SBI HQ, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "rameshwaram-cafe-indiranagar",
+    "name": "The Rameshwaram Cafe",
+    "neighborhood": "Indiranagar",
+    "category": "Iconic Heritage",
+    "rating": 4.1,
+    "reviewCount": 16915,
+    "status": "OPERATIONAL",
+    "address": "27, Dr Rajkumar Rd, Milk Colony, Subramanyanagar,2 State, Malleshwaram, Bengaluru, Karnataka 560021, India"
+  },
+  {
+    "id": "sunnys-lavelle-road",
+    "name": "Sunny's",
+    "neighborhood": "Lavelle Road",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.1,
+    "reviewCount": 2424,
+    "status": "OPERATIONAL",
+    "address": "50, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "naru-noodle-bar",
+    "name": "Naru Noodle Bar",
+    "neighborhood": "CBD & Central",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.1,
+    "reviewCount": 1163,
+    "status": "OPERATIONAL",
+    "address": "105, Kengal Hanumanthaiah Rd, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India"
+  },
+  {
+    "id": "mai-mai-indiranagar",
+    "name": "Mai Mai",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.1,
+    "reviewCount": 37,
+    "status": "OPERATIONAL",
+    "address": "IndiQube Symphony, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "glens-bakehouse-lavelle",
+    "name": "Glen's Bakehouse",
+    "neighborhood": "Lavelle Road",
+    "category": "Bakeries & Desserts",
+    "rating": 4.1,
+    "reviewCount": 4980,
+    "status": "OPERATIONAL",
+    "address": "275/A, 9th Main Rd, near Jesus Call, 5th Block, Jayanagar, Bengaluru, Karnataka 560041, India"
+  },
+  {
+    "id": "vb-bakery-vv-puram",
+    "name": "VB Bakery",
+    "neighborhood": "Basavanagudi",
+    "category": "Bakeries & Desserts",
+    "rating": 4.1,
+    "reviewCount": 5142,
+    "status": "OPERATIONAL",
+    "address": "20, Sajjan Rao Cir, Vishweshwarapura, Shankarapura, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "lakeview-milkbar-mg-road",
+    "name": "Lakeview Milkbar",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Bakeries & Desserts",
+    "rating": 4.1,
+    "reviewCount": 12346,
+    "status": "OPERATIONAL",
+    "address": "Kannan Building, 89, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "siddappa-hotel-sampangi-rama-nagar",
+    "name": "Siddappa Hotel",
+    "neighborhood": "CBD & Central",
+    "category": "Iconic Heritage",
+    "rating": 4.1,
+    "reviewCount": 4343,
+    "status": "OPERATIONAL",
+    "address": "NO: 38, 7th Main Rd, Ashwath Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560027, India"
+  },
+  {
+    "id": "beanlore-coffee",
+    "name": "Beanlore Coffee Roasters",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.1,
+    "reviewCount": 1171,
+    "status": "OPERATIONAL",
+    "address": "503, Chinmaya Mission Hospital Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "the-coorg-food-co-kalyan-nagar",
+    "name": "The Coorg Food Co.",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Regional & Coastal",
+    "rating": 4.1,
+    "reviewCount": 1402,
+    "status": "OPERATIONAL",
+    "address": "2nd Floor, Masand Esquire, Hennur Main Rd, HRBR Layout 3rd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India"
+  },
+  {
+    "id": "vapour-sarjapur-road",
+    "name": "Vapour Brewpub & Diner",
+    "neighborhood": "Sarjapur Road",
+    "category": "Microbrewery",
+    "rating": 4.1,
+    "reviewCount": 18309,
+    "status": "OPERATIONAL",
+    "address": "7th Bren Mercury, Sarjapur - Marathahalli Rd, Above Reliance Digital, Kaikondrahalli, Bengaluru, Karnataka 560035, India"
+  },
+  {
+    "id": "vidyarthi-bhavan",
+    "name": "Vidyarthi Bhavan",
+    "neighborhood": "Basavanagudi",
+    "category": "Iconic Heritage",
+    "rating": 4.2,
+    "reviewCount": 58379,
+    "status": "OPERATIONAL",
+    "address": "32, Gandhi Bazaar Main Rd, Gandhi Bazaar, Basavanagudi, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "puliyogare-point-basavanagudi",
+    "name": "Puliyogare Point",
+    "neighborhood": "Basavanagudi",
+    "category": "Iconic Heritage",
+    "rating": 4.2,
+    "reviewCount": 6573,
+    "status": "OPERATIONAL",
+    "address": "81, E Anjaneya Temple St, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "the-only-place-museum-road",
+    "name": "The Only Place",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Iconic Heritage",
+    "rating": 4.2,
+    "reviewCount": 8802,
+    "status": "OPERATIONAL",
+    "address": "13, Museum Rd, next to Post Office, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "the-craftery-by-subko",
+    "name": "The Craftery by Subko",
+    "neighborhood": "Koramangala",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.2,
+    "reviewCount": 1331,
+    "status": "OPERATIONAL",
+    "address": "No. 374, No. 68, BBMP PID, 2-374, 3rd Block, Santhosapuram, situated at, Koramangala, Bengaluru, Karnataka 560034, India"
+  },
+  {
+    "id": "araku-coffee",
+    "name": "Araku Coffee Flagship",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.2,
+    "reviewCount": 78,
+    "status": "OPERATIONAL",
+    "address": "Ground Floor, Sobha Alexander Plaza, Commissariat Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "one-five-four-breakfast-club",
+    "name": "154 Breakfast Club",
+    "neighborhood": "Koramangala",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.2,
+    "reviewCount": 5550,
+    "status": "OPERATIONAL",
+    "address": "No. 440, 2nd Floor, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034, India"
+  },
+  {
+    "id": "kopitiam-lah-indiranagar",
+    "name": "Kopitiam Lah",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.2,
+    "reviewCount": 1769,
+    "status": "OPERATIONAL",
+    "address": "Ground Floor, 1088, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "the-biere-club-lavelle",
+    "name": "The Biere Club",
+    "neighborhood": "Lavelle Road",
+    "category": "Microbrewery",
+    "rating": 4.2,
+    "reviewCount": 16740,
+    "status": "OPERATIONAL",
+    "address": "20/2, Vittal Mallya Rd, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "bobs-bar-indiranagar",
+    "name": "Bob's Bar",
+    "neighborhood": "Indiranagar",
+    "category": "Microbrewery",
+    "rating": 4.2,
+    "reviewCount": 20839,
+    "status": "OPERATIONAL",
+    "address": "777/I, 100 Feet Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "albert-bakery-frazer-town",
+    "name": "Albert Bakery",
+    "neighborhood": "CBD & Central",
+    "category": "Bakeries & Desserts",
+    "rating": 4.2,
+    "reviewCount": 4009,
+    "status": "OPERATIONAL",
+    "address": "93, Mosque Rd, Cleveland Town, Fraser Town, Bengaluru, Karnataka 560005, India"
+  },
+  {
+    "id": "hae-kum-gang-ashok-nagar",
+    "name": "Hae Kum Gang",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.2,
+    "reviewCount": 2627,
+    "status": "OPERATIONAL",
+    "address": "No. 20, 2nd Floor, Paul Castle, Castle St, near Brigade Tower, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "concu-patisserie-indiranagar",
+    "name": "Conçu Patisserie & Cafe",
+    "neighborhood": "Indiranagar",
+    "category": "Bakeries & Desserts",
+    "rating": 4.2,
+    "reviewCount": 1583,
+    "status": "OPERATIONAL",
+    "address": "1089/A, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "paper-and-pie-indiranagar",
+    "name": "Paper & Pie",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.2,
+    "reviewCount": 2038,
+    "status": "OPERATIONAL",
+    "address": "Metro Pillar Number 55, 842/A, 100 Feet Rd, Indira Nagar 1st Stage, H Colony, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "yogisthaan-cafe-indiranagar",
+    "name": "Yogisthaan Cafe",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.2,
+    "reviewCount": 3792,
+    "status": "OPERATIONAL",
+    "address": "89, 11th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "broadway-gourmet-theatre-hsr",
+    "name": "Broadway – The Gourmet Theatre",
+    "neighborhood": "HSR Layout",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.2,
+    "reviewCount": 2347,
+    "status": "OPERATIONAL",
+    "address": "4th Floor, 2802, 27th Main Rd, Agara Village, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India"
+  },
+  {
+    "id": "the-fishermans-wharf-sarjapur",
+    "name": "The Fisherman's Wharf",
+    "neighborhood": "Sarjapur Road",
+    "category": "Regional & Coastal",
+    "rating": 4.2,
+    "reviewCount": 22087,
+    "status": "OPERATIONAL",
+    "address": "FWB- #26, Opp. Shub Enclave Harulur Road, Ambalipura Village, Varthur, Hobli, Off Sarjapur Rd, RT Nagar, PWD Quarters, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India"
+  },
+  {
+    "id": "red-rhino-whitefield",
+    "name": "Red Rhino - Craft Brewery & Inspired Kitchen",
+    "neighborhood": "Whitefield",
+    "category": "Microbrewery",
+    "rating": 4.2,
+    "reviewCount": 13956,
+    "status": "OPERATIONAL",
+    "address": "4th Floor, Uptown Square, Whitefield - Hoskote Rd, Seegehalli, Whitefield, Kannamangala, Karnataka 560115, India"
+  },
+  {
+    "id": "153-biere-street-whitefield",
+    "name": "153 Biere Street",
+    "neighborhood": "Whitefield",
+    "category": "Microbrewery",
+    "rating": 4.2,
+    "reviewCount": 2458,
+    "status": "OPERATIONAL",
+    "address": "XP5X+JR6 Biere Street, 153/1, Hagadur Main Rd, Brooke Bond First Cross, Prestige Ozone, Whitefield, Bengaluru, Karnataka 560066, India"
+  },
+  {
+    "id": "chulha-chouki-da-dhaba-flagship",
+    "name": "Chulha Chouki Da Dhaba",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Modern Indian & Dining",
+    "rating": 4.2,
+    "reviewCount": 307,
+    "status": "OPERATIONAL",
+    "address": "No. 32/3, Allalasandra, Yelahanka Main Road, (Bangalore–Doddaballapur Road, Hobli, Ambedkar Colony, Yelahanka, Bengaluru, Karnataka 560064, India"
+  },
+  {
+    "id": "al-amanah-cafe-kammanahalli",
+    "name": "Al Amanah Cafe",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Street Food & Chaat",
+    "rating": 4.2,
+    "reviewCount": 24554,
+    "status": "OPERATIONAL",
+    "address": "19, 5th Main Rd, near kullappa circle, PNS Layout, Subbayianiah Palyam, Kammanahalli, Bengaluru, Karnataka 560084, India"
+  },
+  {
+    "id": "hotel-navayuga-gandhinagar",
+    "name": "Hotel Navayuga",
+    "neighborhood": "CBD & Central",
+    "category": "Regional & Coastal",
+    "rating": 4.2,
+    "reviewCount": 7169,
+    "status": "OPERATIONAL",
+    "address": "Anupama Theater Complex, No:1, Subedar Chatram Rd, Gandhi Nagar, Bengaluru, Karnataka 560009, India"
+  },
+  {
+    "id": "the-local-kalyan-nagar",
+    "name": "The Local",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Microbrewery",
+    "rating": 4.2,
+    "reviewCount": 4264,
+    "status": "OPERATIONAL",
+    "address": "4th cross, 6th Main Rd, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India"
+  },
+  {
+    "id": "grasshopper-bannerghatta",
+    "name": "Grasshopper",
+    "neighborhood": "JP Nagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.2,
+    "reviewCount": 844,
+    "status": "OPERATIONAL",
+    "address": "45, Bannerghatta Rd, near Meenakshi Temple, Kothnur, Kalena Agrahara, Bengaluru, Karnataka 560076, India"
+  },
+  {
+    "id": "nagarjuna-residency-road",
+    "name": "Nagarjuna",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Regional & Coastal",
+    "rating": 4.2,
+    "reviewCount": 22431,
+    "status": "OPERATIONAL",
+    "address": "44/1, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "sanchez-ub-city",
+    "name": "Sanchez",
+    "neighborhood": "Lavelle Road",
+    "category": "Modern Indian & Dining",
+    "rating": 4.2,
+    "reviewCount": 3551,
+    "status": "OPERATIONAL",
+    "address": "204, Vittal Mallya Rd, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "ctr-shri-sagar",
+    "name": "Central Tiffin Room (CTR)",
+    "neighborhood": "Malleshwaram",
+    "category": "Iconic Heritage",
+    "rating": 4.3,
+    "reviewCount": 37600,
+    "status": "OPERATIONAL",
+    "address": "7th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003, India"
+  },
+  {
+    "id": "veena-stores-malleshwaram",
+    "name": "Veena Stores",
+    "neighborhood": "Malleshwaram",
+    "category": "Iconic Heritage",
+    "rating": 4.3,
+    "reviewCount": 21322,
+    "status": "OPERATIONAL",
+    "address": "183, Margosa Rd, Malleshwaram, Bengaluru, Karnataka 560055, India"
+  },
+  {
+    "id": "dwaraka-hotel-basavanagudi",
+    "name": "Dwaraka Hotel",
+    "neighborhood": "Basavanagudi",
+    "category": "Iconic Heritage",
+    "rating": 4.3,
+    "reviewCount": 10253,
+    "status": "OPERATIONAL",
+    "address": "7th Cross Rd, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "the-hole-in-the-wall-cafe",
+    "name": "The Hole in the Wall Cafe",
+    "neighborhood": "Koramangala",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.3,
+    "reviewCount": 21086,
+    "status": "OPERATIONAL",
+    "address": "3, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560047, India"
+  },
+  {
+    "id": "anjus-cafe-ranga-shankara",
+    "name": "Anju’s Cafe at Ranga Shankara",
+    "neighborhood": "JP Nagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.3,
+    "reviewCount": 481,
+    "status": "OPERATIONAL",
+    "address": "138/2, Phase 2, R K Colony, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India"
+  },
+  {
+    "id": "phobidden-fruit-indiranagar",
+    "name": "Phobidden Fruit",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.3,
+    "reviewCount": 4779,
+    "status": "OPERATIONAL",
+    "address": "965, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "the-fatty-bao-indiranagar",
+    "name": "The Fatty Bao",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.3,
+    "reviewCount": 6804,
+    "status": "OPERATIONAL",
+    "address": "Third Floor, 610, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "the-pizza-bakery",
+    "name": "The Pizza Bakery",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.3,
+    "reviewCount": 6964,
+    "status": "OPERATIONAL",
+    "address": "2985, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "lupa-mg-road",
+    "name": "LUPA",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Modern Indian & Dining",
+    "rating": 4.3,
+    "reviewCount": 1500,
+    "status": "OPERATIONAL",
+    "address": "Ground Floor, NO.86, SPENCER'S TOWERS, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "chinita-mexican-indiranagar",
+    "name": "Chinita Real Mexican Food",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.3,
+    "reviewCount": 4417,
+    "status": "OPERATIONAL",
+    "address": "218, Paramahansa Yogananda Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "anupams-coast-to-coast",
+    "name": "Anupam's Coast II Coast",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Regional & Coastal",
+    "rating": 4.3,
+    "reviewCount": 2408,
+    "status": "OPERATIONAL",
+    "address": "#56, Above Star bucks, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "maravanthe-coastal-indiranagar",
+    "name": "Maravanthe Coastal Diner",
+    "neighborhood": "Indiranagar",
+    "category": "Regional & Coastal",
+    "rating": 4.3,
+    "reviewCount": 4593,
+    "status": "OPERATIONAL",
+    "address": "322/1, Chinmaya Mission Hospital Rd, Near Indiranagar Metro Station, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "meghana-foods-koramangala",
+    "name": "Meghana Foods",
+    "neighborhood": "Koramangala",
+    "category": "Regional & Coastal",
+    "rating": 4.3,
+    "reviewCount": 22050,
+    "status": "OPERATIONAL",
+    "address": "124, 1st A cross Rd, near Jyoti Nivas College Road, KHB Colony, 5th Block, Koramangala, Bengaluru, Karnataka 560095, India"
+  },
+  {
+    "id": "soka-indiranagar",
+    "name": "Sōka",
+    "neighborhood": "Indiranagar",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.3,
+    "reviewCount": 426,
+    "status": "OPERATIONAL",
+    "address": "No.210, A cross, 1st Main Rd, 2nd stage Indiranagar, Stage 2, Domlur, Bengaluru, Karnataka 560071, India"
+  },
+  {
+    "id": "lavonne-cafe-indiranagar",
+    "name": "Lavonne Cafe",
+    "neighborhood": "Indiranagar",
+    "category": "Bakeries & Desserts",
+    "rating": 4.3,
+    "reviewCount": 3073,
+    "status": "OPERATIONAL",
+    "address": "263, 3rd Cross Rd, 2nd Stage, Defence Colony, Domlur, Bengaluru, Karnataka 560071, India"
+  },
+  {
+    "id": "harima-residency-road",
+    "name": "Harima",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.3,
+    "reviewCount": 2328,
+    "status": "OPERATIONAL",
+    "address": "4th Floor, Devatha Plaza, 131, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "spettacolare-indiranagar",
+    "name": "Spettacolare",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.3,
+    "reviewCount": 2103,
+    "status": "OPERATIONAL",
+    "address": "208, Paramahansa Yogananda Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "biergarten",
+    "name": "Biergarten Brewery & Kitchen",
+    "neighborhood": "Bellandur & Ecoworld",
+    "category": "Microbrewery",
+    "rating": 4.3,
+    "reviewCount": 4983,
+    "status": "OPERATIONAL",
+    "address": "57/2/10, Bellandur - Doddakannelli Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103, India"
+  },
+  {
+    "id": "oota-bangalore-whitefield",
+    "name": "Oota Bangalore",
+    "neighborhood": "Whitefield",
+    "category": "Modern Indian & Dining",
+    "rating": 4.3,
+    "reviewCount": 3387,
+    "status": "OPERATIONAL",
+    "address": "7th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066, India"
+  },
+  {
+    "id": "hi-seoul-kalyan-nagar",
+    "name": "Hi Seoul",
+    "neighborhood": "Kalyan Nagar & Kammanahalli",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.3,
+    "reviewCount": 1502,
+    "status": "OPERATIONAL",
+    "address": "1st floor, 201, 9th Main Rd, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India"
+  },
+  {
+    "id": "pecos",
+    "name": "Pecos",
+    "neighborhood": "Indiranagar",
+    "category": "Microbrewery",
+    "rating": 4.3,
+    "reviewCount": 4171,
+    "status": "OPERATIONAL",
+    "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "klaa-kitchen-indiranagar",
+    "name": "Klaa Kitchen",
+    "neighborhood": "Indiranagar",
+    "category": "Regional & Coastal",
+    "rating": 4.3,
+    "reviewCount": 510,
+    "status": "OPERATIONAL",
+    "address": "846, Ground and 1st Floor, Paramahansa Yogananda Rd, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "the-reservoire-koramangala",
+    "name": "The Reservoire",
+    "neighborhood": "Koramangala",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.3,
+    "reviewCount": 15851,
+    "status": "OPERATIONAL",
+    "address": "17, 5th Block, 17th H Main Rd, 5th Block, Koramangala, Bengaluru, Karnataka 560095, India"
+  },
+  {
+    "id": "umesh-refreshments-seshadripuram",
+    "name": "Umesh Refreshments",
+    "neighborhood": "Sadashivanagar & Palace Grounds",
+    "category": "Iconic Heritage",
+    "rating": 4.4,
+    "reviewCount": 2078,
+    "status": "OPERATIONAL",
+    "address": "1st cross, 779, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "paris-panini-indiranagar",
+    "name": "Paris Panini",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.4,
+    "reviewCount": 2352,
+    "status": "OPERATIONAL",
+    "address": "Ground & Mezzanine Floor, 948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "misu-st-marks-road",
+    "name": "Misu",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.4,
+    "reviewCount": 3469,
+    "status": "OPERATIONAL",
+    "address": "1Sobha Mall, 50, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "windmills-craftworks-whitefield",
+    "name": "Windmills Craftworks",
+    "neighborhood": "Whitefield",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 21477,
+    "status": "OPERATIONAL",
+    "address": "6th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066, India"
+  },
+  {
+    "id": "arbor-brewing-company",
+    "name": "Arbor Brewing Company (ABC)",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 14409,
+    "status": "OPERATIONAL",
+    "address": "3rd, Allied Grand Plaza, 8, Magrath Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "geist-brewing-factory",
+    "name": "Geist Brewing Factory",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 2524,
+    "status": "OPERATIONAL",
+    "address": "No.23/3, 21st KM Stone, Old Madras Road Nimbekaipura, Bidarahalli, Hobli, Sannatammanahalli, Nimbekayipura, Karnataka 560049, India"
+  },
+  {
+    "id": "pecos-rest-house-road",
+    "name": "Pecos Classic",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 2471,
+    "status": "OPERATIONAL",
+    "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "zlb-23-leela-palace",
+    "name": "ZLB 23",
+    "neighborhood": "Indiranagar",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.4,
+    "reviewCount": 156,
+    "status": "OPERATIONAL",
+    "address": "The Leela Palace, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "thoms-bakery-cox-town",
+    "name": "Thom’s Bakery",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Bakeries & Desserts",
+    "rating": 4.4,
+    "reviewCount": 15855,
+    "status": "OPERATIONAL",
+    "address": "26, Promenade Rd, Sindhi Colony, Fraser Town, Bengaluru, Karnataka 560005, India"
+  },
+  {
+    "id": "mangalore-pearl-frazer-town",
+    "name": "Mangalore Pearl",
+    "neighborhood": "CBD & Central",
+    "category": "Regional & Coastal",
+    "rating": 4.4,
+    "reviewCount": 5610,
+    "status": "OPERATIONAL",
+    "address": "Assaye Road Skywalk Building, 2nd Floor, Sindhi Colony, Frazer Town, next to YMIA Club, R T Nagar, Sindhi Colony, Ulsoor, Bengaluru, Karnataka 560042, India"
+  },
+  {
+    "id": "corner-house-residency-road",
+    "name": "Corner House Ice Cream",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Bakeries & Desserts",
+    "rating": 4.4,
+    "reviewCount": 1701,
+    "status": "OPERATIONAL",
+    "address": "No 45/3, BBMP East, GK Complex, Residency Rd 1st Cross, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "dyu-art-cafe-koramangala",
+    "name": "Dyu Art Cafe",
+    "neighborhood": "Koramangala",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.4,
+    "reviewCount": 21203,
+    "status": "OPERATIONAL",
+    "address": "Dyu art cafe 23, KHB MIG Colony, 22, 1st Cross Rd, KHB Colony, Koramangala 8th Block, Koramangala, Bengaluru, Karnataka 560095, India"
+  },
+  {
+    "id": "byg-brewski",
+    "name": "Byg Brewski Brewing Company",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 49796,
+    "status": "OPERATIONAL",
+    "address": "SOUTHERN ASIA BIBLE COLLEGE, 22, Hennur Bagalur Main Rd, Byrathi, Visthar, Bengaluru, Karnataka 560077, India"
+  },
+  {
+    "id": "nerlu-cafe-crescent-road",
+    "name": "Nerlu Cafe",
+    "neighborhood": "CBD & Central",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.4,
+    "reviewCount": 706,
+    "status": "OPERATIONAL",
+    "address": "Ground Floor, 30, Crescent Rd, Madhava Nagar, Gandhi Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "the-kind-roastery-jp-nagar",
+    "name": "The Kind Roastery & Brew Room",
+    "neighborhood": "JP Nagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.4,
+    "reviewCount": 2495,
+    "status": "OPERATIONAL",
+    "address": "18 B Main Rd, Marenahalli, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India"
+  },
+  {
+    "id": "circa-11-indiranagar",
+    "name": "Circa 11",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.4,
+    "reviewCount": 172,
+    "status": "OPERATIONAL",
+    "address": "957, 12th Main Rd, Sodepur, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "asha-tiffins-hsr",
+    "name": "Asha Tiffins",
+    "neighborhood": "HSR Layout",
+    "category": "Iconic Heritage",
+    "rating": 4.4,
+    "reviewCount": 18209,
+    "status": "OPERATIONAL",
+    "address": "1170, 5th Main Rd, 7th Sector, HSR Layout, Bengaluru, Karnataka 560102, India"
+  },
+  {
+    "id": "blr-brewing-co-hsr",
+    "name": "BLR Brewing Co.",
+    "neighborhood": "HSR Layout",
+    "category": "Microbrewery",
+    "rating": 4.4,
+    "reviewCount": 3580,
+    "status": "OPERATIONAL",
+    "address": "1st Floor, 450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India"
+  },
+  {
+    "id": "shri-vasavi-condiments-vv-puram",
+    "name": "Shri Vasavi Condiments",
+    "neighborhood": "Basavanagudi",
+    "category": "Street Food & Chaat",
+    "rating": 4.4,
+    "reviewCount": 213,
+    "status": "OPERATIONAL",
+    "address": "1st floor, Krishna Rajendra Rd, next to cool corner, Basavanagudi, Bengaluru, Karnataka 560004, India"
+  },
+  {
+    "id": "yauatcha-bengaluru-mg-road",
+    "name": "Yauatcha",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.4,
+    "reviewCount": 2974,
+    "status": "OPERATIONAL",
+    "address": "Level 5, Lido Mall, 1 Mg, Mahatma Gandhi Rd, Halasuru, Someshwarpura, Halasuru, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "rim-naam-the-oberoi",
+    "name": "Rim Naam",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.4,
+    "reviewCount": 1312,
+    "status": "OPERATIONAL",
+    "address": "The Oberoi Bengaluru, 37-39, Mahatma Gandhi Road, M G, Road, Yellappa Garden, Yellappa Chetty Layout, Sivanchetti Gardens, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "kaze-residency-road",
+    "name": "Kazé Bar & Kitchen",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.4,
+    "reviewCount": 3509,
+    "status": "OPERATIONAL",
+    "address": "21st Floor, SKAV, 909, Lavelle Road, near to Itc Gardenia, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "hotel-empire-shivajinagar",
+    "name": "Hotel Empire",
+    "neighborhood": "CBD & Central",
+    "category": "Regional & Coastal",
+    "rating": 4.4,
+    "reviewCount": 21192,
+    "status": "OPERATIONAL",
+    "address": "78, Central St, off Infantry Road, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "zen-the-leela-palace",
+    "name": "Zen",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.4,
+    "reviewCount": 577,
+    "status": "OPERATIONAL",
+    "address": "The Leela Palace, 23, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "koko-prestige-icon-indiranagar",
+    "name": "KOKO",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.4,
+    "reviewCount": 955,
+    "status": "OPERATIONAL",
+    "address": "4121/S, Prestige Icon, HAL 2nd Stage, Kodihalli, Jeevan Bima Nagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "sn-refreshments-jayanagar",
+    "name": "SN Refreshments",
+    "neighborhood": "Jayanagar",
+    "category": "Iconic Heritage",
+    "rating": 4.5,
+    "reviewCount": 8499,
+    "status": "OPERATIONAL",
+    "address": "Phase 2. 11, 22nd, Main, 12th Cross Rd, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India"
+  },
+  {
+    "id": "burma-burma",
+    "name": "Burma Burma",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.5,
+    "reviewCount": 9865,
+    "status": "OPERATIONAL",
+    "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "olive-beach-richmond-town",
+    "name": "Olive Beach",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Modern Indian & Dining",
+    "rating": 4.5,
+    "reviewCount": 8185,
+    "status": "OPERATIONAL",
+    "address": "16, Wood St, near Karnataka Bank, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "karavalli-residency-road",
+    "name": "Karavalli",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Regional & Coastal",
+    "rating": 4.5,
+    "reviewCount": 4584,
+    "status": "OPERATIONAL",
+    "address": "Vivanta, 66, Residency Rd, Srinivas Nagar, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "bengaluru-oota-company-halasuru",
+    "name": "Bengaluru Oota Company",
+    "neighborhood": "Indiranagar",
+    "category": "Regional & Coastal",
+    "rating": 4.5,
+    "reviewCount": 731,
+    "status": "OPERATIONAL",
+    "address": "5, Cambridge Cross Road, Halasuru, Cambridge Layout, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "toit-brewpub",
+    "name": "Toit Brewpub",
+    "neighborhood": "Indiranagar",
+    "category": "Microbrewery",
+    "rating": 4.5,
+    "reviewCount": 62392,
+    "status": "OPERATIONAL",
+    "address": "6/2, 100 Feet Rd, near Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "copitas-four-seasons",
+    "name": "Copitas",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.5,
+    "reviewCount": 441,
+    "status": "OPERATIONAL",
+    "address": "8, Bellary Rd, Dena Bank Colony, Ganganagar, Bengaluru, Karnataka 560032, India"
+  },
+  {
+    "id": "variar-bakery-rajajinagar",
+    "name": "O.G. Variar & Sons Bakery",
+    "neighborhood": "Malleshwaram",
+    "category": "Bakeries & Desserts",
+    "rating": 4.5,
+    "reviewCount": 12348,
+    "status": "OPERATIONAL",
+    "address": "68, 12th Main Road, 2nd Block Behind ESI Hospital, 231, 38th Cross Rd, opp. to Anjaneya Swamy Temple, 2nd Block, Rajajinagar, Bengaluru, Karnataka 560010, India"
+  },
+  {
+    "id": "maverick-farmer-ulsoor",
+    "name": "Maverick & Farmer Coffee",
+    "neighborhood": "CBD & Central",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.5,
+    "reviewCount": 2082,
+    "status": "OPERATIONAL",
+    "address": "Gate #3, Gangadhar Chetty Rd, Halasuru, Rukmani Colony, Sivanchetti Gardens, Bengaluru, Karnataka 560042, India"
+  },
+  {
+    "id": "matsuri-the-chancery",
+    "name": "Matsuri",
+    "neighborhood": "Lavelle Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.5,
+    "reviewCount": 434,
+    "status": "OPERATIONAL",
+    "address": "10-6, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "kink-speciality-coffee-indiranagar",
+    "name": "Kink Speciality Coffee",
+    "neighborhood": "Indiranagar",
+    "category": "Specialty Coffee & Cafe",
+    "rating": 4.5,
+    "reviewCount": 166,
+    "status": "OPERATIONAL",
+    "address": "14, 5th Main Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "smash-guys-indiranagar",
+    "name": "Smash Guys",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.5,
+    "reviewCount": 3879,
+    "status": "OPERATIONAL",
+    "address": "948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "izanagi-japanese-indiranagar",
+    "name": "Izanagi Japanese Dining",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.5,
+    "reviewCount": 601,
+    "status": "OPERATIONAL",
+    "address": "Metro Pillar No. 54, 2nd Floor, 311, 100 Feet Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "whitefield-baking-company",
+    "name": "Whitefield Baking Company",
+    "neighborhood": "Whitefield",
+    "category": "Bakeries & Desserts",
+    "rating": 4.5,
+    "reviewCount": 17,
+    "status": "OPERATIONAL",
+    "address": "Prestige Shantiniketan, Hoodi, Whitefield, Bengaluru, Karnataka 560048, India"
+  },
+  {
+    "id": "jamavar-the-leela-palace",
+    "name": "Jamavar",
+    "neighborhood": "Indiranagar",
+    "category": "Regional & Coastal",
+    "rating": 4.5,
+    "reviewCount": 1293,
+    "status": "OPERATIONAL",
+    "address": "23, The Leela Palace, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "le-cirque-signature-leela",
+    "name": "Le Cirque Signature",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.5,
+    "reviewCount": 708,
+    "status": "OPERATIONAL",
+    "address": "The Leela Palace, 23, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "shiro-ub-city",
+    "name": "Shiro",
+    "neighborhood": "Lavelle Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.5,
+    "reviewCount": 6623,
+    "status": "OPERATIONAL",
+    "address": "3rd Floor, 222, Vittal Mallya Rd, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "samarkand-infantry-road",
+    "name": "Samarkand",
+    "neighborhood": "CBD & Central",
+    "category": "Modern Indian & Dining",
+    "rating": 4.5,
+    "reviewCount": 38,
+    "status": "CLOSED_PERMANENTLY",
+    "address": "XJJ3+5V6, Infantry Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "taaza-thindi-jayanagar",
+    "name": "Taaza Thindi",
+    "neighborhood": "Jayanagar",
+    "category": "Iconic Heritage",
+    "rating": 4.6,
+    "reviewCount": 37433,
+    "status": "OPERATIONAL",
+    "address": "1004, 26th Main Rd, 4th T Block East, Jayanagara 9th Block, Jayanagar, Bengaluru, Karnataka 560041, India"
+  },
+  {
+    "id": "baan-phadthai-indiranagar",
+    "name": "Baan Phadthai",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.6,
+    "reviewCount": 1634,
+    "status": "OPERATIONAL",
+    "address": "Sai Suraksha, 1090, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038, India"
+  },
+  {
+    "id": "brik-oven-church-street",
+    "name": "Brik Oven",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Modern Indian & Dining",
+    "rating": 4.6,
+    "reviewCount": 3019,
+    "status": "OPERATIONAL",
+    "address": "18, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "amadora-ice-cream-indiranagar",
+    "name": "Amadora Gourmet Ice Cream",
+    "neighborhood": "Indiranagar",
+    "category": "Bakeries & Desserts",
+    "rating": 4.6,
+    "reviewCount": 101,
+    "status": "OPERATIONAL",
+    "address": "128, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "far-and-east-four-seasons",
+    "name": "Far & East",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.6,
+    "reviewCount": 196,
+    "status": "OPERATIONAL",
+    "address": "8, Bellary Rd, Dena Bank Colony, Armane Nagar, Bengaluru, Karnataka 560032, India"
+  },
+  {
+    "id": "oia-bangalore-hennur",
+    "name": "Oia Bangalore",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Modern Indian & Dining",
+    "rating": 4.6,
+    "reviewCount": 36364,
+    "status": "OPERATIONAL",
+    "address": "Oia, Hennur Main Road, New Airport Rd, opposite Mantri Webcity, Visthar, Bengaluru, Karnataka 560077, India"
+  },
+  {
+    "id": "edo-itc-gardenia",
+    "name": "Edo Restaurant & Bar",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.6,
+    "reviewCount": 229,
+    "status": "OPERATIONAL",
+    "address": "1, Residency Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India"
+  },
+  {
+    "id": "muro-museum-road",
+    "name": "Muro",
+    "neighborhood": "Church Street & MG Road",
+    "category": "Cocktails & Rooftops",
+    "rating": 4.6,
+    "reviewCount": 2908,
+    "status": "OPERATIONAL",
+    "address": "5, Museum Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India"
+  },
+  {
+    "id": "lucky-chan",
+    "name": "Lucky Chan",
+    "neighborhood": "Indiranagar",
+    "category": "Pan-Asian & Japanese",
+    "rating": 4.7,
+    "reviewCount": 2590,
+    "status": "OPERATIONAL",
+    "address": "594, 12th Main Rd, 2nd Stage, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India"
+  },
+  {
+    "id": "farmlore-bangalore",
+    "name": "Farmlore",
+    "neighborhood": "Bel Road & North BLR",
+    "category": "Modern Indian & Dining",
+    "rating": 4.7,
+    "reviewCount": 1443,
+    "status": "OPERATIONAL",
+    "address": "Survey No:67, Mohan, Raju Layout, Bagalur, Sathnur Village, Bengaluru, Karnataka 562149, India"
+  },
+  {
+    "id": "phurr-jayanagar",
+    "name": "Phurr",
+    "neighborhood": "Jayanagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.7,
+    "reviewCount": 19477,
+    "status": "OPERATIONAL",
+    "address": "40, 22nd Cross Rd, Jayanagar 3rd Block, Jayanagar, Bengaluru, Karnataka 560011, India"
+  },
+  {
+    "id": "bologna-italian-indiranagar",
+    "name": "Bologna Italian Ristorante",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.7,
+    "reviewCount": 99,
+    "status": "OPERATIONAL",
+    "address": "543, 9th Cross Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India"
+  },
+  {
+    "id": "ironhill-bengaluru-orr",
+    "name": "Ironhill Bengaluru",
+    "neighborhood": "Bellandur & Ecoworld",
+    "category": "Microbrewery",
+    "rating": 4.7,
+    "reviewCount": 43637,
+    "status": "OPERATIONAL",
+    "address": "Sy no 90, 7 & 90/8, Outer Ring Rd, beside Radisson Blu 8, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037, India"
+  },
+  {
+    "id": "orzuv-whitefield",
+    "name": "Orzuv",
+    "neighborhood": "Whitefield",
+    "category": "Regional & Coastal",
+    "rating": 4.7,
+    "reviewCount": 134,
+    "status": "OPERATIONAL",
+    "address": "1st Floor, Lavender Petal, Vibgyor High School Rd, Kumarapalli, Thubarahalli, Whitefield, Bengaluru, Karnataka 560066, India"
+  },
+  {
+    "id": "pizza-4ps-indiranagar",
+    "name": "Pizza 4P's",
+    "neighborhood": "Indiranagar",
+    "category": "Modern Indian & Dining",
+    "rating": 4.8,
+    "reviewCount": 13713,
+    "status": "OPERATIONAL",
+    "address": "Ward 72, No.3275/A, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Domlur, Bengaluru, Karnataka 560038, India"
+  }
+]
