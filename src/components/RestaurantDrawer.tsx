@@ -18,6 +18,7 @@ import {
 
 interface RestaurantDrawerProps {
   restaurant: Restaurant | null;
+  initialBranchId?: string | null;
   allRestaurants?: Restaurant[];
   onClose: () => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
@@ -27,19 +28,21 @@ interface RestaurantDrawerProps {
 
 export default function RestaurantDrawer({
   restaurant,
+  initialBranchId = null,
   onClose,
   onToggleBookmark,
   onSelectBranch,
   isBookmarked,
 }: RestaurantDrawerProps) {
   const [copied, setCopied] = useState(false);
-  const [selectedBranchId, setSelectedBranchId] = useState<string | null>(null);
-  const [currentRestId, setCurrentRestId] = useState(restaurant?.id);
+  const [selectedBranchId, setSelectedBranchId] = useState<string | null>(initialBranchId);
+  const [currentSyncKey, setCurrentSyncKey] = useState(`${restaurant?.id}-${initialBranchId}`);
 
-  // Sync state when restaurant ID changes
-  if (restaurant?.id !== currentRestId) {
-    setCurrentRestId(restaurant?.id);
-    setSelectedBranchId(null);
+  // Sync state when restaurant ID or initial branch changes
+  const targetSyncKey = `${restaurant?.id}-${initialBranchId}`;
+  if (targetSyncKey !== currentSyncKey) {
+    setCurrentSyncKey(targetSyncKey);
+    setSelectedBranchId(initialBranchId);
   }
 
   const selectedBranch = restaurant?.branches?.find((b) => b.id === selectedBranchId) || null;

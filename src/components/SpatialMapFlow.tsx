@@ -43,17 +43,15 @@ export const DISTRICT_MAP_CONFIG: {
   { id: 'Whitefield', label: 'Whitefield', lat: 12.9750, lng: 77.7350, zoom: 14 },
   { id: 'Sadashivanagar & Palace Grounds', label: 'Sadashivanagar', lat: 13.0080, lng: 77.5800, zoom: 15 },
   { id: 'Bel Road & North BLR', label: 'North BLR', lat: 13.0450, lng: 77.5850, zoom: 13 },
-];
-
-interface SpatialMapFlowProps {
+];interface SpatialMapFlowProps {
   restaurants: Restaurant[];
   selectedRestaurant: Restaurant | null;
   onSelectRestaurant: (restaurant: Restaurant) => void;
-  onOpenDrawer: (restaurant: Restaurant) => void;
+  onOpenDrawer: (restaurant: Restaurant, initialBranchId?: string | null) => void;
   hoveredRestaurantId: string | null;
   onHoverRestaurant: (id: string | null) => void;
   selectedNeighborhood: Neighborhood | 'All';
-  onSelectNeighborhood: (n: Neighborhood | 'All') => void;
+  onSelectNeighborhood?: (n: Neighborhood | 'All') => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
   bookmarkedIds: Set<string>;
   targetDistrict: { name: string; lat: number; lng: number; zoom: number } | null;
@@ -226,7 +224,7 @@ export default function SpatialMapFlow({
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        onOpenDrawer(loc.resolvedRestaurant);
+                        onOpenDrawer(loc.parentRestaurant, loc.branchId);
                       }}
                       className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5"
                     >

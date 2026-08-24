@@ -23,6 +23,8 @@ export function getGoogleMapsPlaceUrl(restaurant: Restaurant, branch?: Branch): 
  */
 export interface ResolvedLocation {
   restaurant: Restaurant;
+  parentRestaurant: Restaurant;
+  branchId: string | null;
   neighborhood: string;
   address: string;
   lat: number;
@@ -39,6 +41,8 @@ export function resolveLocationForDisplay(
   if (!selectedNeighborhood || selectedNeighborhood === 'All' || restaurant.neighborhood === selectedNeighborhood) {
     return {
       restaurant,
+      parentRestaurant: restaurant,
+      branchId: null,
       neighborhood: restaurant.neighborhood,
       address: restaurant.address,
       lat: restaurant.lat,
@@ -61,6 +65,8 @@ export function resolveLocationForDisplay(
     };
     return {
       restaurant,
+      parentRestaurant: restaurant,
+      branchId: matchingBranch.id,
       neighborhood: matchingBranch.neighborhood,
       address: matchingBranch.address,
       lat: matchingBranch.lat,
@@ -73,6 +79,8 @@ export function resolveLocationForDisplay(
 
   return {
     restaurant,
+    parentRestaurant: restaurant,
+    branchId: null,
     neighborhood: restaurant.neighborhood,
     address: restaurant.address,
     lat: restaurant.lat,

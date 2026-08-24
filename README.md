@@ -31,9 +31,9 @@ Live URL: **[https://blreats.com](https://blreats.com)** *(and [https://blr-food
 
 ---
 
-## 🏛️ Data Schema & Provenance
+## 🏛️ Data Schema & Editorial Curation
 
-Every restaurant and branch record follows a verified spatial schema:
+Each spot is hand-curated by local connoisseurs with precise rooftop coordinates, signature dishes, neighborhood tags, and verified physical branch outlets. The dataset follows a strict TypeScript schema:
 
 ```typescript
 export interface Restaurant {
@@ -57,7 +57,7 @@ export interface Restaurant {
   operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
   lastVerifiedAt?: string;
   verificationSource?: 'google_places_api_v1' | 'manual_editorial';
-  confidence?: 'verified_rooftop' | 'approximate';
+  confidence?: 'verified_rooftop' | 'curator_verified' | 'approximate';
   timings: string;
   curatorNote?: string;
   isVegetarian?: boolean;

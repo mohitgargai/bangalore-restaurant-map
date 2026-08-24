@@ -44,7 +44,10 @@ export default function Home() {
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
   
   // Explicitly opened detail drawer (only opens on clear ask: clicking 'View Spot')
-  const [activeDrawerRestaurant, setActiveDrawerRestaurant] = useState<Restaurant | null>(null);
+  const [activeDrawerState, setActiveDrawerState] = useState<{
+    restaurant: Restaurant;
+    initialBranchId?: string | null;
+  } | null>(null);
   
   const [hoveredRestaurantId, setHoveredRestaurantId] = useState<string | null>(null);
 
@@ -128,9 +131,9 @@ export default function Home() {
   };
 
   // Explicit user action to open full dossier drawer ("View Spot" click)
-  const handleOpenDrawer = (r: Restaurant) => {
+  const handleOpenDrawer = (r: Restaurant, branchId: string | null = null) => {
     setSelectedRestaurant(r);
-    setActiveDrawerRestaurant(r);
+    setActiveDrawerState({ restaurant: r, initialBranchId: branchId });
     trackEvent('open_drawer_spot', {
       restaurant_id: r.id,
       name: r.name,
@@ -138,67 +141,73 @@ export default function Home() {
     });
   };
 
-  // Synchronized branch change in drawer (pans map to branch pin without resetting drawer)
+  // Synchronize active outlet when changed inside Drawer
   const handleSelectBranch = (branchRestaurant: Restaurant) => {
     setSelectedRestaurant(branchRestaurant);
   };
 
-  // Filter Logic
+  // Filtered dataset
   const filteredRestaurants = useMemo(() => {
     return restaurants.filter((r) => {
-      if (showSavedOnly && !bookmarkedIds.has(r.id)) {
-        return false;
-      }
+      // Search matching across primary + branches
+      const matchesSearch =
+        searchQuery === '' ||
+        r.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        r.neighborhood.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        r.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        r.mustTry.some((dish) => dish.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        (r.branches &&
+          r.branches.some(
+            (b) =>
+              b.neighborhood.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              b.address.toLowerCase().includes(searchQuery.toLowerCase())
+          ));
 
-      if (selectedCategory !== 'All' && r.category !== selectedCategory) {
-        return false;
-      }
+      // Category matching
+      const matchesCategory =
+        selectedCategory === 'All' || r.category === selectedCategory;
 
-      if (selectedNeighborhood !== 'All') {
-        const matchesPrimary = r.neighborhood === selectedNeighborhood;
-        const matchesBranch = r.branches?.some((b) => b.neighborhood === selectedNeighborhood);
-        if (!matchesPrimary && !matchesBranch) {
-          return false;
-        }
-      } 
-      
-      if (vegOnly && !r.isVegetarian) {
-        return false;
-      }
+      // Spatial isolation: Neighborhood matching across primary + branches
+      const matchesNeighborhood =
+        selectedNeighborhood === 'All' ||
+        r.neighborhood === selectedNeighborhood ||
+        (r.branches && r.branches.some((b) => b.neighborhood === selectedNeighborhood));
 
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
-        const matchesName = r.name.toLowerCase().includes(q);
-        const matchesDish = r.mustTry.some((dish) => dish.toLowerCase().includes(q));
-        const matchesVibe = r.vibeTags.some((tag) => tag.toLowerCase().includes(q));
-        const matchesTagline = r.tagline.toLowerCase().includes(q);
-        const matchesDescription = r.description.toLowerCase().includes(q);
+      // Dietary matching
+      const matchesVeg = !vegOnly || r.isVegetarian;
 
-        if (!matchesName && !matchesDish && !matchesVibe && !matchesTagline && !matchesDescription) {
-          return false;
-        }
-      }
+      // Bookmarked filter
+      const matchesSaved = !showSavedOnly || bookmarkedIds.has(r.id);
 
-      return true;
+      return (
+        matchesSearch &&
+        matchesCategory &&
+        matchesNeighborhood &&
+        matchesVeg &&
+        matchesSaved
+      );
     });
   }, [
     restaurants,
+    searchQuery,
     selectedCategory,
     selectedNeighborhood,
     vegOnly,
     showSavedOnly,
     bookmarkedIds,
-    searchQuery,
   ]);
 
   return (
-    <main className="relative h-[100dvh] w-full overflow-hidden bg-zinc-950 font-sans">
-      {/* Top Floating Command Capsule */}
+    <main className="relative h-screen w-screen overflow-hidden bg-zinc-950">
+      {/* Floating Top Floating Capsule */}
       <TopNavCapsule
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
+        onSelectCategory={(cat) => {
+          setSelectedCategory(cat);
+          trackEvent('filter_category', { category: cat });
+        }}
         selectedNeighborhood={selectedNeighborhood}
         onSelectNeighborhood={handleSelectNeighborhood}
         vegOnly={vegOnly}
@@ -207,7 +216,10 @@ export default function Home() {
         onToggleSavedOnly={setShowSavedOnly}
         savedCount={bookmarkedIds.size}
         viewMode={viewMode}
-        onSelectViewMode={setViewMode}
+        onSelectViewMode={(mode) => {
+          setViewMode(mode);
+          trackEvent('switch_view_mode', { mode });
+        }}
         onOpenSubmitModal={() => setIsSubmitOpen(true)}
         totalFilteredCount={filteredRestaurants.length}
       />
@@ -246,14 +258,15 @@ export default function Home() {
       </div>
 
       {/* Restaurant Dossier Detail Sheet (Opens ONLY when explicit 'View Spot' is clicked) */}
-      {activeDrawerRestaurant && (
+      {activeDrawerState && (
         <RestaurantDrawer
-          restaurant={activeDrawerRestaurant}
+          restaurant={activeDrawerState.restaurant}
+          initialBranchId={activeDrawerState.initialBranchId}
           allRestaurants={restaurants}
-          onClose={() => setActiveDrawerRestaurant(null)}
+          onClose={() => setActiveDrawerState(null)}
           onSelectBranch={handleSelectBranch}
           onToggleBookmark={handleToggleBookmark}
-          isBookmarked={bookmarkedIds.has(activeDrawerRestaurant.id)}
+          isBookmarked={bookmarkedIds.has(activeDrawerState.restaurant.id)}
         />
       )}
 

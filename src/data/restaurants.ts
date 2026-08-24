@@ -33,8 +33,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Watch the waiters perform their legendary stack balancing act carrying 20 plates of butter dosa at once.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -70,8 +68,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Arrive before 8 AM on weekends to get a seat without waiting in the Margosa Road queue.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -108,8 +104,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "No sambar needed — the refreshing mint coconut chutney paired with pillow-soft idlis and hot crisp vadas is Malleshwaram breakfast at its peak.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -144,8 +138,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -181,8 +173,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "World-class hygiene with automated dishwashers and incredible consistency. Their golden ghee masala dosa is top-tier in Bangalore.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -218,8 +208,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -254,8 +242,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Order the silver thali lunch or pair Rava Idli with their signature cup of melted spiced ghee.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -291,8 +277,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Reddit insider tip: Ask for the double butter Khali Dosa. It is pillow-soft and absorbs the soothing white coconut chutney.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -328,8 +312,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The authentic blend of Melkote spices in the tamarind paste is unmatched in the city. Pair with sweet golden pongal.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -365,8 +347,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Super fast counter service. Order two piping hot thatte idlis with extra red chutney and a crispy vada.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -400,8 +380,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Ask for a table in the non-AC heritage front room to soak in the vintage fans and literary Bangalore banter.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -437,8 +415,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "An irreplaceable part of old Bangalore. Sit in the leafy garden courtyard and order the Chateaubriand steak followed by their legendary cinnamon-spiced apple pie.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -473,8 +449,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The ghee podi thatte idlis are drenched in piping hot spiced ghee and served with fresh coconut and tomato chutneys.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -519,14 +493,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9675336,
         "lng": 77.6479384,
         "googleMapsUrl": "https://maps.google.com/?cid=16064643600650991272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -562,8 +532,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "isVegetarian": false,
     "verified": true,
     "branches": [],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -597,8 +565,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Order the Modbar pour-over flight to taste how terroir drastically transforms Indian coffee flavor notes.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -633,8 +599,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A green Koramangala oasis for leisurely Sunday breakfasts and fluffy Belgian waffles.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -669,8 +633,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of Bangalore’s earliest pet-friendly luxury dining bistros. The leafy veranda and classic Gorgonzola steak are exceptional.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -705,8 +667,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A soulful South Bangalore cultural sanctuary. Enjoy hot akki rotti under the open foyer while discussing theatre and arts.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -740,8 +700,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Warm, crispy French baguettes loaded with melted artisanal cheeses and signature dips. The Jean panini with brie and fig jam is iconic.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -774,8 +732,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Slots open on Sunday and book out in under 30 seconds. The Tori Paitan chicken broth is silky and unctuous.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -810,8 +766,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Reddit cult favorite for authentic Nanyang breakfast. The freshly toasted bread with thick slabs of cold butter and pandan kaya jam paired with dark soy runny eggs is unbeatable.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -845,8 +799,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A tranquil veranda setting with fragrant star anise and cinnamon infused Pho broths that warm the soul.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -882,8 +834,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The open-air rooftop is one of Indiranagar’s best evening spots. The Char Siu pork belly bao with green apple kimchi is legendary.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -925,8 +875,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.973040099999999,
         "lng": 77.60613959999999,
         "googleMapsUrl": "https://maps.google.com/?cid=14442321108225895488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       },
@@ -938,14 +886,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.920167,
         "lng": 77.6848395,
         "googleMapsUrl": "https://maps.google.com/?cid=17410816075536197062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -989,8 +933,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9202886,
         "lng": 77.6846386,
         "googleMapsUrl": "https://maps.google.com/?cid=5167808166714788376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       },
@@ -1002,14 +944,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.888775299999999,
         "lng": 77.56332809999999,
         "googleMapsUrl": "https://maps.google.com/?cid=14126792646757334638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1044,8 +982,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The 18-ingredient secret tamarind sauce brings authentic Bangkok Michelin street flavor to 12th Main Indiranagar.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1079,8 +1015,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of Bangalore’s most consistent and aesthetically pleasing Asian dining rooms.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1115,8 +1049,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Book in advance. The house-made fresh burrata cut open table-side over Neapolitan crust with wildflower honey is unbeatable.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1160,8 +1092,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9752011,
         "lng": 77.6046089,
         "googleMapsUrl": "https://maps.google.com/?cid=7055628019802538548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       },
@@ -1173,14 +1103,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.912019,
         "lng": 77.64717449999999,
         "googleMapsUrl": "https://maps.google.com/?cid=2264007145900133572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1215,8 +1141,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Ask for the off-menu hot honey drizzle on their pepperoni and burrata pies.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1251,8 +1175,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Manu Chandra’s magnum opus on MG Road. Features an interactive salumeria, dedicated gelato lab, and subterranean wine cellar.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1285,8 +1207,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Powered 100% by solar and fire. Book months ahead for India’s most visionary farm-to-table tasting experience.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1321,8 +1241,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Uncompromisingly authentic Mexican street food with gluten-free house-pressed corn tortillas and tangy tomatillo salsas.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1357,8 +1275,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The cobbled sunlit courtyard and bougainvillea-framed villa provide Bangalore’s most romantic dining ambiance.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1392,8 +1308,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1427,8 +1341,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1463,8 +1375,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore military hotel royalty. Dip soft thatte idlis into rich, peppery mutton Kaal soup for the ultimate Sunday breakfast.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1497,8 +1407,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The rich, fiery red ghee roast masala coating juicy prawns is Bangalore coastal perfection. Soak every drop with soft Neer Dosas.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1532,8 +1440,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The traditional Kundapura coconut fish curry and crispy rava-crusted Ladyfish bring coastal beach-highway flavors to Indiranagar.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1567,8 +1473,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "By reservation only. Intimate chef’s table dining preserving the authentic culinary heritage of Karnataka’s Bunt and Gowda families.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1601,8 +1505,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The boneless special chicken biryani with its distinct red spiced chicken pieces and rice is an obsession across the city.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1638,8 +1540,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Order the beer sampler flight first. Tintin Toit with orange peel & coriander alongside a wood-fired pizza on the 2nd floor balcony is classic BLR.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1674,8 +1574,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Arguably the finest microbrewery in India. Acoustic jazz performances paired with house-brewed stout are peerless.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1710,8 +1608,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The Raging Elephant IPA remains the benchmark for piney, citrusy American India Pale Ales in the country.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1745,8 +1641,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Historic significance as the city's 1st microbrewery. Great afternoon terrace overlooking UB City.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1780,8 +1674,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The Kamacitra NEIPA with tropical notes is one of the highest-rated craft beers in India.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1817,8 +1709,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Pair their signature iced filter coffee cocktail with crispy fried tindli and Malnad pork fry on the open terrace.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1906,8 +1796,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Ranked among the premier cocktail bars in Asia. Features moving kinetic art sculptures, moody lighting, and genius cocktail precision.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1943,8 +1831,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Enter through the secret garden corridor. Velvet drapes, live vinyl jazz, and world-class mixology in complete discretion.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -1979,8 +1865,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Consistently featured in Asia’s 50 Best Bars. Catch golden hour on the open-air deck overlooking North Bangalore.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2024,14 +1908,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9694176,
         "lng": 77.6003176,
         "googleMapsUrl": "https://maps.google.com/?cid=15960569217550590724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2064,8 +1944,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Reddit foodies unanimous pick for the best dessert in town: Order the gooey warm Underbaked Cake topped with Salted Butter Caramel ice cream.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2100,8 +1978,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The bite-sized red velvet cupcakes are legendary across Bangalore. Sit in the sun-dappled courtyard under the tree.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2134,8 +2010,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bags of piping hot butter biscuits sell out within minutes of the 4 PM batch coming out of the ovens.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2170,8 +2044,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Over 120 years of baking legacy on Mosque Road. The crispy mutton kheema samosas sell out within 45 minutes of the evening batch opening.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2205,8 +2077,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The scent of freshly baked plum cake and buttery puff pastry on Wheeler Road defines Anglo-Indian old Bangalore.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2241,8 +2111,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2275,8 +2143,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Pure coastal comfort food. The dark, aromatic spice-rubbed Pork Bafat paired with warm, fermented steamed Sannas is unmatched.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2309,8 +2175,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Run by a native Korean family. Sizzle tender pork belly at your table and wrap with fresh lettuce, garlic, and ssamjang.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2345,8 +2209,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A 95-year-old Bangalore late-night tradition. Park on MG Road and have sundaes served directly through your car window.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2380,8 +2242,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s sweetest nostalgia. The Death By Chocolate (DBC) eaten on the sidewalk curbs is a non-negotiable rite of passage.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2418,8 +2278,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A nostalgic step back into 1970s Malleshwaram. The Sagu Masala Dosa (filled with spiced vegetable sagu instead of aloo) is unmatched.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2455,8 +2313,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Strictly open from 8:30 AM to 11:30 AM. Arrive by 8:00 AM to get a token for Siddappa’s famous crispy ghee dosas.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2492,8 +2348,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The bougainvillea-framed Kerala courtyard and decadent Banoffee pie make this one of the most soothing cafes in South India.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2529,8 +2383,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Direct from their Pollibetta estate in Coorg. The Cold Smoked Pour-Over on the wooden deck overlooking the grounds is a revelation.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2563,8 +2415,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Old Bangalore’s finest coastal lunch. Pour the fiery Kundapur fish curry generously over boiled red rice alongside a crispy Anjal tawa fry.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2598,8 +2448,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s original authentic Japanese room. Reserve a traditional tatami room for pristine sashimi and authentic hot pot.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2632,8 +2480,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The Katsudon (crispy pork cutlet simmered in sweet dashi with soft eggs over rice) is textbook authentic Japanese comfort food.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2680,14 +2526,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.913141999999999,
         "lng": 77.6830757,
         "googleMapsUrl": "https://maps.google.com/?cid=2468613895764706893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2732,14 +2574,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.963434999999999,
         "lng": 77.6410493,
         "googleMapsUrl": "https://maps.google.com/?cid=11982450010248259254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2774,8 +2612,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2810,8 +2646,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2846,8 +2680,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Impeccable French pastry technique in a stunning sunlit setting. The signature Tiramisu and Choux buns are city benchmarks.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2889,14 +2721,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9758322,
         "lng": 77.60201289999999,
         "googleMapsUrl": "https://maps.google.com/?cid=6592735037254929082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2938,14 +2766,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9208055,
         "lng": 77.6852894,
         "googleMapsUrl": "https://maps.google.com/?cid=3734218755114137825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -2988,14 +2812,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9123126,
         "lng": 77.6416021,
         "googleMapsUrl": "https://maps.google.com/?cid=12736088069517843312&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3039,14 +2859,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.965383200000002,
         "lng": 77.7324064,
         "googleMapsUrl": "https://maps.google.com/?cid=5914294489538227062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3082,8 +2898,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "South Bangalore’s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3118,8 +2932,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3154,8 +2966,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3188,8 +2998,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3224,8 +3032,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.911858899999999,
     "lng": 77.6326497,
     "googleMapsUrl": "https://maps.google.com/?cid=4668069035498777873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3260,8 +3066,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.9237763,
     "lng": 77.6515673,
     "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3296,8 +3100,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.912323599999999,
     "lng": 77.64160389999999,
     "googleMapsUrl": "https://maps.google.com/?cid=8227569617965900977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3348,8 +3150,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "confidence": "verified_rooftop"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3384,8 +3184,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.950890999999999,
     "lng": 77.6987317,
     "googleMapsUrl": "https://maps.google.com/?cid=9495049884754946253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3419,8 +3217,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.914445200000001,
     "lng": 77.6662817,
     "googleMapsUrl": "https://maps.google.com/?cid=12965296817310886555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3455,8 +3251,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.9825248,
     "lng": 77.72179009999999,
     "googleMapsUrl": "https://maps.google.com/?cid=1428424193490140233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3490,8 +3284,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.989243499999999,
     "lng": 77.7296715,
     "googleMapsUrl": "https://maps.google.com/?cid=7964358643997907041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3526,8 +3318,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0247417,
     "lng": 77.7612475,
     "googleMapsUrl": "https://maps.google.com/?cid=7542191260218245808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3561,8 +3351,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.9541898,
     "lng": 77.7175068,
     "googleMapsUrl": "https://maps.google.com/?cid=689168556079996423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3597,8 +3385,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.9632892,
     "lng": 77.75096289999999,
     "googleMapsUrl": "https://maps.google.com/?cid=17544578036530952751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3630,8 +3416,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.019570199999999,
     "lng": 77.6371272,
     "googleMapsUrl": "https://maps.google.com/?cid=8297737769011114324&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3663,8 +3447,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.014924800000001,
     "lng": 77.64676519999999,
     "googleMapsUrl": "https://maps.google.com/?cid=14577515435168665559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3696,8 +3478,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0249381,
     "lng": 77.6315888,
     "googleMapsUrl": "https://maps.google.com/?cid=7182420476729379803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3730,8 +3510,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0249313,
     "lng": 77.6315241,
     "googleMapsUrl": "https://maps.google.com/?cid=17149048302875044392",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3764,8 +3542,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.015531900000001,
     "lng": 77.6395414,
     "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3799,8 +3575,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.9475474,
     "lng": 77.5739308,
     "googleMapsUrl": "https://maps.google.com/?cid=13706312408231400546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3832,8 +3606,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 12.976184799999999,
     "lng": 77.57554619999999,
     "googleMapsUrl": "https://maps.google.com/?cid=8478137410062836605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3868,8 +3640,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0196455,
     "lng": 77.5853711,
     "googleMapsUrl": "https://maps.google.com/?cid=3750429088146940948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3904,8 +3674,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "lat": 13.0738322,
     "lng": 77.6525657,
     "googleMapsUrl": "https://maps.google.com/?cid=13572916760978068344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3940,8 +3708,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Preserves the authentic, soulful identity of old Bangalore pub culture: great music, unpretentious hospitality, and phenomenal, fiery coastal bar bites.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -3976,8 +3742,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s undisputed benchmark for Cantonese dim sum artistry. The Crispy Prawn Cheung Fun (crispy fried prawn roll wrapped inside silky steamed rice noodle skin) is absolute perfection.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4012,8 +3776,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s most romantic garden pavilion. The fragrant herbal balance in their lemongrass-scented Tom Yum and steamed seabass is unmatched in India.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4047,8 +3809,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The gold standard for Japanese Kaiseki dining in South India. The Saikyo Miso Black Cod melts effortlessly on the tongue.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4081,8 +3841,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The slow-simmered 24-hour Dal Jamavar and tender Raan-e-Jamavar define royal Indian fine dining in Bangalore.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4116,8 +3874,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The ultimate celebratory dinner setting. The Acquerello Truffle Risotto and classic NYC Crème Brûlée are masterclasses in technique.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4151,8 +3907,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "An unhurried culinary sanctuary. Candlelit dining surrounded by bamboo groves and cricket chirps with an ever-evolving, personalized seasonal menu.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4187,8 +3941,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The towering Zen stone architecture makes dining here awe-inspiring. Sit at the live Teppanyaki counter for sizzling hibachi theater.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4225,8 +3977,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s premier high-altitude open terrace. The 360-degree sunset view with a smoked cocktail and fresh robata skewers is unforgettable.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4258,8 +4008,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s quintessential spicy lunch ritual. Heap steaming rice on your banana leaf, douse in hot ghee and gunpowder, and pair with the fiery green chilli chicken.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4294,8 +4042,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The undisputed soul of Bangalore midnight dining since 1966. Dip hot, flaky coin parottas into the crispy, spiced fried Butter Chicken gravy at 1 AM.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4327,8 +4073,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The Classic Banana Pudding (layers of creamy vanilla pudding, Nilla wafers, and fresh bananas) is a global icon executed to perfection on 100 Feet Road.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4362,8 +4106,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A high-end Pan-Asian temple. Book a seat at the live Teppanyaki counter for sizzling hibachi theater, or order the melt-in-mouth Alaskan Crab maki.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4397,8 +4139,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s best Goan table. The spicy, oily Pork Choriz stuffed inside warm crusty Goan Poi bread paired with a kokum cocktail is phenomenal.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4470,8 +4210,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s benchmark for authentic Mexican gastronomy. The live guacamole cart made fresh at your table with Hass avocados and lime is unbeatable.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4507,8 +4245,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "One of India’s top bar programs. The multi-story glasshouse architecture on Museum Road combined with avant-garde clarified mixology and silky Cantonese dim sums is world-class.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4542,8 +4278,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A benchmark for high-energy Pan-Asian luxury dining. The Hamachi Carpaccio with white truffle oil and silky Lobster Cheung Fun are sensational.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4577,8 +4311,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A 12th Main favorite with a buzzing aesthetic. The spicy hand-pulled Sichuan noodles and fluffy pork belly baos are standout comfort food.",
     "isVegetarian": false,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4621,14 +4353,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "lat": 12.9584305,
         "lng": 77.5928951,
         "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042",
-        "operationalStatus": "OPERATIONAL",
-        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
         "verificationSource": "manual_editorial",
         "confidence": "curator_verified"
       }
     ],
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   },
@@ -4663,8 +4391,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Bangalore’s benchmark for authentic Italian gelato. Open past midnight, the rich Sicilian Pistachio and Dark Chocolate Orange on a freshly baked waffle cone are exceptional.",
     "isVegetarian": true,
     "verified": true,
-    "operationalStatus": "OPERATIONAL",
-    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
     "verificationSource": "manual_editorial",
     "confidence": "curator_verified"
   }

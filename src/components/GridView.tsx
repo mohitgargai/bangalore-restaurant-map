@@ -8,7 +8,7 @@ import { Bookmark, MapPin, Sparkles, ArrowRight } from 'lucide-react';
 interface GridViewProps {
   restaurants: Restaurant[];
   selectedNeighborhood?: Neighborhood | 'All';
-  onSelectRestaurant: (restaurant: Restaurant) => void;
+  onSelectRestaurant: (restaurant: Restaurant, initialBranchId?: string | null) => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
   bookmarkedIds: Set<string>;
   onViewOnMap: (restaurant: Restaurant) => void;
@@ -51,7 +51,7 @@ export default function GridView({
               {/* Image Container */}
               <div
                 className="relative h-44 w-full cursor-pointer overflow-hidden bg-zinc-950"
-                onClick={() => onSelectRestaurant(loc.resolvedRestaurant)}
+                onClick={() => onSelectRestaurant(loc.parentRestaurant, loc.branchId)}
               >
                 <img
                   src={restaurant.imageUrl}
@@ -95,7 +95,7 @@ export default function GridView({
               {/* Card Body */}
               <div className="flex flex-1 flex-col p-4">
                 <h3
-                  onClick={() => onSelectRestaurant(loc.resolvedRestaurant)}
+                  onClick={() => onSelectRestaurant(loc.parentRestaurant, loc.branchId)}
                   className="cursor-pointer font-bold text-zinc-900 text-base leading-tight hover:text-orange-600 transition-colors truncate"
                 >
                   {restaurant.name}
@@ -123,7 +123,7 @@ export default function GridView({
                     <span>View on Map</span>
                   </button>
                   <button
-                    onClick={() => onSelectRestaurant(loc.resolvedRestaurant)}
+                    onClick={() => onSelectRestaurant(loc.parentRestaurant, loc.branchId)}
                     className="flex items-center justify-center rounded-xl bg-zinc-900 px-3 py-2 text-xs font-semibold text-white hover:bg-zinc-800 transition-colors shadow-2xs"
                   >
                     <ArrowRight className="h-3.5 w-3.5" />
