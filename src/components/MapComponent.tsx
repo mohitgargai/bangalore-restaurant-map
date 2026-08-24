@@ -1,12 +1,39 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Restaurant, Neighborhood } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
 import { LocateFixed } from 'lucide-react';
+
+export const NEIGHBORHOOD_HUBS: {
+  id: Neighborhood;
+  name: string;
+  shortLabel: string;
+  icon: string;
+  lat: number;
+  lng: number;
+  zoom: number;
+}[] = [
+  { id: 'Indiranagar', name: 'Indiranagar', shortLabel: 'Indiranagar', icon: '🌿', lat: 12.9734, lng: 77.6409, zoom: 15 },
+  { id: 'Church Street & MG Road', name: 'Church St / CBD', shortLabel: 'Church St', icon: '☕', lat: 12.9737, lng: 77.6074, zoom: 15.5 },
+  { id: 'Malleshwaram', name: 'Malleshwaram', shortLabel: 'Malleshwaram', icon: '🥞', lat: 12.9985, lng: 77.5708, zoom: 15 },
+  { id: 'Basavanagudi', name: 'Basavanagudi / VV Puram', shortLabel: 'Basavanagudi', icon: '🍛', lat: 12.9455, lng: 77.5739, zoom: 15 },
+  { id: 'Koramangala', name: 'Koramangala', shortLabel: 'Koramangala', icon: '🍺', lat: 12.9341, lng: 77.6256, zoom: 15 },
+  { id: 'HSR Layout', name: 'HSR Layout', shortLabel: 'HSR Layout', icon: '🍳', lat: 12.9118, lng: 77.6385, zoom: 15 },
+  { id: 'JP Nagar', name: 'JP Nagar', shortLabel: 'JP Nagar', icon: '🎭', lat: 12.9080, lng: 77.5880, zoom: 15 },
+  { id: 'Jayanagar', name: 'Jayanagar', shortLabel: 'Jayanagar', icon: '🥘', lat: 12.9238, lng: 77.5934, zoom: 15 },
+  { id: 'Lavelle Road', name: 'Lavelle Road', shortLabel: 'Lavelle Rd', icon: '🍷', lat: 12.9698, lng: 77.5997, zoom: 15.5 },
+  { id: 'CBD & Central', name: 'CBD & Central', shortLabel: 'CBD & Central', icon: '🏛️', lat: 12.9750, lng: 77.5950, zoom: 15 },
+  { id: 'Bellandur & Ecoworld', name: 'Bellandur / Ecoworld', shortLabel: 'Bellandur', icon: '🍜', lat: 12.9258, lng: 77.6867, zoom: 15 },
+  { id: 'Sarjapur Road', name: 'Sarjapur Rd', shortLabel: 'Sarjapur Rd', icon: '🍻', lat: 12.9100, lng: 77.6800, zoom: 14.5 },
+  { id: 'Kalyan Nagar & Kammanahalli', name: 'Kalyan Nagar / CMR', shortLabel: 'Kalyan Nagar', icon: '🥢', lat: 13.0185, lng: 77.6440, zoom: 15 },
+  { id: 'Whitefield', name: 'Whitefield', shortLabel: 'Whitefield', icon: '🌾', lat: 12.9750, lng: 77.7350, zoom: 14.5 },
+  { id: 'Sadashivanagar & Palace Grounds', name: 'Sadashivanagar', shortLabel: 'Sadashivanagar', icon: '🍃', lat: 13.0080, lng: 77.5800, zoom: 15 },
+  { id: 'Bel Road & North BLR', name: 'North BLR', shortLabel: 'North BLR', icon: '🌲', lat: 13.0450, lng: 77.5850, zoom: 13.5 },
+];
 
 // Controller to fly the map camera smoothly
 function MapController({
@@ -40,12 +67,28 @@ function MapController({
   return null;
 }
 
+// Map Event Listener for Dynamic Zoom Level Tracking
+function MapZoomWatcher({ onZoom }: { onZoom: (zoom: number) => void }) {
+  const map = useMapEvents({
+    zoomend: () => {
+      onZoom(map.getZoom());
+    },
+  });
+
+  useEffect(() => {
+    onZoom(map.getZoom());
+  }, [map, onZoom]);
+
+  return null;
+}
+
 // Minimalist floating controls for zoom & recenter
-function MapFloatingControls() {
+function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
   const map = useMap();
 
   const handleRecenter = () => {
     map.flyTo([12.9716, 77.5946], 13, { duration: 1.1 });
+    if (onRecenter) onRecenter();
   };
 
   return (
@@ -86,6 +129,7 @@ interface MapComponentProps {
   selectedRestaurant: Restaurant | null;
   hoveredRestaurantId: string | null;
   selectedNeighborhood?: Neighborhood | 'All';
+  onSelectNeighborhood?: (n: Neighborhood | 'All') => void;
   onSelectRestaurant: (restaurant: Restaurant) => void;
   onOpenDrawer?: (restaurant: Restaurant) => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
@@ -98,6 +142,7 @@ export default function MapComponent({
   selectedRestaurant,
   hoveredRestaurantId,
   selectedNeighborhood,
+  onSelectNeighborhood,
   onSelectRestaurant,
   bookmarkedIds,
   targetDistrict,
@@ -105,6 +150,32 @@ export default function MapComponent({
   // Bangalore Center coordinates
   const defaultCenter: [number, number] = [12.9716, 77.5946];
   const defaultZoom = 13;
+  const [currentZoom, setCurrentZoom] = useState<number>(defaultZoom);
+
+  const handleZoomUpdate = useCallback((zoom: number) => {
+    setCurrentZoom(zoom);
+  }, []);
+
+  // Compute spot counts per neighborhood matching current filters
+  const countsByNeighborhood = useMemo(() => {
+    const counts: Record<string, number> = {};
+    restaurants.forEach((r) => {
+      counts[r.neighborhood] = (counts[r.neighborhood] || 0) + 1;
+      if (r.branches) {
+        r.branches.forEach((b) => {
+          counts[b.neighborhood] = (counts[b.neighborhood] || 0) + 1;
+        });
+      }
+    });
+    return counts;
+  }, [restaurants]);
+
+  // Determine whether to display Neighborhood Hubs or Individual Pins:
+  // When zoomed out (< 14) and no specific neighborhood filter or restaurant is active, show Hub Badges
+  const isClusteredView =
+    (!selectedNeighborhood || selectedNeighborhood === 'All') &&
+    currentZoom < 14 &&
+    !selectedRestaurant;
 
   // Modern Minimalist Category Pin
   const createModernPin = (restaurant: Restaurant, isSelected: boolean, isHovered: boolean) => {
@@ -151,6 +222,27 @@ export default function MapComponent({
     });
   };
 
+  // Neighborhood Food Hub Capsule Badge Icon
+  const createHubIcon = (hub: (typeof NEIGHBORHOOD_HUBS)[0], count: number) => {
+    const html = `
+      <div class="group relative flex items-center gap-1.5 cursor-pointer rounded-full bg-[#FFFDFB] px-3 py-1.5 shadow-lg border border-[#E6E0D5] backdrop-blur-md transition-all duration-200 hover:scale-110 hover:border-[#BC5434] hover:shadow-xl active:scale-95"
+           style="transform: translate(-50%, -50%); white-space: nowrap;">
+        <span style="font-size: 14px; line-height: 1;">${hub.icon}</span>
+        <span class="text-xs font-bold text-[#211C1A] tracking-tight">${hub.shortLabel}</span>
+        <span class="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-[#283629] px-1.5 text-[10.5px] font-black text-white shadow-2xs">
+          ${count}
+        </span>
+      </div>
+    `;
+
+    return L.divIcon({
+      className: 'custom-hub-icon',
+      html,
+      iconSize: [0, 0],
+      iconAnchor: [0, 0],
+    });
+  };
+
   return (
     <div className="relative h-full w-full overflow-hidden bg-[#F4EFE6]">
       <MapContainer
@@ -172,72 +264,97 @@ export default function MapComponent({
           targetDistrict={targetDistrict}
         />
 
-        <MapFloatingControls />
+        <MapZoomWatcher onZoom={handleZoomUpdate} />
 
-        {restaurants.map((restaurant) => {
-          const isSelected =
-            selectedRestaurant?.id === restaurant.id &&
-            selectedRestaurant?.lat === restaurant.lat &&
-            selectedRestaurant?.lng === restaurant.lng;
-          const isHovered = hoveredRestaurantId === restaurant.id;
-          const icon = createModernPin(restaurant, isSelected, isHovered);
+        <MapFloatingControls onRecenter={() => onSelectNeighborhood?.('All')} />
 
-          const showPrimary =
-            !selectedNeighborhood ||
-            selectedNeighborhood === 'All' ||
-            restaurant.neighborhood === selectedNeighborhood;
+        {/* ================= CLUSTERED VIEW: NEIGHBORHOOD FOOD HUBS ================= */}
+        {isClusteredView &&
+          NEIGHBORHOOD_HUBS.map((hub) => {
+            const count = countsByNeighborhood[hub.id] || 0;
+            if (count === 0) return null;
 
-          return (
-            <React.Fragment key={restaurant.id}>
-              {/* Primary Location Pin */}
-              {showPrimary && (
-                <Marker
-                  position={[restaurant.lat, restaurant.lng]}
-                  icon={icon}
-                  eventHandlers={{
-                    click: () => onSelectRestaurant(restaurant),
-                  }}
-                />
-              )}
+            return (
+              <Marker
+                key={hub.id}
+                position={[hub.lat, hub.lng]}
+                icon={createHubIcon(hub, count)}
+                eventHandlers={{
+                  click: () => {
+                    onSelectNeighborhood?.(hub.id);
+                  },
+                }}
+              />
+            );
+          })}
 
-              {/* Branch Location Pins */}
-              {restaurant.branches
-                ?.filter(
-                  (branch) =>
-                    !selectedNeighborhood ||
-                    selectedNeighborhood === 'All' ||
-                    branch.neighborhood === selectedNeighborhood
-                )
-                .map((branch) => {
-                  const isBranchSelected =
-                    selectedRestaurant?.id === restaurant.id &&
-                    selectedRestaurant?.lat === branch.lat &&
-                    selectedRestaurant?.lng === branch.lng;
-                  const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
+        {/* ================= DETAILED VIEW: INDIVIDUAL CATEGORY PINS ================= */}
+        {!isClusteredView &&
+          restaurants.map((restaurant) => {
+            const isSelected =
+              selectedRestaurant?.id === restaurant.id &&
+              selectedRestaurant?.lat === restaurant.lat &&
+              selectedRestaurant?.lng === restaurant.lng;
+            const isHovered = hoveredRestaurantId === restaurant.id;
+            const icon = createModernPin(restaurant, isSelected, isHovered);
 
-                  return (
-                    <Marker
-                      key={`${restaurant.id}-${branch.id}`}
-                      position={[branch.lat, branch.lng]}
-                      icon={branchIcon}
-                      eventHandlers={{
-                        click: () =>
-                          onSelectRestaurant({
-                            ...restaurant,
-                            neighborhood: branch.neighborhood,
-                            address: branch.address,
-                            lat: branch.lat,
-                            lng: branch.lng,
-                            googleMapsUrl: branch.googleMapsUrl,
-                          }),
-                      }}
-                    />
-                  );
-                })}
-            </React.Fragment>
-          );
-        })}
+            const showPrimary =
+              !selectedNeighborhood ||
+              selectedNeighborhood === 'All' ||
+              restaurant.neighborhood === selectedNeighborhood;
+
+            return (
+              <React.Fragment key={restaurant.id}>
+                {/* Primary Location Pin */}
+                {showPrimary && (
+                  <Marker
+                    position={[restaurant.lat, restaurant.lng]}
+                    icon={icon}
+                    eventHandlers={{
+                      click: () => onSelectRestaurant(restaurant),
+                    }}
+                  />
+                )}
+
+                {/* Branch Location Pins */}
+                {restaurant.branches
+                  ?.filter(
+                    (branch) =>
+                      !selectedNeighborhood ||
+                      selectedNeighborhood === 'All' ||
+                      branch.neighborhood === selectedNeighborhood
+                  )
+                  .map((branch) => {
+                    const isBranchSelected =
+                      selectedRestaurant?.id === restaurant.id &&
+                      selectedRestaurant?.lat === branch.lat &&
+                      selectedRestaurant?.lng === branch.lng;
+                    const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
+
+                    return (
+                      <Marker
+                        key={`${restaurant.id}-${branch.id}`}
+                        position={[branch.lat, branch.lng]}
+                        icon={branchIcon}
+                        eventHandlers={{
+                          click: () =>
+                            onSelectRestaurant({
+                              ...restaurant,
+                              neighborhood: branch.neighborhood,
+                              address: branch.address,
+                              lat: branch.lat,
+                              lng: branch.lng,
+                              googleMapsUrl: branch.googleMapsUrl,
+                            }),
+                        }}
+                      />
+                    );
+                  })}
+              </React.Fragment>
+            );
+          })}
       </MapContainer>
     </div>
   );
 }
+

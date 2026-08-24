@@ -66,6 +66,7 @@ export default function SpatialMapFlow({
   hoveredRestaurantId,
   onHoverRestaurant,
   selectedNeighborhood,
+  onSelectNeighborhood,
   onToggleBookmark,
   bookmarkedIds,
   targetDistrict,
@@ -104,6 +105,7 @@ export default function SpatialMapFlow({
         selectedRestaurant={selectedRestaurant}
         hoveredRestaurantId={hoveredRestaurantId}
         selectedNeighborhood={selectedNeighborhood}
+        onSelectNeighborhood={onSelectNeighborhood}
         onSelectRestaurant={onSelectRestaurant}
         onOpenDrawer={onOpenDrawer}
         onToggleBookmark={onToggleBookmark}

@@ -98,3 +98,10 @@ body {
 .leaflet-control-zoom {
   display: none !important;
 }
+
+/* Custom Marker Container Resets */
+.custom-hub-icon,
+.modern-leaflet-pin {
+  background: transparent !important;
+  border: none !important;
+}
