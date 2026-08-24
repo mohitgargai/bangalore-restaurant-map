@@ -103,15 +103,15 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "umesh-refreshments-seshadripuram",
-    "name": "Umesh Refreshments",
+    "name": "Umesh Dosa Point",
     "slug": "umesh-refreshments-seshadripuram",
     "tagline": "Ultra-crisp Podi Masala Dosa & melt-in-mouth Button Thatte Idlis",
     "description": "Seshadripuram’s iconic standing-only tiffin room that sparked a citywide butter-podi revolution with its blazing red gunpowder masala dosas and rich ghee bath.",
     "category": "Iconic Heritage",
-    "neighborhood": "Sadashivanagar & Palace Grounds",
-    "address": "1st cross, 779, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
-    "lat": 12.968817999999999,
-    "lng": 77.64078219999999,
+    "neighborhood": "Malleshwaram",
+    "address": "21, 4th Main Rd, 4th Block, Kumara Park West, Seshadripuram, Bengaluru, Karnataka 560020, India",
+    "lat": 12.9889373,
+    "lng": 77.5775321,
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -127,7 +127,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/umesh-refreshments-seshadripuram.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=16998718853132440679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=12853698143630628717",
     "timings": "7:00 AM – 10:30 PM",
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
     "isVegetarian": true,
@@ -207,9 +207,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Operating near Lalbagh Main Gate since 1924, MTR is an internationally celebrated temple of traditional Karnataka Brahminical cuisine, invention birthplace of Rava Idli during WWII rationing.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "29, Ground Floor, White House, St Mark's Rd, opposite SBI HQ, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-    "lat": 12.9722189,
-    "lng": 77.60105449999999,
+    "address": "14, Lal Bagh Main Rd, Doddamavalli, Sudhama Nagar, Bengaluru, Karnataka 560027, India",
+    "lat": 12.9551821,
+    "lng": 77.5855569,
     "priceLevel": "₹₹",
     "priceForTwo": "₹500",
     "mustTry": [
@@ -225,7 +225,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/mtr-lalbagh.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=13326171345556096743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=16038659297309083906",
     "timings": "6:30 AM – 11:00 AM, 12:30 PM – 8:30 PM (Closed Mondays)",
     "curatorNote": "Order the silver thali lunch or pair Rava Idli with their signature cup of melted spiced ghee.",
     "isVegetarian": true,
@@ -1547,9 +1547,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A sprawling outdoor brewery sanctuary in North Bangalore offering craft beer brewed to Bavarian purity laws, gourmet charcuterie, and sourdough bakes.",
     "category": "Microbrewery",
     "neighborhood": "Bel Road & North BLR",
-    "address": "No.23/3, 21st KM Stone, Old Madras Road Nimbekaipura, Bidarahalli, Hobli, Sannatammanahalli, Nimbekayipura, Karnataka 560049, India",
-    "lat": 13.0535789,
-    "lng": 77.7594518,
+    "address": "UG Floor, Bhartiya Mall Of Bengaluru, Thanisandra / Hennur Bagalur Rd, Kannuru, Bengaluru, Karnataka 560064, India",
+    "lat": 13.0838244,
+    "lng": 77.64447,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -1564,7 +1564,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/geist-brewing-factory.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=151067454123503013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=7299639736744997223",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The Kamacitra NEIPA with tropical notes is one of the highest-rated craft beers in India.",
     "isVegetarian": false,
@@ -1812,9 +1812,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A Bangalore institution famed for bite-sized Red Velvet cupcakes with cream cheese frosting, sourdough pizzas, roast chicken pot pies, and apple tarts in a cozy colonial bungalow.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Lavelle Road",
-    "address": "275/A, 9th Main Rd, near Jesus Call, 5th Block, Jayanagar, Bengaluru, Karnataka 560041, India",
-    "lat": 12.917430099999999,
-    "lng": 77.5834634,
+    "address": "24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9698289,
+    "lng": 77.597437,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -1830,7 +1830,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/glens-bakehouse-lavelle.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=13825732100147479190&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=3948675282140169658",
     "timings": "9:00 AM – 11:30 PM",
     "curatorNote": "The bite-sized red velvet cupcakes are legendary across Bangalore. Sit in the sun-dappled courtyard under the tree.",
     "isVegetarian": false,
@@ -2407,9 +2407,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A traditional Italian trattoria on 100 Feet Road celebrated for genuine Italian culinary techniques, handmade emulsified pasta sauces, wood-fired pizzas, and classic desserts.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "543, 9th Cross Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India",
-    "lat": 12.910616099999999,
-    "lng": 77.5968872,
+    "address": "First Floor, 759, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.9718159,
+    "lng": 77.6410228,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -2425,7 +2425,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/bologna-italian-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=15626912798046762981&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=17842799711718605795",
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
     "isVegetarian": false,
@@ -2569,7 +2569,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       {
         "id": "smash-guys-ecoworld",
         "name": "Bellandur (RMZ EcoWorld)",
-        "neighborhood": "Whitefield",
+        "neighborhood": "Bellandur & Ecoworld",
         "address": "Ground Floor, Campus 6A, Unit 25, RMZ Ecoworld Rd, Bellandur, Bengaluru, Karnataka 560103, India",
         "lat": 12.9208055,
         "lng": 77.6852894,
@@ -3244,7 +3244,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Furnished with traditional woven charpais (cots), hurricane lanterns, and an open live tandoor counter, the original Kalyan Nagar flagship serves unadulterated North Indian dhaba comfort food on traditional kansa thalis.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "No. 32/3, Allalasandra, Yelahanka Main Road, (Bangalore–Doddaballapur Road, Hobli, Ambedkar Colony, Yelahanka, Bengaluru, Karnataka 560064, India",
+    "address": "Masand Esquire, 1M, near Hennur Main Road, HRBR Layout 3rd Block, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -3262,9 +3262,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The original flagship maintains superior tandoor mastery and smoky charcoal profiling that modern franchised outlets rarely replicate.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.092018,
-    "lng": 77.59386230000001,
-    "googleMapsUrl": "https://maps.google.com/?cid=16620443862201460744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "lat": 13.0249313,
+    "lng": 77.6315241,
+    "googleMapsUrl": "https://maps.google.com/?cid=17149048302875044392"
   },
   {
     "id": "al-amanah-cafe-kammanahalli",
@@ -4101,5 +4101,37 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042"
       }
     ]
+  },
+  {
+    "id": "milano-ice-cream-indiranagar",
+    "name": "Milano Ice Cream",
+    "slug": "milano-ice-cream-indiranagar",
+    "tagline": "Bangalore’s premier artisanal Italian gelateria serving authentic fresh churned gelato & crepes",
+    "description": "An undisputed dessert pilgrimage on Krishna Temple Road off 100 Feet Road Indiranagar. Renowned for its authentic Italian gelato crafted with imported Sicilian pistachios, dark chocolate-orange, salted butter caramel, and warm fresh Nutella crepes.",
+    "category": "Bakeries & Desserts",
+    "neighborhood": "Indiranagar",
+    "address": "460, Shri Krishna Temple Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.9790343,
+    "lng": 77.6440204,
+    "priceLevel": "₹₹",
+    "priceForTwo": "₹400",
+    "mustTry": [
+      "Pure Sicilian Pistachio Gelato",
+      "Dark Chocolate & Candied Orange Gelato",
+      "Salted Butter Caramel Gelato",
+      "Warm Nutella & Banana Crepe with Gelato Scoop",
+      "Fresh Strawberry Sorbetto"
+    ],
+    "vibeTags": [
+      "Late Night",
+      "Outdoor Seating",
+      "Pocket Friendly"
+    ],
+    "imageUrl": "/images/restaurants/milano-ice-cream-indiranagar.jpg",
+    "googleMapsUrl": "https://maps.google.com/?cid=12179050838404975860",
+    "timings": "11:00 AM – 1:00 AM (Late Night)",
+    "curatorNote": "Bangalore’s benchmark for authentic Italian gelato. Open past midnight, the rich Sicilian Pistachio and Dark Chocolate Orange on a freshly baked waffle cone are exceptional.",
+    "isVegetarian": true,
+    "verified": true
   }
 ];
