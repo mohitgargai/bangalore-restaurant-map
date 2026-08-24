@@ -331,39 +331,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "airlines-hotel-lavelle-road",
-    "name": "Airlines Hotel",
-    "slug": "airlines-hotel-lavelle-road",
-    "tagline": "Bangalore’s iconic leafy drive-in beneath century-old banyans",
-    "description": "Since 1968, Airlines Hotel has been Bangalore’s quintessential outdoor breakfast institution, with patrons parked under canopy trees enjoying chole bhature and filter coffee.",
-    "category": "Iconic Heritage",
-    "neighborhood": "Lavelle Road",
-    "address": "4, Madras Bank Rd, Off Lavelle Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9729273,
-    "lng": 77.5999161,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹400",
-    "mustTry": [
-      "Chole Bhature",
-      "Crispy Butter Masala Dosa",
-      "Vada Sambar",
-      "Strong Filter Coffee"
-    ],
-    "vibeTags": [
-      "Heritage (Pre-1980)",
-      "Outdoor Seating",
-      "Breakfast Spot",
-      "Pet Friendly",
-      "Filter Coffee Spot"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Airlines+Hotel/@12.9729273,77.5999161,17z/data=!4m9!3m8!1s0x3bae16797b5c6ad5:0x83334d052c61949c!5m2!4m1!1i2!8m2!3d12.9729273!4d77.5999161!16s%2Fg%2F1tm283p_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "7:00 AM – 10:00 PM",
-    "curatorNote": "The quintessential Bangalore weekend morning ritual. Park in the shaded driveway and order coffee brought straight to your car.",
-    "isVegetarian": true,
-    "verified": true
-  },
-  {
     "id": "koshys-st-marks-road",
     "name": "Koshy's Parade Cafe",
     "slug": "koshys-st-marks-road",
@@ -615,37 +582,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/place/154+Breakfast+Club/@12.9333838,77.6270794,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae145e73604653:0xb64a99330c93faf7!8m2!3d12.9333838!4d77.6270794!16s%2Fg%2F11b6hpb21f?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "9:00 AM – 9:00 PM (Closed Tuesdays)",
     "curatorNote": "A green Koramangala oasis for leisurely Sunday breakfasts and fluffy Belgian waffles.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "truffles-st-marks-road",
-    "name": "Truffles",
-    "slug": "truffles-st-marks-road",
-    "tagline": "Bangalore’s beloved burger institution & steakhouse comfort food",
-    "description": "The quintessential Bangalore rite of passage for university students and burger purists. Famous for monster All American cheese burgers, peri-peri chicken steaks, and blueberry cheesecakes.",
-    "category": "Specialty Coffee & Cafe",
-    "neighborhood": "Church Street & MG Road",
-    "address": "22, Vasavi Complex, St. Marks Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9718226,
-    "lng": 77.6008918,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹650",
-    "mustTry": [
-      "All American Cheese Burger",
-      "Peri Peri Chicken Burger",
-      "Ferrero Rocher Milkshake",
-      "Sizzling Brownie with Ice Cream",
-      "Chicken Lasagna"
-    ],
-    "vibeTags": [
-      "Pocket Friendly",
-      "Late Night"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Truffles+St.+Marks/@12.9718226,77.6008918,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167944a77259:0x98e639f6e9217987!8m2!3d12.9718226!4d77.6008918!16s%2Fg%2F12hkgg0r1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "11:00 AM – 11:00 PM",
-    "curatorNote": "Generations of Bangaloreans grew up eating the All American Cheese Burger with seasoned wedges.",
     "isVegetarian": false,
     "verified": true
   },
@@ -912,47 +848,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     ]
   },
   {
-    "id": "burma-burma-brigade-road",
-    "name": "Burma Burma (Brigade Road)",
-    "slug": "burma-burma-brigade-road",
-    "tagline": "Burmese tea room & delicacies at Forum Rex Walk",
-    "description": "The chic central Bangalore home of Burma Burma at Forum Rex Walk on Brigade Road, serving exquisite artisanal teas, crispy lotus stem, and coconut broths.",
-    "category": "Pan-Asian & Japanese",
-    "neighborhood": "Church Street & MG Road",
-    "address": "Unit 109, Ground Floor, Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9730401,
-    "lng": 77.6061396,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,500",
-    "mustTry": [
-      "Oh No Khow Suey",
-      "Samosa Soup",
-      "Avocado & Tea Leaf Salad",
-      "Rangoon Baked Coconut Custard"
-    ],
-    "vibeTags": [
-      "Pure Veg",
-      "Romantic"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room/@12.9730401,77.6061396,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17740a178f91:0xc86d6e877bee2c40!8m2!3d12.9730401!4d77.6061396!16s%2Fg%2F11kbb23vt5?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 4:00 PM, 6:30 PM – 11:00 PM",
-    "curatorNote": "Spacious, elegant ambiance in Rex Walk with dedicated specialty tea bar.",
-    "isVegetarian": true,
-    "verified": true,
-    "branches": [
-      {
-        "id": "burma-burma",
-        "name": "Indiranagar (12th Main)",
-        "neighborhood": "Indiranagar",
-        "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-        "lat": 12.9704847,
-        "lng": 77.6447032,
-        "googleMapsUrl": "https://www.google.com/maps/place/FLUX/@12.9704847,77.6447032,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17fa2282ae05:0xc17eeb4a35fcf257!8m2!3d12.9704847!4d77.6447032!16s%2Fg%2F11fp1r49vz?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-      }
-    ]
-  },
-  {
     "id": "lucky-chan-indiranagar",
     "name": "Lucky Chan (Indiranagar)",
     "slug": "lucky-chan-indiranagar",
@@ -1110,39 +1005,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "miso-sexy-indiranagar",
-    "name": "Miso Sexy",
-    "slug": "miso-sexy-indiranagar",
-    "tagline": "High-energy Asian dining room, bespoke cocktails & neon rooftop",
-    "description": "An electric Indiranagar hotspot known for stylish neon interiors, inventive Pan-Asian sushi rolls, robata skewers, dim sums, and signature mixology.",
-    "category": "Pan-Asian & Japanese",
-    "neighborhood": "Indiranagar",
-    "address": "963, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.969883,
-    "lng": 77.639914,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,800",
-    "mustTry": [
-      "Truffle Edamame Dumpling",
-      "Rock Shrimp Tempura",
-      "Miso Sexy Signature Rolls",
-      "Matcha Sour Cocktail",
-      "Robata Chicken Skewers"
-    ],
-    "vibeTags": [
-      "Romantic",
-      "Cocktail Program",
-      "Late Night",
-      "Outdoor Seating"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/MisoSexy+Bangalore/@12.969883,77.639914,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae171f9255b733:0xe9a3553eecb9c1d6!8m2!3d12.969883!4d77.639914!16s%2Fg%2F11sqkbcwkl?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "Stunning rooftop vibe overlooking Indiranagar canopy trees with standout sushi and inventive cocktail concoctions.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "misu-st-marks-road",
     "name": "Misu",
     "slug": "misu-st-marks-road",
@@ -1207,7 +1069,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "the-pizza-bakery-indiranagar",
-    "name": "The Pizza Bakery (Indiranagar)",
+    "name": "The Pizza Bakery",
     "slug": "the-pizza-bakery-indiranagar",
     "tagline": "Wood-fired 48-hour sourdough pizzas & stuffed garlic breads",
     "description": "A cult Bangalore favorite celebrated for authentic Neapolitan hand-stretched sourdough pies, stuffed garlic loafs loaded with cheese, and craft brews.",
@@ -1238,55 +1100,22 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "branches": [
       {
-        "id": "the-pizza-bakery-church-street",
-        "name": "Church Street (Coconut Grove)",
+        "id": "the-pizza-bakery-church-st",
+        "name": "The Pizza Bakery (Church Street)",
         "neighborhood": "Church Street & MG Road",
-        "address": "86, Coconut Grove, Church St, Ashok Nagar, Bengaluru, Karnataka 560001",
-        "lat": 12.9743637,
-        "lng": 77.6077341,
-        "googleMapsUrl": "https://www.google.com/maps/place/Church+St,+Bengaluru,+Karnataka/@12.9743637,77.6077341,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167c4d722c73:0x32a49eb101436b6d!8m2!3d12.9743637!4d77.6077341!16s%2Fg%2F11gfhsk6wj?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-      }
-    ]
-  },
-  {
-    "id": "the-pizza-bakery-church-street",
-    "name": "The Pizza Bakery (Church Street)",
-    "slug": "the-pizza-bakery-church-street",
-    "tagline": "Neapolitan sourdough pizzas in the bustling heart of Church Street",
-    "description": "Chic CBD sourdough pizza bar nestled in the Coconut Grove complex, featuring wood-fired blistered crusts, craft beer, and Italian desserts.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "Church Street & MG Road",
-    "address": "86, Coconut Grove, Church Street, Shanthala Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9752011,
-    "lng": 77.6046089,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,400",
-    "mustTry": [
-      "Truffle Burrata Pizza",
-      "Stuffed Garlic Bread",
-      "Nutella Sourdough Pizza",
-      "Craft Beer on Tap"
-    ],
-    "vibeTags": [
-      "Artisanal Sourdough",
-      "Outdoor Seating",
-      "Romantic"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery+-+Church+Street/@12.9752011,77.6046089,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17df01fc2c3d:0x61eaa04d3b9f8234!8m2!3d12.9752011!4d77.6046089!16s%2Fg%2F11lkws0t9x?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "11:30 AM – 11:30 PM",
-    "curatorNote": "Prime spot after browsing Church Street bookstores. Pair a sourdough pizza with local craft IPA.",
-    "isVegetarian": false,
-    "verified": true,
-    "branches": [
+        "address": "86, Coconut Grove, Church Street, Ashok Nagar, Bengaluru 560001",
+        "lat": 12.9749557,
+        "lng": 77.6053303,
+        "googleMapsUrl": "https://maps.app.goo.gl/7g8eQYgG2yXvH6eGA"
+      },
       {
-        "id": "the-pizza-bakery-indiranagar",
-        "name": "Indiranagar (12th Main)",
-        "neighborhood": "Indiranagar",
-        "address": "2985, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-        "lat": 12.9701071,
-        "lng": 77.6447307,
-        "googleMapsUrl": "https://www.google.com/maps/place/2985,+12th+Main+Rd,+HAL+2nd+Stage,+Indiranagar,+Bengaluru,+Karnataka+560008/@12.9701071,77.6447307,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a82c307d27:0x73af5e7e69e8f500!8m2!3d12.9701071!4d77.6447307!16s%2Fg%2F11gbk4hqzz?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "id": "the-pizza-bakery-hsr",
+        "name": "The Pizza Bakery (HSR Layout)",
+        "neighborhood": "HSR Layout",
+        "address": "No. 2345, 17th Cross Rd, Sector 1, HSR Layout, Bengaluru 560102",
+        "lat": 12.917,
+        "lng": 77.6508,
+        "googleMapsUrl": "https://maps.google.com/?q=The+Pizza+Bakery+HSR+Layout"
       }
     ]
   },
@@ -1663,37 +1492,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/place/Maravanthe+Coastal+Cuisine/@12.9783935,77.6372562,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a48e2bd1e5:0x420f46182ac6ef1b!8m2!3d12.9783935!4d77.6372562!16s%2Fg%2F11fz9jbx5l?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:45 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The traditional Kundapura coconut fish curry and crispy rava-crusted Ladyfish bring coastal beach-highway flavors to Indiranagar.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "super-naati-mg-road",
-    "name": "Super Naati",
-    "slug": "super-naati-mg-road",
-    "tagline": "Authentic Karnataka rustic Naati military hotel & Donne Biryani",
-    "description": "Sizzling Karnataka military-style mutton chops fry, fiery pepper chicken, rich mutton saaru, and fragrant Donne Biryani served on eco-leaf plates in central Bangalore.",
-    "category": "Regional & Coastal",
-    "neighborhood": "Church Street & MG Road",
-    "address": "Leo Complex, 45/1, Residency Rd 1st Cross, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.9740887,
-    "lng": 77.6091747,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹600",
-    "mustTry": [
-      "Naati Mutton Donne Biryani",
-      "Mutton Chops Fry",
-      "Naati Koli Saaru",
-      "Boti Fry",
-      "Paya Soup"
-    ],
-    "vibeTags": [
-      "Late Night",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Super+Naati/@12.9740887,77.6091747,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17424c4cc337:0xa398706cdab48a74!8m2!3d12.9740887!4d77.6091747!16s%2Fg%2F11ywps6yy9?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 4:00 PM, 7:00 PM – 11:00 PM",
-    "curatorNote": "Bold, fiery green-chilli infused masala cooked the traditional Karnataka Naati way. The mutton chops are fork-tender.",
     "isVegetarian": false,
     "verified": true
   },
@@ -3118,38 +2916,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "vanamo-indiranagar",
-    "name": "Vanamo Global Eats and Caffeinary",
-    "slug": "vanamo-indiranagar",
-    "tagline": "Nordic-aesthetic cafe, specialty caffeinary & unique global dishes",
-    "description": "A chic Nordic-inspired cafe on 100 Feet Road curating underrepresented international cuisines (Ukrainian, Greek, Romanian, Filipino) alongside single-origin coffees and breakfast bowls.",
-    "category": "Specialty Coffee & Cafe",
-    "neighborhood": "Indiranagar",
-    "address": "368, Ground Floor, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9732198,
-    "lng": 77.6413393,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹900",
-    "mustTry": [
-      "Ukrainian Syrniki (Cottage Cheese Pancakes)",
-      "Patatas Bravas",
-      "Greek Salad Bowl",
-      "Specialty Cortado",
-      "Signature Cold Brew"
-    ],
-    "vibeTags": [
-      "Romantic",
-      "Work Friendly",
-      "Outdoor Seating"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Vanamo+Global+Eats+and+Caffeinary/@12.9732198,77.6413393,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae170021918d93:0x4e0cc7dff9e7c3f8!8m2!3d12.9732198!4d77.6413393!16s%2Fg%2F11w44pk30c?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "8:30 AM – 11:00 PM",
-    "curatorNote": "The Ukrainian Syrniki (fluffy golden quark cheese pancakes with berry compote) paired with a flat white is a revelation.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "yogisthaan-cafe-indiranagar",
     "name": "Yogisthaan Cafe",
     "slug": "yogisthaan-cafe-indiranagar",
@@ -3208,70 +2974,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/place/Izanagi+Japanese+Restaurant/@12.9812505,77.6405078,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17e8909756a9:0xe0616b564cb1834e!8m2!3d12.9812505!4d77.6405078!16s%2Fg%2F11vw_r5hn9?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
     "timings": "12:00 PM – 3:30 PM, 6:30 PM – 11:00 PM",
     "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "muru-muru-indiranagar",
-    "name": "Muru Muru",
-    "slug": "muru-muru-indiranagar",
-    "tagline": "Converted vintage bungalow cafe & nostalgic comfort bites",
-    "description": "A cozy cafe housed in a vintage residential bungalow with lush greenery and cane furniture, serving nostalgic Indian comfort snacks reimagined with modern touches.",
-    "category": "Specialty Coffee & Cafe",
-    "neighborhood": "Indiranagar",
-    "address": "33, 12th Cross Rd, Indira Nagar 2nd Stage, Hoysala Nagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9821907,
-    "lng": 77.6378677,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹650",
-    "mustTry": [
-      "Dosa Batter Onion Rings",
-      "Three Cheese Sabudana Vada",
-      "Sharma Ji’s Aloo Chaat",
-      "Cream Cheese Bagel Naan",
-      "Filter Coffee Frappe"
-    ],
-    "vibeTags": [
-      "Pure Veg",
-      "Outdoor Seating",
-      "Work Friendly",
-      "Pocket Friendly"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/Muru+Muru/@12.9821907,77.6378677,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae170059ac6c49:0xf7f5cfc3bc2387b1!8m2!3d12.9821907!4d77.6378677!16s%2Fg%2F11w4gty4lq?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "11:00 AM – 10:30 PM",
-    "curatorNote": "The quintessential Indiranagar adda. Sit under the trees and snack on crispy cheese sabudana vadas and iced filter coffee.",
-    "isVegetarian": true,
-    "verified": true
-  },
-  {
-    "id": "the-estate-deli-indiranagar",
-    "name": "The Estate Deli",
-    "slug": "the-estate-deli-indiranagar",
-    "tagline": "Boutique deli, Chicago deep-dish pizza & gourmet lamb burgers",
-    "description": "A boutique artisan deli near Indiranagar Club specializing in Chicago-style deep dish pizza, signature lamb smash burgers, slow-cooked pastas, and house bakes.",
-    "category": "Modern Indian & Dining",
-    "neighborhood": "Indiranagar",
-    "address": "3162, 60 Feet Rd, 12th Cross Rd, Defence Colony, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9694095,
-    "lng": 77.6358547,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹900",
-    "mustTry": [
-      "House Lamb Smash Burger",
-      "Chicago Deep-Dish Pie Pizza",
-      "Slow-Cooked Lamb Spaghetti",
-      "Rose & Pistachio Tea Cake",
-      "Sea Salt Brownie"
-    ],
-    "vibeTags": [
-      "Romantic",
-      "Work Friendly"
-    ],
-    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Estate+Deli/@12.9694095,77.6358547,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17000a6aeaa1:0xd351711e1ed77f71!8m2!3d12.9694095!4d77.6358547!16s%2Fg%2F11xfj78472?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 11:00 PM",
-    "curatorNote": "Bangalore's premier spot for genuine Chicago deep-dish pizza and hearty house-ground lamb smash burgers.",
     "isVegetarian": false,
     "verified": true
   },
