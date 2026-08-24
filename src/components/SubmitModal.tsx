@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Category, Neighborhood, ALL_CATEGORIES, ALL_NEIGHBORHOODS } from '@/types';
 import { db } from '@/lib/firebase';
 import { trackEvent } from '@/lib/analytics';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -15,11 +14,8 @@ interface SubmitModalProps {
 
 export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
   const [name, setName] = useState('');
-  const [neighborhood, setNeighborhood] = useState<Neighborhood>('Indiranagar');
-  const [category, setCategory] = useState<Category>('Specialty Coffee & Cafe');
   const [googleMapsUrl, setGoogleMapsUrl] = useState('');
   const [whyRecommend, setWhyRecommend] = useState('');
-  const [submittedBy, setSubmittedBy] = useState('');
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -29,7 +25,6 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
     setName('');
     setGoogleMapsUrl('');
     setWhyRecommend('');
-    setSubmittedBy('');
     setSubmittedSuccess(false);
     setError('');
     onClose();
@@ -55,7 +50,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
         particleCount: 60,
         spread: 55,
         origin: { y: 0.6 },
-        colors: ['#f97316', '#ea580c', '#fb923c', '#10b981', '#6366f1'],
+        colors: ['#BC5434', '#3E6B56', '#C87D18', '#211C1A'],
       });
     } catch {
       // Ignore confetti errors if disabled
@@ -65,11 +60,15 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) {
-      setError('Please provide the restaurant or cafe name');
+      setError('Please provide the place name');
+      return;
+    }
+    if (!googleMapsUrl.trim()) {
+      setError('Please provide the Google Maps link');
       return;
     }
     if (!whyRecommend.trim()) {
-      setError('Please share why you recommend this spot and must-try dishes');
+      setError('Please share why you recommend this spot and what to order');
       return;
     }
 
@@ -77,22 +76,17 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
     setError('');
 
     try {
-      // Save directly to Firebase Firestore for editorial review
+      // Save to Firebase Firestore
       await addDoc(collection(db, 'submissions'), {
         name: name.trim(),
-        neighborhood,
-        category,
-        googleMapsUrl: googleMapsUrl.trim() || '',
+        googleMapsUrl: googleMapsUrl.trim(),
         whyRecommend: whyRecommend.trim(),
-        submittedBy: submittedBy.trim() || 'Anonymous Foodie',
         status: 'pending',
         createdAt: serverTimestamp(),
       });
 
       trackEvent('submit_spot_suggestion', {
         name: name.trim(),
-        neighborhood,
-        category,
       });
 
       setSubmittedSuccess(true);
@@ -116,7 +110,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
       />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-lg rounded-3xl border border-[#E6E0D5] bg-[#FFFDFB] p-6 shadow-2xl transition-all">
+      <div className="relative w-full max-w-md rounded-3xl border border-[#E6E0D5] bg-[#FFFDFB] p-6 shadow-2xl transition-all">
         {/* Close Button */}
         <button
           onClick={handleResetAndClose}
@@ -128,14 +122,14 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
 
         {submittedSuccess ? (
           /* ================= SUCCESS SCREEN ================= */
-          <div className="py-8 text-center flex flex-col items-center">
+          <div className="py-6 text-center flex flex-col items-center">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#E8F4F0] text-[#17473C] ring-8 ring-[#E8F4F0]/60">
               <CheckCircle2 className="h-9 w-9" />
             </div>
 
             <h3 className="text-xl font-bold text-[#211C1A] mb-2">Suggestion Received!</h3>
             <p className="text-sm text-stone-600 max-w-sm mx-auto mb-6">
-              Thank you for suggesting <strong className="text-[#211C1A]">{name}</strong> in <span className="font-semibold text-stone-800">{neighborhood}</span>. Our editorial team will review and verify its rooftop coordinates for the next catalog release.
+              Thank you for suggesting <strong className="text-[#211C1A]">{name}</strong>. We will review the details and add it to the map.
             </p>
 
             <button
@@ -154,14 +148,14 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   <Sparkles className="h-3.5 w-3.5" />
                 </span>
                 <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#BC5434]">
-                  Community Editorial
+                  Community Suggestion
                 </span>
               </div>
               <h2 className="text-xl font-bold tracking-tight text-[#211C1A]">
-                Suggest a Cult Spot
+                Suggest a Place
               </h2>
               <p className="text-xs text-stone-500 mt-1">
-                Know an undisputed culinary gem, specialty roaster, or heritage canteen we missed? Share it for verification.
+                Know a spot in Bangalore we should add? Drop the details below.
               </p>
             </div>
 
@@ -172,7 +166,7 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Restaurant Name */}
+              {/* Place Name */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
                   Place Name <span className="text-[#BC5434]">*</span>
@@ -180,90 +174,40 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Zen, Naru Noodle Bar, Veena Stores…"
+                  placeholder="e.g. Naru Noodle Bar, Taaza Thindi, Zen…"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-sm text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#BC5434]"
                 />
               </div>
 
-              {/* Neighborhood & Category Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
-                    Neighborhood <span className="text-[#BC5434]">*</span>
-                  </label>
-                  <select
-                    value={neighborhood}
-                    onChange={(e) => setNeighborhood(e.target.value as Neighborhood)}
-                    className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-xs font-medium text-[#211C1A] focus:border-[#BC5434] focus:bg-white focus:outline-none cursor-pointer"
-                  >
-                    {ALL_NEIGHBORHOODS.map((n) => (
-                      <option key={n} value={n}>
-                        {n}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
-                    Category <span className="text-[#BC5434]">*</span>
-                  </label>
-                  <select
-                    value={category}
-                    onChange={(e) => setCategory(e.target.value as Category)}
-                    className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-xs font-medium text-[#211C1A] focus:border-[#BC5434] focus:bg-white focus:outline-none cursor-pointer"
-                  >
-                    {ALL_CATEGORIES.map((c) => (
-                      <option key={c} value={c}>
-                        {c}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
               {/* Google Maps URL */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
-                  Google Maps URL <span className="text-stone-400 font-normal">(Optional)</span>
+                  Google Maps Link <span className="text-[#BC5434]">*</span>
                 </label>
                 <input
                   type="url"
+                  required
                   placeholder="https://maps.app.goo.gl/…"
                   value={googleMapsUrl}
                   onChange={(e) => setGoogleMapsUrl(e.target.value)}
-                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2.5 text-sm text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#BC5434]"
                 />
               </div>
 
-              {/* Why Recommend / Must-Try */}
+              {/* Why Recommend */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
-                  Why is it special & Must-Try Dishes? <span className="text-[#BC5434]">*</span>
+                  Why do you recommend it & Must-Try Dishes? <span className="text-[#BC5434]">*</span>
                 </label>
                 <textarea
                   required
                   rows={3}
-                  placeholder="Tell us what dish to order and why this place belongs in the curated guide…"
+                  placeholder="Tell us what dish to order and why this place belongs on the map…"
                   value={whyRecommend}
                   onChange={(e) => setWhyRecommend(e.target.value)}
-                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 p-3 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none resize-none"
-                />
-              </div>
-
-              {/* Submitter Name */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">
-                  Your Name / Handle <span className="text-stone-400 font-normal">(Optional)</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g. @mohit / Food Connoisseur"
-                  value={submittedBy}
-                  onChange={(e) => setSubmittedBy(e.target.value)}
-                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 px-3.5 py-2 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none"
+                  className="w-full rounded-xl border border-[#E2DDD2] bg-[#F4EFE6]/70 p-3 text-xs text-[#211C1A] placeholder-stone-400 focus:border-[#BC5434] focus:bg-white focus:outline-none resize-none focus:ring-1 focus:ring-[#BC5434]"
                 />
               </div>
 
@@ -277,12 +221,12 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
                   {loading ? (
                     <>
                       <Loader2 className="h-4 w-4 animate-spin" />
-                      <span>Submitting for Review…</span>
+                      <span>Submitting…</span>
                     </>
                   ) : (
                     <>
                       <Send className="h-4 w-4" />
-                      <span>Send Recommendation</span>
+                      <span>Send Suggestion</span>
                     </>
                   )}
                 </button>
@@ -294,3 +238,4 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
     </div>
   );
 }
+

@@ -7,22 +7,24 @@ service cloud.firestore {
                     && request.resource.data.name is string
                     && request.resource.data.name.size() > 0
                     && request.resource.data.name.size() <= 100
-                    && request.resource.data.neighborhood in [
+                    && request.resource.data.googleMapsUrl is string
+                    && request.resource.data.googleMapsUrl.size() > 0
+                    && request.resource.data.googleMapsUrl.size() <= 300
+                    && request.resource.data.whyRecommend is string
+                    && request.resource.data.whyRecommend.size() > 0
+                    && request.resource.data.whyRecommend.size() <= 1000
+                    && (!('neighborhood' in request.resource.data) || request.resource.data.neighborhood in [
                       'Indiranagar', 'Koramangala', 'Malleshwaram', 'Basavanagudi',
                       'Church Street & MG Road', 'Lavelle Road', 'HSR Layout', 'JP Nagar',
                       'Jayanagar', 'CBD & Central', 'Bellandur & Ecoworld', 'Sarjapur Road',
                       'Kalyan Nagar & Kammanahalli', 'Whitefield', 'Sadashivanagar & Palace Grounds',
                       'Bel Road & North BLR'
-                    ]
-                    && request.resource.data.category in [
+                    ])
+                    && (!('category' in request.resource.data) || request.resource.data.category in [
                       'Iconic Heritage', 'Specialty Coffee & Cafe', 'Microbrewery',
                       'Pan-Asian & Japanese', 'Bakeries & Desserts', 'Cocktails & Rooftops',
                       'Regional & Coastal', 'Modern Indian & Dining', 'Street Food & Chaat'
-                    ]
-                    && request.resource.data.whyRecommend is string
-                    && request.resource.data.whyRecommend.size() > 0
-                    && request.resource.data.whyRecommend.size() <= 1000
-                    && (!('googleMapsUrl' in request.resource.data) || (request.resource.data.googleMapsUrl is string && request.resource.data.googleMapsUrl.size() <= 300))
+                    ])
                     && (!('submittedBy' in request.resource.data) || (request.resource.data.submittedBy is string && request.resource.data.submittedBy.size() <= 60))
                     && request.resource.data.status == 'pending'
                     && request.resource.data.createdAt == request.time;

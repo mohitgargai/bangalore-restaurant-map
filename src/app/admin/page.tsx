@@ -574,9 +574,11 @@ export default function AdminPage() {
                               </div>
                             )}
 
-                            <div className="text-[11px] text-zinc-500">
-                              Submitted by: <span className="text-zinc-400">{sub.submittedBy}</span>
-                            </div>
+                            {sub.submittedBy && (
+                              <div className="text-[11px] text-zinc-500">
+                                Submitted by: <span className="text-zinc-400">{sub.submittedBy}</span>
+                              </div>
+                            )}
                           </div>
 
                           <div className="pt-4 mt-4 border-t border-zinc-800 flex items-center justify-between">
