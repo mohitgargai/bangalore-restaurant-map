@@ -3,14 +3,29 @@ service cloud.firestore {
   match /databases/{database}/documents {
     match /submissions/{document} {
       // Allow anonymous creation of suggestions with strict schema validation
-      allow create: if request.resource.data.name is string
+      allow create: if request.resource.data.keys().hasOnly(['name', 'neighborhood', 'category', 'googleMapsUrl', 'whyRecommend', 'submittedBy', 'status', 'createdAt'])
+                    && request.resource.data.name is string
                     && request.resource.data.name.size() > 0
-                    && request.resource.data.name.size() <= 120
-                    && request.resource.data.neighborhood is string
+                    && request.resource.data.name.size() <= 100
+                    && request.resource.data.neighborhood in [
+                      'Indiranagar', 'Koramangala', 'Malleshwaram', 'Basavanagudi',
+                      'Church Street & MG Road', 'Lavelle Road', 'HSR Layout', 'JP Nagar',
+                      'Jayanagar', 'CBD & Central', 'Bellandur & Ecoworld', 'Sarjapur Road',
+                      'Kalyan Nagar & Kammanahalli', 'Whitefield', 'Sadashivanagar & Palace Grounds',
+                      'Bel Road & North BLR'
+                    ]
+                    && request.resource.data.category in [
+                      'Iconic Heritage', 'Specialty Coffee & Cafe', 'Microbrewery',
+                      'Pan-Asian & Japanese', 'Bakeries & Desserts', 'Cocktails & Rooftops',
+                      'Regional & Coastal', 'Modern Indian & Dining', 'Street Food & Chaat'
+                    ]
                     && request.resource.data.whyRecommend is string
                     && request.resource.data.whyRecommend.size() > 0
-                    && request.resource.data.whyRecommend.size() <= 2000
-                    && request.resource.data.status == 'pending';
+                    && request.resource.data.whyRecommend.size() <= 1000
+                    && (!('googleMapsUrl' in request.resource.data) || (request.resource.data.googleMapsUrl is string && request.resource.data.googleMapsUrl.size() <= 300))
+                    && (!('submittedBy' in request.resource.data) || (request.resource.data.submittedBy is string && request.resource.data.submittedBy.size() <= 60))
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.createdAt == request.time;
       
       // Only authenticated admin can read, review, or delete submissions
       allow read, update, delete: if request.auth != null 

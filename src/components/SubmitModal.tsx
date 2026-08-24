@@ -77,9 +77,9 @@ export default function SubmitModal({ isOpen, onClose }: SubmitModalProps) {
       triggerConfetti();
     } catch (err: unknown) {
       console.error('Firestore submission error:', err);
-      // Even if Firestore write is blocked, give graceful feedback
-      setSubmittedSuccess(true);
-      triggerConfetti();
+      const errMsg = err instanceof Error ? err.message : 'Connection failed';
+      setError(`We couldn't save your suggestion right now (${errMsg}). Please try again.`);
+      setSubmittedSuccess(false);
     } finally {
       setLoading(false);
     }

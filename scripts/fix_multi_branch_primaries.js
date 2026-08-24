@@ -2,7 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const API_KEY = 'AIzaSyBZzXAYObiQYcICqtlFjRlACZXnGgsFrF4';
+const API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+if (!API_KEY) {
+  console.error('Error: GOOGLE_PLACES_API_KEY environment variable is required.');
+  console.error('Usage: GOOGLE_PLACES_API_KEY=your_key node scripts/fix_multi_branch_primaries.js');
+  process.exit(1);
+}
 
 const restaurantsPath = path.join(__dirname, '../src/data/restaurants.ts');
 const code = fs.readFileSync(restaurantsPath, 'utf8');

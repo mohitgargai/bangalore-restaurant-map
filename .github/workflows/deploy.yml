@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting
+name: Deploy to Firebase Hosting & Firestore Rules
 
 on:
   push:
@@ -31,3 +31,11 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLR_FOOD_MAP_2026 }}'
           channelId: live
           projectId: blr-food-map-2026
+
+      - name: Deploy Firestore Rules
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLR_FOOD_MAP_2026 }}' > gcp-key.json
+          export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/gcp-key.json
+          npx firebase-tools deploy --only firestore:rules --project blr-food-map-2026 --non-interactive
+          rm -f gcp-key.json
+

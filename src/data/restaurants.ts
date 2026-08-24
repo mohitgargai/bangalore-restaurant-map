@@ -35,8 +35,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "ctr-shri-sagar",
@@ -72,8 +72,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "veena-stores-malleshwaram",
@@ -110,8 +110,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "umesh-refreshments-seshadripuram",
@@ -146,8 +146,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "taaza-thindi-jayanagar",
@@ -183,8 +183,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "brahmins-coffee-bar",
@@ -220,8 +220,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "mtr-lalbagh",
@@ -256,8 +256,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "dwaraka-hotel-basavanagudi",
@@ -293,8 +293,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "puliyogare-point-basavanagudi",
@@ -330,8 +330,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "sn-refreshments-jayanagar",
@@ -367,8 +367,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "koshys-st-marks-road",
@@ -402,8 +402,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-only-place-museum-road",
@@ -439,8 +439,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "rameshwaram-cafe-indiranagar",
@@ -475,8 +475,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-hole-in-the-wall-cafe",
@@ -521,14 +521,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=16064643600650991272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-craftery-by-subko",
@@ -564,8 +564,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "branches": [],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "araku-coffee",
@@ -599,8 +599,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "one-five-four-breakfast-club",
@@ -635,8 +635,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "sunnys-lavelle-road",
@@ -671,8 +671,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "anjus-cafe-ranga-shankara",
@@ -707,8 +707,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "paris-panini-indiranagar",
@@ -742,8 +742,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "naru-noodle-bar",
@@ -776,8 +776,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "kopitiam-lah-indiranagar",
@@ -812,8 +812,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "phobidden-fruit-indiranagar",
@@ -847,8 +847,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-fatty-bao-indiranagar",
@@ -884,8 +884,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "burma-burma",
@@ -927,8 +927,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=14442321108225895488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       },
       {
         "id": "burma-burma-ecoworld-branch",
@@ -940,14 +940,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=17410816075536197062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "lucky-chan",
@@ -991,8 +991,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=5167808166714788376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       },
       {
         "id": "lucky-chan-forum-south-branch",
@@ -1004,14 +1004,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=14126792646757334638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "baan-phadthai-indiranagar",
@@ -1046,8 +1046,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "misu-st-marks-road",
@@ -1081,8 +1081,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "pizza-4ps-indiranagar",
@@ -1117,8 +1117,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-pizza-bakery",
@@ -1162,8 +1162,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=7055628019802538548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       },
       {
         "id": "the-pizza-bakery-hsr-branch",
@@ -1175,14 +1175,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=2264007145900133572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "brik-oven-church-street",
@@ -1217,8 +1217,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "lupa-mg-road",
@@ -1253,8 +1253,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "farmlore-bangalore",
@@ -1287,8 +1287,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "chinita-mexican-indiranagar",
@@ -1323,8 +1323,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "olive-beach-richmond-town",
@@ -1359,8 +1359,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "phurr-jayanagar",
@@ -1394,8 +1394,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "karavalli-residency-road",
@@ -1429,8 +1429,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "ranganna-military-jayanagar",
@@ -1465,8 +1465,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "anupams-coast-to-coast",
@@ -1499,8 +1499,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "maravanthe-coastal-indiranagar",
@@ -1534,8 +1534,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "bengaluru-oota-company-halasuru",
@@ -1569,8 +1569,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "meghana-foods-koramangala",
@@ -1603,8 +1603,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "toit-brewpub",
@@ -1640,8 +1640,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "windmills-craftworks-whitefield",
@@ -1676,8 +1676,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "arbor-brewing-company",
@@ -1712,8 +1712,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-biere-club-lavelle",
@@ -1747,8 +1747,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "geist-brewing-factory",
@@ -1782,8 +1782,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "bobs-bar-indiranagar",
@@ -1819,8 +1819,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "pecos-classic",
@@ -1908,8 +1908,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "zlb-23-leela-palace",
@@ -1945,8 +1945,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "copitas-four-seasons",
@@ -1981,8 +1981,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "lavonne-cafe-indiranagar",
@@ -2026,14 +2026,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=15960569217550590724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "amadora-ice-cream-indiranagar",
@@ -2066,8 +2066,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "glens-bakehouse-lavelle",
@@ -2102,8 +2102,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "variar-bakery-rajajinagar",
@@ -2136,8 +2136,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "albert-bakery-frazer-town",
@@ -2172,8 +2172,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "thoms-bakery-cox-town",
@@ -2207,8 +2207,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "vb-bakery-vv-puram",
@@ -2243,8 +2243,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "mangalore-pearl-frazer-town",
@@ -2277,8 +2277,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "hae-kum-gang-ashok-nagar",
@@ -2311,8 +2311,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "lakeview-milkbar-mg-road",
@@ -2347,8 +2347,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "corner-house-residency-road",
@@ -2382,8 +2382,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "janatha-hotel-malleshwaram",
@@ -2420,8 +2420,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "siddappa-hotel-sampangi-rama-nagar",
@@ -2457,8 +2457,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "dyu-art-cafe-koramangala",
@@ -2494,8 +2494,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "maverick-farmer-ulsoor",
@@ -2531,8 +2531,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "hotel-fishland-gandhinagar",
@@ -2565,8 +2565,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "harima-residency-road",
@@ -2600,8 +2600,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "matsuri-the-chancery",
@@ -2634,8 +2634,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "byg-brewski",
@@ -2682,14 +2682,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=2468613895764706893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "nerlu-cafe-crescent-road",
@@ -2734,14 +2734,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=11982450010248259254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "bologna-italian-indiranagar",
@@ -2776,8 +2776,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "spettacolare-indiranagar",
@@ -2812,8 +2812,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "concu-patisserie-indiranagar",
@@ -2848,8 +2848,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "kink-speciality-coffee-indiranagar",
@@ -2891,14 +2891,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=6592735037254929082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "smash-guys-indiranagar",
@@ -2940,14 +2940,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=3734218755114137825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "beanlore-coffee",
@@ -2990,14 +2990,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=12736088069517843312&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "paper-and-pie-indiranagar",
@@ -3041,14 +3041,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=5914294489538227062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-kind-roastery-jp-nagar",
@@ -3084,8 +3084,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "circa-11-indiranagar",
@@ -3120,8 +3120,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "yogisthaan-cafe-indiranagar",
@@ -3156,8 +3156,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "izanagi-japanese-indiranagar",
@@ -3190,8 +3190,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "asha-tiffins-hsr",
@@ -3226,8 +3226,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=4668069035498777873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "broadway-gourmet-theatre-hsr",
@@ -3262,8 +3262,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "blr-brewing-co-hsr",
@@ -3298,8 +3298,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=8227569617965900977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "biergarten",
@@ -3350,8 +3350,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "ironhill-bengaluru-orr",
@@ -3386,8 +3386,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=9495049884754946253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-fishermans-wharf-sarjapur",
@@ -3421,8 +3421,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=12965296817310886555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "oota-bangalore-whitefield",
@@ -3457,8 +3457,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=1428424193490140233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "whitefield-baking-company",
@@ -3492,8 +3492,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=7964358643997907041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "red-rhino-whitefield",
@@ -3528,8 +3528,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=7542191260218245808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "orzuv-whitefield",
@@ -3563,8 +3563,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=689168556079996423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "153-biere-street-whitefield",
@@ -3599,8 +3599,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=17544578036530952751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "arirang-korean-kammanahalli",
@@ -3632,8 +3632,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=8297737769011114324&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "hi-seoul-kalyan-nagar",
@@ -3665,8 +3665,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=14577515435168665559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-coorg-food-co-kalyan-nagar",
@@ -3698,8 +3698,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=7182420476729379803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "chulha-chouki-da-dhaba-flagship",
@@ -3732,8 +3732,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=17149048302875044392",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "al-amanah-cafe-kammanahalli",
@@ -3766,8 +3766,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "shri-vasavi-condiments-vv-puram",
@@ -3801,8 +3801,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=13706312408231400546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "hotel-navayuga-gandhinagar",
@@ -3834,8 +3834,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=8478137410062836605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "far-and-east-four-seasons",
@@ -3870,8 +3870,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=3750429088146940948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "oia-bangalore-hennur",
@@ -3906,8 +3906,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://maps.google.com/?cid=13572916760978068344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-local-kalyan-nagar",
@@ -3942,8 +3942,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "yauatcha-bengaluru-mg-road",
@@ -3978,8 +3978,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "rim-naam-the-oberoi",
@@ -4014,8 +4014,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "edo-itc-gardenia",
@@ -4049,8 +4049,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "jamavar-the-leela-palace",
@@ -4083,8 +4083,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "le-cirque-signature-leela",
@@ -4118,8 +4118,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "grasshopper-bannerghatta",
@@ -4153,8 +4153,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "shiro-ub-city",
@@ -4189,8 +4189,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "kaze-residency-road",
@@ -4227,8 +4227,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "nagarjuna-residency-road",
@@ -4260,8 +4260,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "hotel-empire-shivajinagar",
@@ -4296,8 +4296,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "magnolia-bakery-indiranagar",
@@ -4329,8 +4329,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "zen-the-leela-palace",
@@ -4364,8 +4364,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "klaa-kitchen-indiranagar",
@@ -4399,8 +4399,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "the-reservoire-koramangala",
@@ -4472,8 +4472,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "muro-museum-road",
@@ -4509,8 +4509,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "koko-prestige-icon-indiranagar",
@@ -4544,8 +4544,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "mai-mai-indiranagar",
@@ -4579,8 +4579,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "subko-coffee-indiranagar",
@@ -4606,7 +4606,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly",
       "Breakfast Spot"
     ],
-    "imageUrl": "/images/restaurants/the-craftery-by-subko.jpg",
+    "imageUrl": "/images/restaurants/subko-coffee-indiranagar.jpg",
     "googleMapsUrl": "https://maps.google.com/?cid=13095318095514028500",
     "timings": "7:30 AM – 10:00 PM",
     "curatorNote": "The 12th Main specialty coffee go-to. Grab a seat by the window with a fresh pour-over and their iconic Podi Sourdough Toast.",
@@ -4623,14 +4623,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042",
         "operationalStatus": "OPERATIONAL",
         "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-        "verificationSource": "google_places_api_v1",
-        "confidence": "verified_rooftop"
+        "verificationSource": "manual_editorial",
+        "confidence": "curator_verified"
       }
     ],
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   },
   {
     "id": "milano-ice-cream-indiranagar",
@@ -4665,7 +4665,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "operationalStatus": "OPERATIONAL",
     "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
-    "verificationSource": "google_places_api_v1",
-    "confidence": "verified_rooftop"
+    "verificationSource": "manual_editorial",
+    "confidence": "curator_verified"
   }
 ];

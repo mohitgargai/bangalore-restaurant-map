@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Restaurant, Neighborhood } from '@/types';
-import { getGoogleMapsDirectionsUrl } from '@/lib/maps';
+import { getGoogleMapsDirectionsUrl, resolveLocationForDisplay } from '@/lib/maps';
 import { Bookmark, Navigation, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Dynamic Leaflet Map Component
@@ -141,20 +141,26 @@ export default function SpatialMapFlow({
             className="flex items-center gap-2.5 sm:gap-3.5 overflow-x-auto no-scrollbar py-2 px-1 scroll-smooth snap-x snap-mandatory touch-pan-x"
           >
             {restaurants.map((restaurant) => {
-              const isSelected = selectedRestaurant?.id === restaurant.id;
+              const loc = resolveLocationForDisplay(restaurant, selectedNeighborhood);
+              const isSelected =
+                selectedRestaurant?.id === restaurant.id &&
+                (!selectedRestaurant?.lat || selectedRestaurant.lat === loc.lat);
               const isHovered = hoveredRestaurantId === restaurant.id;
               const isBookmarked = bookmarkedIds.has(restaurant.id);
-              const directionsUrl = getGoogleMapsDirectionsUrl(restaurant);
+              const directionsUrl =
+                loc.lat && loc.lng
+                  ? `https://www.google.com/maps/dir/?api=1&destination=${loc.lat},${loc.lng}`
+                  : getGoogleMapsDirectionsUrl(restaurant);
 
               return (
                 <div
-                  key={restaurant.id}
+                  key={`${restaurant.id}-${loc.lat}-${loc.lng}`}
                   ref={(el) => {
                     cardRefs.current[restaurant.id] = el;
                   }}
                   onMouseEnter={() => onHoverRestaurant(restaurant.id)}
                   onMouseLeave={() => onHoverRestaurant(null)}
-                  onClick={() => onSelectRestaurant(restaurant)}
+                  onClick={() => onSelectRestaurant(loc.resolvedRestaurant)}
                   className={`shrink-0 snap-center w-[82vw] sm:w-[320px] max-w-[340px] cursor-pointer rounded-2xl border bg-white/95 p-3 shadow-xl backdrop-blur-xl transition-all duration-200 ${
                     isSelected
                       ? 'border-zinc-950 ring-2 ring-zinc-950 scale-102 shadow-2xl'
@@ -203,7 +209,7 @@ export default function SpatialMapFlow({
                         </h3>
 
                         <p className="text-[10.5px] sm:text-[11px] text-zinc-500 truncate">
-                          📍 {restaurant.neighborhood} • {restaurant.priceForTwo} for two
+                          📍 {loc.branchLabel ? `${loc.branchLabel} (${loc.neighborhood})` : loc.neighborhood} • {restaurant.priceForTwo} for two
                         </p>
                       </div>
 
@@ -220,7 +226,7 @@ export default function SpatialMapFlow({
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        onOpenDrawer(restaurant);
+                        onOpenDrawer(loc.resolvedRestaurant);
                       }}
                       className="font-bold text-zinc-900 text-[11px] hover:text-orange-600 flex items-center gap-0.5"
                     >

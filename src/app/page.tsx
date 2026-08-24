@@ -14,21 +14,31 @@ import GridView from '@/components/GridView';
 import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
 
+function subscribeBookmarks(callback: () => void) {
+  if (typeof window === 'undefined') return () => {};
+  window.addEventListener('storage', callback);
+  window.addEventListener('blr_bookmarks_updated', callback);
+  return () => {
+    window.removeEventListener('storage', callback);
+    window.removeEventListener('blr_bookmarks_updated', callback);
+  };
+}
+
+function getBookmarksSnapshot(): string {
+  if (typeof window === 'undefined') return '[]';
+  try {
+    return localStorage.getItem('blr_food_bookmarks') || '[]';
+  } catch {
+    return '[]';
+  }
+}
+
+function getBookmarksServerSnapshot(): string {
+  return '[]';
+}
+
 export default function Home() {
-  const [restaurants] = useState<Restaurant[]>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedOverrides = localStorage.getItem('blr_custom_overrides');
-        if (savedOverrides) {
-          const parsed = JSON.parse(savedOverrides);
-          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-        }
-      } catch {
-        // Ignore storage parse error
-      }
-    }
-    return INITIAL_RESTAURANTS;
-  });
+  const [restaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
 
   // Focused pin / active card on the map
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
@@ -56,20 +66,21 @@ export default function Home() {
   const [vegOnly, setVegOnly] = useState(false);
   const [showSavedOnly, setShowSavedOnly] = useState(false);
 
-  // Bookmarks state (persisted locally with lazy initial state)
-  const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
-        if (savedBookmarks) {
-          return new Set(JSON.parse(savedBookmarks));
-        }
-      } catch {
-        // Ignore parse error
-      }
+  // Bookmarks state (Hydration-safe via React 19 useSyncExternalStore)
+  const bookmarksRaw = React.useSyncExternalStore(
+    subscribeBookmarks,
+    getBookmarksSnapshot,
+    getBookmarksServerSnapshot
+  );
+
+  const bookmarkedIds = useMemo(() => {
+    try {
+      const parsed = JSON.parse(bookmarksRaw);
+      return new Set<string>(Array.isArray(parsed) ? parsed : []);
+    } catch {
+      return new Set<string>();
     }
-    return new Set();
-  });
+  }, [bookmarksRaw]);
 
   // Modals state
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
@@ -91,22 +102,16 @@ export default function Home() {
 
   const handleToggleBookmark = (id: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    setBookmarkedIds((prev) => {
-      const next = new Set(prev);
-      const isAdding = !next.has(id);
-      if (next.has(id)) {
-        next.delete(id);
-      } else {
-        next.add(id);
-      }
-      try {
-        localStorage.setItem('blr_food_bookmarks', JSON.stringify(Array.from(next)));
-        trackEvent(isAdding ? 'bookmark_add' : 'bookmark_remove', { restaurant_id: id });
-      } catch {
-        // Ignore storage error
-      }
-      return next;
-    });
+    try {
+      const current = Array.from(bookmarkedIds);
+      const isAdding = !bookmarkedIds.has(id);
+      const next = isAdding ? [...current, id] : current.filter((x) => x !== id);
+      localStorage.setItem('blr_food_bookmarks', JSON.stringify(next));
+      window.dispatchEvent(new Event('blr_bookmarks_updated'));
+      trackEvent(isAdding ? 'bookmark_add' : 'bookmark_remove', { restaurant_id: id });
+    } catch {
+      // Ignore storage error
+    }
   };
 
   // Map pin / carousel card focus (DOES NOT open full drawer)
@@ -227,6 +232,7 @@ export default function Home() {
           <div className="h-full w-full overflow-y-auto bg-zinc-50 pt-36">
             <GridView
               restaurants={filteredRestaurants}
+              selectedNeighborhood={selectedNeighborhood}
               onSelectRestaurant={handleOpenDrawer}
               onToggleBookmark={handleToggleBookmark}
               bookmarkedIds={bookmarkedIds}

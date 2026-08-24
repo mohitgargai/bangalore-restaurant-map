@@ -108,7 +108,7 @@ export interface Branch {
   operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
   lastVerifiedAt?: string;
   verificationSource?: 'google_places_api_v1' | 'manual_editorial';
-  confidence?: 'verified_rooftop' | 'approximate';
+  confidence?: 'verified_rooftop' | 'curator_verified' | 'approximate';
   timings?: string;
 }
 
@@ -133,7 +133,7 @@ export interface Restaurant {
   operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
   lastVerifiedAt?: string;
   verificationSource?: 'google_places_api_v1' | 'manual_editorial';
-  confidence?: 'verified_rooftop' | 'approximate';
+  confidence?: 'verified_rooftop' | 'curator_verified' | 'approximate';
   instagramUrl?: string;
   websiteUrl?: string;
   timings: string;

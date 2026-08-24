@@ -18,8 +18,73 @@ export function getGoogleMapsPlaceUrl(restaurant: Restaurant, branch?: Branch): 
 }
 
 /**
+ * Resolves the active location representation (primary vs matching branch)
+ * when filtering by a specific neighborhood.
+ */
+export interface ResolvedLocation {
+  restaurant: Restaurant;
+  neighborhood: string;
+  address: string;
+  lat: number;
+  lng: number;
+  googleMapsUrl: string;
+  branchLabel: string | null;
+  resolvedRestaurant: Restaurant;
+}
+
+export function resolveLocationForDisplay(
+  restaurant: Restaurant,
+  selectedNeighborhood?: string
+): ResolvedLocation {
+  if (!selectedNeighborhood || selectedNeighborhood === 'All' || restaurant.neighborhood === selectedNeighborhood) {
+    return {
+      restaurant,
+      neighborhood: restaurant.neighborhood,
+      address: restaurant.address,
+      lat: restaurant.lat,
+      lng: restaurant.lng,
+      googleMapsUrl: restaurant.googleMapsUrl,
+      branchLabel: null,
+      resolvedRestaurant: restaurant,
+    };
+  }
+
+  const matchingBranch = restaurant.branches?.find((b) => b.neighborhood === selectedNeighborhood);
+  if (matchingBranch) {
+    const resolved: Restaurant = {
+      ...restaurant,
+      neighborhood: matchingBranch.neighborhood,
+      address: matchingBranch.address,
+      lat: matchingBranch.lat,
+      lng: matchingBranch.lng,
+      googleMapsUrl: matchingBranch.googleMapsUrl || restaurant.googleMapsUrl,
+    };
+    return {
+      restaurant,
+      neighborhood: matchingBranch.neighborhood,
+      address: matchingBranch.address,
+      lat: matchingBranch.lat,
+      lng: matchingBranch.lng,
+      googleMapsUrl: matchingBranch.googleMapsUrl || restaurant.googleMapsUrl,
+      branchLabel: matchingBranch.name || `${matchingBranch.neighborhood} Branch`,
+      resolvedRestaurant: resolved,
+    };
+  }
+
+  return {
+    restaurant,
+    neighborhood: restaurant.neighborhood,
+    address: restaurant.address,
+    lat: restaurant.lat,
+    lng: restaurant.lng,
+    googleMapsUrl: restaurant.googleMapsUrl,
+    branchLabel: null,
+    resolvedRestaurant: restaurant,
+  };
+}
+
+/**
  * Returns a direct turn-by-turn navigation URL to the exact named venue and verified street address.
- * Matching the named venue ensures Google Maps opens the registered business place card with front-door routing.
  */
 export function getGoogleMapsDirectionsUrl(restaurant: Restaurant, branch?: Branch): string {
   const targetName = branch?.name ? `${restaurant.name} ${branch.name}` : restaurant.name;
@@ -30,3 +95,6 @@ export function getGoogleMapsDirectionsUrl(restaurant: Restaurant, branch?: Bran
     `${cleanName}, ${targetAddress}`
   )}`;
 }
+
+
+
