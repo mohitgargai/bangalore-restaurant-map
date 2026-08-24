@@ -66,11 +66,11 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
   };
 
   return (
-    <div className="absolute right-3 top-36 sm:top-28 z-[1000] flex flex-col gap-1.5 pointer-events-auto">
+    <div className="absolute right-3 top-44 sm:top-32 z-[1000] flex flex-col gap-1.5 pointer-events-auto transition-all">
       <div className="flex flex-col rounded-2xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 shadow-md backdrop-blur-md overflow-hidden">
         <button
           onClick={() => map.zoomIn()}
-          className="flex h-8 w-8 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm border-b border-[#ECE6DA] cursor-pointer focus-visible:outline-none"
+          className="flex h-8.5 w-8.5 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm border-b border-[#ECE6DA] cursor-pointer focus-visible:outline-none active:bg-[#EAE4D9]"
           title="Zoom In"
           aria-label="Zoom In"
         >
@@ -78,7 +78,7 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
         </button>
         <button
           onClick={() => map.zoomOut()}
-          className="flex h-8 w-8 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm cursor-pointer focus-visible:outline-none"
+          className="flex h-8.5 w-8.5 items-center justify-center text-[#332D28] hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors font-bold text-sm cursor-pointer focus-visible:outline-none active:bg-[#EAE4D9]"
           title="Zoom Out"
           aria-label="Zoom Out"
         >
@@ -88,7 +88,7 @@ function MapFloatingControls({ onRecenter }: { onRecenter?: () => void }) {
 
       <button
         onClick={handleRecenter}
-        className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 text-[#332D28] shadow-md backdrop-blur-md hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors cursor-pointer focus-visible:outline-none"
+        className="flex h-8.5 w-8.5 items-center justify-center rounded-2xl border border-[#E6E0D5]/90 bg-[#FFFDFB]/95 text-[#332D28] shadow-md backdrop-blur-md hover:bg-[#F0EBE1] hover:text-[#211C1A] transition-colors cursor-pointer focus-visible:outline-none active:scale-95"
         title="Reset Bangalore View"
         aria-label="Reset Bangalore View"
       >
