@@ -81,10 +81,10 @@ export default function RestaurantDrawer({
 
   const currentAddress = selectedBranch ? selectedBranch.address : restaurant.address;
   const currentNeighborhood = selectedBranch ? selectedBranch.neighborhood : restaurant.neighborhood;
-  const currentMapsUrl = selectedBranch ? selectedBranch.googleMapsUrl : restaurant.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant);
-  const currentDirectionsUrl = selectedBranch
-    ? `https://www.google.com/maps/dir/?api=1&destination=${selectedBranch.lat},${selectedBranch.lng}`
-    : getGoogleMapsDirectionsUrl(restaurant);
+  const currentMapsUrl = selectedBranch
+    ? selectedBranch.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant, selectedBranch)
+    : restaurant.googleMapsUrl || getGoogleMapsPlaceUrl(restaurant);
+  const currentDirectionsUrl = getGoogleMapsDirectionsUrl(restaurant, selectedBranch || undefined);
 
   return (
     <>
