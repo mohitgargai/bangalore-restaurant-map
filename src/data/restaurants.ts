@@ -4047,5 +4047,36 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A benchmark for high-energy Pan-Asian luxury dining. The Hamachi Carpaccio with white truffle oil and silky Lobster Cheung Fun are sensational.",
     "isVegetarian": false,
     "verified": true
+  },
+  {
+    "id": "mai-mai-indiranagar",
+    "name": "Mai Mai",
+    "slug": "mai-mai-indiranagar",
+    "tagline": "Vibrant 12th Main East Asian dining room celebrated for hand-pulled noodles, baos & wok-tossed classics",
+    "description": "A stylish, neon-lit East Asian dining gem tucked into 12th Main Indiranagar. Renowned for its silky dim sum baskets, slow-braised pork belly baos, spicy Sichuan dan dan noodles, and vibrant Pan-Asian street gastronomy.",
+    "category": "Pan-Asian & Japanese",
+    "neighborhood": "Indiranagar",
+    "address": "621A, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.9705628,
+    "lng": 77.6469723,
+    "priceLevel": "₹₹",
+    "priceForTwo": "₹1,200",
+    "mustTry": [
+      "Sichuan Dan Dan Hand-Pulled Noodles",
+      "Crispy Pork Belly Steamed Baos",
+      "Truffle & Cream Cheese Dim Sum",
+      "Chilli Garlic Soft Shell Crab",
+      "Matcha Ice Cream Bao"
+    ],
+    "vibeTags": [
+      "Outdoor Seating",
+      "Pocket Friendly"
+    ],
+    "imageUrl": "/images/restaurants/mai-mai-indiranagar.jpg",
+    "googleMapsUrl": "https://maps.google.com/?cid=14327627305537950824",
+    "timings": "12:00 PM – 11:30 PM",
+    "curatorNote": "A 12th Main favorite with a buzzing aesthetic. The spicy hand-pulled Sichuan noodles and fluffy pork belly baos are standout comfort food.",
+    "isVegetarian": false,
+    "verified": true
   }
 ];
