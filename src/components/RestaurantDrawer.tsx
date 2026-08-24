@@ -36,10 +36,10 @@ export default function RestaurantDrawer({
   const [copied, setCopied] = useState(false);
   const [selectedBranch, setSelectedBranch] = useState<Branch | null>(null);
 
-  // Reset selected branch when restaurant changes
+  // Reset selected branch only when a different restaurant ID is opened
   useEffect(() => {
     setSelectedBranch(null);
-  }, [restaurant]);
+  }, [restaurant?.id]);
 
   if (!restaurant) return null;
 
@@ -60,27 +60,22 @@ export default function RestaurantDrawer({
   };
 
   const handleBranchClick = (b: Branch | null) => {
-    if (!b) {
-      setSelectedBranch(null);
-      return;
-    }
     setSelectedBranch(b);
     if (onSelectBranch) {
-      const match = allRestaurants.find((r) => r.id === b.id);
-      if (match) {
-        onSelectBranch(match);
-      } else {
-        onSelectBranch({
-          ...restaurant,
-          id: b.id,
-          name: b.name || `${restaurant.name.split(' (')[0]} (${b.neighborhood})`,
-          neighborhood: b.neighborhood,
-          address: b.address,
-          lat: b.lat,
-          lng: b.lng,
-          googleMapsUrl: b.googleMapsUrl,
-        });
-      }
+      const activeLat = b ? b.lat : restaurant.lat;
+      const activeLng = b ? b.lng : restaurant.lng;
+      const activeHood = b ? b.neighborhood : restaurant.neighborhood;
+      const activeAddr = b ? b.address : restaurant.address;
+      const activeMapsUrl = b ? b.googleMapsUrl : restaurant.googleMapsUrl;
+
+      onSelectBranch({
+        ...restaurant,
+        neighborhood: activeHood,
+        address: activeAddr,
+        lat: activeLat,
+        lng: activeLng,
+        googleMapsUrl: activeMapsUrl,
+      });
     }
   };
 

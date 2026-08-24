@@ -128,19 +128,52 @@ export default function MapComponent({
         />
 
         {restaurants.map((restaurant) => {
-          const isSelected = selectedRestaurant?.id === restaurant.id;
+          const isSelected =
+            selectedRestaurant?.id === restaurant.id &&
+            selectedRestaurant?.lat === restaurant.lat &&
+            selectedRestaurant?.lng === restaurant.lng;
           const isHovered = hoveredRestaurantId === restaurant.id;
           const icon = createModernPin(restaurant, isSelected, isHovered);
 
           return (
-            <Marker
-              key={restaurant.id}
-              position={[restaurant.lat, restaurant.lng]}
-              icon={icon}
-              eventHandlers={{
-                click: () => onSelectRestaurant(restaurant),
-              }}
-            />
+            <React.Fragment key={restaurant.id}>
+              {/* Primary Location Pin */}
+              <Marker
+                position={[restaurant.lat, restaurant.lng]}
+                icon={icon}
+                eventHandlers={{
+                  click: () => onSelectRestaurant(restaurant),
+                }}
+              />
+
+              {/* Branch Location Pins */}
+              {restaurant.branches?.map((branch) => {
+                const isBranchSelected =
+                  selectedRestaurant?.id === restaurant.id &&
+                  selectedRestaurant?.lat === branch.lat &&
+                  selectedRestaurant?.lng === branch.lng;
+                const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
+
+                return (
+                  <Marker
+                    key={`${restaurant.id}-${branch.id}`}
+                    position={[branch.lat, branch.lng]}
+                    icon={branchIcon}
+                    eventHandlers={{
+                      click: () =>
+                        onSelectRestaurant({
+                          ...restaurant,
+                          neighborhood: branch.neighborhood,
+                          address: branch.address,
+                          lat: branch.lat,
+                          lng: branch.lng,
+                          googleMapsUrl: branch.googleMapsUrl,
+                        }),
+                    }}
+                  />
+                );
+              })}
+            </React.Fragment>
           );
         })}
       </MapContainer>

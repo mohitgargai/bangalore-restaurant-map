@@ -132,10 +132,9 @@ export default function Home() {
     });
   };
 
-  // Synchronized branch change in drawer
+  // Synchronized branch change in drawer (pans map to branch pin without resetting drawer)
   const handleSelectBranch = (branchRestaurant: Restaurant) => {
     setSelectedRestaurant(branchRestaurant);
-    setActiveDrawerRestaurant(branchRestaurant);
   };
 
   const handleNewSubmission = (newRest: Restaurant) => {
@@ -154,10 +153,14 @@ export default function Home() {
         return false;
       }
 
-      if (selectedNeighborhood !== 'All' && r.neighborhood !== selectedNeighborhood) {
-        return false;
-      }
-
+      if (selectedNeighborhood !== 'All') {
+        const matchesPrimary = r.neighborhood === selectedNeighborhood;
+        const matchesBranch = r.branches?.some((b) => b.neighborhood === selectedNeighborhood);
+        if (!matchesPrimary && !matchesBranch) {
+          return false;
+        }
+      } 
+      
       if (vegOnly && !r.isVegetarian) {
         return false;
       }

@@ -36,7 +36,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "ctr-shri-sagar",
-    "name": "CTR (Central Tiffin Room / Shri Sagar)",
+    "name": "Central Tiffin Room (CTR)",
     "slug": "ctr-shri-sagar",
     "tagline": "Golden blistered Benne Masala Dosa with red & mint chutneys since 1920",
     "description": "A 100-year-old temple of breakfast in Malleshwaram. The Benne Dosa here features a crunchy blistered golden shell and soft, fluffy inside served with three signature chutneys.",
@@ -808,13 +808,13 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "burma-burma",
-    "name": "Burma Burma (Indiranagar)",
+    "name": "Burma Burma",
     "slug": "burma-burma",
     "tagline": "Celebrated all-vegetarian Burmese tea room and kitchen",
     "description": "Authentic Burmese curries, fermented tea leaf salads, and lotus root crisps in a peaceful, hand-painted wooden dining room on Indiranagar 12th Main.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "607, Ground Floor, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
     "lat": 12.9704847,
     "lng": 77.6447032,
     "priceLevel": "₹₹₹",
@@ -837,25 +837,34 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "branches": [
       {
-        "id": "burma-burma-brigade-road",
-        "name": "Brigade Road (Forum Rex Walk)",
+        "id": "burma-burma-brigade-branch",
+        "name": "Forum Rex Walk, Brigade Road",
         "neighborhood": "Church Street & MG Road",
-        "address": "Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-        "lat": 12.9727707,
-        "lng": 77.606679,
-        "googleMapsUrl": "https://www.google.com/maps/place/Forum+Rex+Walk/@12.9727707,77.606679,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae179032b46849:0xfdd4d8b3d6f6cd15!8m2!3d12.9727707!4d77.606679!16s%2Fg%2F11lh3gpxg2?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "address": "Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
+        "lat": 12.9734188,
+        "lng": 77.6074218,
+        "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+Rex+Walk/@12.9734188,77.6074218,17z"
+      },
+      {
+        "id": "burma-burma-ecoworld-branch",
+        "name": "The Bay, RMZ EcoWorld",
+        "neighborhood": "Bellandur & Ecoworld",
+        "address": "The Bay, Campus 8A, RMZ EcoWorld, Outer Ring Road, Bellandur, Bengaluru 560103",
+        "lat": 12.920167,
+        "lng": 77.6848395,
+        "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room+-+RMZ+EcoWorld/@12.920167,77.6848395,17z"
       }
     ]
   },
   {
-    "id": "lucky-chan-indiranagar",
-    "name": "Lucky Chan (Indiranagar)",
-    "slug": "lucky-chan-indiranagar",
+    "id": "lucky-chan",
+    "name": "Lucky Chan",
+    "slug": "lucky-chan",
     "tagline": "India’s first conveyor-belt sushi & artisan dim sum parlour",
     "description": "A vibrant Pan-Asian hotspot on 12th Main Indiranagar celebrated for its revolving conveyor belt sushi bar, crystal dumplings, and craft bubble teas.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "594, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
+    "address": "594, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
     "lat": 12.9704057,
     "lng": 77.642764,
     "priceLevel": "₹₹₹",
@@ -880,64 +889,22 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "branches": [
       {
-        "id": "lucky-chan-bellandur",
-        "name": "Bellandur (The Bay, RMZ EcoWorld)",
-        "neighborhood": "Whitefield",
-        "address": "The Bay, RMZ EcoWorld, Outer Ring Rd, Bellandur, Bengaluru, Karnataka 560103",
-        "lat": 12.9323181,
-        "lng": 77.6748335,
-        "googleMapsUrl": "https://www.google.com/maps/place/Bellandur,+Bengaluru,+Karnataka/@12.9323181,77.6748335,14z/data=!3m1!4b1!4m6!3m5!1s0x3bae13752e34e92f:0xc2b234a66f986aae!8m2!3d12.9304278!4d77.678404!16s%2Fg%2F11cny1499t?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "id": "lucky-chan-bellandur-branch",
+        "name": "The Bay, RMZ EcoWorld",
+        "neighborhood": "Bellandur & Ecoworld",
+        "address": "The Bay, Campus 8A, RMZ EcoWorld, Outer Ring Road, Bellandur, Bengaluru 560103",
+        "lat": 12.9248,
+        "lng": 77.6845,
+        "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+DimSum+%26+Sushi+Parlour/@12.9248,77.6845,17z"
       },
       {
-        "id": "lucky-chan-forum-south",
-        "name": "Kanakapura Rd (Forum South Bengaluru)",
-        "neighborhood": "Jayanagar",
-        "address": "3rd Floor, Forum South Bengaluru, Konanakunte Cross, Kanakapura Rd, Bengaluru, Karnataka 560062",
-        "lat": 12.745448,
-        "lng": 77.4878716,
-        "googleMapsUrl": "https://www.google.com/maps/place/Kanakapura+Main+Rd,+Karnataka/@12.745448,77.4878716,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1577e33e4053:0xf6740652218cad5!8m2!3d12.745448!4d77.4878716!16s%2Fg%2F11h0blyjd?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-      }
-    ]
-  },
-  {
-    "id": "lucky-chan-bellandur",
-    "name": "Lucky Chan (Bellandur)",
-    "slug": "lucky-chan-bellandur",
-    "tagline": "Conveyor-belt sushi & dim sum dining at RMZ EcoWorld",
-    "description": "Modern Japanese & Asian dining at The Bay in RMZ EcoWorld featuring conveyor belt sushi, fresh sashimi, and craft cocktails for the tech corridor.",
-    "category": "Pan-Asian & Japanese",
-    "neighborhood": "Bellandur & Ecoworld",
-    "address": "The Bay, RMZ EcoWorld, Outer Ring Road, Bellandur, Bengaluru, Karnataka 560103",
-    "lat": 12.9202886,
-    "lng": 77.6846386,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹1,500",
-    "mustTry": [
-      "Crispy Prawn Tempura Roll",
-      "Edamame Truffle Dumpling",
-      "Pork Bao",
-      "Matcha Bubble Tea"
-    ],
-    "vibeTags": [
-      "Cocktail Program",
-      "Work Friendly",
-      "Outdoor Seating"
-    ],
-    "imageUrl": "/images/restaurants/lucky-chan-bellandur.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan+-+Dim+Sum+and+Sushi+Parlour,+Bellandur/@12.9202886,77.6846386,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13007b02db37:0x47b7be25bc65ca18!8m2!3d12.9202886!4d77.6846386!16s%2Fg%2F11w22ndkvb?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-    "timings": "12:00 PM – 11:00 PM",
-    "curatorNote": "Great lunch and dinner spot right in RMZ EcoWorld with full conveyor belt setup.",
-    "isVegetarian": false,
-    "verified": true,
-    "branches": [
-      {
-        "id": "lucky-chan-indiranagar",
-        "name": "Indiranagar (12th Main)",
-        "neighborhood": "Indiranagar",
-        "address": "594, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-        "lat": 12.9704057,
-        "lng": 77.642764,
-        "googleMapsUrl": "https://www.google.com/maps/place/594,+12th+Main+Rd,+2nd+Stage,+HAL+2nd+Stage,+Indiranagar,+Bengaluru,+Karnataka+560008/@12.9704057,77.642764,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a80e4bf24f:0x18a7503aebeae1a8!8m2!3d12.9704057!4d77.642764!16s%2Fg%2F11snp_10r1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "id": "lucky-chan-forum-south-branch",
+        "name": "Forum South Bengaluru",
+        "neighborhood": "JP Nagar",
+        "address": "3rd Floor, Forum South Bengaluru, Konanakunte Cross, Kanakapura Rd, Bengaluru 560062",
+        "lat": 12.8878,
+        "lng": 77.5539,
+        "googleMapsUrl": "https://www.google.com/maps/place/Forum+South+Bengaluru/@12.8878,77.5539,17z"
       }
     ]
   },
@@ -1068,9 +1035,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "the-pizza-bakery-indiranagar",
+    "id": "the-pizza-bakery",
     "name": "The Pizza Bakery",
-    "slug": "the-pizza-bakery-indiranagar",
+    "slug": "the-pizza-bakery",
     "tagline": "Wood-fired 48-hour sourdough pizzas & stuffed garlic breads",
     "description": "A cult Bangalore favorite celebrated for authentic Neapolitan hand-stretched sourdough pies, stuffed garlic loafs loaded with cheese, and craft brews.",
     "category": "Modern Indian & Dining",
@@ -1100,22 +1067,22 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "branches": [
       {
-        "id": "the-pizza-bakery-church-st",
-        "name": "The Pizza Bakery (Church Street)",
+        "id": "the-pizza-bakery-church-street-branch",
+        "name": "Church Street",
         "neighborhood": "Church Street & MG Road",
-        "address": "86, Coconut Grove, Church Street, Ashok Nagar, Bengaluru 560001",
+        "address": "86, Coconut Grove, Church Street, Ashok Nagar, Bengaluru, Karnataka 560001",
         "lat": 12.9749557,
         "lng": 77.6053303,
-        "googleMapsUrl": "https://maps.app.goo.gl/7g8eQYgG2yXvH6eGA"
+        "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery/@12.9749557,77.6053303,17z"
       },
       {
-        "id": "the-pizza-bakery-hsr",
-        "name": "The Pizza Bakery (HSR Layout)",
+        "id": "the-pizza-bakery-hsr-branch",
+        "name": "Sector 1, HSR Layout",
         "neighborhood": "HSR Layout",
-        "address": "No. 2345, 17th Cross Rd, Sector 1, HSR Layout, Bengaluru 560102",
+        "address": "No. 2345, 17th Cross Rd, Sector 1, HSR Layout, Bengaluru, Karnataka 560102",
         "lat": 12.917,
         "lng": 77.6508,
-        "googleMapsUrl": "https://maps.google.com/?q=The+Pizza+Bakery+HSR+Layout"
+        "googleMapsUrl": "https://www.google.com/maps/place/The+Pizza+Bakery/@12.9170,77.6508,17z"
       }
     ]
   },
@@ -1310,7 +1277,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "karavalli-residency-road",
-    "name": "Karavalli (The Gateway Hotel)",
+    "name": "Karavalli",
     "slug": "karavalli-residency-road",
     "tagline": "India’s undisputed temple of Southwest coastal culinary heritage since 1990",
     "description": "Set in a traditional Mangalorean courtyard house on Residency Road, Karavalli has spent over three decades researching and serving authentic coastal recipes from Kundapur, Mangalore, Coorg, and Kerala.",
@@ -2455,9 +2422,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "byg-brewski-hennur",
+    "id": "byg-brewski",
     "name": "Byg Brewski Brewing Company",
-    "slug": "byg-brewski-hennur",
+    "slug": "byg-brewski",
     "tagline": "Asia’s largest open-air lake microbrewery & artisan craft brews",
     "description": "A colossal 65,000 sq. ft. open-air craft brewing amphitheater set around a stunning Nordic-ruined aquatic lake in Hennur, celebrated for award-winning Hefeweizen, Triple IPAs, and global wood-fired dishes.",
     "category": "Microbrewery",
@@ -2487,7 +2454,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A monumental craft beer landmark. Grab a table by the illuminated lake for fresh Rauchbier and wood-fired sourdough pizza.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "branches": [
+      {
+        "id": "byg-brewski-sarjapur-branch",
+        "name": "Sarjapur Road",
+        "neighborhood": "Sarjapur Road",
+        "address": "10/62/2A/2 & 3, Behind MK Retail, Before Wipro Corporate Office, Sarjapur Main Rd, Kaikondrahalli, Bengaluru 560035",
+        "lat": 12.9134,
+        "lng": 77.6836,
+        "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company+-+Sarjapur/@12.9134,77.6836,17z"
+      }
+    ]
   },
   {
     "id": "nerlu-cafe-crescent-road",
@@ -2712,14 +2690,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     ]
   },
   {
-    "id": "beanlore-coffee-indiranagar",
+    "id": "beanlore-coffee",
     "name": "Beanlore Coffee Roasters",
-    "slug": "beanlore-coffee-indiranagar",
+    "slug": "beanlore-coffee",
     "tagline": "High-ceiling artisanal roastery, Aeropress bar & work cafe",
     "description": "A spacious specialty coffee roastery on CMH Road with high ceilings, single-estate roasts, cold brew tap lines, ergonomic workstations, and sourdough bakes.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "503, Chinmaya Mission Hospital (CMH) Rd, Indiranagar 1st Stage, Bengaluru, Karnataka 560038",
+    "address": "813, 1st Floor, Chinmaya Mission Hospital Rd, Defence Colony, Indiranagar, Bengaluru, Karnataka 560038",
     "lat": 12.978686,
     "lng": 77.643753,
     "priceLevel": "₹₹",
@@ -2740,7 +2718,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Excellent specialty coffee and one of the most comfortable laptop-friendly workspaces on CMH Road.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "branches": [
+      {
+        "id": "beanlore-hsr-branch",
+        "name": "Sector 4, HSR Layout",
+        "neighborhood": "HSR Layout",
+        "address": "17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+        "lat": 12.9123126,
+        "lng": 77.6416021,
+        "googleMapsUrl": "https://www.google.com/maps/place/Beanlore+Coffee+Roasters/@12.9123126,77.6416021,17z"
+      }
+    ]
   },
   {
     "id": "paper-and-pie-indiranagar",
@@ -2913,38 +2902,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "beanlore-coffee-roasters-hsr",
-    "name": "Beanlore Coffee Roasters",
-    "slug": "beanlore-coffee-roasters-hsr",
-    "tagline": "Single-origin estate micro-roasting, precision manual pour-overs & Basque cheesecake",
-    "description": "Operating with single-estate transparency and small-batch roasting in HSR Sector 4, Beanlore is the benchmark for third-wave specialty coffee in South Bangalore. Features custom espresso profiles and a serene sunlit space.",
-    "category": "Specialty Coffee & Cafe",
-    "neighborhood": "HSR Layout",
-    "address": "450, Ground Floor, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹700",
-    "mustTry": [
-      "Single-Origin Manual Pour-Over (V60)",
-      "Cortado with Micro-Foam",
-      "San Sebastián Basque Burnt Cheesecake",
-      "Smoked Mozzarella Pesto Toastie"
-    ],
-    "vibeTags": [
-      "Filter Coffee Spot",
-      "Work Friendly",
-      "Artisanal Sourdough",
-      "Breakfast Spot"
-    ],
-    "imageUrl": "/images/restaurants/beanlore-coffee-roasters-hsr.jpg",
-    "timings": "7:30 AM – 11:00 PM",
-    "curatorNote": "Roasting on-site with meticulous temperature and airflow profiling, Beanlore avoids the burnt, generic profiles of commercial cafe chains.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 12.9123126,
-    "lng": 77.6416021,
-    "googleMapsUrl": "https://www.google.com/maps/place/Beanlore+-+HSR+Layout/@12.9123126,77.6416021,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15fff842d533:0xb0bfac9edbb39b70!8m2!3d12.9123126!4d77.6416021!16s%2Fg%2F11ssnhdl4b?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-  },
-  {
     "id": "asha-tiffins-hsr",
     "name": "Asha Tiffins",
     "slug": "asha-tiffins-hsr",
@@ -3070,45 +3027,14 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BLR%20Brewing%20Co%2017th%20Cross%20Sector%204%20HSR%20Layout%20Bengaluru"
   },
   {
-    "id": "burma-burma-ecoworld",
-    "name": "Burma Burma",
-    "slug": "burma-burma-ecoworld",
-    "tagline": "Heirloom Burmese plant-based gastronomy & artisanal tea culture by the water promenade",
-    "description": "India’s benchmark Burmese dining room inside The Bay at RMZ Ecoworld. Features pagoda woodwork, floor-to-ceiling glass overlooking the campus greenway, and multi-layered dishes crafted with ingredients sourced directly from Yangon.",
-    "category": "Pan-Asian & Japanese",
-    "neighborhood": "Bellandur & Ecoworld",
-    "address": "The Bay, Campus 8A, RMZ Ecoworld, Outer Ring Road, Bellandur, Bengaluru, Karnataka 560103",
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹1,600",
-    "mustTry": [
-      "Burma Burma Oh No Khowsuey",
-      "Tea Leaf Salad (Laphet Thoke)",
-      "Tohu Mokhinga & Lotus Stem Crisps",
-      "Lavender Cold Brew Oolong Tea"
-    ],
-    "vibeTags": [
-      "Pure Veg",
-      "Romantic",
-      "Outdoor Seating"
-    ],
-    "imageUrl": "/images/restaurants/burma-burma-ecoworld.jpg",
-    "timings": "12:00 PM – 3:30 PM, 6:30 PM – 10:30 PM",
-    "curatorNote": "100% vegetarian yet celebrated even by hardcore carnivores. The Laphet Thoke (fermented tea leaf salad) and rich Khowsuey achieve world-class balance.",
-    "isVegetarian": true,
-    "verified": true,
-    "lat": 12.920167,
-    "lng": 77.6848395,
-    "googleMapsUrl": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room/@12.920167,77.6848395,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300696a29a5:0xf19fa4f967fee5c6!8m2!3d12.920167!4d77.6848395!16s%2Fg%2F11xgljz3j6?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
-  },
-  {
-    "id": "biergarten-bellandur",
+    "id": "biergarten",
     "name": "Biergarten Brewery & Kitchen",
-    "slug": "biergarten-bellandur",
+    "slug": "biergarten",
     "tagline": "Lush open-air Bavarian beer garden in the heart of the tech corridor",
     "description": "A sprawling, high-ceilinged craft brewing oasis in Devarabeesanahalli/Bellandur. Characterized by vertical greenery, exposed brickwork, and an open-air courtyard, serving authentic German hefeweizens, malty ales, and wood-fired pizzas.",
     "category": "Microbrewery",
     "neighborhood": "Bellandur & Ecoworld",
-    "address": "57/1A, Outer Varthur Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103",
+    "address": "4th Floor, Soul Space Paradigm, Outer Ring Road, Marathahalli - Sarjapur Outer Ring Rd, Devarabeesanahalli, Bellandur, Bengaluru 560103",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
@@ -3130,7 +3056,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9297508,
     "lng": 77.6854811,
-    "googleMapsUrl": "https://www.google.com/maps/place/Biergarten+Bellandur/@12.9297508,77.6854811,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300533d58e1:0x86a04be4c71573f5!8m2!3d12.9297508!4d77.6854811!16s%2Fg%2F11vyztkw1_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    "googleMapsUrl": "https://www.google.com/maps/place/Biergarten+Bellandur/@12.9297508,77.6854811,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300533d58e1:0x86a04be4c71573f5!8m2!3d12.9297508!4d77.6854811!16s%2Fg%2F11vyztkw1_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "branches": [
+      {
+        "id": "biergarten-whitefield-branch",
+        "name": "Doddanekkundi, Whitefield",
+        "neighborhood": "Whitefield",
+        "address": "Doddanekkundi Industrial Area, Mahadevapura, Bengaluru, Karnataka 560048",
+        "lat": 12.9825,
+        "lng": 77.7128,
+        "googleMapsUrl": "https://www.google.com/maps/place/Biergarten+Brewery+%26+Kitchen+Whitefield/@12.9825,77.7128,17z"
+      }
+    ]
   },
   {
     "id": "ironhill-bengaluru-orr",
@@ -3228,40 +3165,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oota%20Bangalore%20Windmills%20Whitefield%20EPIP%20Zone%20Bengaluru"
   },
   {
-    "id": "biergarten-whitefield",
-    "name": "Biergarten Brewery & Kitchen",
-    "slug": "biergarten-whitefield",
-    "tagline": "Whitefield’s sprawling two-story open-air craft beer cathedral & European kitchen",
-    "description": "One of Bangalore’s most expansive and atmospheric microbreweries, Biergarten combines industrial-chic German beer garden architecture with a lush, open-air courtyard and cascading greenery. German brewing yields exceptional fresh hefeweizen and dunkel.",
-    "category": "Microbrewery",
-    "neighborhood": "Whitefield",
-    "address": "2, Road No. 2, Doddanekkundi Industrial Area, Hoodi, Whitefield, Bengaluru, Karnataka 560048",
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹2,200",
-    "mustTry": [
-      "Hefeweizen & Dunkel Dark Lager",
-      "Mushroom Galouti Kebab",
-      "Slow-Cooked Pulled Pork Burger",
-      "Wood-Fired Diavola Pizza",
-      "Deconstructed Black Forest Cake"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Outdoor Seating",
-      "Cocktail Program"
-    ],
-    "imageUrl": "/images/restaurants/biergarten-whitefield.jpg",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "Sets the benchmark for high-capacity, top-quality craft brewing in Whitefield alongside Windmills, maintaining unwavering consistency in both brew clarity and kitchen output.",
-    "isVegetarian": false,
-    "verified": true,
-    "lat": 12.9825,
-    "lng": 77.7128,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Biergarten%20Brewery%20and%20Kitchen%20Doddanekkundi%20Hoodi%20Whitefield%20Bengaluru"
-  },
-  {
     "id": "whitefield-baking-company",
-    "name": "Whitefield Baking Company (WBC)",
+    "name": "Whitefield Baking Company",
     "slug": "whitefield-baking-company",
     "tagline": "Hotel-grade European pastry artistry, artisanal sourdough & gourmet delicatessen",
     "description": "Located at the Bengaluru Marriott Hotel Whitefield, WBC is the East Bangalore destination for pristine French pastry technique, slow-fermented crusty sourdoughs, and mirror-glazed entremets crafted by master pastry chefs.",
@@ -3474,7 +3379,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "chulha-chouki-da-dhaba-flagship",
-    "name": "Chulha Chouki Da Dhaba (Original Flagship)",
+    "name": "Chulha Chouki Da Dhaba",
     "slug": "chulha-chouki-da-dhaba-flagship",
     "tagline": "The iconic mothership that sparked Bangalore’s rustic live charcoal dhaba revolution",
     "description": "Furnished with traditional woven charpais (cots), hurricane lanterns, and an open live tandoor counter, the original Kalyan Nagar flagship serves unadulterated North Indian dhaba comfort food on traditional kansa thalis.",
@@ -3690,40 +3595,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oia%20Bangalore%20Hennur%20Main%20Road%20Visthar%20Bengaluru"
   },
   {
-    "id": "byg-brewski-sarjapur",
-    "name": "Byg Brewski Brewing Company",
-    "slug": "byg-brewski-sarjapur",
-    "tagline": "The iconic open-air amphitheater microbrewery wrapped around a central koi pond",
-    "description": "The Sarjapur flagship that pioneered Bangalore’s mega-brewery amphitheater culture. Features tiered multi-level seating surrounding a serene koi pond, mist systems, award-winning craft beers, and fiery coastal ghee roasts.",
-    "category": "Microbrewery",
-    "neighborhood": "Sarjapur Road",
-    "address": "10/62/2A/2 & 3, Behind MK Retail, Before Wipro Corporate Office, Sarjapur Main Rd, Kaikondrahalli, Bengaluru, Karnataka 560035",
-    "lat": 12.9134,
-    "lng": 77.6836,
-    "priceLevel": "₹₹₹",
-    "priceForTwo": "₹2,400",
-    "mustTry": [
-      "Byg Rauchbier (Smoked Malt Ale)",
-      "Byg Hefeweizen & Belgian Wit",
-      "Giant Karari Roti with Spiced Ghee",
-      "Kundapura Ghee Roast Mutton",
-      "Wood-Fired Smoked Duck Pizza"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Outdoor Seating",
-      "Romantic",
-      "Pet Friendly",
-      "Late Night"
-    ],
-    "imageUrl": "/images/restaurants/byg-brewski-sarjapur.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company+-+Sarjapur/@12.9134,77.6836,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae14878a9c4021:0x4d59a2a9ca173200!8m2!3d12.9134!4d77.6836!16s%2Fg%2F11b6_c8d20",
-    "timings": "12:00 PM – 1:00 AM",
-    "curatorNote": "The amphitheater koi pond setting remains an architectural marvel. The smoke-infused craft beer and coastal ghee roast dishes are consistently exceptional.",
-    "isVegetarian": false,
-    "verified": true
-  },
-  {
     "id": "the-local-kalyan-nagar",
     "name": "The Local",
     "slug": "the-local-kalyan-nagar",
@@ -3788,9 +3659,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true
   },
   {
-    "id": "pecos-stones-indiranagar",
-    "name": "Pecos Stones",
-    "slug": "pecos-stones-indiranagar",
+    "id": "pecos",
+    "name": "Pecos",
+    "slug": "pecos",
     "tagline": "The 1989 classic rock retro pub legend with cold draft mugs & fiery chilli pork",
     "description": "Bangalore’s timeless retro rock sanctuary on 100 Feet Road. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
     "category": "Microbrewery",
@@ -3816,7 +3687,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "branches": [
+      {
+        "id": "pecos-mojo-brigade-branch",
+        "name": "Pecos Mojo, Brigade Road",
+        "neighborhood": "Church Street & MG Road",
+        "address": "Residency Plaza, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
+        "lat": 12.9723,
+        "lng": 77.6074,
+        "googleMapsUrl": "https://www.google.com/maps/place/Pecos+Mojo/@12.9723,77.6074,17z"
+      }
+    ]
   },
   {
     "id": "yauatcha-bengaluru-mg-road",
@@ -4133,7 +4015,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
   },
   {
     "id": "hotel-empire-shivajinagar",
-    "name": "Hotel Empire (1966 Flagship)",
+    "name": "Hotel Empire",
     "slug": "hotel-empire-shivajinagar",
     "tagline": "Bangalore’s legendary 1966 midnight institution for crispy Butter Chicken & Coin Parottas",
     "description": "The historic original 1966 mother branch on Central Street in Shivajinagar that sparked Bangalore’s famous post-midnight dining culture. Known city-wide for its signature spiced Empire Butter Chicken, fragrant Ghee Rice, and layered flaky coin parottas.",
