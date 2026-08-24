@@ -9,7 +9,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Established in 1943, this Gandhi Bazaar institution has fed generations of artists, writers, and food lovers with its signature crisp golden dosas drenched in pure ghee.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "32, Gandhi Bazaar Main Rd, Gandhi Bazaar, Basavanagudi, Bengaluru, Karnataka 560004",
+    "address": "32, Gandhi Bazaar Main Rd, Gandhi Bazaar, Basavanagudi, Bengaluru, Karnataka 560004, India",
     "lat": 12.9450345,
     "lng": 77.5713723,
     "priceLevel": "₹",
@@ -28,7 +28,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/vidyarthi-bhavan.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Vidyarthi+Bhavan/@12.9450345,77.5713723,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15f2e88ad035:0xed7fede7791f8edc!8m2!3d12.9450345!4d77.5713723!16s%2Fm%2F0hhrhzm?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=17113658687456513756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 AM – 11:30 AM, 2:00 PM – 8:00 PM (Closed Fridays)",
     "curatorNote": "Watch the waiters perform their legendary stack balancing act carrying 20 plates of butter dosa at once.",
     "isVegetarian": true,
@@ -42,9 +42,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A 100-year-old temple of breakfast in Malleshwaram. The Benne Dosa here features a crunchy blistered golden shell and soft, fluffy inside served with three signature chutneys.",
     "category": "Iconic Heritage",
     "neighborhood": "Malleshwaram",
-    "address": "7th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003",
-    "lat": 12.9982327,
-    "lng": 77.5695395,
+    "address": "7th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560003, India",
+    "lat": 12.998232699999999,
+    "lng": 77.56953949999999,
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -61,7 +61,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/ctr-shri-sagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Central+Tiffin+Room/@12.9982327,77.5695395,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1625bc6a63f3:0x6941d824e3c07d0b!8m2!3d12.9982327!4d77.5695395!16s%2Fm%2F0gfdq9p?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=7584580900420091147&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Arrive before 8 AM on weekends to get a seat without waiting in the Margosa Road queue.",
     "isVegetarian": true,
@@ -75,9 +75,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A tiny sidewalk landmark on Margosa Road with no seating, where hundreds queue daily for piping-hot melt-in-mouth idlis, crisp uddina vadas, and fresh mint-infused green coconut chutney.",
     "category": "Iconic Heritage",
     "neighborhood": "Malleshwaram",
-    "address": "183, Margosa Rd, Malleshwaram, Bengaluru, Karnataka 560055",
-    "lat": 13.0056609,
-    "lng": 77.5693243,
+    "address": "183, Margosa Rd, Malleshwaram, Bengaluru, Karnataka 560055, India",
+    "lat": 13.005660899999999,
+    "lng": 77.56932429999999,
     "priceLevel": "₹",
     "priceForTwo": "₹100",
     "mustTry": [
@@ -95,7 +95,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/veena-stores-malleshwaram.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Veena+Stores/@13.0056609,77.5693243,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae162eebc239d7:0x3f4b0c24f9bb719c!8m2!3d13.0056609!4d77.5693243!16s%2Fg%2F1td1hf9_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=4560752400590926236&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 AM – 12:00 PM, 3:30 PM – 9:00 PM",
     "curatorNote": "No sambar needed — the refreshing mint coconut chutney paired with pillow-soft idlis and hot crisp vadas is Malleshwaram breakfast at its peak.",
     "isVegetarian": true,
@@ -109,9 +109,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Seshadripuram’s iconic standing-only tiffin room that sparked a citywide butter-podi revolution with its blazing red gunpowder masala dosas and rich ghee bath.",
     "category": "Iconic Heritage",
     "neighborhood": "Sadashivanagar & Palace Grounds",
-    "address": "23, 3rd Main Rd, 4th Block, Kumara Park West, Seshadripuram, Bengaluru, Karnataka 560020",
-    "lat": 12.9888143,
-    "lng": 77.5777582,
+    "address": "1st cross, 779, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.968817999999999,
+    "lng": 77.64078219999999,
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -127,7 +127,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/umesh-refreshments-seshadripuram.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Umesh+Refreshments+23,+3rd+Main+Rd,+4th+Block,+Kumara+Park+West,+Seshadripuram,+Bengaluru,+Karnataka+560020+Bangalore/@12.9888143,77.5777582,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=16998718853132440679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 10:30 PM",
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
     "isVegetarian": true,
@@ -141,8 +141,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A revered Jayanagar morning destination famous for automated hospital-grade hygiene, blazing golden Masala Dosas, and piping hot filter coffee under ₹50.",
     "category": "Iconic Heritage",
     "neighborhood": "Jayanagar",
-    "address": "1004, 26th Main Rd, 4th T Block East, Jayanagara 9th Block, Jayanagar, Bengaluru, Karnataka 560041",
-    "lat": 12.9228371,
+    "address": "1004, 26th Main Rd, 4th T Block East, Jayanagara 9th Block, Jayanagar, Bengaluru, Karnataka 560041, India",
+    "lat": 12.922837099999999,
     "lng": 77.593274,
     "priceLevel": "₹",
     "priceForTwo": "₹120",
@@ -160,7 +160,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/taaza-thindi-jayanagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Taaza%20Thindi%201004%2C%2026th%20Main%20Rd%2C%204th%20T%20Block%20East%2C%20Jayanagar%2C%20Bengaluru%2C%20Karnataka%20560041%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=6433592298080048138&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 12:00 PM, 4:30 PM – 9:30 PM",
     "curatorNote": "World-class hygiene with automated dishwashers and incredible consistency. Their golden ghee masala dosa is top-tier in Bangalore.",
     "isVegetarian": true,
@@ -174,9 +174,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "No chairs, no sambar, no fluff — just melt-in-the-mouth steamed idlis, crunchy vadas, and endless pours of free coconut chutney from a stainless ladle.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "Pushp Kiran, 19, Ranga Rao Rd, near Shankar Mutt Road, Shankarapura, Bengaluru, Karnataka 560004",
-    "lat": 12.9539725,
-    "lng": 77.568847,
+    "address": "Pushp Kiran, 19, Ranga Rao Rd, Shankarapura, Bengaluru, Karnataka 560004, India",
+    "lat": 12.9519,
+    "lng": 77.5689696,
     "priceLevel": "₹",
     "priceForTwo": "₹150",
     "mustTry": [
@@ -193,7 +193,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/brahmins-coffee-bar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Brahmins'+Coffee+Bar/@12.9539725,77.5643409,17z/data=!4m10!1m2!2m1!1sBrahmins'+Coffee+Bar+Near+Shankar+Math,+Ranga+Rao+Rd,+Shankarapura,+Bengaluru,+Karnataka+560004+Bangalore!3m6!1s0x3bae15f0a35b8ae3:0xc02176d1e45cb964!8m2!3d12.9539725!4d77.568847!15sCmlCcmFobWlucycgQ29mZmVlIEJhciBOZWFyIFNoYW5rYXIgTWF0aCwgUmFuZ2EgUmFvIFJkLCBTaGFua2FyYXB1cmEsIEJlbmdhbHVydSwgS2FybmF0YWthIDU2MDAwNCBCYW5nYWxvcmVaZiJkYnJhaG1pbnMgY29mZmVlIGJhciBuZWFyIHNoYW5rYXIgbWF0aCByYW5nYSByYW8gcmQgc2hhbmthcmFwdXJhIGJlbmdhbHVydSBrYXJuYXRha2EgNTYwMDA0IGJhbmdhbG9yZZIBF3NvdXRoX2luZGlhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F1tfk2wgm?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=12729622391243257403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:00 AM – 12:00 PM, 3:00 PM – 7:00 PM (Closed Sundays evening)",
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
     "isVegetarian": true,
@@ -207,9 +207,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Operating near Lalbagh Main Gate since 1924, MTR is an internationally celebrated temple of traditional Karnataka Brahminical cuisine, invention birthplace of Rava Idli during WWII rationing.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "14, Lal Bagh Main Rd, Doddamavalli, Sudhama Nagar, Bengaluru, Karnataka 560027",
-    "lat": 12.9466256,
-    "lng": 77.5774511,
+    "address": "29, Ground Floor, White House, St Mark's Rd, opposite SBI HQ, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9722189,
+    "lng": 77.60105449999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹500",
     "mustTry": [
@@ -225,7 +225,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/mtr-lalbagh.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Mavalli%20Tiffin%20Room%20(MTR%201924)%2014%2C%20Lal%20Bagh%20Main%20Rd%2C%20Doddamavalli%2C%20Sudhama%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560027%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=13326171345556096743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 AM – 11:00 AM, 12:30 PM – 8:30 PM (Closed Mondays)",
     "curatorNote": "Order the silver thali lunch or pair Rava Idli with their signature cup of melted spiced ghee.",
     "isVegetarian": true,
@@ -239,8 +239,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A no-frills South Bangalore jewel in NR Colony renowned across food circles for its spongy Khali Dosa served with copious amounts of fresh homemade butter.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "7th Cross Rd, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004",
-    "lat": 12.9376662,
+    "address": "7th Cross Rd, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004, India",
+    "lat": 12.937666199999999,
     "lng": 77.5676709,
     "priceLevel": "₹",
     "priceForTwo": "₹180",
@@ -258,7 +258,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/dwaraka-hotel-basavanagudi.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Dwaraka%20Hotel%2015%2C%204th%20Main%20Rd%2C%207th%20Cross%20Rd%2C%20NR%20Colony%2C%20Basavanagudi%2C%20Bengaluru%2C%20Karnataka%20560019%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=5485112880816580665&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 12:30 PM, 3:30 PM – 8:30 PM",
     "curatorNote": "Reddit insider tip: Ask for the double butter Khali Dosa. It is pillow-soft and absorbs the soothing white coconut chutney.",
     "isVegetarian": true,
@@ -272,9 +272,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A Basavanagudi classic beloved for its authentic Melkote temple-style Puliyogare (tamarind rice) loaded with peanuts and dry coconut, paired with sweet Sakkare Pongal and crispy button vadas.",
     "category": "Iconic Heritage",
     "neighborhood": "Basavanagudi",
-    "address": "81, Bull Temple Rd & East Anjaneya Temple St, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004",
-    "lat": 12.9405837,
-    "lng": 77.5686576,
+    "address": "81, E Anjaneya Temple St, NR Colony, Basavanagudi, Bengaluru, Karnataka 560004, India",
+    "lat": 12.940691399999999,
+    "lng": 77.5704138,
     "priceLevel": "₹",
     "priceForTwo": "₹150",
     "mustTry": [
@@ -291,7 +291,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/puliyogare-point-basavanagudi.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Puliyogare+Point+81,+Bull+Temple+Rd+%26+East+Anjaneya+Temple+St,+NR+Colony,+Basavanagudi,+Bengaluru,+Karnataka+560004+Bangalore/@12.9405837,77.5686576,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=6240381448146090170&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 10:00 PM",
     "curatorNote": "The authentic blend of Melkote spices in the tamarind paste is unmatched in the city. Pair with sweet golden pongal.",
     "isVegetarian": true,
@@ -305,8 +305,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A bustling South Bangalore standing breakfast staple in Jayanagar 9th Block famous for plate-sized spongy Thatte Idlis smothered in spiced coconut chutney and crispy hot uddina vadas.",
     "category": "Iconic Heritage",
     "neighborhood": "Jayanagar",
-    "address": "22nd, Phase 2. 11, Main, 12th Cross Rd, J. P. Nagar, Bengaluru, Karnataka 560078",
-    "lat": 12.908302,
+    "address": "Phase 2. 11, 22nd, Main, 12th Cross Rd, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India",
+    "lat": 12.908301999999999,
     "lng": 77.5871088,
     "priceLevel": "₹",
     "priceForTwo": "₹120",
@@ -324,7 +324,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/sn-refreshments-jayanagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/SN%20Refreshments%2022%2C%202nd%20Main%20Rd%2C%2039th%20Cross%20Rd%2C%209th%20Block%2C%20Jayanagar%2C%20Bengaluru%2C%20Karnataka%20560041%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=17009280706600944746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Super fast counter service. Order two piping hot thatte idlis with extra red chutney and a crispy vada.",
     "isVegetarian": true,
@@ -338,8 +338,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Operating since 1940, Koshy's is an irreplaceable cultural institution where prime ministers, journalists, artists, and diplomats have debated over mutton cutlets and filter coffee for 80+ years.",
     "category": "Iconic Heritage",
     "neighborhood": "Church Street & MG Road",
-    "address": "39, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9756429,
+    "address": "39, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.975642899999999,
     "lng": 77.6014047,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
@@ -355,7 +355,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/koshys-st-marks-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Koshy's%20Parade%20Cafe%2039%2C%20St.%20Mark's%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=711043132304341258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 11:00 PM",
     "curatorNote": "Ask for a table in the non-AC heritage front room to soak in the vintage fans and literary Bangalore banter.",
     "isVegetarian": false,
@@ -369,9 +369,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Since 1965, this tree-shaded patio on Museum Road has been the city’s quintessential steakhouse institution, famed for tender Chateaubriand steaks, burgers, and warm apple pie with ice cream.",
     "category": "Iconic Heritage",
     "neighborhood": "Church Street & MG Road",
-    "address": "13, Museum Rd, next to Post Office, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "13, Museum Rd, next to Post Office, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.973234,
-    "lng": 77.6034017,
+    "lng": 77.60340169999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
@@ -388,7 +388,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly"
     ],
     "imageUrl": "/images/restaurants/the-only-place-museum-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/The+Only+Place/@12.973234,77.6008268,17z/data=!3m1!5s0x3bae167ea071ab5b:0x2b37b0d74520e7a1!4m10!1m2!2m1!1sThe+Only+Place+6%2F5,+Gurappa+Avenue,+Primrose+Rd,+Off+MG+Rd,+Bengaluru,+Karnataka+560025+Bangalore!3m6!1s0x3bae167ea0024c85:0x34c750828e50715c!8m2!3d12.973234!4d77.6034017!15sCmVUaGUgT25seSBQbGFjZSA2LzUsIEd1cmFwcGEgQXZlbnVlLCBQcmltcm9zZSBSb2FkLCBPZmYgTUcgUm9hZCwgQmVuZ2FsdXJ1LCBLYXJuYXRha2EgNTYwMDI1IEJhbmdhbG9yZZIBC3N0ZWFrX2hvdXNl4AEA!16s%2Fg%2F1v6qg1pt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=3803096932001280348&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "An irreplaceable part of old Bangalore. Sit in the leafy garden courtyard and order the Chateaubriand steak followed by their legendary cinnamon-spiced apple pie.",
     "isVegetarian": false,
@@ -402,9 +402,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore's viral 24/7 tiffin landmark at its flagship 15,000 sq ft 100 Feet Road location. Massive crowds gather around the clock for sizzling pure ghee Open Butter Masala Dosas, Podi Idlis, and filter coffee.",
     "category": "Iconic Heritage",
     "neighborhood": "Indiranagar",
-    "address": "847/1(Old No. 847/A), Binnamangala 1st Stage, 100 Feet Rd, Bengaluru, Karnataka 560038",
-    "lat": 12.9816796,
-    "lng": 77.640918,
+    "address": "27, Dr Rajkumar Rd, Milk Colony, Subramanyanagar,2 State, Malleshwaram, Bengaluru, Karnataka 560021, India",
+    "lat": 13.008381,
+    "lng": 77.5547194,
     "priceLevel": "₹₹",
     "priceForTwo": "₹300",
     "mustTry": [
@@ -420,7 +420,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/rameshwaram-cafe-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Rameshwaram%20Cafe%20847%2F1%2C%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Binnamangala%2C%201st%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=3096438471766760972&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 AM – 1:00 AM (Open Daily)",
     "curatorNote": "The ghee podi thatte idlis are drenched in piping hot spiced ghee and served with fresh coconut and tomato chutneys.",
     "isVegetarian": true,
@@ -434,9 +434,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An all-time Bangalore favorite in Koramangala 4th Block famous for hearty all-day American and English breakfast platters, fluffy buttermilk waffles, loaded burgers, and cozy brick patio vibes.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "3, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560047",
+    "address": "3, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560047, India",
     "lat": 12.9347403,
-    "lng": 77.6254693,
+    "lng": 77.62546929999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹750",
     "mustTry": [
@@ -453,7 +453,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "/images/restaurants/the-hole-in-the-wall-cafe.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Hole%20in%20the%20Wall%20Cafe%204%2C%208th%20Main%20Rd%2C%204th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560034%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=5900487254378742932&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 9:00 PM (Closed Mondays)",
     "curatorNote": "The quintessential Bangalore breakfast institution. Grab a table on the upstairs patio and order the classic Farmer's Breakfast.",
     "isVegetarian": false,
@@ -463,10 +463,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "the-hole-in-the-wall-indiranagar",
         "name": "Indiranagar (12th Main)",
         "neighborhood": "Indiranagar",
-        "address": "2823, 80 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-        "lat": 12.9730599,
-        "lng": 77.6382116,
-        "googleMapsUrl": "https://www.google.com/maps/search/The%20Hole%20in%20the%20Wall%20Cafe%20(Indiranagar%20(12th%20Main))%20612%2C%2012th%20Main%20Rd%2C%207th%20Cross%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore"
+        "address": "2823, 80 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India",
+        "lat": 12.9675336,
+        "lng": 77.6479384,
+        "googleMapsUrl": "https://maps.google.com/?cid=16064643600650991272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -478,7 +478,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Subko’s sprawling experimental craft roastery in Koramangala 3rd Block combining subcontinental micro-lot coffees with bean-to-bar chocolate manufacturing and 72-hour laminated sourdough viennoiserie.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "No. 68, BBMP PID, No. 374, 2-374, 3rd Block, situated at, Koramangala, Bengaluru, Karnataka 560034",
+    "address": "No. 374, No. 68, BBMP PID, 2-374, 3rd Block, Santhosapuram, situated at, Koramangala, Bengaluru, Karnataka 560034, India",
     "lat": 12.9258697,
     "lng": 77.6255362,
     "priceLevel": "₹₹₹",
@@ -496,7 +496,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Filter Coffee Spot"
     ],
     "imageUrl": "/images/restaurants/the-craftery-by-subko.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Craftery%20by%20Subko%2068%2C%203rd%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560034%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16285725233891274162&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:30 AM – 10:30 PM",
     "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
@@ -506,19 +506,19 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "subko-indiranagar",
         "name": "Indiranagar (12th Main)",
         "neighborhood": "Indiranagar",
-        "address": "789/A, ground floor, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
-        "lat": 12.9730599,
-        "lng": 77.6382116,
-        "googleMapsUrl": "https://www.google.com/maps/search/The%20Craftery%20by%20Subko%20(Indiranagar%20(12th%20Main))%20789%2FA%2C%20Ground%20Floor%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore"
+        "address": "789/A, ground floor, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+        "lat": 12.9703363,
+        "lng": 77.6407651,
+        "googleMapsUrl": "https://maps.google.com/?cid=13095318095514028500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       },
       {
         "id": "ajji-house-by-subko-shanthi-nagar",
         "name": "Shanthi Nagar (Ajji House at The Courtyard)",
         "neighborhood": "CBD & Central",
-        "address": "105, Kengal Hanumanthaiah Rd, opp. Corporation Bank, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027",
+        "address": "105, Kengal Hanumanthaiah Rd, opp. Corporation Bank, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India",
         "lat": 12.9584305,
-        "lng": 77.5928951,
-        "googleMapsUrl": "https://www.google.com/maps/place/Ajji+House+by+Subko/@12.9584305,77.5568462,14z/data=!4m10!1m2!2m1!1sThe+Craftery+by+Subko+(Shanthi+Nagar+(Ajji+House+at+The+Courtyard))+The+Courtyard,+105,+K.H.+Road,+Shanthinagar,+Bengaluru,+Karnataka+560027+Bangalore!3m6!1s0x3bae15279a3b7d0d:0x1b608f5152ec73ca!8m2!3d12.9584305!4d77.5928951!15sCpYBVGhlIENyYWZ0ZXJ5IGJ5IFN1YmtvIChTaGFudGhpIE5hZ2FyIChBamppIEhvdXNlIGF0IFRoZSBDb3VydHlhcmQpKSBUaGUgQ291cnR5YXJkLCAxMDUsIEsuSC4gUm9hZCwgU2hhbnRoaW5hZ2FyLCBCZW5nYWx1cnUsIEthcm5hdGFrYSA1NjAwMjcgQmFuZ2Fsb3JlWpEBIo4BdGhlIGNyYWZ0ZXJ5IGJ5IHN1YmtvIHNoYW50aGkgbmFnYXIgYWpqaSBob3VzZSBhdCB0aGUgY291cnR5YXJkICkpIHRoZSBjb3VydHlhcmQgMTA1IGtoIHJvYWQgc2hhbnRoaW5hZ2FyIGJlbmdhbHVydSBrYXJuYXRha2EgNTYwMDI3IGJhbmdhbG9yZZIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11w7kmytst?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "lng": 77.59289509999999,
+        "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -530,9 +530,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Designed by NYC architects, Araku’s 100ft road flagship is a sensory temple for single-origin tribal coffees from the Eastern Ghats, pour-over flights, and French-inspired organic cuisine.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "968, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9699465,
-    "lng": 77.6391732,
+    "address": "Ground Floor, Sobha Alexander Plaza, Commissariat Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+    "lat": 12.970795899999999,
+    "lng": 77.610337,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
@@ -547,7 +547,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "/images/restaurants/araku-coffee.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Araku%20Coffee%20Flagship%20968%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=3096117525635176651&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Order the Modbar pour-over flight to taste how terroir drastically transforms Indian coffee flavor notes.",
     "isVegetarian": false,
@@ -561,7 +561,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A serene leafy bungalow in Koramangala 3rd Block that has anchored Bangalore’s weekend breakfast scene with artisan bacon platters, savory waffles, and pour-overs.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "No. 440, 2nd Floor, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034",
+    "address": "No. 440, 2nd Floor, 8th Main Rd, 4th Block, Koramangala, Bengaluru, Karnataka 560034, India",
     "lat": 12.9333838,
     "lng": 77.6270794,
     "priceLevel": "₹₹",
@@ -579,7 +579,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "/images/restaurants/one-five-four-breakfast-club.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/154%20Breakfast%20Club%20154%2C%208th%20Main%20Rd%2C%203rd%20Block%2C%20Koramangala%204th%20Block%2C%20Bengaluru%2C%20Karnataka%20560034%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=13135479707712879351&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 9:00 PM (Closed Tuesdays)",
     "curatorNote": "A green Koramangala oasis for leisurely Sunday breakfasts and fluffy Belgian waffles.",
     "isVegetarian": false,
@@ -593,8 +593,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by theater director Arjun Sajnani and named after his golden retriever, Sunny's on Lavelle Road is an upscale European institution famous for homemade pastas, steaks, and decadent desserts.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Lavelle Road",
-    "address": "50, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9718487,
+    "address": "50, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.971848699999999,
     "lng": 77.5985968,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹2,500",
@@ -611,7 +611,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/sunnys-lavelle-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Sunny's%2050%2C%20Lavelle%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=9052368483469589044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s earliest pet-friendly luxury dining bistros. The leafy veranda and classic Gorgonzola steak are exceptional.",
     "isVegetarian": false,
@@ -625,7 +625,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Nestled inside the iconic Ranga Shankara theatre in JP Nagar, Anju’s Cafe is a leafy cultural haven where artists, theatre-goers, and food lovers gather for homemade Akki Rotti, banana cake, and masala tea.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "JP Nagar",
-    "address": "138/2, Phase 2, R K Colony, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078",
+    "address": "138/2, Phase 2, R K Colony, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India",
     "lat": 12.9114697,
     "lng": 77.5870766,
     "priceLevel": "₹",
@@ -643,7 +643,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "/images/restaurants/anjus-cafe-ranga-shankara.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Anju%E2%80%99s%20Cafe%20at%20Ranga%20Shankara%2036%2F2%2C%208th%20Cross%20Rd%2C%202nd%20Phase%2C%20JP%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560078%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=2438859860437273415&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 10:00 PM (Closed Mondays)",
     "curatorNote": "A soulful South Bangalore cultural sanctuary. Enjoy hot akki rotti under the open foyer while discussing theatre and arts.",
     "isVegetarian": true,
@@ -657,7 +657,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by a French chef, Paris Panini serves golden crusty grilled baguettes named after French luminaries, crispy truffle frites, and homemade dips in a bustling bistro.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "Ground & Mezzanine Floor, 948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "Ground & Mezzanine Floor, 948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9702291,
     "lng": 77.6390555,
     "priceLevel": "₹₹",
@@ -674,7 +674,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/paris-panini-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Paris%20Panini%20948%2C%20Ground%20Floor%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=18426454053135832332&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "Warm, crispy French baguettes loaded with melted artisanal cheeses and signature dips. The Jean panini with brie and fig jam is iconic.",
     "isVegetarian": false,
@@ -688,9 +688,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore’s most coveted 8-seat Japanese noodle counter. Chef Victor hand-crafts high-hydration ramen noodles daily with 24-hour simmered broths and tare.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "CBD & Central",
-    "address": "105, Kengal Hanumanthaiah Rd, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027",
+    "address": "105, Kengal Hanumanthaiah Rd, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India",
     "lat": 12.9584305,
-    "lng": 77.5928951,
+    "lng": 77.59289509999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -704,7 +704,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/naru-noodle-bar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Naru%20Noodle%20Bar%20The%20Courtyard%2C%20105%2C%20K.H.%20Road%2C%20Shanthinagar%2C%20Bengaluru%2C%20Karnataka%20560027%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16163305277801171&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:30 PM, 7:00 PM – 10:30 PM (Reservation Only)",
     "curatorNote": "Slots open on Sunday and book out in under 30 seconds. The Tori Paitan chicken broth is silky and unctuous.",
     "isVegetarian": false,
@@ -718,9 +718,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A cozy Nanyang-style Kopitiam on 12th Main Indiranagar serving freshly toasted kaya bread, fragrant coconut Nasi Lemak, spicy curry laksa, and pulled Teh Tarik.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "Ground Floor, 1088, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
+    "address": "Ground Floor, 1088, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
     "lat": 12.969909,
-    "lng": 77.6381174,
+    "lng": 77.63811740000001,
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -736,7 +736,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "/images/restaurants/kopitiam-lah-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Kopitiam+Lah/@12.969909,77.6381174,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17007bc824f1:0x30c19d5310e88561!8m2!3d12.969909!4d77.6381174!16s%2Fg%2F11w4qd9hgs?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=3513262164417217889&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:30 AM – 10:30 PM",
     "curatorNote": "Reddit cult favorite for authentic Nanyang breakfast. The freshly toasted bread with thick slabs of cold butter and pandan kaya jam paired with dark soy runny eggs is unbeatable.",
     "isVegetarian": false,
@@ -750,8 +750,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A lush Indiranagar courtyard institution celebrated for soulful 12-hour simmered Pho broths, fresh summer rolls with peanut dip, and authentic Vietnamese drip coffee.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "965, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9699106,
+    "address": "965, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.969910599999999,
     "lng": 77.6396389,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
@@ -767,7 +767,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/phobidden-fruit-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Phobidden+Fruit+Vietnamese+Kitchen/@12.9699106,77.6396389,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a79ac22f77:0xef3290710970162!8m2!3d12.9699106!4d77.6396389!16s%2Fg%2F11b6gjjq12?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=1077249846191522146&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "A tranquil veranda setting with fragrant star anise and cinnamon infused Pho broths that warm the soul.",
     "isVegetarian": false,
@@ -781,9 +781,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Pioneered Bangalore’s Asian gastropub revolution with its colorful rooftop setting on 12th Main Indiranagar, melt-in-mouth pork belly baos, and signature craft cocktails.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "Third Floor, 610, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9705121,
-    "lng": 77.6452835,
+    "address": "Third Floor, 610, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.970512099999999,
+    "lng": 77.64528349999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,600",
     "mustTry": [
@@ -800,7 +800,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/the-fatty-bao-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Fatty%20Bao%20610%2C%203rd%20Floor%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=4037883716646597263&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM (Closed Mondays)",
     "curatorNote": "The open-air rooftop is one of Indiranagar’s best evening spots. The Char Siu pork belly bao with green apple kimchi is legendary.",
     "isVegetarian": false,
@@ -814,8 +814,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Authentic Burmese curries, fermented tea leaf salads, and lotus root crisps in a peaceful, hand-painted wooden dining room on Indiranagar 12th Main.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9704847,
+    "address": "607, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.970484700000002,
     "lng": 77.6447032,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,500",
@@ -830,7 +830,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/burma-burma.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Burma%20Burma%20607%2C%2012th%20Main%20Rd%2C%207th%20Cross%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12286720170850686853&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 6:30 PM – 10:30 PM",
     "curatorNote": "Incredible depth of umami and herbal broths in a 100% vegetarian setting.",
     "isVegetarian": true,
@@ -840,19 +840,19 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "burma-burma-brigade-branch",
         "name": "Forum Rex Walk, Brigade Road",
         "neighborhood": "Church Street & MG Road",
-        "address": "Unit No 109, Ground Floor, Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-        "lat": 12.9734188,
-        "lng": 77.6074218,
-        "googleMapsUrl": "https://www.google.com/maps/search/Burma%20Burma%20(Forum%20Rex%20Walk%2C%20Brigade%20Road)%20Forum%20Rex%20Walk%2C%20Brigade%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore"
+        "address": "Unit No 109, Ground Floor, Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+        "lat": 12.973040099999999,
+        "lng": 77.60613959999999,
+        "googleMapsUrl": "https://maps.google.com/?cid=14442321108225895488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       },
       {
         "id": "burma-burma-ecoworld-branch",
         "name": "The Bay, RMZ EcoWorld",
         "neighborhood": "Bellandur & Ecoworld",
-        "address": "Unit No R5, Ground Floor, The Bay, Building Campus 8A, Ecoworld Maratahalli, B.B, Marathahalli - Sarjapur Outer Ring Rd, M.P East, Mahadevapura, Bengaluru, Karnataka 560103",
+        "address": "Unit No R5, Ground Floor, The Bay, Building Campus 8A, Ecoworld Maratahalli, B.B, Marathahalli - Sarjapur Outer Ring Rd, M.P East, Mahadevapura, Bengaluru, Karnataka 560103, India",
         "lat": 12.920167,
         "lng": 77.6848395,
-        "googleMapsUrl": "https://www.google.com/maps/search/Burma%20Burma%20(The%20Bay%2C%20RMZ%20EcoWorld)%20The%20Bay%2C%20Campus%208A%2C%20RMZ%20EcoWorld%2C%20Outer%20Ring%20Road%2C%20Bellandur%2C%20Bengaluru%20560103%20Bangalore"
+        "googleMapsUrl": "https://maps.google.com/?cid=17410816075536197062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -864,8 +864,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A vibrant Pan-Asian hotspot on 12th Main Indiranagar celebrated for its revolving conveyor belt sushi bar, crystal dumplings, and craft bubble teas.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "594, 12th Main Rd, 2nd Stage, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9704057,
+    "address": "594, 12th Main Rd, 2nd Stage, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.970405699999999,
     "lng": 77.642764,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,500",
@@ -882,7 +882,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/lucky-chan-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Lucky+Chan/@12.9704057,77.642764,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1778cef99507:0x385ba9837ef6c8ae!8m2!3d12.9704057!4d77.642764!16s%2Fg%2F11fqz872k6?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=4061025871240546478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Grab a counter seat by the revolving conveyor belt. Their translucent truffle edamame dumplings are exceptional.",
     "isVegetarian": false,
@@ -892,19 +892,19 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "lucky-chan-bellandur-branch",
         "name": "The Bay, RMZ EcoWorld",
         "neighborhood": "Bellandur & Ecoworld",
-        "address": "Ecospace Business Park Rmz Eco World Bellandur, The Bay, Bellandur, Bengaluru, Karnataka 560103",
-        "lat": 12.9248,
-        "lng": 77.6845,
-        "googleMapsUrl": "https://www.google.com/maps/search/Lucky%20Chan%20(The%20Bay%2C%20RMZ%20EcoWorld)%20The%20Bay%2C%20Campus%208A%2C%20RMZ%20EcoWorld%2C%20Outer%20Ring%20Road%2C%20Bellandur%2C%20Bengaluru%20560103%20Bangalore"
+        "address": "Ecospace Business Park Rmz Eco World Bellandur, The Bay, Bellandur, Bengaluru, Karnataka 560103, India",
+        "lat": 12.9202886,
+        "lng": 77.6846386,
+        "googleMapsUrl": "https://maps.google.com/?cid=5167808166714788376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       },
       {
         "id": "lucky-chan-forum-south-branch",
         "name": "Forum South Bengaluru",
         "neighborhood": "JP Nagar",
-        "address": "3rd Floor, Forum South, Metro Station, Cross, Anjanadri Layout, Konanakunte, Bengaluru, Karnataka 560062",
-        "lat": 12.8878,
-        "lng": 77.5539,
-        "googleMapsUrl": "https://www.google.com/maps/search/Lucky%20Chan%20(Forum%20South%20Bengaluru)%203rd%20Floor%2C%20Forum%20South%20Bengaluru%2C%20Konanakunte%20Cross%2C%20Kanakapura%20Rd%2C%20Bengaluru%20560062%20Bangalore"
+        "address": "3rd Floor, Forum South, Metro Station, Cross, Anjanadri Layout, Konanakunte, Bengaluru, Karnataka 560062, India",
+        "lat": 12.888775299999999,
+        "lng": 77.56332809999999,
+        "googleMapsUrl": "https://maps.google.com/?cid=14126792646757334638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -916,9 +916,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A vibrant neon-lit street food diner on Indiranagar 12th Main serving hearty Dan Dan noodles, Taiwanese braised pork bowls, juicy dumplings, and bubble teas.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "621A, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9705628,
-    "lng": 77.6469723,
+    "address": "IndiQube Symphony, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9732112,
+    "lng": 77.614641,
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -933,7 +933,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/mai-mai-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Mai%20Mai%20621A%2C%2012th%20Main%20Rd%2C%207th%20Cross%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=5555705537854708184&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "A casual, flavor-packed Southeast Asian joint. The hand-pulled noodles with fiery Sichuan chilli crisp are comforting perfection.",
     "isVegetarian": false,
@@ -947,7 +947,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The Bengaluru outpost of Bangkok’s celebrated Michelin Bib Gourmand Thai diner, famous for its 18-ingredient secret tamarind sauce Phad Thai and vibrant wok bowls.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "Sai Suraksha, 1090, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "Sai Suraksha, 1090, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9698693,
     "lng": 77.6377675,
     "priceLevel": "₹₹₹",
@@ -965,7 +965,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/baan-phadthai-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Baan%20Phadthai%20Sai%20Suraksha%2C%201090%2C%2012th%20Main%20Rd%2C%20Doopanahalli%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=6751589214107727434&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The 18-ingredient secret tamarind sauce brings authentic Bangkok Michelin street flavor to 12th Main Indiranagar.",
     "isVegetarian": false,
@@ -979,8 +979,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Chef Amit Roy’s stylish Pan-Asian sanctuary featuring sleek cathedral murals, delicate dim sums, and fragrant Southeast Asian curries.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "1Sobha Mall, 50, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9753968,
+    "address": "1Sobha Mall, 50, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.975396799999999,
     "lng": 77.6018481,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,500",
@@ -996,7 +996,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/misu-st-marks-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Misu%204%2F1%2C%20Halcyon%20Complex%2C%20St.%20Marks%20Road%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=17088512876486810876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s most consistent and aesthetically pleasing Asian dining rooms.",
     "isVegetarian": false,
@@ -1010,7 +1010,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The global farm-to-table pizza phenomenon from Vietnam that took Bangalore by storm, featuring in-house crafted burrata, sourdough crusts, and serene biophilic design.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "Ward 72, No.3275/A, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Domlur, Bengaluru, Karnataka 560038",
+    "address": "Ward 72, No.3275/A, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Domlur, Bengaluru, Karnataka 560038, India",
     "lat": 12.9700194,
     "lng": 77.6361483,
     "priceLevel": "₹₹₹₹",
@@ -1028,7 +1028,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/pizza-4ps-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Pizza%204P's%203275%2FA%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=1288439063877496403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Book in advance. The house-made fresh burrata cut open table-side over Neapolitan crust with wildflower honey is unbeatable.",
     "isVegetarian": false,
@@ -1042,8 +1042,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A cult Bangalore favorite celebrated for authentic Neapolitan hand-stretched sourdough pies, stuffed garlic loafs loaded with cheese, and craft brews.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "2985, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9701444,
+    "address": "2985, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.970144399999999,
     "lng": 77.6447056,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
@@ -1060,7 +1060,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/the-pizza-bakery-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Pizza%20Bakery%202985%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=4388685553195652933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "The 48-hour fermented sourdough crust has the perfect leopard-spotting and blistered air pockets. Do not skip the stuffed garlic bread.",
     "isVegetarian": false,
@@ -1070,19 +1070,19 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "the-pizza-bakery-church-street-branch",
         "name": "Church Street",
         "neighborhood": "Church Street & MG Road",
-        "address": "86, Spencer Building, Coconut Grove, 16, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-        "lat": 12.9749557,
-        "lng": 77.6053303,
-        "googleMapsUrl": "https://www.google.com/maps/search/The%20Pizza%20Bakery%20(Church%20Street)%2086%2C%20Coconut%20Grove%2C%20Church%20Street%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore"
+        "address": "Coconut Grove, 86, Spencer Building, 16, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+        "lat": 12.9752011,
+        "lng": 77.6046089,
+        "googleMapsUrl": "https://maps.google.com/?cid=7055628019802538548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       },
       {
         "id": "the-pizza-bakery-hsr-branch",
         "name": "Sector 1, HSR Layout",
         "neighborhood": "HSR Layout",
-        "address": "Ward No 174, No. 2345, 1st Sector, HSR Layout, Bengaluru, Karnataka 560027",
-        "lat": 12.917,
-        "lng": 77.6508,
-        "googleMapsUrl": "https://www.google.com/maps/search/The%20Pizza%20Bakery%20(Sector%201%2C%20HSR%20Layout)%20No.%202345%2C%2017th%20Cross%20Rd%2C%20Sector%201%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+        "address": "No. 2345, Ward No 174, Vanganahalli, 1st Sector, HSR Layout, Bengaluru, Karnataka 560027, India",
+        "lat": 12.912019,
+        "lng": 77.64717449999999,
+        "googleMapsUrl": "https://maps.google.com/?cid=2264007145900133572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -1094,7 +1094,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The Church Street original that pioneered sourdough Neapolitan pizza culture in Bangalore. Blistered crusts baked in a roaring brick oven at 450°C, fresh mozzarella, and indulgent milkshakes.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Church Street & MG Road",
-    "address": "18, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "18, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.974691,
     "lng": 77.6054207,
     "priceLevel": "₹₹₹",
@@ -1112,7 +1112,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/brik-oven-church-street.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Brik%20Oven%2019%2C%20Church%20St%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=14753408982815857506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 11:00 PM",
     "curatorNote": "Ask for the off-menu hot honey drizzle on their pepperoni and burrata pies.",
     "isVegetarian": false,
@@ -1126,7 +1126,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A grand Italian-European dining palace on MG Road by Chef Manu Chandra featuring an interactive salumeria, handmade pasta lab, dry-aged steaks, and a subterranean wine cellar.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Church Street & MG Road",
-    "address": "Ground Floor, NO.86, SPENCER'S TOWERS, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "Ground Floor, NO.86, SPENCER'S TOWERS, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.975749,
     "lng": 77.604619,
     "priceLevel": "₹₹₹₹",
@@ -1144,7 +1144,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/lupa-mg-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/LUPA%20Spencer's%20Towers%2C%20Ground%20Floor%2C%2086%2C%20MG%20Rd%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=3869414084745381449&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 1:00 AM",
     "curatorNote": "Manu Chandra’s magnum opus on MG Road. Features an interactive salumeria, dedicated gelato lab, and subterranean wine cellar.",
     "isVegetarian": false,
@@ -1158,9 +1158,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Set on a 37-acre regenerative farm in North Bangalore, Farmlore offers an intimate 18-seat wood-fired chef’s degustation menu celebrated across global culinary rankings.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Bel Road & North BLR",
-    "address": "Survey No:67, Mohan, Raju Layout, Bagalur, Sathnur Village, Bengaluru, Karnataka 562149",
+    "address": "Survey No:67, Mohan, Raju Layout, Bagalur, Sathnur Village, Bengaluru, Karnataka 562149, India",
     "lat": 13.1273276,
-    "lng": 77.6393523,
+    "lng": 77.63935230000001,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹8,000",
     "mustTry": [
@@ -1174,7 +1174,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/farmlore-bangalore.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Farmlore%20Sathanur%20Village%2C%20Bagalur%2C%20Bengaluru%20Rural%2C%20Karnataka%20562149%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=1253701893843558103&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 4:00 PM, 7:00 PM – 11:00 PM (Advance Reservation Required)",
     "curatorNote": "Powered 100% by solar and fire. Book months ahead for India’s most visionary farm-to-table tasting experience.",
     "isVegetarian": false,
@@ -1188,9 +1188,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Chef Candice Wilson’s beloved Mexican taqueria in Indiranagar making fresh corn tortillas daily from scratch, loaded with roasted tomatillo salsas, slow-cooked meats, and warm cinnamon churros.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "218, Paramahansa Yogananda Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "218, Paramahansa Yogananda Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9809526,
-    "lng": 77.6371323,
+    "lng": 77.63713229999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,300",
     "mustTry": [
@@ -1206,7 +1206,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/chinita-mexican-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Chinita%20Real%20Mexican%20Food%202186%2C%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12504886326800425922&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "Uncompromisingly authentic Mexican street food with gluten-free house-pressed corn tortillas and tangy tomatillo salsas.",
     "isVegetarian": false,
@@ -1220,7 +1220,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Set within a stunning whitewashed colonial bungalow on Wood Street, Olive Beach has been Bangalore’s quintessential romantic Mediterranean sanctuary for two decades.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Church Street & MG Road",
-    "address": "16, Wood St, near Karnataka Bank, Ashok Nagar, Bengaluru, Karnataka 560025",
+    "address": "16, Wood St, near Karnataka Bank, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.966892,
     "lng": 77.6080844,
     "priceLevel": "₹₹₹₹",
@@ -1238,7 +1238,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/olive-beach-richmond-town.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Olive%20Beach%2016%2C%20Wood%20St%2C%20Ashok%20Nagar%2C%20Richmond%20Town%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16636761139060968573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The cobbled sunlit courtyard and bougainvillea-framed villa provide Bangalore’s most romantic dining ambiance.",
     "isVegetarian": false,
@@ -1252,8 +1252,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "South Bangalore’s crown jewel for progressive pure-vegetarian dining. Celebrated for whimsical multi-sensory plating, birdcage chandeliers, smoked cottage cheese steaks, and botanical mocktail alchemy.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Jayanagar",
-    "address": "40, 22nd Cross Rd, Jayanagar 3rd Block, Jayanagar, Bengaluru, Karnataka 560011",
-    "lat": 12.9327482,
+    "address": "40, 22nd Cross Rd, Jayanagar 3rd Block, Jayanagar, Bengaluru, Karnataka 560011, India",
+    "lat": 12.932748199999999,
     "lng": 77.5830067,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,500",
@@ -1269,7 +1269,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/phurr-jayanagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Phurr%2040%2C%2022nd%20Cross%20Rd%2C%20Jayanagar%203rd%20Block%2C%20Bengaluru%2C%20Karnataka%20560011%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=5691429465432311784&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 4:00 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
     "isVegetarian": true,
@@ -1283,8 +1283,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Set in a traditional Mangalorean courtyard house on Residency Road, Karavalli has spent over three decades researching and serving authentic coastal recipes from Kundapur, Mangalore, Coorg, and Kerala.",
     "category": "Regional & Coastal",
     "neighborhood": "Church Street & MG Road",
-    "address": "Vivanta, 66, Residency Rd, Srinivas Nagar, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.9724473,
+    "address": "Vivanta, 66, Residency Rd, Srinivas Nagar, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+    "lat": 12.972447299999999,
     "lng": 77.6086535,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹3,500",
@@ -1301,7 +1301,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/karavalli-residency-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Karavalli%20Vivanta%20Bengaluru%2C%2066%2C%20Residency%20Rd%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=8609478692915182623&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
     "isVegetarian": false,
@@ -1315,7 +1315,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A centenarian Bangalore institution in Jayanagar famed for wood-fire cooked Seeraga Samba mutton Donne Biryani, fiery mutton chops, and mutton dry.",
     "category": "Regional & Coastal",
     "neighborhood": "Jayanagar",
-    "address": "1st C, 718, Main, 45th Cross Rd, 8th Block, Jayanagar, Bengaluru, Karnataka 560070",
+    "address": "718, 1st C, Main, 45th Cross Rd, 8th Block, Jayanagar, Bengaluru, Karnataka 560070, India",
     "lat": 12.9180061,
     "lng": 77.5739663,
     "priceLevel": "₹₹",
@@ -1332,7 +1332,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/shivaji-military-hotel-jayanagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Shivaji%20Military%20Hotel%20718%2C%201st%20C%20Main%2C%2045th%20Cross%20Rd%2C%208th%20Block%2C%20Jayanagar%2C%20Bengaluru%2C%20Karnataka%20560082%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=14242521696076668137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 3:30 PM (Closed Mondays)",
     "curatorNote": "Arrive by 12:30 PM for lunch. The green herbal masala Donne Biryani served in dried areca leaf bowls is peerless.",
     "isVegetarian": false,
@@ -1346,7 +1346,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An authentic Karnataka military hotel sanctum in Jayanagar revered for early-morning meat breakfasts, piping hot trotters (Kaal) soup, pepper mutton fry, and traditional Donne Biryani.",
     "category": "Regional & Coastal",
     "neighborhood": "Jayanagar",
-    "address": "1st floor, 61, Krishna Rajendra Rd, opposite Indian oil petroleum, 7th Block, Jayanagar, Bengaluru, Karnataka 560070",
+    "address": "1st floor, 61, Krishna Rajendra Rd, opposite Indian oil petroleum, 7th Block, Jayanagar, Bengaluru, Karnataka 560070, India",
     "lat": 12.9295639,
     "lng": 77.5738879,
     "priceLevel": "₹₹",
@@ -1364,7 +1364,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/ranganna-military-jayanagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Ranganna%20Military%20Hotel%2061%2C%201st%20Floor%2C%207th%20Block%2C%20Jayanagar%2C%20Bengaluru%2C%20Karnataka%20560070%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=1461579911210420156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:30 AM – 4:00 PM, 7:00 PM – 10:30 PM (Closed Mondays)",
     "curatorNote": "Bangalore military hotel royalty. Dip soft thatte idlis into rich, peppery mutton Kaal soup for the ultimate Sunday breakfast.",
     "isVegetarian": false,
@@ -1378,9 +1378,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Central Bangalore’s benchmark for fiery Kundapur coastal cooking. Fiery red ghee roasts, fresh fish thalis, and Kori Rotti that have drawn foodies for decades.",
     "category": "Regional & Coastal",
     "neighborhood": "Church Street & MG Road",
-    "address": "4, 1, Brunton Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.955728,
-    "lng": 77.6159892,
+    "address": "#56, Above Star bucks, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.974534,
+    "lng": 77.6073495,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
@@ -1394,7 +1394,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/anupams-coast-to-coast.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Anupam's+Coast+II+Coast+4,+1,+Brunton+Rd,+Craig+Park+Layout,+Ashok+Nagar,+Bengaluru,+Karnataka+560025+Bangalore/@12.955728,77.6159892,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=14055323736147647150&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The rich, fiery red ghee roast masala coating juicy prawns is Bangalore coastal perfection. Soak every drop with soft Neer Dosas.",
     "isVegetarian": false,
@@ -1408,9 +1408,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An authentic celebration of Karnataka’s northern coastal belt (Kundapura & Udupi), famous for freshly landed Kane rava fry, silver fish tawa fry, Maravanthe fish curry meals, and Neer Dosa.",
     "category": "Regional & Coastal",
     "neighborhood": "Indiranagar",
-    "address": "322/1, Chinmaya Mission Hospital Rd, Near Indiranagar Metro Station, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "322/1, Chinmaya Mission Hospital Rd, Near Indiranagar Metro Station, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9783935,
-    "lng": 77.6372562,
+    "lng": 77.63725620000001,
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -1425,7 +1425,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/maravanthe-coastal-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Maravanthe%20Coastal%20Diner%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=4760100400764743451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:45 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The traditional Kundapura coconut fish curry and crispy rava-crusted Ladyfish bring coastal beach-highway flavors to Indiranagar.",
     "isVegetarian": false,
@@ -1439,7 +1439,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An exclusive, pre-booked culinary atelier in a turquoise Cambridge Layout house, serving multi-course heirloom feasts that showcase ancestral Gowda mudde-nati koli and Mangalorean Bunt seafood.",
     "category": "Regional & Coastal",
     "neighborhood": "Indiranagar",
-    "address": "5, Cambridge Cross Road, Halasuru, Cambridge Layout, Bengaluru, Karnataka 560008",
+    "address": "5, Cambridge Cross Road, Halasuru, Cambridge Layout, Bengaluru, Karnataka 560008, India",
     "lat": 12.9722815,
     "lng": 77.6259596,
     "priceLevel": "₹₹₹₹",
@@ -1456,7 +1456,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/bengaluru-oota-company-halasuru.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Bengaluru%20Oota%20Company%2024-4%2C%20Cambridge%20Cross%20Rd%2C%20Halasuru%2C%20Bengaluru%2C%20Karnataka%20560008%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=4138028413839628160&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Advance Booking Required)",
     "curatorNote": "By reservation only. Intimate chef’s table dining preserving the authentic culinary heritage of Karnataka’s Bunt and Gowda families.",
     "isVegetarian": false,
@@ -1470,7 +1470,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The quintessential Bangalore rite of passage. Piping hot seeraga-style Andhra biryani layered with fiery fried chicken, spicy gravy, and raita that fuels late-night cravings.",
     "category": "Regional & Coastal",
     "neighborhood": "Koramangala",
-    "address": "124, 1st A cross Rd, near Jyoti Nivas College Road, KHB Colony, 5th Block, Koramangala, Bengaluru, Karnataka 560095",
+    "address": "124, 1st A cross Rd, near Jyoti Nivas College Road, KHB Colony, 5th Block, Koramangala, Bengaluru, Karnataka 560095, India",
     "lat": 12.9346561,
     "lng": 77.6163528,
     "priceLevel": "₹₹",
@@ -1486,7 +1486,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/meghana-foods-koramangala.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Meghana%20Foods%20124%2C%201st%20A%20Cross%20Rd%2C%20KHB%20Colony%2C%205th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560095%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=15808586783067347096&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "The boneless special chicken biryani with its distinct red spiced chicken pieces and rice is an obsession across the city.",
     "isVegetarian": false,
@@ -1500,7 +1500,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore’s most iconic microbrewery since 2010. Sprawling multi-level brick brewhouse serving signature Basmati Blonde, Tintin Belgian Wit, Tin Man IPA, and wood-fired sourdough pizzas.",
     "category": "Microbrewery",
     "neighborhood": "Indiranagar",
-    "address": "6/2, 100 Feet Rd, near Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "6/2, 100 Feet Rd, near Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9795441,
     "lng": 77.6406542,
     "priceLevel": "₹₹₹",
@@ -1519,7 +1519,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/toit-brewpub.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Toit%20Brewpub%20298%2C%20100%20Feet%20Rd%2C%20Near%20KFC%20Junction%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=6512482091477201989&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 1:00 AM (Open Daily)",
     "curatorNote": "Order the beer sampler flight first. Tintin Toit with orange peel & coriander alongside a wood-fired pizza on the 2nd floor balcony is classic BLR.",
     "isVegetarian": false,
@@ -1533,7 +1533,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An intellectual microbrewery and live jazz sanctuary in Whitefield featuring walls of rare books, acoustic architecture, and globally celebrated craft brews.",
     "category": "Microbrewery",
     "neighborhood": "Whitefield",
-    "address": "6th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066",
+    "address": "6th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066, India",
     "lat": 12.9825325,
     "lng": 77.7217732,
     "priceLevel": "₹₹₹",
@@ -1551,7 +1551,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/windmills-craftworks-whitefield.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Windmills%20Craftworks%206th%20Floor%2C%20331%2C%20Road%205B%2C%20EPIP%20Zone%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560066%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=4040799608009425262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 12:00 AM",
     "curatorNote": "Arguably the finest microbrewery in India. Acoustic jazz performances paired with house-brewed stout are peerless.",
     "isVegetarian": false,
@@ -1565,8 +1565,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Hailing from Michigan, ABC on Magrath Road brought authentic American craft brewing to India, famed for heavy hop IPAs, Belgian blondes, and artisanal pub fare.",
     "category": "Microbrewery",
     "neighborhood": "Church Street & MG Road",
-    "address": "Allied Grand Plaza, 3rd, 8, Magrath Rd, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.9703756,
+    "address": "3rd, Allied Grand Plaza, 8, Magrath Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+    "lat": 12.970375599999999,
     "lng": 77.6110025,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
@@ -1583,7 +1583,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/arbor-brewing-company.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Arbor%20Brewing%20Company%20(ABC)%208%2C%203rd%20Floor%2C%20Allied%20Grande%20Plaza%2C%20Magrath%20Rd%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=10384417530120904904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 12:30 AM",
     "curatorNote": "The Raging Elephant IPA remains the benchmark for piney, citrusy American India Pale Ales in the country.",
     "isVegetarian": false,
@@ -1597,9 +1597,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Opened in 2010 as Bangalore’s first microbrewery license, The Biere Club has been a stalwart for small-batch seasonal ales, stout, wheat beers, and wood-fired pizzas.",
     "category": "Microbrewery",
     "neighborhood": "Lavelle Road",
-    "address": "20/2, Vittal Mallya Rd, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "20/2, Vittal Mallya Rd, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.9708863,
-    "lng": 77.5975839,
+    "lng": 77.59758389999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,600",
     "mustTry": [
@@ -1614,7 +1614,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/the-biere-club-lavelle.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Biere%20Club%2020%2F2%2C%20Vittal%20Mallya%20Rd%2C%20D'%20Souza%20Layout%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12469811485073525810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "Historic significance as the city's 1st microbrewery. Great afternoon terrace overlooking UB City.",
     "isVegetarian": false,
@@ -1628,9 +1628,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A sprawling outdoor brewery sanctuary in North Bangalore offering craft beer brewed to Bavarian purity laws, gourmet charcuterie, and sourdough bakes.",
     "category": "Microbrewery",
     "neighborhood": "Bel Road & North BLR",
-    "address": "04 & 05, UG - Upper Ground Floor, Bhartiya Mall Of Bengaluru, Kannuru, Bengaluru, Karnataka 560064",
-    "lat": 13.0838244,
-    "lng": 77.64447,
+    "address": "No.23/3, 21st KM Stone, Old Madras Road Nimbekaipura, Bidarahalli, Hobli, Sannatammanahalli, Nimbekayipura, Karnataka 560049, India",
+    "lat": 13.0535789,
+    "lng": 77.7594518,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -1645,7 +1645,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/geist-brewing-factory.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Geist%20Brewing%20Factory%20Bhartiya%20Mall%20of%20Bengaluru%2C%20Thanisandra%20Main%20Rd%2C%20Bengaluru%2C%20Karnataka%20560064%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=151067454123503013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The Kamacitra NEIPA with tropical notes is one of the highest-rated craft beers in India.",
     "isVegetarian": false,
@@ -1659,9 +1659,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore’s beloved local pub celebrating regional Karnataka canteen snacks, local spirits, filter coffee cocktails, and nostalgic 80s Kannada & retro music on 100 Feet Road.",
     "category": "Microbrewery",
     "neighborhood": "Indiranagar",
-    "address": "777/I, 100 Feet Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9671312,
-    "lng": 77.6411671,
+    "address": "777/I, 100 Feet Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.967131199999999,
+    "lng": 77.64116709999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,000",
     "mustTry": [
@@ -1678,7 +1678,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/bobs-bar-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Bob's%20Bar%20777%2FI%2C%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560008%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=17662415397269422041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 1:00 AM",
     "curatorNote": "Pair their signature iced filter coffee cocktail with crispy fried tindli and Malnad pork fry on the open terrace.",
     "isVegetarian": false,
@@ -1692,7 +1692,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Since 1989, Pecos has been the temple of classic 70s rock, Pink Floyd posters, retro nostalgia, and draught mugs on Rest House Road off Brigade.",
     "category": "Microbrewery",
     "neighborhood": "Church Street & MG Road",
-    "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001",
+    "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
     "lat": 12.973678,
     "lng": 77.607354,
     "priceLevel": "₹₹",
@@ -1709,7 +1709,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Craft Beer"
     ],
     "imageUrl": "/images/restaurants/pecos-rest-house-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Pecos%20Classic%2034%2C%20Rest%20House%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "A pilgrimage for Bangalore rock fans since 1989. Draught beer by the pitcher and fiery chilli pork.",
     "isVegetarian": false,
@@ -1723,7 +1723,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An avant-garde 30-seat speakeasy by mixologist Avinash Kapoli and chef Sombir Choudhary, pushing boundaries with native Indian ferments, kinetic art, and bespoke mixology.",
     "category": "Cocktails & Rooftops",
     "neighborhood": "Indiranagar",
-    "address": "No.210, A cross, 1st Main Rd, 2nd stage Indiranagar, Stage 2, Domlur, Bengaluru, Karnataka 560071",
+    "address": "No.210, A cross, 1st Main Rd, 2nd stage Indiranagar, Stage 2, Domlur, Bengaluru, Karnataka 560071, India",
     "lat": 12.965116,
     "lng": 77.6383883,
     "priceLevel": "₹₹₹₹",
@@ -1741,7 +1741,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/soka-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/SOKA+Cocktail+Bar/@12.965116,77.6383883,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e7ced2880b:0x29184d1c3a8b3bfd!8m2!3d12.965116!4d77.6383883!16s%2Fg%2F11vfbgd6d1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=2961201538632727549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "5:00 PM – 1:00 AM (Reservations Essential)",
     "curatorNote": "Ranked among the premier cocktail bars in Asia. Features moving kinetic art sculptures, moody lighting, and genius cocktail precision.",
     "isVegetarian": false,
@@ -1755,9 +1755,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Tucked behind an unmarked kitchen door at The Leela Palace, ZLB 23 is a sultry Kyoto-inspired speakeasy serving prohibition-era craft cocktails, live jazz, and luxury dim sums.",
     "category": "Cocktails & Rooftops",
     "neighborhood": "Indiranagar",
-    "address": "The Leela Palace, Zia\\\\\\\\\\\\\\'s Garden, C/O, HAL Old Airport Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.960325,
-    "lng": 77.648408,
+    "address": "The Leela Palace, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India",
+    "lat": 12.961130899999999,
+    "lng": 77.64859059999999,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹4,000",
     "mustTry": [
@@ -1774,7 +1774,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/zlb-23-leela-palace.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/ZLB+23+(The+Leela+Palace+Bengaluru)/@12.960325,77.648408,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae14067174ce31:0x94bf2c301bd03ab5!8m2!3d12.960325!4d77.648408!16s%2Fg%2F11xp6_z65n?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=10011110469267643844&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 PM – 1:00 AM (Closed Sundays)",
     "curatorNote": "Enter through the secret garden corridor. Velvet drapes, live vinyl jazz, and world-class mixology in complete discretion.",
     "isVegetarian": false,
@@ -1788,7 +1788,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched on the 21st floor of the Four Seasons at Embassy ONE, Copitas offers breathtaking city sunsets, artisanal gin creations, craft mezcals, and Latin-Asian tapas.",
     "category": "Cocktails & Rooftops",
     "neighborhood": "Bel Road & North BLR",
-    "address": "8, Bellary Rd, Dena Bank Colony, Ganganagar, Bengaluru, Karnataka 560032",
+    "address": "8, Bellary Rd, Dena Bank Colony, Ganganagar, Bengaluru, Karnataka 560032, India",
     "lat": 13.0196455,
     "lng": 77.5853711,
     "priceLevel": "₹₹₹₹",
@@ -1806,7 +1806,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/copitas-four-seasons.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Copitas%20Four%20Seasons%20Hotel%20at%20Embassy%20ONE%2C%20Bellary%20Road%2C%20Ganganagar%2C%20Bengaluru%2C%20Karnataka%20560032%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=15898415081874810973&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "5:00 PM – 1:00 AM",
     "curatorNote": "Consistently featured in Asia’s 50 Best Bars. Catch golden hour on the open-air deck overlooking North Bangalore.",
     "isVegetarian": false,
@@ -1820,8 +1820,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by master pastry chefs, Lavonne is Bangalore’s premier French pastry salon famous for 72-hour laminated butter croissants, mirror-glazed entremets, and artisan brunch.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
-    "address": "263, 3rd Cross Rd, 2nd Stage, Defence Colony, Domlur, Bengaluru, Karnataka 560071",
-    "lat": 12.9668495,
+    "address": "263, 3rd Cross Rd, 2nd Stage, Defence Colony, Domlur, Bengaluru, Karnataka 560071, India",
+    "lat": 12.966849499999999,
     "lng": 77.6368682,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,200",
@@ -1838,7 +1838,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/lavonne-cafe-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Lavonne%20Cafe%20263%2C%203rd%20Cross%20Rd%2C%202nd%20Stage%2C%20Defence%20Colony%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560071%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=8149757059432322691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:30 AM – 11:00 PM",
     "curatorNote": "The gold standard of French pastry in South India. The layered almond croissants shatter with every buttery bite.",
     "isVegetarian": false,
@@ -1848,10 +1848,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "lavonne-cafe-st-marks-road",
         "name": "St. Marks Road (Samrah Plaza)",
         "neighborhood": "Church Street & MG Road",
-        "address": "Samrah Plaza, 4/2, Ground Floor St. Mark, s Road, Bengaluru, Karnataka 560001",
+        "address": "4/2, Ground Floor St. Mark, Samrah Plaza, s Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
         "lat": 12.9694176,
         "lng": 77.6003176,
-        "googleMapsUrl": "https://www.google.com/maps/place/Lavonne+Caf%C3%A9/@12.9694176,77.6003176,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae172a4738c2c1:0xdd7f552401232304!8m2!3d12.9694176!4d77.6003176!16s%2Fg%2F11hz6lpvk3?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        "googleMapsUrl": "https://maps.google.com/?cid=15960569217550590724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -1863,9 +1863,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An artisanal scoop shop on 12th Main Indiranagar making all-natural churns from fresh milk and local ingredients, paired with their legendary warm underbaked cake.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
-    "address": "1182, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9430494,
-    "lng": 77.6398219,
+    "address": "128, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9726333,
+    "lng": 77.6071059,
     "priceLevel": "₹₹",
     "priceForTwo": "₹600",
     "mustTry": [
@@ -1879,7 +1879,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/amadora-ice-cream-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Amadora+Gourmet+Ice+Cream+1182,+12th+Main+Rd,+HAL+2nd+Stage,+Indiranagar,+Bengaluru,+Karnataka+560038+Bangalore/@12.9430494,77.6398219,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=2439939687031938991&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Reddit foodies unanimous pick for the best dessert in town: Order the gooey warm Underbaked Cake topped with Salted Butter Caramel ice cream.",
     "isVegetarian": true,
@@ -1893,9 +1893,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A Bangalore institution famed for bite-sized Red Velvet cupcakes with cream cheese frosting, sourdough pizzas, roast chicken pot pies, and apple tarts in a cozy colonial bungalow.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Lavelle Road",
-    "address": "24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9698289,
-    "lng": 77.597437,
+    "address": "275/A, 9th Main Rd, near Jesus Call, 5th Block, Jayanagar, Bengaluru, Karnataka 560041, India",
+    "lat": 12.917430099999999,
+    "lng": 77.5834634,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -1911,7 +1911,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/glens-bakehouse-lavelle.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Glen's+Bakehouse/@12.9698289,77.597437,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16783457a129:0x36cc833f855485ba!8m2!3d12.9698289!4d77.597437!16s%2Fg%2F11cmttg5wc?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=13825732100147479190&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 11:30 PM",
     "curatorNote": "The bite-sized red velvet cupcakes are legendary across Bangalore. Sit in the sun-dappled courtyard under the tree.",
     "isVegetarian": false,
@@ -1925,9 +1925,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An irreplaceable Rajajinagar landmark established in 1955 where crowds gather daily for oven-fresh butter biscuits, flaky veg puffs, and plum cakes.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Malleshwaram",
-    "address": "68, 12th Main, 2nd Block, Rajajinagar, Bengaluru, Karnataka 560010",
-    "lat": 12.989478,
-    "lng": 77.5523584,
+    "address": "68, 12th Main Road, 2nd Block Behind ESI Hospital, 231, 38th Cross Rd, opp. to Anjaneya Swamy Temple, 2nd Block, Rajajinagar, Bengaluru, Karnataka 560010, India",
+    "lat": 12.991410300000002,
+    "lng": 77.5546152,
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -1941,7 +1941,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/variar-bakery-rajajinagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/O.G.+Variar+%26+Sons+Bakery+68,+12th+Main,+2nd+Block,+Rajajinagar,+Bengaluru,+Karnataka+560010+Bangalore/@12.989478,77.5523584,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=7970910653914935059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 1:30 PM, 3:30 PM – 9:00 PM",
     "curatorNote": "Bags of piping hot butter biscuits sell out within minutes of the 4 PM batch coming out of the ovens.",
     "isVegetarian": true,
@@ -1955,7 +1955,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Established in 1902 on Mosque Road, this historic bakery draws city-wide queues at 3:30 PM daily for oven-fresh mutton kheema samosas, coconut pastries, and Ramadan special delicacies.",
     "category": "Bakeries & Desserts",
     "neighborhood": "CBD & Central",
-    "address": "93, Mosque Rd, Cleveland Town, Fraser Town, Bengaluru, Karnataka 560005",
+    "address": "93, Mosque Rd, Cleveland Town, Fraser Town, Bengaluru, Karnataka 560005, India",
     "lat": 12.9968598,
     "lng": 77.6144109,
     "priceLevel": "₹",
@@ -1973,7 +1973,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/albert-bakery-frazer-town.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Albert+Bakery/@12.9968598,77.6144109,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae159384a11481:0xa81f09db40615b24!8m2!3d12.9968598!4d77.6144109!16s%2Fg%2F1tdqrzqw?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=12114412359932533540&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "3:00 PM – 9:00 PM",
     "curatorNote": "Over 120 years of baking legacy on Mosque Road. The crispy mutton kheema samosas sell out within 45 minutes of the evening batch opening.",
     "isVegetarian": false,
@@ -1987,9 +1987,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An irreplaceable cantonment landmark on Wheeler Road in Cox Town, loved by generations of Bangaloreans for rich rum-soaked Christmas plum cakes, mutton puffs, and old-school confectionery.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Bel Road & North BLR",
-    "address": "26, Promenade Rd, Sindhi Colony, Fraser Town, Bengaluru, Karnataka 560005",
-    "lat": 12.9915847,
-    "lng": 77.6143095,
+    "address": "26, Promenade Rd, Sindhi Colony, Fraser Town, Bengaluru, Karnataka 560005, India",
+    "lat": 12.991584699999999,
+    "lng": 77.61430949999999,
     "priceLevel": "₹",
     "priceForTwo": "₹250",
     "mustTry": [
@@ -2004,7 +2004,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/thoms-bakery-cox-town.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Thom%E2%80%99s%20Bakery%201%2F2%2C%20Wheeler%20Rd%2C%20Cox%20Town%2C%20Pulikeshi%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560005%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=15861723685696328392&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 9:30 PM",
     "curatorNote": "The scent of freshly baked plum cake and buttery puff pastry on Wheeler Road defines Anglo-Indian old Bangalore.",
     "isVegetarian": false,
@@ -2018,7 +2018,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Standing proudly at Sajjan Rao Circle since 1953, VB Bakery is the pioneer of Bangalore bakery snacks, world-famous for its spicy peanut-stuffed Khara Bun Congress, buttery biscuits, and rich ash-gourd Dumroot halwa.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Basavanagudi",
-    "address": "20, Sajjan Rao Cir, Vishweshwarapura, Shankarapura, Bengaluru, Karnataka 560004",
+    "address": "20, Sajjan Rao Cir, Vishweshwarapura, Shankarapura, Bengaluru, Karnataka 560004, India",
     "lat": 12.9515275,
     "lng": 77.5771382,
     "priceLevel": "₹",
@@ -2036,7 +2036,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/vb-bakery-vv-puram.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/VB+Bakery/@12.9515275,77.5771382,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15eee52b973d:0xe0da00f262995fc8!8m2!3d12.9515275!4d77.5771382!16s%2Fg%2F1tlwd2bw?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=16202263650455085000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:00 AM – 10:30 PM",
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
     "isVegetarian": true,
@@ -2050,9 +2050,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A treasured Cantonment institution for authentic Mangalorean Catholic home cooking, celebrated for rich vinegar-and-spice Pork Bafat, fluffy steamed Sannas, Anjal Fish Curry, and Kori Rotti.",
     "category": "Regional & Coastal",
     "neighborhood": "CBD & Central",
-    "address": "Assaye Road Skywalk Building, 2nd Floor, Sindhi Colony, Frazer Town, next to YMIA Club, Ulsoor, Bengaluru, Karnataka 560042",
+    "address": "Assaye Road Skywalk Building, 2nd Floor, Sindhi Colony, Frazer Town, next to YMIA Club, R T Nagar, Sindhi Colony, Ulsoor, Bengaluru, Karnataka 560042, India",
     "lat": 12.9908171,
-    "lng": 77.6192744,
+    "lng": 77.61927440000001,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -2066,7 +2066,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/mangalore-pearl-frazer-town.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Mangalore%20Pearl%20Skywalk%20Building%2C%202nd%20Floor%2C%205%2F1%2C%20Assaye%20Rd%2C%20Sindhi%20Colony%2C%20Ulsoor%2C%20Bengaluru%2C%20Karnataka%20560042%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16773236196881952606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Closed Tuesdays)",
     "curatorNote": "Pure coastal comfort food. The dark, aromatic spice-rubbed Pork Bafat paired with warm, fermented steamed Sannas is unmatched.",
     "isVegetarian": false,
@@ -2080,9 +2080,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Tucked on Castle Street, Hae Kum Gang has been Bangalore’s most authentic Korean restaurant for over two decades, offering tabletop charcoal grill pork belly (Samgyeopsal), seafood Haemul Pajeon, and rich Kimchi Jjigae with house-fermented banchan.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "No. 20, 2nd Floor, Paul Castle, Castle St, near Brigade Tower, Ashok Nagar, Bengaluru, Karnataka 560025",
+    "address": "No. 20, 2nd Floor, Paul Castle, Castle St, near Brigade Tower, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.9679142,
-    "lng": 77.6073587,
+    "lng": 77.60735869999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -2096,7 +2096,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/hae-kum-gang-ashok-nagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Hae+Kum+Gang+Korean+Restaurant/@12.9679142,77.6073587,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae142aabfed87f:0xab86b11f35c33dfb!8m2!3d12.9679142!4d77.6073587!16s%2Fg%2F1vg4h78w?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=12359760974968995323&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 3:00 PM, 6:00 PM – 10:30 PM",
     "curatorNote": "Run by a native Korean family. Sizzle tender pork belly at your table and wrap with fresh lettuce, garlic, and ssamjang.",
     "isVegetarian": false,
@@ -2110,7 +2110,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded in 1930 by Englishman James Meadow Charles, Lakeview Milkbar on MG Road has served over 90 years of classic ice cream sundaes, toasted chicken sandwiches, and crispy waffles to midnight city crowds.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Church Street & MG Road",
-    "address": "89, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "Kannan Building, 89, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.9758912,
     "lng": 77.6038027,
     "priceLevel": "₹₹",
@@ -2128,7 +2128,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/lakeview-milkbar-mg-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Kannan+Building,+89,+Mahatma+Gandhi+Rd,+Haridevpur,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560001/@12.9758912,77.6038027,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167c5efdb1cb:0xc431d33637e91063!8m2!3d12.9758912!4d77.6038027!16s%2Fg%2F1q6j7h4d5?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=13996992792403732718&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:30 AM – 12:30 AM",
     "curatorNote": "A 95-year-old Bangalore late-night tradition. Park on MG Road and have sundaes served directly through your car window.",
     "isVegetarian": false,
@@ -2142,8 +2142,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An irreplaceable Bangalore dessert ritual since 1982. Generous sundae scoops of vanilla ice cream buried under warm fudgy chocolate cake, hot homemade fudge sauce, and roasted peanuts.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Church Street & MG Road",
-    "address": "BBMP East, GK Complex, No 45/3, Residency Rd 1st Cross, Bengaluru, Karnataka 560025",
-    "lat": 12.9736986,
+    "address": "No 45/3, BBMP East, GK Complex, Residency Rd 1st Cross, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+    "lat": 12.973698599999999,
     "lng": 77.6093812,
     "priceLevel": "₹₹",
     "priceForTwo": "₹350",
@@ -2160,7 +2160,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/corner-house-residency-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Corner+House+Residency+Rd/@12.9736986,77.5913568,15z/data=!4m10!1m2!2m1!1sCorner+House+Ice+Cream+45%2F3,+GK+Complex,+Residency+Rd+Cross,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560025+Bangalore!3m6!1s0x3bae17fb11d19fe5:0x4055b973d89f0225!8m2!3d12.9736986!4d77.6093812!15sCoABQ29ybmVyIEhvdXNlIEljZSBDcmVhbSA0NS8zLCBHSyBDb21wbGV4LCBSZXNpZGVuY3kgUmQgQ3Jvc3MsIFNoYW50aGFsYSBOYWdhciwgQXNob2sgTmFnYXIsIEJlbmdhbHVydSwgS2FybmF0YWthIDU2MDAyNSBCYW5nYWxvcmVafCJ6Y29ybmVyIGhvdXNlIGljZSBjcmVhbSA0NSAzIGdrIGNvbXBsZXggcmVzaWRlbmN5IHJkIGNyb3NzIHNoYW50aGFsYSBuYWdhciBhc2hvayBuYWdhciBiZW5nYWx1cnUga2FybmF0YWthIDU2MDAyNSBiYW5nYWxvcmWSAQ5pY2VfY3JlYW1fc2hvcJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOS01rbGZiazluRUFF4AEA-gEECAAQSg!16s%2Fg%2F1vn9mjh6?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=4635815298654470693&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "Bangalore’s sweetest nostalgia. The Death By Chocolate (DBC) eaten on the sidewalk curbs is a non-negotiable rite of passage.",
     "isVegetarian": true,
@@ -2174,7 +2174,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An authentic Malleshwaram 8th Cross bastion operating since the 1970s with vintage wooden booths, famous for its unique Sagu Masala Dosa, crisp uddina vadas, and frothy filter coffee.",
     "category": "Iconic Heritage",
     "neighborhood": "Malleshwaram",
-    "address": "162, 8th Cross Rd, Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka 560003",
+    "address": "162, 8th Cross Rd, Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka 560003, India",
     "lat": 12.9991156,
     "lng": 77.5711405,
     "priceLevel": "₹",
@@ -2194,7 +2194,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/janatha-hotel-malleshwaram.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Janatha/@12.9991156,77.5711405,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1625700de12f:0x6845035fa8bb08f8!8m2!3d12.9991156!4d77.5711405!16s%2Fg%2F11cssqvxl_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=7513415262725146872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:00 AM – 1:00 PM, 3:30 PM – 8:30 PM (Closed Wednesdays)",
     "curatorNote": "A nostalgic step back into 1970s Malleshwaram. The Sagu Masala Dosa (filled with spiced vegetable sagu instead of aloo) is unmatched.",
     "isVegetarian": true,
@@ -2208,7 +2208,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A legendary single-location hole-in-the-wall morning tiffin joint operating from a quiet residential alleyway in Sampangi Rama Nagar, famous for thick, golden-crisp half-ghee dosas served on cut banana leaves.",
     "category": "Iconic Heritage",
     "neighborhood": "CBD & Central",
-    "address": "NO: 38, 7th Main Rd, Ashwath Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560027",
+    "address": "NO: 38, 7th Main Rd, Ashwath Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560027, India",
     "lat": 12.966101,
     "lng": 77.5907794,
     "priceLevel": "₹",
@@ -2227,7 +2227,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/siddappa-hotel-sampangi-rama-nagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Siddappa+Hotel/@12.966101,77.5907794,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d88e4c168b:0x19956195e37409ee!8m2!3d12.966101!4d77.5907794!16s%2Fg%2F11b70w_vt6?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=1843486918872140270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:30 AM – 11:30 AM (Morning Only)",
     "curatorNote": "Strictly open from 8:30 AM to 11:30 AM. Arrive by 8:00 AM to get a token for Siddappa’s famous crispy ghee dosas.",
     "isVegetarian": true,
@@ -2241,9 +2241,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A serene cultural sanctuary nestled in Koramangala 5th Block inside a traditional Kerala Nalukettu home with open-to-sky sunlit courtyard, red oxide floors, artisan bakes, and peaceful reading corners.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Koramangala",
-    "address": "KHB MIG Colony, Dyu art cafe 23, 22, 1st Cross Rd, Koramangala 8th Block, Koramangala, Bengaluru, Karnataka 560095",
-    "lat": 12.9373076,
-    "lng": 77.6176544,
+    "address": "Dyu art cafe 23, KHB MIG Colony, 22, 1st Cross Rd, KHB Colony, Koramangala 8th Block, Koramangala, Bengaluru, Karnataka 560095, India",
+    "lat": 12.937307599999999,
+    "lng": 77.61765439999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -2260,7 +2260,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/dyu-art-cafe-koramangala.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Dyu%20Art%20Cafe%2023%2C%20KHB%20MIG%20Colony%2C%20Koramangala%208th%20Block%2C%20Bengaluru%2C%20Karnataka%20560095%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=6698598881067739048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "10:00 AM – 10:30 PM (Mondays: 12:30 PM – 10:30 PM)",
     "curatorNote": "The bougainvillea-framed Kerala courtyard and decadent Banoffee pie make this one of the most soothing cafes in South India.",
     "isVegetarian": false,
@@ -2274,7 +2274,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by master coffee farmers from Coorg, this open-air cafe on Gangadhar Chetty Road is celebrated for experimental coffee fermentation (cold-smoked beans, cascara brews) and views over the RBANMS turf.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "CBD & Central",
-    "address": "Gate #3, Gangadhar Chetty Rd, Halasuru, Rukmani Colony, Sivanchetti Gardens, Bengaluru, Karnataka 560042",
+    "address": "Gate #3, Gangadhar Chetty Rd, Halasuru, Rukmani Colony, Sivanchetti Gardens, Bengaluru, Karnataka 560042, India",
     "lat": 12.9811186,
     "lng": 77.6141313,
     "priceLevel": "₹₹",
@@ -2293,7 +2293,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "/images/restaurants/maverick-farmer-ulsoor.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Maverick%20%26%20Farmer%20Coffee%20Gate%20%233%2C%20RBANMS%20Grounds%2C%20Gangadhar%20Chetty%20Rd%2C%20Halasuru%2C%20Bengaluru%2C%20Karnataka%20560042%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16707326989985626577&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:30 AM – 11:00 PM",
     "curatorNote": "Direct from their Pollibetta estate in Coorg. The Cold Smoked Pour-Over on the wooden deck overlooking the grounds is a revelation.",
     "isVegetarian": false,
@@ -2307,7 +2307,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A legendary Cantonment institution at Johnson Market since 1975 that pioneered Bangalore’s late-night kebab roll scene, famous for charcoal-grilled beef and mutton seekh kebabs rolled inside flaky parottas.",
     "category": "Regional & Coastal",
     "neighborhood": "CBD & Central",
-    "address": "17, Hosur Rd, Richmond Town, Bengaluru, Karnataka 560025",
+    "address": "17, Hosur Rd, Richmond Town, Bengaluru, Karnataka 560025, India",
     "lat": 12.9645418,
     "lng": 77.6064884,
     "priceLevel": "₹",
@@ -2324,7 +2324,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/fanoos-richmond-town.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Fanoos/@12.9645418,77.6064884,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d4ddc84eb3:0xdf2585909e406805!8m2!3d12.9645418!4d77.6064884!16s%2Fg%2F1tfhdw2q?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=16079404900773029893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "An undisputed Bangalore rite of passage. Ask for the legendary Jumbo Seekh Kabab Roll with extra spiced mint chutney.",
     "isVegetarian": false,
@@ -2338,8 +2338,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Operating since the 1980s on the 1st floor of Sujatha Complex in Gandhinagar, Hotel Fishland is the holy grail for authentic boiled red rice fish meals, fiery Anjal tawa fry, and crab curries.",
     "category": "Regional & Coastal",
     "neighborhood": "CBD & Central",
-    "address": "1st Cross Rd, Gandhi Nagar, Bengaluru, Karnataka 560009",
-    "lat": 12.9754763,
+    "address": "1st Cross Rd, Gandhi Nagar, Bengaluru, Karnataka 560009, India",
+    "lat": 12.975476299999999,
     "lng": 77.5785733,
     "priceLevel": "₹₹",
     "priceForTwo": "₹700",
@@ -2354,7 +2354,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/hotel-fishland-gandhinagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Hotel%20Fishland%201st%20Floor%2C%20Sujatha%20Complex%2C%201st%20Main%20Rd%2C%20Gandhinagar%2C%20Bengaluru%2C%20Karnataka%20560009%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=14141751547454504416&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:30 AM – 4:00 PM, 7:00 PM – 10:30 PM",
     "curatorNote": "Old Bangalore’s finest coastal lunch. Pour the fiery Kundapur fish curry generously over boiled red rice alongside a crispy Anjal tawa fry.",
     "isVegetarian": false,
@@ -2368,7 +2368,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Established in 2004 on the 4th floor of Devatha Plaza, Harima has remained Bangalore’s gold standard for traditional Japanese cuisine, offering private sunken tatami rooms (horigotatsu) and rooftop Japanese garden seating.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "4th Floor, Devatha Plaza, 131, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
+    "address": "4th Floor, Devatha Plaza, 131, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.9674947,
     "lng": 77.5999755,
     "priceLevel": "₹₹₹",
@@ -2385,7 +2385,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/harima-residency-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Harima%204th%20Floor%2C%20Devatha%20Plaza%2C%20131%2C%20Residency%20Rd%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16549800128262992429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:00 PM, 6:00 PM – 11:00 PM",
     "curatorNote": "Bangalore’s original authentic Japanese room. Reserve a traditional tatami room for pristine sashimi and authentic hot pot.",
     "isVegetarian": false,
@@ -2399,9 +2399,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore’s long-running authentic Japanese culinary landmark inside The Chancery Hotel on Lavelle Road, created to cater to Japanese expat executives with uncompromised traditional washoku recipes.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Lavelle Road",
-    "address": "10-6, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+    "address": "10-6, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.975672,
-    "lng": 77.599217,
+    "lng": 77.59921700000001,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
@@ -2415,7 +2415,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/matsuri-the-chancery.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Matsuri%20The%20Chancery%20Hotel%2C%2010%2F6%2C%20Lavelle%20Rd%2C%20Shanthala%20Nagar%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12636778839982093106&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 2:30 PM, 6:30 PM – 10:30 PM",
     "curatorNote": "The Katsudon (crispy pork cutlet simmered in sweet dashi with soft eggs over rice) is textbook authentic Japanese comfort food.",
     "isVegetarian": false,
@@ -2429,8 +2429,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A colossal 65,000 sq. ft. open-air craft brewing amphitheater set around a stunning Nordic-ruined aquatic lake in Hennur, celebrated for award-winning Hefeweizen, Triple IPAs, and global wood-fired dishes.",
     "category": "Microbrewery",
     "neighborhood": "Bel Road & North BLR",
-    "address": "SOUTHERN ASIA BIBLE COLLEGE, 22, Hennur Bagalur Main Rd, Byrathi, Visthar, Bengaluru, Karnataka 560077",
-    "lat": 13.0707751,
+    "address": "SOUTHERN ASIA BIBLE COLLEGE, 22, Hennur Bagalur Main Rd, Byrathi, Visthar, Bengaluru, Karnataka 560077, India",
+    "lat": 13.070775099999999,
     "lng": 77.652177,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
@@ -2450,7 +2450,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/byg-brewski-hennur.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Byg%20Brewski%20Brewing%20Company%20Survey%20No.%2022%20%26%20125%2C%20Byrathi%20Village%2C%20Hennur%20Bagalur%20Rd%2C%20Visthar%2C%20Bengaluru%2C%20Karnataka%20560077%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=7769204992226682234&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A monumental craft beer landmark. Grab a table by the illuminated lake for fresh Rauchbier and wood-fired sourdough pizza.",
     "isVegetarian": false,
@@ -2460,10 +2460,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "byg-brewski-sarjapur-branch",
         "name": "Sarjapur Road",
         "neighborhood": "Sarjapur Road",
-        "address": "10/62/2A/2 & 3, Sarjapur Main Rd, behind MK Retail, near WIpro Corporate Office, Kaikondrahalli, Bengaluru, Karnataka 560035",
-        "lat": 12.9134,
-        "lng": 77.6836,
-        "googleMapsUrl": "https://www.google.com/maps/search/Byg%20Brewski%20Brewing%20Company%20(Sarjapur%20Road)%2010%2F62%2F2A%2F2%20%26%203%2C%20Behind%20MK%20Retail%2C%20Before%20Wipro%20Corporate%20Office%2C%20Sarjapur%20Main%20Rd%2C%20Kaikondrahalli%2C%20Bengaluru%20560035%20Bangalore"
+        "address": "10/62/2A/2 & 3, Sarjapur Main Rd, behind MK Retail, near WIpro Corporate Office, Kaikondrahalli, Bengaluru, Karnataka 560035, India",
+        "lat": 12.913141999999999,
+        "lng": 77.6830757,
+        "googleMapsUrl": "https://maps.google.com/?cid=2468613895764706893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2475,7 +2475,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by Shibani Murlidhar and Rajiv Majumdar, Nerlu is Bangalore’s flagship multi-roaster coffee sanctuary featuring an evolving menu of small-batch beans from independent Indian roasters and a dedicated manual brew bar.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "CBD & Central",
-    "address": "Ground Floor, 30, Crescent Rd, Madhava Nagar, Gandhi Nagar, Bengaluru, Karnataka 560001",
+    "address": "Ground Floor, 30, Crescent Rd, Madhava Nagar, Gandhi Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.9851292,
     "lng": 77.580686,
     "priceLevel": "₹₹",
@@ -2494,7 +2494,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "/images/restaurants/nerlu-cafe-crescent-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Nerlu+Cafe/@12.9851292,77.580686,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17fcd22cf3ab:0x47bde4537330aa2a!8m2!3d12.9851292!4d77.580686!16s%2Fg%2F11t529xrdt?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+    "googleMapsUrl": "https://maps.google.com/?cid=5169538994357185066&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:30 AM – 8:00 PM (Closed Mondays)",
     "curatorNote": "The definitive coffee lover's destination. Order a comparative tasting flight to experience terroir variations from different Indian roasters.",
     "isVegetarian": false,
@@ -2504,10 +2504,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "nerlu-cafe-indiranagar",
         "name": "Indiranagar (Inside Beruru, Double Rd)",
         "neighborhood": "Indiranagar",
-        "address": "4019, 1st Main Rd, Paramahansa Yogananda Rd, Stage 2, Bengaluru, Karnataka 560071",
-        "lat": 12.9634294,
-        "lng": 77.6411015,
-        "googleMapsUrl": "https://www.google.com/maps/search/Nerlu%20Cafe%20(Indiranagar%20(Inside%20Beruru%2C%20Double%20Rd))%20Inside%20Beruru%2C%20218%2C%20Double%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore"
+        "address": "4019, 1st Main Rd, Paramahansa Yogananda Rd, Stage 2, Domlur, Bengaluru, Karnataka 560071, India",
+        "lat": 12.963434999999999,
+        "lng": 77.6410493,
+        "googleMapsUrl": "https://maps.google.com/?cid=11982450010248259254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2519,9 +2519,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A traditional Italian trattoria on 100 Feet Road celebrated for genuine Italian culinary techniques, handmade emulsified pasta sauces, wood-fired pizzas, and classic desserts.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "First Floor, 759, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9718159,
-    "lng": 77.6410228,
+    "address": "543, 9th Cross Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India",
+    "lat": 12.910616099999999,
+    "lng": 77.5968872,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -2537,7 +2537,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/bologna-italian-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Bologna%20Italian%20Ristorante%20759%2C%201st%20Floor%2C%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=15626912798046762981&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
     "isVegetarian": false,
@@ -2551,9 +2551,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An intimate trattoria in Hoysala Nagar specializing in slow-fermented wood-fired Neapolitan pizzas, artisanal handmade orecchiette, panzerotti, and Sicilian cannoli.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "208, Paramahansa Yogananda Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "208, Paramahansa Yogananda Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9796029,
-    "lng": 77.6368187,
+    "lng": 77.63681869999999,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,500",
     "mustTry": [
@@ -2569,7 +2569,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Artisanal Sourdough"
     ],
     "imageUrl": "/images/restaurants/spettacolare-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Spettacolare%20208%2C%20Paramahansa%20Yogananda%20Rd%20(Double%20Rd)%2C%20Stage%202%2C%20Hoysala%20Nagar%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=13254478439562979820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 10:30 PM",
     "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
     "isVegetarian": false,
@@ -2583,8 +2583,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A luxury European patisserie and brunch cafe on 12th Main known for its distinctive warm coral minimalist architecture, choux au craquelin, signature tiramisu, and viennoiserie.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
-    "address": "1089/A, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9698563,
+    "address": "1089/A, 12th Main Rd, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.969856300000002,
     "lng": 77.6378177,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,200",
@@ -2601,7 +2601,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/concu-patisserie-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Con%C3%A7u%20Patisserie%20%26%20Cafe%201089%2FA%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Doopanahalli%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560008%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=3694397317018286162&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 11:30 PM",
     "curatorNote": "Impeccable French pastry technique in a stunning sunlit setting. The signature Tiramisu and Choux buns are city benchmarks.",
     "isVegetarian": false,
@@ -2615,9 +2615,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A minimalist specialty coffee roaster and slow brew bar in Indiranagar serving single-origin micro-lots, precision manual pour-overs, and ceremonial-grade matcha.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "14, 5th Main Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "14, 5th Main Rd, Indira Nagar II Stage, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9799508,
-    "lng": 77.6380991,
+    "lng": 77.63809909999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹650",
     "mustTry": [
@@ -2631,7 +2631,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/kink-speciality-coffee-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Kink%20Speciality%20Coffee%2014%2C%205th%20Main%20Rd%2C%20Hoysala%20Nagar%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=17025153229105342367&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 10:00 PM",
     "curatorNote": "A sanctuary for coffee purists and matcha enthusiasts seeking uncompromising manual brewing craft.",
     "isVegetarian": true,
@@ -2641,10 +2641,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "kink-slo-bar-ashok-nagar",
         "name": "Ashok Nagar (Castle St Slo Bar)",
         "neighborhood": "Church Street & MG Road",
-        "address": "Sama Towers, 42, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
-        "lat": 12.9675125,
-        "lng": 77.6081496,
-        "googleMapsUrl": "https://www.google.com/maps/search/Kink%20Speciality%20Coffee%20(Ashok%20Nagar%20(Castle%20St%20Slo%20Bar))%20Castle%20St%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560025%20Bangalore"
+        "address": "Sama Towers, 42, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+        "lat": 12.9758322,
+        "lng": 77.60201289999999,
+        "googleMapsUrl": "https://maps.google.com/?cid=6592735037254929082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2656,7 +2656,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore's cult smash burger joint specializing in hard-smashed beef, lamb, and chicken patties with ultra-crispy edges, melted American cheese, and Martin’s potato buns.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "948, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9701923,
     "lng": 77.6390325,
     "priceLevel": "₹₹",
@@ -2672,7 +2672,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/smash-guys-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Smash%20Guys%20948%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=10573662139714873262&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 12:00 AM",
     "curatorNote": "The real deal for smash burgers. Crisp caramelized lace edges paired with squishy potato buns and secret house sauce.",
     "isVegetarian": false,
@@ -2682,10 +2682,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "smash-guys-ecoworld",
         "name": "Bellandur (RMZ EcoWorld)",
         "neighborhood": "Whitefield",
-        "address": "Ground Floor, Campus 6A, Unit 25, RMZ Ecoworld Rd, Bellandur, Bengaluru, Karnataka 560103",
-        "lat": 12.9323181,
-        "lng": 77.6748335,
-        "googleMapsUrl": "https://www.google.com/maps/search/Smash%20Guys%20(Bellandur%20(RMZ%20EcoWorld))%20RMZ%20EcoWorld%2C%20Outer%20Ring%20Rd%2C%20Bellandur%2C%20Bengaluru%2C%20Karnataka%20560103%20Bangalore"
+        "address": "Ground Floor, Campus 6A, Unit 25, RMZ Ecoworld Rd, Bellandur, Bengaluru, Karnataka 560103, India",
+        "lat": 12.9208055,
+        "lng": 77.6852894,
+        "googleMapsUrl": "https://maps.google.com/?cid=3734218755114137825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2697,9 +2697,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A spacious specialty coffee roastery on CMH Road with high ceilings, single-estate roasts, cold brew tap lines, ergonomic workstations, and sourdough bakes.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "503, Chinmaya Mission Hospital Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "503, Chinmaya Mission Hospital Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.978686,
-    "lng": 77.643753,
+    "lng": 77.64375299999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹750",
     "mustTry": [
@@ -2714,7 +2714,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/beanlore-coffee-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Beanlore%20Coffee%20Roasters%20813%2C%201st%20Floor%2C%20Chinmaya%20Mission%20Hospital%20Rd%2C%20Defence%20Colony%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=343635308303484494&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Excellent specialty coffee and one of the most comfortable laptop-friendly workspaces on CMH Road.",
     "isVegetarian": false,
@@ -2724,10 +2724,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "beanlore-hsr-branch",
         "name": "Sector 4, HSR Layout",
         "neighborhood": "HSR Layout",
-        "address": "450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+        "address": "450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India",
         "lat": 12.9123126,
         "lng": 77.6416021,
-        "googleMapsUrl": "https://www.google.com/maps/search/Beanlore%20Coffee%20Roasters%20(Sector%204%2C%20HSR%20Layout)%2017th%20Cross%20Rd%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+        "googleMapsUrl": "https://maps.google.com/?cid=12736088069517843312&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2739,7 +2739,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A stunning Japandi-designed lifestyle cafe on 100ft Road equipped with soundproof podcast booths, in-house coffee roasting, sourdough tartines, and signature fruit pies.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "Metro Pillar Number 55, 842/A, 100 Feet Rd, Indira Nagar 1st Stage, H Colony, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "Metro Pillar Number 55, 842/A, 100 Feet Rd, Indira Nagar 1st Stage, H Colony, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9810313,
     "lng": 77.6409712,
     "priceLevel": "₹₹",
@@ -2757,7 +2757,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Breakfast Spot"
     ],
     "imageUrl": "/images/restaurants/paper-and-pie-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Paper%20%26%20Pie%20842%2FA%2C%20100%20Feet%20Rd%2C%20Metro%20Pillar%2055%2C%20Indiranagar%201st%20Stage%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=7698474926599797380&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "A gorgeous convergence of specialty coffee, creative co-working, and elevated cafe comfort.",
     "isVegetarian": false,
@@ -2767,10 +2767,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "paper-and-pie-whitefield",
         "name": "Whitefield (ITPL Main Rd)",
         "neighborhood": "Whitefield",
-        "address": "66/2, 2nd Main Rd, Nallurhalli, Whitefield, Bengaluru, Karnataka 560066",
-        "lat": 12.9922191,
-        "lng": 77.7158794,
-        "googleMapsUrl": "https://www.google.com/maps/search/Paper%20%26%20Pie%20(Whitefield%20(ITPL%20Main%20Rd))%20ITPL%20Main%20Rd%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560066%20Bangalore"
+        "address": "66/2, 2nd Main Rd, Nallurhalli, Whitefield, Bengaluru, Karnataka 560066, India",
+        "lat": 12.965383200000002,
+        "lng": 77.7324064,
+        "googleMapsUrl": "https://maps.google.com/?cid=5914294489538227062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -2782,9 +2782,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A 100% vegetarian specialty coffee roastery and eggless bakery in JP Nagar featuring Japanese Zen architecture, tranquil bamboo courtyards, and gourmet plant-forward dining.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "JP Nagar",
-    "address": "18 B Main Rd, Marenahalli, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078",
+    "address": "18 B Main Rd, Marenahalli, 2nd Phase, J. P. Nagar, Bengaluru, Karnataka 560078, India",
     "lat": 12.9105701,
-    "lng": 77.5895897,
+    "lng": 77.58958969999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹850",
     "mustTry": [
@@ -2801,7 +2801,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/the-kind-roastery-jp-nagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Kind%20Roastery%20%26%20Brew%20Room%201316%2FF%2C%2018th%20B%20Main%20Rd%2C%20Marenahalli%2C%20JP%20Nagar%202nd%20Phase%2C%20Bengaluru%2C%20Karnataka%20560078%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12040931559658460209&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "South Bangalore’s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
     "isVegetarian": true,
@@ -2815,7 +2815,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Created by Michelin-trained Chef Pradyumna Harithsa, Circa 11 serves specialty coffee and bakes by day, transforming into a progressive global dining room and cocktail lounge by night.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "957, 12th Main Rd, Sodepur, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "957, 12th Main Rd, Sodepur, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9702618,
     "lng": 77.6401843,
     "priceLevel": "₹₹₹",
@@ -2833,7 +2833,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Work Friendly"
     ],
     "imageUrl": "/images/restaurants/circa-11-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Circa%2011%20957%2C%2012th%20Main%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=14849138170776415069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "9:00 AM – 4:00 PM (Cafe), 6:00 PM – 12:00 AM (Dining & Cocktails)",
     "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
     "isVegetarian": false,
@@ -2847,7 +2847,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A tranquil open-air garden retreat in Indiranagar 1st Stage serving 100% organic, sattvic, macrobiotic vegetarian and vegan food prepared according to Ayurvedic principles.",
     "category": "Specialty Coffee & Cafe",
     "neighborhood": "Indiranagar",
-    "address": "89, 11th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038",
+    "address": "89, 11th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9809695,
     "lng": 77.6384095,
     "priceLevel": "₹₹",
@@ -2865,7 +2865,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Pet Friendly"
     ],
     "imageUrl": "/images/restaurants/yogisthaan-cafe-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Yogisthaan%20Cafe%2089%2C%2011th%20Cross%20Rd%2C%20Indiranagar%201st%20Stage%2C%20Hoysala%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16769721720462624875&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "8:00 AM – 9:30 PM",
     "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
     "isVegetarian": true,
@@ -2879,8 +2879,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An authentic Japanese restaurant on 100 Feet Road featuring private tatami dining chambers, sushi bar, robata skewers, slow-simmered tonkotsu ramen, and premium sakes.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Indiranagar",
-    "address": "Metro Pillar No. 54, 2nd Floor, 311, 100 Feet Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.9812505,
+    "address": "Metro Pillar No. 54, 2nd Floor, 311, 100 Feet Rd, Indira Nagar 1st Stage, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India",
+    "lat": 12.981250500000002,
     "lng": 77.6405078,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
@@ -2895,7 +2895,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/izanagi-japanese-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Izanagi%20Japanese%20Dining%20311%2C%202nd%20Floor%2C%20100%20Feet%20Rd%2C%20Binnamangala%201st%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=16168322155634852686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 6:30 PM – 11:00 PM",
     "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
     "isVegetarian": false,
@@ -2909,7 +2909,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The reigning crown jewel of South Indian breakfast culture in HSR Layout. Standing shoulder-to-shoulder with Bangalore legacy institutions, Asha Tiffins serves blistering crisp dosas, pillowy thatte idlis, and frothy degree filter coffee.",
     "category": "Iconic Heritage",
     "neighborhood": "HSR Layout",
-    "address": "1170, 5th Main Rd, 7th Sector, HSR Layout, Bengaluru, Karnataka 560102",
+    "address": "1170, 5th Main Rd, 7th Sector, HSR Layout, Bengaluru, Karnataka 560102, India",
     "priceLevel": "₹",
     "priceForTwo": "₹250",
     "mustTry": [
@@ -2929,9 +2929,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The aroma of pure clarified butter and freshly ground filter coffee draws massive crowds daily without ever dropping in speed or crunch quality.",
     "isVegetarian": true,
     "verified": true,
-    "lat": 12.9118589,
+    "lat": 12.911858899999999,
     "lng": 77.6326497,
-    "googleMapsUrl": "https://www.google.com/maps/search/Asha%20Tiffins%201170%2C%205th%20Main%20Rd%2C%20Sector%207%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+    "googleMapsUrl": "https://maps.google.com/?cid=4668069035498777873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "broadway-gourmet-theatre-hsr",
@@ -2941,7 +2941,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched on the top floor of 27th Main in HSR Layout, Broadway transforms fine dining into experiential culinary theatre. Anchored by a live Teppanyaki counter, table-side volcanic rock searing, and inventive cocktails.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "HSR Layout",
-    "address": "4th Floor, 2802, 27th Main Rd, Agara Village, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102",
+    "address": "4th Floor, 2802, 27th Main Rd, Agara Village, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
@@ -2963,7 +2963,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9237763,
     "lng": 77.6515673,
-    "googleMapsUrl": "https://www.google.com/maps/search/Broadway%20%E2%80%93%20The%20Gourmet%20Theatre%204th%20Floor%2C%202802%2C%2027th%20Main%20Rd%2C%20Sector%201%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+    "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "kumarakom-restaurant-hsr",
@@ -2973,7 +2973,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An uncompromising bastion of traditional God’s Own Country flavors in HSR. Kumarakom focuses strictly on heritage backwater seafood, Malabar spice blends, slow-braised meats, and lacy appams.",
     "category": "Regional & Coastal",
     "neighborhood": "HSR Layout",
-    "address": "47, ground floor, 560102, 18th Main Rd, near mustard food court, behind sai baba temble, HSR Layout, Bengaluru, Karnataka 560102",
+    "address": "560102, 47, ground floor, 18th Main Rd, near mustard food court, behind sai baba temble, Sector 3, HSR Layout, Bengaluru, Karnataka 560102, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -2990,9 +2990,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The benchmark for authentic Kerala seafood in South Bangalore. Its Karimeen Pollichathu and slow-cooked Beef Fry have commanded dedicated weekend queues for years.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9106564,
+    "lat": 12.910656399999999,
     "lng": 77.644305,
-    "googleMapsUrl": "https://www.google.com/maps/search/Kumarakom%20Restaurant%2047%2C%20Ground%20Floor%2C%2018th%20Main%20Rd%2C%20Sector%203%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+    "googleMapsUrl": "https://maps.google.com/?cid=944951252737466597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "blr-brewing-co-hsr",
@@ -3002,7 +3002,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Spanning a massive biophilic open-air space featuring koi ponds, cascading waterfalls, and an elevated rooftop deck, BLR Brewing Co. pairs freshly brewed craft beers with regional Karnataka and global bar plates.",
     "category": "Microbrewery",
     "neighborhood": "HSR Layout",
-    "address": "1st Floor, 450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+    "address": "1st Floor, 450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -3022,9 +3022,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "HSR’s undisputed microbrewery benchmark with high-ceiling koi pond seating and stellar small-batch Belgian Wit and seasonal fruit ciders.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9123,
-    "lng": 77.639,
-    "googleMapsUrl": "https://www.google.com/maps/search/BLR%20Brewing%20Co.%20450%2C%201st%20Floor%2C%2017th%20Cross%20Rd%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+    "lat": 12.912323599999999,
+    "lng": 77.64160389999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=8227569617965900977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "biergarten",
@@ -3034,7 +3034,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A sprawling, high-ceilinged craft brewing oasis in Devarabeesanahalli/Bellandur. Characterized by vertical greenery, exposed brickwork, and an open-air courtyard, serving authentic German hefeweizens, malty ales, and wood-fired pizzas.",
     "category": "Microbrewery",
     "neighborhood": "Bellandur & Ecoworld",
-    "address": "57/2/10, Bellandur - Doddakannelli Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103",
+    "address": "57/2/10, Bellandur - Doddakannelli Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
@@ -3054,18 +3054,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Biergarten sets the golden standard for ambiance and beer consistency on ORR with its tree canopy and stellar Bavarian wheat brews.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9297508,
-    "lng": 77.6854811,
-    "googleMapsUrl": "https://www.google.com/maps/search/Biergarten%20Brewery%20%26%20Kitchen%204th%20Floor%2C%20Soul%20Space%20Paradigm%2C%20Outer%20Ring%20Road%2C%20Marathahalli%20-%20Sarjapur%20Outer%20Ring%20Rd%2C%20Devarabeesanahalli%2C%20Bellandur%2C%20Bengaluru%20560103%20Bangalore",
+    "lat": 12.929750799999999,
+    "lng": 77.68548109999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=9700837043320746997&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "branches": [
       {
         "id": "biergarten-whitefield-branch",
         "name": "Doddanekkundi, Whitefield",
         "neighborhood": "Whitefield",
-        "address": "2, Rd Number 2, Hoodi, Doddanakundi Industrial Area 2, Seetharampalya, Mahadevapura, Bengaluru, Karnataka 560048",
-        "lat": 12.9825,
-        "lng": 77.7128,
-        "googleMapsUrl": "https://www.google.com/maps/search/Biergarten%20Brewery%20%26%20Kitchen%20(Doddanekkundi%2C%20Whitefield)%20Doddanekkundi%20Industrial%20Area%2C%20Mahadevapura%2C%20Bengaluru%2C%20Karnataka%20560048%20Bangalore"
+        "address": "2, Rd Number 2, Hoodi, Doddanakundi Industrial Area 2, Seetharampalya, Mahadevapura, Bengaluru, Karnataka 560048, India",
+        "lat": 12.982449899999999,
+        "lng": 77.7087306,
+        "googleMapsUrl": "https://maps.google.com/?cid=10822519618415436619&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -3077,7 +3077,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Spanning an astonishing 130,000+ square feet on the Outer Ring Road corridor, Ironhill is a colossal resort-style craft brewing landmark built around a central water body with wooden bridges, tropical landscaping, and 8+ master-crafted beers on tap.",
     "category": "Microbrewery",
     "neighborhood": "Bellandur & Ecoworld",
-    "address": "Sy no 90, 7 & 90/8, Outer Ring Rd, beside Radisson Blu 8, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037",
+    "address": "Sy no 90, 7 & 90/8, Outer Ring Rd, beside Radisson Blu 8, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,400",
     "mustTry": [
@@ -3097,9 +3097,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "A monumental hospitality marvel. The massive water body and private cabana setup makes dining feel like a tropical resort rather than an urban tech corridor.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9436,
-    "lng": 77.6985,
-    "googleMapsUrl": "https://www.google.com/maps/search/Ironhill%20Bengaluru%20Sy%20No.%2090%2F7%20%26%2090%2F8%2C%20Outer%20Ring%20Road%2C%20Beside%20Radisson%20Blu%2C%20Marathahalli%20%2F%20Kadubeesanahalli%2C%20Bengaluru%2C%20Karnataka%20560037%20Bangalore"
+    "lat": 12.950890999999999,
+    "lng": 77.6987317,
+    "googleMapsUrl": "https://maps.google.com/?cid=9495049884754946253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "the-fishermans-wharf-sarjapur",
@@ -3109,7 +3109,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Transporting guests straight to coastal Goa, The Fisherman’s Wharf features rustic terracotta-tiled pavilions, cane lamps, open courtyards, and a fresh catch seafood display cooked in traditional Goan rechado, butter garlic, or caldine styles.",
     "category": "Regional & Coastal",
     "neighborhood": "Sarjapur Road",
-    "address": "Hobli, FWB- #26, Opp. Shub Enclave Harulur Road, Ambalipura Village, Varthur, Off Sarjapur Rd, Bengaluru, Karnataka 560102",
+    "address": "FWB- #26, Opp. Shub Enclave Harulur Road, Ambalipura Village, Varthur, Hobli, Off Sarjapur Rd, RT Nagar, PWD Quarters, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
@@ -3128,9 +3128,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The quintessential Goan seafood sanctuary along Sarjapur Road. Its authentic use of palm toddy vinegar, triphala, kokum, and freshly stone-ground rechado paste delivers genuine coastal soul.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9144452,
+    "lat": 12.914445200000001,
     "lng": 77.6662817,
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Fisherman's%20Wharf%20Opp.%20Shubh%20Enclave%2C%20Ambalipura%2C%20Haralur%20Rd%2C%20Off%20Sarjapur%20Rd%2C%20Bengaluru%2C%20Karnataka%20560102%20Bangalore"
+    "googleMapsUrl": "https://maps.google.com/?cid=12965296817310886555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "oota-bangalore-whitefield",
@@ -3140,7 +3140,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched on the 7th floor above Windmills Craftworks in Total Environment’s signature architectural setting, Oota is the result of years of culinary anthropology across Karnataka’s micro-regions—from Mangalorean coastal kitchens to Kodagu ancestral estates.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Whitefield",
-    "address": "7th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066",
+    "address": "7th Floor, Craftworks, 331, 5B Rd, Shivaji Nagar, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
@@ -3160,9 +3160,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Universally recognized as the finest regional Karnataka fine dining institution in Bangalore. The combination of hyper-authentic home-style recipes with master-level execution makes it an indispensable cult gem.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9846,
-    "lng": 77.7289,
-    "googleMapsUrl": "https://www.google.com/maps/search/Oota%20Bangalore%207th%20Floor%2C%20Windmills%20Craftworks%2C%20331%2C%20Road%205B%2C%20EPIP%20Zone%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560066%20Bangalore"
+    "lat": 12.9825248,
+    "lng": 77.72179009999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=1428424193490140233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "whitefield-baking-company",
@@ -3172,7 +3172,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Located at the Bengaluru Marriott Hotel Whitefield, WBC is the East Bangalore destination for pristine French pastry technique, slow-fermented crusty sourdoughs, and mirror-glazed entremets crafted by master pastry chefs.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Whitefield",
-    "address": "Bengaluru Marriott Hotel Whitefield, Plot No. 75, 8th Rd, EPIP Area, Whitefield, Bengaluru, Karnataka 560066",
+    "address": "Prestige Shantiniketan, Hoodi, Whitefield, Bengaluru, Karnataka 560048, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
@@ -3191,9 +3191,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "In a tech corridor flooded with mass-market bakery chains, WBC stands out by delivering genuine five-star French viennoiserie, entremet artistry, and sourdough bread of international benchmark quality.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9731,
-    "lng": 77.7285,
-    "googleMapsUrl": "https://www.google.com/maps/search/Whitefield%20Baking%20Company%20Bengaluru%20Marriott%20Hotel%20Whitefield%2C%20Plot%20No.%2075%2C%208th%20Rd%2C%20EPIP%20Area%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560066%20Bangalore"
+    "lat": 12.989243499999999,
+    "lng": 77.7296715,
+    "googleMapsUrl": "https://maps.google.com/?cid=7964358643997907041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "red-rhino-whitefield",
@@ -3203,7 +3203,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Occupying the 4th-floor penthouse and rooftop terrace at Uptown Square, Red Rhino is a cult weekend institution in outer Whitefield. Renowned for unpasteurized craft brews (including Bangalore Daze IPA) and an inspired kitchen.",
     "category": "Microbrewery",
     "neighborhood": "Whitefield",
-    "address": "4th Floor, Uptown Square, Whitefield - Hoskote Rd, Seegehalli, Whitefield, Kannamangala, Karnataka 560115",
+    "address": "4th Floor, Uptown Square, Whitefield - Hoskote Rd, Seegehalli, Whitefield, Kannamangala, Karnataka 560115, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
@@ -3223,9 +3223,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Red Rhino brings serious craft brewing discipline and standout food that punches way above typical pub standards on the Seegehalli/Kadugodi side of Whitefield.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9904,
-    "lng": 77.7554,
-    "googleMapsUrl": "https://www.google.com/maps/search/Red%20Rhino%20-%20Craft%20Brewery%20%26%20Inspired%20Kitchen%204th%20Floor%2C%20Uptown%20Square%2C%20Seegehalli%2C%20Kadugodi%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560067%20Bangalore"
+    "lat": 13.0247417,
+    "lng": 77.7612475,
+    "googleMapsUrl": "https://maps.google.com/?cid=7542191260218245808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "orzuv-whitefield",
@@ -3235,7 +3235,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Inspired by Dal Lake houseboats and traditional wooden Kashmiri architecture, Orzuv is one of Bengaluru’s rare authentic destinations for true Kashmiri Wazwan. Spices and saffron are flown in directly from the Valley, with traditional Kandur bakers crafting hot Girda, Lavasa, and Sheermal on site.",
     "category": "Regional & Coastal",
     "neighborhood": "Whitefield",
-    "address": "17, Green Park Avenue, Opp. Yamaha Showroom, Whitefield Main Rd, Bengaluru, Karnataka 560066",
+    "address": "1st Floor, Lavender Petal, Vibgyor High School Rd, Kumarapalli, Thubarahalli, Whitefield, Bengaluru, Karnataka 560066, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
@@ -3254,9 +3254,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Orzuv delivers a transportive culinary experience in Whitefield, faithfully preserving ancient slow-cooked Wazwan traditions, authentic Kahwa, and fresh tandoor Kandur breads.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.9771179,
-    "lng": 77.7171505,
-    "googleMapsUrl": "https://www.google.com/maps/search/Orzuv+17,+Green+Park+Avenue,+Opp.+Yamaha+Showroom,+Whitefield+Main+Rd,+Bengaluru,+Karnataka+560066+Bangalore/@12.9771179,77.7171505,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    "lat": 12.9541898,
+    "lng": 77.7175068,
+    "googleMapsUrl": "https://maps.google.com/?cid=689168556079996423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "153-biere-street-whitefield",
@@ -3266,7 +3266,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Tucked behind Prestige Ozone, 153 Biere Street is designed as an old-world European pedestrian street complete with cobblestone pathways, vintage lamp posts, colorful storefronts, and leafy patio seating. Combines craft brewing from The Biere Club with stone-hearth pizza baking.",
     "category": "Microbrewery",
     "neighborhood": "Whitefield",
-    "address": "XP5X+JR6 Biere Street, 153/1, Hagadur Main Rd, Brooke Bond First Cross, Prestige Ozone, Whitefield, Bengaluru, Karnataka 560066",
+    "address": "XP5X+JR6 Biere Street, 153/1, Hagadur Main Rd, Brooke Bond First Cross, Prestige Ozone, Whitefield, Bengaluru, Karnataka 560066, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
@@ -3287,8 +3287,8 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "isVegetarian": false,
     "verified": true,
     "lat": 12.9632892,
-    "lng": 77.7509629,
-    "googleMapsUrl": "https://www.google.com/maps/search/153%20Biere%20Street%20153%2F1%2C%20Hagadur%20Main%20Rd%2C%20Next%20to%20Prestige%20Ozone%2C%20Whitefield%2C%20Bengaluru%2C%20Karnataka%20560066%20Bangalore"
+    "lng": 77.75096289999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=17544578036530952751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "arirang-korean-kammanahalli",
@@ -3298,7 +3298,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The beating culinary heart of Korean expat dining in Kammanahalli. Features an authentic ground-floor Korean grocery mart and traditional upper-floor dining with built-in tabletop grills serving thick-cut pork belly and uncompromised fermented kimchi.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "13 N.K Enclave Building, 4th Cross, Kammanahalli Main Rd, Chinnappa Layout, Bengaluru, Karnataka 560043",
+    "address": "13 N.K Enclave Building, 4th Cross, Kammanahalli Main Rd, Chinnappa Layout, Sena Vihar, Kammanahalli, Bengaluru, Karnataka 560043, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
@@ -3315,9 +3315,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Refuses to dilute traditional Korean spice or fermentation for local palates. The tabletop grill ritual and pungent house-fermented kimchi banchan are peerless.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0076,
-    "lng": 77.6384,
-    "googleMapsUrl": "https://www.google.com/maps/search/Arirang%20Korean%20Restaurant%2013%2C%20N.K.%20Enclave%20Building%2C%204th%20Cross%2C%20Kammanahalli%20Main%20Rd%2C%20Bengaluru%2C%20Karnataka%20560084%20Bangalore"
+    "lat": 13.019570199999999,
+    "lng": 77.6371272,
+    "googleMapsUrl": "https://maps.google.com/?cid=8297737769011114324&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "hi-seoul-kalyan-nagar",
@@ -3327,7 +3327,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Tucked discreetly into HRBR Layout, Hi Seoul is a beloved, family-run eatery that feels like stepping into a private home in Seoul. Famous for generous hospitality, piping hot noodle stews, and unlimited homemade banchan refills.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "1st floor, 201, 9th Main Rd, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "address": "1st floor, 201, 9th Main Rd, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,300",
     "mustTry": [
@@ -3344,9 +3344,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The master of daily Korean comfort food. Gentle home-style broth preparations and crisp, made-to-order gimbap make this one of the city’s most honest dining rooms.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0195,
-    "lng": 77.6465,
-    "googleMapsUrl": "https://www.google.com/maps/search/Hi%20Seoul%20309%2C%207th%20Main%20Rd%2C%20HRBR%20Layout%202nd%20Block%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043%20Bangalore"
+    "lat": 13.014924800000001,
+    "lng": 77.64676519999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=14577515435168665559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "the-coorg-food-co-kalyan-nagar",
@@ -3356,7 +3356,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Dedicated exclusively to authentic Kodava plantation recipes, sourcing pure Kachampuli (black garcinia vinegar) and spices directly from estates in Coorg. The smoky Pandi Curry is an essential Bangalore culinary milestone.",
     "category": "Regional & Coastal",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "2nd Floor, Masand Esquire, Hennur Main Rd, HRBR Layout 3rd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "address": "2nd Floor, Masand Esquire, Hennur Main Rd, HRBR Layout 3rd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,100",
     "mustTry": [
@@ -3373,9 +3373,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Unlike generic restaurants using tamarind substitutes, The Coorg Food Co. uses authentic wood-smoked Kachampuli and ancestral roasting methods.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0185,
-    "lng": 77.6432,
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Coorg%20Food%20Co.%202nd%20Floor%2C%20Masand%20Esquire%2C%20Hennur%20Main%20Rd%2C%20HRBR%20Layout%203rd%20Block%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043%20Bangalore"
+    "lat": 13.0249381,
+    "lng": 77.6315888,
+    "googleMapsUrl": "https://maps.google.com/?cid=7182420476729379803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "chulha-chouki-da-dhaba-flagship",
@@ -3385,7 +3385,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Furnished with traditional woven charpais (cots), hurricane lanterns, and an open live tandoor counter, the original Kalyan Nagar flagship serves unadulterated North Indian dhaba comfort food on traditional kansa thalis.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "Masand Esquire, Bus Depot, 1M, near Hennur Main Road, HRBR Layout 3rd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "address": "No. 32/3, Allalasandra, Yelahanka Main Road, (Bangalore–Doddaballapur Road, Hobli, Ambedkar Colony, Yelahanka, Bengaluru, Karnataka 560064, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -3403,9 +3403,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The original flagship maintains superior tandoor mastery and smoky charcoal profiling that modern franchised outlets rarely replicate.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0184,
-    "lng": 77.643,
-    "googleMapsUrl": "https://www.google.com/maps/search/Chulha%20Chouki%20Da%20Dhaba%201-M%2C%20404%2C%20Masand%20Esquire%2C%20Hennur%20Main%20Rd%2C%20HRBR%20Layout%203rd%20Block%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043%20Bangalore"
+    "lat": 13.092018,
+    "lng": 77.59386230000001,
+    "googleMapsUrl": "https://maps.google.com/?cid=16620443862201460744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "al-amanah-cafe-kammanahalli",
@@ -3415,7 +3415,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A 10+ year cult institution in Kammanahalli drawing midnight food pilgrims across the city. World-famous for its Gulf-style Arabian rolls, where spiced meats, garlic toum, and crispy french fries are wrapped inside hot kuboos.",
     "category": "Street Food & Chaat",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "19, 5th Main Rd, near kullappa circle, PNS Layout, Subbayianiah Palyam, Kammanahalli, Bengaluru, Karnataka 560084",
+    "address": "19, 5th Main Rd, near kullappa circle, PNS Layout, Subbayianiah Palyam, Kammanahalli, Bengaluru, Karnataka 560084, India",
     "priceLevel": "₹",
     "priceForTwo": "₹400",
     "mustTry": [
@@ -3433,9 +3433,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Decades of uncompromised garlic toum mastery and legendary late-night consistency make this an immortal Kammanahalli street legend.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0073,
-    "lng": 77.6412,
-    "googleMapsUrl": "https://www.google.com/maps/search/Al%20Amanah%20Cafe%2019%2F20%2C%205th%20Avenue%2C%205th%20Main%20Rd%2C%20Kullappa%20Circle%2C%20Kammanahalli%2C%20Bengaluru%2C%20Karnataka%20560084%20Bangalore"
+    "lat": 13.015531900000001,
+    "lng": 77.6395414,
+    "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "shivanna-gulkand-center-vv-puram",
@@ -3445,7 +3445,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded in the late 1960s on Thindi Beedi (VV Puram Food Street), this modest dessert counter pioneered Bangalore’s post-dinner street ritual. Sun-cured rose petal gulkand layered with seasonal avocado/fruits, rich malai ice cream, and fresh white butter.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Basavanagudi",
-    "address": "128/1, Food Street (Thindi Beedi), VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
+    "address": "XH2H+953, Food St, Vishweshwarapura, Basavanagudi, Bengaluru, Karnataka 560004, India",
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -3465,9 +3465,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The mandatory closing chapter of any VV Puram food trail. The textural contrast between floral chewy gulkand, dense malai cream, and fresh butter is magical.",
     "isVegetarian": true,
     "verified": true,
-    "lat": 12.9523938,
-    "lng": 77.5778187,
-    "googleMapsUrl": "https://www.google.com/maps/search/Shivanna+Gulkand+Center+128%2F1,+Food+Street+(Thindi+Beedi),+VV+Puram,+Basavanagudi,+Bengaluru,+Karnataka+560004+Bangalore/@12.9523938,77.5778187,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    "lat": 12.950895,
+    "lng": 77.57793,
+    "googleMapsUrl": "https://maps.google.com/?cid=6835239440921208183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "shri-vasavi-condiments-vv-puram",
@@ -3477,7 +3477,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The iconic confectionery on VV Puram Food Street that revolutionized Bangalore street culture by creating the annual Avarebele Mela. Celebrated year-round for its spicy Congress Kadlekai and double-peeled hyacinth bean savories.",
     "category": "Street Food & Chaat",
     "neighborhood": "Basavanagudi",
-    "address": "Sajjan Rao Circle, Food Street (Thindi Beedi), VV Puram, Basavanagudi, Bengaluru, Karnataka 560004",
+    "address": "1st floor, Krishna Rajendra Rd, next to cool corner, Basavanagudi, Bengaluru, Karnataka 560004, India",
     "priceLevel": "₹",
     "priceForTwo": "₹200",
     "mustTry": [
@@ -3496,9 +3496,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Transformed a local seasonal bean into an immortal Bangalore cultural identity. Exceptional freshness and crunchy legume textures without artificial preservatives.",
     "isVegetarian": true,
     "verified": true,
-    "lat": 12.9462977,
-    "lng": 77.574108,
-    "googleMapsUrl": "https://www.google.com/maps/search/Shri+Vasavi+Condiments+Sajjan+Rao+Circle,+Food+Street+(Thindi+Beedi),+VV+Puram,+Basavanagudi,+Bengaluru,+Karnataka+560004+Bangalore/@12.9462977,77.574108,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    "lat": 12.9475474,
+    "lng": 77.5739308,
+    "googleMapsUrl": "https://maps.google.com/?cid=13706312408231400546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "hotel-navayuga-gandhinagar",
@@ -3508,7 +3508,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Established in 1981 in Majestic’s film-distributor district of Gandhinagar, Navayuga is Bangalore’s definitive sanctum for fiery Andhra non-veg dining. Steaming rice on banana leaves served with gongura, kandi podi, and their legendary Green Chilli Chicken.",
     "category": "Regional & Coastal",
     "neighborhood": "CBD & Central",
-    "address": "Anupama Theater Complex, No:1, Subedar Chatram Rd, Gandhi Nagar, Bengaluru, Karnataka 560009",
+    "address": "Anupama Theater Complex, No:1, Subedar Chatram Rd, Gandhi Nagar, Bengaluru, Karnataka 560009, India",
     "priceLevel": "₹₹",
     "priceForTwo": "₹650",
     "mustTry": [
@@ -3526,9 +3526,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "While modern chains diluted traditional Andhra heat, Navayuga preserves the unapologetic, green-chilli scorched purity of 1980s Gandhinagar dining.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 12.977,
-    "lng": 77.575,
-    "googleMapsUrl": "https://www.google.com/maps/search/Hotel%20Navayuga%201%2C%20Aparna%20Complex%2C%20Subedar%20Chatram%20(SC)%20Rd%2C%20Gandhi%20Nagar%2C%20Majestic%2C%20Bengaluru%2C%20Karnataka%20560009%20Bangalore"
+    "lat": 12.976184799999999,
+    "lng": 77.57554619999999,
+    "googleMapsUrl": "https://maps.google.com/?cid=8478137410062836605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "far-and-east-four-seasons",
@@ -3538,7 +3538,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Located atop the Four Seasons Hotel Bengaluru at Embassy ONE on Bellary Road, Far & East is designed by Yabu Pushelberg. Features an open Robata grill with binchotan charcoal, air-flown sashimi sushi counter, and panoramic skyline vistas.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Bel Road & North BLR",
-    "address": "8, Bellary Rd, Dena Bank Colony, Ganganagar, Bengaluru, Karnataka 560032",
+    "address": "8, Bellary Rd, Dena Bank Colony, Armane Nagar, Bengaluru, Karnataka 560032, India",
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹5,000",
     "mustTry": [
@@ -3558,9 +3558,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "The undisputed high-water mark for Japanese and modern Pan-Asian fine dining in North Bangalore. World-class robata grilling and omakase sashimi.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0238,
-    "lng": 77.5866,
-    "googleMapsUrl": "https://www.google.com/maps/search/Far%20%26%20East%2021st%20Floor%2C%20Four%20Seasons%20Hotel%20Bengaluru%2C%208%20Bellary%20Rd%2C%20Ganganagar%2C%20Bengaluru%2C%20Karnataka%20560032%20Bangalore"
+    "lat": 13.0196455,
+    "lng": 77.5853711,
+    "googleMapsUrl": "https://maps.google.com/?cid=3750429088146940948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "oia-bangalore-hennur",
@@ -3570,7 +3570,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Spanning an enormous 87,000 sq ft in Hennur, Oia is inspired by the cliffside whitewashed architecture of Santorini, Greece. Sweeping white arches, cascading water bodies, and dramatic columns pair with a global menu curated with Michelin-level culinary rigor.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Bel Road & North BLR",
-    "address": "Oia, Hennur Main Road, New Airport Rd, opposite Mantri Webcity, Bengaluru, Karnataka 560077",
+    "address": "Oia, Hennur Main Road, New Airport Rd, opposite Mantri Webcity, Visthar, Bengaluru, Karnataka 560077, India",
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,800",
     "mustTry": [
@@ -3590,9 +3590,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "Proves that monumental architectural scale does not have to sacrifice culinary craftsmanship—delivering one of the most stunning open-air dining atmospheres in South India.",
     "isVegetarian": false,
     "verified": true,
-    "lat": 13.0658,
-    "lng": 77.654,
-    "googleMapsUrl": "https://www.google.com/maps/search/Oia%20Bangalore%20Plot%20No.%20162%2F2%2C%20Hennur%20Main%20Rd%2C%20Visthar%2C%20Opp.%20Mantri%20Webcity%2C%20Bengaluru%2C%20Karnataka%20560077%20Bangalore"
+    "lat": 13.0738322,
+    "lng": 77.6525657,
+    "googleMapsUrl": "https://maps.google.com/?cid=13572916760978068344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
   },
   {
     "id": "the-local-kalyan-nagar",
@@ -3602,9 +3602,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The quintessential Bangalore neighborhood watering hole in HRBR Layout. Unapologetically casual, wood-accented, and soundtracked by 80s/90s classic rock, famous for cold draft beer on tap and exceptionally spicy Mangalorean ghee roasts.",
     "category": "Microbrewery",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
-    "address": "2075, 4th Cross, 6th Main Rd, HRBR Layout 2nd Block, Kalyan Nagar, Bengaluru, Karnataka 560043",
-    "lat": 13.0198,
-    "lng": 77.6472,
+    "address": "4th cross, 6th Main Rd, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
+    "lat": 13.0212208,
+    "lng": 77.6414976,
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
@@ -3620,7 +3620,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/the-local-kalyan-nagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/The%20Local%202075%2C%204th%20Cross%2C%206th%20Main%20Rd%2C%20HRBR%20Layout%202nd%20Block%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=9498297626579843953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "Preserves the authentic, soulful identity of old Bangalore pub culture: great music, unpretentious hospitality, and phenomenal, fiery coastal bar bites.",
     "isVegetarian": false,
@@ -3634,9 +3634,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched on the 7th floor of Bren Mercury overlooking Sarjapur Road, Vapour provides unobstructed skyline views, a breezy sunset alfresco deck, and fresh house craft brews paired with global pub favorites.",
     "category": "Microbrewery",
     "neighborhood": "Sarjapur Road",
-    "address": "7th Bren Mercury, Sarjapur - Marathahalli Rd, Above Reliance Digital, Kaikondrahalli, Bengaluru, Karnataka 560035",
-    "lat": 12.9172,
-    "lng": 77.6763,
+    "address": "7th Bren Mercury, Sarjapur - Marathahalli Rd, Above Reliance Digital, Kaikondrahalli, Bengaluru, Karnataka 560035, India",
+    "lat": 12.9143406,
+    "lng": 77.6773528,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,900",
     "mustTry": [
@@ -3652,7 +3652,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/vapour-sarjapur-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Vapour%20Brewpub%20%26%20Diner%207th%20Floor%2C%20Bren%20Mercury%2C%20Kaikondrahalli%20Junction%2C%20Sarjapur%20Main%20Rd%2C%20Bengaluru%2C%20Karnataka%20560035%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=1081693574943481649&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The premier high-altitude rooftop brewpub on Sarjapur Road. Ideal for golden hour beers when the Bangalore breeze kicks in.",
     "isVegetarian": false,
@@ -3666,9 +3666,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Bangalore’s timeless retro rock sanctuary on 100 Feet Road. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
     "category": "Microbrewery",
     "neighborhood": "Indiranagar",
-    "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008",
-    "lat": 12.9782,
-    "lng": 77.6408,
+    "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.970779499999999,
+    "lng": 77.6410255,
     "priceLevel": "₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
@@ -3683,7 +3683,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Heritage (Pre-1980)"
     ],
     "imageUrl": "/images/restaurants/pecos-stones-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/search/Pecos%20765%2C%201st%20Floor%2C%20100%20Feet%20Rd%2C%20HAL%202nd%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038%20Bangalore",
+    "googleMapsUrl": "https://maps.google.com/?cid=12883347053253163289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
@@ -3693,10 +3693,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "id": "pecos-mojo-brigade-branch",
         "name": "Pecos Mojo, Brigade Road",
         "neighborhood": "Church Street & MG Road",
-        "address": "Residency Plaza, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
-        "lat": 12.9723,
-        "lng": 77.6074,
-        "googleMapsUrl": "https://www.google.com/maps/place/Pecos+Mojo/@12.9723,77.6074,17z"
+        "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
+        "lat": 12.973678,
+        "lng": 77.607354,
+        "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       }
     ]
   },
@@ -3708,7 +3708,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched on Level 5 of 1 MG Lido Mall with sweeping skyline views, Yauatcha represents the pinnacle of contemporary Cantonese dim sum gastronomy in South India, celebrated for translucent crystal dumplings, crispy aromatic duck, and European patisserie.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "Level 5, 1 MG - Lido Mall, MG Road, Someshwarpura, Halasuru, Bengaluru, Karnataka 560008",
+    "address": "Level 5, Lido Mall, 1 Mg, Mahatma Gandhi Rd, Halasuru, Someshwarpura, Halasuru, Bengaluru, Karnataka 560008, India",
     "lat": 12.9732218,
     "lng": 77.620367,
     "priceLevel": "₹₹₹₹",
@@ -3726,7 +3726,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/yauatcha-bengaluru-mg-road.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Yauatcha+Bengaluru/@12.9732218,77.620367,17z",
+    "googleMapsUrl": "https://maps.google.com/?cid=8283635552900263964&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "Bangalore’s undisputed benchmark for Cantonese dim sum artistry. The Crispy Prawn Cheung Fun (crispy fried prawn roll wrapped inside silky steamed rice noodle skin) is absolute perfection.",
     "isVegetarian": false,
@@ -3740,7 +3740,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "An enchanting open-air teakwood pavilion floating over tranquil water bodies and framed by ancient raintrees at The Oberoi. Master Thai chefs craft authentic tom yum, fiery green curries, and steamed seabass with lemongrass.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "The Oberoi, 37-39, MG Road, Yellappa Garden, Yellappa Chetty Layout, Sivanchetti Gardens, Bengaluru 560001",
+    "address": "The Oberoi Bengaluru, 37-39, Mahatma Gandhi Road, M G, Road, Yellappa Garden, Yellappa Chetty Layout, Sivanchetti Gardens, Bengaluru, Karnataka 560001, India",
     "lat": 12.973455,
     "lng": 77.618703,
     "priceLevel": "₹₹₹₹",
@@ -3758,7 +3758,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/rim-naam-the-oberoi.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Rim+Naam/@12.973455,77.618703,17z",
+    "googleMapsUrl": "https://maps.google.com/?cid=12710409723907936999&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "Bangalore’s most romantic garden pavilion. The fragrant herbal balance in their lemongrass-scented Tom Yum and steamed seabass is unmatched in India.",
     "isVegetarian": false,
@@ -3772,7 +3772,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Inspired by Tokyo’s Edo period, this ultra-premium Japanese culinary shrine inside ITC Gardenia features a live Robatayaki charcoal grill, private tatami dining chambers, and an authentic Omakase sushi bar.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Church Street & MG Road",
-    "address": "ITC Gardenia, 1, Residency Rd, Ashok Nagar, Bengaluru, Karnataka 560025",
+    "address": "1, Residency Rd, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.967128,
     "lng": 77.5956714,
     "priceLevel": "₹₹₹₹",
@@ -3789,7 +3789,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Cocktail Program"
     ],
     "imageUrl": "/images/restaurants/edo-itc-gardenia.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Edo+-+Japanese+Restaurant+and+Bar,+ITC+Gardenia/@12.967128,77.5956714,17z",
+    "googleMapsUrl": "https://maps.google.com/?cid=9360424159642491507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 PM – 11:30 PM (Dinner Only)",
     "curatorNote": "The gold standard for Japanese Kaiseki dining in South India. The Saikyo Miso Black Cod melts effortlessly on the tongue.",
     "isVegetarian": false,
@@ -3803,9 +3803,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The Leela Palace’s iconic culinary jewel. Named after traditional Kashmiri Jamavar shawls, this palatial dining room presents royal Awadhi and Mughlai recipes perfected over decades under silver-leaf ceilings.",
     "category": "Regional & Coastal",
     "neighborhood": "Indiranagar",
-    "address": "The Leela Palace, 23, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
-    "lat": 12.9605,
-    "lng": 77.6485,
+    "address": "23, The Leela Palace, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India",
+    "lat": 12.9602157,
+    "lng": 77.6485172,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹4,000",
     "mustTry": [
@@ -3819,7 +3819,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/jamavar-the-leela-palace.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Jamavar%2520The%2520Leela%2520Palace%252C%252023%252C%2520HAL%2520Old%2520Airport%2520Rd%252C%2520Kodihalli%252C%2520Bengaluru%252C%2520Karnataka%2520560008%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGP_ar9QGIjAeZkv5aCXcx207DCD31JFeWMffr-Jf6fRcZuxT5yhnk2GZzmroAm2VbhvqPbsPbRsyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=16675937391688976375&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The slow-simmered 24-hour Dal Jamavar and tender Raan-e-Jamavar define royal Indian fine dining in Bangalore.",
     "isVegetarian": false,
@@ -3833,9 +3833,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Sirio Maccioni’s legendary New York flagship transplanted to the 5th floor of The Leela Palace. Serves classical Franco-Italian haute cuisine paired with an exceptional international wine library and panoramic palace views.",
     "category": "Modern Indian & Dining",
     "neighborhood": "Indiranagar",
-    "address": "5th Floor, The Leela Palace, 23, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
-    "lat": 12.9606,
-    "lng": 77.6486,
+    "address": "The Leela Palace, 23, HAL Old Airport Rd, HAL 2nd Stage, Kodihalli, Bengaluru, Karnataka 560008, India",
+    "lat": 12.9601888,
+    "lng": 77.64849029999999,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹5,000",
     "mustTry": [
@@ -3850,7 +3850,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/le-cirque-signature-leela.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Le%2520Cirque%2520Signature%25205th%2520Floor%252C%2520The%2520Leela%2520Palace%252C%252023%252C%2520HAL%2520Old%2520Airport%2520Rd%252C%2520Kodihalli%252C%2520Bengaluru%252C%2520Karnataka%2520560008%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGP_ar9QGIjBt-Vi3c0U4ggKZnGSlVYJExZO5tV11oNwOJWdq1Dmq9kZw7Z3Qe6hg2160K20oV8kyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=10533899834915802086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "6:30 PM – 11:30 PM (Dinner Only)",
     "curatorNote": "The ultimate celebratory dinner setting. The Acquerello Truffle Risotto and classic NYC Crème Brûlée are masterclasses in technique.",
     "isVegetarian": false,
@@ -3864,9 +3864,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Founded by Himanshu Dimri and Sonali Sattar in 2002, Grasshopper is Bangalore’s most celebrated farm-to-table dining institution. Hidden inside a serene bamboo greenhouse farm, it serves an unhurried, personalized 7-course seasonal tasting menu.",
     "category": "Modern Indian & Dining",
     "neighborhood": "JP Nagar",
-    "address": "45, Kalena Agrahara, Bannerghatta Main Rd, Bengaluru, Karnataka 560076",
-    "lat": 12.8715,
-    "lng": 77.5972,
+    "address": "45, Bannerghatta Rd, near Meenakshi Temple, Kothnur, Kalena Agrahara, Bengaluru, Karnataka 560076, India",
+    "lat": 12.8642674,
+    "lng": 77.5893947,
     "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹5,500",
     "mustTry": [
@@ -3881,7 +3881,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/grasshopper-bannerghatta.jpg",
-    "googleMapsUrl": "https://www.google.com/maps/place/Grasshopper/@12.8715,77.5972,17z",
+    "googleMapsUrl": "https://maps.google.com/?cid=10988012251802871389&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "7:30 PM – 11:00 PM (Tues–Sun, Strict Prior Reservation)",
     "curatorNote": "An unhurried culinary sanctuary. Candlelit dining surrounded by bamboo groves and cricket chirps with an ever-evolving, personalized seasonal menu.",
     "isVegetarian": false,
@@ -3895,7 +3895,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A dramatic 40-foot-high architectural spectacle inside UB City with monumental stone Zen sculptures, cascading waterfalls, and luxury Pan-Asian gastronomy spanning live Teppanyaki, Robata skewers, and dim sum.",
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Lavelle Road",
-    "address": "2nd Floor, UB City, Comet Block, Vittal Mallya Rd, Bengaluru, Karnataka 560001",
+    "address": "3rd Floor, 222, Vittal Mallya Rd, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.97185,
     "lng": 77.5966162,
     "priceLevel": "₹₹₹₹",
@@ -3913,7 +3913,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/shiro-ub-city.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Shiro%25202nd%2520Floor%252C%2520UB%2520City%252C%2520Comet%2520Block%252C%2520Vittal%2520Mallya%2520Rd%252C%2520Bengaluru%252C%2520Karnataka%2520560001%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGIDbr9QGIjCUdSZbx7D2AY-JaSL3fQt-x0vRQlHNgnblmHMrZbcvrV1fA1jHP6A1Ti370zeRIfkyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=13252862821071043776&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The towering Zen stone architecture makes dining here awe-inspiring. Sit at the live Teppanyaki counter for sizzling hibachi theater.",
     "isVegetarian": false,
@@ -3927,7 +3927,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "Perched 13 floors above Residency Road, Kazé offers Bangalore’s most dramatic skyline sunsets, luxury Pan-Asian robata skewers, sashimi platters, and bespoke botanical mixology on a breezy open terrace.",
     "category": "Cocktails & Rooftops",
     "neighborhood": "Church Street & MG Road",
-    "address": "13th Floor, SKAV 909, 9/1, Lavelle Road / Residency Rd, Richmond Town, Bengaluru, Karnataka 560025",
+    "address": "21st Floor, SKAV, 909, Lavelle Road, near to Itc Gardenia, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.9654907,
     "lng": 77.5964235,
     "priceLevel": "₹₹₹₹",
@@ -3947,7 +3947,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Late Night"
     ],
     "imageUrl": "/images/restaurants/kaze-residency-road.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Kaz%25C3%25A9%2520Bar%2520%2526%2520Kitchen%252013th%2520Floor%252C%2520SKAV%2520909%252C%25209%252F1%252C%2520Lavelle%2520Road%2520%252F%2520Residency%2520Rd%252C%2520Richmond%2520Town%252C%2520Bengaluru%252C%2520Karnataka%2520560025%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGIXbr9QGIjB_o5WpojBu1l3TjCtbGIeFRCKuPuGp9twkr-4Oa99EzWF4qoF2J5x4MXPEkCIuOFsyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=11160230962570516432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:30 PM – 1:00 AM",
     "curatorNote": "Bangalore’s premier high-altitude open terrace. The 360-degree sunset view with a smoked cocktail and fresh robata skewers is unforgettable.",
     "isVegetarian": false,
@@ -3961,9 +3961,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The legendary 1984 flagship on Residency Road that defined Andhra meals for generations of Bangaloreans. Steaming hot sona masoori rice, melted ghee, fiery paruppu podi (gunpowder), and crispy green chilli chicken served on fresh banana leaves.",
     "category": "Regional & Coastal",
     "neighborhood": "Church Street & MG Road",
-    "address": "44/1, Residency Rd, Near Galaxy Theatre, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025",
-    "lat": 12.9729,
-    "lng": 77.608,
+    "address": "44/1, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+    "lat": 12.9732028,
+    "lng": 77.60913339999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
@@ -3977,7 +3977,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Heritage (Pre-1980)"
     ],
     "imageUrl": "/images/restaurants/nagarjuna-residency-road.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Nagarjuna%252044%252F1%252C%2520Residency%2520Rd%252C%2520Near%2520Galaxy%2520Theatre%252C%2520Shanthala%2520Nagar%252C%2520Ashok%2520Nagar%252C%2520Bengaluru%252C%2520Karnataka%2520560025%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGIXbr9QGIjDWF1q03CLWZp8elivi4sdgCz0YsvKuZXLm6Rc0NcugrVeqlkdw4opNAjCzEcoOAREyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=211738954880282805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:45 PM, 7:00 PM – 10:45 PM",
     "curatorNote": "Bangalore’s quintessential spicy lunch ritual. Heap steaming rice on your banana leaf, douse in hot ghee and gunpowder, and pair with the fiery green chilli chicken.",
     "isVegetarian": false,
@@ -3991,9 +3991,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "A beloved 20-year-old culinary landmark on Infantry Road styled after an ancient Silk Route caravanserai. Features floor-to-ceiling glass show-kitchens where master ustads bake massive karari rotis and simmer rich Peshawari gravies.",
     "category": "Modern Indian & Dining",
     "neighborhood": "CBD & Central",
-    "address": "Gem Plaza, 66, Infantry Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9818,
-    "lng": 77.5992,
+    "address": "XJJ3+5V6, Infantry Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9804145,
+    "lng": 77.6046558,
     "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
@@ -4007,7 +4007,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Romantic"
     ],
     "imageUrl": "/images/restaurants/samarkand-infantry-road.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Samarkand%2520Gem%2520Plaza%252C%252066%252C%2520Infantry%2520Rd%252C%2520Tasker%2520Town%252C%2520Shivaji%2520Nagar%252C%2520Bengaluru%252C%2520Karnataka%2520560001%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGIXbr9QGIjDtWCX7os27kKl93Bwx2S0xFlyydHzll-_iCPMDut2Aj2VslkgaxbSmjPl9kdZK2DEyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=15808207267325522356&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The massive dome of spiced Karari Roti shattered at the table and the fork-tender Gosht Rogan Josh are eternal Bangalore classics.",
     "isVegetarian": false,
@@ -4021,9 +4021,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The historic original 1966 mother branch on Central Street in Shivajinagar that sparked Bangalore’s famous post-midnight dining culture. Known city-wide for its signature spiced Empire Butter Chicken, fragrant Ghee Rice, and layered flaky coin parottas.",
     "category": "Regional & Coastal",
     "neighborhood": "CBD & Central",
-    "address": "36, Central St, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001",
-    "lat": 12.9822,
-    "lng": 77.6045,
+    "address": "78, Central St, off Infantry Road, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India",
+    "lat": 12.9797842,
+    "lng": 77.60270799999999,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -4039,7 +4039,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Heritage (Pre-1980)"
     ],
     "imageUrl": "/images/restaurants/hotel-empire-shivajinagar.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Hotel%2520Empire%252036%252C%2520Central%2520St%252C%2520Tasker%2520Town%252C%2520Shivaji%2520Nagar%252C%2520Bengaluru%252C%2520Karnataka%2520560001%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGIXbr9QGIjDqaeVdVh_bpHuKZtBFpVHnLNKzJM_p3nm89W5ctxKmHqrByVRPiPT9W_yYlQJSXQoyAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=5327279857768021874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "10:00 AM – 2:00 AM (Late Night Everyday)",
     "curatorNote": "The undisputed soul of Bangalore midnight dining since 1966. Dip hot, flaky coin parottas into the crispy, spiced fried Butter Chicken gravy at 1 AM.",
     "isVegetarian": false,
@@ -4053,9 +4053,9 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "description": "The first international outpost in India of New York City’s legendary Bleecker Street bakery. Located on 100 Feet Road, it draws daily queues for its whipped fresh Banana Pudding, layered cheesecakes, and vintage pastel buttercream cupcakes.",
     "category": "Bakeries & Desserts",
     "neighborhood": "Indiranagar",
-    "address": "788, 100 Feet Rd, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-    "lat": 12.979,
-    "lng": 77.6405,
+    "address": "J.K. Plaza, 788, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560008, India",
+    "lat": 12.9700721,
+    "lng": 77.6407854,
     "priceLevel": "₹₹",
     "priceForTwo": "₹800",
     "mustTry": [
@@ -4068,7 +4068,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Outdoor Seating"
     ],
     "imageUrl": "/images/restaurants/magnolia-bakery-indiranagar.jpg",
-    "googleMapsUrl": "https://www.google.com/sorry/index?continue=https://www.google.com/maps/search/Magnolia%2520Bakery%2520788%252C%2520100%2520Feet%2520Rd%252C%252012th%2520Main%2520Rd%252C%2520HAL%25202nd%2520Stage%252C%2520Indiranagar%252C%2520Bengaluru%252C%2520Karnataka%2520560038%2520Bangalore&q=EhAkAUkAiDlafi2duGL6O-uQGInbr9QGIjBlswrtIWyyTugCdQA6qqZxnF2ws1Hg08F4wLiN4cacMaRkqkpDJ2PLEB3r2TWkxT4yAnJSWgFD",
+    "googleMapsUrl": "https://maps.google.com/?cid=5209316405023334367&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "10:00 AM – 11:30 PM",
     "curatorNote": "The Classic Banana Pudding (layers of creamy vanilla pudding, Nilla wafers, and fresh bananas) is a global icon executed to perfection on 100 Feet Road.",
     "isVegetarian": true,
