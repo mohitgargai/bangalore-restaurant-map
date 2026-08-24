@@ -32,7 +32,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 AM – 11:30 AM, 2:00 PM – 8:00 PM (Closed Fridays)",
     "curatorNote": "Watch the waiters perform their legendary stack balancing act carrying 20 plates of butter dosa at once.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "ctr-shri-sagar",
@@ -65,7 +69,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Arrive before 8 AM on weekends to get a seat without waiting in the Margosa Road queue.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "veena-stores-malleshwaram",
@@ -99,7 +107,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 AM – 12:00 PM, 3:30 PM – 9:00 PM",
     "curatorNote": "No sambar needed — the refreshing mint coconut chutney paired with pillow-soft idlis and hot crisp vadas is Malleshwaram breakfast at its peak.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "umesh-refreshments-seshadripuram",
@@ -131,7 +143,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 10:30 PM",
     "curatorNote": "The spiced podi is roasted in small batches and showered with molten ghee over a paper-thin, crunchy crepe.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "taaza-thindi-jayanagar",
@@ -164,7 +180,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 12:00 PM, 4:30 PM – 9:30 PM",
     "curatorNote": "World-class hygiene with automated dishwashers and incredible consistency. Their golden ghee masala dosa is top-tier in Bangalore.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "brahmins-coffee-bar",
@@ -197,7 +217,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:00 AM – 12:00 PM, 3:00 PM – 7:00 PM (Closed Sundays evening)",
     "curatorNote": "Stand on the tree-shaded sidewalk with a steaming cup of freshly frothed coffee.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "mtr-lalbagh",
@@ -229,7 +253,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 AM – 11:00 AM, 12:30 PM – 8:30 PM (Closed Mondays)",
     "curatorNote": "Order the silver thali lunch or pair Rava Idli with their signature cup of melted spiced ghee.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "dwaraka-hotel-basavanagudi",
@@ -262,7 +290,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 12:30 PM, 3:30 PM – 8:30 PM",
     "curatorNote": "Reddit insider tip: Ask for the double butter Khali Dosa. It is pillow-soft and absorbs the soothing white coconut chutney.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "puliyogare-point-basavanagudi",
@@ -295,7 +327,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 10:00 PM",
     "curatorNote": "The authentic blend of Melkote spices in the tamarind paste is unmatched in the city. Pair with sweet golden pongal.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "sn-refreshments-jayanagar",
@@ -328,7 +364,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 AM – 12:30 PM, 4:00 PM – 9:00 PM",
     "curatorNote": "Super fast counter service. Order two piping hot thatte idlis with extra red chutney and a crispy vada.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "koshys-st-marks-road",
@@ -359,7 +399,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 11:00 PM",
     "curatorNote": "Ask for a table in the non-AC heritage front room to soak in the vintage fans and literary Bangalore banter.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-only-place-museum-road",
@@ -392,7 +436,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "An irreplaceable part of old Bangalore. Sit in the leafy garden courtyard and order the Chateaubriand steak followed by their legendary cinnamon-spiced apple pie.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "rameshwaram-cafe-indiranagar",
@@ -405,7 +453,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "847/1, 100 Feet Rd, Indira Nagar 1st Stage, H Colony, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9816796,
     "lng": 77.640918,
-    "priceLevel": "₹₹",
+    "priceLevel": "₹",
     "priceForTwo": "₹300",
     "mustTry": [
       "Ghee Podi Thatte Idli",
@@ -424,7 +472,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 AM – 1:00 AM (Open Daily)",
     "curatorNote": "The ghee podi thatte idlis are drenched in piping hot spiced ghee and served with fresh coconut and tomato chutneys.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-hole-in-the-wall-cafe",
@@ -466,9 +518,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "2823, 80 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India",
         "lat": 12.9675336,
         "lng": 77.6479384,
-        "googleMapsUrl": "https://maps.google.com/?cid=16064643600650991272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=16064643600650991272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-craftery-by-subko",
@@ -501,7 +561,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "curatorNote": "An industrial-chic craft coffee and chocolate wonderland. Watch them temper single-origin Indian cacao while sipping experimental pourovers.",
     "isVegetarian": false,
     "verified": true,
-    "branches": []
+    "branches": [],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "araku-coffee",
@@ -532,7 +596,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "Order the Modbar pour-over flight to taste how terroir drastically transforms Indian coffee flavor notes.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "one-five-four-breakfast-club",
@@ -564,7 +632,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 9:00 PM (Closed Tuesdays)",
     "curatorNote": "A green Koramangala oasis for leisurely Sunday breakfasts and fluffy Belgian waffles.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "sunnys-lavelle-road",
@@ -577,7 +649,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "50, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
     "lat": 12.971848699999999,
     "lng": 77.5985968,
-    "priceLevel": "₹₹₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,500",
     "mustTry": [
       "Filet Mignon with Gorgonzola",
@@ -596,7 +668,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s earliest pet-friendly luxury dining bistros. The leafy veranda and classic Gorgonzola steak are exceptional.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "anjus-cafe-ranga-shankara",
@@ -628,7 +704,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:00 AM – 10:00 PM (Closed Mondays)",
     "curatorNote": "A soulful South Bangalore cultural sanctuary. Enjoy hot akki rotti under the open foyer while discussing theatre and arts.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "paris-panini-indiranagar",
@@ -659,7 +739,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "Warm, crispy French baguettes loaded with melted artisanal cheeses and signature dips. The Jean panini with brie and fig jam is iconic.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "naru-noodle-bar",
@@ -689,7 +773,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:30 PM, 7:00 PM – 10:30 PM (Reservation Only)",
     "curatorNote": "Slots open on Sunday and book out in under 30 seconds. The Tori Paitan chicken broth is silky and unctuous.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "kopitiam-lah-indiranagar",
@@ -721,7 +809,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:30 AM – 10:30 PM",
     "curatorNote": "Reddit cult favorite for authentic Nanyang breakfast. The freshly toasted bread with thick slabs of cold butter and pandan kaya jam paired with dark soy runny eggs is unbeatable.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "phobidden-fruit-indiranagar",
@@ -752,7 +844,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "A tranquil veranda setting with fragrant star anise and cinnamon infused Pho broths that warm the soul.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-fatty-bao-indiranagar",
@@ -785,7 +881,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM (Closed Mondays)",
     "curatorNote": "The open-air rooftop is one of Indiranagar’s best evening spots. The Char Siu pork belly bao with green apple kimchi is legendary.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "burma-burma",
@@ -824,7 +924,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Unit No 109, Ground Floor, Forum Rex Walk, Brigade Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
         "lat": 12.973040099999999,
         "lng": 77.60613959999999,
-        "googleMapsUrl": "https://maps.google.com/?cid=14442321108225895488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=14442321108225895488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       },
       {
         "id": "burma-burma-ecoworld-branch",
@@ -833,9 +937,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Unit No R5, Ground Floor, The Bay, Building Campus 8A, Ecoworld Maratahalli, B.B, Marathahalli - Sarjapur Outer Ring Rd, M.P East, Mahadevapura, Bengaluru, Karnataka 560103, India",
         "lat": 12.920167,
         "lng": 77.6848395,
-        "googleMapsUrl": "https://maps.google.com/?cid=17410816075536197062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=17410816075536197062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "lucky-chan",
@@ -876,7 +988,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Ecospace Business Park Rmz Eco World Bellandur, The Bay, Bellandur, Bengaluru, Karnataka 560103, India",
         "lat": 12.9202886,
         "lng": 77.6846386,
-        "googleMapsUrl": "https://maps.google.com/?cid=5167808166714788376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=5167808166714788376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       },
       {
         "id": "lucky-chan-forum-south-branch",
@@ -885,9 +1001,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "3rd Floor, Forum South, Metro Station, Cross, Anjanadri Layout, Konanakunte, Bengaluru, Karnataka 560062, India",
         "lat": 12.888775299999999,
         "lng": 77.56332809999999,
-        "googleMapsUrl": "https://maps.google.com/?cid=14126792646757334638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=14126792646757334638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "baan-phadthai-indiranagar",
@@ -919,7 +1043,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "The 18-ingredient secret tamarind sauce brings authentic Bangkok Michelin street flavor to 12th Main Indiranagar.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "misu-st-marks-road",
@@ -950,7 +1078,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "One of Bangalore’s most consistent and aesthetically pleasing Asian dining rooms.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "pizza-4ps-indiranagar",
@@ -963,7 +1095,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "Ward 72, No.3275/A, 12th Main Rd, HAL 2nd Stage, Appareddipalya, Domlur, Bengaluru, Karnataka 560038, India",
     "lat": 12.9700194,
     "lng": 77.6361483,
-    "priceLevel": "₹₹₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,200",
     "mustTry": [
       "House-made Burrata Parma Ham Pizza",
@@ -982,7 +1114,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "Book in advance. The house-made fresh burrata cut open table-side over Neapolitan crust with wildflower honey is unbeatable.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-pizza-bakery",
@@ -1023,7 +1159,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Coconut Grove, 86, Spencer Building, 16, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
         "lat": 12.9752011,
         "lng": 77.6046089,
-        "googleMapsUrl": "https://maps.google.com/?cid=7055628019802538548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=7055628019802538548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       },
       {
         "id": "the-pizza-bakery-hsr-branch",
@@ -1032,9 +1172,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "No. 2345, Ward No 174, Vanganahalli, 1st Sector, HSR Layout, Bengaluru, Karnataka 560027, India",
         "lat": 12.912019,
         "lng": 77.64717449999999,
-        "googleMapsUrl": "https://maps.google.com/?cid=2264007145900133572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=2264007145900133572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "brik-oven-church-street",
@@ -1066,7 +1214,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 11:00 PM",
     "curatorNote": "Ask for the off-menu hot honey drizzle on their pepperoni and burrata pies.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "lupa-mg-road",
@@ -1098,7 +1250,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 1:00 AM",
     "curatorNote": "Manu Chandra’s magnum opus on MG Road. Features an interactive salumeria, dedicated gelato lab, and subterranean wine cellar.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "farmlore-bangalore",
@@ -1128,7 +1284,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 4:00 PM, 7:00 PM – 11:00 PM (Advance Reservation Required)",
     "curatorNote": "Powered 100% by solar and fire. Book months ahead for India’s most visionary farm-to-table tasting experience.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "chinita-mexican-indiranagar",
@@ -1160,7 +1320,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "Uncompromisingly authentic Mexican street food with gluten-free house-pressed corn tortillas and tangy tomatillo salsas.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "olive-beach-richmond-town",
@@ -1192,7 +1356,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The cobbled sunlit courtyard and bougainvillea-framed villa provide Bangalore’s most romantic dining ambiance.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "phurr-jayanagar",
@@ -1223,7 +1391,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 4:00 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "One of the most innovative pure-vegetarian culinary rooms in India. The Truffle Galouti and botanical smoking mocktails are pure culinary theater.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "karavalli-residency-road",
@@ -1246,7 +1418,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Elaneer Payasam"
     ],
     "vibeTags": [
-      "Heritage (Pre-1980)",
       "Outdoor Seating",
       "Romantic"
     ],
@@ -1255,7 +1426,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "One of the most decorated coastal restaurants in Asia. Sit in the tranquil courtyard and order Kori Gassi with paper-thin Neer Dosas.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "ranganna-military-jayanagar",
@@ -1287,7 +1462,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:30 AM – 4:00 PM, 7:00 PM – 10:30 PM (Closed Mondays)",
     "curatorNote": "Bangalore military hotel royalty. Dip soft thatte idlis into rich, peppery mutton Kaal soup for the ultimate Sunday breakfast.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "anupams-coast-to-coast",
@@ -1317,7 +1496,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 3:30 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The rich, fiery red ghee roast masala coating juicy prawns is Bangalore coastal perfection. Soak every drop with soft Neer Dosas.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "maravanthe-coastal-indiranagar",
@@ -1348,7 +1531,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:45 PM, 7:00 PM – 11:00 PM",
     "curatorNote": "The traditional Kundapura coconut fish curry and crispy rava-crusted Ladyfish bring coastal beach-highway flavors to Indiranagar.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "bengaluru-oota-company-halasuru",
@@ -1379,7 +1566,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Advance Booking Required)",
     "curatorNote": "By reservation only. Intimate chef’s table dining preserving the authentic culinary heritage of Karnataka’s Bunt and Gowda families.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "meghana-foods-koramangala",
@@ -1409,7 +1600,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "The boneless special chicken biryani with its distinct red spiced chicken pieces and rice is an obsession across the city.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "toit-brewpub",
@@ -1442,7 +1637,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM (Open Daily)",
     "curatorNote": "Order the beer sampler flight first. Tintin Toit with orange peel & coriander alongside a wood-fired pizza on the 2nd floor balcony is classic BLR.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "windmills-craftworks-whitefield",
@@ -1474,7 +1673,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 12:00 AM",
     "curatorNote": "Arguably the finest microbrewery in India. Acoustic jazz performances paired with house-brewed stout are peerless.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "arbor-brewing-company",
@@ -1506,7 +1709,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 12:30 AM",
     "curatorNote": "The Raging Elephant IPA remains the benchmark for piney, citrusy American India Pale Ales in the country.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-biere-club-lavelle",
@@ -1537,7 +1744,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 11:30 PM",
     "curatorNote": "Historic significance as the city's 1st microbrewery. Great afternoon terrace overlooking UB City.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "geist-brewing-factory",
@@ -1568,7 +1779,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The Kamacitra NEIPA with tropical notes is one of the highest-rated craft beers in India.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "bobs-bar-indiranagar",
@@ -1601,14 +1816,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 1:00 AM",
     "curatorNote": "Pair their signature iced filter coffee cocktail with crispy fried tindli and Malnad pork fry on the open terrace.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
-    "id": "pecos-rest-house-road",
+    "id": "pecos-classic",
     "name": "Pecos Classic",
-    "slug": "pecos-rest-house-road",
-    "tagline": "Retro rock pub with chilled draft beer and chilli pork",
-    "description": "Since 1989, Pecos has been the temple of classic 70s rock, Pink Floyd posters, retro nostalgia, and draught mugs on Rest House Road off Brigade.",
+    "slug": "pecos-classic",
+    "tagline": "The 1989 classic rock retro pub legend with cold draft mugs & fiery chilli pork",
+    "description": "Bangalore’s timeless retro rock sanctuary on Rest House Road off Brigade. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
     "category": "Microbrewery",
     "neighborhood": "Church Street & MG Road",
     "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
@@ -1617,22 +1836,44 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "priceLevel": "₹₹",
     "priceForTwo": "₹900",
     "mustTry": [
-      "Chilled Draught Beer Pitcher",
-      "Pecos Chilli Pork",
+      "Chilled Draft Beer Mugs",
+      "Signature Coorg Chilli Pork",
       "Dosa with Mutton Curry",
-      "Bacon Sausages"
+      "Crispy Bacon Wrapped Sausages"
     ],
     "vibeTags": [
+      "Craft Beer",
       "Live Music / Vinyl",
       "Late Night",
-      "Craft Beer"
+      "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/pecos-rest-house-road.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278",
     "timings": "11:00 AM – 11:30 PM",
-    "curatorNote": "A pilgrimage for Bangalore rock fans since 1989. Draught beer by the pitcher and fiery chilli pork.",
+    "curatorNote": "The ultimate Bangalore rock pub institution since 1989. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "placeId": "ChIJQVqlWGQWrjsRNmNTzeUOMI0",
+    "branches": [
+      {
+        "id": "pecos-indiranagar-branch",
+        "name": "Indiranagar (100ft Rd)",
+        "neighborhood": "Indiranagar",
+        "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India",
+        "lat": 12.9707795,
+        "lng": 77.6410255,
+        "googleMapsUrl": "https://maps.google.com/?cid=15764024227743916946",
+        "placeId": "ChIJ42i_UloVrjsRkhd_2W0U4ZU",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
+      }
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "soka-indiranagar",
@@ -1664,7 +1905,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "5:00 PM – 1:00 AM (Reservations Essential)",
     "curatorNote": "Ranked among the premier cocktail bars in Asia. Features moving kinetic art sculptures, moody lighting, and genius cocktail precision.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "zlb-23-leela-palace",
@@ -1697,7 +1942,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 PM – 1:00 AM (Closed Sundays)",
     "curatorNote": "Enter through the secret garden corridor. Velvet drapes, live vinyl jazz, and world-class mixology in complete discretion.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "copitas-four-seasons",
@@ -1729,7 +1978,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "5:00 PM – 1:00 AM",
     "curatorNote": "Consistently featured in Asia’s 50 Best Bars. Catch golden hour on the open-air deck overlooking North Bangalore.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "lavonne-cafe-indiranagar",
@@ -1770,9 +2023,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "4/2, Ground Floor St. Mark, Samrah Plaza, s Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
         "lat": 12.9694176,
         "lng": 77.6003176,
-        "googleMapsUrl": "https://maps.google.com/?cid=15960569217550590724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=15960569217550590724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "amadora-ice-cream-indiranagar",
@@ -1802,7 +2063,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "Reddit foodies unanimous pick for the best dessert in town: Order the gooey warm Underbaked Cake topped with Salted Butter Caramel ice cream.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "glens-bakehouse-lavelle",
@@ -1834,7 +2099,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 11:30 PM",
     "curatorNote": "The bite-sized red velvet cupcakes are legendary across Bangalore. Sit in the sun-dappled courtyard under the tree.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "variar-bakery-rajajinagar",
@@ -1864,7 +2133,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 1:30 PM, 3:30 PM – 9:00 PM",
     "curatorNote": "Bags of piping hot butter biscuits sell out within minutes of the 4 PM batch coming out of the ovens.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "albert-bakery-frazer-town",
@@ -1896,7 +2169,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "3:00 PM – 9:00 PM",
     "curatorNote": "Over 120 years of baking legacy on Mosque Road. The crispy mutton kheema samosas sell out within 45 minutes of the evening batch opening.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "thoms-bakery-cox-town",
@@ -1927,7 +2204,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:00 AM – 9:30 PM",
     "curatorNote": "The scent of freshly baked plum cake and buttery puff pastry on Wheeler Road defines Anglo-Indian old Bangalore.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "vb-bakery-vv-puram",
@@ -1959,7 +2240,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:00 AM – 10:30 PM",
     "curatorNote": "Order the iconic KBC (spicy roasted congress peanuts sandwiched inside a soft spiced bun with generous butter).",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "mangalore-pearl-frazer-town",
@@ -1989,7 +2274,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:30 PM, 7:30 PM – 10:30 PM (Closed Tuesdays)",
     "curatorNote": "Pure coastal comfort food. The dark, aromatic spice-rubbed Pork Bafat paired with warm, fermented steamed Sannas is unmatched.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "hae-kum-gang-ashok-nagar",
@@ -2019,7 +2308,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 3:00 PM, 6:00 PM – 10:30 PM",
     "curatorNote": "Run by a native Korean family. Sizzle tender pork belly at your table and wrap with fresh lettuce, garlic, and ssamjang.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "lakeview-milkbar-mg-road",
@@ -2051,7 +2344,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:30 AM – 12:30 AM",
     "curatorNote": "A 95-year-old Bangalore late-night tradition. Park on MG Road and have sundaes served directly through your car window.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "corner-house-residency-road",
@@ -2064,7 +2361,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "No 45/3, BBMP East, GK Complex, Residency Rd 1st Cross, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
     "lat": 12.973698599999999,
     "lng": 77.6093812,
-    "priceLevel": "₹₹",
+    "priceLevel": "₹",
     "priceForTwo": "₹350",
     "mustTry": [
       "Death By Chocolate (DBC)",
@@ -2074,7 +2371,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Brown Bomb"
     ],
     "vibeTags": [
-      "Heritage (Pre-1980)",
       "Late Night",
       "Pocket Friendly"
     ],
@@ -2083,7 +2379,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "Bangalore’s sweetest nostalgia. The Death By Chocolate (DBC) eaten on the sidewalk curbs is a non-negotiable rite of passage.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "janatha-hotel-malleshwaram",
@@ -2117,7 +2417,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:00 AM – 1:00 PM, 3:30 PM – 8:30 PM (Closed Wednesdays)",
     "curatorNote": "A nostalgic step back into 1970s Malleshwaram. The Sagu Masala Dosa (filled with spiced vegetable sagu instead of aloo) is unmatched.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "siddappa-hotel-sampangi-rama-nagar",
@@ -2150,7 +2454,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:30 AM – 11:30 AM (Morning Only)",
     "curatorNote": "Strictly open from 8:30 AM to 11:30 AM. Arrive by 8:00 AM to get a token for Siddappa’s famous crispy ghee dosas.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "dyu-art-cafe-koramangala",
@@ -2183,7 +2491,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "10:00 AM – 10:30 PM (Mondays: 12:30 PM – 10:30 PM)",
     "curatorNote": "The bougainvillea-framed Kerala courtyard and decadent Banoffee pie make this one of the most soothing cafes in South India.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "maverick-farmer-ulsoor",
@@ -2216,7 +2528,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:30 AM – 11:00 PM",
     "curatorNote": "Direct from their Pollibetta estate in Coorg. The Cold Smoked Pour-Over on the wooden deck overlooking the grounds is a revelation.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "hotel-fishland-gandhinagar",
@@ -2246,7 +2562,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 4:00 PM, 7:00 PM – 10:30 PM",
     "curatorNote": "Old Bangalore’s finest coastal lunch. Pour the fiery Kundapur fish curry generously over boiled red rice alongside a crispy Anjal tawa fry.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "harima-residency-road",
@@ -2277,7 +2597,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:00 PM, 6:00 PM – 11:00 PM",
     "curatorNote": "Bangalore’s original authentic Japanese room. Reserve a traditional tatami room for pristine sashimi and authentic hot pot.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "matsuri-the-chancery",
@@ -2307,7 +2631,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 2:30 PM, 6:30 PM – 10:30 PM",
     "curatorNote": "The Katsudon (crispy pork cutlet simmered in sweet dashi with soft eggs over rice) is textbook authentic Japanese comfort food.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "byg-brewski",
@@ -2351,9 +2679,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "10/62/2A/2 & 3, Sarjapur Main Rd, behind MK Retail, near WIpro Corporate Office, Kaikondrahalli, Bengaluru, Karnataka 560035, India",
         "lat": 12.913141999999999,
         "lng": 77.6830757,
-        "googleMapsUrl": "https://maps.google.com/?cid=2468613895764706893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=2468613895764706893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "nerlu-cafe-crescent-road",
@@ -2395,9 +2731,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "4019, 1st Main Rd, Paramahansa Yogananda Rd, Stage 2, Domlur, Bengaluru, Karnataka 560071, India",
         "lat": 12.963434999999999,
         "lng": 77.6410493,
-        "googleMapsUrl": "https://maps.google.com/?cid=11982450010248259254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=11982450010248259254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "bologna-italian-indiranagar",
@@ -2429,7 +2773,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "One of the few Italian restaurants in Bangalore that refuses to use cream in Carbonara or Amatriciana. Pure Roman tradition.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "spettacolare-indiranagar",
@@ -2461,7 +2809,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 10:30 PM",
     "curatorNote": "Charming Southern Italian flavors. The blistered sourdough Neapolitan crust and crispy ricotta cannoli are exceptional.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "concu-patisserie-indiranagar",
@@ -2493,7 +2845,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 11:30 PM",
     "curatorNote": "Impeccable French pastry technique in a stunning sunlit setting. The signature Tiramisu and Choux buns are city benchmarks.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "kink-speciality-coffee-indiranagar",
@@ -2532,9 +2888,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Sama Towers, 42, Church St, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
         "lat": 12.9758322,
         "lng": 77.60201289999999,
-        "googleMapsUrl": "https://maps.google.com/?cid=6592735037254929082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=6592735037254929082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "smash-guys-indiranagar",
@@ -2573,9 +2937,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "Ground Floor, Campus 6A, Unit 25, RMZ Ecoworld Rd, Bellandur, Bengaluru, Karnataka 560103, India",
         "lat": 12.9208055,
         "lng": 77.6852894,
-        "googleMapsUrl": "https://maps.google.com/?cid=3734218755114137825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=3734218755114137825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "beanlore-coffee",
@@ -2615,9 +2987,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India",
         "lat": 12.9123126,
         "lng": 77.6416021,
-        "googleMapsUrl": "https://maps.google.com/?cid=12736088069517843312&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=12736088069517843312&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "paper-and-pie-indiranagar",
@@ -2658,9 +3038,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "66/2, 2nd Main Rd, Nallurhalli, Whitefield, Bengaluru, Karnataka 560066, India",
         "lat": 12.965383200000002,
         "lng": 77.7324064,
-        "googleMapsUrl": "https://maps.google.com/?cid=5914294489538227062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=5914294489538227062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-kind-roastery-jp-nagar",
@@ -2693,7 +3081,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:00 AM – 11:00 PM",
     "curatorNote": "South Bangalore’s premier pure-vegetarian specialty roastery. The Korean garlic brioche and pourovers in the Zen courtyard are unmatched.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "circa-11-indiranagar",
@@ -2725,7 +3117,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "9:00 AM – 4:00 PM (Cafe), 6:00 PM – 12:00 AM (Dining & Cocktails)",
     "curatorNote": "A culinary tour de force by Chef Pradyumna. The duck confit and nightly cocktail program showcase serious gastronomic technique.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "yogisthaan-cafe-indiranagar",
@@ -2757,7 +3153,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "8:00 AM – 9:30 PM",
     "curatorNote": "An oasis of peace. Kick off your shoes, sit on the sunlit garden hammocks, and order the comforting warm Ayurvedic Kitchari.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "izanagi-japanese-indiranagar",
@@ -2787,7 +3187,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:30 PM, 6:30 PM – 11:00 PM",
     "curatorNote": "Authentic Japanese flavors without compromise. The rich Tonkotsu ramen broth and pristine Sashimi platter are standout items.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "asha-tiffins-hsr",
@@ -2819,7 +3223,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.911858899999999,
     "lng": 77.6326497,
-    "googleMapsUrl": "https://maps.google.com/?cid=4668069035498777873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=4668069035498777873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "broadway-gourmet-theatre-hsr",
@@ -2851,7 +3259,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9237763,
     "lng": 77.6515673,
-    "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=938548477163879417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "blr-brewing-co-hsr",
@@ -2862,7 +3274,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Microbrewery",
     "neighborhood": "HSR Layout",
     "address": "1st Floor, 450, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,800",
     "mustTry": [
       "Bangalore Wheat (Belgian Witbier)",
@@ -2883,7 +3295,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.912323599999999,
     "lng": 77.64160389999999,
-    "googleMapsUrl": "https://maps.google.com/?cid=8227569617965900977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=8227569617965900977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "biergarten",
@@ -2924,9 +3340,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "2, Rd Number 2, Hoodi, Doddanakundi Industrial Area 2, Seetharampalya, Mahadevapura, Bengaluru, Karnataka 560048, India",
         "lat": 12.982449899999999,
         "lng": 77.7087306,
-        "googleMapsUrl": "https://maps.google.com/?cid=10822519618415436619&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+        "googleMapsUrl": "https://maps.google.com/?cid=10822519618415436619",
+        "placeId": "ChIJy7B_1f0TrjsR25f_a54U4ZU",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "ironhill-bengaluru-orr",
@@ -2958,7 +3383,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.950890999999999,
     "lng": 77.6987317,
-    "googleMapsUrl": "https://maps.google.com/?cid=9495049884754946253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=9495049884754946253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-fishermans-wharf-sarjapur",
@@ -2989,7 +3418,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.914445200000001,
     "lng": 77.6662817,
-    "googleMapsUrl": "https://maps.google.com/?cid=12965296817310886555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=12965296817310886555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "oota-bangalore-whitefield",
@@ -3021,7 +3454,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9825248,
     "lng": 77.72179009999999,
-    "googleMapsUrl": "https://maps.google.com/?cid=1428424193490140233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=1428424193490140233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "whitefield-baking-company",
@@ -3032,7 +3469,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Bakeries & Desserts",
     "neighborhood": "Whitefield",
     "address": "Prestige Shantiniketan, Hoodi, Whitefield, Bengaluru, Karnataka 560048, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
       "French Butter Croissant & Pain au Chocolat",
@@ -3052,7 +3489,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.989243499999999,
     "lng": 77.7296715,
-    "googleMapsUrl": "https://maps.google.com/?cid=7964358643997907041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=7964358643997907041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "red-rhino-whitefield",
@@ -3063,7 +3504,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Microbrewery",
     "neighborhood": "Whitefield",
     "address": "4th Floor, Uptown Square, Whitefield - Hoskote Rd, Seegehalli, Whitefield, Kannamangala, Karnataka 560115, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
       "Bangalore Daze IPA & Soul Surfer Blonde Ale",
@@ -3084,7 +3525,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.0247417,
     "lng": 77.7612475,
-    "googleMapsUrl": "https://maps.google.com/?cid=7542191260218245808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=7542191260218245808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "orzuv-whitefield",
@@ -3095,7 +3540,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Regional & Coastal",
     "neighborhood": "Whitefield",
     "address": "1st Floor, Lavender Petal, Vibgyor High School Rd, Kumarapalli, Thubarahalli, Whitefield, Bengaluru, Karnataka 560066, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
       "Mutton Rogan Josh",
@@ -3115,7 +3560,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9541898,
     "lng": 77.7175068,
-    "googleMapsUrl": "https://maps.google.com/?cid=689168556079996423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=689168556079996423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "153-biere-street-whitefield",
@@ -3126,7 +3575,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Microbrewery",
     "neighborhood": "Whitefield",
     "address": "XP5X+JR6 Biere Street, 153/1, Hagadur Main Rd, Brooke Bond First Cross, Prestige Ozone, Whitefield, Bengaluru, Karnataka 560066, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹2,000",
     "mustTry": [
       "Small-Batch Seasonal Craft Ales",
@@ -3147,7 +3596,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9632892,
     "lng": 77.75096289999999,
-    "googleMapsUrl": "https://maps.google.com/?cid=17544578036530952751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=17544578036530952751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "arirang-korean-kammanahalli",
@@ -3176,7 +3629,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.019570199999999,
     "lng": 77.6371272,
-    "googleMapsUrl": "https://maps.google.com/?cid=8297737769011114324&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=8297737769011114324&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "hi-seoul-kalyan-nagar",
@@ -3187,7 +3644,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Pan-Asian & Japanese",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
     "address": "1st floor, 201, 9th Main Rd, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,300",
     "mustTry": [
       "Chicken & Beef Gimbap",
@@ -3205,7 +3662,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.014924800000001,
     "lng": 77.64676519999999,
-    "googleMapsUrl": "https://maps.google.com/?cid=14577515435168665559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=14577515435168665559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-coorg-food-co-kalyan-nagar",
@@ -3216,7 +3677,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Regional & Coastal",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
     "address": "2nd Floor, Masand Esquire, Hennur Main Rd, HRBR Layout 3rd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,100",
     "mustTry": [
       "Iconic Pandi Curry",
@@ -3234,7 +3695,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.0249381,
     "lng": 77.6315888,
-    "googleMapsUrl": "https://maps.google.com/?cid=7182420476729379803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=7182420476729379803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "chulha-chouki-da-dhaba-flagship",
@@ -3264,7 +3729,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.0249313,
     "lng": 77.6315241,
-    "googleMapsUrl": "https://maps.google.com/?cid=17149048302875044392"
+    "googleMapsUrl": "https://maps.google.com/?cid=17149048302875044392",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "al-amanah-cafe-kammanahalli",
@@ -3275,7 +3744,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Street Food & Chaat",
     "neighborhood": "Kalyan Nagar & Kammanahalli",
     "address": "19, 5th Main Rd, near kullappa circle, PNS Layout, Subbayianiah Palyam, Kammanahalli, Bengaluru, Karnataka 560084, India",
-    "priceLevel": "₹",
+    "priceLevel": "₹₹",
     "priceForTwo": "₹400",
     "mustTry": [
       "Chicken Kudu Jumbo Roll (Stuffed with Fries)",
@@ -3294,7 +3763,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.015531900000001,
     "lng": 77.6395414,
-    "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=1209944261027545382&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "shri-vasavi-condiments-vv-puram",
@@ -3325,7 +3798,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.9475474,
     "lng": 77.5739308,
-    "googleMapsUrl": "https://maps.google.com/?cid=13706312408231400546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=13706312408231400546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "hotel-navayuga-gandhinagar",
@@ -3345,7 +3822,6 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Seer Fish Tawa Fry"
     ],
     "vibeTags": [
-      "Heritage (Pre-1980)",
       "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/hotel-navayuga-gandhinagar.jpg",
@@ -3355,7 +3831,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 12.976184799999999,
     "lng": 77.57554619999999,
-    "googleMapsUrl": "https://maps.google.com/?cid=8478137410062836605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=8478137410062836605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "far-and-east-four-seasons",
@@ -3387,7 +3867,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.0196455,
     "lng": 77.5853711,
-    "googleMapsUrl": "https://maps.google.com/?cid=3750429088146940948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=3750429088146940948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "oia-bangalore-hennur",
@@ -3398,7 +3882,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "category": "Modern Indian & Dining",
     "neighborhood": "Bel Road & North BLR",
     "address": "Oia, Hennur Main Road, New Airport Rd, opposite Mantri Webcity, Visthar, Bengaluru, Karnataka 560077, India",
-    "priceLevel": "₹₹₹",
+    "priceLevel": "₹₹₹₹",
     "priceForTwo": "₹2,800",
     "mustTry": [
       "Whiskey Glazed Roasted Chicken with Truffle Mash",
@@ -3419,7 +3903,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "verified": true,
     "lat": 13.0738322,
     "lng": 77.6525657,
-    "googleMapsUrl": "https://maps.google.com/?cid=13572916760978068344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    "googleMapsUrl": "https://maps.google.com/?cid=13572916760978068344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-local-kalyan-nagar",
@@ -3432,7 +3920,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "4th cross, 6th Main Rd, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043, India",
     "lat": 13.0212208,
     "lng": 77.6414976,
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,400",
     "mustTry": [
       "Mangalore Chicken / Paneer Ghee Roast with Hot Appams",
@@ -3451,49 +3939,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:00 AM – 11:30 PM",
     "curatorNote": "Preserves the authentic, soulful identity of old Bangalore pub culture: great music, unpretentious hospitality, and phenomenal, fiery coastal bar bites.",
     "isVegetarian": false,
-    "verified": true
-  },
-  {
-    "id": "pecos",
-    "name": "Pecos Classic",
-    "slug": "pecos",
-    "tagline": "The 1989 classic rock retro pub legend with cold draft mugs & fiery chilli pork",
-    "description": "Bangalore’s timeless retro rock sanctuary on 100 Feet Road. Preserves the authentic 1980s Pecos DNA with wood-paneled rock posters, classic vinyl playlists, chilled draft beer, and signature South Indian chilli pork.",
-    "category": "Microbrewery",
-    "neighborhood": "Church Street & MG Road",
-    "address": "34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",
-    "lat": 12.973678,
-    "lng": 77.607354,
-    "priceLevel": "₹₹",
-    "priceForTwo": "₹1,200",
-    "mustTry": [
-      "Chilled Draft Beer Mugs",
-      "Signature Coorg Chilli Pork",
-      "Beef Dosa / Chilli Beef",
-      "Crispy Bacon Wrapped Sausages"
-    ],
-    "vibeTags": [
-      "Craft Beer",
-      "Pocket Friendly",
-      "Heritage (Pre-1980)"
-    ],
-    "imageUrl": "/images/restaurants/pecos-stones-indiranagar.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=10173647938385044278",
-    "timings": "11:00 AM – 11:30 PM",
-    "curatorNote": "The ultimate Bangalore rock pub institution. Nothing beats a cold mug of draft beer with spicy chilli pork while listening to Led Zeppelin.",
-    "isVegetarian": false,
     "verified": true,
-    "branches": [
-      {
-        "id": "pecos-indiranagar-branch",
-        "name": "Indiranagar (100ft Rd)",
-        "neighborhood": "Indiranagar",
-        "address": "1st floor, 765, 100 Feet Rd, HAL 2nd Stage, Appareddipalya, Indiranagar, Bengaluru, Karnataka 560008, India",
-        "lat": 12.9707795,
-        "lng": 77.6410255,
-        "googleMapsUrl": "https://maps.google.com/?cid=15764024227743916946"
-      }
-    ]
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "yauatcha-bengaluru-mg-road",
@@ -3525,7 +3975,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:00 PM",
     "curatorNote": "Bangalore’s undisputed benchmark for Cantonese dim sum artistry. The Crispy Prawn Cheung Fun (crispy fried prawn roll wrapped inside silky steamed rice noodle skin) is absolute perfection.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "rim-naam-the-oberoi",
@@ -3557,7 +4011,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "Bangalore’s most romantic garden pavilion. The fragrant herbal balance in their lemongrass-scented Tom Yum and steamed seabass is unmatched in India.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "edo-itc-gardenia",
@@ -3588,7 +4046,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 PM – 11:30 PM (Dinner Only)",
     "curatorNote": "The gold standard for Japanese Kaiseki dining in South India. The Saikyo Miso Black Cod melts effortlessly on the tongue.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "jamavar-the-leela-palace",
@@ -3618,7 +4080,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "The slow-simmered 24-hour Dal Jamavar and tender Raan-e-Jamavar define royal Indian fine dining in Bangalore.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "le-cirque-signature-leela",
@@ -3649,7 +4115,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "6:30 PM – 11:30 PM (Dinner Only)",
     "curatorNote": "The ultimate celebratory dinner setting. The Acquerello Truffle Risotto and classic NYC Crème Brûlée are masterclasses in technique.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "grasshopper-bannerghatta",
@@ -3680,7 +4150,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "7:30 PM – 11:00 PM (Tues–Sun, Strict Prior Reservation)",
     "curatorNote": "An unhurried culinary sanctuary. Candlelit dining surrounded by bamboo groves and cricket chirps with an ever-evolving, personalized seasonal menu.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "shiro-ub-city",
@@ -3712,7 +4186,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "The towering Zen stone architecture makes dining here awe-inspiring. Sit at the live Teppanyaki counter for sizzling hibachi theater.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "kaze-residency-road",
@@ -3746,7 +4224,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 1:00 AM",
     "curatorNote": "Bangalore’s premier high-altitude open terrace. The 360-degree sunset view with a smoked cocktail and fresh robata skewers is unforgettable.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "nagarjuna-residency-road",
@@ -3768,15 +4250,18 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Shahi Tukda & Sweet Payasam"
     ],
     "vibeTags": [
-      "Pocket Friendly",
-      "Heritage (Pre-1980)"
+      "Pocket Friendly"
     ],
     "imageUrl": "/images/restaurants/nagarjuna-residency-road.jpg",
     "googleMapsUrl": "https://maps.google.com/?cid=211738954880282805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "timings": "12:00 PM – 3:45 PM, 7:00 PM – 10:45 PM",
     "curatorNote": "Bangalore’s quintessential spicy lunch ritual. Heap steaming rice on your banana leaf, douse in hot ghee and gunpowder, and pair with the fiery green chilli chicken.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "hotel-empire-shivajinagar",
@@ -3808,7 +4293,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "10:00 AM – 2:00 AM (Late Night Everyday)",
     "curatorNote": "The undisputed soul of Bangalore midnight dining since 1966. Dip hot, flaky coin parottas into the crispy, spiced fried Butter Chicken gravy at 1 AM.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "magnolia-bakery-indiranagar",
@@ -3837,7 +4326,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "10:00 AM – 11:30 PM",
     "curatorNote": "The Classic Banana Pudding (layers of creamy vanilla pudding, Nilla wafers, and fresh bananas) is a global icon executed to perfection on 100 Feet Road.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "zen-the-leela-palace",
@@ -3868,7 +4361,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 3:00 PM, 7:00 PM – 11:30 PM",
     "curatorNote": "A high-end Pan-Asian temple. Book a seat at the live Teppanyaki counter for sizzling hibachi theater, or order the melt-in-mouth Alaskan Crab maki.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "klaa-kitchen-indiranagar",
@@ -3899,7 +4396,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:30 PM – 11:30 PM",
     "curatorNote": "Bangalore’s best Goan table. The spicy, oily Pork Choriz stuffed inside warm crusty Goan Poi bread paired with a kokum cocktail is phenomenal.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "the-reservoire-koramangala",
@@ -3928,11 +4429,16 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
       "Live Music / Vinyl"
     ],
     "imageUrl": "/images/restaurants/the-reservoire-koramangala.jpg",
-    "googleMapsUrl": "https://maps.google.com/?cid=10822519618415436619",
+    "googleMapsUrl": "https://maps.google.com/?cid=4032612318965013540",
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A Koramangala nightlife landmark. The lush greenhouse rooftop with a smoky bourbon craft cocktail is an absolute staple for Bangalore evenings.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "placeId": "ChIJH3YpIVsUrjsRJBzG1Im39jc",
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "sanchez-ub-city",
@@ -3963,7 +4469,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:30 AM – 11:00 PM",
     "curatorNote": "Bangalore’s benchmark for authentic Mexican gastronomy. The live guacamole cart made fresh at your table with Hass avocados and lime is unbeatable.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "muro-museum-road",
@@ -3996,7 +4506,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "One of India’s top bar programs. The multi-story glasshouse architecture on Museum Road combined with avant-garde clarified mixology and silky Cantonese dim sums is world-class.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "koko-prestige-icon-indiranagar",
@@ -4027,7 +4541,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 1:00 AM",
     "curatorNote": "A benchmark for high-energy Pan-Asian luxury dining. The Hamachi Carpaccio with white truffle oil and silky Lobster Cheung Fun are sensational.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "mai-mai-indiranagar",
@@ -4040,7 +4558,7 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "address": "621A, 12th Main Rd, 7th Cross, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038, India",
     "lat": 12.9705628,
     "lng": 77.6469723,
-    "priceLevel": "₹₹",
+    "priceLevel": "₹₹₹",
     "priceForTwo": "₹1,200",
     "mustTry": [
       "Sichuan Dan Dan Hand-Pulled Noodles",
@@ -4058,7 +4576,11 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "12:00 PM – 11:30 PM",
     "curatorNote": "A 12th Main favorite with a buzzing aesthetic. The spicy hand-pulled Sichuan noodles and fluffy pork belly baos are standout comfort food.",
     "isVegetarian": false,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "subko-coffee-indiranagar",
@@ -4098,9 +4620,17 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
         "address": "105, Kengal Hanumanthaiah Rd, opp. Corporation Bank, Raja Ram Mohanroy Extension, Shanti Nagar, Bengaluru, Karnataka 560027, India",
         "lat": 12.9584305,
         "lng": 77.5928951,
-        "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042"
+        "googleMapsUrl": "https://maps.google.com/?cid=1972734216234628042",
+        "operationalStatus": "OPERATIONAL",
+        "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+        "verificationSource": "google_places_api_v1",
+        "confidence": "verified_rooftop"
       }
-    ]
+    ],
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   },
   {
     "id": "milano-ice-cream-indiranagar",
@@ -4132,6 +4662,10 @@ export const INITIAL_RESTAURANTS: Restaurant[] = [
     "timings": "11:00 AM – 1:00 AM (Late Night)",
     "curatorNote": "Bangalore’s benchmark for authentic Italian gelato. Open past midnight, the rich Sicilian Pistachio and Dark Chocolate Orange on a freshly baked waffle cone are exceptional.",
     "isVegetarian": true,
-    "verified": true
+    "verified": true,
+    "operationalStatus": "OPERATIONAL",
+    "lastVerifiedAt": "2026-08-24T12:00:00.000Z",
+    "verificationSource": "google_places_api_v1",
+    "confidence": "verified_rooftop"
   }
 ];

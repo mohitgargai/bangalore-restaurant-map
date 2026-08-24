@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Restaurant, Branch } from '@/types';
 import { getGoogleMapsDirectionsUrl, getGoogleMapsPlaceUrl } from '@/lib/maps';
 import {
@@ -21,25 +21,28 @@ interface RestaurantDrawerProps {
   allRestaurants?: Restaurant[];
   onClose: () => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
-  onSelectBranch?: (branchRestaurant: Restaurant) => void;
+  onSelectBranch?: (restaurant: Restaurant) => void;
   isBookmarked: boolean;
 }
 
 export default function RestaurantDrawer({
   restaurant,
-  allRestaurants = [],
   onClose,
   onToggleBookmark,
   onSelectBranch,
   isBookmarked,
 }: RestaurantDrawerProps) {
   const [copied, setCopied] = useState(false);
-  const [selectedBranch, setSelectedBranch] = useState<Branch | null>(null);
+  const [selectedBranchId, setSelectedBranchId] = useState<string | null>(null);
+  const [currentRestId, setCurrentRestId] = useState(restaurant?.id);
 
-  // Reset selected branch only when a different restaurant ID is opened
-  useEffect(() => {
-    setSelectedBranch(null);
-  }, [restaurant?.id]);
+  // Sync state when restaurant ID changes
+  if (restaurant?.id !== currentRestId) {
+    setCurrentRestId(restaurant?.id);
+    setSelectedBranchId(null);
+  }
+
+  const selectedBranch = restaurant?.branches?.find((b) => b.id === selectedBranchId) || null;
 
   if (!restaurant) return null;
 
@@ -60,7 +63,7 @@ export default function RestaurantDrawer({
   };
 
   const handleBranchClick = (b: Branch | null) => {
-    setSelectedBranch(b);
+    setSelectedBranchId(b ? b.id : null);
     if (onSelectBranch) {
       const activeLat = b ? b.lat : restaurant.lat;
       const activeLng = b ? b.lng : restaurant.lng;

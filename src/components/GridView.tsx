@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { Restaurant } from '@/types';
-import { CATEGORY_META } from '@/lib/colors';
-import { Bookmark, MapPin, Sparkles, Navigation, ArrowRight } from 'lucide-react';
+import { Bookmark, MapPin, Sparkles, ArrowRight } from 'lucide-react';
 
 interface GridViewProps {
   restaurants: Restaurant[];

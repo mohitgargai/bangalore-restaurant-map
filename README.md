@@ -1,74 +1,111 @@
-# 🥘 Bangalore Food Map — Curated & Crowd-Sourced Dining Gems
+# 🥘 BLR // EATS — Curated Bangalore Food & Spatial Guide
 
-An ultra-clean, interactive geospatial guide to Bengaluru's most iconic breakfast institutions, craft microbreweries, specialty third-wave coffee bars, late-night street food trails, and community-submitted dining spots.
+An interactive geospatial guide to Bengaluru's most iconic heritage breakfast institutions, craft microbreweries, specialty third-wave coffee bars, coastal seafood kitchens, and progressive cocktail lounges.
 
-Inspired by the concept of [Bangalore Startup Map](https://www.bangalorestartupmap.com/), redesigned with a modern, elegant, and food-first aesthetic (think Apple Maps / Linear / Airbnb quality).
+Live URL: **[https://blreats.com](https://blreats.com)** *(and [https://blr-food-map-2026.web.app](https://blr-food-map-2026.web.app))*
 
 ---
 
 ## ✨ Features
 
-- 🗺️ **Interactive Geospatial Map**: Leaflet & CartoDB Positron clean map tiles with glowing category pins, smooth fly-to animations, and rich preview popovers.
-- ⚡ **Dual View Modes**: Seamless toggle between full-screen interactive Map View and responsive Magazine Grid View.
+- 🗺️ **Spatial Map Canvas**: Fullscreen Leaflet + CartoDB Voyager raster tiles with category-colored glowing pins, smooth camera panning, and live viewport centering.
+- 📍 **Multi-Branch Spatial Isolation**: When filtering by neighborhood (e.g. *Bellandur & Ecoworld* or *Whitefield*), only physical outlets matching the target district are rendered on the map.
+- ⚡ **Dual View Modes**: Seamless toggle between full-screen interactive Map View and responsive Grid View.
 - 🔎 **Deep Search & Multi-Faceted Filters**:
-  - Instant fuzzy search across restaurant names, must-try dishes, cuisines, and neighborhoods.
-  - **Neighborhoods**: Indiranagar, Koramangala, Malleshwaram, Basavanagudi, Church Street / MG Road, Lavelle Road, HSR Layout, Whitefield, JP Nagar, Jayanagar, etc.
-  - **Categories**: Iconic Heritage, Microbreweries, Specialty Coffee & Cafes, Pan-Asian & Japanese, Bakeries & Desserts, Cocktails & Rooftops, Regional & Coastal, Modern Indian, Street Food.
-  - **Price Tiers**: ₹ (Budget < ₹400), ₹₹ (Casual ₹400–₹1000), ₹₹₹ (Premium ₹1000–₹2200), ₹₹₹₹ (Fine Dine ₹2200+).
-  - **Vibe & Features**: Work-Friendly / Wi-Fi, Pet-Friendly, Outdoor/Rooftop, Pure Veg, Craft Beer, Late Night, Live Music.
-- 🤝 **Crowd-Sourced Submissions**:
-  - Community members can recommend new spots with must-order dishes, price for two, vibe tags, insider tips, and coordinates.
-  - Confetti celebration upon recommendation!
-  - Community Drops queue to explore user-submitted spots.
-- ❤️ **Community Upvotes ("Recommend")**:
-  - Optimistic client-side upvoting with localStorage persistence + server API synchronization.
-- 📖 **Curated Food Trails & Guides**:
-  - *The Great Filter Coffee & Dosa Trail* (CTR, Vidyarthi Bhavan, MTR, Brahmins' Coffee Bar, Veena Stores)
-  - *Hop-Heads Guide to Microbreweries* (Toit, Windmills, Arbor, Byg Brewski, Geist)
-  - *Third-Wave Coffee & Work Sanctuaries* (Araku, Paper & Pie, Blue Tokai, Third Wave)
-  - 1-click "Explore Trail on Map" filter button.
-- 📱 **Responsive Restaurant Drawer**:
-  - High-res cover image, curated insider tip quote, must-order dish highlights, directions link to Google Maps, and instant share action.
+  - Instant search across restaurant names, must-try dishes, cuisines, and neighborhoods.
+  - **16 Curated Neighborhoods**: Indiranagar, Koramangala, Malleshwaram, Basavanagudi, Church Street & MG Road, Lavelle Road, HSR Layout, JP Nagar, Jayanagar, CBD & Central, Bellandur & Ecoworld, Sarjapur Road, Kalyan Nagar & Kammanahalli, Whitefield, Sadashivanagar & Palace Grounds, Bel Road & North BLR.
+  - **9 Core Cuisines & Categories**: Iconic Heritage, Specialty Coffee & Cafe, Microbrewery, Pan-Asian & Japanese, Bakeries & Desserts, Cocktails & Rooftops, Regional & Coastal, Modern Indian & Dining, Street Food & Chaat.
+  - **Price Tiers**:
+    - `₹`: Pocket-Friendly (< ₹400 for two)
+    - `₹₹`: Casual Dining (₹400 – ₹1,000 for two)
+    - `₹₹₹`: Premium Craft & Specialty (₹1,000 – ₹2,500 for two)
+    - `₹₹₹₹`: Fine Dining & Luxury (₹2,500+ for two)
+- 🤝 **Community Suggestion Pipeline**:
+  - Community members can recommend culinary gems with signature dishes, neighborhood tags, and Google Maps links.
+  - Submissions are securely validated and saved as `pending` moderation records in Firestore for editorial review.
+- 🛡️ **Curator Vault (`/admin`)**:
+  - Protected by Firebase Google Authentication with verified email whitelist.
+  - Curators can review pending submissions, audit rooftop coordinates, and export updated TypeScript datasets.
+- 📱 **Restaurant Dossier Drawer**:
+  - Self-hosted high-resolution photography, curator notes, must-order signature dish badges, Google Maps directions links, and synchronized physical outlet switchers.
+
+---
+
+## 🏛️ Data Schema & Provenance
+
+Every restaurant and branch record follows a verified spatial schema:
+
+```typescript
+export interface Restaurant {
+  id: string;
+  name: string;
+  slug: string;
+  tagline: string;
+  description: string;
+  category: Category;
+  neighborhood: Neighborhood;
+  address: string;
+  lat: number;
+  lng: number;
+  priceLevel: '₹' | '₹₹' | '₹₹₹' | '₹₹₹₹';
+  priceForTwo: string;
+  mustTry: string[];
+  vibeTags: VibeTag[];
+  imageUrl: string;
+  googleMapsUrl: string;
+  placeId?: string;
+  operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
+  lastVerifiedAt?: string;
+  verificationSource?: 'google_places_api_v1' | 'manual_editorial';
+  confidence?: 'verified_rooftop' | 'approximate';
+  timings: string;
+  curatorNote?: string;
+  isVegetarian?: boolean;
+  verified: boolean;
+  branches?: Branch[];
+}
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14+ (App Router), React, TypeScript
+- **Framework**: Next.js 16 (App Router, Static Export `output: 'export'`), React 19, TypeScript
 - **Styling**: Tailwind CSS, Lucide Icons, Canvas Confetti
-- **Geospatial & Maps**: Leaflet, React-Leaflet, CartoDB Positron Tiles
-- **State & Storage**: Client optimistic updates + In-memory API routes + localStorage persistence
+- **Mapping & Geospatial**: Leaflet, React-Leaflet, CartoDB Voyager Tiles
+- **Backend & Storage**: Firebase Firestore (Security Rules v2), Firebase Auth (Google Sign-In), Firebase Hosting
+- **Image Pipeline**: Self-hosted high-resolution WebP/JPEG assets processed with `sharp`
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Development & Verification
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mohitgargai/bangalore-restaurant-map.git
-   cd bangalore-restaurant-map
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Run the development server:
+2. Run local development server:
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser.
+3. Type-check & lint:
+   ```bash
+   npx tsc --noEmit
+   npm run lint
+   ```
+
+4. Build production static export:
+   ```bash
+   npm run build
+   ```
 
 ---
 
-## 📦 Deployment
+## 🚢 CI/CD Deployment
 
-Deploy easily to Vercel or any Next.js compatible hosting:
-```bash
-npm run build
-```
+Automated builds and deployments to Firebase Hosting trigger on pushes to `main` via GitHub Actions (`.github/workflows/deploy.yml`).
 
 ---
 

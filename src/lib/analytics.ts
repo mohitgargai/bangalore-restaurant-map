@@ -1,6 +1,11 @@
-import { db } from './firebase';
 import { getAnalytics, isSupported, logEvent, Analytics } from 'firebase/analytics';
 import { getApps } from 'firebase/app';
+
+declare global {
+  interface Window {
+    gtag?: (command: string, action: string, params?: Record<string, unknown>) => void;
+  }
+}
 
 let analyticsInstance: Analytics | null = null;
 
@@ -20,7 +25,7 @@ export const initAnalytics = async (): Promise<Analytics | null> => {
   return null;
 };
 
-export const trackEvent = async (eventName: string, params?: Record<string, any>) => {
+export const trackEvent = async (eventName: string, params?: Record<string, unknown>) => {
   if (typeof window === 'undefined') return;
 
   try {
@@ -29,10 +34,11 @@ export const trackEvent = async (eventName: string, params?: Record<string, any>
       logEvent(analytics, eventName, params);
     }
     // Also dispatch to window.gtag if present
-    if (typeof (window as any).gtag === 'function') {
-      (window as any).gtag('event', eventName, params);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params);
     }
   } catch (err) {
     console.debug(`Failed to track event ${eventName}:`, err);
   }
 };
+

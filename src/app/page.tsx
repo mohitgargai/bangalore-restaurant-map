@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   Restaurant,
   Category,
@@ -15,8 +15,21 @@ import RestaurantDrawer from '@/components/RestaurantDrawer';
 import SubmitModal from '@/components/SubmitModal';
 
 export default function Home() {
-  const [restaurants, setRestaurants] = useState<Restaurant[]>(INITIAL_RESTAURANTS);
-  
+  const [restaurants] = useState<Restaurant[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const savedOverrides = localStorage.getItem('blr_custom_overrides');
+        if (savedOverrides) {
+          const parsed = JSON.parse(savedOverrides);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch {
+        // Ignore storage parse error
+      }
+    }
+    return INITIAL_RESTAURANTS;
+  });
+
   // Focused pin / active card on the map
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null);
   
@@ -43,37 +56,23 @@ export default function Home() {
   const [vegOnly, setVegOnly] = useState(false);
   const [showSavedOnly, setShowSavedOnly] = useState(false);
 
-  // Bookmarks state (persisted locally)
-  const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
+  // Bookmarks state (persisted locally with lazy initial state)
+  const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
+        if (savedBookmarks) {
+          return new Set(JSON.parse(savedBookmarks));
+        }
+      } catch {
+        // Ignore parse error
+      }
+    }
+    return new Set();
+  });
 
   // Modals state
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
-
-  // Load initial data, bookmarks & overrides
-  useEffect(() => {
-    try {
-      const savedBookmarks = localStorage.getItem('blr_food_bookmarks');
-      if (savedBookmarks) {
-        setBookmarkedIds(new Set(JSON.parse(savedBookmarks)));
-      }
-
-      // Check for Admin Custom Overrides
-      const savedOverrides = localStorage.getItem('blr_custom_overrides');
-      if (savedOverrides) {
-        const parsedOverrides = JSON.parse(savedOverrides);
-        if (Array.isArray(parsedOverrides) && parsedOverrides.length > 0) {
-          setRestaurants(parsedOverrides);
-          return;
-        }
-      }
-
-      // Or load user submissions + initial
-      const userSubmissions = JSON.parse(localStorage.getItem('blr_user_submissions') || '[]');
-      if (Array.isArray(userSubmissions) && userSubmissions.length > 0) {
-        setRestaurants([...userSubmissions, ...INITIAL_RESTAURANTS]);
-      }
-    } catch (e) {}
-  }, []);
 
   // Synchronized Neighborhood selection
   const handleSelectNeighborhood = useCallback((area: Neighborhood | 'All') => {
@@ -103,7 +102,9 @@ export default function Home() {
       try {
         localStorage.setItem('blr_food_bookmarks', JSON.stringify(Array.from(next)));
         trackEvent(isAdding ? 'bookmark_add' : 'bookmark_remove', { restaurant_id: id });
-      } catch (err) {}
+      } catch {
+        // Ignore storage error
+      }
       return next;
     });
   };
@@ -135,11 +136,6 @@ export default function Home() {
   // Synchronized branch change in drawer (pans map to branch pin without resetting drawer)
   const handleSelectBranch = (branchRestaurant: Restaurant) => {
     setSelectedRestaurant(branchRestaurant);
-  };
-
-  const handleNewSubmission = (newRest: Restaurant) => {
-    setRestaurants((prev) => [newRest, ...prev]);
-    setSelectedRestaurant(newRest);
   };
 
   // Filter Logic
@@ -259,7 +255,6 @@ export default function Home() {
       <SubmitModal
         isOpen={isSubmitOpen}
         onClose={() => setIsSubmitOpen(false)}
-        onSuccess={handleNewSubmission}
       />
     </main>
   );

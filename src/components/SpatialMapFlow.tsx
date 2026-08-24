@@ -33,12 +33,15 @@ export const DISTRICT_MAP_CONFIG: {
   { id: 'Basavanagudi', label: 'Basavanagudi / VV Puram', lat: 12.9455, lng: 77.5739, zoom: 15 },
   { id: 'Koramangala', label: 'Koramangala', lat: 12.9341, lng: 77.6256, zoom: 15 },
   { id: 'HSR Layout', label: 'HSR Layout', lat: 12.9118, lng: 77.6385, zoom: 15 },
+  { id: 'JP Nagar', label: 'JP Nagar', lat: 12.9080, lng: 77.5880, zoom: 15 },
+  { id: 'Jayanagar', label: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
+  { id: 'Lavelle Road', label: 'Lavelle Road', lat: 12.9698, lng: 77.5997, zoom: 15 },
+  { id: 'CBD & Central', label: 'CBD & Central', lat: 12.9750, lng: 77.5950, zoom: 15 },
   { id: 'Bellandur & Ecoworld', label: 'Bellandur / Ecoworld', lat: 12.9258, lng: 77.6867, zoom: 15 },
   { id: 'Sarjapur Road', label: 'Sarjapur Rd', lat: 12.9100, lng: 77.6800, zoom: 14 },
   { id: 'Kalyan Nagar & Kammanahalli', label: 'Kalyan Nagar / CMR', lat: 13.0185, lng: 77.6440, zoom: 15 },
   { id: 'Whitefield', label: 'Whitefield', lat: 12.9750, lng: 77.7350, zoom: 14 },
-  { id: 'Jayanagar', label: 'Jayanagar', lat: 12.9238, lng: 77.5934, zoom: 15 },
-  { id: 'Lavelle Road', label: 'Lavelle Road', lat: 12.9698, lng: 77.5997, zoom: 15 },
+  { id: 'Sadashivanagar & Palace Grounds', label: 'Sadashivanagar', lat: 13.0080, lng: 77.5800, zoom: 15 },
   { id: 'Bel Road & North BLR', label: 'North BLR', lat: 13.0450, lng: 77.5850, zoom: 13 },
 ];
 
@@ -64,7 +67,6 @@ export default function SpatialMapFlow({
   hoveredRestaurantId,
   onHoverRestaurant,
   selectedNeighborhood,
-  onSelectNeighborhood,
   onToggleBookmark,
   bookmarkedIds,
   targetDistrict,
@@ -102,6 +104,7 @@ export default function SpatialMapFlow({
         restaurants={restaurants}
         selectedRestaurant={selectedRestaurant}
         hoveredRestaurantId={hoveredRestaurantId}
+        selectedNeighborhood={selectedNeighborhood}
         onSelectRestaurant={onSelectRestaurant}
         onOpenDrawer={onOpenDrawer}
         onToggleBookmark={onToggleBookmark}

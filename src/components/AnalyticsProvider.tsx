@@ -3,11 +3,7 @@
 import { useEffect } from 'react';
 import { initAnalytics, trackEvent } from '@/lib/analytics';
 
-interface AnalyticsProviderProps {
-  gaMeasurementId?: string;
-}
-
-export default function AnalyticsProvider({ gaMeasurementId }: AnalyticsProviderProps) {
+export default function AnalyticsProvider() {
   useEffect(() => {
     // Initialize Firebase Analytics
     initAnalytics().then(() => {

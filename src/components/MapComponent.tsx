@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Restaurant } from '@/types';
+import { Restaurant, Neighborhood } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
 
 // Controller to fly the map camera smoothly
@@ -43,6 +43,7 @@ interface MapComponentProps {
   restaurants: Restaurant[];
   selectedRestaurant: Restaurant | null;
   hoveredRestaurantId: string | null;
+  selectedNeighborhood?: Neighborhood | 'All';
   onSelectRestaurant: (restaurant: Restaurant) => void;
   onOpenDrawer?: (restaurant: Restaurant) => void;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
@@ -54,6 +55,7 @@ export default function MapComponent({
   restaurants,
   selectedRestaurant,
   hoveredRestaurantId,
+  selectedNeighborhood,
   onSelectRestaurant,
   bookmarkedIds,
   targetDistrict,
@@ -136,44 +138,58 @@ export default function MapComponent({
           const isHovered = hoveredRestaurantId === restaurant.id;
           const icon = createModernPin(restaurant, isSelected, isHovered);
 
+          const showPrimary =
+            !selectedNeighborhood ||
+            selectedNeighborhood === 'All' ||
+            restaurant.neighborhood === selectedNeighborhood;
+
           return (
             <React.Fragment key={restaurant.id}>
               {/* Primary Location Pin */}
-              <Marker
-                position={[restaurant.lat, restaurant.lng]}
-                icon={icon}
-                eventHandlers={{
-                  click: () => onSelectRestaurant(restaurant),
-                }}
-              />
+              {showPrimary && (
+                <Marker
+                  position={[restaurant.lat, restaurant.lng]}
+                  icon={icon}
+                  eventHandlers={{
+                    click: () => onSelectRestaurant(restaurant),
+                  }}
+                />
+              )}
 
               {/* Branch Location Pins */}
-              {restaurant.branches?.map((branch) => {
-                const isBranchSelected =
-                  selectedRestaurant?.id === restaurant.id &&
-                  selectedRestaurant?.lat === branch.lat &&
-                  selectedRestaurant?.lng === branch.lng;
-                const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
+              {restaurant.branches
+                ?.filter(
+                  (branch) =>
+                    !selectedNeighborhood ||
+                    selectedNeighborhood === 'All' ||
+                    branch.neighborhood === selectedNeighborhood
+                )
+                .map((branch) => {
+                  const isBranchSelected =
+                    selectedRestaurant?.id === restaurant.id &&
+                    selectedRestaurant?.lat === branch.lat &&
+                    selectedRestaurant?.lng === branch.lng;
+                  const branchIcon = createModernPin(restaurant, isBranchSelected, isHovered);
 
-                return (
-                  <Marker
-                    key={`${restaurant.id}-${branch.id}`}
-                    position={[branch.lat, branch.lng]}
-                    icon={branchIcon}
-                    eventHandlers={{
-                      click: () =>
-                        onSelectRestaurant({
-                          ...restaurant,
-                          neighborhood: branch.neighborhood,
-                          address: branch.address,
-                          lat: branch.lat,
-                          lng: branch.lng,
-                          googleMapsUrl: branch.googleMapsUrl,
-                        }),
-                    }}
-                  />
-                );
-              })}
+                  return (
+                    <Marker
+                      key={`${restaurant.id}-${branch.id}`}
+                      position={[branch.lat, branch.lng]}
+                      icon={branchIcon}
+                      eventHandlers={{
+                        click: () =>
+                          onSelectRestaurant({
+                            ...restaurant,
+                            neighborhood: branch.neighborhood,
+                            address: branch.address,
+                            lat: branch.lat,
+                            lng: branch.lng,
+                            googleMapsUrl: branch.googleMapsUrl,
+                          }),
+                      }}
+                    />
+                  );
+                })}
             </React.Fragment>
           );
         })}

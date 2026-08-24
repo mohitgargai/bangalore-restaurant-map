@@ -104,6 +104,11 @@ export interface Branch {
   lat: number;
   lng: number;
   googleMapsUrl: string;
+  placeId?: string;
+  operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
+  lastVerifiedAt?: string;
+  verificationSource?: 'google_places_api_v1' | 'manual_editorial';
+  confidence?: 'verified_rooftop' | 'approximate';
   timings?: string;
 }
 
@@ -124,6 +129,11 @@ export interface Restaurant {
   vibeTags: VibeTag[];
   imageUrl: string;
   googleMapsUrl: string;
+  placeId?: string;
+  operationalStatus?: 'OPERATIONAL' | 'CLOSED_TEMPORARILY' | 'CLOSED_PERMANENTLY';
+  lastVerifiedAt?: string;
+  verificationSource?: 'google_places_api_v1' | 'manual_editorial';
+  confidence?: 'verified_rooftop' | 'approximate';
   instagramUrl?: string;
   websiteUrl?: string;
   timings: string;

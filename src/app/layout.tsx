@@ -115,7 +115,7 @@ export default function RootLayout({
         )}
       </head>
       <body className="h-full w-full overflow-hidden bg-zinc-100 text-zinc-900">
-        <AnalyticsProvider gaMeasurementId={GA_MEASUREMENT_ID} />
+        <AnalyticsProvider />
         {children}
       </body>
     </html>

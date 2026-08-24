@@ -22,12 +22,15 @@ export const NEIGHBORHOOD_TILES: { id: Neighborhood | 'All'; label: string }[] =
   { id: 'Basavanagudi', label: 'Basavanagudi / VV Puram' },
   { id: 'Koramangala', label: 'Koramangala' },
   { id: 'HSR Layout', label: 'HSR Layout' },
+  { id: 'JP Nagar', label: 'JP Nagar' },
+  { id: 'Jayanagar', label: 'Jayanagar' },
+  { id: 'Lavelle Road', label: 'Lavelle Road' },
+  { id: 'CBD & Central', label: 'CBD & Central' },
   { id: 'Bellandur & Ecoworld', label: 'Bellandur / Ecoworld' },
   { id: 'Sarjapur Road', label: 'Sarjapur Rd' },
   { id: 'Kalyan Nagar & Kammanahalli', label: 'Kalyan Nagar / CMR' },
   { id: 'Whitefield', label: 'Whitefield' },
-  { id: 'Jayanagar', label: 'Jayanagar' },
-  { id: 'Lavelle Road', label: 'Lavelle Road' },
+  { id: 'Sadashivanagar & Palace Grounds', label: 'Sadashivanagar' },
   { id: 'Bel Road & North BLR', label: 'North BLR' },
 ];
 
@@ -121,7 +124,7 @@ export default function TopNavCapsule({
                 <div className="relative shrink-0">
                   <select
                     value={selectedCategory}
-                    onChange={(e) => onSelectCategory(e.target.value as any)}
+                    onChange={(e) => onSelectCategory(e.target.value as Category | 'All')}
                     className="appearance-none rounded-full border border-zinc-200 bg-zinc-50/90 pl-3 pr-7 py-2 text-xs font-semibold text-zinc-800 hover:bg-zinc-100 transition-colors focus:outline-none cursor-pointer shadow-2xs"
                   >
                     <option value="All">✨ All Cravings</option>
@@ -328,7 +331,7 @@ export default function TopNavCapsule({
               <div className="relative shrink-0">
                 <select
                   value={selectedCategory}
-                  onChange={(e) => onSelectCategory(e.target.value as any)}
+                  onChange={(e) => onSelectCategory(e.target.value as Category | 'All')}
                   className="appearance-none rounded-xl border border-zinc-200 bg-zinc-50/90 pl-2.5 pr-6 py-1.5 text-xs font-semibold text-zinc-800 focus:outline-none cursor-pointer"
                 >
                   <option value="All">✨ Cravings</option>
