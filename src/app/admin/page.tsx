@@ -10,9 +10,8 @@ import {
   ALL_NEIGHBORHOODS,
 } from '@/types';
 import { INITIAL_RESTAURANTS } from '@/data/restaurants';
-import { db, auth } from '@/lib/firebase';
+import { db } from '@/lib/firebase';
 import { collection, getDocs, doc, deleteDoc, updateDoc, orderBy, query } from 'firebase/firestore';
-import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, User } from 'firebase/auth';
 import {
   Search,
   ExternalLink,
@@ -26,6 +25,10 @@ import {
   Inbox,
   Code,
   Shield,
+  Lock,
+  Eye,
+  EyeOff,
+  Key,
   LogOut,
   ArrowLeft,
   X,
@@ -44,15 +47,21 @@ interface FirestoreSubmission {
   createdAt?: unknown;
 }
 
-const ALLOWED_ADMIN_EMAILS = [
-  'mohitgarg.ai@gmail.com',
-  'admin@getoden.com',
-];
+const ADMIN_PASSWORD = 'Blr@Culinary#2026!';
 
 export default function AdminPage() {
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
-  const [isAuthorized, setIsAuthorized] = useState(false);
-  const [authLoading, setAuthLoading] = useState(true);
+  const [passwordInput, setPasswordInput] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [isAuthorized, setIsAuthorized] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return sessionStorage.getItem('blr_admin_auth') === 'true';
+      } catch {
+        return false;
+      }
+    }
+    return false;
+  });
   const [authError, setAuthError] = useState('');
 
   const [restaurants, setRestaurants] = useState<Restaurant[]>(() => {
@@ -83,27 +92,6 @@ export default function AdminPage() {
   const [submissions, setSubmissions] = useState<FirestoreSubmission[]>([]);
   const [loadingSubmissions, setLoadingSubmissions] = useState(false);
   const [submissionError, setSubmissionError] = useState('');
-
-  // Listen to Firebase Auth state
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setAuthLoading(false);
-      if (user && user.email && ALLOWED_ADMIN_EMAILS.includes(user.email.toLowerCase())) {
-        setCurrentUser(user);
-        setIsAuthorized(true);
-        setAuthError('');
-      } else if (user) {
-        setCurrentUser(user);
-        setIsAuthorized(false);
-        setAuthError(`Access Denied: ${user.email} is not on the authorized curator whitelist.`);
-      } else {
-        setCurrentUser(null);
-        setIsAuthorized(false);
-      }
-    });
-
-    return () => unsubscribe();
-  }, []);
 
   // Fetch Firestore submissions when authorized and tab active
   useEffect(() => {
@@ -136,7 +124,7 @@ export default function AdminPage() {
         } catch (err: unknown) {
           if (!isCancelled) {
             console.warn('Firestore fetch error:', err);
-            setSubmissionError('Could not load Firestore submissions. Ensure your account is authenticated with curator rights.');
+            setSubmissionError('Could not load Firestore submissions.');
           }
         } finally {
           if (!isCancelled) {
@@ -151,27 +139,24 @@ export default function AdminPage() {
     };
   }, [isAuthorized, activeTab]);
 
-  const handleGoogleSignIn = async () => {
-    setAuthLoading(true);
-    setAuthError('');
-    try {
-      const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
-    } catch (err: unknown) {
-      const errorMsg = err instanceof Error ? err.message : 'Sign-in failed. Please try again.';
-      setAuthError(errorMsg);
-    } finally {
-      setAuthLoading(false);
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput === ADMIN_PASSWORD) {
+      setIsAuthorized(true);
+      setAuthError('');
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('blr_admin_auth', 'true');
+      }
+    } else {
+      setAuthError('Incorrect curator passphrase. Please check and try again.');
     }
   };
 
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      setCurrentUser(null);
-      setIsAuthorized(false);
-    } catch {
-      // Ignore logout errors
+  const handleLogout = () => {
+    setIsAuthorized(false);
+    setPasswordInput('');
+    if (typeof window !== 'undefined') {
+      sessionStorage.removeItem('blr_admin_auth');
     }
   };
 
@@ -258,21 +243,21 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen w-full bg-zinc-950 text-zinc-100 font-sans">
       {!isAuthorized ? (
-        /* ================= AUTHENTICATION CHALLENGE SCREEN ================= */
+        /* ================= PASSWORD CHALLENGE SCREEN ================= */
         <div className="flex min-h-screen items-center justify-center p-4">
           <div className="w-full max-w-md rounded-3xl border border-zinc-800 bg-zinc-900/90 p-8 shadow-2xl backdrop-blur-xl">
             <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-500/10 border border-orange-500/30 text-orange-500 mb-4 shadow-lg shadow-orange-500/5">
-                <Shield className="h-8 w-8" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#BC5434]/15 border border-[#BC5434]/30 text-[#BC5434] mb-4 shadow-lg shadow-orange-950/20">
+                <Lock className="h-8 w-8" />
               </div>
 
               <h1 className="text-2xl font-bold tracking-tight text-white">Curator Vault</h1>
               <p className="mt-2 text-xs text-zinc-400 max-w-xs leading-relaxed">
-                Authorized Curators Only. Sign in with your verified Google Account to review community submissions and manage master data.
+                BLR // EATS Master Database &amp; Submissions Portal. Enter the curator passphrase to unlock access.
               </p>
             </div>
 
-            <div className="mt-8 space-y-4">
+            <form onSubmit={handlePasswordSubmit} className="mt-8 space-y-4">
               {authError && (
                 <div className="flex items-center gap-2 rounded-xl bg-red-500/10 border border-red-500/30 p-3.5 text-xs text-red-400">
                   <AlertCircle className="h-4 w-4 shrink-0" />
@@ -280,30 +265,39 @@ export default function AdminPage() {
                 </div>
               )}
 
-              {currentUser && !isAuthorized && (
-                <div className="text-center text-xs text-zinc-500">
-                  Signed in as <span className="text-zinc-300 font-medium">{currentUser.email}</span>
+              <div className="space-y-1.5">
+                <label className="block text-xs font-semibold text-zinc-300">
+                  Passphrase
+                </label>
+                <div className="relative">
+                  <Key className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500 pointer-events-none" />
+                  <input
+                    type={showPassword ? 'text' : 'password'}
+                    value={passwordInput}
+                    onChange={(e) => setPasswordInput(e.target.value)}
+                    placeholder="Enter curator passphrase…"
+                    autoFocus
+                    required
+                    className="w-full rounded-2xl border border-zinc-800 bg-zinc-950/90 py-3 pl-10 pr-10 text-sm text-white placeholder-zinc-500 focus:border-[#BC5434] focus:bg-zinc-950 focus:outline-none focus:ring-1 focus:ring-[#BC5434] transition-all"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-zinc-500 hover:text-zinc-300 transition-colors cursor-pointer"
+                    title={showPassword ? 'Hide passphrase' : 'Show passphrase'}
+                  >
+                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
                 </div>
-              )}
+              </div>
 
               <div className="pt-2 flex flex-col gap-3">
                 <button
-                  type="button"
-                  onClick={handleGoogleSignIn}
-                  disabled={authLoading}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#BC5434] py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-950/20 hover:bg-[#A34326] transition-all disabled:opacity-50 active:scale-98"
+                  type="submit"
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#BC5434] py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-950/20 hover:bg-[#A34326] transition-all cursor-pointer active:scale-98"
                 >
-                  {authLoading ? (
-                    <>
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                      <span>Verifying Credentials…</span>
-                    </>
-                  ) : (
-                    <>
-                      <Shield className="h-4 w-4" />
-                      <span>Sign in with Google</span>
-                    </>
-                  )}
+                  <Shield className="h-4 w-4" />
+                  <span>Unlock Curator Studio</span>
                 </button>
 
                 <Link
@@ -313,7 +307,7 @@ export default function AdminPage() {
                   ← Back to Public Map
                 </Link>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       ) : (
@@ -333,8 +327,8 @@ export default function AdminPage() {
                 <div>
                   <div className="flex items-center gap-2">
                     <h1 className="text-lg font-bold tracking-tight text-white">BLR EATS // Data Studio</h1>
-                    <span className="rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider">
-                      {currentUser?.email}
+                    <span className="rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider">
+                      Curator Active
                     </span>
                   </div>
                   <p className="text-xs text-zinc-400">Master database curation &amp; verified submissions queue</p>
@@ -355,7 +349,7 @@ export default function AdminPage() {
                   className="flex items-center gap-1.5 rounded-xl border border-red-500/30 bg-red-500/10 px-3.5 py-2 text-xs font-semibold text-red-400 hover:bg-red-500/20 transition-colors cursor-pointer"
                 >
                   <LogOut className="h-3.5 w-3.5" />
-                  <span>Sign Out</span>
+                  <span>Lock Studio</span>
                 </button>
               </div>
             </div>

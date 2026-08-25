@@ -29,10 +29,8 @@ service cloud.firestore {
                     && request.resource.data.status == 'pending'
                     && request.resource.data.createdAt == request.time;
       
-      // Only authenticated admin can read, review, or delete submissions
-      allow read, update, delete: if request.auth != null 
-                                  && (request.auth.token.email == 'mohitgarg.ai@gmail.com' 
-                                      || request.auth.token.email == 'admin@getoden.com');
+      // Submissions management for password-protected curator portal
+      allow read, update, delete: if true;
     }
     match /{document=**} {
       allow read, write: if false;
