@@ -9,6 +9,8 @@ import { Restaurant, Neighborhood, Category } from '@/types';
 import { CATEGORY_META } from '@/lib/colors';
 import { LocateFixed } from 'lucide-react';
 
+const CARTO_API_KEY = process.env.NEXT_PUBLIC_CARTO_API_KEY;
+
 interface SpotProperties {
   cluster: false;
   restaurantId: string;
@@ -417,10 +419,18 @@ export default function MapComponent({
         className="h-full w-full z-0"
         zoomControl={false}
       >
-        {/* CartoDB Voyager Minimalist Map Tiles */}
+        {/* CARTO Voyager tiles need an API key (carto.com/basemaps/apikey); fall back to OSM tiles without one */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+          attribution={
+            CARTO_API_KEY
+              ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+              : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }
+          url={
+            CARTO_API_KEY
+              ? `https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`
+              : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+          }
           maxZoom={19}
         />
 
